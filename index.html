@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Puget Sound Groups Directory</title>
+<title>Seattle Communities Directory</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -59,7 +59,7 @@
     margin-bottom: 4px;
     display: flex;
     align-items: center;
-    gap: 10px;
+    <p class="subtitle">Explore clubs, leagues, and communities in the Seattle area — for every interest.</p>
   }
 
   .header h1::before {
@@ -150,17 +150,6 @@
     border-color: #c2c2c4;
   }
 
-  .results-count {
-    margin-left: auto;
-    font-size: 13px;
-    color: var(--text-secondary);
-    white-space: nowrap;
-  }
-
-  .results-count strong {
-    color: var(--purple);
-    font-weight: 600;
-  }
 
   /* Table */
   .table-container {
@@ -329,11 +318,7 @@
       min-width: 0;
     }
 
-    .results-count {
-      width: 100%;
-      text-align: center;
-      padding-top: 4px;
-    }
+
 
     .table-container {
       padding: 12px;
@@ -558,8 +543,8 @@
 
 <header class="header">
   <div class="header-inner">
-    <h1>Puget Sound Groups Directory</h1>
-    <p class="subtitle">Browse <strong>589 groups</strong> across the Puget Sound region — clubs, leagues, and communities for every interest.</p>
+    <h1>Seattle Communities Directory</h1>
+    <p class="subtitle">Explore clubs, leagues, and communities in the Seattle area — for every interest.</p>
     <div class="filters">
       <div class="filter-group">
         <label for="search">Search</label>
@@ -585,7 +570,6 @@
           <option value="none">No Website</option>
         </select>
       </div>
-      <!-- results count removed -->
     </div>
   </div>
 </header>
@@ -689,7 +673,6 @@
     });
 
     renderTable();
-    updateResultsCount();
     updateSortIndicators();
   }
 
@@ -714,12 +697,7 @@
     tbody.innerHTML = html;
   }
 
-  function updateResultsCount() {
-    const count = filteredData.length;
-    const total = allData.length;
-    document.getElementById('results-count').innerHTML = '<strong>' + count.toLocaleString() + '</strong>' +
-      (count !== total ? ' of ' + total.toLocaleString() + ' groups' : ' groups');
-  }
+
 
   function updateSortIndicators() {
     document.querySelectorAll('#groups-table th').forEach(th => {
