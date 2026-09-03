@@ -562,14 +562,6 @@
           <option value="">All Areas</option>
         </select>
       </div>
-      <div class="filter-group">
-        <label for="filter-website">Website</label>
-        <select id="filter-website" class="filter-select">
-          <option value="">All</option>
-          <option value="has">Has Website</option>
-          <option value="none">No Website</option>
-        </select>
-      </div>
     </div>
   </div>
 </header>
@@ -653,14 +645,11 @@
     const search = document.getElementById('search').value.toLowerCase().trim();
     const activity = document.getElementById('filter-activity').value;
     const area = document.getElementById('filter-area').value;
-    const website = document.getElementById('filter-website').value;
 
     filteredData = allData.filter(row => {
       if (search && !row['Group name'].toLowerCase().includes(search)) return false;
       if (activity && row['Activity type'] !== activity) return false;
       if (area && row['Area'] !== area) return false;
-      if (website === 'has' && row['Website'] === 'Not found') return false;
-      if (website === 'none' && row['Website'] !== 'Not found') return false;
       return true;
     });
 
@@ -755,7 +744,6 @@
     document.getElementById('search').addEventListener('input', debounce(filterAndSort, 150));
     document.getElementById('filter-activity').addEventListener('change', filterAndSort);
     document.getElementById('filter-area').addEventListener('change', filterAndSort);
-    document.getElementById('filter-website').addEventListener('change', filterAndSort);
   }
 
   function debounce(fn, ms) {
