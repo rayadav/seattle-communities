@@ -598,6 +598,26 @@
     if (!badgeColors[cls]) badgeColors[cls] = CATS[classify(name)] || CATS.sport;
     return badgeColors[cls];
   }
+  function escapeHtml(s) {
+    const div = document.createElement('div');
+    div.textContent = s;
+    return div.innerHTML;
+  }
+  function formatWebsite(url) {
+    if (!url || url === 'Not found') {
+      return '<span class="no-website">Not found</span>';
+    }
+    let display = url;
+    if (display.length > 45) {
+      try {
+        const u = new URL(url);
+        display = u.hostname + (u.pathname !== '/' ? u.pathname.substring(0,20) : '');
+      } catch(e) {
+        display = display.substring(0, 45);
+      }
+    }
+    return '<a href="' + escapeHtml(url) + '" target="_blank" rel="noopener noreferrer">' + escapeHtml(display) + '</a>';
+  }
   // Emit one rule per category actually used, so badges render as solid, high-contrast chips.
   function buildBadgeCSS() {
     const used = new Set(allData.map(r => classify(r['Activity type'])));
