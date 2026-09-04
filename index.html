@@ -568,72 +568,38 @@
   let allData = [];
   let filteredData = [];
   let sortCol = 'Group name';
-  let sortDir = 'asc';
-
-  // Category buckets → {bg, fg} for badge theming (richer than pastel tints)
-  const CATS = {
-    'tech':       { bg: '#ede9fe', fg: '#5b21b6' },
-    'sports':     { bg: '#d1fae5', fg: '#065f46' },
-    'outdoor':    { bg: '#ccfbf1', fg: '#115e59' },
-    'arts':       { bg: '#fce7f3', fg: '#9d174d' },
-    'board':      { bg: '#fef3c7', fg: '#92400e' },
-    'science':    { bg: '#dbeafe', fg: '#1e40af' },
-    'volunteer':  { bg: '#dcfce7', fg: '#166534' },
-    'food':       { bg: '#fee2e2', fg: '#991b1b' },
-    'craft':      { bg: '#e0e7ff', fg: '#3730a3' }
-  };
-
+  // Map any activity to a single broad bucket so badges read as "Nature", "Sports", etc.
   function classify(name) {
     const n = name.toLowerCase();
-    if (/(tech|developer|program|coding|python|rust|ai-ml|ml|data|cloud|cyber|devops|ux|qa|test|mobile|web|software|programming|functional|quantum|women-in-tech)/.test(n)) return 'tech';
-    if (/(sport|league|soccer|tennis|running|cycling|kayak|canoe|sail|row|paddle|swim|surf|ski|hike|backpack|climb|orient|paddle|disc-golf|pickleball|volley|softball|baseball|gym|fitness|parkour|derby|boxing|kickball|martial|judo|jiu-jitsu|muay|fencing|kendo|calisthenics|kettlebell|lift|track|ball|golf|curling|curling|ice-hockey|hockey|roller)/.test(n)) return 'sports';
-    if (/(outdoor|nature|bird|wildlife|plant|tree|forest|mushroom|environmental|conservation|gardening|native|orchid|lichen|beekeep|starry|stargaze|astronom)/.test(n)) return 'outdoor';
-    if (/(art|music|dance|paint|sculpt|photo|print|pottery|ceramic|glass|calli|storytell|music|textile|quilt|book-arts)/.test(n)) return 'arts';
-    if (/(chess|board|mahjong|card|backgammon|pinball|tabletop|retro-video|poker|bridge|gammon)/.test(n)) return 'board';
-    if (/(science|astronom|physics|geo|chemistry|skeptic|climate|space|quantum|bioinform|gis|meteorology|history|museum|heritage)/.test(n)) return 'science';
-    if (/(volunteer|civic|advocac|humanitarian|food-bank|emergency|mutual aid|neighbor)/.test(n)) return 'volunteer';
-    if (/(coffee|food|brew|ferment|wine|beer|food|culinary|bake|chocolate|tea)/.test(n)) return 'food';
-    return 'craft';
+    if (/(tech|developer|program|coding|python|rust|ai-ml|ml|data|cloud|cyber|devops|ux|qa|test|mobile|web|software|programming|quantum|women-in-tech|computing|electronics|ham[ _-]radio|maker|model[ _-]rail|scale[ _-]rc|pinball|chess|board|mahjong|backgammon|poker|bridge|gammon)/.test(n)) return 'science';
+    if (/(sport|league|soccer|tennis|running|cycling|kayak|canoe|paddl|sail|row|swim|surf|ski|hike|backpack|climb|orient|pickleball|volley|softball|baseball|gym|fitness|parkour|derby|boxing|kickball|martial|judo|jiu-jitsu|muay|fencing|kendo|calisthenics|kettlebell|lift|track|ball|golf|curling|ice-hockey|hockey|roller|kart|drag[ _-]racing|track[ _-]driving|motorcycl|scooter|dragon[ _-]boat|off[ _-]road|flight|aviation|yoga|wellness|mindfulness|pilates|health)/.test(n)) return 'sport';
+    if (/(nature|outdoor|bird|wildlife|tree|forest|mushroom|environmental|conservation|gardening|native|orchid|lichen|beekeep|stargaze|astronom|entomolog|geolog|natural[ _-]history|museum|heritage)/.test(n)) return 'nature';
+    if (/(coffee|food|brew|ferment|wine|beer|culinary|bake|chocolate|tea)/.test(n)) return 'food';
+    if (/(volunteer|civic|advocac|humanitarian|food[ _-]bank|emergency|mutual[ _-]aid|neighbor|engagement|networking)/.test(n)) return 'community';
+    // art/music/craft catch-all last, since craft terms are narrow
+    if (/(art|music|dance|paint|sculpt|photo|print|pottery|ceramic|glass|calli|storytell|textile|quilt|book[- ]arts|book[ _-]club|woodworking|metalwork|welding)/.test(n)) return 'arts';
+    return 'science';
   }
+  // Solid, high-contrast palette — one broad category per bucket.
+  const CATS = {
+    sport: { bg: '#16a34a', fg: '#ffffff' },
+    nature: { bg: '#0f766e', fg: '#ffffff' },
+    science: { bg: '#4f46e5', fg: '#ffffff' },
+    arts: { bg: '#e11d48', fg: '#ffffff' },
+    food: { bg: '#ea580c', fg: '#ffffff' },
+    community: { bg: '#7c3aed', fg: '#ffffff' },
+  };
 
-  function slugify(s) { return s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, ''); }
-
-  function slugify(s) { return s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, ''); }
-
-  // Assign a solid color per category, memoized by bucket
+  // Assign a solid color per broad category, memoized by bucket
   const badgeColors = {};
   function badgeColor(name) {
     const cls = 'cat-' + classify(name);
-    if (!badgeColors[cls]) badgeColors[cls] = CATS[classify(name)] || CATS.Craft;
+    if (!badgeColors[cls]) badgeColors[cls] = CATS[classify(name)] || CATS.sport;
     return badgeColors[cls];
   }
-
-  function escapeHtml(s) {
-    const div = document.createElement('div');
-    div.textContent = s;
-    return div.innerHTML;
-  }
-
-  function formatWebsite(url) {
-    if (!url || url === 'Not found') {
-      return '<span class="no-website">Not found</span>';
-    }
-    let display = url;
-    if (display.length > 45) {
-      try {
-        const u = new URL(url);
-        display = u.hostname + (u.pathname !== '/' ? u.pathname.substring(0,20) : '');
-      } catch(e) {
-        display = display.substring(0, 45);
-      }
-    }
-    return '<a href="' + escapeHtml(url) + '" target="_blank" rel="noopener noreferrer">' + escapeHtml(display) + '</a>';
-  }
-
+  // Emit one rule per category actually used, so badges render as solid, high-contrast chips.
   function buildBadgeCSS() {
-    // Emit one rule per used category so we can render solid, high-contrast badges.
-    const used = new Set();
-    allData.forEach(r => used.add(classify(r['Activity type'])));
+    const used = new Set(allData.map(r => classify(r['Activity type'])));
     let css = '';
     used.forEach(key => {
       const c = CATS[key];
