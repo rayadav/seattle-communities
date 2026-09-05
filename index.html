@@ -522,7 +522,7 @@
   // Map any activity to a single broad bucket so badges read as "Nature", "Sports", etc.
   function classify(name) {
     const n = name.toLowerCase();
-    if (/(tech|developer|program|coding|python|rust|ai-ml|ml|data|cloud|cyber|devops|ux|qa|test|mobile|web|software|programming|quantum|women-in-tech|computing|electronics|ham[ _-]radio|maker|model[ _-]rail|scale[ _-]rc|pinball|chess|board|mahjong|backgammon|poker|bridge|gammon)/.test(n)) return 'science';
+    if (/(tech|developer|program|coding|python|rust|ai-ml|ml|data|cloud|cyber|devops|ux|qa|test|mobile|web|software|programming|quantum|women-in-tech|computing|electronics|ham[ _-]radio|maker|model[ _-]rail|pinball|chess|board|mahjong|backgammon|poker|bridge|gammon|scale[ _-]rc|rc[ _-](soaring|racing)|tools|watch|repair)/.test(n)) return 'science';
     if (/(sport|league|soccer|tennis|running|cycling|kayak|canoe|paddl|sail|row|swim|surf|ski|hike|backpack|climb|orient|pickleball|volley|softball|baseball|gym|fitness|parkour|derby|boxing|kickball|martial|judo|jiu-jitsu|muay|fencing|kendo|calisthenics|kettlebell|lift|track|ball|golf|curling|ice-hockey|hockey|roller|kart|drag[ _-]racing|track[ _-]driving|motorcycl|scooter|dragon[ _-]boat|off[ _-]road|flight|aviation|yoga|wellness|mindfulness|pilates|health)/.test(n)) return 'sport';
     if (/(nature|outdoor|bird|wildlife|tree|forest|mushroom|environmental|conservation|gardening|native|orchid|lichen|beekeep|stargaze|astronom|entomolog|geolog|natural[ _-]history|museum|heritage)/.test(n)) return 'nature';
     if (/(coffee|food|brew|ferment|wine|beer|culinary|bake|chocolate|tea)/.test(n)) return 'food';
