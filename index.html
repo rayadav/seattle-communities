@@ -26,7 +26,7 @@
     --line-soft:  #eef2f8;
     --text:       #0f1b2d;
     --text-soft:  #55637a;
-    --text-faint: #8a97ab;
+    --text-faint: #5f6b7f;
 
     --shadow-sm: 0 1px 2px rgba(11,31,58,.05), 0 1px 3px rgba(11,31,58,.04);
     --shadow-md: 0 8px 24px rgba(11,31,58,.08);
@@ -54,7 +54,7 @@
     overflow: hidden;
     color: #fff;
     background:
-      linear-gradient(160deg, rgba(13,28,52,.58) 0%, rgba(13,28,52,.42) 45%, rgba(13,28,52,.72) 100%),
+      linear-gradient(160deg, rgba(13,28,52,.76) 0%, rgba(13,28,52,.66) 45%, rgba(13,28,52,.82) 100%),
       url('./hero.jpeg') center/cover no-repeat;
     border-bottom: 1px solid rgba(255,255,255,.08);
   }
@@ -122,6 +122,7 @@
     margin-bottom: 18px;
     max-width: 17ch;
   }
+  .hero h1 { text-shadow: 0 1px 2px rgba(0,0,0,.5), 0 2px 6px rgba(0,0,0,.35); }
 
   .hero h1 .accent {
     background: linear-gradient(90deg, #8b7bff 0%, #57d0ff 100%);
@@ -136,7 +137,7 @@
     color: #c3cee0;
     max-width: 580px;
     line-height: 1.55;
-    margin-bottom: 8px;
+    text-shadow: 0 1px 2px rgba(0,0,0,.5), 0 2px 6px rgba(0,0,0,.35);
   }
 
   .hero-stats {
@@ -204,7 +205,9 @@
   .search-box::placeholder { color: var(--text-faint); }
   .search-box:focus {
     border-color: var(--violet);
-    box-shadow: 0 0 0 4px rgba(109,79,240,.12);
+    box-shadow: 0 0 0 4px rgba(109,79,240,.28);
+    outline: 2px solid #4b2fd6;
+    outline-offset: 1px;
     background-color: #fff;
   }
 
@@ -226,7 +229,9 @@
   }
   .filter-select:focus {
     border-color: var(--violet);
-    box-shadow: 0 0 0 4px rgba(109,79,240,.12);
+    box-shadow: 0 0 0 4px rgba(109,79,240,.28);
+    outline: 2px solid #4b2fd6;
+    outline-offset: 1px;
     background-color: #fff;
   }
   .filter-select:hover { border-color: #c9d2e2; }
@@ -235,7 +240,7 @@
     margin-left: auto;
     font-size: 13px;
     font-weight: 500;
-    color: var(--text-faint);
+    color: #5f6b7f;
     white-space: nowrap;
     align-items: center;
     gap: 8px;
@@ -422,10 +427,27 @@
     margin: 0 auto;
     padding: 24px 28px 64px;
     text-align: center;
-    color: var(--text-faint);
+    color: #5f6b7f;
     font-size: 12.5px;
   }
   .foot .updated { display: inline-flex; align-items: center; gap: 8px; }
+
+  /* Skip link */
+  .skip-link {
+    position: absolute;
+    left: 12px;
+    top: -56px;
+    z-index: 100;
+    padding: 10px 16px;
+    border-radius: 8px;
+    background: #fff;
+    color: var(--text);
+    font-weight: 600;
+    text-decoration: none;
+    transition: top .15s;
+    box-shadow: var(--shadow-md);
+  }
+  .skip-link:focus { top: 10px; outline: 2px solid #4b2fd6; outline-offset: 2px; }
 
   /* Responsive */
   @media (max-width: 900px) {
@@ -461,7 +483,7 @@
 </style>
 </head>
 <body>
-
+  <a class="skip-link" href="#main">Skip to list</a>
 <section class="hero">
   <div class="hero-glow"></div>
   <div class="hero-inner">
@@ -484,31 +506,30 @@
   </div>
 </section>
 
-<div class="filter-wrap">
-  <div class="filters">
-    <input type="text" id="search" class="search-box" placeholder="Search a group by name…" autocomplete="off" aria-label="Search group name">
-    <select id="filter-activity" class="filter-select" aria-label="Filter by activity">
-      <option value="">All activities</option>
-    </select>
-    <select id="filter-area" class="filter-select" aria-label="Filter by area">
-      <option value="">All areas</option>
-    </select>
-    <div class="result-count" id="result-count"><b id="showing-count">0</b> of <span id="total-count">0</span> shown</div>
+  <div class="filter-wrap" role="region" aria-label="Filters">
+    <div class="filters">
+      <input type="text" id="search" class="search-box" placeholder="Search a group by name…" autocomplete="off" aria-label="Search group name">
+      <select id="filter-activity" class="filter-select" aria-label="Filter by activity">
+        <option value="">All activities</option>
+      </select>
+      <select id="filter-area" class="filter-select" aria-label="Filter by area">
+        <option value="">All areas</option>
+      </select>
+      <div class="result-count" id="result-count" role="status" aria-live="polite"><b id="showing-count">0</b> of <span id="total-count">0</span> shown</div>
+    </div>
   </div>
-</div>
-
-<div class="list-wrap" id="list-wrap" style="display:none;">
-  <ul class="list" id="list"></ul>
-</div>
-
-<div class="status-bar" id="status-bar">
-  <div class="spinner"></div>
-  <div class="status-text" id="status-text">Loading groups data…</div>
-</div>
+  <div class="status-bar" id="status-bar" role="status" aria-live="polite">
+    <div class="spinner" aria-hidden="true"></div>
+    <div class="status-text" id="status-text">Loading groups data…</div>
+  </div>
+  <div class="list-wrap" id="list-wrap" role="main" aria-label="List of communities">
+    <ul class="list" id="list"></ul>
+  </div>
 
 <footer class="foot" id="foot" style="display:none;">
   <span class="updated">Curated &amp; maintained for the Seattle community · Last updated <span id="updated-date"></span></span>
 </footer>
+
 
 <script>
 (function() {
@@ -633,7 +654,12 @@
   }
 
   function updateResultCount() {
-    document.getElementById('showing-count').textContent = filteredData.length.toLocaleString('en-US');
+    const showing = filteredData.length;
+    const total = allData.length;
+    document.getElementById('showing-count').textContent = showing.toLocaleString('en-US');
+    document.getElementById('total-count').textContent = total.toLocaleString('en-US');
+    // aria-live region already present; explicit phrase helps AT announce clearly
+    document.getElementById('result-count').dataset.count = `${showing} of ${total} shown`;
   }
 
   function updateSortIndicators() {
