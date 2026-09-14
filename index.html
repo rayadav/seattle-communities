@@ -514,25 +514,30 @@
     flex-shrink: 0;
   }
 
-  /* External Link Button */
+  /* Action Buttons (Events & Website) */
   .grp-action {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
   }
-  .visit-btn {
+  .visit-btn, .events-btn {
     display: inline-flex;
     align-items: center;
-    gap: 6px;
+    gap: 5px;
     font-size: 13px;
     font-weight: 600;
-    color: var(--violet-deep);
-    background: var(--violet-light);
-    border: 1px solid rgba(109,79,240,.18);
-    padding: 8px 14px;
+    padding: 7px 13px;
     border-radius: 10px;
     text-decoration: none;
     white-space: nowrap;
     transition: all .15s ease;
+  }
+  .visit-btn {
+    color: var(--violet-deep);
+    background: var(--violet-light);
+    border: 1px solid rgba(109,79,240,.18);
   }
   .visit-btn:hover {
     background: var(--violet);
@@ -540,11 +545,22 @@
     border-color: var(--violet);
     box-shadow: 0 2px 8px rgba(109,79,240,.25);
   }
-  .visit-btn .arrow {
+  .events-btn {
+    color: #0f766e;
+    background: #f0fdfa;
+    border: 1px solid rgba(20,184,166,.32);
+  }
+  .events-btn:hover {
+    background: #0d9888;
+    color: #ffffff;
+    border-color: #0d9888;
+    box-shadow: 0 2px 8px rgba(13,152,136,.3);
+  }
+  .visit-btn .arrow, .events-btn .arrow {
     font-size: 12px;
     transition: transform .15s ease;
   }
-  .visit-btn:hover .arrow {
+  .visit-btn:hover .arrow, .events-btn:hover .arrow {
     transform: translate(2px, -2px);
   }
 
@@ -643,8 +659,8 @@
       padding: 18px;
     }
     .grp-info { grid-column: 1 / -1; }
-    .grp-action { grid-column: 1 / -1; justify-content: flex-start; }
-    .visit-btn { width: 100%; justify-content: center; }
+    .grp-action { grid-column: 1 / -1; justify-content: flex-start; gap: 8px; width: 100%; }
+    .visit-btn, .events-btn { flex: 1 1 auto; justify-content: center; }
   }
 
   @media (max-width: 640px) {
@@ -901,10 +917,20 @@
     const html = filteredData.map((row, i) => {
       const bc = badgeColor(row['Activity type']);
       const url = row['Website'] && row['Website'] !== 'Not found' ? row['Website'] : '';
+      const evUrl = row['Events URL'] && row['Events URL'] !== 'Not found' ? row['Events URL'] : '';
       const safeUrl = escapeHtml(url);
+      const safeEvUrl = escapeHtml(evUrl);
       const safeName = escapeHtml(row['Group name']);
       const safeArea = escapeHtml(row['Area']);
       const safeActivity = escapeHtml(row['Activity type']);
+
+      let actionButtons = '';
+      if (evUrl) {
+        actionButtons += '<a href="' + safeEvUrl + '" target="_blank" rel="noopener noreferrer" class="events-btn" aria-label="View events for ' + safeName + '">📅 Events <span class="arrow" aria-hidden="true">↗</span></a>';
+      }
+      if (url) {
+        actionButtons += '<a href="' + safeUrl + '" target="_blank" rel="noopener noreferrer" class="visit-btn" aria-label="Visit ' + safeName + ' website">Website <span class="arrow" aria-hidden="true">↗</span></a>';
+      }
 
       return '<li class="group-card" style="--i:' + (i + 1) + '">' +
         '<div class="grp-info">' +
@@ -922,12 +948,7 @@
           '<span class="pin" aria-hidden="true">📍</span> ' +
           '<span>' + (safeArea || 'Seattle Metro') + '</span>' +
         '</div>' +
-        '<div class="grp-action">' +
-          (url ?
-            '<a href="' + safeUrl + '" target="_blank" rel="noopener noreferrer" class="visit-btn" aria-label="Visit ' + safeName + ' website">' +
-              'Visit Website <span class="arrow" aria-hidden="true">↗</span>' +
-            '</a>' : '') +
-        '</div>' +
+        '<div class="grp-action">' + actionButtons + '</div>' +
       '</li>';
     }).join('');
 
