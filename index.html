@@ -90,40 +90,6 @@
   }
   .skip-link:focus { top: 12px; outline: 3px solid var(--violet); }
 
-  /* Top Navigation */
-  .top-nav {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 10;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 20px 28px;
-  }
-  .nav-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    font-size: 13px;
-    font-weight: 600;
-    color: #e2e8f0;
-    text-decoration: none;
-    background: rgba(255, 255, 255, 0.12);
-    backdrop-filter: blur(8px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    padding: 8px 16px;
-    border-radius: 999px;
-    transition: all .2s ease;
-  }
-  .nav-btn:hover {
-    background: rgba(255, 255, 255, 0.22);
-    color: #ffffff;
-    border-color: rgba(255, 255, 255, 0.35);
-  }
 
   /* ================= HERO ================= */
   .hero {
@@ -664,8 +630,7 @@
   }
 
   @media (max-width: 640px) {
-    .top-nav { position: static; padding: 16px 20px 0; justify-content: flex-start; }
-    .hero-inner { padding-top: 20px; padding-bottom: 75px; padding-left: 20px; padding-right: 20px; }
+    .hero-inner { padding-top: 36px; padding-bottom: 75px; padding-left: 20px; padding-right: 20px; }
     .hero h1 { font-size: 32px; letter-spacing: -.8px; }
     .hero .subtitle { font-size: 16px; }
     .hero-stats { gap: 24px; margin-top: 24px; }
@@ -684,11 +649,6 @@
 
   <header class="hero">
     <div class="hero-glow"></div>
-    <nav class="top-nav" aria-label="Community Links">
-      <a href="https://github.com/rayadav/seattle-communities" target="_blank" rel="noopener noreferrer" class="nav-btn">
-        <span>GitHub Repo</span> ↗
-      </a>
-    </nav>
     <div class="hero-inner">
       <div class="pill">
         <span class="pill-dot"></span>
