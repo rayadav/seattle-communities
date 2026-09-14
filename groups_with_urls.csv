@@ -1,6 +1,6 @@
 Group name,Activity type,Website,Area
 Starfire Sports Adult Soccer Leagues,Indoor Sports,https://www.starfiresports.com/,Tukwila
-Underdog Sports Kickball (Seattle/South King County),Indoor Sports,https://www.underdogseattle.com/,"South King County, Seattle"
+Underdog Sports Kickball (Seattle/South King County),Indoor Sports,https://www.underdogseattle.com/,South King County
 Arena Sports SODO Indoor Soccer,Indoor Sports,https://www.arenasports.net/,SODO
 PFM Roller Derby,Indoor Sports,https://www.pfmrollerderby.org/,"Magnuson, Seattle"
 YMCA of Greater Seattle,Fitness,https://www.seattleymca.org/,Seattle / Puget Sound area
@@ -11,7 +11,7 @@ Renton Rowing Center,Water Sports,https://www.rentonrowingcenter.org/,Renton
 Seattle Flying Dragon Boat Club,Water Sports,https://www.seattleflyingdragons.org/,Seattle
 Center for Wooden Boats,Water Sports,https://www.cwb.org/,Seattle / Puget Sound area
 Seattle Audubon Society (Birds Connect Seattle),Birding,https://seattleaudubon.org,Seattle
-Washington Trails Association,Nature/Conservation,https://www.wta.org/,Puget Sound area
+Washington Trails Association,Nature/Conservation,https://www.wta.org/,Seattle / Puget Sound area
 Seward Park Audubon Center,Birding,https://www.audubon.org/seward-park/get-involved,Seward Park
 Seattle Running Club,Running,https://www.seattlerunningclub.org/,Seattle
 The Mountaineers,Climbing,https://www.mountaineers.org/locations-lodges/seattle-program-center,Seattle
@@ -26,7 +26,7 @@ Seattle Pinball League,Games,https://www.splpinball.com/,Seattle
 Silent Book Club Seattle,Community/Volunteering,https://silentbook.club/,Seattle
 Seattle Astronomical Society,Astronomy,https://www.seattleastro.org/,Seattle
 Cocktails for Creatives Seattle,Community/Volunteering,https://seattle.eater.com/maps/best-cocktails-in-seattle,Seattle
-Gearhouse Community Outdoor Club,Outdoors,https://www.joingearhouse.com / Puget Sound area,
+Gearhouse Community Outdoor Club,Outdoors,https://www.joingearhouse.com,Seattle
 Lake Washington Rowing Club (LWRC),Water Sports,https://www.lakewashingtonrowing.com/,Seattle / Puget Sound area
 Pocock Rowing Club,Water Sports,https://www.pocockrowingclub.org/programs,Seattle / Puget Sound area
 Washington Sea Grant,Nature/Conservation,https://waseagrant.uw.edu/news-events/calendar/,Puget Sound
@@ -97,7 +97,7 @@ Seattle Tilth Alliance Garden Stewards,Nature/Conservation,https://tilthalliance
 Kubota Garden Foundation Stewards (Rainier Beach),Nature/Conservation,https://www.kubotagarden.org/,South Seattle
 Bellevue Botanical Garden Volunteers,Nature/Conservation,https://bellevuewa.gov,Bellevue
 Seattle Area Soaring Society,RC Soaring,https://seattleareasoaringsociety.com/index.shtml,Seattle
-Puget Sound Silent Flyers,RC Soaring, https://pugetsoundsilentflyers.com/,Puget Sound
+Puget Sound Silent Flyers,RC Soaring,https://pugetsoundsilentflyers.com/,Puget Sound
 Pacific Slot Car Raceways,RC Soaring,https://www.pacificslotcarraceways.com/,Seattle
 Seattle Auto Club Track Day Enthusiasts,Motorsports,https://www.motorsportreg.com/calendar/open-track-day/US/?country=US&radius=300&lat=47.49&lng=-122.29&loc=Seattle%2C+WA&types=open-track-day,Seattle
 Pacific Raceways Drag Racing Enthusiasts (Kent),Motorsports,https://www.pacificraceways.com/,Kent
@@ -119,9 +119,9 @@ Peninsula Fermentation Society,Food/Brewing,https://www.peninsulafermentation.or
 Greater Seattle Reiki Practice Group,Fitness,https://www.seattlecityreiki.com/,Seattle
 Green Lake Morning Yoga Collective,Fitness,https://www.wellnesshealingarts.com/seattleyoga,Seattle / Puget Sound area
 Puget Sound Botanical Medicine Guild,Nature/Conservation,https://www.pugetsoundnaturopathic.com/,Puget Sound
-Eastside Audubon,Birding,https://www.eastsideaudubon.org/,Eastside (East King County)
+Eastside Audubon,Birding,https://www.eastsideaudubon.org/,Eastside
 Kitsap Audubon Society,Birding,https://www.kitsapaudubon.org/,Kitsap County
 Pilchuck Audubon Society,Birding,https://www.pilchuckaudubon.org/,Snohomish County
-Rainier Audubon Society,Birding,https://rainieraudubon.org/,Auburn/Kent
+Rainier Audubon Society,Birding,https://rainieraudubon.org/,Auburn / Kent
 Skagit Audubon Society,Birding,https://www.skagitaudubon.org/,Mount Vernon
 Tahoma Bird Alliance,Birding,https://www.tahomabirdalliance.org/,Tacoma
