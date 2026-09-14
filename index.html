@@ -1064,9 +1064,8 @@
       } else {
         if (ch === '"') { inQuotes = true; }
         else if (ch === ',') { row.push(field); field = ''; }
-        else if (ch === '
-') { row.push(field); rows.push(row); row = []; field = ''; }
-        else if (ch === '') { /* skip */ }
+        else if (ch === '\n') { row.push(field); rows.push(row); row = []; field = ''; }
+        else if (ch === '\r') { /* skip */ }
         else { field += ch; }
       }
     }
