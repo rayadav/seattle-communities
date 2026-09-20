@@ -1,0 +1,1168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Seattle Communities Directory | Discover Local Clubs, Leagues & Meetups</title>
+<meta name="description" content="Discover over 120+ active community groups, outdoor clubs, sports leagues, arts collectives, and enthusiast meetups across Greater Seattle and the Puget Sound area.">
+
+<!-- OpenGraph / Social Media Meta Tags -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://rayadav.github.io/seattle-communities/directory.html">
+<meta property="og:title" content="Seattle Communities Directory">
+<meta property="og:description" content="Discover 120+ local clubs, leagues, outdoor groups, and enthusiast meetups across Greater Seattle.">
+<meta property="og:image" content="./hero.jpeg">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Seattle Communities Directory">
+<meta name="twitter:description" content="Discover 120+ local clubs, leagues, outdoor groups, and enthusiast meetups across Greater Seattle.">
+<meta name="twitter:image" content="./hero.jpeg">
+
+<!-- SVG Favicon -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌲</text></svg>">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --ink:        #0b1f3a;
+    --ink-soft:   #152c4a;
+    --violet:     #6d4ff0;
+    --violet-deep:#4b2fd6;
+    --violet-light:#f3f0ff;
+    --teal:       #14b8a6;
+    --teal-deep:  #0d9888;
+    --sky:        #38bdf8;
+    --bg:         #eef2f8;
+    --surface:    #ffffff;
+    --surface-2:  #f8fafc;
+    --line:       #e2e8f0;
+    --line-soft:  #edf2f7;
+    --text:       #0f1b2d;
+    --text-soft:  #55637a;
+    --text-faint: #64748b;
+
+    --shadow-sm: 0 1px 2px rgba(11,31,58,.05), 0 1px 3px rgba(11,31,58,.04);
+    --shadow-md: 0 8px 24px rgba(11,31,58,.08);
+    --shadow-lg: 0 20px 50px rgba(11,31,58,.14);
+    --radius-sm: 8px;
+    --radius:    14px;
+    --radius-lg: 20px;
+
+    --font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-display: 'Sora', var(--font);
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: var(--font);
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Skip link for accessibility */
+  .skip-link {
+    position: absolute;
+    left: 14px;
+    top: -60px;
+    z-index: 100;
+    padding: 10px 18px;
+    border-radius: var(--radius-sm);
+    background: #fff;
+    color: var(--violet-deep);
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+    transition: top .2s ease;
+    box-shadow: var(--shadow-md);
+  }
+  .skip-link:focus { top: 12px; outline: 3px solid var(--violet); }
+
+
+  /* ================= HERO ================= */
+  .hero {
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    background:
+      linear-gradient(160deg, rgba(11,28,52,.84) 0%, rgba(13,28,52,.75) 45%, rgba(11,24,46,.90) 100%),
+      url('./hero.jpeg') center/cover no-repeat;
+    border-bottom: 1px solid rgba(255,255,255,.08);
+  }
+
+  .hero-glow {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background-image:
+      radial-gradient(2px 2px at 20% 30%, rgba(255,255,255,.5), transparent),
+      radial-gradient(2px 2px at 70% 18%, rgba(255,255,255,.35), transparent),
+      radial-gradient(1.5px 1.5px at 45% 12%, rgba(255,255,255,.4), transparent),
+      radial-gradient(1.5px 1.5px at 85% 30%, rgba(255,255,255,.3), transparent),
+      radial-gradient(2px 2px at 33% 42%, rgba(255,255,255,.25), transparent);
+    background-repeat: no-repeat;
+    opacity: .6;
+  }
+
+  .hero-inner {
+    position: relative;
+    z-index: 2;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 70px 28px 105px;
+  }
+
+  .pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: .2px;
+    color: #d6ccff;
+    background: rgba(109,79,240,.24);
+    border: 1px solid rgba(167,150,255,.4);
+    padding: 7px 16px;
+    border-radius: 999px;
+    margin-bottom: 22px;
+    backdrop-filter: blur(8px);
+  }
+
+  .pill .count {
+    color: #fff;
+    font-weight: 800;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .pill-dot {
+    width: 8px; height: 8px; border-radius: 50%;
+    background: #34d399;
+    box-shadow: 0 0 0 3px rgba(52,211,153,.3);
+  }
+
+  .hero h1 {
+    font-family: var(--font-display);
+    font-size: 52px;
+    font-weight: 800;
+    letter-spacing: -1.3px;
+    line-height: 1.06;
+    margin-bottom: 18px;
+    max-width: 18ch;
+    text-shadow: 0 2px 10px rgba(0,0,0,.4);
+  }
+
+  .hero h1 .accent {
+    background: linear-gradient(90deg, #9d8eff 0%, #4fd1ff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .hero .subtitle {
+    font-size: 18.5px;
+    font-weight: 400;
+    color: #cbd5e1;
+    max-width: 620px;
+    line-height: 1.55;
+    text-shadow: 0 1px 4px rgba(0,0,0,.5);
+  }
+
+  .hero-stats {
+    display: flex;
+    gap: 40px;
+    margin-top: 34px;
+    flex-wrap: wrap;
+  }
+  .hero-stat { display: flex; flex-direction: column; }
+  .hero-stat .num {
+    font-family: var(--font-display);
+    font-size: 28px;
+    font-weight: 800;
+    color: #fff;
+    letter-spacing: -.6px;
+  }
+  .hero-stat .lbl {
+    font-size: 12.5px;
+    color: #94a3b8;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .6px;
+    margin-top: 2px;
+  }
+
+  /* ================= FILTER SECTION ================= */
+  .filter-wrap {
+    position: sticky;
+    z-index: 40;
+    top: 0;
+    background: linear-gradient(180deg, var(--bg) 80%, rgba(238,242,248,0));
+    padding: 0 28px 12px;
+    pointer-events: none;
+  }
+  .filter-wrap > * { pointer-events: auto; }
+
+  .filters {
+    max-width: 1280px;
+    margin: -50px auto 0;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-lg);
+    padding: 20px;
+    box-shadow: var(--shadow-lg);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  /* Search & Controls Row */
+  .filter-row-top {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+  }
+
+  .search-wrapper {
+    position: relative;
+    flex: 1 1 300px;
+  }
+
+  .search-box {
+    width: 100%;
+    padding: 13px 40px 13px 44px;
+    border: 1.5px solid var(--line);
+    border-radius: 12px;
+    font-family: var(--font);
+    font-size: 14.5px;
+    font-weight: 500;
+    color: var(--text);
+    outline: none;
+    transition: all .15s ease;
+    background: var(--surface-2) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2364748b' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='7'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E") no-repeat 15px center;
+    background-size: 18px 18px;
+  }
+  .search-box::placeholder { color: var(--text-faint); }
+  .search-box:focus {
+    border-color: var(--violet);
+    box-shadow: 0 0 0 4px rgba(109,79,240,.18);
+    background-color: #fff;
+  }
+
+  .clear-search-btn {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 18px;
+    line-height: 1;
+    color: var(--text-faint);
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 50%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+  }
+  .clear-search-btn:hover { color: var(--text); }
+
+  .filter-select {
+    padding: 13px 38px 13px 15px;
+    border: 1.5px solid var(--line);
+    border-radius: 12px;
+    font-family: var(--font);
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text);
+    appearance: none;
+    background: var(--surface-2) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%2364748b' d='M6 8L1 3h10z'/%3E%3C/svg%3E") no-repeat right 14px center;
+    background-size: 11px 11px;
+    outline: none;
+    cursor: pointer;
+    min-width: 170px;
+    transition: all .15s ease;
+  }
+  .filter-select:hover { border-color: #cbd5e1; }
+  .filter-select:focus {
+    border-color: var(--violet);
+    box-shadow: 0 0 0 4px rgba(109,79,240,.18);
+    background-color: #fff;
+  }
+
+  /* Reset button */
+  .reset-filters-btn {
+    display: none;
+    align-items: center;
+    gap: 6px;
+    padding: 11px 16px;
+    border-radius: 12px;
+    border: 1.5px solid #fecaca;
+    background: #fef2f2;
+    color: #dc2626;
+    font-family: var(--font);
+    font-size: 13.5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .15s ease;
+    white-space: nowrap;
+  }
+  .reset-filters-btn:hover {
+    background: #fee2e2;
+    border-color: #fca5a5;
+  }
+
+  /* Result Count */
+  .result-count {
+    margin-left: auto;
+    font-size: 13.5px;
+    font-weight: 500;
+    color: var(--text-soft);
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .result-count b { color: var(--text); font-weight: 700; }
+
+  /* Quick-filter Category Pills Row */
+  .category-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+    border-top: 1px solid var(--line-soft);
+    padding-top: 14px;
+  }
+  .chip-label {
+    font-size: 12.5px;
+    font-weight: 600;
+    color: var(--text-faint);
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    margin-right: 4px;
+  }
+  .chip {
+    border: 1px solid var(--line);
+    background: var(--surface-2);
+    color: var(--text-soft);
+    font-family: var(--font);
+    font-size: 13px;
+    font-weight: 600;
+    padding: 6px 14px;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: all .15s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .chip:hover {
+    background: #e2e8f0;
+    color: var(--text);
+  }
+  .chip.active {
+    background: var(--violet);
+    color: #ffffff;
+    border-color: var(--violet);
+    box-shadow: 0 2px 8px rgba(109,79,240,.35);
+  }
+
+  /* ================= LIST CONTAINER ================= */
+  .list-wrap {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 24px 28px 80px;
+    width: 100%;
+    flex: 1;
+  }
+
+  .list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  /* Group Card */
+  .group-card {
+    display: grid;
+    grid-template-columns: 2.2fr 1.3fr 1.2fr auto;
+    align-items: center;
+    gap: 20px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 18px 24px;
+    box-shadow: var(--shadow-sm);
+    transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+    animation: rise .35s both;
+  }
+  .group-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+    border-color: #cbd5e1;
+  }
+  .group-card:nth-child(n+4) { animation-delay: calc(min((var(--i) - 3) * 20ms, 200ms)); }
+
+  @keyframes rise {
+    from { opacity: 0; transform: translateY(6px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  /* Group Title & Link */
+  .grp-info {
+    min-width: 0;
+  }
+  .grp-title-link {
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--text);
+    line-height: 1.35;
+    text-decoration: none;
+    display: inline-block;
+    transition: color .15s ease;
+  }
+  .grp-title-link:hover {
+    color: var(--violet);
+  }
+
+  /* Badge */
+  .badge-wrapper {
+    display: flex;
+    align-items: center;
+    min-width: 0;
+  }
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 6px 13px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: .1px;
+    white-space: nowrap;
+    border: 1px solid rgba(0,0,0,.04);
+    box-shadow: 0 1px 2px rgba(0,0,0,.05);
+  }
+  .badge .dot {
+    width: 7px; height: 7px; border-radius: 50%;
+    background: currentColor;
+    flex-shrink: 0;
+  }
+
+  /* Location */
+  .grp-area {
+    font-size: 13.5px;
+    color: var(--text-soft);
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    min-width: 0;
+  }
+  .grp-area .pin {
+    color: var(--teal-deep);
+    font-size: 14px;
+    flex-shrink: 0;
+  }
+
+  /* Action Buttons (Events & Website) */
+  .grp-action {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  .visit-btn, .events-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 7px 13px;
+    border-radius: 10px;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: all .15s ease;
+  }
+  .visit-btn {
+    color: var(--violet-deep);
+    background: var(--violet-light);
+    border: 1px solid rgba(109,79,240,.18);
+  }
+  .visit-btn:hover {
+    background: var(--violet);
+    color: #ffffff;
+    border-color: var(--violet);
+    box-shadow: 0 2px 8px rgba(109,79,240,.25);
+  }
+  .events-btn {
+    color: #0f766e;
+    background: #f0fdfa;
+    border: 1px solid rgba(20,184,166,.32);
+  }
+  .events-btn:hover {
+    background: #0d9888;
+    color: #ffffff;
+    border-color: #0d9888;
+    box-shadow: 0 2px 8px rgba(13,152,136,.3);
+  }
+  .visit-btn .arrow, .events-btn .arrow {
+    font-size: 12px;
+    transition: transform .15s ease;
+  }
+  .visit-btn:hover .arrow, .events-btn:hover .arrow {
+    transform: translate(2px, -2px);
+  }
+
+  /* Loading State */
+  .status-bar {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 90px 28px;
+    text-align: center;
+  }
+  .spinner {
+    width: 42px; height: 42px;
+    border: 3.5px solid var(--line);
+    border-top-color: var(--violet);
+    border-radius: 50%;
+    animation: spin .7s linear infinite;
+    margin: 0 auto 18px;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .status-text { font-size: 14.5px; color: var(--text-soft); font-weight: 500; }
+  .error-msg {
+    color: #b91c1c;
+    background: #fef2f2;
+    border: 1px solid #fecaca;
+    padding: 14px 20px;
+    border-radius: 12px;
+    font-size: 14px;
+    display: inline-block;
+  }
+
+  /* Empty State */
+  .empty-state {
+    text-align: center;
+    padding: 72px 28px;
+    color: var(--text-soft);
+    background: var(--surface);
+    border: 1px dashed var(--line);
+    border-radius: var(--radius-lg);
+  }
+  .empty-state-icon { font-size: 44px; margin-bottom: 12px; }
+  .empty-state h3 { font-size: 18px; font-weight: 700; color: var(--text); margin-bottom: 6px; }
+  .empty-state p { font-size: 14.5px; color: var(--text-soft); margin-bottom: 20px; }
+  .empty-reset-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: var(--violet);
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: background .15s ease;
+  }
+  .empty-reset-btn:hover { background: var(--violet-deep); }
+
+  /* Footer */
+  .foot {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 30px 28px 60px;
+    text-align: center;
+    color: var(--text-faint);
+    font-size: 13px;
+    border-top: 1px solid var(--line);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+  .foot-links {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .foot-links a {
+    color: var(--violet-deep);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color .15s ease;
+  }
+  .foot-links a:hover { color: var(--violet); text-decoration: underline; }
+
+  /* Responsive Design */
+  @media (max-width: 960px) {
+    .hero-inner { padding-top: 55px; padding-bottom: 90px; }
+    .hero h1 { font-size: 42px; }
+    .hero-stat .num { font-size: 24px; }
+    .group-card {
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      padding: 18px;
+    }
+    .grp-info { grid-column: 1 / -1; }
+    .grp-action { grid-column: 1 / -1; justify-content: flex-start; gap: 8px; width: 100%; }
+    .visit-btn, .events-btn { flex: 1 1 auto; justify-content: center; }
+  }
+
+  @media (max-width: 640px) {
+    .hero-inner { padding-top: 36px; padding-bottom: 75px; padding-left: 20px; padding-right: 20px; }
+    .hero h1 { font-size: 32px; letter-spacing: -.8px; }
+    .hero .subtitle { font-size: 16px; }
+    .hero-stats { gap: 24px; margin-top: 24px; }
+    .filter-wrap { padding: 0 16px 12px; }
+    .filters { margin-top: -38px; padding: 16px; }
+    .filter-select { width: 100%; min-width: auto; }
+    .result-count { width: 100%; margin-left: 0; justify-content: space-between; }
+    .list-wrap { padding: 18px 16px 60px; }
+    .category-chips { overflow-x: auto; flex-wrap: nowrap; padding-bottom: 6px; -webkit-overflow-scrolling: touch; }
+    .chip { flex-shrink: 0; }
+  }
+  /* ================= NAVIGATION BAR ================= */
+  .site-nav {
+    position: relative;
+    z-index: 20;
+    background: rgba(11, 31, 58, 0.82);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .site-nav-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 14px 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+  }
+  .nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: -0.3px;
+  }
+  .nav-emoji {
+    font-size: 22px;
+    line-height: 1;
+  }
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .nav-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 16px;
+    border-radius: 999px;
+    font-size: 13.5px;
+    font-weight: 600;
+    color: #cbd5e1;
+    text-decoration: none;
+    transition: all .2s ease;
+    border: 1px solid transparent;
+  }
+  .nav-link:hover {
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.1);
+  }
+  .nav-link.active {
+    color: #ffffff;
+    background: rgba(109, 79, 240, 0.45);
+    border-color: rgba(167, 150, 255, 0.5);
+    box-shadow: 0 0 16px rgba(109, 79, 240, 0.3);
+  }
+  @media (max-width: 640px) {
+    .site-nav-inner { padding: 12px 18px; }
+  }
+</style>
+</head>
+<body>
+  <a class="skip-link" href="#list-wrap">Skip to list</a>
+
+  <!-- Top Navigation Bar -->
+  <nav class="site-nav" aria-label="Main Navigation">
+    <div class="site-nav-inner">
+      <a href="./index.html" class="nav-brand">
+        <span class="nav-emoji">🌲</span>
+        <span class="nav-title">Seattle Communities</span>
+      </a>
+      <div class="nav-links">
+        <a href="./index.html" class="nav-link">Events Calendar</a>
+        <a href="./directory.html" class="nav-link active">Directory</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-glow"></div>
+    <div class="hero-inner">
+      <div class="pill">
+        <span class="pill-dot"></span>
+        <span><span class="count" id="group-count">0</span> active communities across Greater Seattle</span>
+      </div>
+      <h1>Seattle Communities <span class="accent">Directory</span></h1>
+      <p class="subtitle">Discover clubs, outdoor adventures, sports leagues, arts collectives, and fellow enthusiasts. Find your people, by your interest.</p>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <span class="num" id="stat-total">0</span>
+          <span class="lbl">Communities</span>
+        </div>
+        <div class="hero-stat">
+          <span class="num" id="stat-areas">0</span>
+          <span class="lbl">Neighborhoods &amp; Areas</span>
+        </div>
+        <div class="hero-stat">
+          <span class="num" id="stat-activities">0</span>
+          <span class="lbl">Activity Types</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="filter-wrap" role="region" aria-label="Filter and search controls">
+    <div class="filters">
+      <div class="filter-row-top">
+        <div class="search-wrapper">
+          <input type="text" id="search" class="search-box" placeholder="Search by name, activity, or area (e.g. kayak, Capitol Hill, birding)…" autocomplete="off" aria-label="Search community directory">
+          <button type="button" id="clear-search" class="clear-search-btn" aria-label="Clear search input">&times;</button>
+        </div>
+        <select id="filter-activity" class="filter-select" aria-label="Filter by specific activity">
+          <option value="">All activities</option>
+        </select>
+        <select id="filter-area" class="filter-select" aria-label="Filter by neighborhood or area">
+          <option value="">All areas</option>
+        </select>
+        <select id="filter-sort" class="filter-select" aria-label="Sort communities">
+          <option value="name-asc">Sort: Name (A → Z)</option>
+          <option value="name-desc">Sort: Name (Z → A)</option>
+          <option value="activity-asc">Sort: Activity Type</option>
+          <option value="area-asc">Sort: Area / Location</option>
+        </select>
+        <button type="button" id="reset-filters" class="reset-filters-btn" aria-label="Reset all filters">
+          <span>✕</span> Reset
+        </button>
+        <div class="result-count" id="result-count" role="status" aria-live="polite">
+          <span>Showing <b id="showing-count">0</b> of <span id="total-count">0</span></span>
+        </div>
+      </div>
+
+      <div class="category-chips" id="category-chips" role="group" aria-label="Category quick filters">
+        <span class="chip-label">Categories:</span>
+        <button type="button" class="chip active" data-cat="all">All</button>
+        <button type="button" class="chip" data-cat="sport">🏃 Sports &amp; Fitness</button>
+        <button type="button" class="chip" data-cat="nature">🌲 Outdoors &amp; Nature</button>
+        <button type="button" class="chip" data-cat="arts">🎨 Arts &amp; Culture</button>
+        <button type="button" class="chip" data-cat="science">🔬 Tech &amp; Science</button>
+        <button type="button" class="chip" data-cat="community">🤝 Community &amp; Civic</button>
+        <button type="button" class="chip" data-cat="food">☕ Food &amp; Drink</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="status-bar" id="status-bar" role="status" aria-live="polite">
+    <div class="spinner" aria-hidden="true"></div>
+    <div class="status-text" id="status-text">Loading communities directory…</div>
+  </div>
+
+  <main class="list-wrap" id="list-wrap" aria-label="List of communities">
+    <ul class="list" id="list"></ul>
+  </main>
+
+  <footer class="foot" id="foot" style="display:none;">
+    <div class="foot-links">
+      <a href="./index.html">Events Calendar</a>
+      <span>·</span>
+      <a href="./directory.html">Directory</a>
+      <span>·</span>
+      <a href="https://github.com/rayadav/seattle-communities" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+      <span>·</span>
+      <a href="https://github.com/rayadav/seattle-communities/issues/new" target="_blank" rel="noopener noreferrer">Suggest a Community or Edit</a>
+      <span>·</span>
+      <a href="#list-wrap">Back to Top ↑</a>
+    </div>
+    <span class="updated">Curated &amp; maintained for the Seattle community · Dataset updated September 2026</span>
+  </footer>
+
+<script>
+(function() {
+  'use strict';
+
+  const DATA_URL = './groups_with_urls.csv';
+  let allData = [];
+  let filteredData = [];
+  let activeCategory = 'all';
+
+  // Map activity to broad category
+  function classify(name) {
+    const n = (name || '').toLowerCase();
+    if (/(tech|developer|program|coding|python|rust|ai-ml|ml|data|cloud|cyber|devops|ux|qa|test|mobile|web|software|programming|quantum|women-in-tech|computing|electronics|ham[ _-]radio|maker|model[ _-]rail|pinball|chess|board|mahjong|backgammon|poker|bridge|gammon|scale[ _-]rc|rc[ _-](soaring|racing)|tools|watch|repair|game)/.test(n)) return 'science';
+    if (/(sport|league|soccer|tennis|running|cycling|kayak|canoe|paddl|sail|row|swim|surf|ski|hike|backpack|climb|orient|pickleball|volley|softball|baseball|gym|fitness|parkour|derby|boxing|kickball|martial|judo|jiu-jitsu|muay|fencing|kendo|calisthenics|kettlebell|lift|track|ball|golf|curling|ice-hockey|hockey|roller|kart|drag[ _-]racing|track[ _-]driving|motorcycl|scooter|dragon[ _-]boat|off[ _-]road|flight|aviation|yoga|wellness|mindfulness|pilates|health)/.test(n)) return 'sport';
+    if (/(nature|outdoor|bird|wildlife|tree|forest|mushroom|environmental|conservation|gardening|native|orchid|lichen|beekeep|stargaze|astronom|entomolog|geolog|natural[ _-]history|museum|heritage)/.test(n)) return 'nature';
+    if (/(coffee|food|brew|ferment|wine|beer|culinary|bake|chocolate|tea)/.test(n)) return 'food';
+    if (/(volunteer|civic|advocac|humanitarian|food[ _-]bank|emergency|mutual[ _-]aid|neighbor|engagement|networking)/.test(n)) return 'community';
+    if (/(art|music|dance|paint|sculpt|photo|print|pottery|ceramic|glass|calli|storytell|textile|quilt|book[- ]arts|book[ _-]club|woodworking|metalwork|welding)/.test(n)) return 'arts';
+    return 'science';
+  }
+
+  // Palette with accessible high-contrast colors
+  const CATS = {
+    sport:     { bg: '#15803d', fg: '#ffffff' },
+    nature:    { bg: '#0f766e', fg: '#ffffff' },
+    science:   { bg: '#4338ca', fg: '#ffffff' },
+    arts:      { bg: '#be123c', fg: '#ffffff' },
+    food:      { bg: '#c2410c', fg: '#ffffff' },
+    community: { bg: '#6d28d9', fg: '#ffffff' },
+  };
+
+  const badgeColors = {};
+  function badgeColor(activityType) {
+    const key = classify(activityType);
+    if (!badgeColors[key]) badgeColors[key] = CATS[key] || CATS.sport;
+    return badgeColors[key];
+  }
+
+  function escapeHtml(s) {
+    if (!s) return '';
+    const div = document.createElement('div');
+    div.textContent = s;
+    return div.innerHTML;
+  }
+
+  function updateUrlState() {
+    const search = document.getElementById('search').value.trim();
+    const activity = document.getElementById('filter-activity').value;
+    const area = document.getElementById('filter-area').value;
+    const sort = document.getElementById('filter-sort').value;
+
+    const params = new URLSearchParams();
+    if (search) params.set('q', search);
+    if (activeCategory !== 'all') params.set('category', activeCategory);
+    if (activity) params.set('activity', activity);
+    if (area) params.set('area', area);
+    if (sort !== 'name-asc') params.set('sort', sort);
+
+    const queryStr = params.toString();
+    const newUrl = window.location.pathname + (queryStr ? '?' + queryStr : '');
+    window.history.replaceState({}, '', newUrl);
+  }
+
+  function filterAndSort() {
+    const search = document.getElementById('search').value.toLowerCase().trim();
+    const activity = document.getElementById('filter-activity').value;
+    const area = document.getElementById('filter-area').value;
+    const sortVal = document.getElementById('filter-sort').value;
+
+    // Toggle clear search button
+    const clearBtn = document.getElementById('clear-search');
+    clearBtn.style.display = search ? 'inline-flex' : 'none';
+
+    // Toggle reset filters button
+    const isFiltered = !!(search || (activeCategory !== 'all') || activity || area || (sortVal !== 'name-asc'));
+    const resetBtn = document.getElementById('reset-filters');
+    resetBtn.style.display = isFiltered ? 'inline-flex' : 'none';
+
+    filteredData = allData.filter(row => {
+      // Category Chip Filter
+      if (activeCategory !== 'all' && classify(row['Activity type']) !== activeCategory) {
+        return false;
+      }
+      // Activity Select Filter
+      if (activity && row['Activity type'] !== activity) {
+        return false;
+      }
+      // Area Select Filter
+      if (area && row['Area'] !== area) {
+        return false;
+      }
+      // Comprehensive Search: match Name, Activity Type, or Area
+      if (search) {
+        const nameMatch = (row['Group name'] || '').toLowerCase().includes(search);
+        const actMatch = (row['Activity type'] || '').toLowerCase().includes(search);
+        const areaMatch = (row['Area'] || '').toLowerCase().includes(search);
+        if (!nameMatch && !actMatch && !areaMatch) return false;
+      }
+      return true;
+    });
+
+    // Sorting
+    filteredData.sort((a, b) => {
+      let av = '', bv = '';
+      if (sortVal === 'name-asc' || sortVal === 'name-desc') {
+        av = a['Group name'] || '';
+        bv = b['Group name'] || '';
+        const cmp = av.localeCompare(bv, undefined, { sensitivity: 'base' });
+        return sortVal === 'name-asc' ? cmp : -cmp;
+      } else if (sortVal === 'activity-asc') {
+        av = a['Activity type'] || '';
+        bv = b['Activity type'] || '';
+        const cmp = av.localeCompare(bv, undefined, { sensitivity: 'base' });
+        return cmp !== 0 ? cmp : (a['Group name'] || '').localeCompare(b['Group name'] || '');
+      } else if (sortVal === 'area-asc') {
+        av = a['Area'] || '';
+        bv = b['Area'] || '';
+        const cmp = av.localeCompare(bv, undefined, { sensitivity: 'base' });
+        return cmp !== 0 ? cmp : (a['Group name'] || '').localeCompare(b['Group name'] || '');
+      }
+      return 0;
+    });
+
+    renderList();
+    updateResultCount();
+    updateUrlState();
+  }
+
+  function renderList() {
+    const list = document.getElementById('list');
+    if (filteredData.length === 0) {
+      list.innerHTML =
+        '<li><div class="empty-state">' +
+        '<div class="empty-state-icon" aria-hidden="true">🔍</div>' +
+        '<h3>No matching communities found</h3>' +
+        '<p>Try adjusting your search terms or resetting the filters to explore all groups.</p>' +
+        '<button type="button" class="empty-reset-btn" onclick="window.resetAllFilters()">Reset All Filters</button>' +
+        '</div></li>';
+      return;
+    }
+
+    const html = filteredData.map((row, i) => {
+      const bc = badgeColor(row['Activity type']);
+      const url = row['Website'] && row['Website'] !== 'Not found' ? row['Website'] : '';
+      const evUrl = row['Events URL'] && row['Events URL'] !== 'Not found' ? row['Events URL'] : '';
+      const safeUrl = escapeHtml(url);
+      const safeEvUrl = escapeHtml(evUrl);
+      const safeName = escapeHtml(row['Group name']);
+      const safeArea = escapeHtml(row['Area']);
+      const safeActivity = escapeHtml(row['Activity type']);
+
+      let actionButtons = '';
+      if (evUrl) {
+        actionButtons += '<a href="' + safeEvUrl + '" target="_blank" rel="noopener noreferrer" class="events-btn" aria-label="View events for ' + safeName + '">📅 Events <span class="arrow" aria-hidden="true">↗</span></a>';
+      }
+      if (url) {
+        actionButtons += '<a href="' + safeUrl + '" target="_blank" rel="noopener noreferrer" class="visit-btn" aria-label="Visit ' + safeName + ' website">Website <span class="arrow" aria-hidden="true">↗</span></a>';
+      }
+
+      return '<li class="group-card" style="--i:' + (i + 1) + '">' +
+        '<div class="grp-info">' +
+          (url ?
+            '<a href="' + safeUrl + '" target="_blank" rel="noopener noreferrer" class="grp-title-link">' + safeName + '</a>' :
+            '<span class="grp-title-link">' + safeName + '</span>') +
+        '</div>' +
+        '<div class="badge-wrapper">' +
+          '<span class="badge" style="color:' + bc.fg + '; background:' + bc.bg + '">' +
+            '<span class="dot"></span>' +
+            '<span>' + safeActivity + '</span>' +
+          '</span>' +
+        '</div>' +
+        '<div class="grp-area">' +
+          '<span class="pin" aria-hidden="true">📍</span> ' +
+          '<span>' + (safeArea || 'Seattle Metro') + '</span>' +
+        '</div>' +
+        '<div class="grp-action">' + actionButtons + '</div>' +
+      '</li>';
+    }).join('');
+
+    list.innerHTML = html;
+  }
+
+  function updateResultCount() {
+    const showing = filteredData.length;
+    const total = allData.length;
+    document.getElementById('showing-count').textContent = showing.toLocaleString('en-US');
+    document.getElementById('total-count').textContent = total.toLocaleString('en-US');
+  }
+
+  window.resetAllFilters = function() {
+    document.getElementById('search').value = '';
+    document.getElementById('filter-activity').value = '';
+    document.getElementById('filter-area').value = '';
+    document.getElementById('filter-sort').value = 'name-asc';
+    activeCategory = 'all';
+    document.querySelectorAll('.chip').forEach(c => {
+      c.classList.toggle('active', c.dataset.cat === 'all');
+    });
+    filterAndSort();
+  };
+
+  function populateSelects() {
+    const activitySelect = document.getElementById('filter-activity');
+    const areaSelect = document.getElementById('filter-area');
+
+    const activities = [...new Set(allData.map(r => r['Activity type']).filter(Boolean))].sort();
+    const areas = [...new Set(allData.map(r => r['Area']).filter(Boolean))].sort();
+
+    activities.forEach(a => {
+      const opt = document.createElement('option');
+      opt.value = a;
+      opt.textContent = a;
+      activitySelect.appendChild(opt);
+    });
+
+    areas.forEach(a => {
+      const opt = document.createElement('option');
+      opt.value = a;
+      opt.textContent = a;
+      areaSelect.appendChild(opt);
+    });
+  }
+
+  function readUrlParams() {
+    const params = new URLSearchParams(window.location.search);
+    const q = params.get('q');
+    const cat = params.get('category');
+    const act = params.get('activity');
+    const area = params.get('area');
+    const sort = params.get('sort');
+
+    if (q) document.getElementById('search').value = q;
+    if (cat) {
+      activeCategory = cat;
+      document.querySelectorAll('.chip').forEach(c => {
+        c.classList.toggle('active', c.dataset.cat === cat);
+      });
+    }
+    if (act) document.getElementById('filter-activity').value = act;
+    if (area) document.getElementById('filter-area').value = area;
+    if (sort) document.getElementById('filter-sort').value = sort;
+  }
+
+  function boot() {
+    document.getElementById('status-bar').style.display = 'none';
+    document.getElementById('list-wrap').style.display = 'block';
+    document.getElementById('foot').style.display = 'flex';
+
+    populateSelects();
+
+    const total = allData.length;
+    document.getElementById('group-count').textContent = total.toLocaleString('en-US');
+    document.getElementById('stat-total').textContent = total.toLocaleString('en-US');
+    document.getElementById('stat-areas').textContent = [...new Set(allData.map(r => r['Area']).filter(Boolean))].length.toLocaleString('en-US');
+    document.getElementById('stat-activities').textContent = [...new Set(allData.map(r => r['Activity type']).filter(Boolean))].length.toLocaleString('en-US');
+
+    initEvents();
+    readUrlParams();
+    filterAndSort();
+  }
+
+  function initEvents() {
+    const searchInput = document.getElementById('search');
+    searchInput.addEventListener('input', debounce(filterAndSort, 120));
+
+    document.getElementById('clear-search').addEventListener('click', () => {
+      searchInput.value = '';
+      searchInput.focus();
+      filterAndSort();
+    });
+
+    document.getElementById('filter-activity').addEventListener('change', filterAndSort);
+    document.getElementById('filter-area').addEventListener('change', filterAndSort);
+    document.getElementById('filter-sort').addEventListener('change', filterAndSort);
+    document.getElementById('reset-filters').addEventListener('click', window.resetAllFilters);
+
+    // Category chips click handler
+    document.getElementById('category-chips').addEventListener('click', e => {
+      const chip = e.target.closest('.chip');
+      if (!chip) return;
+      document.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
+      chip.classList.add('active');
+      activeCategory = chip.dataset.cat;
+      filterAndSort();
+    });
+  }
+
+  function debounce(fn, ms) {
+    let timer;
+    return function(...args) {
+      clearTimeout(timer);
+      timer = setTimeout(() => fn.apply(this, args), ms);
+    };
+  }
+
+  function parseCSV(text) {
+    const rows = [];
+    let row = [];
+    let field = '';
+    let inQuotes = false;
+    for (let i = 0; i < text.length; i++) {
+      const ch = text[i];
+      if (inQuotes) {
+        if (ch === '"') {
+          if (text[i + 1] === '"') { field += '"'; i++; }
+          else { inQuotes = false; }
+        } else {
+          field += ch;
+        }
+      } else {
+        if (ch === '"') { inQuotes = true; }
+        else if (ch === ',') { row.push(field); field = ''; }
+        else if (ch === '\n') { row.push(field); rows.push(row); row = []; field = ''; }
+        else if (ch === '\r') { /* skip */ }
+        else { field += ch; }
+      }
+    }
+    if (field.length > 0 || row.length > 0) { row.push(field); rows.push(row); }
+    return rows;
+  }
+
+  function loadCSV(url) {
+    fetch(url)
+      .then(res => {
+        if (!res.ok) throw new Error('Failed to load ' + url + ' (' + res.status + ')');
+        return res.text();
+      })
+      .then(text => {
+        const rows = parseCSV(text);
+        if (rows.length === 0) return;
+        const headers = rows.shift().map(h => h.trim());
+        allData = rows.filter(r => r.some(c => c.trim() !== '')).map(r => {
+          const obj = {};
+          headers.forEach((h, i) => { obj[h] = (r[i] !== undefined ? r[i] : '').trim(); });
+          return obj;
+        });
+        if (allData.length === 0) throw new Error('No data rows found in CSV');
+        boot();
+      })
+      .catch(err => {
+        document.getElementById('status-bar').style.display = 'block';
+        document.getElementById('status-text').innerHTML =
+          '<span class="error-msg">Error loading data: ' + err.message + '</span>';
+      });
+  }
+
+  loadCSV(DATA_URL);
+})();
+</script>
+</body>
+</html>
