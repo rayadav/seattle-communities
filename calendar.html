@@ -485,6 +485,12 @@
     text-transform: uppercase;
     letter-spacing: .5px;
   }
+  .agenda-day-relative.is-today {
+    color: #047857;
+    background: #ecfdf5;
+    border-color: #a7f3d0;
+    box-shadow: 0 0 0 2px rgba(16,185,129,.15);
+  }
   .agenda-day-count {
     margin-left: auto;
     font-size: 13px;
@@ -864,6 +870,7 @@
       <div class="time-pills-row">
         <span class="time-pills-label">Timeframe:</span>
         <button type="button" class="time-pill active" data-timeframe="all">All Upcoming</button>
+        <button type="button" class="time-pill" data-timeframe="today">Today (Sep 20)</button>
         <button type="button" class="time-pill" data-timeframe="this-week">This Week</button>
         <button type="button" class="time-pill" data-timeframe="this-weekend">This Weekend</button>
         <button type="button" class="time-pill" data-timeframe="next-week">Next Week</button>
@@ -1023,20 +1030,13 @@
 
   // Helper date functions
   function getRelativeDayLabel(dateStr) {
-    const target = new Date(dateStr + 'T00:00:00');
-    const day = target.getDay(); // 0=Sun, 6=Sat
-    if (dateStr >= '2026-09-25' && dateStr <= '2026-09-27') {
-      return (day === 0 || day === 6) ? 'This Weekend' : 'This Week';
-    }
-    if (dateStr >= '2026-09-28' && dateStr <= '2026-10-04') {
-      return (day === 0 || day === 6) ? 'Next Weekend' : 'Next Week';
-    }
-    if (dateStr.startsWith('2026-10')) {
-      return 'October';
-    }
-    if (dateStr.startsWith('2026-11')) {
-      return 'November';
-    }
+    if (dateStr === '2026-09-20') return 'Today';
+    if (dateStr === '2026-09-21') return 'Tomorrow';
+    if (dateStr >= '2026-09-22' && dateStr <= '2026-09-25') return 'This Week';
+    if (dateStr === '2026-09-26' || dateStr === '2026-09-27') return 'This Weekend';
+    if (dateStr >= '2026-09-28' && dateStr <= '2026-10-04') return 'Next Week';
+    if (dateStr.startsWith('2026-10')) return 'October';
+    if (dateStr.startsWith('2026-11')) return 'November';
     return 'Upcoming';
   }
 
@@ -1129,8 +1129,10 @@
 
       // Timeframe filtering
       const dateStr = ev.dateString;
-      if (activeTimeframe === 'this-week') {
-        if (!(dateStr >= '2026-09-21' && dateStr <= '2026-09-27')) return false;
+      if (activeTimeframe === 'today') {
+        if (dateStr !== '2026-09-20') return false;
+      } else if (activeTimeframe === 'this-week') {
+        if (!(dateStr >= '2026-09-20' && dateStr <= '2026-09-27')) return false;
       } else if (activeTimeframe === 'this-weekend') {
         if (!(dateStr === '2026-09-26' || dateStr === '2026-09-27')) return false;
       } else if (activeTimeframe === 'next-week') {
@@ -1176,7 +1178,7 @@
         <section class="agenda-day-group" aria-label="${headerDate}">
           <div class="agenda-day-header">
             <h2 class="agenda-day-title">${headerDate}</h2>
-            <span class="agenda-day-relative">${relativeLabel}</span>
+            <span class="agenda-day-relative ${relativeLabel === 'Today' ? 'is-today' : ''}">${relativeLabel}</span>
             <span class="agenda-day-count">${dayEvents.length} event${dayEvents.length > 1 ? 's' : ''}</span>
           </div>
           <div class="agenda-events-list">
