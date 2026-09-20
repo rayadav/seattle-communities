@@ -868,6 +868,7 @@
         <button type="button" class="time-pill" data-timeframe="this-weekend">This Weekend</button>
         <button type="button" class="time-pill" data-timeframe="next-week">Next Week</button>
         <button type="button" class="time-pill" data-timeframe="october">October 2026</button>
+        <button type="button" class="time-pill" data-timeframe="november">November 2026</button>
       </div>
 
       <!-- Status count row -->
@@ -1033,6 +1034,9 @@
     if (dateStr.startsWith('2026-10')) {
       return 'October';
     }
+    if (dateStr.startsWith('2026-11')) {
+      return 'November';
+    }
     return 'Upcoming';
   }
 
@@ -1133,6 +1137,8 @@
         if (!(dateStr >= '2026-09-28' && dateStr <= '2026-10-04')) return false;
       } else if (activeTimeframe === 'october') {
         if (!dateStr.startsWith('2026-10')) return false;
+      } else if (activeTimeframe === 'november') {
+        if (!dateStr.startsWith('2026-11')) return false;
       }
 
       return true;
