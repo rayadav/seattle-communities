@@ -1,0 +1,1247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Seattle Community Events Calendar | Consolidated Schedule</title>
+<meta name="description" content="Explore a consolidated chronological calendar of upcoming group runs, trail work parties, kayak paddles, maker sessions, book clubs, and enthusiast meetups across Greater Seattle.">
+
+<!-- OpenGraph / Social Media Meta Tags -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://rayadav.github.io/seattle-communities/calendar.html">
+<meta property="og:title" content="Seattle Community Events Calendar">
+<meta property="og:description" content="Consolidated chronological agenda of upcoming events, runs, paddles, work parties, and meetups across Greater Seattle.">
+<meta property="og:image" content="./hero.jpeg">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Seattle Community Events Calendar">
+<meta name="twitter:description" content="Consolidated chronological agenda of upcoming events, runs, paddles, work parties, and meetups across Greater Seattle.">
+<meta name="twitter:image" content="./hero.jpeg">
+
+<!-- SVG Favicon -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📅</text></svg>">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --ink:        #0b1f3a;
+    --ink-soft:   #152c4a;
+    --violet:     #6d4ff0;
+    --violet-deep:#4b2fd6;
+    --violet-light:#f3f0ff;
+    --teal:       #14b8a6;
+    --teal-deep:  #0d9888;
+    --sky:        #38bdf8;
+    --bg:         #eef2f8;
+    --surface:    #ffffff;
+    --surface-2:  #f8fafc;
+    --line:       #e2e8f0;
+    --line-soft:  #edf2f7;
+    --text:       #0f1b2d;
+    --text-soft:  #55637a;
+    --text-faint: #64748b;
+
+    --shadow-sm: 0 1px 2px rgba(11,31,58,.05), 0 1px 3px rgba(11,31,58,.04);
+    --shadow-md: 0 8px 24px rgba(11,31,58,.08);
+    --shadow-lg: 0 20px 50px rgba(11,31,58,.14);
+    --radius-sm: 8px;
+    --radius:    14px;
+    --radius-lg: 20px;
+
+    --font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-display: 'Sora', var(--font);
+  }
+
+  body {
+    font-family: var(--font);
+    background-color: var(--bg);
+    color: var(--text);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .skip-link {
+    position: absolute;
+    top: -40px;
+    left: 20px;
+    background: var(--violet);
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: var(--radius-sm);
+    z-index: 100;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 13px;
+    transition: top .2s ease;
+  }
+  .skip-link:focus { top: 20px; }
+
+  /* ================= NAVIGATION BAR ================= */
+  .site-nav {
+    position: relative;
+    z-index: 20;
+    background: rgba(11, 31, 58, 0.82);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .site-nav-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 14px 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+  }
+  .nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: -0.3px;
+  }
+  .nav-emoji {
+    font-size: 22px;
+    line-height: 1;
+  }
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .nav-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 16px;
+    border-radius: 999px;
+    font-size: 13.5px;
+    font-weight: 600;
+    color: #cbd5e1;
+    text-decoration: none;
+    transition: all .2s ease;
+    border: 1px solid transparent;
+  }
+  .nav-link:hover {
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.1);
+  }
+  .nav-link.active {
+    color: #ffffff;
+    background: rgba(109, 79, 240, 0.45);
+    border-color: rgba(167, 150, 255, 0.5);
+    box-shadow: 0 0 16px rgba(109, 79, 240, 0.3);
+  }
+
+  /* ================= HERO HEADER ================= */
+  .hero {
+    position: relative;
+    background:
+      linear-gradient(180deg, rgba(11,31,58,.82) 0%, rgba(11,31,58,.94) 70%, var(--bg) 100%),
+      url('./hero.jpeg') center/cover no-repeat;
+    border-bottom: 1px solid rgba(255,255,255,.08);
+  }
+  .hero-glow {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background-image:
+      radial-gradient(2px 2px at 20% 30%, rgba(255,255,255,.5), transparent),
+      radial-gradient(2px 2px at 70% 18%, rgba(255,255,255,.35), transparent),
+      radial-gradient(1.5px 1.5px at 45% 12%, rgba(255,255,255,.4), transparent);
+    background-repeat: no-repeat;
+    opacity: .6;
+  }
+  .hero-inner {
+    position: relative;
+    z-index: 2;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 50px 28px 85px;
+  }
+
+  .pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: .2px;
+    color: #d6ccff;
+    background: rgba(109,79,240,.24);
+    border: 1px solid rgba(167,150,255,.4);
+    padding: 7px 16px;
+    border-radius: 999px;
+    margin-bottom: 20px;
+    backdrop-filter: blur(8px);
+  }
+  .pill .count {
+    color: #fff;
+    font-weight: 800;
+    font-variant-numeric: tabular-nums;
+  }
+  .pill-dot {
+    width: 8px; height: 8px; border-radius: 50%;
+    background: #34d399;
+    box-shadow: 0 0 0 3px rgba(52,211,153,.3);
+  }
+
+  .hero h1 {
+    font-family: var(--font-display);
+    font-size: 48px;
+    font-weight: 800;
+    letter-spacing: -1.2px;
+    line-height: 1.08;
+    margin-bottom: 16px;
+    max-width: 22ch;
+    color: #ffffff;
+    text-shadow: 0 2px 10px rgba(0,0,0,.4);
+  }
+  .hero h1 .accent {
+    background: linear-gradient(90deg, #9d8eff 0%, #4fd1ff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .hero .subtitle {
+    font-size: 18px;
+    font-weight: 400;
+    color: #cbd5e1;
+    max-width: 660px;
+    line-height: 1.55;
+    text-shadow: 0 1px 4px rgba(0,0,0,.5);
+  }
+
+  .hero-stats {
+    display: flex;
+    gap: 36px;
+    margin-top: 32px;
+    flex-wrap: wrap;
+  }
+  .hero-stat { display: flex; flex-direction: column; }
+  .hero-stat .num {
+    font-family: var(--font-display);
+    font-size: 26px;
+    font-weight: 800;
+    color: #fff;
+    letter-spacing: -.6px;
+  }
+  .hero-stat .lbl {
+    font-size: 12px;
+    color: #94a3b8;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .6px;
+    margin-top: 2px;
+  }
+
+  /* ================= FILTER SECTION ================= */
+  .filter-wrap {
+    position: sticky;
+    z-index: 40;
+    top: 0;
+    background: linear-gradient(180deg, var(--bg) 85%, rgba(238,242,248,0));
+    padding: 18px 28px 22px;
+    margin-top: -36px;
+  }
+  .filter-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 16px 20px;
+    box-shadow: var(--shadow-md);
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .filter-controls-row {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .search-box {
+    position: relative;
+    flex: 1 1 300px;
+    min-width: 240px;
+  }
+  .search-box input {
+    width: 100%;
+    height: 44px;
+    padding: 0 40px 0 42px;
+    background: var(--surface-2);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-sm);
+    font-family: var(--font);
+    font-size: 14.5px;
+    color: var(--text);
+    outline: none;
+    transition: all .2s ease;
+  }
+  .search-box input:focus {
+    background: #fff;
+    border-color: var(--violet);
+    box-shadow: 0 0 0 3px rgba(109,79,240,.15);
+  }
+  .search-box .icon {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-faint);
+    pointer-events: none;
+    font-size: 16px;
+  }
+  .search-box .clear-btn {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: var(--text-faint);
+    cursor: pointer;
+    font-size: 16px;
+    padding: 4px;
+    display: none;
+  }
+  .search-box .clear-btn:hover { color: var(--text); }
+
+  .select-box {
+    position: relative;
+    flex: 0 1 210px;
+    min-width: 170px;
+  }
+  .select-box select {
+    width: 100%;
+    height: 44px;
+    padding: 0 32px 0 14px;
+    background: var(--surface-2);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-sm);
+    font-family: var(--font);
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text);
+    outline: none;
+    appearance: none;
+    cursor: pointer;
+    transition: all .2s ease;
+  }
+  .select-box select:focus {
+    background: #fff;
+    border-color: var(--violet);
+    box-shadow: 0 0 0 3px rgba(109,79,240,.15);
+  }
+  .select-box::after {
+    content: '▾';
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 12px;
+    color: var(--text-faint);
+    pointer-events: none;
+  }
+
+  .btn-reset {
+    height: 44px;
+    padding: 0 16px;
+    background: var(--surface-2);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-sm);
+    font-family: var(--font);
+    font-size: 13.5px;
+    font-weight: 600;
+    color: var(--text-soft);
+    cursor: pointer;
+    transition: all .2s ease;
+    white-space: nowrap;
+  }
+  .btn-reset:hover {
+    background: #fff;
+    color: var(--text);
+    border-color: #cbd5e1;
+  }
+
+  /* Quick Timeframe Filter Pills */
+  .time-pills-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    overflow-x: auto;
+    padding-bottom: 2px;
+  }
+  .time-pills-label {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    color: var(--text-faint);
+    margin-right: 4px;
+    white-space: nowrap;
+  }
+  .time-pill {
+    padding: 6px 14px;
+    border-radius: 999px;
+    border: 1px solid var(--line);
+    background: var(--surface-2);
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-soft);
+    cursor: pointer;
+    transition: all .2s ease;
+    white-space: nowrap;
+  }
+  .time-pill:hover {
+    background: #fff;
+    border-color: #cbd5e1;
+    color: var(--text);
+  }
+  .time-pill.active {
+    background: var(--violet);
+    border-color: var(--violet);
+    color: #ffffff;
+    box-shadow: 0 2px 8px rgba(109,79,240,.3);
+  }
+
+  /* Filter Status Line */
+  .filter-status-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 4px 0;
+    font-size: 13.5px;
+    color: var(--text-soft);
+    border-top: 1px solid var(--line-soft);
+  }
+  .status-count strong {
+    color: var(--text);
+    font-weight: 700;
+  }
+
+  /* ================= AGENDA LIST CONTAINER ================= */
+  .main-content {
+    flex: 1;
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 28px 70px;
+  }
+
+  .agenda-container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  /* Day Section Group */
+  .agenda-day-group {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .agenda-day-header {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    padding: 10px 4px;
+    border-bottom: 2px solid var(--line);
+  }
+  .agenda-day-title {
+    font-family: var(--font-display);
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--ink);
+    letter-spacing: -0.3px;
+  }
+  .agenda-day-relative {
+    font-size: 12.5px;
+    font-weight: 700;
+    color: var(--violet);
+    background: var(--violet-light);
+    border: 1px solid rgba(109,79,240,.2);
+    padding: 3px 10px;
+    border-radius: 999px;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+  }
+  .agenda-day-count {
+    margin-left: auto;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-faint);
+  }
+
+  /* Event Card in Agenda */
+  .event-card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-sm);
+    padding: 22px 24px;
+    display: grid;
+    grid-template-columns: 180px 1fr auto;
+    gap: 24px;
+    align-items: start;
+    transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+  }
+  .event-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+    border-color: rgba(109,79,240,.3);
+  }
+
+  /* Time Column */
+  .event-time-col {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .event-time {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--ink);
+    letter-spacing: -0.2px;
+  }
+  .event-duration {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text-faint);
+    background: var(--surface-2);
+    border: 1px solid var(--line);
+    padding: 3px 8px;
+    border-radius: var(--radius-sm);
+    width: fit-content;
+  }
+  .event-cost-pill {
+    display: inline-flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 700;
+    color: #065f46;
+    background: #ecfdf5;
+    border: 1px solid #a7f3d0;
+    padding: 3px 8px;
+    border-radius: var(--radius-sm);
+    width: fit-content;
+  }
+
+  /* Details Column */
+  .event-details-col {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .event-tags-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  .event-badge {
+    font-size: 11.5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    padding: 3px 9px;
+    border-radius: 999px;
+  }
+  .badge-category {
+    background: #f1f5f9;
+    color: #334155;
+    border: 1px solid #cbd5e1;
+  }
+  .badge-area {
+    background: #f0fdfa;
+    color: #0d9488;
+    border: 1px solid #99f6e4;
+  }
+  .badge-recurrence {
+    background: #faf5ff;
+    color: #7e22ce;
+    border: 1px solid #e9d5ff;
+  }
+
+  .event-title {
+    font-family: var(--font-display);
+    font-size: 19px;
+    font-weight: 700;
+    color: var(--ink);
+    line-height: 1.3;
+    letter-spacing: -0.3px;
+  }
+  .event-org-line {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13.5px;
+    font-weight: 600;
+    color: var(--violet);
+  }
+  .event-org-link {
+    color: inherit;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    border-bottom: 1px dashed rgba(109,79,240,.4);
+  }
+  .event-org-link:hover {
+    color: var(--violet-deep);
+    border-bottom-style: solid;
+  }
+
+  .event-venue {
+    display: flex;
+    align-items: flex-start;
+    gap: 6px;
+    font-size: 13.5px;
+    color: var(--text-soft);
+    line-height: 1.4;
+  }
+  .event-venue svg {
+    flex-shrink: 0;
+    margin-top: 3px;
+    color: var(--teal-deep);
+  }
+
+  .event-desc {
+    font-size: 14px;
+    color: var(--text-soft);
+    line-height: 1.55;
+  }
+
+  /* Actions Column */
+  .event-actions-col {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    min-width: 170px;
+  }
+  .action-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    padding: 8px 14px;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: var(--radius-sm);
+    transition: all .2s ease;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  .btn-source {
+    background: var(--violet);
+    color: #ffffff;
+    border: 1px solid var(--violet);
+  }
+  .btn-source:hover {
+    background: var(--violet-deep);
+    border-color: var(--violet-deep);
+    box-shadow: 0 2px 8px rgba(109,79,240,.25);
+  }
+  .btn-gcal {
+    background: var(--surface-2);
+    color: var(--text);
+    border: 1px solid var(--line);
+  }
+  .btn-gcal:hover {
+    background: #fff;
+    border-color: #cbd5e1;
+    color: var(--violet);
+  }
+  .btn-ics {
+    background: transparent;
+    color: var(--text-soft);
+    border: 1px dashed var(--line);
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+  .btn-ics:hover {
+    color: var(--text);
+    border-color: var(--text-soft);
+    background: var(--surface-2);
+  }
+
+  /* Empty State */
+  .empty-state {
+    display: none;
+    text-align: center;
+    padding: 60px 20px;
+    background: var(--surface);
+    border: 1px dashed var(--line);
+    border-radius: var(--radius);
+    margin-top: 20px;
+  }
+  .empty-state .icon {
+    font-size: 44px;
+    margin-bottom: 12px;
+  }
+  .empty-state h3 {
+    font-family: var(--font-display);
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--ink);
+    margin-bottom: 8px;
+  }
+  .empty-state p {
+    color: var(--text-soft);
+    font-size: 14.5px;
+    max-width: 440px;
+    margin: 0 auto 20px;
+  }
+
+  /* ================= FOOTER ================= */
+  .site-footer {
+    background: #08172c;
+    color: #94a3b8;
+    padding: 40px 28px;
+    border-top: 1px solid rgba(255,255,255,.08);
+    margin-top: auto;
+  }
+  .footer-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-size: 13.5px;
+  }
+  .footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+    font-weight: 700;
+    font-family: var(--font-display);
+  }
+  .footer-links {
+    display: flex;
+    gap: 20px;
+  }
+  .footer-links a {
+    color: #cbd5e1;
+    text-decoration: none;
+    transition: color .2s ease;
+  }
+  .footer-links a:hover {
+    color: #fff;
+  }
+
+  /* Responsive Adjustments */
+  @media (max-width: 960px) {
+    .event-card {
+      grid-template-columns: 1fr;
+      gap: 18px;
+    }
+    .event-actions-col {
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+    .action-btn {
+      flex: 1 1 140px;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .hero h1 { font-size: 32px; }
+    .hero-stats { gap: 20px; }
+    .hero-inner { padding: 36px 20px 65px; }
+    .filter-wrap { padding: 12px 16px 18px; }
+    .main-content { padding: 10px 16px 50px; }
+    .select-box { flex: 1 1 100%; }
+    .site-nav-inner { padding: 12px 18px; }
+  }
+</style>
+</head>
+<body>
+  <a class="skip-link" href="#agenda-main">Skip to calendar agenda</a>
+
+  <!-- Top Navigation Bar -->
+  <nav class="site-nav" aria-label="Main Navigation">
+    <div class="site-nav-inner">
+      <a href="./index.html" class="nav-brand">
+        <span class="nav-emoji">🌲</span>
+        <span class="nav-title">Seattle Communities</span>
+      </a>
+      <div class="nav-links">
+        <a href="./index.html" class="nav-link">Directory</a>
+        <a href="./calendar.html" class="nav-link active">Events Calendar</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Header -->
+  <header class="hero">
+    <div class="hero-glow"></div>
+    <div class="hero-inner">
+      <div class="pill">
+        <span class="pill-dot"></span>
+        <span><span class="count" id="hero-event-count">0</span> Upcoming Community Events</span>
+      </div>
+      <h1>Seattle Community <span class="accent">Events Calendar</span></h1>
+      <p class="subtitle">A consolidated chronological agenda of group runs, trail work parties, kayak paddles, maker open houses, book clubs, and enthusiast meetups across Greater Seattle.</p>
+
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <span class="num" id="stat-total-events">0</span>
+          <span class="lbl">Total Events</span>
+        </div>
+        <div class="hero-stat">
+          <span class="num" id="stat-unique-groups">0</span>
+          <span class="lbl">Host Groups</span>
+        </div>
+        <div class="hero-stat">
+          <span class="num" id="stat-categories">0</span>
+          <span class="lbl">Categories</span>
+        </div>
+        <div class="hero-stat">
+          <span class="num">Fall 2026</span>
+          <span class="lbl">Schedule Horizon</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Sticky Filter Bar -->
+  <section class="filter-wrap" aria-label="Calendar Event Filters">
+    <div class="filter-inner">
+      <div class="filter-controls-row">
+        <!-- Search Input -->
+        <div class="search-box">
+          <span class="icon">🔍</span>
+          <input type="text" id="calendar-search" placeholder="Search events, clubs, venues..." aria-label="Search events">
+          <button type="button" class="clear-btn" id="clear-search-btn" aria-label="Clear search">✕</button>
+        </div>
+
+        <!-- Activity Category Select -->
+        <div class="select-box">
+          <select id="category-filter" aria-label="Filter by activity category">
+            <option value="">All Categories</option>
+          </select>
+        </div>
+
+        <!-- Area Select -->
+        <div class="select-box">
+          <select id="area-filter" aria-label="Filter by neighborhood or area">
+            <option value="">All Areas</option>
+          </select>
+        </div>
+
+        <!-- Reset Button -->
+        <button type="button" class="btn-reset" id="reset-filters-btn">Reset Filters</button>
+      </div>
+
+      <!-- Quick Timeframe Filter Pills -->
+      <div class="time-pills-row">
+        <span class="time-pills-label">Timeframe:</span>
+        <button type="button" class="time-pill active" data-timeframe="all">All Upcoming</button>
+        <button type="button" class="time-pill" data-timeframe="this-week">This Week</button>
+        <button type="button" class="time-pill" data-timeframe="this-weekend">This Weekend</button>
+        <button type="button" class="time-pill" data-timeframe="next-week">Next Week</button>
+        <button type="button" class="time-pill" data-timeframe="october">October 2026</button>
+      </div>
+
+      <!-- Status count row -->
+      <div class="filter-status-row">
+        <div class="status-count">
+          Showing <strong id="visible-count">0</strong> of <strong id="total-count">0</strong> upcoming events
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Agenda Content Section -->
+  <main class="main-content" id="agenda-main">
+    <div class="agenda-container" id="agenda-list" aria-live="polite">
+      <!-- Generated day groups will be inserted here dynamically -->
+    </div>
+
+    <!-- Empty State -->
+    <div class="empty-state" id="empty-state">
+      <div class="icon">🔍</div>
+      <h3>No events found</h3>
+      <p>No community events match your current search and filter selections. Try clearing your filters or broadening your search.</p>
+      <button type="button" class="btn-reset" id="empty-reset-btn" style="height:40px; padding:0 20px; font-weight:700;">Clear All Filters</button>
+    </div>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span>🌲</span>
+        <span>Seattle Communities</span>
+      </div>
+      <div class="footer-links">
+        <a href="./index.html">Directory</a>
+        <a href="./calendar.html">Events Calendar</a>
+        <a href="https://github.com/rayadav/seattle-communities" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+      </div>
+      <div>
+        <p>&copy; 2026 Seattle Communities Directory. Open-source local directory.</p>
+      </div>
+    </div>
+  </footer>
+
+<script>
+(function() {
+  let allEvents = [];
+  let activeTimeframe = 'all';
+
+  const searchInput = document.getElementById('calendar-search');
+  const clearSearchBtn = document.getElementById('clear-search-btn');
+  const categoryFilter = document.getElementById('category-filter');
+  const areaFilter = document.getElementById('area-filter');
+  const resetBtn = document.getElementById('reset-filters-btn');
+  const emptyResetBtn = document.getElementById('empty-reset-btn');
+  const timePills = document.querySelectorAll('.time-pill');
+
+  const agendaList = document.getElementById('agenda-list');
+  const emptyState = document.getElementById('empty-state');
+  const visibleCountEl = document.getElementById('visible-count');
+  const totalCountEl = document.getElementById('total-count');
+  const heroEventCount = document.getElementById('hero-event-count');
+  const statTotalEvents = document.getElementById('stat-total-events');
+  const statUniqueGroups = document.getElementById('stat-unique-groups');
+  const statCategories = document.getElementById('stat-categories');
+
+  // Load events.json
+  fetch('./events.json')
+    .then(res => {
+      if (!res.ok) throw new Error('Network response was not ok');
+      return res.json();
+    })
+    .then(data => {
+      allEvents = data;
+      initCalendar();
+    })
+    .catch(err => {
+      console.error('Failed to load events.json:', err);
+      agendaList.innerHTML = '<div style="padding:40px; text-align:center; color:#e11d48; font-weight:600;">Unable to load calendar events. Please ensure events.json exists.</div>';
+    });
+
+  function initCalendar() {
+    // Populate stats
+    const total = allEvents.length;
+    const uniqueGroups = new Set(allEvents.map(e => e.organization)).size;
+    const categories = new Set(allEvents.map(e => e.activityType));
+    const areas = new Set(allEvents.map(e => e.area));
+
+    heroEventCount.textContent = total;
+    statTotalEvents.textContent = total;
+    statUniqueGroups.textContent = uniqueGroups;
+    statCategories.textContent = categories.size;
+    totalCountEl.textContent = total;
+
+    // Populate category dropdown
+    Array.from(categories).sort().forEach(cat => {
+      const opt = document.createElement('option');
+      opt.value = cat;
+      opt.textContent = cat;
+      categoryFilter.appendChild(opt);
+    });
+
+    // Populate area dropdown
+    Array.from(areas).sort().forEach(area => {
+      const opt = document.createElement('option');
+      opt.value = area;
+      opt.textContent = area;
+      areaFilter.appendChild(opt);
+    });
+
+    // Event Listeners
+    searchInput.addEventListener('input', () => {
+      clearSearchBtn.style.display = searchInput.value ? 'block' : 'none';
+      renderAgenda();
+    });
+
+    clearSearchBtn.addEventListener('click', () => {
+      searchInput.value = '';
+      clearSearchBtn.style.display = 'none';
+      searchInput.focus();
+      renderAgenda();
+    });
+
+    categoryFilter.addEventListener('change', renderAgenda);
+    areaFilter.addEventListener('change', renderAgenda);
+
+    resetBtn.addEventListener('click', resetFilters);
+    emptyResetBtn.addEventListener('click', resetFilters);
+
+    timePills.forEach(pill => {
+      pill.addEventListener('click', () => {
+        timePills.forEach(p => p.classList.remove('active'));
+        pill.classList.add('active');
+        activeTimeframe = pill.getAttribute('data-timeframe');
+        renderAgenda();
+      });
+    });
+
+    renderAgenda();
+  }
+
+  function resetFilters() {
+    searchInput.value = '';
+    clearSearchBtn.style.display = 'none';
+    categoryFilter.value = '';
+    areaFilter.value = '';
+    activeTimeframe = 'all';
+    timePills.forEach(p => p.classList.remove('active'));
+    document.querySelector('.time-pill[data-timeframe="all"]').classList.add('active');
+    renderAgenda();
+  }
+
+  // Helper date functions
+  function getRelativeDayLabel(dateStr) {
+    const target = new Date(dateStr + 'T00:00:00');
+    const day = target.getDay(); // 0=Sun, 6=Sat
+    if (dateStr >= '2026-09-25' && dateStr <= '2026-09-27') {
+      return (day === 0 || day === 6) ? 'This Weekend' : 'This Week';
+    }
+    if (dateStr >= '2026-09-28' && dateStr <= '2026-10-04') {
+      return (day === 0 || day === 6) ? 'Next Weekend' : 'Next Week';
+    }
+    if (dateStr.startsWith('2026-10')) {
+      return 'October';
+    }
+    return 'Upcoming';
+  }
+
+  function formatDayHeader(dateStr) {
+    // dateStr: YYYY-MM-DD
+    const parts = dateStr.split('-');
+    const d = new Date(parseInt(parts[0]), parseInt(parts[1])-1, parseInt(parts[2]));
+    const options = { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' };
+    return d.toLocaleDateString('en-US', options);
+  }
+
+  function calculateDuration(startIso, endIso) {
+    if (!startIso || !endIso) return null;
+    const diffMs = new Date(endIso) - new Date(startIso);
+    const diffHours = diffMs / (1000 * 60 * 60);
+    if (diffHours >= 1) {
+      return diffHours % 1 === 0 ? `${diffHours} hrs` : `${diffHours.toFixed(1)} hrs`;
+    }
+    const diffMins = Math.round(diffMs / (1000 * 60));
+    return `${diffMins} mins`;
+  }
+
+  function makeGoogleCalendarUrl(event) {
+    const formatGCalTime = (isoStr) => {
+      const d = new Date(isoStr);
+      return d.toISOString().replace(/-|:|\.\d+/g, '');
+    };
+    const startStr = formatGCalTime(event.start);
+    const endStr = formatGCalTime(event.end || event.start);
+
+    const base = 'https://calendar.google.com/calendar/render?action=TEMPLATE';
+    const text = encodeURIComponent(event.title);
+    const dates = `${startStr}/${endStr}`;
+    const details = encodeURIComponent(`${event.description}\n\nHost: ${event.organization}\nEvent Link: ${event.url}`);
+    const location = encodeURIComponent(`${event.venue}, ${event.area}`);
+
+    return `${base}&text=${text}&dates=${dates}&details=${details}&location=${location}`;
+  }
+
+  window.downloadIcs = function(eventId) {
+    const ev = allEvents.find(e => e.id === eventId);
+    if (!ev) return;
+
+    const formatIcsDate = (isoStr) => {
+      const d = new Date(isoStr);
+      return d.toISOString().replace(/-|:|\.\d+/g, '');
+    };
+
+    const icsContent = [
+      'BEGIN:VCALENDAR',
+      'VERSION:2.0',
+      'PRODID:-//Seattle Communities//Events Calendar//EN',
+      'CALSCALE:GREGORIAN',
+      'METHOD:PUBLISH',
+      'BEGIN:VEVENT',
+      `UID:${ev.id}@seattle-communities`,
+      `DTSTAMP:${formatIcsDate(new Date().toISOString())}`,
+      `DTSTART:${formatIcsDate(ev.start)}`,
+      `DTEND:${formatIcsDate(ev.end || ev.start)}`,
+      `SUMMARY:${ev.title}`,
+      `DESCRIPTION:${ev.description.replace(/\n/g, ' ')} | Host: ${ev.organization} | Link: ${ev.url}`,
+      `LOCATION:${ev.venue}, ${ev.area}`,
+      `URL:${ev.url}`,
+      'END:VEVENT',
+      'END:VCALENDAR'
+    ].join('\r\n');
+
+    const blob = new Blob([icsContent], { type: 'text/calendar;charset=utf-8;' });
+    const link = document.createElement('a');
+    link.href = URL.createObjectURL(blob);
+    link.setAttribute('download', `${ev.id}.ics`);
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
+  function renderAgenda() {
+    const query = searchInput.value.trim().toLowerCase();
+    const selCat = categoryFilter.value;
+    const selArea = areaFilter.value;
+
+    const filtered = allEvents.filter(ev => {
+      if (selCat && ev.activityType !== selCat) return false;
+      if (selArea && ev.area !== selArea) return false;
+
+      if (query) {
+        const matchText = `${ev.title} ${ev.organization} ${ev.venue} ${ev.area} ${ev.activityType} ${ev.description}`.toLowerCase();
+        if (!matchText.includes(query)) return false;
+      }
+
+      // Timeframe filtering
+      const dateStr = ev.dateString;
+      if (activeTimeframe === 'this-week') {
+        if (!(dateStr >= '2026-09-21' && dateStr <= '2026-09-27')) return false;
+      } else if (activeTimeframe === 'this-weekend') {
+        if (!(dateStr === '2026-09-26' || dateStr === '2026-09-27')) return false;
+      } else if (activeTimeframe === 'next-week') {
+        if (!(dateStr >= '2026-09-28' && dateStr <= '2026-10-04')) return false;
+      } else if (activeTimeframe === 'october') {
+        if (!dateStr.startsWith('2026-10')) return false;
+      }
+
+      return true;
+    });
+
+    visibleCountEl.textContent = filtered.length;
+
+    if (filtered.length === 0) {
+      agendaList.innerHTML = '';
+      emptyState.style.display = 'block';
+      return;
+    }
+
+    emptyState.style.display = 'none';
+
+    // Group events by dateString
+    const groupedByDate = {};
+    filtered.forEach(ev => {
+      if (!groupedByDate[ev.dateString]) {
+        groupedByDate[ev.dateString] = [];
+      }
+      groupedByDate[ev.dateString].push(ev);
+    });
+
+    // Generate HTML for agenda
+    let html = '';
+    const sortedDates = Object.keys(groupedByDate).sort();
+
+    sortedDates.forEach(dateStr => {
+      const dayEvents = groupedByDate[dateStr];
+      const headerDate = formatDayHeader(dateStr);
+      const relativeLabel = getRelativeDayLabel(dateStr);
+
+      html += `
+        <section class="agenda-day-group" aria-label="${headerDate}">
+          <div class="agenda-day-header">
+            <h2 class="agenda-day-title">${headerDate}</h2>
+            <span class="agenda-day-relative">${relativeLabel}</span>
+            <span class="agenda-day-count">${dayEvents.length} event${dayEvents.length > 1 ? 's' : ''}</span>
+          </div>
+          <div class="agenda-events-list">
+      `;
+
+      dayEvents.forEach(ev => {
+        const duration = calculateDuration(ev.start, ev.end);
+        const gcalUrl = makeGoogleCalendarUrl(ev);
+
+        html += `
+          <article class="event-card">
+            <!-- Time Column -->
+            <div class="event-time-col">
+              <div class="event-time">${ev.timeString}</div>
+              ${duration ? `<div class="event-duration">⏱ ${duration}</div>` : ''}
+              ${ev.cost ? `<div class="event-cost-pill">💰 ${ev.cost}</div>` : ''}
+            </div>
+
+            <!-- Details Column -->
+            <div class="event-details-col">
+              <div class="event-tags-row">
+                <span class="event-badge badge-category">${ev.activityType}</span>
+                <span class="event-badge badge-area">${ev.area}</span>
+                ${ev.recurrence ? `<span class="event-badge badge-recurrence">🔁 ${ev.recurrence}</span>` : ''}
+              </div>
+
+              <h3 class="event-title">${ev.title}</h3>
+
+              <div class="event-org-line">
+                <span>Organized by:</span>
+                <a href="${ev.url}" target="_blank" rel="noopener noreferrer" class="event-org-link">
+                  ${ev.organization} ↗
+                </a>
+              </div>
+
+              <div class="event-venue">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span>${ev.venue}</span>
+              </div>
+
+              <p class="event-desc">${ev.description}</p>
+            </div>
+
+            <!-- Actions Column -->
+            <div class="event-actions-col">
+              <a href="${ev.url}" target="_blank" rel="noopener noreferrer" class="action-btn btn-source">
+                Host Website ↗
+              </a>
+              <a href="${gcalUrl}" target="_blank" rel="noopener noreferrer" class="action-btn btn-gcal">
+                <span>+ Google Cal</span>
+              </a>
+              <button type="button" class="action-btn btn-ics" onclick="downloadIcs('${ev.id}')">
+                <span>Download .ics</span>
+              </button>
+            </div>
+          </article>
+        `;
+      });
+
+      html += `
+          </div>
+        </section>
+      `;
+    });
+
+    agendaList.innerHTML = html;
+  }
+})();
+</script>
+</body>
+</html>

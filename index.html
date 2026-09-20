@@ -642,10 +642,88 @@
     .category-chips { overflow-x: auto; flex-wrap: nowrap; padding-bottom: 6px; -webkit-overflow-scrolling: touch; }
     .chip { flex-shrink: 0; }
   }
+  /* ================= NAVIGATION BAR ================= */
+  .site-nav {
+    position: relative;
+    z-index: 20;
+    background: rgba(11, 31, 58, 0.82);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .site-nav-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 14px 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+  }
+  .nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: -0.3px;
+  }
+  .nav-emoji {
+    font-size: 22px;
+    line-height: 1;
+  }
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .nav-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 16px;
+    border-radius: 999px;
+    font-size: 13.5px;
+    font-weight: 600;
+    color: #cbd5e1;
+    text-decoration: none;
+    transition: all .2s ease;
+    border: 1px solid transparent;
+  }
+  .nav-link:hover {
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.1);
+  }
+  .nav-link.active {
+    color: #ffffff;
+    background: rgba(109, 79, 240, 0.45);
+    border-color: rgba(167, 150, 255, 0.5);
+    box-shadow: 0 0 16px rgba(109, 79, 240, 0.3);
+  }
+  @media (max-width: 640px) {
+    .site-nav-inner { padding: 12px 18px; }
+  }
 </style>
 </head>
 <body>
   <a class="skip-link" href="#list-wrap">Skip to list</a>
+
+  <!-- Top Navigation Bar -->
+  <nav class="site-nav" aria-label="Main Navigation">
+    <div class="site-nav-inner">
+      <a href="./index.html" class="nav-brand">
+        <span class="nav-emoji">🌲</span>
+        <span class="nav-title">Seattle Communities</span>
+      </a>
+      <div class="nav-links">
+        <a href="./index.html" class="nav-link active">Directory</a>
+        <a href="./calendar.html" class="nav-link">Events Calendar</a>
+      </div>
+    </div>
+  </nav>
 
   <header class="hero">
     <div class="hero-glow"></div>
@@ -724,6 +802,8 @@
 
   <footer class="foot" id="foot" style="display:none;">
     <div class="foot-links">
+      <a href="./calendar.html">Events Calendar</a>
+      <span>·</span>
       <a href="https://github.com/rayadav/seattle-communities" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
       <span>·</span>
       <a href="https://github.com/rayadav/seattle-communities/issues/new" target="_blank" rel="noopener noreferrer">Suggest a Community or Edit</a>
