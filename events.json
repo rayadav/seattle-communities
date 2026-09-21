@@ -192,6 +192,22 @@
     "recurrence": "Community panel"
   },
   {
+    "id": "psrg-9pm-net-2026-09-21",
+    "title": "Puget Sound Repeater Group: Monday Night 9 O'Clock Net",
+    "organization": "Puget Sound Repeater Group",
+    "activityType": "Science",
+    "area": "Seattle / Puget Sound area",
+    "venue": "On-the-Air: 146.960 MHz (PL 103.5) / EchoLink Node 9660 & Online",
+    "start": "2026-09-21T21:00:00-07:00",
+    "end": "2026-09-21T21:45:00-07:00",
+    "timeString": "9:00 PM – 9:45 PM",
+    "dateString": "2026-09-21",
+    "description": "Daily on-the-air amateur radio round-table and community check-in net open to all licensed ham radio operators, listeners, and newcomers across Western Washington.",
+    "url": "https://psrg.org/nets/",
+    "cost": "Free / Open to all licensed operators and listeners",
+    "recurrence": "Nightly at 9:00 PM"
+  },
+  {
     "id": "bbg-waterfront-tour-2026-09-22",
     "title": "Seattle Waterfront Tour with Richard Hartlage",
     "organization": "Bellevue Botanical Garden Volunteers",
@@ -928,6 +944,22 @@
     "recurrence": "Saturday volunteer series"
   },
   {
+    "id": "mts-npld-camp-brown-2026-09-26",
+    "title": "National Public Lands Day 2026: Camp Brown Trail Restoration",
+    "organization": "Green Seattle Partnership Park Stewards",
+    "activityType": "Nature/Conservation",
+    "area": "Middle Fork Snoqualmie / King County",
+    "venue": "Camp Brown Day Use Area (Middle Fork Snoqualmie River Rd, North Bend, WA 98045)",
+    "start": "2026-09-26T09:00:00-07:00",
+    "end": "2026-09-26T12:00:00-07:00",
+    "timeString": "9:00 AM – 12:00 PM",
+    "dateString": "2026-09-26",
+    "description": "Celebrate National Public Lands Day with Mountains to Sound Greenway Trust and the USFS Mount Baker-Snoqualmie National Forest. Hands-on trail maintenance, native planting, and riparian restoration. (Discover Pass free day statewide).",
+    "url": "https://mtsgreenway.org/get-involved/national-public-lands-day-2026/",
+    "cost": "Free (tools and gloves provided; no Discover Pass needed today)",
+    "recurrence": "Annual National Public Lands Day"
+  },
+  {
     "id": "sfr-green-lake-2026-09-26",
     "title": "Saturday Morning Green Lake Run & Walk",
     "organization": "Seattle Frontrunners",
@@ -1328,6 +1360,22 @@
     "recurrence": "4th Monday of each month"
   },
   {
+    "id": "snw-mfg-future-2026-09-28",
+    "title": "Manufacturing the Future in the PNW: Space, Defense & Robotics",
+    "organization": "Seattle Robotics Society",
+    "activityType": "Science",
+    "area": "Eastlake, Seattle",
+    "venue": "Creative Destruction Lab (1150 Eastlake Ave E, Seattle, WA 98102)",
+    "start": "2026-09-28T13:00:00-07:00",
+    "end": "2026-09-28T17:00:00-07:00",
+    "timeString": "1:00 PM – 5:00 PM",
+    "dateString": "2026-09-28",
+    "description": "Part of Seattle Space Week 2026. Explore how the Pacific Northwest is manufacturing the future of space hardware, defense tech, and robotics with regional innovators, machinists, and founders.",
+    "url": "https://www.spacenorthwest.org/seattle-space-week",
+    "cost": "Registration required",
+    "recurrence": "Seattle Space Week 2026 feature"
+  },
+  {
     "id": "psms-id-clinic-2026-09-28",
     "title": "First Fall Hildegard Hendrickson Mushroom ID Clinic",
     "organization": "Puget Sound Mycological Society",
@@ -1342,6 +1390,22 @@
     "url": "https://www.psms.org/all_events.php",
     "cost": "Free and open to the public",
     "recurrence": "Weekly on Mondays through fall"
+  },
+  {
+    "id": "snw-kickoff-kent-2026-09-28",
+    "title": "Seattle Space Week 2026 Official Kick-Off Gathering",
+    "organization": "Museum of Flight Docent Corps (Tukwila)",
+    "activityType": "Science",
+    "area": "Tukwila / Kent Valley",
+    "venue": "Museum of Flight & Kent Aerospace Hub (Tukwila / Kent Valley, WA)",
+    "start": "2026-09-28T17:30:00-07:00",
+    "end": "2026-09-28T19:00:00-07:00",
+    "timeString": "5:30 PM – 7:00 PM",
+    "dateString": "2026-09-28",
+    "description": "Official opening reception launching Seattle Space Week 2026. Join aerospace founders, space researchers, engineers, and community members celebrating the region's commercial space ecosystem.",
+    "url": "https://www.spacenorthwest.org/seattle-space-week",
+    "cost": "Free with RSVP",
+    "recurrence": "Annual kickoff"
   },
   {
     "id": "makers-queer-crafters-2026-09-28",
@@ -1406,6 +1470,22 @@
     "url": "https://townhallseattle.org/events/month/",
     "cost": "$40 GA / $50 door",
     "recurrence": "Concert"
+  },
+  {
+    "id": "snw-symposium-2026-09-29",
+    "title": "Space Northwest Symposium 2026: Scaling the Space Economy",
+    "organization": "Museum of Flight Docent Corps (Tukwila)",
+    "activityType": "Science",
+    "area": "Federal Way / South King County",
+    "venue": "Federal Way Performing Arts and Event Center (31510 Pete von Reichbauer Way S, Federal Way, WA 98003)",
+    "start": "2026-09-29T08:00:00-07:00",
+    "end": "2026-09-29T18:30:00-07:00",
+    "timeString": "8:00 AM – 6:30 PM",
+    "dateString": "2026-09-29",
+    "description": "Full-day flagship conference uniting Pacific Northwest commercial space executives, propulsion engineers, students, and civic leaders discussing launch systems, satellite constellations, and in-space servicing.",
+    "url": "https://www.spacenorthwest.org/seattle-space-week",
+    "cost": "Symposium registration",
+    "recurrence": "Annual symposium"
   },
   {
     "id": "gcc-tuesday-supper-2026-09-29",
@@ -1518,6 +1598,22 @@
     "url": "https://curlingseattle.org/content/2026-fall-wednesday-juniors",
     "cost": "Junior league fee",
     "recurrence": "Weekly on Wednesdays"
+  },
+  {
+    "id": "snw-asian-leaders-2026-09-30",
+    "title": "Asian Leaders in Space Tech (Seattle Space Week)",
+    "organization": "Seattle Makers",
+    "activityType": "Science",
+    "area": "Downtown Seattle",
+    "venue": "Washington 1000 (1000 Olive Way, Seattle, WA 98101)",
+    "start": "2026-09-30T17:00:00-07:00",
+    "end": "2026-09-30T20:00:00-07:00",
+    "timeString": "5:00 PM – 8:00 PM",
+    "dateString": "2026-09-30",
+    "description": "Networking panel and discussion hosted by Actuate Ventures connecting Asian founders, engineers, and deep tech operators driving space technology and hardware innovation in the PNW.",
+    "url": "https://www.spacenorthwest.org/seattle-space-week",
+    "cost": "Free with RSVP",
+    "recurrence": "Seattle Space Week 2026"
   },
   {
     "id": "sfr-volunteer-park-2026-09-30",
