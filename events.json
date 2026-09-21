@@ -1712,6 +1712,22 @@
     "recurrence": "Science & technology talk"
   },
   {
+    "id": "snw-seaaf-air-forum-2026-10-01",
+    "title": "Seattle European American Air Forum (SEAAF 2026)",
+    "organization": "Museum of Flight Docent Corps (Tukwila)",
+    "activityType": "Science",
+    "area": "Downtown Seattle",
+    "venue": "F5 Tower & Québec Government Office (801 5th Ave, Seattle, WA 98104)",
+    "start": "2026-10-01T08:00:00-07:00",
+    "end": "2026-10-01T17:00:00-07:00",
+    "timeString": "8:00 AM – 5:00 PM",
+    "dateString": "2026-10-01",
+    "description": "4th annual transatlantic aerospace conference connecting European and Pacific Northwest aerospace leaders, satellite manufacturers, and commercial space founders.",
+    "url": "https://www.spacenorthwest.org/seattle-space-week",
+    "cost": "Registration required",
+    "recurrence": "Annual forum"
+  },
+  {
     "id": "sjg-hatsumomiji-2026-10-01",
     "title": "Hatsumomiji 2026: Autumn Maple Viewing Festival (Opening Day)",
     "organization": "Seattle Japanese Garden",
@@ -1806,6 +1822,22 @@
     "url": "https://www.potterynorthwest.org/auction",
     "cost": "Gala ticket required (supports non-profit mission)",
     "recurrence": "Annual gala"
+  },
+  {
+    "id": "snw-space-happy-hour-2026-10-01",
+    "title": "Seattle Space Week: Commercial Space Community Happy Hour",
+    "organization": "Museum of Flight Docent Corps (Tukwila)",
+    "activityType": "Science",
+    "area": "Downtown Seattle",
+    "venue": "F5 Tower (801 5th Ave, Seattle, WA 98104)",
+    "start": "2026-10-01T17:30:00-07:00",
+    "end": "2026-10-01T19:30:00-07:00",
+    "timeString": "5:30 PM – 7:30 PM",
+    "dateString": "2026-10-01",
+    "description": "Closing networking reception for Seattle Space Week bringing together engineers, flight researchers, students, and space enthusiasts.",
+    "url": "https://www.spacenorthwest.org/seattle-space-week",
+    "cost": "Free with RSVP",
+    "recurrence": "Seattle Space Week 2026"
   },
   {
     "id": "makers-costume-session-2026-10-01",
@@ -2112,6 +2144,22 @@
     "recurrence": "First Saturday monthly"
   },
   {
+    "id": "chtl-saturday-workshop-2026-10-03",
+    "title": "Capitol Hill Tool Library: Open Woodshop & Tool Checkout",
+    "organization": "Capitol Hill Tool Library",
+    "activityType": "Tools",
+    "area": "Capitol Hill, Seattle",
+    "venue": "Capitol Hill Tool Library (1552 Crawford Pl, Seattle, WA 98122)",
+    "start": "2026-10-03T10:00:00-07:00",
+    "end": "2026-10-03T14:00:00-07:00",
+    "timeString": "10:00 AM – 2:00 PM",
+    "dateString": "2026-10-03",
+    "description": "Weekly tool lending, woodshop usage, 3D printer and sewing machine access.",
+    "url": "https://sustainablecapitolhill.org/tool-library/",
+    "cost": "Pay-what-you-can membership ($0 - $35/yr)",
+    "recurrence": "Weekly on Saturdays"
+  },
+  {
     "id": "burke-cardenas-artist-2026-10-03",
     "title": "Jamie Pesquiza Cardenas in the Artist Studio (Day 1)",
     "organization": "The Burke Museum",
@@ -2288,6 +2336,22 @@
     "recurrence": "Weekly on Mondays"
   },
   {
+    "id": "green-tukwila-riverton-2026-10-05",
+    "title": "Green Tukwila: Riverton Park Habitat Restoration Work Party",
+    "organization": "Green Seattle Partnership Park Stewards",
+    "activityType": "Nature/Conservation",
+    "area": "Tukwila",
+    "venue": "Riverton Park (13263 Macadam Rd S, Tukwila, WA 98168)",
+    "start": "2026-10-05T18:00:00-07:00",
+    "end": "2026-10-05T20:00:00-07:00",
+    "timeString": "6:00 PM – 8:00 PM",
+    "dateString": "2026-10-05",
+    "description": "Green Tukwila community stewardship evening along the Duwamish River. Remove invasive weeds, spread wood mulch, and care for native riverbank plantings.",
+    "url": "https://www.tukwilawa.gov/departments/parks-and-recreation/volunteering/green-tukwila-partnership/",
+    "cost": "Free (tools and gloves provided)",
+    "recurrence": "Monthly work party"
+  },
+  {
     "id": "gcc-monday-night-2026-10-05",
     "title": "Granite Curling Club: Monday Night Open League",
     "organization": "Seattle Curling Club",
@@ -2318,6 +2382,22 @@
     "url": "https://nwpinballcollective.org/Events",
     "cost": "Free for members & volunteers",
     "recurrence": "First Tuesday monthly"
+  },
+  {
+    "id": "chtl-tuesday-hours-2026-10-06",
+    "title": "Capitol Hill Tool Library: Midweek Tool Lending & Repair Desk",
+    "organization": "Capitol Hill Tool Library",
+    "activityType": "Tools",
+    "area": "Capitol Hill, Seattle",
+    "venue": "Capitol Hill Tool Library (1552 Crawford Pl, Seattle, WA 98122)",
+    "start": "2026-10-06T18:00:00-07:00",
+    "end": "2026-10-06T20:00:00-07:00",
+    "timeString": "6:00 PM – 8:00 PM",
+    "dateString": "2026-10-06",
+    "description": "Evening tool returns and workbench reservations.",
+    "url": "https://sustainablecapitolhill.org/tool-library/",
+    "cost": "Free for library members",
+    "recurrence": "Weekly on Tuesdays"
   },
   {
     "id": "mox-pokemon-league-2026-10-06",
@@ -2352,6 +2432,22 @@
     "recurrence": "Weekly on Tuesdays"
   },
   {
+    "id": "sfr-volunteer-park-2026-10-06",
+    "title": "Seattle Frontrunners: Tuesday Evening Volunteer Park Run & Walk",
+    "organization": "Seattle Frontrunners",
+    "activityType": "Running",
+    "area": "Capitol Hill",
+    "venue": "Volunteer Park (meet at Seattle Asian Art Museum steps, 1400 E Prospect St, Seattle, WA 98112)",
+    "start": "2026-10-06T18:30:00-07:00",
+    "end": "2026-10-06T19:45:00-07:00",
+    "timeString": "6:30 PM – 7:45 PM",
+    "dateString": "2026-10-06",
+    "description": "Weekly inclusive community run/walk for LGBTQIA+ runners and allies through Volunteer Park and Capitol Hill neighborhoods.",
+    "url": "https://seattlefrontrunners.org/calendar",
+    "cost": "Free / All paces welcome",
+    "recurrence": "Weekly on Tuesdays"
+  },
+  {
     "id": "bcs-lunch-learn-2026-10-07",
     "title": "Birds of Seattle Lunch and Learn",
     "organization": "Birds Connect Seattle",
@@ -2381,6 +2477,22 @@
     "description": "Weekly Wednesday miniature painting workshop. Learn shading, highlights, and flocking.",
     "url": "https://www.moxboardinghouse.com/pages/seattle-events",
     "cost": "Free",
+    "recurrence": "Weekly on Wednesdays"
+  },
+  {
+    "id": "scc-wednesday-casual-2026-10-07",
+    "title": "Seattle Chess Club: Wednesday Casual Chess Night",
+    "organization": "Seattle Chess Club",
+    "activityType": "Games",
+    "area": "Green Lake, Seattle",
+    "venue": "Seattle Chess Club @ Orlov Chess Academy (7212 Woodlawn Ave NE, Seattle, WA 98115)",
+    "start": "2026-10-07T19:00:00-07:00",
+    "end": "2026-10-07T23:00:00-07:00",
+    "timeString": "7:00 PM – 11:00 PM",
+    "dateString": "2026-10-07",
+    "description": "Free casual drop-in chess night. Bring your clock and board or use club equipment. Blitz, rapid, and untimed games.",
+    "url": "https://seattlechess.club/mec-category/free-event/",
+    "cost": "Free and open to the public",
     "recurrence": "Weekly on Wednesdays"
   },
   {
@@ -2512,6 +2624,22 @@
     "recurrence": "Weekly on Fridays"
   },
   {
+    "id": "scc-friday-rated-2026-10-09",
+    "title": "Seattle Chess Club: Friday Night USCF Rated Chess",
+    "organization": "Seattle Chess Club",
+    "activityType": "Games",
+    "area": "Green Lake, Seattle",
+    "venue": "Seattle Chess Club @ Orlov Chess Academy (7212 Woodlawn Ave NE, Seattle, WA 98115)",
+    "start": "2026-10-09T19:15:00-07:00",
+    "end": "2026-10-09T23:45:00-07:00",
+    "timeString": "7:15 PM – 11:45 PM",
+    "dateString": "2026-10-09",
+    "description": "Weekly USCF-rated single game tournament match with classical time controls (G/90 + 30).",
+    "url": "https://seattlechess.club/mec-category/uscf-rated/",
+    "cost": "USCF membership + Club entry fee",
+    "recurrence": "Weekly on Fridays"
+  },
+  {
     "id": "sas-duvall-2026-10-09",
     "title": "Duvall Community Stargazing Party",
     "organization": "Seattle Astronomical Society",
@@ -2542,6 +2670,22 @@
     "url": "https://web.psrg.org/calendar/",
     "cost": "$5 admission",
     "recurrence": "Annual swap meet"
+  },
+  {
+    "id": "sfr-green-lake-2026-10-10",
+    "title": "Seattle Frontrunners: Saturday Morning Green Lake Run & Walk",
+    "organization": "Seattle Frontrunners",
+    "activityType": "Running",
+    "area": "Green Lake, Seattle",
+    "venue": "Green Lake Park (West of Community Center by lakeshore lifeguard station, 7201 E Green Lake Dr N, Seattle, WA 98115)",
+    "start": "2026-10-10T09:15:00-07:00",
+    "end": "2026-10-10T10:45:00-07:00",
+    "timeString": "9:15 AM – 10:45 AM",
+    "dateString": "2026-10-10",
+    "description": "Saturday morning 3-mile loop around Green Lake followed by optional coffee and social gathering.",
+    "url": "https://seattlefrontrunners.org/calendar",
+    "cost": "Free / All paces welcome",
+    "recurrence": "Weekly on Saturdays"
   },
   {
     "id": "src-emerald-city-xc-2026-10-10",
@@ -2590,6 +2734,22 @@
     "url": "https://tilthalliance.org/events/",
     "cost": "Sliding scale registration",
     "recurrence": "Intensive workshop"
+  },
+  {
+    "id": "chtl-saturday-workshop-2026-10-10",
+    "title": "Capitol Hill Tool Library: Open Woodshop & Tool Checkout",
+    "organization": "Capitol Hill Tool Library",
+    "activityType": "Tools",
+    "area": "Capitol Hill, Seattle",
+    "venue": "Capitol Hill Tool Library (1552 Crawford Pl, Seattle, WA 98122)",
+    "start": "2026-10-10T10:00:00-07:00",
+    "end": "2026-10-10T14:00:00-07:00",
+    "timeString": "10:00 AM – 2:00 PM",
+    "dateString": "2026-10-10",
+    "description": "Saturday open woodshop and tool lending hours.",
+    "url": "https://sustainablecapitolhill.org/tool-library/",
+    "cost": "Pay-what-you-can membership",
+    "recurrence": "Weekly on Saturdays"
   },
   {
     "id": "kubota-young-naturalist-2026-10-10",
@@ -2880,6 +3040,22 @@
     "recurrence": "Youth culinary series"
   },
   {
+    "id": "chtl-tuesday-hours-2026-10-13",
+    "title": "Capitol Hill Tool Library: Midweek Tool Lending & Repair Desk",
+    "organization": "Capitol Hill Tool Library",
+    "activityType": "Tools",
+    "area": "Capitol Hill, Seattle",
+    "venue": "Capitol Hill Tool Library (1552 Crawford Pl, Seattle, WA 98122)",
+    "start": "2026-10-13T18:00:00-07:00",
+    "end": "2026-10-13T20:00:00-07:00",
+    "timeString": "6:00 PM – 8:00 PM",
+    "dateString": "2026-10-13",
+    "description": "Evening tool checkout and returns.",
+    "url": "https://sustainablecapitolhill.org/tool-library/",
+    "cost": "Free for members",
+    "recurrence": "Weekly on Tuesdays"
+  },
+  {
     "id": "sgc-tuesday-club-2026-10-13",
     "title": "Seattle Go Center: Tuesday Club Night & Open Play",
     "organization": "Seattle Go Center",
@@ -2893,6 +3069,22 @@
     "description": "Weekly Tuesday evening club night.",
     "url": "https://www.seattlego.org/schedule/",
     "cost": "Regular Go Center admission",
+    "recurrence": "Weekly on Tuesdays"
+  },
+  {
+    "id": "sfr-volunteer-park-2026-10-13",
+    "title": "Seattle Frontrunners: Tuesday Evening Volunteer Park Run & Walk",
+    "organization": "Seattle Frontrunners",
+    "activityType": "Running",
+    "area": "Capitol Hill",
+    "venue": "Volunteer Park (1400 E Prospect St, Seattle, WA 98112)",
+    "start": "2026-10-13T18:30:00-07:00",
+    "end": "2026-10-13T19:45:00-07:00",
+    "timeString": "6:30 PM – 7:45 PM",
+    "dateString": "2026-10-13",
+    "description": "Tuesday evening community run and walk through Volunteer Park.",
+    "url": "https://seattlefrontrunners.org/calendar",
+    "cost": "Free",
     "recurrence": "Weekly on Tuesdays"
   },
   {
@@ -2956,6 +3148,22 @@
     "dateString": "2026-10-14",
     "description": "Weekly miniature painting workshop with paints, wet palettes, and instruction.",
     "url": "https://www.moxboardinghouse.com/pages/seattle-events",
+    "cost": "Free",
+    "recurrence": "Weekly on Wednesdays"
+  },
+  {
+    "id": "scc-wednesday-casual-2026-10-14",
+    "title": "Seattle Chess Club: Wednesday Casual Chess Night",
+    "organization": "Seattle Chess Club",
+    "activityType": "Games",
+    "area": "Green Lake, Seattle",
+    "venue": "Seattle Chess Club @ Orlov Chess Academy (7212 Woodlawn Ave NE, Seattle, WA 98115)",
+    "start": "2026-10-14T19:00:00-07:00",
+    "end": "2026-10-14T23:00:00-07:00",
+    "timeString": "7:00 PM – 11:00 PM",
+    "dateString": "2026-10-14",
+    "description": "Free casual drop-in chess night for all skill levels.",
+    "url": "https://seattlechess.club/mec-category/free-event/",
     "cost": "Free",
     "recurrence": "Weekly on Wednesdays"
   },
@@ -3056,6 +3264,22 @@
     "recurrence": "Weekly on Fridays"
   },
   {
+    "id": "scc-friday-rated-2026-10-16",
+    "title": "Seattle Chess Club: Friday Night USCF Rated Chess",
+    "organization": "Seattle Chess Club",
+    "activityType": "Games",
+    "area": "Green Lake, Seattle",
+    "venue": "Seattle Chess Club @ Orlov Chess Academy (7212 Woodlawn Ave NE, Seattle, WA 98115)",
+    "start": "2026-10-16T19:15:00-07:00",
+    "end": "2026-10-16T23:45:00-07:00",
+    "timeString": "7:15 PM – 11:45 PM",
+    "dateString": "2026-10-16",
+    "description": "Weekly USCF-rated match play with classical time controls.",
+    "url": "https://seattlechess.club/mec-category/uscf-rated/",
+    "cost": "USCF membership + entry fee",
+    "recurrence": "Weekly on Fridays"
+  },
+  {
     "id": "tba-clarks-creek-2026-10-17",
     "title": "Guided Birding Walk at Clark's Creek / Decoursey Pond",
     "organization": "Tahoma Bird Alliance",
@@ -3070,6 +3294,22 @@
     "url": "https://www.tahomabirdalliance.org/bird-walks",
     "cost": "Free",
     "recurrence": "3rd Saturday of each month"
+  },
+  {
+    "id": "sfr-green-lake-2026-10-17",
+    "title": "Seattle Frontrunners: Saturday Morning Green Lake Run & Walk",
+    "organization": "Seattle Frontrunners",
+    "activityType": "Running",
+    "area": "Green Lake, Seattle",
+    "venue": "Green Lake Park (7201 E Green Lake Dr N, Seattle, WA 98115)",
+    "start": "2026-10-17T09:15:00-07:00",
+    "end": "2026-10-17T10:45:00-07:00",
+    "timeString": "9:15 AM – 10:45 AM",
+    "dateString": "2026-10-17",
+    "description": "Saturday morning community run/walk around Green Lake.",
+    "url": "https://seattlefrontrunners.org/calendar",
+    "cost": "Free",
+    "recurrence": "Weekly on Saturdays"
   },
   {
     "id": "tilth-down-dirt-2026-10-17",
@@ -3182,6 +3422,22 @@
     "url": "https://www.duwamishalive.org/events/",
     "cost": "Free (tools, gloves, and refreshments provided)",
     "recurrence": "Biannual community day"
+  },
+  {
+    "id": "chtl-saturday-workshop-2026-10-17",
+    "title": "Capitol Hill Tool Library: Open Woodshop & Tool Checkout",
+    "organization": "Capitol Hill Tool Library",
+    "activityType": "Tools",
+    "area": "Capitol Hill, Seattle",
+    "venue": "Capitol Hill Tool Library (1552 Crawford Pl, Seattle, WA 98122)",
+    "start": "2026-10-17T10:00:00-07:00",
+    "end": "2026-10-17T14:00:00-07:00",
+    "timeString": "10:00 AM – 2:00 PM",
+    "dateString": "2026-10-17",
+    "description": "Saturday open woodshop and tool lending.",
+    "url": "https://sustainablecapitolhill.org/tool-library/",
+    "cost": "Pay-what-you-can membership",
+    "recurrence": "Weekly on Saturdays"
   },
   {
     "id": "tilth-bokashi-biochar-2026-10-17",
@@ -3312,6 +3568,22 @@
     "recurrence": "Weekly on Mondays"
   },
   {
+    "id": "chtl-tuesday-hours-2026-10-20",
+    "title": "Capitol Hill Tool Library: Midweek Tool Lending & Repair Desk",
+    "organization": "Capitol Hill Tool Library",
+    "activityType": "Tools",
+    "area": "Capitol Hill, Seattle",
+    "venue": "Capitol Hill Tool Library (1552 Crawford Pl, Seattle, WA 98122)",
+    "start": "2026-10-20T18:00:00-07:00",
+    "end": "2026-10-20T20:00:00-07:00",
+    "timeString": "6:00 PM – 8:00 PM",
+    "dateString": "2026-10-20",
+    "description": "Evening tool checkout and returns.",
+    "url": "https://sustainablecapitolhill.org/tool-library/",
+    "cost": "Free for members",
+    "recurrence": "Weekly on Tuesdays"
+  },
+  {
     "id": "sgc-tuesday-club-2026-10-20",
     "title": "Seattle Go Center: Tuesday Club Night & Open Play",
     "organization": "Seattle Go Center",
@@ -3328,6 +3600,22 @@
     "recurrence": "Weekly on Tuesdays"
   },
   {
+    "id": "sfr-volunteer-park-2026-10-20",
+    "title": "Seattle Frontrunners: Tuesday Evening Volunteer Park Run & Walk",
+    "organization": "Seattle Frontrunners",
+    "activityType": "Running",
+    "area": "Capitol Hill",
+    "venue": "Volunteer Park (1400 E Prospect St, Seattle, WA 98112)",
+    "start": "2026-10-20T18:30:00-07:00",
+    "end": "2026-10-20T19:45:00-07:00",
+    "timeString": "6:30 PM – 7:45 PM",
+    "dateString": "2026-10-20",
+    "description": "Tuesday evening community run/walk.",
+    "url": "https://seattlefrontrunners.org/calendar",
+    "cost": "Free",
+    "recurrence": "Weekly on Tuesdays"
+  },
+  {
     "id": "mox-paint-jam-2026-10-21",
     "title": "Mox Seattle: Minis Paint Jam & Hobby Workshop",
     "organization": "Mox Boarding House",
@@ -3340,6 +3628,22 @@
     "dateString": "2026-10-21",
     "description": "Wednesday miniature painting jam.",
     "url": "https://www.moxboardinghouse.com/pages/seattle-events",
+    "cost": "Free",
+    "recurrence": "Weekly on Wednesdays"
+  },
+  {
+    "id": "scc-wednesday-casual-2026-10-21",
+    "title": "Seattle Chess Club: Wednesday Casual Chess Night",
+    "organization": "Seattle Chess Club",
+    "activityType": "Games",
+    "area": "Green Lake, Seattle",
+    "venue": "Seattle Chess Club @ Orlov Chess Academy (7212 Woodlawn Ave NE, Seattle, WA 98115)",
+    "start": "2026-10-21T19:00:00-07:00",
+    "end": "2026-10-21T23:00:00-07:00",
+    "timeString": "7:00 PM – 11:00 PM",
+    "dateString": "2026-10-21",
+    "description": "Free casual drop-in chess night.",
+    "url": "https://seattlechess.club/mec-category/free-event/",
     "cost": "Free",
     "recurrence": "Weekly on Wednesdays"
   },
@@ -3424,6 +3728,22 @@
     "recurrence": "Weekly on Fridays"
   },
   {
+    "id": "scc-friday-rated-2026-10-23",
+    "title": "Seattle Chess Club: Friday Night USCF Rated Chess",
+    "organization": "Seattle Chess Club",
+    "activityType": "Games",
+    "area": "Green Lake, Seattle",
+    "venue": "Seattle Chess Club @ Orlov Chess Academy (7212 Woodlawn Ave NE, Seattle, WA 98115)",
+    "start": "2026-10-23T19:15:00-07:00",
+    "end": "2026-10-23T23:45:00-07:00",
+    "timeString": "7:15 PM – 11:45 PM",
+    "dateString": "2026-10-23",
+    "description": "Weekly USCF-rated tournament match play.",
+    "url": "https://seattlechess.club/mec-category/uscf-rated/",
+    "cost": "USCF membership + entry fee",
+    "recurrence": "Weekly on Fridays"
+  },
+  {
     "id": "tba-nisqually-2026-10-24",
     "title": "Guided Birding Walk at Billy Frank Jr. Nisqually National Wildlife Refuge",
     "organization": "Tahoma Bird Alliance",
@@ -3454,6 +3774,38 @@
     "url": "https://www.kubotagarden.org/event",
     "cost": "Free admission / plants for purchase",
     "recurrence": "Annual plant sale"
+  },
+  {
+    "id": "sfr-green-lake-2026-10-24",
+    "title": "Seattle Frontrunners: Saturday Morning Green Lake Run & Walk",
+    "organization": "Seattle Frontrunners",
+    "activityType": "Running",
+    "area": "Green Lake, Seattle",
+    "venue": "Green Lake Park (7201 E Green Lake Dr N, Seattle, WA 98115)",
+    "start": "2026-10-24T09:15:00-07:00",
+    "end": "2026-10-24T10:45:00-07:00",
+    "timeString": "9:15 AM – 10:45 AM",
+    "dateString": "2026-10-24",
+    "description": "Saturday morning community run/walk around Green Lake.",
+    "url": "https://seattlefrontrunners.org/calendar",
+    "cost": "Free",
+    "recurrence": "Weekly on Saturdays"
+  },
+  {
+    "id": "chtl-saturday-workshop-2026-10-24",
+    "title": "Capitol Hill Tool Library: Open Woodshop & Tool Checkout",
+    "organization": "Capitol Hill Tool Library",
+    "activityType": "Tools",
+    "area": "Capitol Hill, Seattle",
+    "venue": "Capitol Hill Tool Library (1552 Crawford Pl, Seattle, WA 98122)",
+    "start": "2026-10-24T10:00:00-07:00",
+    "end": "2026-10-24T14:00:00-07:00",
+    "timeString": "10:00 AM – 2:00 PM",
+    "dateString": "2026-10-24",
+    "description": "Saturday open woodshop and tool checkout.",
+    "url": "https://sustainablecapitolhill.org/tool-library/",
+    "cost": "Pay-what-you-can membership",
+    "recurrence": "Weekly on Saturdays"
   },
   {
     "id": "psms-wild-mushroom-show-2026-10-24",
@@ -3600,6 +3952,22 @@
     "recurrence": "Weekly on Mondays"
   },
   {
+    "id": "chtl-tuesday-hours-2026-10-27",
+    "title": "Capitol Hill Tool Library: Midweek Tool Lending & Repair Desk",
+    "organization": "Capitol Hill Tool Library",
+    "activityType": "Tools",
+    "area": "Capitol Hill, Seattle",
+    "venue": "Capitol Hill Tool Library (1552 Crawford Pl, Seattle, WA 98122)",
+    "start": "2026-10-27T18:00:00-07:00",
+    "end": "2026-10-27T20:00:00-07:00",
+    "timeString": "6:00 PM – 8:00 PM",
+    "dateString": "2026-10-27",
+    "description": "Evening tool checkout and returns.",
+    "url": "https://sustainablecapitolhill.org/tool-library/",
+    "cost": "Free for members",
+    "recurrence": "Weekly on Tuesdays"
+  },
+  {
     "id": "psba-meeting-2026-10-27",
     "title": "Puget Sound Beekeepers Association October Meeting",
     "organization": "Puget Sound Beekeepers",
@@ -3632,6 +4000,22 @@
     "recurrence": "Weekly on Tuesdays"
   },
   {
+    "id": "sfr-volunteer-park-2026-10-27",
+    "title": "Seattle Frontrunners: Tuesday Evening Volunteer Park Run & Walk",
+    "organization": "Seattle Frontrunners",
+    "activityType": "Running",
+    "area": "Capitol Hill",
+    "venue": "Volunteer Park (1400 E Prospect St, Seattle, WA 98112)",
+    "start": "2026-10-27T18:30:00-07:00",
+    "end": "2026-10-27T19:45:00-07:00",
+    "timeString": "6:30 PM – 7:45 PM",
+    "dateString": "2026-10-27",
+    "description": "Tuesday evening community run/walk.",
+    "url": "https://seattlefrontrunners.org/calendar",
+    "cost": "Free",
+    "recurrence": "Weekly on Tuesdays"
+  },
+  {
     "id": "mof-docent-tour-2026-10-28",
     "title": "The Museum of Flight: Midweek Docent Aviation Tour",
     "organization": "Museum of Flight Docent Corps (Tukwila)",
@@ -3660,6 +4044,22 @@
     "dateString": "2026-10-28",
     "description": "Pre-Halloween miniature painting workshop focusing on undead, monsters, and eerie osl lighting effects.",
     "url": "https://www.moxboardinghouse.com/pages/seattle-events",
+    "cost": "Free",
+    "recurrence": "Weekly on Wednesdays"
+  },
+  {
+    "id": "scc-wednesday-casual-2026-10-28",
+    "title": "Seattle Chess Club: Wednesday Casual Chess Night",
+    "organization": "Seattle Chess Club",
+    "activityType": "Games",
+    "area": "Green Lake, Seattle",
+    "venue": "Seattle Chess Club @ Orlov Chess Academy (7212 Woodlawn Ave NE, Seattle, WA 98115)",
+    "start": "2026-10-28T19:00:00-07:00",
+    "end": "2026-10-28T23:00:00-07:00",
+    "timeString": "7:00 PM – 11:00 PM",
+    "dateString": "2026-10-28",
+    "description": "Free casual drop-in chess night.",
+    "url": "https://seattlechess.club/mec-category/free-event/",
     "cost": "Free",
     "recurrence": "Weekly on Wednesdays"
   },
@@ -3712,6 +4112,22 @@
     "recurrence": "Weekly on Fridays"
   },
   {
+    "id": "scc-friday-rated-2026-10-30",
+    "title": "Seattle Chess Club: Halloween Eve USCF Rated Chess",
+    "organization": "Seattle Chess Club",
+    "activityType": "Games",
+    "area": "Green Lake, Seattle",
+    "venue": "Seattle Chess Club @ Orlov Chess Academy (7212 Woodlawn Ave NE, Seattle, WA 98115)",
+    "start": "2026-10-30T19:15:00-07:00",
+    "end": "2026-10-30T23:45:00-07:00",
+    "timeString": "7:15 PM – 11:45 PM",
+    "dateString": "2026-10-30",
+    "description": "Halloween eve USCF-rated match play with classical time controls.",
+    "url": "https://seattlechess.club/mec-category/uscf-rated/",
+    "cost": "USCF membership + entry fee",
+    "recurrence": "Weekly on Fridays"
+  },
+  {
     "id": "src-cougar-cup-2026-10-31",
     "title": "Cougar Cup Cross Country Race (7.5 Miles)",
     "organization": "Seattle Running Club",
@@ -3726,6 +4142,38 @@
     "url": "https://www.seattlerunningclub.org/xc-team/",
     "cost": "Race entry fee",
     "recurrence": "Annual trail race"
+  },
+  {
+    "id": "sfr-green-lake-2026-10-31",
+    "title": "Seattle Frontrunners: Halloween Costume Green Lake Run & Walk",
+    "organization": "Seattle Frontrunners",
+    "activityType": "Running",
+    "area": "Green Lake, Seattle",
+    "venue": "Green Lake Park (7201 E Green Lake Dr N, Seattle, WA 98115)",
+    "start": "2026-10-31T09:15:00-07:00",
+    "end": "2026-10-31T10:45:00-07:00",
+    "timeString": "9:15 AM – 10:45 AM",
+    "dateString": "2026-10-31",
+    "description": "Annual Halloween edition run and walk around Green Lake. Costumes strongly encouraged! Followed by festive coffee and treats.",
+    "url": "https://seattlefrontrunners.org/calendar",
+    "cost": "Free",
+    "recurrence": "Annual Halloween run"
+  },
+  {
+    "id": "chtl-saturday-workshop-2026-10-31",
+    "title": "Capitol Hill Tool Library: Halloween Open Woodshop & Tool Checkout",
+    "organization": "Capitol Hill Tool Library",
+    "activityType": "Tools",
+    "area": "Capitol Hill, Seattle",
+    "venue": "Capitol Hill Tool Library (1552 Crawford Pl, Seattle, WA 98122)",
+    "start": "2026-10-31T10:00:00-07:00",
+    "end": "2026-10-31T14:00:00-07:00",
+    "timeString": "10:00 AM – 2:00 PM",
+    "dateString": "2026-10-31",
+    "description": "Saturday open woodshop and tool checkout.",
+    "url": "https://sustainablecapitolhill.org/tool-library/",
+    "cost": "Pay-what-you-can membership",
+    "recurrence": "Weekly on Saturdays"
   },
   {
     "id": "seattle-center-festal-dia-de-muertos-2026-10-31",
