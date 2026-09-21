@@ -240,6 +240,22 @@
     "recurrence": "Seasonal walk"
   },
   {
+    "id": "psba-meeting-2026-09-22",
+    "title": "Puget Sound Beekeepers Association September Meeting",
+    "organization": "Puget Sound Beekeepers",
+    "activityType": "Beekeeping",
+    "area": "Seattle",
+    "venue": "Graham Visitors Center, Washington Park Arboretum (2300 Arboretum Dr E, Seattle, WA 98112) and Online",
+    "start": "2026-09-22T18:30:00-07:00",
+    "end": "2026-09-22T21:00:00-07:00",
+    "timeString": "6:30 PM – 9:00 PM (6:30 PM lesson, 7:30 PM presentation)",
+    "dateString": "2026-09-22",
+    "description": "Educational beekeeping forum featuring practical pre-meeting hive lessons followed by guest lecture on overwintering apiary care and mite control.",
+    "url": "https://pugetsoundbees.org/about/meetings/",
+    "cost": "Free and open to the public",
+    "recurrence": "4th Tuesday monthly"
+  },
+  {
     "id": "nwpc-vinyl-night-2026-09-22",
     "title": "Open House Vinyl Night at The Sanctuary",
     "organization": "Seattle Pinball League",
@@ -496,6 +512,38 @@
     "recurrence": "2nd & 4th Thursday of each month"
   },
   {
+    "id": "nwwa-woodcraft-2026-09-24",
+    "title": "Northwest Woodworkers Association: Q&A and Show & Tell",
+    "organization": "Northwest Woodworkers Guild",
+    "activityType": "Art",
+    "area": "Seattle / Southcenter",
+    "venue": "Woodcraft Seattle (5963 Corson Ave S, Seattle, WA 98108)",
+    "start": "2026-09-24T18:00:00-07:00",
+    "end": "2026-09-24T20:30:00-07:00",
+    "timeString": "6:00 PM – 8:30 PM",
+    "dateString": "2026-09-24",
+    "description": "Monthly guild show-and-tell meeting. Bring works-in-progress, joinery questions, and finished woodworking projects to share with fellow woodcrafters and cabinetmakers.",
+    "url": "https://forum.nwwoodworkers.org/",
+    "cost": "Free and open to all woodworkers",
+    "recurrence": "Monthly meeting"
+  },
+  {
+    "id": "makers-cosplay-2026-09-24",
+    "title": "Seattle Makers: Cosplay Meetup & Prop Building",
+    "organization": "Seattle Makers",
+    "activityType": "Art",
+    "area": "Interbay, Seattle",
+    "venue": "Seattle Makers (3012 16th Ave W, Seattle, WA 98119)",
+    "start": "2026-09-24T18:00:00-07:00",
+    "end": "2026-09-24T21:00:00-07:00",
+    "timeString": "6:00 PM – 9:00 PM",
+    "dateString": "2026-09-24",
+    "description": "Collaborative maker session for cosplayers and costume designers working on armor fabrication, foam crafting, sewing, and 3D printed props.",
+    "url": "https://seattlemakers.org/events/",
+    "cost": "Free / Open to public",
+    "recurrence": "Bi-weekly meetup"
+  },
+  {
     "id": "nwff-life-sound-2026-09-24",
     "title": "Local Sightings 2026 – Life in The Sound",
     "organization": "Northwest Film Forum",
@@ -574,6 +622,22 @@
     "url": "https://townhallseattle.org/events/month/",
     "cost": "$10 – $50",
     "recurrence": "Civic lecture"
+  },
+  {
+    "id": "cbc-lake-chelan-2026-09-25",
+    "title": "Lake Chelan Bicycle Tour 2026",
+    "organization": "Cascade Bicycle Club",
+    "activityType": "Cycling",
+    "area": "Cascades / Central WA",
+    "venue": "Lake Chelan, WA (Cascade Bicycle Club Tour)",
+    "start": "2026-09-25T08:00:00-07:00",
+    "end": "2026-09-27T16:00:00-07:00",
+    "timeString": "3-Day Tour (Friday - Sunday)",
+    "dateString": "2026-09-25",
+    "description": "Multi-day scenic bicycle tour around glacial Lake Chelan through vineyards and foothills, with fully supported rest stops and luggage transport.",
+    "url": "https://cascade.org/rides-events/ride-information-support/season-schedule",
+    "cost": "Tour registration fee",
+    "recurrence": "Annual multi-day tour"
   },
   {
     "id": "burke-qi-gong-2026-09-25",
@@ -720,6 +784,22 @@
     "recurrence": "4th Saturday of each month"
   },
   {
+    "id": "src-xc-trial-2026-09-26",
+    "title": "Seattle Running Club: Cross Country 5.2M Time Trial",
+    "organization": "Seattle Running Club",
+    "activityType": "Running",
+    "area": "Bellevue",
+    "venue": "Bellevue, WA (Hosted within Fatglass 50k Course)",
+    "start": "2026-09-26T09:00:00-07:00",
+    "end": "2026-09-26T11:00:00-07:00",
+    "timeString": "9:00 AM – 11:00 AM",
+    "dateString": "2026-09-26",
+    "description": "Seattle Running Club 2026 autumn cross country season opener: 5.2-mile off-road grass and trail time trial for club members and prospective runners.",
+    "url": "https://www.seattlerunningclub.org/xc-team/",
+    "cost": "Free for club runners / No USATF required",
+    "recurrence": "Season opener"
+  },
+  {
     "id": "sfr-green-lake-2026-09-26",
     "title": "Saturday Morning Green Lake Run & Walk",
     "organization": "Seattle Frontrunners",
@@ -862,6 +942,22 @@
     "url": "https://nwfilmforum.org/calendar/",
     "cost": "$10 – $14 ticket",
     "recurrence": "Festival screening"
+  },
+  {
+    "id": "makers-game-night-2026-09-26",
+    "title": "Seattle Makers: Free Community Game Night",
+    "organization": "Seattle Makers",
+    "activityType": "Games",
+    "area": "Interbay, Seattle",
+    "venue": "Seattle Makers (3012 16th Ave W, Seattle, WA 98119)",
+    "start": "2026-09-26T18:00:00-07:00",
+    "end": "2026-09-26T22:00:00-07:00",
+    "timeString": "6:00 PM – 10:00 PM",
+    "dateString": "2026-09-26",
+    "description": "Open community board game and social night at the makerspace. Bring your favorite tabletop games or play from the house library.",
+    "url": "https://seattlemakers.org/events/",
+    "cost": "Free",
+    "recurrence": "Bi-weekly Saturday series"
   },
   {
     "id": "nwff-beau-ideal-2026-09-26",
@@ -1040,6 +1136,22 @@
     "recurrence": "Weekly on Mondays through fall"
   },
   {
+    "id": "makers-queer-crafters-2026-09-28",
+    "title": "Queer Crafters Meetup at Seattle Makers",
+    "organization": "Seattle Makers",
+    "activityType": "Art",
+    "area": "Interbay, Seattle",
+    "venue": "Seattle Makers (3012 16th Ave W, Seattle, WA 98119)",
+    "start": "2026-09-28T18:00:00-07:00",
+    "end": "2026-09-28T21:00:00-07:00",
+    "timeString": "6:00 PM – 9:00 PM",
+    "dateString": "2026-09-28",
+    "description": "Welcoming, inclusive open creative circle for LGBTQIA+ crafters, knitters, menders, and makers to work on personal projects in community.",
+    "url": "https://seattlemakers.org/events/",
+    "cost": "Free",
+    "recurrence": "Bi-weekly on Mondays"
+  },
+  {
     "id": "town-hall-kolhatkar-2026-09-28",
     "title": "Sonali Kolhatkar with Josefina Mora-Cheung: Resisting Authoritarianism",
     "organization": "Town Hall Seattle",
@@ -1184,6 +1296,22 @@
     "recurrence": "Weekly on Wednesdays"
   },
   {
+    "id": "makers-3d-modeling-2026-09-30",
+    "title": "3D Modeling & CAD Design Meetup",
+    "organization": "Seattle Makers",
+    "activityType": "Science",
+    "area": "Interbay, Seattle",
+    "venue": "Seattle Makers (3012 16th Ave W, Seattle, WA 98119)",
+    "start": "2026-09-30T19:00:00-07:00",
+    "end": "2026-09-30T21:00:00-07:00",
+    "timeString": "7:00 PM – 9:00 PM",
+    "dateString": "2026-09-30",
+    "description": "Peer skill-share focusing on Blender, Fusion 360, and Onshape 3D modeling workflows for rapid prototyping and digital fabrication.",
+    "url": "https://seattlemakers.org/events/",
+    "cost": "Free",
+    "recurrence": "Monthly meetup"
+  },
+  {
     "id": "town-hall-berman-2026-09-30",
     "title": "Francine Berman with Sabina Nawaz: Humane Technology",
     "organization": "Town Hall Seattle",
@@ -1262,6 +1390,38 @@
     "url": "https://www.museumofflight.org/exhibits-and-events/calendar-of-events",
     "cost": "FREE admission (5 PM – 9 PM)",
     "recurrence": "First Thursday monthly"
+  },
+  {
+    "id": "pottery-nw-gala-2026-10-01",
+    "title": "Bold & Brilliant: Pottery Northwest 60th Anniversary Gala & Auction",
+    "organization": "Pottery Northwest",
+    "activityType": "Art",
+    "area": "Eastlake, Seattle",
+    "venue": "Imperia Lake Union (3119 Eastlake Ave E, Seattle, WA 98102)",
+    "start": "2026-10-01T17:00:00-07:00",
+    "end": "2026-10-01T21:00:00-07:00",
+    "timeString": "5:00 PM – 9:00 PM (Doors 5 PM, Program 5:30 PM)",
+    "dateString": "2026-10-01",
+    "description": "Pottery Northwest's 60th Anniversary celebration featuring live auction with Sasha Summer Cousineau, Clay Community Impact Awards, Mystery Mug Wall, dinner, and ceramic art exhibitions.",
+    "url": "https://www.potterynorthwest.org/auction",
+    "cost": "Gala ticket required (supports non-profit mission)",
+    "recurrence": "Annual gala"
+  },
+  {
+    "id": "makers-costume-session-2026-10-01",
+    "title": "🎃 Costume & Prop Making Open Session 🎃",
+    "organization": "Seattle Makers",
+    "activityType": "Art",
+    "area": "Interbay, Seattle",
+    "venue": "Seattle Makers (3012 16th Ave W, Seattle, WA 98119)",
+    "start": "2026-10-01T18:00:00-07:00",
+    "end": "2026-10-01T21:00:00-07:00",
+    "timeString": "6:00 PM – 9:00 PM",
+    "dateString": "2026-10-01",
+    "description": "Open laboratory and studio session utilizing sewing machines, laser cutters, and heat guns to craft Halloween costumes.",
+    "url": "https://seattlemakers.org/events/",
+    "cost": "Class / day pass",
+    "recurrence": "Weekly in October"
   },
   {
     "id": "bbg-seed-banking-2026-10-01",
@@ -1504,6 +1664,22 @@
     "recurrence": "Artist residency demo"
   },
   {
+    "id": "makers-ceramic-pumpkin-2026-10-03",
+    "title": "Ceramic Pumpkin Handbuilding Workshop",
+    "organization": "Seattle Makers",
+    "activityType": "Art",
+    "area": "Interbay, Seattle",
+    "venue": "Seattle Makers (3012 16th Ave W, Seattle, WA 98119)",
+    "start": "2026-10-03T11:00:00-07:00",
+    "end": "2026-10-03T13:00:00-07:00",
+    "timeString": "11:00 AM – 1:00 PM",
+    "dateString": "2026-10-03",
+    "description": "Hands-on clay workshop sculpting decorative ceramic pumpkins with custom textures, stems, and glaze finishes in the ceramic studio.",
+    "url": "https://seattlemakers.org/events/",
+    "cost": "Class registration",
+    "recurrence": "Seasonal workshop"
+  },
+  {
     "id": "mof-plane-queer-2026-10-03",
     "title": "Author Presentation: Phil Tiemeyer Presents 'Plane Queer'",
     "organization": "Museum of Flight Docent Corps (Tukwila)",
@@ -1696,6 +1872,22 @@
     "recurrence": "Evening gardening class"
   },
   {
+    "id": "makers-robotics-meetup-2026-10-08",
+    "title": "Electronics and Robotics Meetup & Guided Studio",
+    "organization": "Seattle Makers",
+    "activityType": "Science",
+    "area": "Interbay, Seattle",
+    "venue": "Seattle Makers (3012 16th Ave W, Seattle, WA 98119)",
+    "start": "2026-10-08T18:00:00-07:00",
+    "end": "2026-10-08T21:00:00-07:00",
+    "timeString": "6:00 PM – 9:00 PM",
+    "dateString": "2026-10-08",
+    "description": "Open hardware workbench with oscilloscopes, soldering stations, and bench power supplies for robotics and sensor hobby projects.",
+    "url": "https://seattlemakers.org/events/",
+    "cost": "Free / Open to public",
+    "recurrence": "Monthly on 2nd Thursday"
+  },
+  {
     "id": "sas-new-moon-2026-10-08",
     "title": "Piney Woods Dark Sky New Moon Observing",
     "organization": "Seattle Astronomical Society",
@@ -1758,6 +1950,22 @@
     "url": "https://web.psrg.org/calendar/",
     "cost": "$5 admission",
     "recurrence": "Annual swap meet"
+  },
+  {
+    "id": "src-emerald-city-xc-2026-10-10",
+    "title": "Emerald City Classic Cross Country Race",
+    "organization": "Seattle Running Club",
+    "activityType": "Running",
+    "area": "Green Lake / Phinney Ridge, Seattle",
+    "venue": "Lower Woodland Park (1000 N 50th St, Seattle, WA 98103)",
+    "start": "2026-10-10T09:30:00-07:00",
+    "end": "2026-10-10T12:00:00-07:00",
+    "timeString": "9:30 AM – 12:00 PM",
+    "dateString": "2026-10-10",
+    "description": "Annual community and collegiate cross country classic running multi-lap grass and dirt loops around Lower Woodland Park.",
+    "url": "https://www.seattlerunningclub.org/xc-team/",
+    "cost": "Race entry fee",
+    "recurrence": "Annual invitational"
   },
   {
     "id": "tilth-applesauce-2026-10-10",
@@ -1872,6 +2080,22 @@
     "recurrence": "Bi-monthly meeting"
   },
   {
+    "id": "makers-game-night-2026-10-10",
+    "title": "Seattle Makers: Free Community Game Night",
+    "organization": "Seattle Makers",
+    "activityType": "Games",
+    "area": "Interbay, Seattle",
+    "venue": "Seattle Makers (3012 16th Ave W, Seattle, WA 98119)",
+    "start": "2026-10-10T18:00:00-07:00",
+    "end": "2026-10-10T22:00:00-07:00",
+    "timeString": "6:00 PM – 10:00 PM",
+    "dateString": "2026-10-10",
+    "description": "Bi-weekly board games, tabletop RPGs, and social gaming at Seattle Makers.",
+    "url": "https://seattlemakers.org/events/",
+    "cost": "Free",
+    "recurrence": "Bi-weekly Saturday series"
+  },
+  {
     "id": "nwpc-coop-tournament-2026-10-10",
     "title": "Howdy Pardner Co-Op Pinball Tournament",
     "organization": "Seattle Pinball League",
@@ -1888,6 +2112,22 @@
     "recurrence": "Special format tournament"
   },
   {
+    "id": "cbc-kitsap-color-2026-10-11",
+    "title": "Kitsap Color Classic 2026",
+    "organization": "Cascade Bicycle Club",
+    "activityType": "Cycling",
+    "area": "Kitsap Peninsula / Puget Sound",
+    "venue": "Kingston / Kitsap Peninsula (Departing Edmonds Ferry Terminal, 199 Dayton St, Edmonds, WA 98020)",
+    "start": "2026-10-11T09:00:00-07:00",
+    "end": "2026-10-11T15:00:00-07:00",
+    "timeString": "9:00 AM – 3:00 PM",
+    "dateString": "2026-10-11",
+    "description": "Cascade's season-finale fall colors ride! Take the ferry across Puget Sound to Kingston to ride 25, 36, or 53-mile routes through rural Kitsap County towns and autumn foliage.",
+    "url": "https://cascade.org/rides-events/kitsap-color-classic-2026",
+    "cost": "Registration required ($50 - $75)",
+    "recurrence": "Annual fall ride"
+  },
+  {
     "id": "seattle-center-festal-turkfest-2026-10-11",
     "title": "Turkfest 2026 (Turkish Cultural Festival - Day 2)",
     "organization": "Seattle Center",
@@ -1902,6 +2142,22 @@
     "url": "https://seattlecenter.com/events/featured-events/festal/turkfest",
     "cost": "Free admission",
     "recurrence": "Annual 2-day festival"
+  },
+  {
+    "id": "makers-iot-home-2026-10-11",
+    "title": "Internet of Things (IoT): Home Automation with Local Control",
+    "organization": "Seattle Makers",
+    "activityType": "Science",
+    "area": "Interbay, Seattle",
+    "venue": "Seattle Makers (3012 16th Ave W, Seattle, WA 98119)",
+    "start": "2026-10-11T16:00:00-07:00",
+    "end": "2026-10-11T18:00:00-07:00",
+    "timeString": "4:00 PM – 6:00 PM",
+    "dateString": "2026-10-11",
+    "description": "Hands-on clinic configuring Home Assistant, ESPHome, and Zigbee/Z-Wave local sensors without relying on cloud servers or subscription fees.",
+    "url": "https://seattlemakers.org/events/",
+    "cost": "Workshop registration",
+    "recurrence": "Special workshop"
   },
   {
     "id": "psms-id-clinic-2026-10-12",
@@ -1998,6 +2254,22 @@
     "url": "https://tilthalliance.org/events/",
     "cost": "Free – $75 sliding scale",
     "recurrence": "Evening gardening class"
+  },
+  {
+    "id": "makers-hardware-hacking-2026-10-15",
+    "title": "Hardware Hacking Meetup",
+    "organization": "Seattle Makers",
+    "activityType": "Science",
+    "area": "Interbay, Seattle",
+    "venue": "Seattle Makers (3012 16th Ave W, Seattle, WA 98119)",
+    "start": "2026-10-15T18:00:00-07:00",
+    "end": "2026-10-15T21:00:00-07:00",
+    "timeString": "6:00 PM – 9:00 PM",
+    "dateString": "2026-10-15",
+    "description": "Reverse-engineering electronics, firmware dumping, JTAG debugging, and embedded microcontroller tinkering with fellow hardware hackers.",
+    "url": "https://seattlemakers.org/events/",
+    "cost": "Free",
+    "recurrence": "3rd Thursday monthly"
   },
   {
     "id": "burke-qi-gong-2026-10-16",
@@ -2144,6 +2416,22 @@
     "recurrence": "Seasonal tour"
   },
   {
+    "id": "bff-work-party-2026-10-17",
+    "title": "Beacon Food Forest 3rd Saturday Community Stewardship Work Party",
+    "organization": "Beacon Hill Food Forest Stewards",
+    "activityType": "Nature/Conservation",
+    "area": "Beacon Hill, Seattle",
+    "venue": "Beacon Food Forest (15th Ave S & S Dakota St, next to Jefferson Park, Seattle, WA 98144)",
+    "start": "2026-10-17T10:00:00-07:00",
+    "end": "2026-10-17T14:00:00-07:00",
+    "timeString": "10:00 AM – 2:00 PM",
+    "dateString": "2026-10-17",
+    "description": "Monthly hands-on volunteer work party stewarding 4+ acres of public urban permaculture agroforestry. Sheet mulching, orchard care, weeding, and compost building. All ages and skill levels welcome.",
+    "url": "https://www.beaconfoodforest.org/events",
+    "cost": "Free (drop-in, tools and gloves provided)",
+    "recurrence": "3rd Saturday monthly year-round"
+  },
+  {
     "id": "tilth-bokashi-biochar-2026-10-17",
     "title": "Bokashi, Biochar and the Biology of Compost",
     "organization": "Seattle Tilth Alliance Garden Stewards",
@@ -2208,6 +2496,22 @@
     "recurrence": "Annual banquet"
   },
   {
+    "id": "makers-laser-pumpkin-2026-10-18",
+    "title": "🎃 Laser Pumpkin Engraving Workshop 🎃",
+    "organization": "Seattle Makers",
+    "activityType": "Art",
+    "area": "Interbay, Seattle",
+    "venue": "Seattle Makers (3012 16th Ave W, Seattle, WA 98119)",
+    "start": "2026-10-18T17:00:00-07:00",
+    "end": "2026-10-18T19:00:00-07:00",
+    "timeString": "5:00 PM – 7:00 PM",
+    "dateString": "2026-10-18",
+    "description": "Bring your pumpkin and engrave intricate vector illustrations, typography, and spooky artwork directly onto pumpkin skin using CO2 laser cutters.",
+    "url": "https://seattlemakers.org/events/",
+    "cost": "Class fee",
+    "recurrence": "Seasonal workshop"
+  },
+  {
     "id": "psms-id-clinic-2026-10-19",
     "title": "Hildegard Hendrickson Mushroom ID Clinic",
     "organization": "Puget Sound Mycological Society",
@@ -2238,6 +2542,22 @@
     "url": "https://www.tahomabirdalliance.org/bird-walks",
     "cost": "Free",
     "recurrence": "2nd & 4th Thursday of each month"
+  },
+  {
+    "id": "makers-kicad-pcb-2026-10-22",
+    "title": "Electronics: PCB Design with KiCad",
+    "organization": "Seattle Makers",
+    "activityType": "Science",
+    "area": "Interbay, Seattle",
+    "venue": "Seattle Makers (3012 16th Ave W, Seattle, WA 98119)",
+    "start": "2026-10-22T18:00:00-07:00",
+    "end": "2026-10-22T21:00:00-07:00",
+    "timeString": "6:00 PM – 9:00 PM",
+    "dateString": "2026-10-22",
+    "description": "Learn schematic capture, component footprint layout, design rule checks, and Gerber file generation using open-source KiCad EDA.",
+    "url": "https://seattlemakers.org/events/",
+    "cost": "Class fee",
+    "recurrence": "Special workshop"
   },
   {
     "id": "srs-arduino-2026-10-22",
@@ -2400,6 +2720,22 @@
     "recurrence": "4th Monday of each month"
   },
   {
+    "id": "psba-meeting-2026-10-27",
+    "title": "Puget Sound Beekeepers Association October Meeting",
+    "organization": "Puget Sound Beekeepers",
+    "activityType": "Beekeeping",
+    "area": "Seattle",
+    "venue": "Graham Visitors Center, Washington Park Arboretum (2300 Arboretum Dr E, Seattle, WA 98112) and Online",
+    "start": "2026-10-27T18:30:00-07:00",
+    "end": "2026-10-27T21:00:00-07:00",
+    "timeString": "6:30 PM – 9:00 PM",
+    "dateString": "2026-10-27",
+    "description": "Monthly meeting covering fall hive insulation, moisture quilt installation, and emergency sugar feeding preparations for winter.",
+    "url": "https://pugetsoundbees.org/about/meetings/",
+    "cost": "Free",
+    "recurrence": "4th Tuesday monthly"
+  },
+  {
     "id": "burke-nature-night-2026-10-29",
     "title": "Nature at Night (21+ Museum Evening)",
     "organization": "The Burke Museum",
@@ -2414,6 +2750,38 @@
     "url": "https://www.burkemuseum.org/calendar",
     "cost": "$25 – $35 (21+)",
     "recurrence": "Special evening event"
+  },
+  {
+    "id": "makers-halloween-party-2026-10-30",
+    "title": "🎃 Seattle Makers Annual Halloween Costume Party 🎃",
+    "organization": "Seattle Makers",
+    "activityType": "Community/Volunteering",
+    "area": "Interbay, Seattle",
+    "venue": "Seattle Makers (3012 16th Ave W, Seattle, WA 98119)",
+    "start": "2026-10-30T18:00:00-07:00",
+    "end": "2026-10-30T22:00:00-07:00",
+    "timeString": "6:00 PM – 10:00 PM",
+    "dateString": "2026-10-30",
+    "description": "Annual community costume party featuring handmade maker costumes, costume runway awards, interactive arcade builds, music, and seasonal treats.",
+    "url": "https://seattlemakers.org/events/",
+    "cost": "Free for members / $10 guests",
+    "recurrence": "Annual party"
+  },
+  {
+    "id": "src-cougar-cup-2026-10-31",
+    "title": "Cougar Cup Cross Country Race (7.5 Miles)",
+    "organization": "Seattle Running Club",
+    "activityType": "Running",
+    "area": "Issaquah / Cougar Mountain",
+    "venue": "Cougar Mountain Regional Wildland Park (Skycountry Trailhead, 16641 SE Cougar Mountain Dr, Issaquah, WA 98027)",
+    "start": "2026-10-31T09:00:00-07:00",
+    "end": "2026-10-31T12:00:00-07:00",
+    "timeString": "9:00 AM – 12:00 PM",
+    "dateString": "2026-10-31",
+    "description": "7.5-mile rugged trail and cross-country race hosted within the October Cougar Mountain Trail Races series.",
+    "url": "https://www.seattlerunningclub.org/xc-team/",
+    "cost": "Race entry fee",
+    "recurrence": "Annual trail race"
   },
   {
     "id": "seattle-center-festal-dia-de-muertos-2026-10-31",
@@ -2496,6 +2864,22 @@
     "recurrence": "Annual festival"
   },
   {
+    "id": "src-pntf-champs-2026-11-08",
+    "title": "Pacific Northwest Cross Country Championships (USATF PNTF)",
+    "organization": "Seattle Running Club",
+    "activityType": "Running",
+    "area": "West Seattle",
+    "venue": "Lincoln Park (8011 Fauntleroy Way SW, Seattle, WA 98136)",
+    "start": "2026-11-08T09:30:00-08:00",
+    "end": "2026-11-08T13:00:00-08:00",
+    "timeString": "9:30 AM – 1:00 PM",
+    "dateString": "2026-11-08",
+    "description": "Regional USATF club cross country championship over grass loops and coastal bluff trails in Lincoln Park overlooking Puget Sound.",
+    "url": "https://www.seattlerunningclub.org/xc-team/",
+    "cost": "USATF registration required",
+    "recurrence": "Annual regional championship"
+  },
+  {
     "id": "psms-november-meeting-2026-11-10",
     "title": "November General Meeting with Greg Mueller",
     "organization": "Puget Sound Mycological Society",
@@ -2560,6 +2944,22 @@
     "recurrence": "Annual family festival"
   },
   {
+    "id": "psba-dinner-elections-2026-11-17",
+    "title": "PSBA Annual Potluck, Business Meeting & Board Elections",
+    "organization": "Puget Sound Beekeepers",
+    "activityType": "Beekeeping",
+    "area": "Seattle",
+    "venue": "Graham Visitors Center, Washington Park Arboretum (2300 Arboretum Dr E, Seattle, WA 98112)",
+    "start": "2026-11-17T18:30:00-08:00",
+    "end": "2026-11-17T21:00:00-08:00",
+    "timeString": "6:30 PM – 9:00 PM (Potluck 6:30 PM, Meeting 7:30 PM)",
+    "dateString": "2026-11-17",
+    "description": "Annual beekeeping community potluck dinner, equipment raffles, club president address, and officer elections at the Arboretum.",
+    "url": "https://pugetsoundbees.org/about/meetings/",
+    "cost": "Free (bring a dish to share)",
+    "recurrence": "Annual meeting"
+  },
+  {
     "id": "srs-meeting-2026-11-21",
     "title": "Seattle Robotics Society November Meeting: Dr. Safwan Mondal on Collaborative Robotics",
     "organization": "Seattle Robotics Society",
@@ -2574,6 +2974,54 @@
     "url": "https://seattlerobotics.org/calendar/",
     "cost": "Free",
     "recurrence": "Monthly on 3rd Saturday"
+  },
+  {
+    "id": "bff-work-party-2026-11-21",
+    "title": "Beacon Food Forest 3rd Saturday Community Stewardship Work Party",
+    "organization": "Beacon Hill Food Forest Stewards",
+    "activityType": "Nature/Conservation",
+    "area": "Beacon Hill, Seattle",
+    "venue": "Beacon Food Forest (15th Ave S & S Dakota St, Seattle, WA 98144)",
+    "start": "2026-11-21T10:00:00-08:00",
+    "end": "2026-11-21T14:00:00-08:00",
+    "timeString": "10:00 AM – 2:00 PM",
+    "dateString": "2026-11-21",
+    "description": "November permaculture volunteer work party planting fall native hedgerows, clearing trails, and preparing community garden beds for winter.",
+    "url": "https://www.beaconfoodforest.org/events",
+    "cost": "Free",
+    "recurrence": "3rd Saturday monthly year-round"
+  },
+  {
+    "id": "makers-holiday-market-2026-11-21",
+    "title": "Maker Mania: Annual Community Holiday Artisan Market",
+    "organization": "Seattle Makers",
+    "activityType": "Art",
+    "area": "Interbay, Seattle",
+    "venue": "Seattle Makers (3012 16th Ave W, Seattle, WA 98119)",
+    "start": "2026-11-21T11:00:00-08:00",
+    "end": "2026-11-21T17:00:00-08:00",
+    "timeString": "11:00 AM – 5:00 PM",
+    "dateString": "2026-11-21",
+    "description": "Holiday makers market featuring handcrafted ceramics, laser-cut jewelry, screen-printed apparel, wooden homewares, and electronic crafts made by local artisans.",
+    "url": "https://seattlemakers.org/events/",
+    "cost": "Free admission",
+    "recurrence": "Annual holiday market"
+  },
+  {
+    "id": "makers-printmaking-cards-2026-11-22",
+    "title": "Holiday Card Linocut Printmaking Workshop",
+    "organization": "Seattle Makers",
+    "activityType": "Art",
+    "area": "Interbay, Seattle",
+    "venue": "Seattle Makers (3012 16th Ave W, Seattle, WA 98119)",
+    "start": "2026-11-22T13:00:00-08:00",
+    "end": "2026-11-22T16:00:00-08:00",
+    "timeString": "1:00 PM – 4:00 PM",
+    "dateString": "2026-11-22",
+    "description": "Carve your own linoleum printing blocks and print custom artisanal holiday cards and envelopes on fine cotton paper.",
+    "url": "https://seattlemakers.org/events/",
+    "cost": "Workshop registration",
+    "recurrence": "Holiday workshop"
   },
   {
     "id": "kubota-houseplants-sale-2026-11-23",
@@ -2608,6 +3056,38 @@
     "recurrence": "Monthly on 4th Thursday"
   },
   {
+    "id": "makers-printmaking-cards-2026-12-06",
+    "title": "Holiday Card Linocut Printmaking Workshop",
+    "organization": "Seattle Makers",
+    "activityType": "Art",
+    "area": "Interbay, Seattle",
+    "venue": "Seattle Makers (3012 16th Ave W, Seattle, WA 98119)",
+    "start": "2026-12-06T13:00:00-08:00",
+    "end": "2026-12-06T16:00:00-08:00",
+    "timeString": "1:00 PM – 4:00 PM",
+    "dateString": "2026-12-06",
+    "description": "Encore winter session carving relief blocks and pressing custom holiday greeting cards.",
+    "url": "https://seattlemakers.org/events/",
+    "cost": "Workshop registration",
+    "recurrence": "Holiday workshop"
+  },
+  {
+    "id": "makers-game-night-2026-12-12",
+    "title": "Seattle Makers: Free Community Game Night (Year-End Edition)",
+    "organization": "Seattle Makers",
+    "activityType": "Games",
+    "area": "Interbay, Seattle",
+    "venue": "Seattle Makers (3012 16th Ave W, Seattle, WA 98119)",
+    "start": "2026-12-12T18:00:00-08:00",
+    "end": "2026-12-12T22:00:00-08:00",
+    "timeString": "6:00 PM – 10:00 PM",
+    "dateString": "2026-12-12",
+    "description": "Year-end community game night gathering makers, gamers, and friends for board games and potluck snacks.",
+    "url": "https://seattlemakers.org/events/",
+    "cost": "Free",
+    "recurrence": "Bi-weekly Saturday series"
+  },
+  {
     "id": "srs-meeting-2026-12-19",
     "title": "Seattle Robotics Society Year-End Meeting & Project Showcase",
     "organization": "Seattle Robotics Society",
@@ -2622,6 +3102,22 @@
     "url": "https://seattlerobotics.org/calendar/",
     "cost": "Free",
     "recurrence": "Monthly on 3rd Saturday"
+  },
+  {
+    "id": "bff-work-party-2026-12-19",
+    "title": "Beacon Food Forest 3rd Saturday Community Stewardship Work Party",
+    "organization": "Beacon Hill Food Forest Stewards",
+    "activityType": "Nature/Conservation",
+    "area": "Beacon Hill, Seattle",
+    "venue": "Beacon Food Forest (15th Ave S & S Dakota St, Seattle, WA 98144)",
+    "start": "2026-12-19T10:00:00-08:00",
+    "end": "2026-12-19T14:00:00-08:00",
+    "timeString": "10:00 AM – 2:00 PM",
+    "dateString": "2026-12-19",
+    "description": "Winter solstice community volunteer work party mulching perennial berries and fruit trees on Beacon Hill.",
+    "url": "https://www.beaconfoodforest.org/events",
+    "cost": "Free",
+    "recurrence": "3rd Saturday monthly year-round"
   },
   {
     "id": "srs-arduino-2026-12-24",
