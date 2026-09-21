@@ -256,6 +256,22 @@
     "recurrence": "4th Tuesday monthly"
   },
   {
+    "id": "sgc-tuesday-club-2026-09-22",
+    "title": "Seattle Go Center: Tuesday Club Night & Open Play",
+    "organization": "Seattle Go Center",
+    "activityType": "Games",
+    "area": "University District, Seattle",
+    "venue": "Seattle Go Center (700 NE 45th St, Seattle, WA 98105)",
+    "start": "2026-09-22T18:30:00-07:00",
+    "end": "2026-09-22T22:00:00-07:00",
+    "timeString": "6:30 PM – 10:00 PM",
+    "dateString": "2026-09-22",
+    "description": "Weekly evening club play for players of all strengths in the ancient board game of Go (Weiqi / Baduk). Volunteers on hand for free beginner lessons.",
+    "url": "https://www.seattlego.org/schedule/",
+    "cost": "$5 guest fee / free for members & first-time visitors",
+    "recurrence": "Weekly on Tuesdays"
+  },
+  {
     "id": "nwpc-vinyl-night-2026-09-22",
     "title": "Open House Vinyl Night at The Sanctuary",
     "organization": "Seattle Pinball League",
@@ -397,6 +413,22 @@
     "description": "Drop-in mid-day educational session learning to spot and identify common urban Pacific Northwest bird species. Touch preserved study specimens and learn local vocalizations.",
     "url": "https://birdsconnectsea.org/calendar/",
     "cost": "Free (no pre-registration required)",
+    "recurrence": "Weekly on Wednesdays"
+  },
+  {
+    "id": "mox-paint-jam-2026-09-23",
+    "title": "Mox Seattle: Minis Paint Jam & Hobby Workshop",
+    "organization": "Mox Boarding House",
+    "activityType": "Games",
+    "area": "Ballard, Seattle",
+    "venue": "Mox Boarding House Ballard (5105 Leary Ave NW, Seattle, WA 98107)",
+    "start": "2026-09-23T18:00:00-07:00",
+    "end": "2026-09-23T21:00:00-07:00",
+    "timeString": "6:00 PM – 9:00 PM",
+    "dateString": "2026-09-23",
+    "description": "Weekly hands-on miniature painting clinic with resident artist Ricky. Bring your Warhammer, D&D, or tabletop miniatures to paint, learn drybrushing, and share blending tips.",
+    "url": "https://www.moxboardinghouse.com/pages/seattle-events",
+    "cost": "Free (bring your minis / paints available)",
     "recurrence": "Weekly on Wednesdays"
   },
   {
@@ -544,6 +576,54 @@
     "recurrence": "Bi-weekly meetup"
   },
   {
+    "id": "mox-lorcana-2026-09-24",
+    "title": "Mox Seattle: Disney Lorcana Weekly League Play",
+    "organization": "Mox Boarding House",
+    "activityType": "Games",
+    "area": "Ballard, Seattle",
+    "venue": "Mox Boarding House Ballard (5105 Leary Ave NW, Seattle, WA 98107)",
+    "start": "2026-09-24T18:00:00-07:00",
+    "end": "2026-09-24T22:00:00-07:00",
+    "timeString": "6:00 PM – 10:00 PM",
+    "dateString": "2026-09-24",
+    "description": "Weekly casual Disney Lorcana TCG meetup in the tournament room. Earn league points and trade cards.",
+    "url": "https://www.moxboardinghouse.com/pages/seattle-events",
+    "cost": "Free / Open play",
+    "recurrence": "Weekly on Thursdays"
+  },
+  {
+    "id": "mox-minis-throwdown-2026-09-24",
+    "title": "Mox Seattle: Tabletop Wargaming & Thursday Throwdowns",
+    "organization": "Mox Boarding House",
+    "activityType": "Games",
+    "area": "Ballard, Seattle",
+    "venue": "Mox Boarding House Ballard (5105 Leary Ave NW, Seattle, WA 98107)",
+    "start": "2026-09-24T18:00:00-07:00",
+    "end": "2026-09-24T22:00:00-07:00",
+    "timeString": "6:00 PM – 10:00 PM",
+    "dateString": "2026-09-24",
+    "description": "Weekly premier miniatures gathering featuring Warhammer 40k, Age of Sigmar, Star Wars Legion, and tabletop skirmish games across terrain tables.",
+    "url": "https://www.moxboardinghouse.com/pages/seattle-events",
+    "cost": "Free",
+    "recurrence": "Weekly on Thursdays"
+  },
+  {
+    "id": "sgc-thursday-league-2026-09-24",
+    "title": "Seattle Go Center: Thursday Handicap League",
+    "organization": "Seattle Go Center",
+    "activityType": "Games",
+    "area": "University District, Seattle",
+    "venue": "Seattle Go Center (700 NE 45th St, Seattle, WA 98105)",
+    "start": "2026-09-24T18:30:00-07:00",
+    "end": "2026-09-24T22:00:00-07:00",
+    "timeString": "6:30 PM – 10:00 PM",
+    "dateString": "2026-09-24",
+    "description": "Weekly handicap games and paired ladder matches allowing players of different ranks to compete on an even footing.",
+    "url": "https://www.seattlego.org/schedule/",
+    "cost": "Regular Go Center admission",
+    "recurrence": "Weekly on Thursdays"
+  },
+  {
     "id": "nwff-life-sound-2026-09-24",
     "title": "Local Sightings 2026 – Life in The Sound",
     "organization": "Northwest Film Forum",
@@ -640,6 +720,22 @@
     "recurrence": "Annual multi-day tour"
   },
   {
+    "id": "usk-sam-wsu-2026-09-25",
+    "title": "Urban Sketchers Seattle: On-Location Sketching at Seattle Art Museum",
+    "organization": "Urban Sketchers Seattle",
+    "activityType": "Art",
+    "area": "Downtown Seattle",
+    "venue": "Seattle Art Museum (1300 First Ave, meet near the Hammering Man sculpture, Seattle, WA 98101)",
+    "start": "2026-09-25T10:00:00-07:00",
+    "end": "2026-09-25T12:30:00-07:00",
+    "timeString": "10:00 AM – 12:30 PM (Sketch 10 AM, Throwdown 12:15 PM)",
+    "dateString": "2026-09-25",
+    "description": "Join Urban Sketchers Seattle and visiting Washington State University landscape architecture and design students drawing on location inside SAM's free public lobby and outside downtown plazas. Concludes with a traditional sketchbook throwdown.",
+    "url": "http://seattle.urbansketchers.org/p/all-outings-begin-at-10-a.html",
+    "cost": "Free / All levels welcome (bring your sketchbook & pens/pencils)",
+    "recurrence": "Special outing"
+  },
+  {
     "id": "burke-qi-gong-2026-09-25",
     "title": "Wellness Class: Introduction to Qi Gong",
     "organization": "The Burke Museum",
@@ -686,6 +782,22 @@
     "url": "https://nwfilmforum.org/calendar/",
     "cost": "$10 – $14 ticket",
     "recurrence": "Festival screening"
+  },
+  {
+    "id": "mox-fnm-draft-2026-09-25",
+    "title": "Mox Seattle: Friday Night Magic (FNM) Booster Draft",
+    "organization": "Mox Boarding House",
+    "activityType": "Games",
+    "area": "Ballard, Seattle",
+    "venue": "Mox Boarding House Ballard (5105 Leary Ave NW, Seattle, WA 98107)",
+    "start": "2026-09-25T18:00:00-07:00",
+    "end": "2026-09-25T22:00:00-07:00",
+    "timeString": "6:00 PM – 10:00 PM",
+    "dateString": "2026-09-25",
+    "description": "Sanctioned Friday Night Magic booster draft with prize packs for winning records.",
+    "url": "https://www.moxboardinghouse.com/pages/seattle-events",
+    "cost": "Draft entry fee ($18 - $22)",
+    "recurrence": "Weekly on Fridays"
   },
   {
     "id": "nwff-assets-liabilities-2026-09-25",
@@ -800,6 +912,22 @@
     "recurrence": "Season opener"
   },
   {
+    "id": "gsp-baker-park-2026-09-26",
+    "title": "Green Seattle Partnership: Baker Park Forest Restoration Work Party",
+    "organization": "Green Seattle Partnership Park Stewards",
+    "activityType": "Nature/Conservation",
+    "area": "South Seattle",
+    "venue": "Baker Park on Crown Hill / Seattle Parks (8347 14th Ave NW, Seattle, WA 98117)",
+    "start": "2026-09-26T09:00:00-07:00",
+    "end": "2026-09-26T12:00:00-07:00",
+    "timeString": "9:00 AM – 12:00 PM",
+    "dateString": "2026-09-26",
+    "description": "Community volunteer morning removing invasive English ivy and Himalayan blackberry to protect native Douglas fir and bigleaf maple canopy. Tools and training provided.",
+    "url": "https://greenseattle.org/get-involved/volunteer/",
+    "cost": "Free / All ages welcome",
+    "recurrence": "Saturday volunteer series"
+  },
+  {
     "id": "sfr-green-lake-2026-09-26",
     "title": "Saturday Morning Green Lake Run & Walk",
     "organization": "Seattle Frontrunners",
@@ -880,6 +1008,22 @@
     "recurrence": "Special workshop"
   },
   {
+    "id": "chtl-saturday-workshop-2026-09-26",
+    "title": "Capitol Hill Tool Library: Open Woodshop & Tool Checkout",
+    "organization": "Capitol Hill Tool Library",
+    "activityType": "Tools",
+    "area": "Capitol Hill, Seattle",
+    "venue": "Capitol Hill Tool Library (1552 Crawford Pl, Seattle, WA 98122)",
+    "start": "2026-09-26T10:00:00-07:00",
+    "end": "2026-09-26T14:00:00-07:00",
+    "timeString": "10:00 AM – 2:00 PM",
+    "dateString": "2026-09-26",
+    "description": "Community tool lending and open workshop hours. Access over 5,000 tools for home improvement, woodworking, electronics soldering, and repair. Volunteer tool librarians on site.",
+    "url": "https://sustainablecapitolhill.org/tool-library/",
+    "cost": "Pay-what-you-can membership ($0 - $35/yr)",
+    "recurrence": "Weekly on Saturdays"
+  },
+  {
     "id": "kubota-youth-taiko-2026-09-26",
     "title": "Youth Taiko Drumming Workshop with Northwest Taiko",
     "organization": "Kubota Garden Foundation",
@@ -894,6 +1038,22 @@
     "url": "https://www.kubotagarden.org/event",
     "cost": "Free (registration required)",
     "recurrence": "Youth workshop"
+  },
+  {
+    "id": "sgc-saturday-open-2026-09-26",
+    "title": "Seattle Go Center: Saturday Open Play & Casual Teaching",
+    "organization": "Seattle Go Center",
+    "activityType": "Games",
+    "area": "University District, Seattle",
+    "venue": "Seattle Go Center (700 NE 45th St, Seattle, WA 98105)",
+    "start": "2026-09-26T13:00:00-07:00",
+    "end": "2026-09-26T18:00:00-07:00",
+    "timeString": "1:00 PM – 6:00 PM",
+    "dateString": "2026-09-26",
+    "description": "Open afternoon session welcoming all ages and levels. Practice games, game reviews, and complimentary tea.",
+    "url": "https://www.seattlego.org/schedule/",
+    "cost": "Regular Go Center admission",
+    "recurrence": "Weekly on Saturdays"
   },
   {
     "id": "mof-nuclear-propulsion-2026-09-26",
@@ -1152,6 +1312,22 @@
     "recurrence": "Bi-weekly on Mondays"
   },
   {
+    "id": "gcc-monday-night-2026-09-28",
+    "title": "Granite Curling Club: 2026 Fall Monday Night Open League Kickoff",
+    "organization": "Seattle Curling Club",
+    "activityType": "Indoor Sports",
+    "area": "North Seattle",
+    "venue": "Granite Curling Club (1440 N 128th St, Seattle, WA 98133)",
+    "start": "2026-09-28T18:30:00-07:00",
+    "end": "2026-09-28T22:30:00-07:00",
+    "timeString": "6:30 PM & 8:30 PM Draws",
+    "dateString": "2026-09-28",
+    "description": "Opening draw of the 2026-2027 Monday Night curling season at Seattle's historic dedicated curling facility. Spectators welcome in the warm room viewing gallery.",
+    "url": "https://curlingseattle.org/content/2026-2027-monday-night",
+    "cost": "League registration / Free for spectators",
+    "recurrence": "Weekly on Mondays through March 2027"
+  },
+  {
     "id": "town-hall-kolhatkar-2026-09-28",
     "title": "Sonali Kolhatkar with Josefina Mora-Cheung: Resisting Authoritarianism",
     "organization": "Town Hall Seattle",
@@ -1182,6 +1358,54 @@
     "url": "https://townhallseattle.org/events/month/",
     "cost": "$40 GA / $50 door",
     "recurrence": "Concert"
+  },
+  {
+    "id": "gcc-tuesday-supper-2026-09-29",
+    "title": "Granite Curling Club: Tuesday Supper League",
+    "organization": "Seattle Curling Club",
+    "activityType": "Indoor Sports",
+    "area": "North Seattle",
+    "venue": "Granite Curling Club (1440 N 128th St, Seattle, WA 98133)",
+    "start": "2026-09-29T17:00:00-07:00",
+    "end": "2026-09-29T19:00:00-07:00",
+    "timeString": "5:00 PM – 7:00 PM",
+    "dateString": "2026-09-29",
+    "description": "Early evening casual curling league followed by community supper and broomstacking.",
+    "url": "https://curlingseattle.org/content/2026-2027-tuesday-supper",
+    "cost": "League registration / Spectators free",
+    "recurrence": "Weekly on Tuesdays"
+  },
+  {
+    "id": "chtl-tuesday-hours-2026-09-29",
+    "title": "Capitol Hill Tool Library: Midweek Tool Lending & Repair Desk",
+    "organization": "Capitol Hill Tool Library",
+    "activityType": "Tools",
+    "area": "Capitol Hill, Seattle",
+    "venue": "Capitol Hill Tool Library (1552 Crawford Pl, Seattle, WA 98122)",
+    "start": "2026-09-29T18:00:00-07:00",
+    "end": "2026-09-29T20:00:00-07:00",
+    "timeString": "6:00 PM – 8:00 PM",
+    "dateString": "2026-09-29",
+    "description": "Evening tool returns, reservations, and workbench access for small household repairs.",
+    "url": "https://sustainablecapitolhill.org/tool-library/",
+    "cost": "Free for library members",
+    "recurrence": "Weekly on Tuesdays"
+  },
+  {
+    "id": "mox-pokemon-league-2026-09-29",
+    "title": "Mox Seattle: Pokémon TCG Weekly League",
+    "organization": "Mox Boarding House",
+    "activityType": "Games",
+    "area": "Ballard, Seattle",
+    "venue": "Mox Boarding House Ballard (5105 Leary Ave NW, Seattle, WA 98107)",
+    "start": "2026-09-29T18:30:00-07:00",
+    "end": "2026-09-29T22:00:00-07:00",
+    "timeString": "6:30 PM – 10:00 PM",
+    "dateString": "2026-09-29",
+    "description": "Standard format Pokémon Trading Card Game community league welcoming juniors, seniors, and masters.",
+    "url": "https://www.moxboardinghouse.com/pages/seattle-events",
+    "cost": "Free / Promo pack entry",
+    "recurrence": "Weekly on Tuesdays"
   },
   {
     "id": "town-hall-salmon-run-2026-09-29",
@@ -1229,6 +1453,22 @@
     "description": "Weekly Wednesday lunchtime birding salon covering Puget Sound gull species and autumn migrants.",
     "url": "https://birdsconnectsea.org/calendar/",
     "cost": "Free",
+    "recurrence": "Weekly on Wednesdays"
+  },
+  {
+    "id": "gcc-wednesday-juniors-2026-09-30",
+    "title": "Granite Curling Club: Fall Wednesday Juniors Curling",
+    "organization": "Seattle Curling Club",
+    "activityType": "Indoor Sports",
+    "area": "North Seattle",
+    "venue": "Granite Curling Club (1440 N 128th St, Seattle, WA 98133)",
+    "start": "2026-09-30T16:30:00-07:00",
+    "end": "2026-09-30T18:00:00-07:00",
+    "timeString": "4:30 PM – 6:00 PM",
+    "dateString": "2026-09-30",
+    "description": "Youth curling program coaching delivery technique, sweeping mechanics, and tactical strategy for curlers under 21.",
+    "url": "https://curlingseattle.org/content/2026-fall-wednesday-juniors",
+    "cost": "Junior league fee",
     "recurrence": "Weekly on Wednesdays"
   },
   {
@@ -1456,6 +1696,22 @@
     "recurrence": "First Thursday monthly"
   },
   {
+    "id": "gcc-thursday-mens-2026-10-01",
+    "title": "Granite Curling Club: 2026-2027 Thursday Men's League",
+    "organization": "Seattle Curling Club",
+    "activityType": "Indoor Sports",
+    "area": "North Seattle",
+    "venue": "Granite Curling Club (1440 N 128th St, Seattle, WA 98133)",
+    "start": "2026-10-01T19:00:00-07:00",
+    "end": "2026-10-01T23:00:00-07:00",
+    "timeString": "7:00 PM & 9:00 PM Draws",
+    "dateString": "2026-10-01",
+    "description": "Competitive round-robin curling across 5 dedicated sheets with stones and brooms.",
+    "url": "https://curlingseattle.org/content/2026-2027-thursday-mens",
+    "cost": "League registration",
+    "recurrence": "Weekly on Thursdays"
+  },
+  {
     "id": "town-hall-housing-2026-10-01",
     "title": "The Future of Affordable Housing: Habitat SKKC Panel",
     "organization": "Town Hall Seattle",
@@ -1534,6 +1790,22 @@
     "url": "https://bellevuebotanical.org/calendar/",
     "cost": "$17.50 BBGS Members / $25 Non-Members",
     "recurrence": "Workshop"
+  },
+  {
+    "id": "pratt-50th-exhibition-2026-10-02",
+    "title": "Pratt Fine Arts Center: 50th Anniversary Commemorative Exhibition Opening",
+    "organization": "The Pratt Fine Arts Center",
+    "activityType": "Art",
+    "area": "Central District / Bainbridge, Seattle",
+    "venue": "Bainbridge Island Museum of Art & Pratt Fine Arts Center (1902 S Main St, Seattle, WA 98144)",
+    "start": "2026-10-02T17:00:00-07:00",
+    "end": "2026-10-02T20:00:00-07:00",
+    "timeString": "5:00 PM – 8:00 PM",
+    "dateString": "2026-10-02",
+    "description": "Celebration commemorating 50 years of community craft, glassblowing, jewelry, printmaking, and sculpture in Seattle. Showcases 75 historic and contemporary teaching artists who have shaped Pratt since 1976.",
+    "url": "https://www.pratt.org/mission",
+    "cost": "Free and open to the public",
+    "recurrence": "50th Anniversary milestone event"
   },
   {
     "id": "scc-friday-rated-2026-10-02",
@@ -1758,6 +2030,22 @@
     "url": "https://web.psrg.org/calendar/",
     "cost": "Free volunteer service",
     "recurrence": "Special event"
+  },
+  {
+    "id": "sgc-monthly-tournament-2026-10-04",
+    "title": "Seattle Go Center: October Monthly Ratings Tournament",
+    "organization": "Seattle Go Center",
+    "activityType": "Games",
+    "area": "University District, Seattle",
+    "venue": "Seattle Go Center (700 NE 45th St, Seattle, WA 98105)",
+    "start": "2026-10-04T10:00:00-07:00",
+    "end": "2026-10-04T17:00:00-07:00",
+    "timeString": "10:00 AM – 5:00 PM (Registration 10:00 AM, Round 1 11:00 AM)",
+    "dateString": "2026-10-04",
+    "description": "Three-round AGA-rated in-person Go tournament with Japanese rules and Fischer time controls. Open to all AGA members and ranks.",
+    "url": "https://www.seattlego.org/monthly-ratings/",
+    "cost": "Free tournament entry with Go Center admission + AGA membership",
+    "recurrence": "1st Sunday monthly"
   },
   {
     "id": "burke-cardenas-artist-2026-10-04",
@@ -2480,6 +2768,22 @@
     "recurrence": "Weekend tea ceremony"
   },
   {
+    "id": "discnw-friz-fest-2026-10-18",
+    "title": "DiscNW: 2026 Fall Friz Fest Community Celebration",
+    "organization": "DiscNW (Northwest Ultimate Association)",
+    "activityType": "Indoor Sports",
+    "area": "Seattle",
+    "venue": "Magnuson Park Sports Meadow (7400 Sand Point Way NE, Seattle, WA 98115)",
+    "start": "2026-10-18T13:00:00-07:00",
+    "end": "2026-10-18T17:00:00-07:00",
+    "timeString": "1:00 PM – 5:00 PM",
+    "dateString": "2026-10-18",
+    "description": "Annual community festival celebrating the Northwest Ultimate community. Features casual pickup games, accuracy throwing contests, food trucks, and social gathering for all adult and youth league players.",
+    "url": "https://www.discnw.org/en_us/e/2026-fall-friz-fest-party",
+    "cost": "Free / Sliding-scale contribution",
+    "recurrence": "Annual fall celebration"
+  },
+  {
     "id": "sas-banquet-2026-10-18",
     "title": "2026 Seattle Astronomical Society Annual Banquet",
     "organization": "Seattle Astronomical Society",
@@ -2720,6 +3024,22 @@
     "recurrence": "4th Monday of each month"
   },
   {
+    "id": "gsp-arbor-week-2026-10-26",
+    "title": "Green Seattle Partnership: Arbor Week Urban Forest Restoration",
+    "organization": "Green Seattle Partnership Park Stewards",
+    "activityType": "Nature/Conservation",
+    "area": "Seattle",
+    "venue": "Westcrest Park & Seattle Urban Forests (9000 8th Ave SW, Seattle, WA 98106)",
+    "start": "2026-10-26T10:00:00-07:00",
+    "end": "2026-10-26T13:00:00-07:00",
+    "timeString": "10:00 AM – 1:00 PM",
+    "dateString": "2026-10-26",
+    "description": "Kickoff to Seattle Arbor Week planting native understory shrubs (salal, sword fern, Oregon grape) to restore critical urban soil biology and wildlife corridors.",
+    "url": "https://greenseattle.org/get-involved/volunteer/",
+    "cost": "Free",
+    "recurrence": "Annual Arbor Week"
+  },
+  {
     "id": "psba-meeting-2026-10-27",
     "title": "Puget Sound Beekeepers Association October Meeting",
     "organization": "Puget Sound Beekeepers",
@@ -2800,6 +3120,22 @@
     "recurrence": "Annual 2-day festival"
   },
   {
+    "id": "sgc-monthly-tournament-2026-11-01",
+    "title": "Seattle Go Center: November Monthly Ratings Tournament",
+    "organization": "Seattle Go Center",
+    "activityType": "Games",
+    "area": "University District, Seattle",
+    "venue": "Seattle Go Center (700 NE 45th St, Seattle, WA 98105)",
+    "start": "2026-11-01T10:00:00-08:00",
+    "end": "2026-11-01T17:00:00-08:00",
+    "timeString": "10:00 AM – 5:00 PM",
+    "dateString": "2026-11-01",
+    "description": "November edition of the SGC 3-round AGA ratings tournament. Players paired by rank across open and handicap flights.",
+    "url": "https://www.seattlego.org/monthly-ratings/",
+    "cost": "Go Center admission + AGA membership",
+    "recurrence": "1st Sunday monthly"
+  },
+  {
     "id": "seattle-center-festal-dia-de-muertos-2026-11-01",
     "title": "Día de Muertos Festival Seattle 2026 (Day 2)",
     "organization": "Seattle Center",
@@ -2846,6 +3182,22 @@
     "url": "https://www.kubotagarden.org/event",
     "cost": "$30 General / $25 KGF Members",
     "recurrence": "Seasonal wellness walk"
+  },
+  {
+    "id": "gsp-forest-week-2026-11-07",
+    "title": "Green Seattle Partnership: Annual Seattle Forest Week Planting Day",
+    "organization": "Green Seattle Partnership Park Stewards",
+    "activityType": "Nature/Conservation",
+    "area": "Seattle",
+    "venue": "Lincoln Park (8011 Fauntleroy Way SW, Seattle, WA 98136) & Citywide Parks",
+    "start": "2026-11-07T09:00:00-08:00",
+    "end": "2026-11-07T13:00:00-08:00",
+    "timeString": "9:00 AM – 1:00 PM",
+    "dateString": "2026-11-07",
+    "description": "Seattle Forest Week flagship citywide volunteer planting day. Hundreds of volunteers plant thousands of native evergreen seedlings, western red cedars, and ferns across Seattle parks.",
+    "url": "https://greenseattle.org/get-involved/volunteer/",
+    "cost": "Free (gloves and refreshments provided)",
+    "recurrence": "Annual flagship event"
   },
   {
     "id": "seattle-center-festal-diwali-2026-11-07",
@@ -3054,6 +3406,22 @@
     "url": "https://seattlerobotics.org/calendar/",
     "cost": "Free",
     "recurrence": "Monthly on 4th Thursday"
+  },
+  {
+    "id": "sgc-monthly-tournament-2026-12-06",
+    "title": "Seattle Go Center: December Year-End Ratings Tournament",
+    "organization": "Seattle Go Center",
+    "activityType": "Games",
+    "area": "University District, Seattle",
+    "venue": "Seattle Go Center (700 NE 45th St, Seattle, WA 98105)",
+    "start": "2026-12-06T10:00:00-08:00",
+    "end": "2026-12-06T17:00:00-08:00",
+    "timeString": "10:00 AM – 5:00 PM",
+    "dateString": "2026-12-06",
+    "description": "Year-end monthly tournament at the Go Center with 3 competitive AGA-rated rounds.",
+    "url": "https://www.seattlego.org/monthly-ratings/",
+    "cost": "Go Center admission + AGA membership",
+    "recurrence": "1st Sunday monthly"
   },
   {
     "id": "makers-printmaking-cards-2026-12-06",
