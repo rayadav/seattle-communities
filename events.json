@@ -320,6 +320,22 @@
     "recurrence": "Weekly on Wednesdays"
   },
   {
+    "id": "skagit-audubon-hannegan-2026-09-23",
+    "title": "Skagit Audubon Alpine Hike: Hannegan Pass & Peak",
+    "organization": "Skagit Audubon Society",
+    "activityType": "Birding",
+    "area": "North Cascades / Mount Baker",
+    "venue": "Hannegan Pass Trailhead (Mt. Baker-Snoqualmie National Forest / North Cascades)",
+    "start": "2026-09-23T07:30:00-07:00",
+    "end": "2026-09-23T17:00:00-07:00",
+    "timeString": "7:30 AM – 5:00 PM",
+    "dateString": "2026-09-23",
+    "description": "Strenuous high-alpine birding and botanical hike to Hannegan Pass (8-10.4 miles, 2,000-3,100 ft gain) searching for ptarmigan, Clark's Nutcracker, raptors, and alpine wildlife.",
+    "url": "https://www.skagitaudubon.org/activities",
+    "cost": "Free (Carpool / Northwest Forest Pass needed)",
+    "recurrence": "Special hiking activity"
+  },
+  {
     "id": "bbg-waterfront-tour-2026-09-23",
     "title": "Seattle Waterfront Tour with Richard Hartlage",
     "organization": "Bellevue Botanical Garden Volunteers",
@@ -350,6 +366,22 @@
     "url": "https://www.museumofflight.org/exhibits-and-events/calendar-of-events",
     "cost": "Free for Museum Members",
     "recurrence": "Member tour"
+  },
+  {
+    "id": "bcs-lunch-learn-2026-09-23",
+    "title": "Birds of Seattle Lunch and Learn",
+    "organization": "Birds Connect Seattle",
+    "activityType": "Birding",
+    "area": "Downtown Seattle",
+    "venue": "Birds Connect Seattle Nature Shop & Presentation Space (616 Olive Way, Seattle, WA 98101)",
+    "start": "2026-09-23T12:15:00-07:00",
+    "end": "2026-09-23T12:45:00-07:00",
+    "timeString": "12:15 PM – 12:45 PM",
+    "dateString": "2026-09-23",
+    "description": "Drop-in mid-day educational session learning to spot and identify common urban Pacific Northwest bird species. Touch preserved study specimens and learn local vocalizations.",
+    "url": "https://birdsconnectsea.org/calendar/",
+    "cost": "Free (no pre-registration required)",
+    "recurrence": "Weekly on Wednesdays"
   },
   {
     "id": "eastside-audubon-collisions-2026-09-23",
@@ -446,6 +478,22 @@
     "url": "https://nwfilmforum.org/calendar/",
     "cost": "$10 – $14 ticket",
     "recurrence": "Festival screening"
+  },
+  {
+    "id": "tba-theler-2026-09-24",
+    "title": "Guided Birding Walk at Theler Wetlands",
+    "organization": "Tahoma Bird Alliance",
+    "activityType": "Birding",
+    "area": "Belfair / Hood Canal",
+    "venue": "Mary E. Theler Wetlands Nature Preserve (22871 WA-3, Belfair, WA 98528)",
+    "start": "2026-09-24T08:00:00-07:00",
+    "end": "2026-09-24T12:00:00-07:00",
+    "timeString": "8:00 AM – 12:00 PM",
+    "dateString": "2026-09-24",
+    "description": "Guided bird walk through 139 acres of freshwater marsh, tidal estuary, and coastal forest trails along Union River observing kingfishers, herons, and raptors.",
+    "url": "https://www.tahomabirdalliance.org/bird-walks",
+    "cost": "Free",
+    "recurrence": "2nd & 4th Thursday of each month"
   },
   {
     "id": "nwff-life-sound-2026-09-24",
@@ -654,6 +702,22 @@
     "url": "https://townhallseattle.org/events/month/",
     "cost": "$25 – $50 sliding scale",
     "recurrence": "Concert series"
+  },
+  {
+    "id": "tba-nisqually-2026-09-26",
+    "title": "Guided Birding Walk at Billy Frank Jr. Nisqually National Wildlife Refuge",
+    "organization": "Tahoma Bird Alliance",
+    "activityType": "Birding",
+    "area": "South Sound / Nisqually",
+    "venue": "Billy Frank Jr. Nisqually NWR (100 Brown Farm Rd NE, Olympia, WA 98516)",
+    "start": "2026-09-26T08:00:00-07:00",
+    "end": "2026-09-26T12:00:00-07:00",
+    "timeString": "8:00 AM – 12:00 PM",
+    "dateString": "2026-09-26",
+    "description": "Monthly guided birding walk along the Nisqually estuary boardwalk and riparian forest loops. Excellent viewing for migrating shorebirds, waterfowl, falcons, and bald eagles.",
+    "url": "https://www.tahomabirdalliance.org/bird-walks",
+    "cost": "Free (Refuge entry fee may apply)",
+    "recurrence": "4th Saturday of each month"
   },
   {
     "id": "sfr-green-lake-2026-09-26",
@@ -944,6 +1008,22 @@
     "recurrence": "Comedy performance"
   },
   {
+    "id": "tba-hess-beginners-2026-09-28",
+    "title": "Guided Beginning Birders Walk at Adriana Hess Audubon Center",
+    "organization": "Tahoma Bird Alliance",
+    "activityType": "Birding",
+    "area": "Tacoma / University Place",
+    "venue": "Adriana Hess Audubon Center (2917 Morrison Rd W, University Place, WA 98466)",
+    "start": "2026-09-28T09:30:00-07:00",
+    "end": "2026-09-28T11:30:00-07:00",
+    "timeString": "9:30 AM – 11:30 AM",
+    "dateString": "2026-09-28",
+    "description": "Introductory nature and bird walk designed specifically for beginners. Loaner binoculars and field guides available from the center office.",
+    "url": "https://www.tahomabirdalliance.org/bird-walks",
+    "cost": "Free",
+    "recurrence": "4th Monday of each month"
+  },
+  {
     "id": "psms-id-clinic-2026-09-28",
     "title": "First Fall Hildegard Hendrickson Mushroom ID Clinic",
     "organization": "Puget Sound Mycological Society",
@@ -1006,6 +1086,38 @@
     "url": "https://townhallseattle.org/events/month/",
     "cost": "$10 – $35 sliding scale",
     "recurrence": "Nature & conservation talk"
+  },
+  {
+    "id": "skagit-audubon-blue-lake-2026-09-30",
+    "title": "Skagit Audubon Alpine Hike: Blue Lake",
+    "organization": "Skagit Audubon Society",
+    "activityType": "Birding",
+    "area": "North Cascades / Highway 20",
+    "venue": "Blue Lake Trailhead (North Cascades Highway / SR 20)",
+    "start": "2026-09-30T07:30:00-07:00",
+    "end": "2026-09-30T16:30:00-07:00",
+    "timeString": "7:30 AM – 4:30 PM",
+    "dateString": "2026-09-30",
+    "description": "Moderate 4.4-mile subalpine hike observing golden subalpine larches, mountain chickadees, gray jays, and alpine scenery beneath granite peaks.",
+    "url": "https://www.skagitaudubon.org/activities",
+    "cost": "Free (Northwest Forest Pass needed)",
+    "recurrence": "Special hiking activity"
+  },
+  {
+    "id": "bcs-lunch-learn-2026-09-30",
+    "title": "Birds of Seattle Lunch and Learn",
+    "organization": "Birds Connect Seattle",
+    "activityType": "Birding",
+    "area": "Downtown Seattle",
+    "venue": "Birds Connect Seattle Nature Shop & Presentation Space (616 Olive Way, Seattle, WA 98101)",
+    "start": "2026-09-30T12:15:00-07:00",
+    "end": "2026-09-30T12:45:00-07:00",
+    "timeString": "12:15 PM – 12:45 PM",
+    "dateString": "2026-09-30",
+    "description": "Weekly Wednesday lunchtime birding salon covering Puget Sound gull species and autumn migrants.",
+    "url": "https://birdsconnectsea.org/calendar/",
+    "cost": "Free",
+    "recurrence": "Weekly on Wednesdays"
   },
   {
     "id": "sfr-volunteer-park-2026-09-30",
@@ -1328,6 +1440,22 @@
     "recurrence": "Monthly workshop"
   },
   {
+    "id": "tba-gateway-2026-10-03",
+    "title": "Guided Birding Walk at Gateway Park in Gig Harbor",
+    "organization": "Tahoma Bird Alliance",
+    "activityType": "Birding",
+    "area": "Gig Harbor",
+    "venue": "Gateway Park (10405 WA-302, Gig Harbor, WA 98329)",
+    "start": "2026-10-03T08:30:00-07:00",
+    "end": "2026-10-03T10:30:00-07:00",
+    "timeString": "8:30 AM – 10:30 AM",
+    "dateString": "2026-10-03",
+    "description": "Monthly Saturday morning bird walk through open meadows, pond edges, and mixed woodlands in Key Peninsula's Gateway Park.",
+    "url": "https://www.tahomabirdalliance.org/bird-walks",
+    "cost": "Free",
+    "recurrence": "1st Saturday of each month"
+  },
+  {
     "id": "sfr-green-lake-2026-10-03",
     "title": "Saturday Morning Green Lake Run & Walk",
     "organization": "Seattle Frontrunners",
@@ -1518,6 +1646,38 @@
     "url": "https://nwpinballcollective.org/Events",
     "cost": "Free for members & volunteers",
     "recurrence": "First Tuesday monthly"
+  },
+  {
+    "id": "bcs-lunch-learn-2026-10-07",
+    "title": "Birds of Seattle Lunch and Learn",
+    "organization": "Birds Connect Seattle",
+    "activityType": "Birding",
+    "area": "Downtown Seattle",
+    "venue": "Birds Connect Seattle Nature Shop & Presentation Space (616 Olive Way, Seattle, WA 98101)",
+    "start": "2026-10-07T12:15:00-07:00",
+    "end": "2026-10-07T12:45:00-07:00",
+    "timeString": "12:15 PM – 12:45 PM",
+    "dateString": "2026-10-07",
+    "description": "Weekly Wednesday lunchtime session learning bird calls and field identification skills with museum study skins.",
+    "url": "https://birdsconnectsea.org/calendar/",
+    "cost": "Free",
+    "recurrence": "Weekly on Wednesdays"
+  },
+  {
+    "id": "tba-theler-2026-10-08",
+    "title": "Guided Birding Walk at Theler Wetlands",
+    "organization": "Tahoma Bird Alliance",
+    "activityType": "Birding",
+    "area": "Belfair / Hood Canal",
+    "venue": "Mary E. Theler Wetlands Nature Preserve (22871 WA-3, Belfair, WA 98528)",
+    "start": "2026-10-08T08:00:00-07:00",
+    "end": "2026-10-08T12:00:00-07:00",
+    "timeString": "8:00 AM – 12:00 PM",
+    "dateString": "2026-10-08",
+    "description": "Guided estuary bird walk observing marsh wrens, ducks, and raptors along the wetlands boardwalk.",
+    "url": "https://www.tahomabirdalliance.org/bird-walks",
+    "cost": "Free",
+    "recurrence": "2nd & 4th Thursday of each month"
   },
   {
     "id": "tilth-garden-bed-2026-10-08",
@@ -1760,6 +1920,22 @@
     "recurrence": "Weekly on Mondays"
   },
   {
+    "id": "tba-sehmel-2026-10-13",
+    "title": "Sehmel Homestead Guided Bird Walk",
+    "organization": "Tahoma Bird Alliance",
+    "activityType": "Birding",
+    "area": "Gig Harbor",
+    "venue": "Sehmel Homestead Park (10123 78th Ave NW, Gig Harbor, WA 98332)",
+    "start": "2026-10-13T08:00:00-07:00",
+    "end": "2026-10-13T10:30:00-07:00",
+    "timeString": "8:00 AM – 10:30 AM",
+    "dateString": "2026-10-13",
+    "description": "Seasonal guided birding walk through meadow, bog, and forest trails at Sehmel Homestead Park. Final session of the spring-autumn series.",
+    "url": "https://www.tahomabirdalliance.org/bird-walks",
+    "cost": "Free",
+    "recurrence": "2nd Tuesday monthly (April - October)"
+  },
+  {
     "id": "tilth-autumn-abundance-2026-10-13",
     "title": "Autumn's Abundance: Farm-to-Table Cooking Series",
     "organization": "Seattle Tilth Alliance Garden Stewards",
@@ -1790,6 +1966,22 @@
     "url": "https://mms.psms.org/Calendar/moreinfo.php?org_id=PSMS&eventid=192496",
     "cost": "Free and open to the public",
     "recurrence": "Monthly general meeting"
+  },
+  {
+    "id": "bcs-lunch-learn-2026-10-14",
+    "title": "Birds of Seattle Lunch and Learn",
+    "organization": "Birds Connect Seattle",
+    "activityType": "Birding",
+    "area": "Downtown Seattle",
+    "venue": "Birds Connect Seattle Nature Shop & Presentation Space (616 Olive Way, Seattle, WA 98101)",
+    "start": "2026-10-14T12:15:00-07:00",
+    "end": "2026-10-14T12:45:00-07:00",
+    "timeString": "12:15 PM – 12:45 PM",
+    "dateString": "2026-10-14",
+    "description": "Learn how to spot and identify wintering waterfowl arriving in Puget Sound waterways.",
+    "url": "https://birdsconnectsea.org/calendar/",
+    "cost": "Free",
+    "recurrence": "Weekly on Wednesdays"
   },
   {
     "id": "tilth-garlic-2026-10-14",
@@ -1854,6 +2046,22 @@
     "url": "https://web.psrg.org/calendar/",
     "cost": "Free",
     "recurrence": "Annual international weekend"
+  },
+  {
+    "id": "tba-clarks-creek-2026-10-17",
+    "title": "Guided Birding Walk at Clark's Creek / Decoursey Pond",
+    "organization": "Tahoma Bird Alliance",
+    "activityType": "Birding",
+    "area": "Puyallup",
+    "venue": "Decoursey Pond Park (2101 7th Ave SW, Puyallup, WA 98371)",
+    "start": "2026-10-17T08:30:00-07:00",
+    "end": "2026-10-17T10:30:00-07:00",
+    "timeString": "8:30 AM – 10:30 AM",
+    "dateString": "2026-10-17",
+    "description": "Monthly third Saturday bird walk meeting at the covered shelter on the west side of Decoursey Pond, following Clark's Creek wooded banks.",
+    "url": "https://www.tahomabirdalliance.org/bird-walks",
+    "cost": "Free",
+    "recurrence": "3rd Saturday of each month"
   },
   {
     "id": "tilth-down-dirt-2026-10-17",
@@ -2016,6 +2224,22 @@
     "recurrence": "Weekly on Mondays"
   },
   {
+    "id": "tba-theler-2026-10-22",
+    "title": "Guided Birding Walk at Theler Wetlands",
+    "organization": "Tahoma Bird Alliance",
+    "activityType": "Birding",
+    "area": "Belfair / Hood Canal",
+    "venue": "Mary E. Theler Wetlands Nature Preserve (22871 WA-3, Belfair, WA 98528)",
+    "start": "2026-10-22T08:00:00-07:00",
+    "end": "2026-10-22T12:00:00-07:00",
+    "timeString": "8:00 AM – 12:00 PM",
+    "dateString": "2026-10-22",
+    "description": "Guided estuary bird walk through tidal wetland habitats at the tip of Hood Canal.",
+    "url": "https://www.tahomabirdalliance.org/bird-walks",
+    "cost": "Free",
+    "recurrence": "2nd & 4th Thursday of each month"
+  },
+  {
     "id": "srs-arduino-2026-10-22",
     "title": "Build it with Arduino Meetup Workshop",
     "organization": "Seattle Robotics Society",
@@ -2030,6 +2254,22 @@
     "url": "https://seattlerobotics.org/calendar/",
     "cost": "Free",
     "recurrence": "Monthly on 4th Thursday"
+  },
+  {
+    "id": "tba-nisqually-2026-10-24",
+    "title": "Guided Birding Walk at Billy Frank Jr. Nisqually National Wildlife Refuge",
+    "organization": "Tahoma Bird Alliance",
+    "activityType": "Birding",
+    "area": "South Sound / Nisqually",
+    "venue": "Billy Frank Jr. Nisqually NWR (100 Brown Farm Rd NE, Olympia, WA 98516)",
+    "start": "2026-10-24T08:00:00-07:00",
+    "end": "2026-10-24T12:00:00-07:00",
+    "timeString": "8:00 AM – 12:00 PM",
+    "dateString": "2026-10-24",
+    "description": "Monthly guided bird walk scanning Nisqually delta mudflats for overwintering shorebirds and waterfowl.",
+    "url": "https://www.tahomabirdalliance.org/bird-walks",
+    "cost": "Free",
+    "recurrence": "4th Saturday of each month"
   },
   {
     "id": "kubota-maple-sale-2026-10-24",
@@ -2142,6 +2382,22 @@
     "url": "https://www.seattlejapanesegarden.org/events-calendar",
     "cost": "$15 ticket + Garden admission",
     "recurrence": "Weekend tea ceremony"
+  },
+  {
+    "id": "tba-hess-beginners-2026-10-26",
+    "title": "Guided Beginning Birders Walk at Adriana Hess Audubon Center",
+    "organization": "Tahoma Bird Alliance",
+    "activityType": "Birding",
+    "area": "Tacoma / University Place",
+    "venue": "Adriana Hess Audubon Center (2917 Morrison Rd W, University Place, WA 98466)",
+    "start": "2026-10-26T09:30:00-07:00",
+    "end": "2026-10-26T11:30:00-07:00",
+    "timeString": "9:30 AM – 11:30 AM",
+    "dateString": "2026-10-26",
+    "description": "Introductory morning bird walk for beginner birders around the Adriana Hess preserve.",
+    "url": "https://www.tahomabirdalliance.org/bird-walks",
+    "cost": "Free",
+    "recurrence": "4th Monday of each month"
   },
   {
     "id": "burke-nature-night-2026-10-29",
