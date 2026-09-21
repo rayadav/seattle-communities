@@ -1024,6 +1024,22 @@
     "recurrence": "Weekly on Saturdays"
   },
   {
+    "id": "kubota-public-tour-2026-09-26",
+    "title": "Kubota Garden: September History & Landscape Public Tour",
+    "organization": "Kubota Garden Foundation",
+    "activityType": "Nature/Conservation",
+    "area": "Rainier Beach, Seattle",
+    "venue": "Kubota Garden (9817 55th Ave S, Seattle, WA 98118)",
+    "start": "2026-09-26T10:00:00-07:00",
+    "end": "2026-09-26T12:00:00-07:00",
+    "timeString": "10:00 AM – 12:00 PM",
+    "dateString": "2026-09-26",
+    "description": "Guided walking tour through Kubota Garden exploring its 20-acre historic Japanese landscape, waterfalls, stone carvings, and master plantings by Fujitaro Kubota.",
+    "url": "https://www.kubotagarden.org/event",
+    "cost": "Free / Donations welcome",
+    "recurrence": "4th Saturday monthly"
+  },
+  {
     "id": "kubota-youth-taiko-2026-09-26",
     "title": "Youth Taiko Drumming Workshop with Northwest Taiko",
     "organization": "Kubota Garden Foundation",
@@ -1246,6 +1262,38 @@
     "url": "https://www.seattlejapanesegarden.org/events-calendar",
     "cost": "Garden admission + Tea Ceremony ticket ($15)",
     "recurrence": "Weekend tea ceremony"
+  },
+  {
+    "id": "npa-september-meeting-2026-09-27",
+    "title": "Northwest Paleontological Association: September Meeting & Field Showcase",
+    "organization": "Northwest Paleontological Association",
+    "activityType": "Science",
+    "area": "University District, Seattle",
+    "venue": "The Burke Museum (Downstairs Classroom, 4300 15th Ave NE, Seattle, WA 98105)",
+    "start": "2026-09-27T13:00:00-07:00",
+    "end": "2026-09-27T15:00:00-07:00",
+    "timeString": "1:00 PM – 3:00 PM",
+    "dateString": "2026-09-27",
+    "description": "NPA general meeting featuring Kelsie Abrams, Fossil Lab Manager of the Burke Museum, sharing dinosaur field discoveries, recaps of 14 PNW fossil sites, and member fossil show-and-tell.",
+    "url": "https://www.northwestpaleo.org/events/tentative-sept-meeting-date",
+    "cost": "Free and open to the public",
+    "recurrence": "Bi-monthly meeting"
+  },
+  {
+    "id": "sjg-tea-ceremony-2026-09-27",
+    "title": "Seattle Japanese Garden: Chanoyu Tea Ceremony with Tankokai",
+    "organization": "Seattle Japanese Garden",
+    "activityType": "Art",
+    "area": "Madison Park / Washington Park Arboretum, Seattle",
+    "venue": "Shoseian Teahouse, Seattle Japanese Garden (1075 Lake Washington Blvd E, Seattle, WA 98112)",
+    "start": "2026-09-27T13:00:00-07:00",
+    "end": "2026-09-27T15:40:00-07:00",
+    "timeString": "1:00 PM – 3:40 PM (Multiple 40-minute seatings)",
+    "dateString": "2026-09-27",
+    "description": "Traditional Japanese Chanoyu tea ceremony hosted by Tankokai practitioners inside the authentic Shoseian Teahouse overlooking the pond.",
+    "url": "https://www.seattlejapanesegarden.org/events",
+    "cost": "Garden admission + Tea ticket ($15)",
+    "recurrence": "Bi-weekly Sunday series"
   },
   {
     "id": "town-hall-young-moon-2026-09-27",
@@ -1600,6 +1648,22 @@
     "recurrence": "Special workshop"
   },
   {
+    "id": "sjg-haiku-workshop-2026-10-01",
+    "title": "Free First Thursday: Haiku Poetry Workshop with Michael Dylan Welch",
+    "organization": "Seattle Japanese Garden",
+    "activityType": "Art",
+    "area": "Madison Park / Washington Park Arboretum, Seattle",
+    "venue": "Seattle Japanese Garden (1075 Lake Washington Blvd E, Seattle, WA 98112)",
+    "start": "2026-10-01T14:00:00-07:00",
+    "end": "2026-10-01T17:00:00-07:00",
+    "timeString": "2:00 PM – 5:00 PM",
+    "dateString": "2026-10-01",
+    "description": "Celebrate Free First Thursday with renowned haiku poet Michael Dylan Welch. Learn the art of Japanese haiku poetry while wandering through early autumn maple foliage.",
+    "url": "https://www.seattlejapanesegarden.org/events",
+    "cost": "Free admission (Free First Thursday)",
+    "recurrence": "1st Thursday monthly"
+  },
+  {
     "id": "burke-hispanic-heritage-2026-10-01",
     "title": "STEAM Spotlight: Celebrate Hispanic Heritage Month (Celebra el Mes de la Herencia Hispana)",
     "organization": "The Burke Museum",
@@ -1664,6 +1728,22 @@
     "recurrence": "Weekly in October"
   },
   {
+    "id": "mox-lorcana-2026-10-01",
+    "title": "Mox Seattle: Disney Lorcana Weekly League Play",
+    "organization": "Mox Boarding House",
+    "activityType": "Games",
+    "area": "Ballard, Seattle",
+    "venue": "Mox Boarding House Ballard (5105 Leary Ave NW, Seattle, WA 98107)",
+    "start": "2026-10-01T18:00:00-07:00",
+    "end": "2026-10-01T22:00:00-07:00",
+    "timeString": "6:00 PM – 10:00 PM",
+    "dateString": "2026-10-01",
+    "description": "Weekly Lorcana TCG gathering for casual duels and trading.",
+    "url": "https://www.moxboardinghouse.com/pages/seattle-events",
+    "cost": "Free / Open play",
+    "recurrence": "Weekly on Thursdays"
+  },
+  {
     "id": "bbg-seed-banking-2026-10-01",
     "title": "The Role of Seed Banking in Native Plant Conservation",
     "organization": "Bellevue Botanical Garden Volunteers",
@@ -1710,6 +1790,22 @@
     "url": "https://curlingseattle.org/content/2026-2027-thursday-mens",
     "cost": "League registration",
     "recurrence": "Weekly on Thursdays"
+  },
+  {
+    "id": "nwsm-october-meeting-2026-10-01",
+    "title": "NorthWest Scale Modelers October Meeting: Aviation & Miniatures Show & Tell",
+    "organization": "Northwest Scale Modelers",
+    "activityType": "Art",
+    "area": "Tukwila / South Seattle",
+    "venue": "The Museum of Flight (9404 E Marginal Way S, Seattle, WA 98108)",
+    "start": "2026-10-01T19:00:00-07:00",
+    "end": "2026-10-01T21:00:00-07:00",
+    "timeString": "7:00 PM – 9:00 PM",
+    "dateString": "2026-10-01",
+    "description": "Monthly scale modeling guild meeting in the Museum of Flight. Open to all model builders. Themes: Shipborne Aviation, Scary, Orange, and Bombers. Free museum admission after 5 PM on First Thursdays.",
+    "url": "https://nwsm.club/meetings/",
+    "cost": "Free admission",
+    "recurrence": "1st Thursday monthly"
   },
   {
     "id": "town-hall-housing-2026-10-01",
@@ -2096,6 +2192,22 @@
     "recurrence": "Weekly on Mondays"
   },
   {
+    "id": "gcc-monday-night-2026-10-05",
+    "title": "Granite Curling Club: Monday Night Open League",
+    "organization": "Seattle Curling Club",
+    "activityType": "Indoor Sports",
+    "area": "North Seattle",
+    "venue": "Granite Curling Club (1440 N 128th St, Seattle, WA 98133)",
+    "start": "2026-10-05T18:30:00-07:00",
+    "end": "2026-10-05T22:30:00-07:00",
+    "timeString": "6:30 PM & 8:30 PM Draws",
+    "dateString": "2026-10-05",
+    "description": "Monday night league round-robin draws.",
+    "url": "https://curlingseattle.org/content/2026-2027-monday-night",
+    "cost": "League play / Free for spectators",
+    "recurrence": "Weekly on Mondays"
+  },
+  {
     "id": "nwpc-tech-tuesday-2026-10-06",
     "title": "Tech Tuesday: Pinball Repair & Board Maintenance Clinic",
     "organization": "Seattle Pinball League",
@@ -2112,6 +2224,38 @@
     "recurrence": "First Tuesday monthly"
   },
   {
+    "id": "mox-pokemon-league-2026-10-06",
+    "title": "Mox Seattle: Pokémon TCG Weekly League",
+    "organization": "Mox Boarding House",
+    "activityType": "Games",
+    "area": "Ballard, Seattle",
+    "venue": "Mox Boarding House Ballard (5105 Leary Ave NW, Seattle, WA 98107)",
+    "start": "2026-10-06T18:30:00-07:00",
+    "end": "2026-10-06T22:00:00-07:00",
+    "timeString": "6:30 PM – 10:00 PM",
+    "dateString": "2026-10-06",
+    "description": "Weekly Pokémon Trading Card Game community league welcoming players of all skill levels.",
+    "url": "https://www.moxboardinghouse.com/pages/seattle-events",
+    "cost": "Free / Promo pack entry",
+    "recurrence": "Weekly on Tuesdays"
+  },
+  {
+    "id": "sgc-tuesday-club-2026-10-06",
+    "title": "Seattle Go Center: Tuesday Club Night & Open Play",
+    "organization": "Seattle Go Center",
+    "activityType": "Games",
+    "area": "University District, Seattle",
+    "venue": "Seattle Go Center (700 NE 45th St, Seattle, WA 98105)",
+    "start": "2026-10-06T18:30:00-07:00",
+    "end": "2026-10-06T22:00:00-07:00",
+    "timeString": "6:30 PM – 10:00 PM",
+    "dateString": "2026-10-06",
+    "description": "Weekly Tuesday evening club night for Go players of all levels.",
+    "url": "https://www.seattlego.org/schedule/",
+    "cost": "Regular Go Center admission / Free for first-timers",
+    "recurrence": "Weekly on Tuesdays"
+  },
+  {
     "id": "bcs-lunch-learn-2026-10-07",
     "title": "Birds of Seattle Lunch and Learn",
     "organization": "Birds Connect Seattle",
@@ -2124,6 +2268,22 @@
     "dateString": "2026-10-07",
     "description": "Weekly Wednesday lunchtime session learning bird calls and field identification skills with museum study skins.",
     "url": "https://birdsconnectsea.org/calendar/",
+    "cost": "Free",
+    "recurrence": "Weekly on Wednesdays"
+  },
+  {
+    "id": "mox-paint-jam-2026-10-07",
+    "title": "Mox Seattle: Minis Paint Jam & Hobby Workshop",
+    "organization": "Mox Boarding House",
+    "activityType": "Games",
+    "area": "Ballard, Seattle",
+    "venue": "Mox Boarding House Ballard (5105 Leary Ave NW, Seattle, WA 98107)",
+    "start": "2026-10-07T18:00:00-07:00",
+    "end": "2026-10-07T21:00:00-07:00",
+    "timeString": "6:00 PM – 9:00 PM",
+    "dateString": "2026-10-07",
+    "description": "Weekly Wednesday miniature painting workshop. Learn shading, highlights, and flocking.",
+    "url": "https://www.moxboardinghouse.com/pages/seattle-events",
     "cost": "Free",
     "recurrence": "Weekly on Wednesdays"
   },
@@ -2176,6 +2336,22 @@
     "recurrence": "Monthly on 2nd Thursday"
   },
   {
+    "id": "mox-minis-throwdown-2026-10-08",
+    "title": "Mox Seattle: Tabletop Wargaming & Thursday Throwdowns",
+    "organization": "Mox Boarding House",
+    "activityType": "Games",
+    "area": "Ballard, Seattle",
+    "venue": "Mox Boarding House Ballard (5105 Leary Ave NW, Seattle, WA 98107)",
+    "start": "2026-10-08T18:00:00-07:00",
+    "end": "2026-10-08T22:00:00-07:00",
+    "timeString": "6:00 PM – 10:00 PM",
+    "dateString": "2026-10-08",
+    "description": "Warhammer 40,000, Horus Heresy, and fantasy skirmish open gaming.",
+    "url": "https://www.moxboardinghouse.com/pages/seattle-events",
+    "cost": "Free",
+    "recurrence": "Weekly on Thursdays"
+  },
+  {
     "id": "sas-new-moon-2026-10-08",
     "title": "Piney Woods Dark Sky New Moon Observing",
     "organization": "Seattle Astronomical Society",
@@ -2192,6 +2368,22 @@
     "recurrence": "Monthly new moon retreat"
   },
   {
+    "id": "mof-coffee-curator-2026-10-09",
+    "title": "The Museum of Flight: Coffee with the Curator",
+    "organization": "Museum of Flight Docent Corps (Tukwila)",
+    "activityType": "Science",
+    "area": "Tukwila / South Seattle",
+    "venue": "The Museum of Flight (9404 E Marginal Way S, Seattle, WA 98108)",
+    "start": "2026-10-09T11:00:00-07:00",
+    "end": "2026-10-09T12:00:00-07:00",
+    "timeString": "11:00 AM – 12:00 PM",
+    "dateString": "2026-10-09",
+    "description": "Curatorial presentation discussing rare aerospace archival artifacts, aircraft preservation science, and Pacific Northwest aviation history over morning coffee.",
+    "url": "https://www.museumofflight.org/exhibits-and-events/calendar-of-events",
+    "cost": "Museum admission / Free for members",
+    "recurrence": "Monthly series"
+  },
+  {
     "id": "burke-qi-gong-2026-10-09",
     "title": "Wellness Class: Introduction to Qi Gong",
     "organization": "The Burke Museum",
@@ -2206,6 +2398,22 @@
     "url": "https://www.burkemuseum.org/calendar",
     "cost": "Registration required",
     "recurrence": "Weekly series on Fridays"
+  },
+  {
+    "id": "mox-fnm-draft-2026-10-09",
+    "title": "Mox Seattle: Friday Night Magic (FNM) Booster Draft",
+    "organization": "Mox Boarding House",
+    "activityType": "Games",
+    "area": "Ballard, Seattle",
+    "venue": "Mox Boarding House Ballard (5105 Leary Ave NW, Seattle, WA 98107)",
+    "start": "2026-10-09T18:00:00-07:00",
+    "end": "2026-10-09T22:00:00-07:00",
+    "timeString": "6:00 PM – 10:00 PM",
+    "dateString": "2026-10-09",
+    "description": "Friday Night Magic 3-round booster draft with prize packs.",
+    "url": "https://www.moxboardinghouse.com/pages/seattle-events",
+    "cost": "Draft entry fee ($18 - $22)",
+    "recurrence": "Weekly on Fridays"
   },
   {
     "id": "sas-duvall-2026-10-09",
@@ -2336,6 +2544,38 @@
     "recurrence": "Family Saturday"
   },
   {
+    "id": "sjg-origami-family-2026-10-10",
+    "title": "Family Saturday: Origami in the Garden with P.A.P.E.R.",
+    "organization": "Seattle Japanese Garden",
+    "activityType": "Art",
+    "area": "Madison Park / Washington Park Arboretum, Seattle",
+    "venue": "Seattle Japanese Garden (1075 Lake Washington Blvd E, Seattle, WA 98112)",
+    "start": "2026-10-10T11:00:00-07:00",
+    "end": "2026-10-10T14:00:00-07:00",
+    "timeString": "11:00 AM – 2:00 PM",
+    "dateString": "2026-10-10",
+    "description": "Hands-on family paper-folding workshop led by the Pacific Rim Artists Paper Enthusiasts (P.A.P.E.R.). Fold seasonal cranes, maple leaves, and traditional figures in the courtyard.",
+    "url": "https://www.seattlejapanesegarden.org/events",
+    "cost": "Included with garden admission",
+    "recurrence": "Monthly Family Saturday"
+  },
+  {
+    "id": "mof-pilot-experience-2026-10-10",
+    "title": "The Pilot Experience: Flight Education Lab",
+    "organization": "Museum of Flight Docent Corps (Tukwila)",
+    "activityType": "Science",
+    "area": "Tukwila / South Seattle",
+    "venue": "The Museum of Flight (9404 E Marginal Way S, Seattle, WA 98108)",
+    "start": "2026-10-10T11:00:00-07:00",
+    "end": "2026-10-10T13:00:00-07:00",
+    "timeString": "11:00 AM & 1:00 PM Sessions",
+    "dateString": "2026-10-10",
+    "description": "Interactive flight education experience covering aerodynamics, instrument flight rules, and cockpit controls guided by veteran pilots and docents.",
+    "url": "https://www.museumofflight.org/exhibits-and-events/calendar-of-events",
+    "cost": "Museum admission",
+    "recurrence": "Monthly education lab"
+  },
+  {
     "id": "sjg-tea-2026-10-10",
     "title": "Tea Ceremony: Introduction to Chanoyu with Tankokai",
     "organization": "Seattle Japanese Garden",
@@ -2432,6 +2672,38 @@
     "recurrence": "Annual 2-day festival"
   },
   {
+    "id": "ipms-october-meeting-2026-10-11",
+    "title": "IPMS Seattle: October Scale Modelers Meeting & Display",
+    "organization": "Northwest Scale Modelers",
+    "activityType": "Art",
+    "area": "Bellevue",
+    "venue": "North Bellevue Community Center (4063 148th Ave NE, Bellevue, WA 98007)",
+    "start": "2026-10-11T12:30:00-07:00",
+    "end": "2026-10-11T15:30:00-07:00",
+    "timeString": "12:30 PM – 3:30 PM",
+    "dateString": "2026-10-11",
+    "description": "Monthly general meeting of the International Plastic Modelers Society Seattle chapter. Scale aircraft, armor, ships, sci-fi kits, model contest, and kit swap.",
+    "url": "https://www.ipms-seattle.org/events.php",
+    "cost": "Free for visitors / Open to all",
+    "recurrence": "2nd Sunday monthly"
+  },
+  {
+    "id": "mof-docent-tour-2026-10-11",
+    "title": "The Museum of Flight: Weekend Docent-Led Aviation Tour",
+    "organization": "Museum of Flight Docent Corps (Tukwila)",
+    "activityType": "Science",
+    "area": "Tukwila / South Seattle",
+    "venue": "The Museum of Flight (9404 E Marginal Way S, Seattle, WA 98108)",
+    "start": "2026-10-11T15:00:00-07:00",
+    "end": "2026-10-11T16:00:00-07:00",
+    "timeString": "3:00 PM – 4:00 PM",
+    "dateString": "2026-10-11",
+    "description": "Comprehensive docent-guided tour through the Great Gallery exploring pioneering aircraft from the Wright Brothers through supersonic flight.",
+    "url": "https://www.museumofflight.org/exhibits-and-events/calendar-of-events",
+    "cost": "Free with museum admission",
+    "recurrence": "Weekend docent tour"
+  },
+  {
     "id": "makers-iot-home-2026-10-11",
     "title": "Internet of Things (IoT): Home Automation with Local Control",
     "organization": "Seattle Makers",
@@ -2461,6 +2733,22 @@
     "description": "Free public identification clinic led by Danny Miller and veteran identifiers at the Center for Urban Horticulture.",
     "url": "https://www.psms.org/all_events.php",
     "cost": "Free",
+    "recurrence": "Weekly on Mondays"
+  },
+  {
+    "id": "gcc-monday-night-2026-10-12",
+    "title": "Granite Curling Club: Monday Night Open League",
+    "organization": "Seattle Curling Club",
+    "activityType": "Indoor Sports",
+    "area": "North Seattle",
+    "venue": "Granite Curling Club (1440 N 128th St, Seattle, WA 98133)",
+    "start": "2026-10-12T18:30:00-07:00",
+    "end": "2026-10-12T22:30:00-07:00",
+    "timeString": "6:30 PM & 8:30 PM Draws",
+    "dateString": "2026-10-12",
+    "description": "Monday night league round-robin draws.",
+    "url": "https://curlingseattle.org/content/2026-2027-monday-night",
+    "cost": "League play / Free for spectators",
     "recurrence": "Weekly on Mondays"
   },
   {
@@ -2494,6 +2782,22 @@
     "url": "https://tilthalliance.org/events/",
     "cost": "$115 – $190 sliding scale",
     "recurrence": "Youth culinary series"
+  },
+  {
+    "id": "sgc-tuesday-club-2026-10-13",
+    "title": "Seattle Go Center: Tuesday Club Night & Open Play",
+    "organization": "Seattle Go Center",
+    "activityType": "Games",
+    "area": "University District, Seattle",
+    "venue": "Seattle Go Center (700 NE 45th St, Seattle, WA 98105)",
+    "start": "2026-10-13T18:30:00-07:00",
+    "end": "2026-10-13T22:00:00-07:00",
+    "timeString": "6:30 PM – 10:00 PM",
+    "dateString": "2026-10-13",
+    "description": "Weekly Tuesday evening club night.",
+    "url": "https://www.seattlego.org/schedule/",
+    "cost": "Regular Go Center admission",
+    "recurrence": "Weekly on Tuesdays"
   },
   {
     "id": "psms-october-meeting-2026-10-13",
@@ -2544,6 +2848,22 @@
     "recurrence": "Evening gardening class"
   },
   {
+    "id": "mox-paint-jam-2026-10-14",
+    "title": "Mox Seattle: Minis Paint Jam & Hobby Workshop",
+    "organization": "Mox Boarding House",
+    "activityType": "Games",
+    "area": "Ballard, Seattle",
+    "venue": "Mox Boarding House Ballard (5105 Leary Ave NW, Seattle, WA 98107)",
+    "start": "2026-10-14T18:00:00-07:00",
+    "end": "2026-10-14T21:00:00-07:00",
+    "timeString": "6:00 PM – 9:00 PM",
+    "dateString": "2026-10-14",
+    "description": "Weekly miniature painting workshop with paints, wet palettes, and instruction.",
+    "url": "https://www.moxboardinghouse.com/pages/seattle-events",
+    "cost": "Free",
+    "recurrence": "Weekly on Wednesdays"
+  },
+  {
     "id": "makers-hardware-hacking-2026-10-15",
     "title": "Hardware Hacking Meetup",
     "organization": "Seattle Makers",
@@ -2558,6 +2878,22 @@
     "url": "https://seattlemakers.org/events/",
     "cost": "Free",
     "recurrence": "3rd Thursday monthly"
+  },
+  {
+    "id": "mox-minis-throwdown-2026-10-15",
+    "title": "Mox Seattle: Tabletop Wargaming & Thursday Throwdowns",
+    "organization": "Mox Boarding House",
+    "activityType": "Games",
+    "area": "Ballard, Seattle",
+    "venue": "Mox Boarding House Ballard (5105 Leary Ave NW, Seattle, WA 98107)",
+    "start": "2026-10-15T18:00:00-07:00",
+    "end": "2026-10-15T22:00:00-07:00",
+    "timeString": "6:00 PM – 10:00 PM",
+    "dateString": "2026-10-15",
+    "description": "Tabletop miniatures wargaming on dedicated terrain tables.",
+    "url": "https://www.moxboardinghouse.com/pages/seattle-events",
+    "cost": "Free",
+    "recurrence": "Weekly on Thursdays"
   },
   {
     "id": "burke-qi-gong-2026-10-16",
@@ -2606,6 +2942,22 @@
     "url": "https://web.psrg.org/calendar/",
     "cost": "Free",
     "recurrence": "Annual international weekend"
+  },
+  {
+    "id": "mox-fnm-draft-2026-10-16",
+    "title": "Mox Seattle: Friday Night Magic (FNM) Booster Draft",
+    "organization": "Mox Boarding House",
+    "activityType": "Games",
+    "area": "Ballard, Seattle",
+    "venue": "Mox Boarding House Ballard (5105 Leary Ave NW, Seattle, WA 98107)",
+    "start": "2026-10-16T18:00:00-07:00",
+    "end": "2026-10-16T22:00:00-07:00",
+    "timeString": "6:00 PM – 10:00 PM",
+    "dateString": "2026-10-16",
+    "description": "Friday Night Magic booster draft tournament.",
+    "url": "https://www.moxboardinghouse.com/pages/seattle-events",
+    "cost": "Draft entry fee",
+    "recurrence": "Weekly on Fridays"
   },
   {
     "id": "tba-clarks-creek-2026-10-17",
@@ -2720,6 +3072,22 @@
     "recurrence": "3rd Saturday monthly year-round"
   },
   {
+    "id": "duwamish-alive-fall-2026-10-17",
+    "title": "Duwamish Alive! Fall 2026: Saving Our Salmon Saves Our Orca",
+    "organization": "Duwamish Alive Coalition Volunteers",
+    "activityType": "Nature/Conservation",
+    "area": "Tukwila / South Seattle",
+    "venue": "Herring's House Park & Duwamish River Estuary (Tukwila Shoreline & 4805 W Marginal Way SW, Seattle, WA 98106)",
+    "start": "2026-10-17T10:00:00-07:00",
+    "end": "2026-10-17T14:00:00-07:00",
+    "timeString": "10:00 AM – 2:00 PM",
+    "dateString": "2026-10-17",
+    "description": "Biannual watershed-wide community day stewarding native riparian corridors along the Green-Duwamish River. Plant native trees, restore salmon habitat, and remove legacy shoreline debris.",
+    "url": "https://www.duwamishalive.org/events/",
+    "cost": "Free (tools, gloves, and refreshments provided)",
+    "recurrence": "Biannual community day"
+  },
+  {
     "id": "tilth-bokashi-biochar-2026-10-17",
     "title": "Bokashi, Biochar and the Biology of Compost",
     "organization": "Seattle Tilth Alliance Garden Stewards",
@@ -2832,6 +3200,54 @@
     "recurrence": "Weekly on Mondays"
   },
   {
+    "id": "gcc-monday-night-2026-10-19",
+    "title": "Granite Curling Club: Monday Night Open League",
+    "organization": "Seattle Curling Club",
+    "activityType": "Indoor Sports",
+    "area": "North Seattle",
+    "venue": "Granite Curling Club (1440 N 128th St, Seattle, WA 98133)",
+    "start": "2026-10-19T18:30:00-07:00",
+    "end": "2026-10-19T22:30:00-07:00",
+    "timeString": "6:30 PM & 8:30 PM Draws",
+    "dateString": "2026-10-19",
+    "description": "Monday night league round-robin draws.",
+    "url": "https://curlingseattle.org/content/2026-2027-monday-night",
+    "cost": "League play / Free for spectators",
+    "recurrence": "Weekly on Mondays"
+  },
+  {
+    "id": "sgc-tuesday-club-2026-10-20",
+    "title": "Seattle Go Center: Tuesday Club Night & Open Play",
+    "organization": "Seattle Go Center",
+    "activityType": "Games",
+    "area": "University District, Seattle",
+    "venue": "Seattle Go Center (700 NE 45th St, Seattle, WA 98105)",
+    "start": "2026-10-20T18:30:00-07:00",
+    "end": "2026-10-20T22:00:00-07:00",
+    "timeString": "6:30 PM – 10:00 PM",
+    "dateString": "2026-10-20",
+    "description": "Weekly Tuesday evening club night.",
+    "url": "https://www.seattlego.org/schedule/",
+    "cost": "Regular Go Center admission",
+    "recurrence": "Weekly on Tuesdays"
+  },
+  {
+    "id": "mox-paint-jam-2026-10-21",
+    "title": "Mox Seattle: Minis Paint Jam & Hobby Workshop",
+    "organization": "Mox Boarding House",
+    "activityType": "Games",
+    "area": "Ballard, Seattle",
+    "venue": "Mox Boarding House Ballard (5105 Leary Ave NW, Seattle, WA 98107)",
+    "start": "2026-10-21T18:00:00-07:00",
+    "end": "2026-10-21T21:00:00-07:00",
+    "timeString": "6:00 PM – 9:00 PM",
+    "dateString": "2026-10-21",
+    "description": "Wednesday miniature painting jam.",
+    "url": "https://www.moxboardinghouse.com/pages/seattle-events",
+    "cost": "Free",
+    "recurrence": "Weekly on Wednesdays"
+  },
+  {
     "id": "tba-theler-2026-10-22",
     "title": "Guided Birding Walk at Theler Wetlands",
     "organization": "Tahoma Bird Alliance",
@@ -2864,6 +3280,22 @@
     "recurrence": "Special workshop"
   },
   {
+    "id": "mox-minis-throwdown-2026-10-22",
+    "title": "Mox Seattle: Tabletop Wargaming & Thursday Throwdowns",
+    "organization": "Mox Boarding House",
+    "activityType": "Games",
+    "area": "Ballard, Seattle",
+    "venue": "Mox Boarding House Ballard (5105 Leary Ave NW, Seattle, WA 98107)",
+    "start": "2026-10-22T18:00:00-07:00",
+    "end": "2026-10-22T22:00:00-07:00",
+    "timeString": "6:00 PM – 10:00 PM",
+    "dateString": "2026-10-22",
+    "description": "Tabletop miniatures wargaming on dedicated terrain tables.",
+    "url": "https://www.moxboardinghouse.com/pages/seattle-events",
+    "cost": "Free",
+    "recurrence": "Weekly on Thursdays"
+  },
+  {
     "id": "srs-arduino-2026-10-22",
     "title": "Build it with Arduino Meetup Workshop",
     "organization": "Seattle Robotics Society",
@@ -2878,6 +3310,22 @@
     "url": "https://seattlerobotics.org/calendar/",
     "cost": "Free",
     "recurrence": "Monthly on 4th Thursday"
+  },
+  {
+    "id": "mox-fnm-draft-2026-10-23",
+    "title": "Mox Seattle: Friday Night Magic (FNM) Booster Draft",
+    "organization": "Mox Boarding House",
+    "activityType": "Games",
+    "area": "Ballard, Seattle",
+    "venue": "Mox Boarding House Ballard (5105 Leary Ave NW, Seattle, WA 98107)",
+    "start": "2026-10-23T18:00:00-07:00",
+    "end": "2026-10-23T22:00:00-07:00",
+    "timeString": "6:00 PM – 10:00 PM",
+    "dateString": "2026-10-23",
+    "description": "Sanctioned FNM draft.",
+    "url": "https://www.moxboardinghouse.com/pages/seattle-events",
+    "cost": "Draft entry fee",
+    "recurrence": "Weekly on Fridays"
   },
   {
     "id": "tba-nisqually-2026-10-24",
@@ -3040,6 +3488,22 @@
     "recurrence": "Annual Arbor Week"
   },
   {
+    "id": "gcc-monday-night-2026-10-26",
+    "title": "Granite Curling Club: Monday Night Open League",
+    "organization": "Seattle Curling Club",
+    "activityType": "Indoor Sports",
+    "area": "North Seattle",
+    "venue": "Granite Curling Club (1440 N 128th St, Seattle, WA 98133)",
+    "start": "2026-10-26T18:30:00-07:00",
+    "end": "2026-10-26T22:30:00-07:00",
+    "timeString": "6:30 PM & 8:30 PM Draws",
+    "dateString": "2026-10-26",
+    "description": "Monday night league round-robin draws.",
+    "url": "https://curlingseattle.org/content/2026-2027-monday-night",
+    "cost": "League play / Free for spectators",
+    "recurrence": "Weekly on Mondays"
+  },
+  {
     "id": "psba-meeting-2026-10-27",
     "title": "Puget Sound Beekeepers Association October Meeting",
     "organization": "Puget Sound Beekeepers",
@@ -3054,6 +3518,54 @@
     "url": "https://pugetsoundbees.org/about/meetings/",
     "cost": "Free",
     "recurrence": "4th Tuesday monthly"
+  },
+  {
+    "id": "sgc-tuesday-club-2026-10-27",
+    "title": "Seattle Go Center: Tuesday Club Night & Open Play",
+    "organization": "Seattle Go Center",
+    "activityType": "Games",
+    "area": "University District, Seattle",
+    "venue": "Seattle Go Center (700 NE 45th St, Seattle, WA 98105)",
+    "start": "2026-10-27T18:30:00-07:00",
+    "end": "2026-10-27T22:00:00-07:00",
+    "timeString": "6:30 PM – 10:00 PM",
+    "dateString": "2026-10-27",
+    "description": "Weekly Tuesday evening club night.",
+    "url": "https://www.seattlego.org/schedule/",
+    "cost": "Regular Go Center admission",
+    "recurrence": "Weekly on Tuesdays"
+  },
+  {
+    "id": "mof-docent-tour-2026-10-28",
+    "title": "The Museum of Flight: Midweek Docent Aviation Tour",
+    "organization": "Museum of Flight Docent Corps (Tukwila)",
+    "activityType": "Science",
+    "area": "Tukwila / South Seattle",
+    "venue": "The Museum of Flight (9404 E Marginal Way S, Seattle, WA 98108)",
+    "start": "2026-10-28T11:00:00-07:00",
+    "end": "2026-10-28T12:00:00-07:00",
+    "timeString": "11:00 AM – 12:00 PM",
+    "dateString": "2026-10-28",
+    "description": "Docent-led journey covering commercial aerospace history, the Red Barn birthplace of Boeing, and Apollo space exploration.",
+    "url": "https://www.museumofflight.org/exhibits-and-events/calendar-of-events",
+    "cost": "Free with museum admission",
+    "recurrence": "Midweek docent tour"
+  },
+  {
+    "id": "mox-paint-jam-2026-10-28",
+    "title": "Mox Seattle: Minis Paint Jam & Spooky Miniature Showcase",
+    "organization": "Mox Boarding House",
+    "activityType": "Games",
+    "area": "Ballard, Seattle",
+    "venue": "Mox Boarding House Ballard (5105 Leary Ave NW, Seattle, WA 98107)",
+    "start": "2026-10-28T18:00:00-07:00",
+    "end": "2026-10-28T21:00:00-07:00",
+    "timeString": "6:00 PM – 9:00 PM",
+    "dateString": "2026-10-28",
+    "description": "Pre-Halloween miniature painting workshop focusing on undead, monsters, and eerie osl lighting effects.",
+    "url": "https://www.moxboardinghouse.com/pages/seattle-events",
+    "cost": "Free",
+    "recurrence": "Weekly on Wednesdays"
   },
   {
     "id": "burke-nature-night-2026-10-29",
@@ -3086,6 +3598,22 @@
     "url": "https://seattlemakers.org/events/",
     "cost": "Free for members / $10 guests",
     "recurrence": "Annual party"
+  },
+  {
+    "id": "mox-fnm-draft-2026-10-30",
+    "title": "Mox Seattle: Halloween Friday Night Magic Booster Draft",
+    "organization": "Mox Boarding House",
+    "activityType": "Games",
+    "area": "Ballard, Seattle",
+    "venue": "Mox Boarding House Ballard (5105 Leary Ave NW, Seattle, WA 98107)",
+    "start": "2026-10-30T18:00:00-07:00",
+    "end": "2026-10-30T22:00:00-07:00",
+    "timeString": "6:00 PM – 10:00 PM",
+    "dateString": "2026-10-30",
+    "description": "Halloween eve Friday Night Magic draft with spooky prize promos and costumes welcome.",
+    "url": "https://www.moxboardinghouse.com/pages/seattle-events",
+    "cost": "Draft entry fee",
+    "recurrence": "Weekly on Fridays"
   },
   {
     "id": "src-cougar-cup-2026-10-31",
