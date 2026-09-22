@@ -48,22 +48,6 @@
     "recurrence": "Annual festival"
   },
   {
-    "id": "bbg-storytime-2026-09-20",
-    "title": "Storytime at the Garden for K-2",
-    "organization": "Bellevue Botanical Garden Volunteers",
-    "activityType": "Nature/Conservation",
-    "area": "Bellevue",
-    "venue": "Bellevue Botanical Garden (Sharp Cabin, 12001 Main St, Bellevue, WA 98005)",
-    "start": "2026-09-20T10:30:00-07:00",
-    "end": "2026-09-20T11:30:00-07:00",
-    "timeString": "10:30 AM – 11:30 AM",
-    "dateString": "2026-09-20",
-    "description": "Free family storytime with garden-related book readings and brief hands-on nature activities in historic Sharp Cabin.",
-    "url": "https://bellevuebotanical.org/calendar/",
-    "cost": "Free (donations appreciated)",
-    "recurrence": "Family weekend program"
-  },
-  {
     "id": "mof-beebots-2026-09-20",
     "title": "STEM Starters: BeeBots! Robotics for Kids (Ages 3-5)",
     "organization": "Museum of Flight Docent Corps (Tukwila)",
@@ -78,6 +62,22 @@
     "url": "https://www.museumofflight.org/exhibits-and-events/calendar-of-events",
     "cost": "Free for Museum Members / Registration required",
     "recurrence": "Youth STEM program"
+  },
+  {
+    "id": "bbg-storytime-2026-09-20",
+    "title": "Storytime at the Garden for K-2",
+    "organization": "Bellevue Botanical Garden Volunteers",
+    "activityType": "Nature/Conservation",
+    "area": "Bellevue",
+    "venue": "Bellevue Botanical Garden (Sharp Cabin, 12001 Main St, Bellevue, WA 98005)",
+    "start": "2026-09-20T10:30:00-07:00",
+    "end": "2026-09-20T11:30:00-07:00",
+    "timeString": "10:30 AM – 11:30 AM",
+    "dateString": "2026-09-20",
+    "description": "Free family storytime with garden-related book readings and brief hands-on nature activities in historic Sharp Cabin.",
+    "url": "https://bellevuebotanical.org/calendar/",
+    "cost": "Free (donations appreciated)",
+    "recurrence": "Family weekend program"
   },
   {
     "id": "nwff-cyanotype-2026-09-20",
@@ -256,6 +256,22 @@
     "recurrence": "Seasonal walk"
   },
   {
+    "id": "sgc-tuesday-open-play-20260922",
+    "title": "Tuesday Open Play & Beginners Strategy Night",
+    "organization": "Seattle Go Center",
+    "activityType": "Games & Hobbies",
+    "area": "Phinney Ridge",
+    "venue": "Seattle Go Center (6611 Dayton Ave N, Seattle, WA 98103)",
+    "start": "2026-09-22T18:00:00-07:00",
+    "end": "2026-09-22T21:00:00-07:00",
+    "timeString": "6:00 PM – 9:00 PM",
+    "dateString": "2026-09-22",
+    "description": "Casual open play and walk-in beginner lessons for the strategic board game of Go. Players of all ranks welcome; boards and stones provided.",
+    "url": "https://www.seattlego.org/news/",
+    "cost": " Day Pass / Free for First-Timers",
+    "recurrence": "Weekly on Tuesdays"
+  },
+  {
     "id": "psba-meeting-2026-09-22",
     "title": "Puget Sound Beekeepers Association September Meeting",
     "organization": "Puget Sound Beekeepers",
@@ -288,22 +304,6 @@
     "recurrence": "Weekly on Tuesdays"
   },
   {
-    "id": "nwpc-vinyl-night-2026-09-22",
-    "title": "Open House Vinyl Night at The Sanctuary",
-    "organization": "Seattle Pinball League",
-    "activityType": "Games",
-    "area": "Seattle",
-    "venue": "The Sanctuary / Northwest Pinball Collective (7300 Aurora Ave N, Seattle, WA)",
-    "start": "2026-09-22T19:00:00-07:00",
-    "end": "2026-09-22T22:00:00-07:00",
-    "timeString": "7:00 PM – 10:00 PM",
-    "dateString": "2026-09-22",
-    "description": "Bring your favorite vinyl records and play over 30 classic and modern pinball machines on free play at the community pinball clubhouse.",
-    "url": "https://nwpinballcollective.org/Events",
-    "cost": "Day pass or membership",
-    "recurrence": "Bi-weekly meetup"
-  },
-  {
     "id": "scc-gm-belous-2026-09-22",
     "title": "Grandmaster Lecture with GM Vladimir Belous",
     "organization": "Seattle Chess Club",
@@ -320,20 +320,20 @@
     "recurrence": "Special lecture"
   },
   {
-    "id": "town-hall-richie-2026-09-22",
-    "title": "Marina Richie with Maria Mudd Ruth: Feathered Forest",
-    "organization": "Town Hall Seattle",
-    "activityType": "Community/Volunteering",
+    "id": "nwpc-vinyl-night-2026-09-22",
+    "title": "Open House Vinyl Night at The Sanctuary",
+    "organization": "Seattle Pinball League",
+    "activityType": "Games",
     "area": "Seattle",
-    "venue": "Town Hall Seattle (1119 8th Ave, Seattle, WA 98101)",
-    "start": "2026-09-22T19:30:00-07:00",
-    "end": "2026-09-22T21:00:00-07:00",
-    "timeString": "7:30 PM – 9:00 PM",
+    "venue": "The Sanctuary / Northwest Pinball Collective (7300 Aurora Ave N, Seattle, WA)",
+    "start": "2026-09-22T19:00:00-07:00",
+    "end": "2026-09-22T22:00:00-07:00",
+    "timeString": "7:00 PM – 10:00 PM",
     "dateString": "2026-09-22",
-    "description": "Acclaimed nature writer Marina Richie discusses her book 'Feathered Forest: Aloft with Birds in Ancient Trees', exploring Cascadia's old-growth canopy and forest avian ecology.",
-    "url": "https://townhallseattle.org/events/month/",
-    "cost": "$10 – $35 sliding scale",
-    "recurrence": "Author talk"
+    "description": "Bring your favorite vinyl records and play over 30 classic and modern pinball machines on free play at the community pinball clubhouse.",
+    "url": "https://nwpinballcollective.org/Events",
+    "cost": "Day pass or membership",
+    "recurrence": "Bi-weekly meetup"
   },
   {
     "id": "town-hall-mandel-2026-09-22",
@@ -349,6 +349,22 @@
     "description": "Bestselling author of 'Station Eleven' and 'Sea of Tranquility' presents her newest speculative novel 'Exit Party', an investigation of parallel lives and fractured realities.",
     "url": "https://townhallseattle.org/events/month/",
     "cost": "$10 – $128",
+    "recurrence": "Author talk"
+  },
+  {
+    "id": "town-hall-richie-2026-09-22",
+    "title": "Marina Richie with Maria Mudd Ruth: Feathered Forest",
+    "organization": "Town Hall Seattle",
+    "activityType": "Community/Volunteering",
+    "area": "Seattle",
+    "venue": "Town Hall Seattle (1119 8th Ave, Seattle, WA 98101)",
+    "start": "2026-09-22T19:30:00-07:00",
+    "end": "2026-09-22T21:00:00-07:00",
+    "timeString": "7:30 PM – 9:00 PM",
+    "dateString": "2026-09-22",
+    "description": "Acclaimed nature writer Marina Richie discusses her book 'Feathered Forest: Aloft with Birds in Ancient Trees', exploring Cascadia's old-growth canopy and forest avian ecology.",
+    "url": "https://townhallseattle.org/events/month/",
+    "cost": "$10 – $35 sliding scale",
     "recurrence": "Author talk"
   },
   {
@@ -445,6 +461,22 @@
     "description": "Weekly hands-on miniature painting clinic with resident artist Ricky. Bring your Warhammer, D&D, or tabletop miniatures to paint, learn drybrushing, and share blending tips.",
     "url": "https://www.moxboardinghouse.com/pages/seattle-events",
     "cost": "Free (bring your minis / paints available)",
+    "recurrence": "Weekly on Wednesdays"
+  },
+  {
+    "id": "flying-bike-run-club-20260923",
+    "title": "Wednesday Evening Social 5K Run Club",
+    "organization": "Flying Bike Cooperative Brewery",
+    "activityType": "Running & Fitness",
+    "area": "Greenwood",
+    "venue": "Flying Bike Cooperative Brewery (8570 Greenwood Ave N, Seattle, WA 98103)",
+    "start": "2026-09-23T18:15:00-07:00",
+    "end": "2026-09-23T19:30:00-07:00",
+    "timeString": "6:15 PM – 7:30 PM",
+    "dateString": "2026-09-23",
+    "description": "Weekly community 5K run through the Greenwood neighborhood for runners and walkers of all paces, concluding with a post-run hangout on the co-op patio.",
+    "url": "https://flyingbike.coop/",
+    "cost": "Free",
     "recurrence": "Weekly on Wednesdays"
   },
   {
@@ -560,36 +592,20 @@
     "recurrence": "2nd & 4th Thursday of each month"
   },
   {
-    "id": "nwwa-woodcraft-2026-09-24",
-    "title": "Northwest Woodworkers Association: Q&A and Show & Tell",
-    "organization": "Northwest Woodworkers Guild",
-    "activityType": "Art",
-    "area": "Seattle / Southcenter",
-    "venue": "Woodcraft Seattle (5963 Corson Ave S, Seattle, WA 98108)",
+    "id": "bhg-community-board-game-night-20260924",
+    "title": "Community Tabletop Game Night",
+    "organization": "Blue Highway Games",
+    "activityType": "Games & Hobbies",
+    "area": "Queen Anne",
+    "venue": "Blue Highway Games (2203 Queen Anne Ave N, Seattle, WA 98109)",
     "start": "2026-09-24T18:00:00-07:00",
-    "end": "2026-09-24T20:30:00-07:00",
-    "timeString": "6:00 PM – 8:30 PM",
+    "end": "2026-09-24T22:00:00-07:00",
+    "timeString": "6:00 PM – 10:00 PM",
     "dateString": "2026-09-24",
-    "description": "Monthly guild show-and-tell meeting. Bring works-in-progress, joinery questions, and finished woodworking projects to share with fellow woodcrafters and cabinetmakers.",
-    "url": "https://forum.nwwoodworkers.org/",
-    "cost": "Free and open to all woodworkers",
-    "recurrence": "Monthly meeting"
-  },
-  {
-    "id": "makers-cosplay-2026-09-24",
-    "title": "Seattle Makers: Cosplay Meetup & Prop Building",
-    "organization": "Seattle Makers",
-    "activityType": "Art",
-    "area": "Interbay, Seattle",
-    "venue": "Seattle Makers (3012 16th Ave W, Seattle, WA 98119)",
-    "start": "2026-09-24T18:00:00-07:00",
-    "end": "2026-09-24T21:00:00-07:00",
-    "timeString": "6:00 PM – 9:00 PM",
-    "dateString": "2026-09-24",
-    "description": "Collaborative maker session for cosplayers and costume designers working on armor fabrication, foam crafting, sewing, and 3D printed props.",
-    "url": "https://seattlemakers.org/events/",
-    "cost": "Free / Open to public",
-    "recurrence": "Bi-weekly meetup"
+    "description": "Weekly drop-in community board game evening. Play titles from the shop's game demo library or bring your own favorites. All skill levels welcome.",
+    "url": "https://www.bluehighwaygames.com/events-details/",
+    "cost": "Free",
+    "recurrence": "Weekly on Thursdays"
   },
   {
     "id": "mox-lorcana-2026-09-24",
@@ -624,6 +640,38 @@
     "recurrence": "Weekly on Thursdays"
   },
   {
+    "id": "nwwa-woodcraft-2026-09-24",
+    "title": "Northwest Woodworkers Association: Q&A and Show & Tell",
+    "organization": "Northwest Woodworkers Guild",
+    "activityType": "Art",
+    "area": "Seattle / Southcenter",
+    "venue": "Woodcraft Seattle (5963 Corson Ave S, Seattle, WA 98108)",
+    "start": "2026-09-24T18:00:00-07:00",
+    "end": "2026-09-24T20:30:00-07:00",
+    "timeString": "6:00 PM – 8:30 PM",
+    "dateString": "2026-09-24",
+    "description": "Monthly guild show-and-tell meeting. Bring works-in-progress, joinery questions, and finished woodworking projects to share with fellow woodcrafters and cabinetmakers.",
+    "url": "https://forum.nwwoodworkers.org/",
+    "cost": "Free and open to all woodworkers",
+    "recurrence": "Monthly meeting"
+  },
+  {
+    "id": "makers-cosplay-2026-09-24",
+    "title": "Seattle Makers: Cosplay Meetup & Prop Building",
+    "organization": "Seattle Makers",
+    "activityType": "Art",
+    "area": "Interbay, Seattle",
+    "venue": "Seattle Makers (3012 16th Ave W, Seattle, WA 98119)",
+    "start": "2026-09-24T18:00:00-07:00",
+    "end": "2026-09-24T21:00:00-07:00",
+    "timeString": "6:00 PM – 9:00 PM",
+    "dateString": "2026-09-24",
+    "description": "Collaborative maker session for cosplayers and costume designers working on armor fabrication, foam crafting, sewing, and 3D printed props.",
+    "url": "https://seattlemakers.org/events/",
+    "cost": "Free / Open to public",
+    "recurrence": "Bi-weekly meetup"
+  },
+  {
     "id": "sgc-thursday-league-2026-09-24",
     "title": "Seattle Go Center: Thursday Handicap League",
     "organization": "Seattle Go Center",
@@ -638,22 +686,6 @@
     "url": "https://www.seattlego.org/schedule/",
     "cost": "Regular Go Center admission",
     "recurrence": "Weekly on Thursdays"
-  },
-  {
-    "id": "nwff-life-sound-2026-09-24",
-    "title": "Local Sightings 2026 – Life in The Sound",
-    "organization": "Northwest Film Forum",
-    "activityType": "Art",
-    "area": "Capitol Hill, Seattle",
-    "venue": "Northwest Film Forum (1515 12th Ave, Seattle, WA 98122)",
-    "start": "2026-09-24T19:00:00-07:00",
-    "end": "2026-09-24T20:45:00-07:00",
-    "timeString": "7:00 PM – 8:45 PM",
-    "dateString": "2026-09-24",
-    "description": "Feature documentary highlighting coastal ecology, maritime communities, and indigenous stewardship across Puget Sound.",
-    "url": "https://nwfilmforum.org/calendar/",
-    "cost": "$10 – $14 ticket",
-    "recurrence": "Festival screening"
   },
   {
     "id": "srs-arduino-2026-09-24",
@@ -686,6 +718,22 @@
     "url": "https://www.burkemuseum.org/calendar",
     "cost": "Free event",
     "recurrence": "Special presentation"
+  },
+  {
+    "id": "nwff-life-sound-2026-09-24",
+    "title": "Local Sightings 2026 – Life in The Sound",
+    "organization": "Northwest Film Forum",
+    "activityType": "Art",
+    "area": "Capitol Hill, Seattle",
+    "venue": "Northwest Film Forum (1515 12th Ave, Seattle, WA 98122)",
+    "start": "2026-09-24T19:00:00-07:00",
+    "end": "2026-09-24T20:45:00-07:00",
+    "timeString": "7:00 PM – 8:45 PM",
+    "dateString": "2026-09-24",
+    "description": "Feature documentary highlighting coastal ecology, maritime communities, and indigenous stewardship across Puget Sound.",
+    "url": "https://nwfilmforum.org/calendar/",
+    "cost": "$10 – $14 ticket",
+    "recurrence": "Festival screening"
   },
   {
     "id": "nwff-lenses-2026-09-24",
@@ -848,20 +896,20 @@
     "recurrence": "Weekly on Fridays"
   },
   {
-    "id": "nwff-queer-as-in-2026-09-25",
-    "title": "Local Sightings 2026 – Queer As In (Shorts Showcase)",
-    "organization": "Northwest Film Forum",
+    "id": "town-hall-rajagopalan-2026-09-25",
+    "title": "Global Rhythms: Ganesh Rajagopalan with Marina Albero",
+    "organization": "Town Hall Seattle",
     "activityType": "Art",
-    "area": "Capitol Hill, Seattle",
-    "venue": "Northwest Film Forum (1515 12th Ave, Seattle, WA 98122)",
+    "area": "Seattle",
+    "venue": "Town Hall Seattle – The Great Hall (1119 8th Ave, Seattle, WA 98101)",
     "start": "2026-09-25T19:30:00-07:00",
-    "end": "2026-09-25T21:15:00-07:00",
-    "timeString": "7:30 PM – 9:15 PM",
+    "end": "2026-09-25T21:30:00-07:00",
+    "timeString": "7:30 PM – 9:30 PM",
     "dateString": "2026-09-25",
-    "description": "Celebratory showcase of LGBTQIA+ short films from queer Pacific Northwest filmmakers, followed by filmmaker reception.",
-    "url": "https://nwfilmforum.org/calendar/",
-    "cost": "$10 – $14 ticket",
-    "recurrence": "Festival screening"
+    "description": "Season launch of Town Hall's Global Rhythms series featuring Grammy-winning violinist Ganesh Rajagopalan in a cross-cultural collaboration with pianist Marina Albero.",
+    "url": "https://townhallseattle.org/events/month/",
+    "cost": "$25 – $50 sliding scale",
+    "recurrence": "Concert series"
   },
   {
     "id": "town-hall-mark-mapes-2026-09-25",
@@ -880,20 +928,20 @@
     "recurrence": "Science & nature talk"
   },
   {
-    "id": "town-hall-rajagopalan-2026-09-25",
-    "title": "Global Rhythms: Ganesh Rajagopalan with Marina Albero",
-    "organization": "Town Hall Seattle",
+    "id": "nwff-queer-as-in-2026-09-25",
+    "title": "Local Sightings 2026 – Queer As In (Shorts Showcase)",
+    "organization": "Northwest Film Forum",
     "activityType": "Art",
-    "area": "Seattle",
-    "venue": "Town Hall Seattle – The Great Hall (1119 8th Ave, Seattle, WA 98101)",
+    "area": "Capitol Hill, Seattle",
+    "venue": "Northwest Film Forum (1515 12th Ave, Seattle, WA 98122)",
     "start": "2026-09-25T19:30:00-07:00",
-    "end": "2026-09-25T21:30:00-07:00",
-    "timeString": "7:30 PM – 9:30 PM",
+    "end": "2026-09-25T21:15:00-07:00",
+    "timeString": "7:30 PM – 9:15 PM",
     "dateString": "2026-09-25",
-    "description": "Season launch of Town Hall's Global Rhythms series featuring Grammy-winning violinist Ganesh Rajagopalan in a cross-cultural collaboration with pianist Marina Albero.",
-    "url": "https://townhallseattle.org/events/month/",
-    "cost": "$25 – $50 sliding scale",
-    "recurrence": "Concert series"
+    "description": "Celebratory showcase of LGBTQIA+ short films from queer Pacific Northwest filmmakers, followed by filmmaker reception.",
+    "url": "https://nwfilmforum.org/calendar/",
+    "cost": "$10 – $14 ticket",
+    "recurrence": "Festival screening"
   },
   {
     "id": "tba-nisqually-2026-09-26",
@@ -910,22 +958,6 @@
     "url": "https://www.tahomabirdalliance.org/bird-walks",
     "cost": "Free (Refuge entry fee may apply)",
     "recurrence": "4th Saturday of each month"
-  },
-  {
-    "id": "src-xc-trial-2026-09-26",
-    "title": "Seattle Running Club: Cross Country 5.2M Time Trial",
-    "organization": "Seattle Running Club",
-    "activityType": "Running",
-    "area": "Bellevue",
-    "venue": "Bellevue, WA (Hosted within Fatglass 50k Course)",
-    "start": "2026-09-26T09:00:00-07:00",
-    "end": "2026-09-26T11:00:00-07:00",
-    "timeString": "9:00 AM – 11:00 AM",
-    "dateString": "2026-09-26",
-    "description": "Seattle Running Club 2026 autumn cross country season opener: 5.2-mile off-road grass and trail time trial for club members and prospective runners.",
-    "url": "https://www.seattlerunningclub.org/xc-team/",
-    "cost": "Free for club runners / No USATF required",
-    "recurrence": "Season opener"
   },
   {
     "id": "gsp-baker-park-2026-09-26",
@@ -960,6 +992,22 @@
     "recurrence": "Annual National Public Lands Day"
   },
   {
+    "id": "src-xc-trial-2026-09-26",
+    "title": "Seattle Running Club: Cross Country 5.2M Time Trial",
+    "organization": "Seattle Running Club",
+    "activityType": "Running",
+    "area": "Bellevue",
+    "venue": "Bellevue, WA (Hosted within Fatglass 50k Course)",
+    "start": "2026-09-26T09:00:00-07:00",
+    "end": "2026-09-26T11:00:00-07:00",
+    "timeString": "9:00 AM – 11:00 AM",
+    "dateString": "2026-09-26",
+    "description": "Seattle Running Club 2026 autumn cross country season opener: 5.2-mile off-road grass and trail time trial for club members and prospective runners.",
+    "url": "https://www.seattlerunningclub.org/xc-team/",
+    "cost": "Free for club runners / No USATF required",
+    "recurrence": "Season opener"
+  },
+  {
     "id": "sfr-green-lake-2026-09-26",
     "title": "Saturday Morning Green Lake Run & Walk",
     "organization": "Seattle Frontrunners",
@@ -990,38 +1038,6 @@
     "url": "https://seattlechess.club/events-calendar/",
     "cost": "Tournament registration required",
     "recurrence": "Annual 2-day championship"
-  },
-  {
-    "id": "seattle-center-festal-italian-2026-09-26",
-    "title": "The Italian Festival (Festa Italiana Seattle - Day 1)",
-    "organization": "Seattle Center",
-    "activityType": "Community/Volunteering",
-    "area": "Seattle",
-    "venue": "Seattle Center Armory Food & Event Hall and Fisher Pavilion (305 Harrison St, Seattle, WA 98109)",
-    "start": "2026-09-26T10:00:00-07:00",
-    "end": "2026-09-26T19:00:00-07:00",
-    "timeString": "10:00 AM – 7:00 PM",
-    "dateString": "2026-09-26",
-    "description": "Seattle Center Festál presents The Italian Festival in partnership with Festa Italiana. Seattle's 39th annual celebration of Italian culture featuring live music, classic car show, grape stomping competition, pizza tossing, and regional Italian cuisine.",
-    "url": "https://www.seattlecenter.com/events/featured-events/festal/the-italian-festival",
-    "cost": "Free admission",
-    "recurrence": "Annual 2-day festival"
-  },
-  {
-    "id": "kubota-tour-2026-09-26",
-    "title": "Kubota Garden Guided Public Tour",
-    "organization": "Kubota Garden Foundation",
-    "activityType": "Nature/Conservation",
-    "area": "South Seattle",
-    "venue": "Kubota Garden (9817 55th Ave S, Seattle, WA 98118)",
-    "start": "2026-09-26T10:00:00-07:00",
-    "end": "2026-09-26T12:00:00-07:00",
-    "timeString": "10:00 AM – 12:00 PM",
-    "dateString": "2026-09-26",
-    "description": "Explore the history, streams, waterfalls, and unique American-Japanese landscape architecture of master landscaper Fujitaro Kubota with trained volunteer docents.",
-    "url": "https://www.kubotagarden.org/event",
-    "cost": "Free (registration required)",
-    "recurrence": "Monthly guided tour"
   },
   {
     "id": "kubota-adult-taiko-2026-09-26",
@@ -1056,6 +1072,22 @@
     "recurrence": "Weekly on Saturdays"
   },
   {
+    "id": "kubota-tour-2026-09-26",
+    "title": "Kubota Garden Guided Public Tour",
+    "organization": "Kubota Garden Foundation",
+    "activityType": "Nature/Conservation",
+    "area": "South Seattle",
+    "venue": "Kubota Garden (9817 55th Ave S, Seattle, WA 98118)",
+    "start": "2026-09-26T10:00:00-07:00",
+    "end": "2026-09-26T12:00:00-07:00",
+    "timeString": "10:00 AM – 12:00 PM",
+    "dateString": "2026-09-26",
+    "description": "Explore the history, streams, waterfalls, and unique American-Japanese landscape architecture of master landscaper Fujitaro Kubota with trained volunteer docents.",
+    "url": "https://www.kubotagarden.org/event",
+    "cost": "Free (registration required)",
+    "recurrence": "Monthly guided tour"
+  },
+  {
     "id": "kubota-public-tour-2026-09-26",
     "title": "Kubota Garden: September History & Landscape Public Tour",
     "organization": "Kubota Garden Foundation",
@@ -1070,6 +1102,22 @@
     "url": "https://www.kubotagarden.org/event",
     "cost": "Free / Donations welcome",
     "recurrence": "4th Saturday monthly"
+  },
+  {
+    "id": "seattle-center-festal-italian-2026-09-26",
+    "title": "The Italian Festival (Festa Italiana Seattle - Day 1)",
+    "organization": "Seattle Center",
+    "activityType": "Community/Volunteering",
+    "area": "Seattle",
+    "venue": "Seattle Center Armory Food & Event Hall and Fisher Pavilion (305 Harrison St, Seattle, WA 98109)",
+    "start": "2026-09-26T10:00:00-07:00",
+    "end": "2026-09-26T19:00:00-07:00",
+    "timeString": "10:00 AM – 7:00 PM",
+    "dateString": "2026-09-26",
+    "description": "Seattle Center Festál presents The Italian Festival in partnership with Festa Italiana. Seattle's 39th annual celebration of Italian culture featuring live music, classic car show, grape stomping competition, pizza tossing, and regional Italian cuisine.",
+    "url": "https://www.seattlecenter.com/events/featured-events/festal/the-italian-festival",
+    "cost": "Free admission",
+    "recurrence": "Annual 2-day festival"
   },
   {
     "id": "kubota-youth-taiko-2026-09-26",
@@ -1184,22 +1232,6 @@
     "recurrence": "Festival screening"
   },
   {
-    "id": "nwff-female-gaze-2026-09-26",
-    "title": "Local Sightings 2026 – The Female Gaze (Shorts)",
-    "organization": "Northwest Film Forum",
-    "activityType": "Art",
-    "area": "Capitol Hill, Seattle",
-    "venue": "Northwest Film Forum (1515 12th Ave, Seattle, WA 98122)",
-    "start": "2026-09-26T19:30:00-07:00",
-    "end": "2026-09-26T21:15:00-07:00",
-    "timeString": "7:30 PM – 9:15 PM",
-    "dateString": "2026-09-26",
-    "description": "Inspiring program of shorts directed by female and non-binary Pacific Northwest filmmakers, centering womanhood and autonomy.",
-    "url": "https://nwfilmforum.org/calendar/",
-    "cost": "$10 – $14 ticket",
-    "recurrence": "Festival screening"
-  },
-  {
     "id": "town-hall-questlove-2026-09-26",
     "title": "A Conversation with Questlove (Homestead CLT Benefit)",
     "organization": "Town Hall Seattle",
@@ -1214,6 +1246,22 @@
     "url": "https://townhallseattle.org/events/month/",
     "cost": "$85 – $2500 benefit ticket",
     "recurrence": "Special benefit"
+  },
+  {
+    "id": "nwff-female-gaze-2026-09-26",
+    "title": "Local Sightings 2026 – The Female Gaze (Shorts)",
+    "organization": "Northwest Film Forum",
+    "activityType": "Art",
+    "area": "Capitol Hill, Seattle",
+    "venue": "Northwest Film Forum (1515 12th Ave, Seattle, WA 98122)",
+    "start": "2026-09-26T19:30:00-07:00",
+    "end": "2026-09-26T21:15:00-07:00",
+    "timeString": "7:30 PM – 9:15 PM",
+    "dateString": "2026-09-26",
+    "description": "Inspiring program of shorts directed by female and non-binary Pacific Northwest filmmakers, centering womanhood and autonomy.",
+    "url": "https://nwfilmforum.org/calendar/",
+    "cost": "$10 – $14 ticket",
+    "recurrence": "Festival screening"
   },
   {
     "id": "nwpc-pingolf-2026-09-26",
@@ -1264,38 +1312,6 @@
     "recurrence": "Annual 2-day festival"
   },
   {
-    "id": "cwb-public-sail-2026-09-27",
-    "title": "Sunday Public Sail & Classic Wooden Boat Rides",
-    "organization": "Center for Wooden Boats",
-    "activityType": "Water Sports",
-    "area": "Seattle / Puget Sound area",
-    "venue": "South Lake Union, 1010 Valley St, Seattle, WA 98109 (Wagner Education Center)",
-    "start": "2026-09-27T13:00:00-07:00",
-    "end": "2026-09-27T17:00:00-07:00",
-    "timeString": "1:00 PM – 5:00 PM",
-    "dateString": "2026-09-27",
-    "description": "Free public boat rides on Lake Union aboard historic sprit boats, steamboats, electric boats, and schooners. In-person sign-ups begin at 1:00 PM sharp at the Wagner Education Center.",
-    "url": "https://www.cwb.org/public-sail",
-    "cost": "Free (first-come, first-served in person at 1 PM)",
-    "recurrence": "Monthly season finale"
-  },
-  {
-    "id": "sjg-tea-2026-09-27",
-    "title": "Tea Ceremony: Introduction to Chanoyu with Tankokai",
-    "organization": "Seattle Japanese Garden",
-    "activityType": "Art",
-    "area": "Madison Park / Washington Park Arboretum, Seattle",
-    "venue": "Seattle Japanese Garden (Shoseian Tea House, 1075 Lake Washington Blvd E, Seattle, WA 98112)",
-    "start": "2026-09-27T13:00:00-07:00",
-    "end": "2026-09-27T15:40:00-07:00",
-    "timeString": "1:00 PM – 3:40 PM (40-min sessions)",
-    "dateString": "2026-09-27",
-    "description": "Experience the traditional art of Chado ('The Way of Tea') inside the historic Shoseian Tea House, hosted by Tankokai (Seattle chapter of Chado Urasenke).",
-    "url": "https://www.seattlejapanesegarden.org/events-calendar",
-    "cost": "Garden admission + Tea Ceremony ticket ($15)",
-    "recurrence": "Weekend tea ceremony"
-  },
-  {
     "id": "npa-september-meeting-2026-09-27",
     "title": "Northwest Paleontological Association: September Meeting & Field Showcase",
     "organization": "Northwest Paleontological Association",
@@ -1326,6 +1342,38 @@
     "url": "https://www.seattlejapanesegarden.org/events",
     "cost": "Garden admission + Tea ticket ($15)",
     "recurrence": "Bi-weekly Sunday series"
+  },
+  {
+    "id": "cwb-public-sail-2026-09-27",
+    "title": "Sunday Public Sail & Classic Wooden Boat Rides",
+    "organization": "Center for Wooden Boats",
+    "activityType": "Water Sports",
+    "area": "Seattle / Puget Sound area",
+    "venue": "South Lake Union, 1010 Valley St, Seattle, WA 98109 (Wagner Education Center)",
+    "start": "2026-09-27T13:00:00-07:00",
+    "end": "2026-09-27T17:00:00-07:00",
+    "timeString": "1:00 PM – 5:00 PM",
+    "dateString": "2026-09-27",
+    "description": "Free public boat rides on Lake Union aboard historic sprit boats, steamboats, electric boats, and schooners. In-person sign-ups begin at 1:00 PM sharp at the Wagner Education Center.",
+    "url": "https://www.cwb.org/public-sail",
+    "cost": "Free (first-come, first-served in person at 1 PM)",
+    "recurrence": "Monthly season finale"
+  },
+  {
+    "id": "sjg-tea-2026-09-27",
+    "title": "Tea Ceremony: Introduction to Chanoyu with Tankokai",
+    "organization": "Seattle Japanese Garden",
+    "activityType": "Art",
+    "area": "Madison Park / Washington Park Arboretum, Seattle",
+    "venue": "Seattle Japanese Garden (Shoseian Tea House, 1075 Lake Washington Blvd E, Seattle, WA 98112)",
+    "start": "2026-09-27T13:00:00-07:00",
+    "end": "2026-09-27T15:40:00-07:00",
+    "timeString": "1:00 PM – 3:40 PM (40-min sessions)",
+    "dateString": "2026-09-27",
+    "description": "Experience the traditional art of Chado ('The Way of Tea') inside the historic Shoseian Tea House, hosted by Tankokai (Seattle chapter of Chado Urasenke).",
+    "url": "https://www.seattlejapanesegarden.org/events-calendar",
+    "cost": "Garden admission + Tea Ceremony ticket ($15)",
+    "recurrence": "Weekend tea ceremony"
   },
   {
     "id": "town-hall-young-moon-2026-09-27",
@@ -1616,6 +1664,22 @@
     "recurrence": "Seattle Space Week 2026"
   },
   {
+    "id": "burke-gyetk-2026-09-30",
+    "title": "Author Talk | Gyetk: Coastal Fusion & Ancestral Knowledge from a Ts'msyen Kitchen",
+    "organization": "The Burke Museum",
+    "activityType": "Food/Brewing",
+    "area": "University District, Seattle",
+    "venue": "The Burke Museum (4303 Memorial Way NE, Seattle, WA 98195)",
+    "start": "2026-09-30T18:30:00-07:00",
+    "end": "2026-09-30T20:00:00-07:00",
+    "timeString": "6:30 PM – 8:00 PM (Doors 6:00 PM)",
+    "dateString": "2026-09-30",
+    "description": "Authors Spencer Greening and Rachel Greening discuss indigenous foodways, sea foraging, and harvesting traditions passed through Ts'msyen matriarchs.",
+    "url": "https://www.burkemuseum.org/calendar",
+    "cost": "Included with museum admission / registration",
+    "recurrence": "Author book talk"
+  },
+  {
     "id": "sfr-volunteer-park-2026-09-30",
     "title": "Wednesday Night Volunteer Park Run & Walk",
     "organization": "Seattle Frontrunners",
@@ -1632,20 +1696,20 @@
     "recurrence": "Weekly on Wednesdays year-round"
   },
   {
-    "id": "burke-gyetk-2026-09-30",
-    "title": "Author Talk | Gyetk: Coastal Fusion & Ancestral Knowledge from a Ts'msyen Kitchen",
-    "organization": "The Burke Museum",
-    "activityType": "Food/Brewing",
-    "area": "University District, Seattle",
-    "venue": "The Burke Museum (4303 Memorial Way NE, Seattle, WA 98195)",
-    "start": "2026-09-30T18:30:00-07:00",
-    "end": "2026-09-30T20:00:00-07:00",
-    "timeString": "6:30 PM – 8:00 PM (Doors 6:00 PM)",
+    "id": "makers-3d-modeling-2026-09-30",
+    "title": "3D Modeling & CAD Design Meetup",
+    "organization": "Seattle Makers",
+    "activityType": "Science",
+    "area": "Interbay, Seattle",
+    "venue": "Seattle Makers (3012 16th Ave W, Seattle, WA 98119)",
+    "start": "2026-09-30T19:00:00-07:00",
+    "end": "2026-09-30T21:00:00-07:00",
+    "timeString": "7:00 PM – 9:00 PM",
     "dateString": "2026-09-30",
-    "description": "Authors Spencer Greening and Rachel Greening discuss indigenous foodways, sea foraging, and harvesting traditions passed through Ts'msyen matriarchs.",
-    "url": "https://www.burkemuseum.org/calendar",
-    "cost": "Included with museum admission / registration",
-    "recurrence": "Author book talk"
+    "description": "Peer skill-share focusing on Blender, Fusion 360, and Onshape 3D modeling workflows for rapid prototyping and digital fabrication.",
+    "url": "https://seattlemakers.org/events/",
+    "cost": "Free",
+    "recurrence": "Monthly meetup"
   },
   {
     "id": "town-hall-frankel-2026-09-30",
@@ -1678,22 +1742,6 @@
     "url": "https://seattlechess.club/events-calendar/",
     "cost": "Free for members / $5 day pass",
     "recurrence": "Weekly on Wednesdays"
-  },
-  {
-    "id": "makers-3d-modeling-2026-09-30",
-    "title": "3D Modeling & CAD Design Meetup",
-    "organization": "Seattle Makers",
-    "activityType": "Science",
-    "area": "Interbay, Seattle",
-    "venue": "Seattle Makers (3012 16th Ave W, Seattle, WA 98119)",
-    "start": "2026-09-30T19:00:00-07:00",
-    "end": "2026-09-30T21:00:00-07:00",
-    "timeString": "7:00 PM – 9:00 PM",
-    "dateString": "2026-09-30",
-    "description": "Peer skill-share focusing on Blender, Fusion 360, and Onshape 3D modeling workflows for rapid prototyping and digital fabrication.",
-    "url": "https://seattlemakers.org/events/",
-    "cost": "Free",
-    "recurrence": "Monthly meetup"
   },
   {
     "id": "town-hall-berman-2026-09-30",
@@ -1744,22 +1792,6 @@
     "recurrence": "Annual 12-day festival"
   },
   {
-    "id": "sjg-haiku-2026-10-01",
-    "title": "Free First Thursday: Haiku Workshop with Michael Dylan Welch",
-    "organization": "Seattle Japanese Garden",
-    "activityType": "Art",
-    "area": "Madison Park / Washington Park Arboretum, Seattle",
-    "venue": "Seattle Japanese Garden (1075 Lake Washington Blvd E, Seattle, WA 98112)",
-    "start": "2026-10-01T14:00:00-07:00",
-    "end": "2026-10-01T17:00:00-07:00",
-    "timeString": "2:00 PM – 5:00 PM (Two 85-min sessions: 2:00 PM & 3:30 PM)",
-    "dateString": "2026-10-01",
-    "description": "Celebrate the autumn season with Michael Dylan Welch of the Haiku Society of America. Includes classroom review of haiku structure, a ginko (contemplative walk) through the garden, and group reading.",
-    "url": "https://www.seattlejapanesegarden.org/events-calendar",
-    "cost": "Free admission (Free First Thursday)",
-    "recurrence": "Special workshop"
-  },
-  {
     "id": "sjg-haiku-workshop-2026-10-01",
     "title": "Free First Thursday: Haiku Poetry Workshop with Michael Dylan Welch",
     "organization": "Seattle Japanese Garden",
@@ -1774,6 +1806,22 @@
     "url": "https://www.seattlejapanesegarden.org/events",
     "cost": "Free admission (Free First Thursday)",
     "recurrence": "1st Thursday monthly"
+  },
+  {
+    "id": "sjg-haiku-2026-10-01",
+    "title": "Free First Thursday: Haiku Workshop with Michael Dylan Welch",
+    "organization": "Seattle Japanese Garden",
+    "activityType": "Art",
+    "area": "Madison Park / Washington Park Arboretum, Seattle",
+    "venue": "Seattle Japanese Garden (1075 Lake Washington Blvd E, Seattle, WA 98112)",
+    "start": "2026-10-01T14:00:00-07:00",
+    "end": "2026-10-01T17:00:00-07:00",
+    "timeString": "2:00 PM – 5:00 PM (Two 85-min sessions: 2:00 PM & 3:30 PM)",
+    "dateString": "2026-10-01",
+    "description": "Celebrate the autumn season with Michael Dylan Welch of the Haiku Society of America. Includes classroom review of haiku structure, a ginko (contemplative walk) through the garden, and group reading.",
+    "url": "https://www.seattlejapanesegarden.org/events-calendar",
+    "cost": "Free admission (Free First Thursday)",
+    "recurrence": "Special workshop"
   },
   {
     "id": "burke-hispanic-heritage-2026-10-01",
@@ -1792,22 +1840,6 @@
     "recurrence": "Heritage celebration"
   },
   {
-    "id": "mof-first-thursday-2026-10-01",
-    "title": "FREE First Thursday Evening at the Museum of Flight",
-    "organization": "Museum of Flight Docent Corps (Tukwila)",
-    "activityType": "Science",
-    "area": "Tukwila",
-    "venue": "The Museum of Flight (9404 E Marginal Way S, Seattle/Tukwila, WA 98108)",
-    "start": "2026-10-01T17:00:00-07:00",
-    "end": "2026-10-01T21:00:00-07:00",
-    "timeString": "5:00 PM – 9:00 PM",
-    "dateString": "2026-10-01",
-    "description": "Enjoy free admission to all museum galleries, the space shuttle trainer, and the open-air Aviation Pavilion on the first Thursday of the month.",
-    "url": "https://www.museumofflight.org/exhibits-and-events/calendar-of-events",
-    "cost": "FREE admission (5 PM – 9 PM)",
-    "recurrence": "First Thursday monthly"
-  },
-  {
     "id": "pottery-nw-gala-2026-10-01",
     "title": "Bold & Brilliant: Pottery Northwest 60th Anniversary Gala & Auction",
     "organization": "Pottery Northwest",
@@ -1822,6 +1854,22 @@
     "url": "https://www.potterynorthwest.org/auction",
     "cost": "Gala ticket required (supports non-profit mission)",
     "recurrence": "Annual gala"
+  },
+  {
+    "id": "mof-first-thursday-2026-10-01",
+    "title": "FREE First Thursday Evening at the Museum of Flight",
+    "organization": "Museum of Flight Docent Corps (Tukwila)",
+    "activityType": "Science",
+    "area": "Tukwila",
+    "venue": "The Museum of Flight (9404 E Marginal Way S, Seattle/Tukwila, WA 98108)",
+    "start": "2026-10-01T17:00:00-07:00",
+    "end": "2026-10-01T21:00:00-07:00",
+    "timeString": "5:00 PM – 9:00 PM",
+    "dateString": "2026-10-01",
+    "description": "Enjoy free admission to all museum galleries, the space shuttle trainer, and the open-air Aviation Pavilion on the first Thursday of the month.",
+    "url": "https://www.museumofflight.org/exhibits-and-events/calendar-of-events",
+    "cost": "FREE admission (5 PM – 9 PM)",
+    "recurrence": "First Thursday monthly"
   },
   {
     "id": "snw-space-happy-hour-2026-10-01",
@@ -1840,22 +1888,6 @@
     "recurrence": "Seattle Space Week 2026"
   },
   {
-    "id": "makers-costume-session-2026-10-01",
-    "title": "🎃 Costume & Prop Making Open Session 🎃",
-    "organization": "Seattle Makers",
-    "activityType": "Art",
-    "area": "Interbay, Seattle",
-    "venue": "Seattle Makers (3012 16th Ave W, Seattle, WA 98119)",
-    "start": "2026-10-01T18:00:00-07:00",
-    "end": "2026-10-01T21:00:00-07:00",
-    "timeString": "6:00 PM – 9:00 PM",
-    "dateString": "2026-10-01",
-    "description": "Open laboratory and studio session utilizing sewing machines, laser cutters, and heat guns to craft Halloween costumes.",
-    "url": "https://seattlemakers.org/events/",
-    "cost": "Class / day pass",
-    "recurrence": "Weekly in October"
-  },
-  {
     "id": "mox-lorcana-2026-10-01",
     "title": "Mox Seattle: Disney Lorcana Weekly League Play",
     "organization": "Mox Boarding House",
@@ -1870,6 +1902,22 @@
     "url": "https://www.moxboardinghouse.com/pages/seattle-events",
     "cost": "Free / Open play",
     "recurrence": "Weekly on Thursdays"
+  },
+  {
+    "id": "makers-costume-session-2026-10-01",
+    "title": "🎃 Costume & Prop Making Open Session 🎃",
+    "organization": "Seattle Makers",
+    "activityType": "Art",
+    "area": "Interbay, Seattle",
+    "venue": "Seattle Makers (3012 16th Ave W, Seattle, WA 98119)",
+    "start": "2026-10-01T18:00:00-07:00",
+    "end": "2026-10-01T21:00:00-07:00",
+    "timeString": "6:00 PM – 9:00 PM",
+    "dateString": "2026-10-01",
+    "description": "Open laboratory and studio session utilizing sewing machines, laser cutters, and heat guns to craft Halloween costumes.",
+    "url": "https://seattlemakers.org/events/",
+    "cost": "Class / day pass",
+    "recurrence": "Weekly in October"
   },
   {
     "id": "bbg-seed-banking-2026-10-01",
@@ -1936,22 +1984,6 @@
     "recurrence": "1st Thursday monthly"
   },
   {
-    "id": "town-hall-housing-2026-10-01",
-    "title": "The Future of Affordable Housing: Habitat SKKC Panel",
-    "organization": "Town Hall Seattle",
-    "activityType": "Community/Volunteering",
-    "area": "Seattle",
-    "venue": "Town Hall Seattle (1119 8th Ave, Seattle, WA 98101)",
-    "start": "2026-10-01T19:30:00-07:00",
-    "end": "2026-10-01T21:00:00-07:00",
-    "timeString": "7:30 PM – 9:00 PM",
-    "dateString": "2026-10-01",
-    "description": "Habitat for Humanity Seattle-King & Kittitas Counties convenes regional architects, planners, and civic leaders to chart actionable paths for homeownership equity.",
-    "url": "https://townhallseattle.org/events/month/",
-    "cost": "Free – $35 sliding scale",
-    "recurrence": "Civic panel"
-  },
-  {
     "id": "town-hall-ignite-2026-10-01",
     "title": "Ignite Seattle #52: Big Ideas in 5-Minute Stories",
     "organization": "Town Hall Seattle",
@@ -1966,6 +1998,22 @@
     "url": "https://townhallseattle.org/events/month/",
     "cost": "$13 ticket",
     "recurrence": "Bi-annual event"
+  },
+  {
+    "id": "town-hall-housing-2026-10-01",
+    "title": "The Future of Affordable Housing: Habitat SKKC Panel",
+    "organization": "Town Hall Seattle",
+    "activityType": "Community/Volunteering",
+    "area": "Seattle",
+    "venue": "Town Hall Seattle (1119 8th Ave, Seattle, WA 98101)",
+    "start": "2026-10-01T19:30:00-07:00",
+    "end": "2026-10-01T21:00:00-07:00",
+    "timeString": "7:30 PM – 9:00 PM",
+    "dateString": "2026-10-01",
+    "description": "Habitat for Humanity Seattle-King & Kittitas Counties convenes regional architects, planners, and civic leaders to chart actionable paths for homeownership equity.",
+    "url": "https://townhallseattle.org/events/month/",
+    "cost": "Free – $35 sliding scale",
+    "recurrence": "Civic panel"
   },
   {
     "id": "bbg-preschool-storytime-2026-10-02",
@@ -2064,22 +2112,6 @@
     "recurrence": "Performance"
   },
   {
-    "id": "town-hall-khalil-2026-10-02",
-    "title": "Mahmoud Khalil: Civil Liberties & Human Rights",
-    "organization": "Town Hall Seattle",
-    "activityType": "Community/Volunteering",
-    "area": "Seattle",
-    "venue": "Town Hall Seattle (1119 8th Ave, Seattle, WA 98101)",
-    "start": "2026-10-02T19:30:00-07:00",
-    "end": "2026-10-02T21:00:00-07:00",
-    "timeString": "7:30 PM – 9:00 PM",
-    "dateString": "2026-10-02",
-    "description": "Human rights advocate Mahmoud Khalil shares his first-hand account of detention, immigration defense, and constitutional advocacy in contemporary America.",
-    "url": "https://townhallseattle.org/events/month/",
-    "cost": "$38 – $63 (includes book)",
-    "recurrence": "Author lecture"
-  },
-  {
     "id": "sas-intro-telescopes-2026-10-02",
     "title": "Introduction To Night Sky and Telescopes",
     "organization": "Seattle Astronomical Society",
@@ -2094,6 +2126,22 @@
     "url": "https://www.seattleastro.org/",
     "cost": "Free (RSVP online)",
     "recurrence": "Monthly workshop"
+  },
+  {
+    "id": "town-hall-khalil-2026-10-02",
+    "title": "Mahmoud Khalil: Civil Liberties & Human Rights",
+    "organization": "Town Hall Seattle",
+    "activityType": "Community/Volunteering",
+    "area": "Seattle",
+    "venue": "Town Hall Seattle (1119 8th Ave, Seattle, WA 98101)",
+    "start": "2026-10-02T19:30:00-07:00",
+    "end": "2026-10-02T21:00:00-07:00",
+    "timeString": "7:30 PM – 9:00 PM",
+    "dateString": "2026-10-02",
+    "description": "Human rights advocate Mahmoud Khalil shares his first-hand account of detention, immigration defense, and constitutional advocacy in contemporary America.",
+    "url": "https://townhallseattle.org/events/month/",
+    "cost": "$38 – $63 (includes book)",
+    "recurrence": "Author lecture"
   },
   {
     "id": "tba-gateway-2026-10-03",
@@ -2112,22 +2160,6 @@
     "recurrence": "1st Saturday of each month"
   },
   {
-    "id": "eastside-audubon-marymoor-restoration-2026-10-03",
-    "title": "Eastside Audubon: Marymoor Park Bird Habitat Restoration",
-    "organization": "Eastside Audubon",
-    "activityType": "Birding",
-    "area": "Redmond",
-    "venue": "Marymoor Park (Clise Mansion Lot / Bird Loop Trail, 6046 W Lake Sammamish Pkwy NE, Redmond, WA 98052)",
-    "start": "2026-10-03T09:00:00-07:00",
-    "end": "2026-10-03T12:00:00-07:00",
-    "timeString": "9:00 AM – 12:00 PM",
-    "dateString": "2026-10-03",
-    "description": "First Saturday habitat stewardship work party along the Marymoor Bird Loop. Plant native riparian shrubs and remove invasive blackberry to protect avian nesting habitat.",
-    "url": "https://www.eastsideaudubon.org/marymoor-restoration",
-    "cost": "Free (tools and gloves provided)",
-    "recurrence": "First Saturday of the month"
-  },
-  {
     "id": "bcs-magnuson-park-2026-10-03",
     "title": "Birds Connect Seattle: Neighborhood Bird Outing at Magnuson Park",
     "organization": "Birds Connect Seattle",
@@ -2141,6 +2173,22 @@
     "description": "First Saturday monthly community bird walk exploring restored wetland ponds, meadows, and Lake Washington shoreline.",
     "url": "https://birdsconnectsea.org/get-involved/go-birding/neighborhood-bird-outings/",
     "cost": "Free and open to all skill levels",
+    "recurrence": "First Saturday of the month"
+  },
+  {
+    "id": "eastside-audubon-marymoor-restoration-2026-10-03",
+    "title": "Eastside Audubon: Marymoor Park Bird Habitat Restoration",
+    "organization": "Eastside Audubon",
+    "activityType": "Birding",
+    "area": "Redmond",
+    "venue": "Marymoor Park (Clise Mansion Lot / Bird Loop Trail, 6046 W Lake Sammamish Pkwy NE, Redmond, WA 98052)",
+    "start": "2026-10-03T09:00:00-07:00",
+    "end": "2026-10-03T12:00:00-07:00",
+    "timeString": "9:00 AM – 12:00 PM",
+    "dateString": "2026-10-03",
+    "description": "First Saturday habitat stewardship work party along the Marymoor Bird Loop. Plant native riparian shrubs and remove invasive blackberry to protect avian nesting habitat.",
+    "url": "https://www.eastsideaudubon.org/marymoor-restoration",
+    "cost": "Free (tools and gloves provided)",
     "recurrence": "First Saturday of the month"
   },
   {
@@ -2160,22 +2208,6 @@
     "recurrence": "Weekly on Saturdays year-round"
   },
   {
-    "id": "bbg-journaling-2026-10-03",
-    "title": "Journaling the Garden (Adult Nature Observation)",
-    "organization": "Bellevue Botanical Garden Volunteers",
-    "activityType": "Nature/Conservation",
-    "area": "Bellevue",
-    "venue": "Bellevue Botanical Garden (Sharp Cabin, 12001 Main St, Bellevue, WA 98005)",
-    "start": "2026-10-03T10:00:00-07:00",
-    "end": "2026-10-03T12:00:00-07:00",
-    "timeString": "10:00 AM – 12:00 PM",
-    "dateString": "2026-10-03",
-    "description": "Guided group practice sketching and recording seasonal botanical changes in field notebooks. All artistic levels welcome.",
-    "url": "https://bellevuebotanical.org/calendar/",
-    "cost": "Free",
-    "recurrence": "First Saturday monthly"
-  },
-  {
     "id": "chtl-saturday-workshop-2026-10-03",
     "title": "Capitol Hill Tool Library: Open Woodshop & Tool Checkout",
     "organization": "Capitol Hill Tool Library",
@@ -2192,20 +2224,20 @@
     "recurrence": "Weekly on Saturdays"
   },
   {
-    "id": "burke-cardenas-artist-2026-10-03",
-    "title": "Jamie Pesquiza Cardenas in the Artist Studio (Day 1)",
-    "organization": "The Burke Museum",
-    "activityType": "Art",
-    "area": "University District, Seattle",
-    "venue": "The Burke Museum (4303 Memorial Way NE, Seattle, WA 98195)",
-    "start": "2026-10-03T11:00:00-07:00",
-    "end": "2026-10-03T14:00:00-07:00",
-    "timeString": "11:00 AM – 2:00 PM",
+    "id": "bbg-journaling-2026-10-03",
+    "title": "Journaling the Garden (Adult Nature Observation)",
+    "organization": "Bellevue Botanical Garden Volunteers",
+    "activityType": "Nature/Conservation",
+    "area": "Bellevue",
+    "venue": "Bellevue Botanical Garden (Sharp Cabin, 12001 Main St, Bellevue, WA 98005)",
+    "start": "2026-10-03T10:00:00-07:00",
+    "end": "2026-10-03T12:00:00-07:00",
+    "timeString": "10:00 AM – 12:00 PM",
     "dateString": "2026-10-03",
-    "description": "Watch resident visual artist Jamie Pesquiza Cardenas at work in the Burke's visible artist studio and ask questions about creative processes and cultural research.",
-    "url": "https://www.burkemuseum.org/calendar",
-    "cost": "Included with museum admission",
-    "recurrence": "Artist residency demo"
+    "description": "Guided group practice sketching and recording seasonal botanical changes in field notebooks. All artistic levels welcome.",
+    "url": "https://bellevuebotanical.org/calendar/",
+    "cost": "Free",
+    "recurrence": "First Saturday monthly"
   },
   {
     "id": "makers-ceramic-pumpkin-2026-10-03",
@@ -2224,6 +2256,22 @@
     "recurrence": "Seasonal workshop"
   },
   {
+    "id": "burke-cardenas-artist-2026-10-03",
+    "title": "Jamie Pesquiza Cardenas in the Artist Studio (Day 1)",
+    "organization": "The Burke Museum",
+    "activityType": "Art",
+    "area": "University District, Seattle",
+    "venue": "The Burke Museum (4303 Memorial Way NE, Seattle, WA 98195)",
+    "start": "2026-10-03T11:00:00-07:00",
+    "end": "2026-10-03T14:00:00-07:00",
+    "timeString": "11:00 AM – 2:00 PM",
+    "dateString": "2026-10-03",
+    "description": "Watch resident visual artist Jamie Pesquiza Cardenas at work in the Burke's visible artist studio and ask questions about creative processes and cultural research.",
+    "url": "https://www.burkemuseum.org/calendar",
+    "cost": "Included with museum admission",
+    "recurrence": "Artist residency demo"
+  },
+  {
     "id": "mof-plane-queer-2026-10-03",
     "title": "Author Presentation: Phil Tiemeyer Presents 'Plane Queer'",
     "organization": "Museum of Flight Docent Corps (Tukwila)",
@@ -2240,20 +2288,20 @@
     "recurrence": "Author book talk"
   },
   {
-    "id": "town-hall-echohawk-2026-10-03",
-    "title": "Why the Affordable Housing Next Door Is Making Your Life Better",
-    "organization": "Town Hall Seattle",
-    "activityType": "Community/Volunteering",
-    "area": "Seattle",
-    "venue": "Town Hall Seattle (1119 8th Ave, Seattle, WA 98101)",
-    "start": "2026-10-03T19:30:00-07:00",
-    "end": "2026-10-03T21:00:00-07:00",
-    "timeString": "7:30 PM – 9:00 PM",
+    "id": "sas-paramount-park-stargazing-20261003",
+    "title": "Paramount Park Public Stargazing & Star Party",
+    "organization": "Seattle Astronomical Society",
+    "activityType": "Science & Technology",
+    "area": "North Seattle / Shoreline",
+    "venue": "Paramount Park (15300 8th Ave NE, Shoreline, WA 98155)",
+    "start": "2026-10-03T19:00:00-07:00",
+    "end": "2026-10-03T22:00:00-07:00",
+    "timeString": "7:00 PM – 10:00 PM",
     "dateString": "2026-10-03",
-    "description": "Community champions Colleen Echohawk, State Senator Joe Nguyen, and Chief Seattle Club director Derrick Belgarde unpack the neighborhood benefits of supportive and workforce housing.",
-    "url": "https://townhallseattle.org/events/month/",
-    "cost": "$10 – $35 sliding scale",
-    "recurrence": "Civic panel"
+    "description": "Free public star party hosted by the Seattle Astronomical Society. Society members share telescope views of the Moon, planets, and deep-sky objects. Open to all ages and experience levels.",
+    "url": "https://www.seattleastro.org/events-1/paramount-park-stargazing-2026-10-03-19-00",
+    "cost": "Free",
+    "recurrence": "Monthly (Saturdays near First Quarter)"
   },
   {
     "id": "sas-paramount-park-2026-10-03",
@@ -2270,6 +2318,22 @@
     "url": "https://www.seattleastro.org/",
     "cost": "Free and open to all ages",
     "recurrence": "Monthly star party"
+  },
+  {
+    "id": "town-hall-echohawk-2026-10-03",
+    "title": "Why the Affordable Housing Next Door Is Making Your Life Better",
+    "organization": "Town Hall Seattle",
+    "activityType": "Community/Volunteering",
+    "area": "Seattle",
+    "venue": "Town Hall Seattle (1119 8th Ave, Seattle, WA 98101)",
+    "start": "2026-10-03T19:30:00-07:00",
+    "end": "2026-10-03T21:00:00-07:00",
+    "timeString": "7:30 PM – 9:00 PM",
+    "dateString": "2026-10-03",
+    "description": "Community champions Colleen Echohawk, State Senator Joe Nguyen, and Chief Seattle Club director Derrick Belgarde unpack the neighborhood benefits of supportive and workforce housing.",
+    "url": "https://townhallseattle.org/events/month/",
+    "cost": "$10 – $35 sliding scale",
+    "recurrence": "Civic panel"
   },
   {
     "id": "town-hall-meilan-ali-2026-10-03",
@@ -2416,22 +2480,6 @@
     "recurrence": "Weekly on Mondays"
   },
   {
-    "id": "nwpc-tech-tuesday-2026-10-06",
-    "title": "Tech Tuesday: Pinball Repair & Board Maintenance Clinic",
-    "organization": "Seattle Pinball League",
-    "activityType": "Games",
-    "area": "Seattle",
-    "venue": "The Sanctuary (7300 Aurora Ave N, Seattle, WA)",
-    "start": "2026-10-06T18:00:00-07:00",
-    "end": "2026-10-06T21:00:00-07:00",
-    "timeString": "6:00 PM – 9:00 PM",
-    "dateString": "2026-10-06",
-    "description": "Volunteer clinic diagnosing solenoid coils, flipper rebuilds, switch matrix wiring, and board soldering on club machines.",
-    "url": "https://nwpinballcollective.org/Events",
-    "cost": "Free for members & volunteers",
-    "recurrence": "First Tuesday monthly"
-  },
-  {
     "id": "chtl-tuesday-hours-2026-10-06",
     "title": "Capitol Hill Tool Library: Midweek Tool Lending & Repair Desk",
     "organization": "Capitol Hill Tool Library",
@@ -2446,6 +2494,22 @@
     "url": "https://sustainablecapitolhill.org/tool-library/",
     "cost": "Free for library members",
     "recurrence": "Weekly on Tuesdays"
+  },
+  {
+    "id": "nwpc-tech-tuesday-2026-10-06",
+    "title": "Tech Tuesday: Pinball Repair & Board Maintenance Clinic",
+    "organization": "Seattle Pinball League",
+    "activityType": "Games",
+    "area": "Seattle",
+    "venue": "The Sanctuary (7300 Aurora Ave N, Seattle, WA)",
+    "start": "2026-10-06T18:00:00-07:00",
+    "end": "2026-10-06T21:00:00-07:00",
+    "timeString": "6:00 PM – 9:00 PM",
+    "dateString": "2026-10-06",
+    "description": "Volunteer clinic diagnosing solenoid coils, flipper rebuilds, switch matrix wiring, and board soldering on club machines.",
+    "url": "https://nwpinballcollective.org/Events",
+    "cost": "Free for members & volunteers",
+    "recurrence": "First Tuesday monthly"
   },
   {
     "id": "mox-pokemon-league-2026-10-06",
@@ -2464,22 +2528,6 @@
     "recurrence": "Weekly on Tuesdays"
   },
   {
-    "id": "sgc-tuesday-club-2026-10-06",
-    "title": "Seattle Go Center: Tuesday Club Night & Open Play",
-    "organization": "Seattle Go Center",
-    "activityType": "Games",
-    "area": "University District, Seattle",
-    "venue": "Seattle Go Center (700 NE 45th St, Seattle, WA 98105)",
-    "start": "2026-10-06T18:30:00-07:00",
-    "end": "2026-10-06T22:00:00-07:00",
-    "timeString": "6:30 PM – 10:00 PM",
-    "dateString": "2026-10-06",
-    "description": "Weekly Tuesday evening club night for Go players of all levels.",
-    "url": "https://www.seattlego.org/schedule/",
-    "cost": "Regular Go Center admission / Free for first-timers",
-    "recurrence": "Weekly on Tuesdays"
-  },
-  {
     "id": "sfr-volunteer-park-2026-10-06",
     "title": "Seattle Frontrunners: Tuesday Evening Volunteer Park Run & Walk",
     "organization": "Seattle Frontrunners",
@@ -2493,6 +2541,22 @@
     "description": "Weekly inclusive community run/walk for LGBTQIA+ runners and allies through Volunteer Park and Capitol Hill neighborhoods.",
     "url": "https://seattlefrontrunners.org/calendar",
     "cost": "Free / All paces welcome",
+    "recurrence": "Weekly on Tuesdays"
+  },
+  {
+    "id": "sgc-tuesday-club-2026-10-06",
+    "title": "Seattle Go Center: Tuesday Club Night & Open Play",
+    "organization": "Seattle Go Center",
+    "activityType": "Games",
+    "area": "University District, Seattle",
+    "venue": "Seattle Go Center (700 NE 45th St, Seattle, WA 98105)",
+    "start": "2026-10-06T18:30:00-07:00",
+    "end": "2026-10-06T22:00:00-07:00",
+    "timeString": "6:30 PM – 10:00 PM",
+    "dateString": "2026-10-06",
+    "description": "Weekly Tuesday evening club night for Go players of all levels.",
+    "url": "https://www.seattlego.org/schedule/",
+    "cost": "Regular Go Center admission / Free for first-timers",
     "recurrence": "Weekly on Tuesdays"
   },
   {
@@ -2576,22 +2640,6 @@
     "recurrence": "2nd & 4th Thursday of each month"
   },
   {
-    "id": "tilth-garden-bed-2026-10-08",
-    "title": "Put Your Garden to Bed: Fall Soil Care & Cover Cropping",
-    "organization": "Seattle Tilth Alliance Garden Stewards",
-    "activityType": "Nature/Conservation",
-    "area": "Seattle",
-    "venue": "Good Shepherd Center (4649 Sunnyside Ave N, Seattle, WA 98103)",
-    "start": "2026-10-08T18:00:00-07:00",
-    "end": "2026-10-08T20:00:00-07:00",
-    "timeString": "6:00 PM – 8:00 PM",
-    "dateString": "2026-10-08",
-    "description": "Learn seasonal soil building practices, how to mulch vegetable beds against winter rains, and which cover crops (crimson clover, rye, hairy vetch) build nitrogen.",
-    "url": "https://tilthalliance.org/events/",
-    "cost": "Free – $75 sliding scale",
-    "recurrence": "Evening gardening class"
-  },
-  {
     "id": "makers-robotics-meetup-2026-10-08",
     "title": "Electronics and Robotics Meetup & Guided Studio",
     "organization": "Seattle Makers",
@@ -2622,6 +2670,22 @@
     "url": "https://www.moxboardinghouse.com/pages/seattle-events",
     "cost": "Free",
     "recurrence": "Weekly on Thursdays"
+  },
+  {
+    "id": "tilth-garden-bed-2026-10-08",
+    "title": "Put Your Garden to Bed: Fall Soil Care & Cover Cropping",
+    "organization": "Seattle Tilth Alliance Garden Stewards",
+    "activityType": "Nature/Conservation",
+    "area": "Seattle",
+    "venue": "Good Shepherd Center (4649 Sunnyside Ave N, Seattle, WA 98103)",
+    "start": "2026-10-08T18:00:00-07:00",
+    "end": "2026-10-08T20:00:00-07:00",
+    "timeString": "6:00 PM – 8:00 PM",
+    "dateString": "2026-10-08",
+    "description": "Learn seasonal soil building practices, how to mulch vegetable beds against winter rains, and which cover crops (crimson clover, rye, hairy vetch) build nitrogen.",
+    "url": "https://tilthalliance.org/events/",
+    "cost": "Free – $75 sliding scale",
+    "recurrence": "Evening gardening class"
   },
   {
     "id": "sas-new-moon-2026-10-08",
@@ -2688,6 +2752,22 @@
     "recurrence": "Weekly on Fridays"
   },
   {
+    "id": "nw-seaport-chantey-sing-20261009",
+    "title": "Monthly Community Maritime Chantey Sing",
+    "organization": "Northwest Seaport",
+    "activityType": "Arts & Culture",
+    "area": "South Lake Union",
+    "venue": "The Center for Wooden Boats / Historic Ships Wharf (1010 Valley St, Seattle, WA 98109)",
+    "start": "2026-10-09T19:00:00-07:00",
+    "end": "2026-10-09T21:00:00-07:00",
+    "timeString": "7:00 PM – 9:00 PM",
+    "dateString": "2026-10-09",
+    "description": "Monthly community sea chantey and maritime folk song gathering along the South Lake Union historic ships wharf. Song leaders and listeners of all ages welcome.",
+    "url": "https://www.seattlechanteysing.com/",
+    "cost": "Free ( suggested donation)",
+    "recurrence": "Monthly (2nd Fridays)"
+  },
+  {
     "id": "scc-friday-rated-2026-10-09",
     "title": "Seattle Chess Club: Friday Night USCF Rated Chess",
     "organization": "Seattle Chess Club",
@@ -2720,22 +2800,6 @@
     "recurrence": "Monthly star party"
   },
   {
-    "id": "eastside-audubon-mercer-slough-2026-10-10",
-    "title": "Eastside Audubon: Mercer Slough Guided Bird Walk",
-    "organization": "Eastside Audubon",
-    "activityType": "Birding",
-    "area": "Bellevue",
-    "venue": "Mercer Slough Environmental Center (13010 SE 32nd Pl, Bellevue, WA 98005)",
-    "start": "2026-10-10T08:30:00-07:00",
-    "end": "2026-10-10T10:30:00-07:00",
-    "timeString": "8:30 AM – 10:30 AM",
-    "dateString": "2026-10-10",
-    "description": "Second Saturday guided walk through Lake Washington's largest remaining freshwater wetland.",
-    "url": "https://www.eastsideaudubon.org/calendar",
-    "cost": "Free",
-    "recurrence": "Second Saturday of the month"
-  },
-  {
     "id": "bcs-discovery-park-2026-10-10",
     "title": "Birds Connect Seattle: Neighborhood Bird Walk at Discovery Park",
     "organization": "Birds Connect Seattle",
@@ -2748,6 +2812,22 @@
     "dateString": "2026-10-10",
     "description": "Second Saturday guided bird walk through coastal bluff forests, sand dunes, and Puget Sound overlook.",
     "url": "https://birdsconnectsea.org/get-involved/go-birding/neighborhood-bird-outings/",
+    "cost": "Free",
+    "recurrence": "Second Saturday of the month"
+  },
+  {
+    "id": "eastside-audubon-mercer-slough-2026-10-10",
+    "title": "Eastside Audubon: Mercer Slough Guided Bird Walk",
+    "organization": "Eastside Audubon",
+    "activityType": "Birding",
+    "area": "Bellevue",
+    "venue": "Mercer Slough Environmental Center (13010 SE 32nd Pl, Bellevue, WA 98005)",
+    "start": "2026-10-10T08:30:00-07:00",
+    "end": "2026-10-10T10:30:00-07:00",
+    "timeString": "8:30 AM – 10:30 AM",
+    "dateString": "2026-10-10",
+    "description": "Second Saturday guided walk through Lake Washington's largest remaining freshwater wetland.",
+    "url": "https://www.eastsideaudubon.org/calendar",
     "cost": "Free",
     "recurrence": "Second Saturday of the month"
   },
@@ -2800,6 +2880,22 @@
     "recurrence": "Annual invitational"
   },
   {
+    "id": "chtl-saturday-workshop-2026-10-10",
+    "title": "Capitol Hill Tool Library: Open Woodshop & Tool Checkout",
+    "organization": "Capitol Hill Tool Library",
+    "activityType": "Tools",
+    "area": "Capitol Hill, Seattle",
+    "venue": "Capitol Hill Tool Library (1552 Crawford Pl, Seattle, WA 98122)",
+    "start": "2026-10-10T10:00:00-07:00",
+    "end": "2026-10-10T14:00:00-07:00",
+    "timeString": "10:00 AM – 2:00 PM",
+    "dateString": "2026-10-10",
+    "description": "Saturday open woodshop and tool lending hours.",
+    "url": "https://sustainablecapitolhill.org/tool-library/",
+    "cost": "Pay-what-you-can membership",
+    "recurrence": "Weekly on Saturdays"
+  },
+  {
     "id": "tilth-applesauce-2026-10-10",
     "title": "Little Garden Chefs: Apple Sauce Harvest Camp",
     "organization": "Seattle Tilth Alliance Garden Stewards",
@@ -2832,22 +2928,6 @@
     "recurrence": "Intensive workshop"
   },
   {
-    "id": "chtl-saturday-workshop-2026-10-10",
-    "title": "Capitol Hill Tool Library: Open Woodshop & Tool Checkout",
-    "organization": "Capitol Hill Tool Library",
-    "activityType": "Tools",
-    "area": "Capitol Hill, Seattle",
-    "venue": "Capitol Hill Tool Library (1552 Crawford Pl, Seattle, WA 98122)",
-    "start": "2026-10-10T10:00:00-07:00",
-    "end": "2026-10-10T14:00:00-07:00",
-    "timeString": "10:00 AM – 2:00 PM",
-    "dateString": "2026-10-10",
-    "description": "Saturday open woodshop and tool lending hours.",
-    "url": "https://sustainablecapitolhill.org/tool-library/",
-    "cost": "Pay-what-you-can membership",
-    "recurrence": "Weekly on Saturdays"
-  },
-  {
     "id": "kubota-young-naturalist-2026-10-10",
     "title": "Kubota Garden Young Naturalist Exploration",
     "organization": "Kubota Garden Foundation",
@@ -2862,22 +2942,6 @@
     "url": "https://www.kubotagarden.org/event",
     "cost": "Free (registration required)",
     "recurrence": "Youth nature program"
-  },
-  {
-    "id": "seattle-center-festal-turkfest-2026-10-10",
-    "title": "Turkfest 2026 (Turkish Cultural Festival - Day 1)",
-    "organization": "Seattle Center",
-    "activityType": "Community/Volunteering",
-    "area": "Seattle",
-    "venue": "Seattle Center Armory Food & Event Hall (305 Harrison St, Seattle, WA 98109)",
-    "start": "2026-10-10T11:00:00-07:00",
-    "end": "2026-10-10T18:00:00-07:00",
-    "timeString": "11:00 AM – 6:00 PM",
-    "dateString": "2026-10-10",
-    "description": "Annual Turkish Cultural Festival at Seattle Center featuring authentic Turkish folk dancing, live music, calligraphy demonstrations, Turkish coffee tastings, and bazaar marketplace.",
-    "url": "https://seattlecenter.com/events/featured-events/festal/turkfest",
-    "cost": "Free admission",
-    "recurrence": "Annual 2-day festival"
   },
   {
     "id": "sjg-family-origami-2026-10-10",
@@ -2926,6 +2990,22 @@
     "url": "https://www.museumofflight.org/exhibits-and-events/calendar-of-events",
     "cost": "Museum admission",
     "recurrence": "Monthly education lab"
+  },
+  {
+    "id": "seattle-center-festal-turkfest-2026-10-10",
+    "title": "Turkfest 2026 (Turkish Cultural Festival - Day 1)",
+    "organization": "Seattle Center",
+    "activityType": "Community/Volunteering",
+    "area": "Seattle",
+    "venue": "Seattle Center Armory Food & Event Hall (305 Harrison St, Seattle, WA 98109)",
+    "start": "2026-10-10T11:00:00-07:00",
+    "end": "2026-10-10T18:00:00-07:00",
+    "timeString": "11:00 AM – 6:00 PM",
+    "dateString": "2026-10-10",
+    "description": "Annual Turkish Cultural Festival at Seattle Center featuring authentic Turkish folk dancing, live music, calligraphy demonstrations, Turkish coffee tastings, and bazaar marketplace.",
+    "url": "https://seattlecenter.com/events/featured-events/festal/turkfest",
+    "cost": "Free admission",
+    "recurrence": "Annual 2-day festival"
   },
   {
     "id": "sjg-tea-2026-10-10",
@@ -3168,6 +3248,22 @@
     "recurrence": "Weekly on Tuesdays"
   },
   {
+    "id": "sfr-volunteer-park-2026-10-13",
+    "title": "Seattle Frontrunners: Tuesday Evening Volunteer Park Run & Walk",
+    "organization": "Seattle Frontrunners",
+    "activityType": "Running",
+    "area": "Capitol Hill",
+    "venue": "Volunteer Park (1400 E Prospect St, Seattle, WA 98112)",
+    "start": "2026-10-13T18:30:00-07:00",
+    "end": "2026-10-13T19:45:00-07:00",
+    "timeString": "6:30 PM – 7:45 PM",
+    "dateString": "2026-10-13",
+    "description": "Tuesday evening community run and walk through Volunteer Park.",
+    "url": "https://seattlefrontrunners.org/calendar",
+    "cost": "Free",
+    "recurrence": "Weekly on Tuesdays"
+  },
+  {
     "id": "sgc-tuesday-club-2026-10-13",
     "title": "Seattle Go Center: Tuesday Club Night & Open Play",
     "organization": "Seattle Go Center",
@@ -3184,20 +3280,20 @@
     "recurrence": "Weekly on Tuesdays"
   },
   {
-    "id": "sfr-volunteer-park-2026-10-13",
-    "title": "Seattle Frontrunners: Tuesday Evening Volunteer Park Run & Walk",
-    "organization": "Seattle Frontrunners",
-    "activityType": "Running",
-    "area": "Capitol Hill",
-    "venue": "Volunteer Park (1400 E Prospect St, Seattle, WA 98112)",
-    "start": "2026-10-13T18:30:00-07:00",
-    "end": "2026-10-13T19:45:00-07:00",
-    "timeString": "6:30 PM – 7:45 PM",
+    "id": "psms-oct-general-meeting-20261013",
+    "title": "October General Meeting: Fall Mushroom Identification & Ecology",
+    "organization": "Puget Sound Mycological Society",
+    "activityType": "Nature & Conservation",
+    "area": "Laurelhurst",
+    "venue": "UW Center for Urban Horticulture (NHS Hall, 3501 NE 41st St, Seattle, WA 98105)",
+    "start": "2026-10-13T19:00:00-07:00",
+    "end": "2026-10-13T21:00:00-07:00",
+    "timeString": "7:00 PM – 9:00 PM",
     "dateString": "2026-10-13",
-    "description": "Tuesday evening community run and walk through Volunteer Park.",
-    "url": "https://seattlefrontrunners.org/calendar",
+    "description": "Kick off peak Pacific Northwest fall mushroom season with the Puget Sound Mycological Society’s monthly meeting. Features fresh seasonal mushroom displays, identification table, and a guest lecture on regional fungal ecology.",
+    "url": "https://www.psms.org/all_events.php",
     "cost": "Free",
-    "recurrence": "Weekly on Tuesdays"
+    "recurrence": "Monthly (2nd Tuesdays)"
   },
   {
     "id": "psms-october-meeting-2026-10-13",
@@ -3376,6 +3472,22 @@
     "recurrence": "Weekly on Fridays"
   },
   {
+    "id": "pratt-refract-hotshop-night-20261016",
+    "title": "Refract Hot Shop Community Gathering & Glass Challenge",
+    "organization": "Pratt Fine Arts Center",
+    "activityType": "Maker & Crafts",
+    "area": "Central District",
+    "venue": "Pratt Fine Arts Center (1902 S Jackson St, Seattle, WA 98144)",
+    "start": "2026-10-16T18:00:00-07:00",
+    "end": "2026-10-16T22:00:00-07:00",
+    "timeString": "6:00 PM – 10:00 PM",
+    "dateString": "2026-10-16",
+    "description": "Community celebration of Seattle glass art during the Refract festival. Watch live furnace glassblowing demos, meet local artists, and tour Pratt's community art studios.",
+    "url": "https://refractseattle.org/organizer/pratt-fine-arts-center/",
+    "cost": "Free",
+    "recurrence": "Annual Refract Festival Event"
+  },
+  {
     "id": "scc-friday-rated-2026-10-16",
     "title": "Seattle Chess Club: Friday Night USCF Rated Chess",
     "organization": "Seattle Chess Club",
@@ -3440,20 +3552,52 @@
     "recurrence": "Weekly on Saturdays"
   },
   {
-    "id": "tilth-down-dirt-2026-10-17",
-    "title": "Up in the Garden, Down in the Dirt! (Family Ecology Camp)",
-    "organization": "Seattle Tilth Alliance Garden Stewards",
+    "id": "bff-work-party-2026-10-17",
+    "title": "Beacon Food Forest 3rd Saturday Community Stewardship Work Party",
+    "organization": "Beacon Hill Food Forest Stewards",
     "activityType": "Nature/Conservation",
-    "area": "Seattle",
-    "venue": "Good Shepherd Center (4649 Sunnyside Ave N, Seattle, WA 98103)",
+    "area": "Beacon Hill, Seattle",
+    "venue": "Beacon Food Forest (15th Ave S & S Dakota St, next to Jefferson Park, Seattle, WA 98144)",
     "start": "2026-10-17T10:00:00-07:00",
-    "end": "2026-10-17T11:30:00-07:00",
-    "timeString": "10:00 AM – 11:30 AM",
+    "end": "2026-10-17T14:00:00-07:00",
+    "timeString": "10:00 AM – 2:00 PM",
     "dateString": "2026-10-17",
-    "description": "Family workshop investigating worms, soil microbes, fall seeds, and compost decomposition in Wallingford demonstration gardens.",
-    "url": "https://tilthalliance.org/events/",
-    "cost": "$20 – $40 per family",
-    "recurrence": "Family workshop"
+    "description": "Monthly hands-on volunteer work party stewarding 4+ acres of public urban permaculture agroforestry. Sheet mulching, orchard care, weeding, and compost building. All ages and skill levels welcome.",
+    "url": "https://www.beaconfoodforest.org/events",
+    "cost": "Free (drop-in, tools and gloves provided)",
+    "recurrence": "3rd Saturday monthly year-round"
+  },
+  {
+    "id": "chtl-saturday-workshop-2026-10-17",
+    "title": "Capitol Hill Tool Library: Open Woodshop & Tool Checkout",
+    "organization": "Capitol Hill Tool Library",
+    "activityType": "Tools",
+    "area": "Capitol Hill, Seattle",
+    "venue": "Capitol Hill Tool Library (1552 Crawford Pl, Seattle, WA 98122)",
+    "start": "2026-10-17T10:00:00-07:00",
+    "end": "2026-10-17T14:00:00-07:00",
+    "timeString": "10:00 AM – 2:00 PM",
+    "dateString": "2026-10-17",
+    "description": "Saturday open woodshop and tool lending.",
+    "url": "https://sustainablecapitolhill.org/tool-library/",
+    "cost": "Pay-what-you-can membership",
+    "recurrence": "Weekly on Saturdays"
+  },
+  {
+    "id": "duwamish-alive-fall-2026-10-17",
+    "title": "Duwamish Alive! Fall 2026: Saving Our Salmon Saves Our Orca",
+    "organization": "Duwamish Alive Coalition Volunteers",
+    "activityType": "Nature/Conservation",
+    "area": "Tukwila / South Seattle",
+    "venue": "Herring's House Park & Duwamish River Estuary (Tukwila Shoreline & 4805 W Marginal Way SW, Seattle, WA 98106)",
+    "start": "2026-10-17T10:00:00-07:00",
+    "end": "2026-10-17T14:00:00-07:00",
+    "timeString": "10:00 AM – 2:00 PM",
+    "dateString": "2026-10-17",
+    "description": "Biannual watershed-wide community day stewarding native riparian corridors along the Green-Duwamish River. Plant native trees, restore salmon habitat, and remove legacy shoreline debris.",
+    "url": "https://www.duwamishalive.org/events/",
+    "cost": "Free (tools, gloves, and refreshments provided)",
+    "recurrence": "Biannual community day"
   },
   {
     "id": "tilth-bioremediation-2026-10-17",
@@ -3470,6 +3614,22 @@
     "url": "https://tilthalliance.org/events/",
     "cost": "Free – $75 sliding scale",
     "recurrence": "Science & ecology class"
+  },
+  {
+    "id": "kubota-fall-color-tour-2026-10-17",
+    "title": "Kubota Garden Fall Color Foliage Tour",
+    "organization": "Kubota Garden Foundation",
+    "activityType": "Nature/Conservation",
+    "area": "South Seattle",
+    "venue": "Kubota Garden (9817 55th Ave S, Seattle, WA 98118)",
+    "start": "2026-10-17T10:00:00-07:00",
+    "end": "2026-10-17T12:00:00-07:00",
+    "timeString": "10:00 AM – 12:00 PM",
+    "dateString": "2026-10-17",
+    "description": "Guided walking tour through the 20-acre garden showcasing the vivid autumn colors of Japanese maples, sweetgums, ginkgoes, and conifers.",
+    "url": "https://www.kubotagarden.org/event",
+    "cost": "Free (registration required)",
+    "recurrence": "Seasonal tour"
   },
   {
     "id": "tilth-pruning-prop-2026-10-17",
@@ -3504,68 +3664,20 @@
     "recurrence": "Monthly on 3rd Saturday"
   },
   {
-    "id": "kubota-fall-color-tour-2026-10-17",
-    "title": "Kubota Garden Fall Color Foliage Tour",
-    "organization": "Kubota Garden Foundation",
+    "id": "tilth-down-dirt-2026-10-17",
+    "title": "Up in the Garden, Down in the Dirt! (Family Ecology Camp)",
+    "organization": "Seattle Tilth Alliance Garden Stewards",
     "activityType": "Nature/Conservation",
-    "area": "South Seattle",
-    "venue": "Kubota Garden (9817 55th Ave S, Seattle, WA 98118)",
+    "area": "Seattle",
+    "venue": "Good Shepherd Center (4649 Sunnyside Ave N, Seattle, WA 98103)",
     "start": "2026-10-17T10:00:00-07:00",
-    "end": "2026-10-17T12:00:00-07:00",
-    "timeString": "10:00 AM – 12:00 PM",
+    "end": "2026-10-17T11:30:00-07:00",
+    "timeString": "10:00 AM – 11:30 AM",
     "dateString": "2026-10-17",
-    "description": "Guided walking tour through the 20-acre garden showcasing the vivid autumn colors of Japanese maples, sweetgums, ginkgoes, and conifers.",
-    "url": "https://www.kubotagarden.org/event",
-    "cost": "Free (registration required)",
-    "recurrence": "Seasonal tour"
-  },
-  {
-    "id": "bff-work-party-2026-10-17",
-    "title": "Beacon Food Forest 3rd Saturday Community Stewardship Work Party",
-    "organization": "Beacon Hill Food Forest Stewards",
-    "activityType": "Nature/Conservation",
-    "area": "Beacon Hill, Seattle",
-    "venue": "Beacon Food Forest (15th Ave S & S Dakota St, next to Jefferson Park, Seattle, WA 98144)",
-    "start": "2026-10-17T10:00:00-07:00",
-    "end": "2026-10-17T14:00:00-07:00",
-    "timeString": "10:00 AM – 2:00 PM",
-    "dateString": "2026-10-17",
-    "description": "Monthly hands-on volunteer work party stewarding 4+ acres of public urban permaculture agroforestry. Sheet mulching, orchard care, weeding, and compost building. All ages and skill levels welcome.",
-    "url": "https://www.beaconfoodforest.org/events",
-    "cost": "Free (drop-in, tools and gloves provided)",
-    "recurrence": "3rd Saturday monthly year-round"
-  },
-  {
-    "id": "duwamish-alive-fall-2026-10-17",
-    "title": "Duwamish Alive! Fall 2026: Saving Our Salmon Saves Our Orca",
-    "organization": "Duwamish Alive Coalition Volunteers",
-    "activityType": "Nature/Conservation",
-    "area": "Tukwila / South Seattle",
-    "venue": "Herring's House Park & Duwamish River Estuary (Tukwila Shoreline & 4805 W Marginal Way SW, Seattle, WA 98106)",
-    "start": "2026-10-17T10:00:00-07:00",
-    "end": "2026-10-17T14:00:00-07:00",
-    "timeString": "10:00 AM – 2:00 PM",
-    "dateString": "2026-10-17",
-    "description": "Biannual watershed-wide community day stewarding native riparian corridors along the Green-Duwamish River. Plant native trees, restore salmon habitat, and remove legacy shoreline debris.",
-    "url": "https://www.duwamishalive.org/events/",
-    "cost": "Free (tools, gloves, and refreshments provided)",
-    "recurrence": "Biannual community day"
-  },
-  {
-    "id": "chtl-saturday-workshop-2026-10-17",
-    "title": "Capitol Hill Tool Library: Open Woodshop & Tool Checkout",
-    "organization": "Capitol Hill Tool Library",
-    "activityType": "Tools",
-    "area": "Capitol Hill, Seattle",
-    "venue": "Capitol Hill Tool Library (1552 Crawford Pl, Seattle, WA 98122)",
-    "start": "2026-10-17T10:00:00-07:00",
-    "end": "2026-10-17T14:00:00-07:00",
-    "timeString": "10:00 AM – 2:00 PM",
-    "dateString": "2026-10-17",
-    "description": "Saturday open woodshop and tool lending.",
-    "url": "https://sustainablecapitolhill.org/tool-library/",
-    "cost": "Pay-what-you-can membership",
-    "recurrence": "Weekly on Saturdays"
+    "description": "Family workshop investigating worms, soil microbes, fall seeds, and compost decomposition in Wallingford demonstration gardens.",
+    "url": "https://tilthalliance.org/events/",
+    "cost": "$20 – $40 per family",
+    "recurrence": "Family workshop"
   },
   {
     "id": "tilth-bokashi-biochar-2026-10-17",
@@ -3600,20 +3712,20 @@
     "recurrence": "Weekend tea ceremony"
   },
   {
-    "id": "sjg-tea-2026-10-18",
-    "title": "Tea Ceremony: Introduction to Chanoyu with Tankokai",
-    "organization": "Seattle Japanese Garden",
-    "activityType": "Art",
-    "area": "Madison Park / Washington Park Arboretum, Seattle",
-    "venue": "Seattle Japanese Garden (Shoseian Tea House, 1075 Lake Washington Blvd E, Seattle, WA 98112)",
-    "start": "2026-10-18T13:00:00-07:00",
-    "end": "2026-10-18T15:40:00-07:00",
-    "timeString": "1:00 PM – 3:40 PM",
+    "id": "usk-seattle-sculpture-park-20261018",
+    "title": "October Waterfront & Sculpture Park Sketch Outing",
+    "organization": "Urban Sketchers Seattle",
+    "activityType": "Arts & Culture",
+    "area": "Belltown / Waterfront",
+    "venue": "Olympic Sculpture Park (2901 Western Ave, Seattle, WA 98121)",
+    "start": "2026-10-18T10:00:00-07:00",
+    "end": "2026-10-18T12:30:00-07:00",
+    "timeString": "10:00 AM – 12:30 PM",
     "dateString": "2026-10-18",
-    "description": "Chanoyu tea ceremony presented by Tankokai in Shoseian Tea House.",
-    "url": "https://www.seattlejapanesegarden.org/events-calendar",
-    "cost": "$15 ticket + Garden admission",
-    "recurrence": "Weekend tea ceremony"
+    "description": "Monthly drop-in plein-air drawing meetup for sketchers of all backgrounds and experience levels. Meet at the pavilion to sketch outdoor views of Elliott Bay and sculptures.",
+    "url": "https://seattle.urbansketchers.org/",
+    "cost": "Free",
+    "recurrence": "Monthly (3rd Sundays)"
   },
   {
     "id": "discnw-friz-fest-2026-10-18",
@@ -3630,6 +3742,22 @@
     "url": "https://www.discnw.org/en_us/e/2026-fall-friz-fest-party",
     "cost": "Free / Sliding-scale contribution",
     "recurrence": "Annual fall celebration"
+  },
+  {
+    "id": "sjg-tea-2026-10-18",
+    "title": "Tea Ceremony: Introduction to Chanoyu with Tankokai",
+    "organization": "Seattle Japanese Garden",
+    "activityType": "Art",
+    "area": "Madison Park / Washington Park Arboretum, Seattle",
+    "venue": "Seattle Japanese Garden (Shoseian Tea House, 1075 Lake Washington Blvd E, Seattle, WA 98112)",
+    "start": "2026-10-18T13:00:00-07:00",
+    "end": "2026-10-18T15:40:00-07:00",
+    "timeString": "1:00 PM – 3:40 PM",
+    "dateString": "2026-10-18",
+    "description": "Chanoyu tea ceremony presented by Tankokai in Shoseian Tea House.",
+    "url": "https://www.seattlejapanesegarden.org/events-calendar",
+    "cost": "$15 ticket + Garden admission",
+    "recurrence": "Weekend tea ceremony"
   },
   {
     "id": "sas-banquet-2026-10-18",
@@ -3744,22 +3872,6 @@
     "recurrence": "Weekly on Tuesdays"
   },
   {
-    "id": "sgc-tuesday-club-2026-10-20",
-    "title": "Seattle Go Center: Tuesday Club Night & Open Play",
-    "organization": "Seattle Go Center",
-    "activityType": "Games",
-    "area": "University District, Seattle",
-    "venue": "Seattle Go Center (700 NE 45th St, Seattle, WA 98105)",
-    "start": "2026-10-20T18:30:00-07:00",
-    "end": "2026-10-20T22:00:00-07:00",
-    "timeString": "6:30 PM – 10:00 PM",
-    "dateString": "2026-10-20",
-    "description": "Weekly Tuesday evening club night.",
-    "url": "https://www.seattlego.org/schedule/",
-    "cost": "Regular Go Center admission",
-    "recurrence": "Weekly on Tuesdays"
-  },
-  {
     "id": "sfr-volunteer-park-2026-10-20",
     "title": "Seattle Frontrunners: Tuesday Evening Volunteer Park Run & Walk",
     "organization": "Seattle Frontrunners",
@@ -3776,20 +3888,20 @@
     "recurrence": "Weekly on Tuesdays"
   },
   {
-    "id": "eastside-audubon-lake-sammamish-2026-10-21",
-    "title": "Eastside Audubon: Lake Sammamish State Park Bird Walk",
-    "organization": "Eastside Audubon",
-    "activityType": "Birding",
-    "area": "Issaquah",
-    "venue": "Lake Sammamish State Park (Meet at Tibbetts Beach Bathhouse, 2000 NW Sammamish Rd, Issaquah, WA 98027)",
-    "start": "2026-10-21T08:00:00-07:00",
-    "end": "2026-10-21T10:30:00-07:00",
-    "timeString": "8:00 AM – 10:30 AM",
-    "dateString": "2026-10-21",
-    "description": "Third Wednesday monthly bird outing through deciduous riparian woodlands, marshes, and lakeshore.",
-    "url": "https://www.eastsideaudubon.org/calendar/bird-walk-lake-sammamish-park",
-    "cost": "Free (Discover Pass required for parking)",
-    "recurrence": "Third Wednesday of the month"
+    "id": "sgc-tuesday-club-2026-10-20",
+    "title": "Seattle Go Center: Tuesday Club Night & Open Play",
+    "organization": "Seattle Go Center",
+    "activityType": "Games",
+    "area": "University District, Seattle",
+    "venue": "Seattle Go Center (700 NE 45th St, Seattle, WA 98105)",
+    "start": "2026-10-20T18:30:00-07:00",
+    "end": "2026-10-20T22:00:00-07:00",
+    "timeString": "6:30 PM – 10:00 PM",
+    "dateString": "2026-10-20",
+    "description": "Weekly Tuesday evening club night.",
+    "url": "https://www.seattlego.org/schedule/",
+    "cost": "Regular Go Center admission",
+    "recurrence": "Weekly on Tuesdays"
   },
   {
     "id": "bcs-union-bay-2026-10-21",
@@ -3805,6 +3917,22 @@
     "description": "Third Wednesday morning birding through the iconic Montlake Fill wetland meadows and ponds.",
     "url": "https://birdsconnectsea.org/get-involved/go-birding/neighborhood-bird-outings/",
     "cost": "Free",
+    "recurrence": "Third Wednesday of the month"
+  },
+  {
+    "id": "eastside-audubon-lake-sammamish-2026-10-21",
+    "title": "Eastside Audubon: Lake Sammamish State Park Bird Walk",
+    "organization": "Eastside Audubon",
+    "activityType": "Birding",
+    "area": "Issaquah",
+    "venue": "Lake Sammamish State Park (Meet at Tibbetts Beach Bathhouse, 2000 NW Sammamish Rd, Issaquah, WA 98027)",
+    "start": "2026-10-21T08:00:00-07:00",
+    "end": "2026-10-21T10:30:00-07:00",
+    "timeString": "8:00 AM – 10:30 AM",
+    "dateString": "2026-10-21",
+    "description": "Third Wednesday monthly bird outing through deciduous riparian woodlands, marshes, and lakeshore.",
+    "url": "https://www.eastsideaudubon.org/calendar/bird-walk-lake-sammamish-park",
+    "cost": "Free (Discover Pass required for parking)",
     "recurrence": "Third Wednesday of the month"
   },
   {
@@ -4064,22 +4192,6 @@
     "recurrence": "Annual 2-day exhibition"
   },
   {
-    "id": "mof-museum-of-fright-2026-10-25",
-    "title": "The Museum of Fright: Halloween Aerospace Carnival",
-    "organization": "Museum of Flight Docent Corps (Tukwila)",
-    "activityType": "Science",
-    "area": "Tukwila",
-    "venue": "The Museum of Flight (9404 E Marginal Way S, Seattle/Tukwila, WA 98108)",
-    "start": "2026-10-25T10:00:00-07:00",
-    "end": "2026-10-25T16:00:00-07:00",
-    "timeString": "10:00 AM – 4:00 PM",
-    "dateString": "2026-10-25",
-    "description": "Family aerospace Halloween festival featuring spooky flight science experiments, costume parades under the Blackbird spy plane, and trick-or-treating in the galleries.",
-    "url": "https://www.museumofflight.org/exhibits-and-events/calendar-of-events",
-    "cost": "Included with admission",
-    "recurrence": "Annual family festival"
-  },
-  {
     "id": "tilth-foraging-mushrooms-2026-10-25",
     "title": "Farming and Foraging Edible Mushrooms with Jake Harris",
     "organization": "Seattle Tilth Alliance Garden Stewards",
@@ -4094,6 +4206,22 @@
     "url": "https://tilthalliance.org/events/",
     "cost": "Free – $90 sliding scale",
     "recurrence": "Weekend foraging workshop"
+  },
+  {
+    "id": "mof-museum-of-fright-2026-10-25",
+    "title": "The Museum of Fright: Halloween Aerospace Carnival",
+    "organization": "Museum of Flight Docent Corps (Tukwila)",
+    "activityType": "Science",
+    "area": "Tukwila",
+    "venue": "The Museum of Flight (9404 E Marginal Way S, Seattle/Tukwila, WA 98108)",
+    "start": "2026-10-25T10:00:00-07:00",
+    "end": "2026-10-25T16:00:00-07:00",
+    "timeString": "10:00 AM – 4:00 PM",
+    "dateString": "2026-10-25",
+    "description": "Family aerospace Halloween festival featuring spooky flight science experiments, costume parades under the Blackbird spy plane, and trick-or-treating in the galleries.",
+    "url": "https://www.museumofflight.org/exhibits-and-events/calendar-of-events",
+    "cost": "Included with admission",
+    "recurrence": "Annual family festival"
   },
   {
     "id": "sjg-tea-2026-10-25",
@@ -4192,22 +4320,6 @@
     "recurrence": "4th Tuesday monthly"
   },
   {
-    "id": "sgc-tuesday-club-2026-10-27",
-    "title": "Seattle Go Center: Tuesday Club Night & Open Play",
-    "organization": "Seattle Go Center",
-    "activityType": "Games",
-    "area": "University District, Seattle",
-    "venue": "Seattle Go Center (700 NE 45th St, Seattle, WA 98105)",
-    "start": "2026-10-27T18:30:00-07:00",
-    "end": "2026-10-27T22:00:00-07:00",
-    "timeString": "6:30 PM – 10:00 PM",
-    "dateString": "2026-10-27",
-    "description": "Weekly Tuesday evening club night.",
-    "url": "https://www.seattlego.org/schedule/",
-    "cost": "Regular Go Center admission",
-    "recurrence": "Weekly on Tuesdays"
-  },
-  {
     "id": "sfr-volunteer-park-2026-10-27",
     "title": "Seattle Frontrunners: Tuesday Evening Volunteer Park Run & Walk",
     "organization": "Seattle Frontrunners",
@@ -4221,6 +4333,22 @@
     "description": "Tuesday evening community run/walk.",
     "url": "https://seattlefrontrunners.org/calendar",
     "cost": "Free",
+    "recurrence": "Weekly on Tuesdays"
+  },
+  {
+    "id": "sgc-tuesday-club-2026-10-27",
+    "title": "Seattle Go Center: Tuesday Club Night & Open Play",
+    "organization": "Seattle Go Center",
+    "activityType": "Games",
+    "area": "University District, Seattle",
+    "venue": "Seattle Go Center (700 NE 45th St, Seattle, WA 98105)",
+    "start": "2026-10-27T18:30:00-07:00",
+    "end": "2026-10-27T22:00:00-07:00",
+    "timeString": "6:30 PM – 10:00 PM",
+    "dateString": "2026-10-27",
+    "description": "Weekly Tuesday evening club night.",
+    "url": "https://www.seattlego.org/schedule/",
+    "cost": "Regular Go Center admission",
     "recurrence": "Weekly on Tuesdays"
   },
   {
@@ -4304,22 +4432,6 @@
     "recurrence": "Special evening event"
   },
   {
-    "id": "makers-halloween-party-2026-10-30",
-    "title": "🎃 Seattle Makers Annual Halloween Costume Party 🎃",
-    "organization": "Seattle Makers",
-    "activityType": "Community/Volunteering",
-    "area": "Interbay, Seattle",
-    "venue": "Seattle Makers (3012 16th Ave W, Seattle, WA 98119)",
-    "start": "2026-10-30T18:00:00-07:00",
-    "end": "2026-10-30T22:00:00-07:00",
-    "timeString": "6:00 PM – 10:00 PM",
-    "dateString": "2026-10-30",
-    "description": "Annual community costume party featuring handmade maker costumes, costume runway awards, interactive arcade builds, music, and seasonal treats.",
-    "url": "https://seattlemakers.org/events/",
-    "cost": "Free for members / $10 guests",
-    "recurrence": "Annual party"
-  },
-  {
     "id": "mox-fnm-draft-2026-10-30",
     "title": "Mox Seattle: Halloween Friday Night Magic Booster Draft",
     "organization": "Mox Boarding House",
@@ -4334,6 +4446,22 @@
     "url": "https://www.moxboardinghouse.com/pages/seattle-events",
     "cost": "Draft entry fee",
     "recurrence": "Weekly on Fridays"
+  },
+  {
+    "id": "makers-halloween-party-2026-10-30",
+    "title": "🎃 Seattle Makers Annual Halloween Costume Party 🎃",
+    "organization": "Seattle Makers",
+    "activityType": "Community/Volunteering",
+    "area": "Interbay, Seattle",
+    "venue": "Seattle Makers (3012 16th Ave W, Seattle, WA 98119)",
+    "start": "2026-10-30T18:00:00-07:00",
+    "end": "2026-10-30T22:00:00-07:00",
+    "timeString": "6:00 PM – 10:00 PM",
+    "dateString": "2026-10-30",
+    "description": "Annual community costume party featuring handmade maker costumes, costume runway awards, interactive arcade builds, music, and seasonal treats.",
+    "url": "https://seattlemakers.org/events/",
+    "cost": "Free for members / $10 guests",
+    "recurrence": "Annual party"
   },
   {
     "id": "scc-friday-rated-2026-10-30",
@@ -4560,6 +4688,22 @@
     "recurrence": "Weekly on Tuesdays"
   },
   {
+    "id": "mox-pokemon-2026-11-03",
+    "title": "Mox Boarding House: Pokémon TCG League & Gym Leader Challenge",
+    "organization": "Mox Boarding House",
+    "activityType": "Games",
+    "area": "Ballard, Seattle",
+    "venue": "Mox Boarding House Ballard (5105 Leary Ave NW, Seattle, WA 98107)",
+    "start": "2026-11-03T18:30:00-08:00",
+    "end": "2026-11-03T22:00:00-08:00",
+    "timeString": "6:30 PM – 10:00 PM",
+    "dateString": "2026-11-03",
+    "description": "Weekly Pokémon Trading Card Game meetup. Casual standard matches, Gym Leader Challenge format, and card trading.",
+    "url": "https://www.moxboardinghouse.com/pages/seattle-events",
+    "cost": "Free drop-in play",
+    "recurrence": "Weekly on Tuesdays"
+  },
+  {
     "id": "sfr-volunteer-park-2026-11-03",
     "title": "Seattle Frontrunners: Tuesday Evening Volunteer Park Run & Walk",
     "organization": "Seattle Frontrunners",
@@ -4589,22 +4733,6 @@
     "description": "Weekly Tuesday drop-in Go play, game reviews, and beginner teaching corner.",
     "url": "https://www.seattlego.org/schedule/",
     "cost": "$5 guest fee / Free for members",
-    "recurrence": "Weekly on Tuesdays"
-  },
-  {
-    "id": "mox-pokemon-2026-11-03",
-    "title": "Mox Boarding House: Pokémon TCG League & Gym Leader Challenge",
-    "organization": "Mox Boarding House",
-    "activityType": "Games",
-    "area": "Ballard, Seattle",
-    "venue": "Mox Boarding House Ballard (5105 Leary Ave NW, Seattle, WA 98107)",
-    "start": "2026-11-03T18:30:00-08:00",
-    "end": "2026-11-03T22:00:00-08:00",
-    "timeString": "6:30 PM – 10:00 PM",
-    "dateString": "2026-11-03",
-    "description": "Weekly Pokémon Trading Card Game meetup. Casual standard matches, Gym Leader Challenge format, and card trading.",
-    "url": "https://www.moxboardinghouse.com/pages/seattle-events",
-    "cost": "Free drop-in play",
     "recurrence": "Weekly on Tuesdays"
   },
   {
@@ -4768,22 +4896,6 @@
     "recurrence": "Weekly on Thursdays"
   },
   {
-    "id": "nwsm-meeting-2026-11-05",
-    "title": "NorthWest Scale Modelers November Meeting & Display",
-    "organization": "Northwest Scale Modelers",
-    "activityType": "Art",
-    "area": "Tukwila",
-    "venue": "The Museum of Flight (Side Gallery / Red Barn, 9404 E Marginal Way S, Tukwila, WA 98108)",
-    "start": "2026-11-05T19:00:00-08:00",
-    "end": "2026-11-05T21:00:00-08:00",
-    "timeString": "7:00 PM – 9:00 PM",
-    "dateString": "2026-11-05",
-    "description": "Monthly meeting of scale modeling enthusiasts displaying aircraft, armor, naval, and science-fiction models during Museum Free First Thursday.",
-    "url": "https://nwsm.club/meetings/",
-    "cost": "Free",
-    "recurrence": "First Thursday of the month"
-  },
-  {
     "id": "gcc-thursday-mens-2026-11-05",
     "title": "Granite Curling Club: Thursday Men's League",
     "organization": "Seattle Curling Club",
@@ -4798,6 +4910,22 @@
     "url": "https://curlingseattle.org/content/2026-2027-thursday-mens",
     "cost": "League registration",
     "recurrence": "Weekly on Thursdays"
+  },
+  {
+    "id": "nwsm-meeting-2026-11-05",
+    "title": "NorthWest Scale Modelers November Meeting & Display",
+    "organization": "Northwest Scale Modelers",
+    "activityType": "Art",
+    "area": "Tukwila",
+    "venue": "The Museum of Flight (Side Gallery / Red Barn, 9404 E Marginal Way S, Tukwila, WA 98108)",
+    "start": "2026-11-05T19:00:00-08:00",
+    "end": "2026-11-05T21:00:00-08:00",
+    "timeString": "7:00 PM – 9:00 PM",
+    "dateString": "2026-11-05",
+    "description": "Monthly meeting of scale modeling enthusiasts displaying aircraft, armor, naval, and science-fiction models during Museum Free First Thursday.",
+    "url": "https://nwsm.club/meetings/",
+    "cost": "Free",
+    "recurrence": "First Thursday of the month"
   },
   {
     "id": "mox-fnm-draft-2026-11-06",
@@ -4848,6 +4976,38 @@
     "recurrence": "First Saturday of the month"
   },
   {
+    "id": "bcs-magnuson-park-2026-11-07",
+    "title": "Birds Connect Seattle: Neighborhood Bird Outing at Magnuson Park",
+    "organization": "Birds Connect Seattle",
+    "activityType": "Birding",
+    "area": "Sand Point / Magnuson Park, Seattle",
+    "venue": "Warren G. Magnuson Park (6344 NE 74th St, Seattle, WA 98115)",
+    "start": "2026-11-07T09:00:00-08:00",
+    "end": "2026-11-07T11:00:00-08:00",
+    "timeString": "9:00 AM – 11:00 AM",
+    "dateString": "2026-11-07",
+    "description": "First Saturday monthly bird walk viewing wintering waterfowl on Lake Washington.",
+    "url": "https://birdsconnectsea.org/get-involved/go-birding/neighborhood-bird-outings/",
+    "cost": "Free",
+    "recurrence": "First Saturday of the month"
+  },
+  {
+    "id": "eastside-audubon-marymoor-restoration-2026-11-07",
+    "title": "Eastside Audubon: Marymoor Park Bird Habitat Restoration",
+    "organization": "Eastside Audubon",
+    "activityType": "Birding",
+    "area": "Redmond",
+    "venue": "Marymoor Park (6046 W Lake Sammamish Pkwy NE, Redmond, WA 98052)",
+    "start": "2026-11-07T09:00:00-08:00",
+    "end": "2026-11-07T12:00:00-08:00",
+    "timeString": "9:00 AM – 12:00 PM",
+    "dateString": "2026-11-07",
+    "description": "First Saturday habitat stewardship work party planting native trees and shrubs along the bird loop.",
+    "url": "https://www.eastsideaudubon.org/marymoor-restoration",
+    "cost": "Free",
+    "recurrence": "First Saturday of the month"
+  },
+  {
     "id": "kubota-forest-bathing-2026-11-07",
     "title": "Fall Forest Bathing (Shinrin-Yoku) at Kubota Garden",
     "organization": "Kubota Garden Foundation",
@@ -4878,38 +5038,6 @@
     "url": "https://greenseattle.org/get-involved/volunteer/",
     "cost": "Free (gloves and refreshments provided)",
     "recurrence": "Annual flagship event"
-  },
-  {
-    "id": "eastside-audubon-marymoor-restoration-2026-11-07",
-    "title": "Eastside Audubon: Marymoor Park Bird Habitat Restoration",
-    "organization": "Eastside Audubon",
-    "activityType": "Birding",
-    "area": "Redmond",
-    "venue": "Marymoor Park (6046 W Lake Sammamish Pkwy NE, Redmond, WA 98052)",
-    "start": "2026-11-07T09:00:00-08:00",
-    "end": "2026-11-07T12:00:00-08:00",
-    "timeString": "9:00 AM – 12:00 PM",
-    "dateString": "2026-11-07",
-    "description": "First Saturday habitat stewardship work party planting native trees and shrubs along the bird loop.",
-    "url": "https://www.eastsideaudubon.org/marymoor-restoration",
-    "cost": "Free",
-    "recurrence": "First Saturday of the month"
-  },
-  {
-    "id": "bcs-magnuson-park-2026-11-07",
-    "title": "Birds Connect Seattle: Neighborhood Bird Outing at Magnuson Park",
-    "organization": "Birds Connect Seattle",
-    "activityType": "Birding",
-    "area": "Sand Point / Magnuson Park, Seattle",
-    "venue": "Warren G. Magnuson Park (6344 NE 74th St, Seattle, WA 98115)",
-    "start": "2026-11-07T09:00:00-08:00",
-    "end": "2026-11-07T11:00:00-08:00",
-    "timeString": "9:00 AM – 11:00 AM",
-    "dateString": "2026-11-07",
-    "description": "First Saturday monthly bird walk viewing wintering waterfowl on Lake Washington.",
-    "url": "https://birdsconnectsea.org/get-involved/go-birding/neighborhood-bird-outings/",
-    "cost": "Free",
-    "recurrence": "First Saturday of the month"
   },
   {
     "id": "sfr-green-lake-2026-11-07",
@@ -4944,22 +5072,6 @@
     "recurrence": "Weekly on Saturdays"
   },
   {
-    "id": "tilth-plant-propagation-2026-11-07",
-    "title": "Tilth Alliance: Plant Propagation for Beginners",
-    "organization": "Seattle Tilth Alliance Garden Stewards",
-    "activityType": "Nature/Conservation",
-    "area": "Wallingford, Seattle",
-    "venue": "Good Shepherd Center (4649 Sunnyside Ave N, Seattle, WA 98103)",
-    "start": "2026-11-07T10:00:00-08:00",
-    "end": "2026-11-07T13:00:00-08:00",
-    "timeString": "10:00 AM – 1:00 PM",
-    "dateString": "2026-11-07",
-    "description": "Hands-on hardwood cuttings, root divisions, and seed stratification to multiply perennial shrubs and berry canes.",
-    "url": "https://tilthalliance.org/classes-events/",
-    "cost": "$40",
-    "recurrence": "Fall workshop"
-  },
-  {
     "id": "tilth-perennial-edibles-2026-11-07",
     "title": "Tilth Alliance: Growing Fruit & Perennial Edibles",
     "organization": "Seattle Tilth Alliance Garden Stewards",
@@ -4974,6 +5086,22 @@
     "url": "https://tilthalliance.org/venue/rainier-beach-urban-farm-and-wetlands/",
     "cost": "$55 – $85 sliding scale",
     "recurrence": "Seasonal workshop"
+  },
+  {
+    "id": "tilth-plant-propagation-2026-11-07",
+    "title": "Tilth Alliance: Plant Propagation for Beginners",
+    "organization": "Seattle Tilth Alliance Garden Stewards",
+    "activityType": "Nature/Conservation",
+    "area": "Wallingford, Seattle",
+    "venue": "Good Shepherd Center (4649 Sunnyside Ave N, Seattle, WA 98103)",
+    "start": "2026-11-07T10:00:00-08:00",
+    "end": "2026-11-07T13:00:00-08:00",
+    "timeString": "10:00 AM – 1:00 PM",
+    "dateString": "2026-11-07",
+    "description": "Hands-on hardwood cuttings, root divisions, and seed stratification to multiply perennial shrubs and berry canes.",
+    "url": "https://tilthalliance.org/classes-events/",
+    "cost": "$40",
+    "recurrence": "Fall workshop"
   },
   {
     "id": "seattle-center-festal-diwali-2026-11-07",
@@ -5280,22 +5408,6 @@
     "recurrence": "Weekly on Fridays"
   },
   {
-    "id": "eastside-audubon-mercer-slough-2026-11-14",
-    "title": "Eastside Audubon: Mercer Slough Guided Bird Walk",
-    "organization": "Eastside Audubon",
-    "activityType": "Birding",
-    "area": "Bellevue",
-    "venue": "Mercer Slough Environmental Center (13010 SE 32nd Pl, Bellevue, WA 98005)",
-    "start": "2026-11-14T08:30:00-08:00",
-    "end": "2026-11-14T10:30:00-08:00",
-    "timeString": "8:30 AM – 10:30 AM",
-    "dateString": "2026-11-14",
-    "description": "Second Saturday walk through Mercer Slough wetland boardwalks.",
-    "url": "https://www.eastsideaudubon.org/calendar",
-    "cost": "Free",
-    "recurrence": "Second Saturday of the month"
-  },
-  {
     "id": "bcs-discovery-park-2026-11-14",
     "title": "Birds Connect Seattle: Neighborhood Bird Walk at Discovery Park",
     "organization": "Birds Connect Seattle",
@@ -5308,6 +5420,22 @@
     "dateString": "2026-11-14",
     "description": "Second Saturday guided walk through coastal bluff forests and meadows.",
     "url": "https://birdsconnectsea.org/get-involved/go-birding/neighborhood-bird-outings/",
+    "cost": "Free",
+    "recurrence": "Second Saturday of the month"
+  },
+  {
+    "id": "eastside-audubon-mercer-slough-2026-11-14",
+    "title": "Eastside Audubon: Mercer Slough Guided Bird Walk",
+    "organization": "Eastside Audubon",
+    "activityType": "Birding",
+    "area": "Bellevue",
+    "venue": "Mercer Slough Environmental Center (13010 SE 32nd Pl, Bellevue, WA 98005)",
+    "start": "2026-11-14T08:30:00-08:00",
+    "end": "2026-11-14T10:30:00-08:00",
+    "timeString": "8:30 AM – 10:30 AM",
+    "dateString": "2026-11-14",
+    "description": "Second Saturday walk through Mercer Slough wetland boardwalks.",
+    "url": "https://www.eastsideaudubon.org/calendar",
     "cost": "Free",
     "recurrence": "Second Saturday of the month"
   },
@@ -5472,22 +5600,6 @@
     "recurrence": "Weekly on Tuesdays"
   },
   {
-    "id": "psba-dinner-elections-2026-11-17",
-    "title": "PSBA Annual Potluck, Business Meeting & Board Elections",
-    "organization": "Puget Sound Beekeepers",
-    "activityType": "Beekeeping",
-    "area": "Seattle",
-    "venue": "Graham Visitors Center, Washington Park Arboretum (2300 Arboretum Dr E, Seattle, WA 98112)",
-    "start": "2026-11-17T18:30:00-08:00",
-    "end": "2026-11-17T21:00:00-08:00",
-    "timeString": "6:30 PM – 9:00 PM (Potluck 6:30 PM, Meeting 7:30 PM)",
-    "dateString": "2026-11-17",
-    "description": "Annual beekeeping community potluck dinner, equipment raffles, club president address, and officer elections at the Arboretum.",
-    "url": "https://pugetsoundbees.org/about/meetings/",
-    "cost": "Free (bring a dish to share)",
-    "recurrence": "Annual meeting"
-  },
-  {
     "id": "mof-lecture-2026-11-17",
     "title": "Museum of Flight: Evening Aerospace Presentation",
     "organization": "Museum of Flight Docent Corps (Tukwila)",
@@ -5502,6 +5614,22 @@
     "url": "https://www.museumofflight.org/exhibits-and-events/calendar-of-events?p=13",
     "cost": "Free with RSVP or Museum Membership",
     "recurrence": "Monthly evening lecture"
+  },
+  {
+    "id": "psba-dinner-elections-2026-11-17",
+    "title": "PSBA Annual Potluck, Business Meeting & Board Elections",
+    "organization": "Puget Sound Beekeepers",
+    "activityType": "Beekeeping",
+    "area": "Seattle",
+    "venue": "Graham Visitors Center, Washington Park Arboretum (2300 Arboretum Dr E, Seattle, WA 98112)",
+    "start": "2026-11-17T18:30:00-08:00",
+    "end": "2026-11-17T21:00:00-08:00",
+    "timeString": "6:30 PM – 9:00 PM (Potluck 6:30 PM, Meeting 7:30 PM)",
+    "dateString": "2026-11-17",
+    "description": "Annual beekeeping community potluck dinner, equipment raffles, club president address, and officer elections at the Arboretum.",
+    "url": "https://pugetsoundbees.org/about/meetings/",
+    "cost": "Free (bring a dish to share)",
+    "recurrence": "Annual meeting"
   },
   {
     "id": "sfr-volunteer-park-2026-11-17",
@@ -5536,22 +5664,6 @@
     "recurrence": "Weekly on Tuesdays"
   },
   {
-    "id": "eastside-audubon-lake-sammamish-2026-11-18",
-    "title": "Eastside Audubon: Lake Sammamish State Park Bird Walk",
-    "organization": "Eastside Audubon",
-    "activityType": "Birding",
-    "area": "Issaquah",
-    "venue": "Lake Sammamish State Park (2000 NW Sammamish Rd, Issaquah, WA 98027)",
-    "start": "2026-11-18T08:00:00-08:00",
-    "end": "2026-11-18T10:30:00-08:00",
-    "timeString": "8:00 AM – 10:30 AM",
-    "dateString": "2026-11-18",
-    "description": "Third Wednesday monthly bird outing through wetlands and shoreline.",
-    "url": "https://www.eastsideaudubon.org/calendar/bird-walk-lake-sammamish-park",
-    "cost": "Free (Discover Pass required)",
-    "recurrence": "Third Wednesday of the month"
-  },
-  {
     "id": "bcs-union-bay-2026-11-18",
     "title": "Birds Connect Seattle: Union Bay Natural Area (Montlake Fill) Outing",
     "organization": "Birds Connect Seattle",
@@ -5565,6 +5677,22 @@
     "description": "Third Wednesday morning birding through the Montlake Fill wetlands.",
     "url": "https://birdsconnectsea.org/get-involved/go-birding/neighborhood-bird-outings/",
     "cost": "Free",
+    "recurrence": "Third Wednesday of the month"
+  },
+  {
+    "id": "eastside-audubon-lake-sammamish-2026-11-18",
+    "title": "Eastside Audubon: Lake Sammamish State Park Bird Walk",
+    "organization": "Eastside Audubon",
+    "activityType": "Birding",
+    "area": "Issaquah",
+    "venue": "Lake Sammamish State Park (2000 NW Sammamish Rd, Issaquah, WA 98027)",
+    "start": "2026-11-18T08:00:00-08:00",
+    "end": "2026-11-18T10:30:00-08:00",
+    "timeString": "8:00 AM – 10:30 AM",
+    "dateString": "2026-11-18",
+    "description": "Third Wednesday monthly bird outing through wetlands and shoreline.",
+    "url": "https://www.eastsideaudubon.org/calendar/bird-walk-lake-sammamish-park",
+    "cost": "Free (Discover Pass required)",
     "recurrence": "Third Wednesday of the month"
   },
   {
@@ -5680,6 +5808,22 @@
     "recurrence": "Weekly on Fridays"
   },
   {
+    "id": "rainier-audubon-green-river-2026-11-21",
+    "title": "Rainier Audubon: Green River Trail / Kent Ponds Bird Walk",
+    "organization": "Rainier Audubon Society",
+    "activityType": "Birding",
+    "area": "South King County / Kent",
+    "venue": "Green River Natural Resources Area / Kent Ponds (Meet at Russell Road Park, 24400 Russell Rd, Kent, WA 98032)",
+    "start": "2026-11-21T08:30:00-08:00",
+    "end": "2026-11-21T11:30:00-08:00",
+    "timeString": "8:30 AM – 11:30 AM",
+    "dateString": "2026-11-21",
+    "description": "Guided bird walk through the Green River Natural Resources Area wetland mitigation basins scoping wintering northern harriers, waterfowl, and marsh birds.",
+    "url": "https://rainieraudubon.org/",
+    "cost": "Free",
+    "recurrence": "Third Saturday of the month"
+  },
+  {
     "id": "tba-clarks-creek-2026-11-21",
     "title": "Tahoma Bird Alliance: Guided Bird Walk at Clark's Creek",
     "organization": "Tahoma Bird Alliance",
@@ -5696,18 +5840,18 @@
     "recurrence": "Third Saturday of the month"
   },
   {
-    "id": "rainier-audubon-green-river-2026-11-21",
-    "title": "Rainier Audubon: Green River Trail / Kent Ponds Bird Walk",
-    "organization": "Rainier Audubon Society",
+    "id": "bcs-green-lake-2026-11-21",
+    "title": "Birds Connect Seattle: Neighborhood Bird Walk at Green Lake",
+    "organization": "Birds Connect Seattle",
     "activityType": "Birding",
-    "area": "South King County / Kent",
-    "venue": "Green River Natural Resources Area / Kent Ponds (Meet at Russell Road Park, 24400 Russell Rd, Kent, WA 98032)",
-    "start": "2026-11-21T08:30:00-08:00",
-    "end": "2026-11-21T11:30:00-08:00",
-    "timeString": "8:30 AM – 11:30 AM",
+    "area": "Green Lake, Seattle",
+    "venue": "Green Lake Park (7312 W Green Lake Dr N, Seattle, WA 98115)",
+    "start": "2026-11-21T09:00:00-08:00",
+    "end": "2026-11-21T11:00:00-08:00",
+    "timeString": "9:00 AM – 11:00 AM",
     "dateString": "2026-11-21",
-    "description": "Guided bird walk through the Green River Natural Resources Area wetland mitigation basins scoping wintering northern harriers, waterfowl, and marsh birds.",
-    "url": "https://rainieraudubon.org/",
+    "description": "Third Saturday bird outing observing winter waterfowl and lake birds.",
+    "url": "https://birdsconnectsea.org/get-involved/go-birding/neighborhood-bird-outings/",
     "cost": "Free",
     "recurrence": "Third Saturday of the month"
   },
@@ -5728,22 +5872,6 @@
     "recurrence": "Annual tournament"
   },
   {
-    "id": "bcs-green-lake-2026-11-21",
-    "title": "Birds Connect Seattle: Neighborhood Bird Walk at Green Lake",
-    "organization": "Birds Connect Seattle",
-    "activityType": "Birding",
-    "area": "Green Lake, Seattle",
-    "venue": "Green Lake Park (7312 W Green Lake Dr N, Seattle, WA 98115)",
-    "start": "2026-11-21T09:00:00-08:00",
-    "end": "2026-11-21T11:00:00-08:00",
-    "timeString": "9:00 AM – 11:00 AM",
-    "dateString": "2026-11-21",
-    "description": "Third Saturday bird outing observing winter waterfowl and lake birds.",
-    "url": "https://birdsconnectsea.org/get-involved/go-birding/neighborhood-bird-outings/",
-    "cost": "Free",
-    "recurrence": "Third Saturday of the month"
-  },
-  {
     "id": "sfr-green-lake-2026-11-21",
     "title": "Seattle Frontrunners: Saturday Morning Green Lake Run & Walk",
     "organization": "Seattle Frontrunners",
@@ -5758,22 +5886,6 @@
     "url": "https://seattlefrontrunners.org/calendar",
     "cost": "Free",
     "recurrence": "Weekly on Saturdays"
-  },
-  {
-    "id": "srs-meeting-2026-11-21",
-    "title": "Seattle Robotics Society November Meeting: Dr. Safwan Mondal on Collaborative Robotics",
-    "organization": "Seattle Robotics Society",
-    "activityType": "Science",
-    "area": "Seattle",
-    "venue": "Online via Zoom (Seattle Robotics Society)",
-    "start": "2026-11-21T10:00:00-08:00",
-    "end": "2026-11-21T12:00:00-08:00",
-    "timeString": "10:00 AM – 12:00 PM",
-    "dateString": "2026-11-21",
-    "description": "Dr. Safwan Mondal presents cutting-edge research on Collaborative Air and Ground Robotics, examining how autonomous aerial drones and ground rovers team up for environmental monitoring and disaster response.",
-    "url": "https://seattlerobotics.org/calendar/",
-    "cost": "Free",
-    "recurrence": "Monthly on 3rd Saturday"
   },
   {
     "id": "bff-work-party-2026-11-21",
@@ -5806,6 +5918,22 @@
     "url": "https://sustainablecapitolhill.org/tool-library/",
     "cost": "Pay-what-you-can membership",
     "recurrence": "Weekly on Saturdays"
+  },
+  {
+    "id": "srs-meeting-2026-11-21",
+    "title": "Seattle Robotics Society November Meeting: Dr. Safwan Mondal on Collaborative Robotics",
+    "organization": "Seattle Robotics Society",
+    "activityType": "Science",
+    "area": "Seattle",
+    "venue": "Online via Zoom (Seattle Robotics Society)",
+    "start": "2026-11-21T10:00:00-08:00",
+    "end": "2026-11-21T12:00:00-08:00",
+    "timeString": "10:00 AM – 12:00 PM",
+    "dateString": "2026-11-21",
+    "description": "Dr. Safwan Mondal presents cutting-edge research on Collaborative Air and Ground Robotics, examining how autonomous aerial drones and ground rovers team up for environmental monitoring and disaster response.",
+    "url": "https://seattlerobotics.org/calendar/",
+    "cost": "Free",
+    "recurrence": "Monthly on 3rd Saturday"
   },
   {
     "id": "makers-holiday-market-2026-11-21",
@@ -6272,6 +6400,22 @@
     "recurrence": "Weekly on Tuesdays"
   },
   {
+    "id": "mox-pokemon-2026-12-01",
+    "title": "Mox Boarding House: Pokémon TCG League",
+    "organization": "Mox Boarding House",
+    "activityType": "Games",
+    "area": "Ballard, Seattle",
+    "venue": "Mox Boarding House Ballard (5105 Leary Ave NW, Seattle, WA 98107)",
+    "start": "2026-12-01T18:30:00-08:00",
+    "end": "2026-12-01T22:00:00-08:00",
+    "timeString": "6:30 PM – 10:00 PM",
+    "dateString": "2026-12-01",
+    "description": "Weekly Pokémon Trading Card Game meetup. Casual standard matches and card trading.",
+    "url": "https://www.moxboardinghouse.com/pages/seattle-events",
+    "cost": "Free drop-in play",
+    "recurrence": "Weekly on Tuesdays"
+  },
+  {
     "id": "sfr-volunteer-park-2026-12-01",
     "title": "Seattle Frontrunners: Tuesday Evening Volunteer Park Run & Walk",
     "organization": "Seattle Frontrunners",
@@ -6301,22 +6445,6 @@
     "description": "Weekly Tuesday drop-in Go play, game reviews, and beginner teaching corner.",
     "url": "https://www.seattlego.org/schedule/",
     "cost": "$5 guest fee / Free for members",
-    "recurrence": "Weekly on Tuesdays"
-  },
-  {
-    "id": "mox-pokemon-2026-12-01",
-    "title": "Mox Boarding House: Pokémon TCG League",
-    "organization": "Mox Boarding House",
-    "activityType": "Games",
-    "area": "Ballard, Seattle",
-    "venue": "Mox Boarding House Ballard (5105 Leary Ave NW, Seattle, WA 98107)",
-    "start": "2026-12-01T18:30:00-08:00",
-    "end": "2026-12-01T22:00:00-08:00",
-    "timeString": "6:30 PM – 10:00 PM",
-    "dateString": "2026-12-01",
-    "description": "Weekly Pokémon Trading Card Game meetup. Casual standard matches and card trading.",
-    "url": "https://www.moxboardinghouse.com/pages/seattle-events",
-    "cost": "Free drop-in play",
     "recurrence": "Weekly on Tuesdays"
   },
   {
@@ -6432,22 +6560,6 @@
     "recurrence": "Weekly on Thursdays"
   },
   {
-    "id": "nwsm-meeting-2026-12-03",
-    "title": "NorthWest Scale Modelers December Meeting & Year-End Showcase",
-    "organization": "Northwest Scale Modelers",
-    "activityType": "Art",
-    "area": "Tukwila",
-    "venue": "The Museum of Flight (Side Gallery / Red Barn, 9404 E Marginal Way S, Tukwila, WA 98108)",
-    "start": "2026-12-03T19:00:00-08:00",
-    "end": "2026-12-03T21:00:00-08:00",
-    "timeString": "7:00 PM – 9:00 PM",
-    "dateString": "2026-12-03",
-    "description": "Year-end meeting and showcase of scale modeling enthusiasts displaying aviation, space, sci-fi, and military models during Free First Thursday.",
-    "url": "https://nwsm.club/meetings/",
-    "cost": "Free",
-    "recurrence": "First Thursday of the month"
-  },
-  {
     "id": "gcc-thursday-mens-2026-12-03",
     "title": "Granite Curling Club: Thursday Men's League",
     "organization": "Seattle Curling Club",
@@ -6462,6 +6574,22 @@
     "url": "https://curlingseattle.org/content/2026-2027-thursday-mens",
     "cost": "League registration",
     "recurrence": "Weekly on Thursdays"
+  },
+  {
+    "id": "nwsm-meeting-2026-12-03",
+    "title": "NorthWest Scale Modelers December Meeting & Year-End Showcase",
+    "organization": "Northwest Scale Modelers",
+    "activityType": "Art",
+    "area": "Tukwila",
+    "venue": "The Museum of Flight (Side Gallery / Red Barn, 9404 E Marginal Way S, Tukwila, WA 98108)",
+    "start": "2026-12-03T19:00:00-08:00",
+    "end": "2026-12-03T21:00:00-08:00",
+    "timeString": "7:00 PM – 9:00 PM",
+    "dateString": "2026-12-03",
+    "description": "Year-end meeting and showcase of scale modeling enthusiasts displaying aviation, space, sci-fi, and military models during Free First Thursday.",
+    "url": "https://nwsm.club/meetings/",
+    "cost": "Free",
+    "recurrence": "First Thursday of the month"
   },
   {
     "id": "mox-fnm-draft-2026-12-04",
@@ -6512,22 +6640,6 @@
     "recurrence": "First Saturday of the month"
   },
   {
-    "id": "eastside-audubon-marymoor-restoration-2026-12-05",
-    "title": "Eastside Audubon: Marymoor Park Bird Habitat Restoration",
-    "organization": "Eastside Audubon",
-    "activityType": "Birding",
-    "area": "Redmond",
-    "venue": "Marymoor Park (6046 W Lake Sammamish Pkwy NE, Redmond, WA 98052)",
-    "start": "2026-12-05T09:00:00-08:00",
-    "end": "2026-12-05T12:00:00-08:00",
-    "timeString": "9:00 AM – 12:00 PM",
-    "dateString": "2026-12-05",
-    "description": "Year-end habitat restoration event mulching and protecting native shrubs along Marymoor Bird Loop.",
-    "url": "https://www.eastsideaudubon.org/marymoor-restoration",
-    "cost": "Free",
-    "recurrence": "First Saturday of the month"
-  },
-  {
     "id": "bcs-magnuson-park-2026-12-05",
     "title": "Birds Connect Seattle: Neighborhood Bird Outing at Magnuson Park",
     "organization": "Birds Connect Seattle",
@@ -6540,6 +6652,22 @@
     "dateString": "2026-12-05",
     "description": "First Saturday monthly bird walk viewing winter diving ducks and raptors.",
     "url": "https://birdsconnectsea.org/get-involved/go-birding/neighborhood-bird-outings/",
+    "cost": "Free",
+    "recurrence": "First Saturday of the month"
+  },
+  {
+    "id": "eastside-audubon-marymoor-restoration-2026-12-05",
+    "title": "Eastside Audubon: Marymoor Park Bird Habitat Restoration",
+    "organization": "Eastside Audubon",
+    "activityType": "Birding",
+    "area": "Redmond",
+    "venue": "Marymoor Park (6046 W Lake Sammamish Pkwy NE, Redmond, WA 98052)",
+    "start": "2026-12-05T09:00:00-08:00",
+    "end": "2026-12-05T12:00:00-08:00",
+    "timeString": "9:00 AM – 12:00 PM",
+    "dateString": "2026-12-05",
+    "description": "Year-end habitat restoration event mulching and protecting native shrubs along Marymoor Bird Loop.",
+    "url": "https://www.eastsideaudubon.org/marymoor-restoration",
     "cost": "Free",
     "recurrence": "First Saturday of the month"
   },
@@ -6624,22 +6752,6 @@
     "recurrence": "1st Sunday monthly"
   },
   {
-    "id": "makers-printmaking-cards-2026-12-06",
-    "title": "Holiday Card Linocut Printmaking Workshop",
-    "organization": "Seattle Makers",
-    "activityType": "Art",
-    "area": "Interbay, Seattle",
-    "venue": "Seattle Makers (3012 16th Ave W, Seattle, WA 98119)",
-    "start": "2026-12-06T13:00:00-08:00",
-    "end": "2026-12-06T16:00:00-08:00",
-    "timeString": "1:00 PM – 4:00 PM",
-    "dateString": "2026-12-06",
-    "description": "Encore winter session carving relief blocks and pressing custom holiday greeting cards.",
-    "url": "https://seattlemakers.org/events/",
-    "cost": "Workshop registration",
-    "recurrence": "Holiday workshop"
-  },
-  {
     "id": "eastside-audubon-juanita-bay-2026-12-06",
     "title": "Eastside Audubon: Juanita Bay Park Afternoon Bird Walk",
     "organization": "Eastside Audubon",
@@ -6654,6 +6766,22 @@
     "url": "https://www.eastsideaudubon.org/juanita-bay-bird-walk",
     "cost": "Free",
     "recurrence": "First Sunday of the month"
+  },
+  {
+    "id": "makers-printmaking-cards-2026-12-06",
+    "title": "Holiday Card Linocut Printmaking Workshop",
+    "organization": "Seattle Makers",
+    "activityType": "Art",
+    "area": "Interbay, Seattle",
+    "venue": "Seattle Makers (3012 16th Ave W, Seattle, WA 98119)",
+    "start": "2026-12-06T13:00:00-08:00",
+    "end": "2026-12-06T16:00:00-08:00",
+    "timeString": "1:00 PM – 4:00 PM",
+    "dateString": "2026-12-06",
+    "description": "Encore winter session carving relief blocks and pressing custom holiday greeting cards.",
+    "url": "https://seattlemakers.org/events/",
+    "cost": "Workshop registration",
+    "recurrence": "Holiday workshop"
   },
   {
     "id": "gcc-monday-league-2026-12-07",
@@ -6880,22 +7008,6 @@
     "recurrence": "Weekly on Fridays"
   },
   {
-    "id": "eastside-audubon-mercer-slough-2026-12-12",
-    "title": "Eastside Audubon: Mercer Slough Guided Bird Walk",
-    "organization": "Eastside Audubon",
-    "activityType": "Birding",
-    "area": "Bellevue",
-    "venue": "Mercer Slough Environmental Center (13010 SE 32nd Pl, Bellevue, WA 98005)",
-    "start": "2026-12-12T08:30:00-08:00",
-    "end": "2026-12-12T10:30:00-08:00",
-    "timeString": "8:30 AM – 10:30 AM",
-    "dateString": "2026-12-12",
-    "description": "Second Saturday winter walk through Mercer Slough wetland boardwalks.",
-    "url": "https://www.eastsideaudubon.org/calendar",
-    "cost": "Free",
-    "recurrence": "Second Saturday of the month"
-  },
-  {
     "id": "bcs-discovery-park-2026-12-12",
     "title": "Birds Connect Seattle: Neighborhood Bird Walk at Discovery Park",
     "organization": "Birds Connect Seattle",
@@ -6908,6 +7020,22 @@
     "dateString": "2026-12-12",
     "description": "Second Saturday guided walk through coastal bluff and forest habitats.",
     "url": "https://birdsconnectsea.org/get-involved/go-birding/neighborhood-bird-outings/",
+    "cost": "Free",
+    "recurrence": "Second Saturday of the month"
+  },
+  {
+    "id": "eastside-audubon-mercer-slough-2026-12-12",
+    "title": "Eastside Audubon: Mercer Slough Guided Bird Walk",
+    "organization": "Eastside Audubon",
+    "activityType": "Birding",
+    "area": "Bellevue",
+    "venue": "Mercer Slough Environmental Center (13010 SE 32nd Pl, Bellevue, WA 98005)",
+    "start": "2026-12-12T08:30:00-08:00",
+    "end": "2026-12-12T10:30:00-08:00",
+    "timeString": "8:30 AM – 10:30 AM",
+    "dateString": "2026-12-12",
+    "description": "Second Saturday winter walk through Mercer Slough wetland boardwalks.",
+    "url": "https://www.eastsideaudubon.org/calendar",
     "cost": "Free",
     "recurrence": "Second Saturday of the month"
   },
@@ -6944,22 +7072,6 @@
     "recurrence": "Weekly on Saturdays"
   },
   {
-    "id": "scc-december-quads-2026-12-12",
-    "title": "Seattle Chess Club: December Quads Tournament",
-    "organization": "Seattle Chess Club",
-    "activityType": "Games",
-    "area": "Green Lake, Seattle",
-    "venue": "Seattle Chess Club @ Orlov Chess Academy (7212 Woodlawn Ave NE, Seattle, WA 98115)",
-    "start": "2026-12-12T10:00:00-08:00",
-    "end": "2026-12-12T17:00:00-08:00",
-    "timeString": "10:00 AM – 5:00 PM",
-    "dateString": "2026-12-12",
-    "description": "Monthly 3-round round-robin quad tournament grouping 4 players of similar rating with G/60;d5 time control.",
-    "url": "https://seattlechess.club/mec-category/uscf-rated/",
-    "cost": "$25 entry / USCF required",
-    "recurrence": "Monthly 2nd Saturday"
-  },
-  {
     "id": "chtl-saturday-workshop-2026-12-12",
     "title": "Capitol Hill Tool Library: Open Woodshop & Tool Checkout",
     "organization": "Capitol Hill Tool Library",
@@ -6974,6 +7086,22 @@
     "url": "https://sustainablecapitolhill.org/tool-library/",
     "cost": "Pay-what-you-can membership",
     "recurrence": "Weekly on Saturdays"
+  },
+  {
+    "id": "scc-december-quads-2026-12-12",
+    "title": "Seattle Chess Club: December Quads Tournament",
+    "organization": "Seattle Chess Club",
+    "activityType": "Games",
+    "area": "Green Lake, Seattle",
+    "venue": "Seattle Chess Club @ Orlov Chess Academy (7212 Woodlawn Ave NE, Seattle, WA 98115)",
+    "start": "2026-12-12T10:00:00-08:00",
+    "end": "2026-12-12T17:00:00-08:00",
+    "timeString": "10:00 AM – 5:00 PM",
+    "dateString": "2026-12-12",
+    "description": "Monthly 3-round round-robin quad tournament grouping 4 players of similar rating with G/60;d5 time control.",
+    "url": "https://seattlechess.club/mec-category/uscf-rated/",
+    "cost": "$25 entry / USCF required",
+    "recurrence": "Monthly 2nd Saturday"
   },
   {
     "id": "seattle-center-winterfest-ice-sculpting-2026-12-12",
@@ -7152,22 +7280,6 @@
     "recurrence": "Monthly meeting"
   },
   {
-    "id": "eastside-audubon-lake-sammamish-2026-12-16",
-    "title": "Eastside Audubon: Lake Sammamish State Park Bird Walk",
-    "organization": "Eastside Audubon",
-    "activityType": "Birding",
-    "area": "Issaquah",
-    "venue": "Lake Sammamish State Park (2000 NW Sammamish Rd, Issaquah, WA 98027)",
-    "start": "2026-12-16T08:00:00-08:00",
-    "end": "2026-12-16T10:30:00-08:00",
-    "timeString": "8:00 AM – 10:30 AM",
-    "dateString": "2026-12-16",
-    "description": "Third Wednesday monthly bird walk looking for winter waterbirds on Lake Sammamish.",
-    "url": "https://www.eastsideaudubon.org/calendar/bird-walk-lake-sammamish-park",
-    "cost": "Free (Discover Pass required)",
-    "recurrence": "Third Wednesday of the month"
-  },
-  {
     "id": "bcs-union-bay-2026-12-16",
     "title": "Birds Connect Seattle: Union Bay Natural Area (Montlake Fill) Outing",
     "organization": "Birds Connect Seattle",
@@ -7181,6 +7293,22 @@
     "description": "Third Wednesday morning winter birding through the Montlake Fill.",
     "url": "https://birdsconnectsea.org/get-involved/go-birding/neighborhood-bird-outings/",
     "cost": "Free",
+    "recurrence": "Third Wednesday of the month"
+  },
+  {
+    "id": "eastside-audubon-lake-sammamish-2026-12-16",
+    "title": "Eastside Audubon: Lake Sammamish State Park Bird Walk",
+    "organization": "Eastside Audubon",
+    "activityType": "Birding",
+    "area": "Issaquah",
+    "venue": "Lake Sammamish State Park (2000 NW Sammamish Rd, Issaquah, WA 98027)",
+    "start": "2026-12-16T08:00:00-08:00",
+    "end": "2026-12-16T10:30:00-08:00",
+    "timeString": "8:00 AM – 10:30 AM",
+    "dateString": "2026-12-16",
+    "description": "Third Wednesday monthly bird walk looking for winter waterbirds on Lake Sammamish.",
+    "url": "https://www.eastsideaudubon.org/calendar/bird-walk-lake-sammamish-park",
+    "cost": "Free (Discover Pass required)",
     "recurrence": "Third Wednesday of the month"
   },
   {
@@ -7360,22 +7488,6 @@
     "recurrence": "Weekly on Saturdays"
   },
   {
-    "id": "srs-meeting-2026-12-19",
-    "title": "Seattle Robotics Society Year-End Meeting & Project Showcase",
-    "organization": "Seattle Robotics Society",
-    "activityType": "Science",
-    "area": "Seattle",
-    "venue": "Online via Zoom (Seattle Robotics Society)",
-    "start": "2026-12-19T10:00:00-08:00",
-    "end": "2026-12-19T12:00:00-08:00",
-    "timeString": "10:00 AM – 12:00 PM",
-    "dateString": "2026-12-19",
-    "description": "End-of-year presentations, member robot demonstrations, and open community round-table on robot software architectures.",
-    "url": "https://seattlerobotics.org/calendar/",
-    "cost": "Free",
-    "recurrence": "Monthly on 3rd Saturday"
-  },
-  {
     "id": "bff-work-party-2026-12-19",
     "title": "Beacon Food Forest 3rd Saturday Community Stewardship Work Party",
     "organization": "Beacon Hill Food Forest Stewards",
@@ -7406,6 +7518,22 @@
     "url": "https://sustainablecapitolhill.org/tool-library/",
     "cost": "Pay-what-you-can membership",
     "recurrence": "Weekly on Saturdays"
+  },
+  {
+    "id": "srs-meeting-2026-12-19",
+    "title": "Seattle Robotics Society Year-End Meeting & Project Showcase",
+    "organization": "Seattle Robotics Society",
+    "activityType": "Science",
+    "area": "Seattle",
+    "venue": "Online via Zoom (Seattle Robotics Society)",
+    "start": "2026-12-19T10:00:00-08:00",
+    "end": "2026-12-19T12:00:00-08:00",
+    "timeString": "10:00 AM – 12:00 PM",
+    "dateString": "2026-12-19",
+    "description": "End-of-year presentations, member robot demonstrations, and open community round-table on robot software architectures.",
+    "url": "https://seattlerobotics.org/calendar/",
+    "cost": "Free",
+    "recurrence": "Monthly on 3rd Saturday"
   },
   {
     "id": "seattle-center-winterfest-ice-sculpting-2026-12-19",
