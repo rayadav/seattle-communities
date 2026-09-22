@@ -491,6 +491,11 @@
     border-color: #a7f3d0;
     box-shadow: 0 0 0 2px rgba(16,185,129,.15);
   }
+  .agenda-day-relative.is-past {
+    color: #64748b;
+    background: #f1f5f9;
+    border-color: #cbd5e1;
+  }
   .agenda-day-count {
     margin-left: auto;
     font-size: 13px;
@@ -855,6 +860,13 @@
           </select>
         </div>
 
+        <!-- Host Organization Select -->
+        <div class="select-box">
+          <select id="org-filter" aria-label="Filter by host organization">
+            <option value="">All Organizations</option>
+          </select>
+        </div>
+
         <!-- Area Select -->
         <div class="select-box">
           <select id="area-filter" aria-label="Filter by neighborhood or area">
@@ -870,12 +882,14 @@
       <div class="time-pills-row">
         <span class="time-pills-label">Timeframe:</span>
         <button type="button" class="time-pill active" data-timeframe="all">All Upcoming</button>
-        <button type="button" class="time-pill" data-timeframe="today">Today (Sep 20)</button>
+        <button type="button" class="time-pill" data-timeframe="today" id="pill-today">Today</button>
         <button type="button" class="time-pill" data-timeframe="this-week">This Week</button>
         <button type="button" class="time-pill" data-timeframe="this-weekend">This Weekend</button>
         <button type="button" class="time-pill" data-timeframe="next-week">Next Week</button>
         <button type="button" class="time-pill" data-timeframe="october">October 2026</button>
         <button type="button" class="time-pill" data-timeframe="november">November 2026</button>
+        <button type="button" class="time-pill" data-timeframe="december">December 2026</button>
+        <button type="button" class="time-pill" data-timeframe="past">Past Events</button>
       </div>
 
       <!-- Status count row -->
@@ -928,6 +942,7 @@
   const searchInput = document.getElementById('calendar-search');
   const clearSearchBtn = document.getElementById('clear-search-btn');
   const categoryFilter = document.getElementById('category-filter');
+  const orgFilter = document.getElementById('org-filter');
   const areaFilter = document.getElementById('area-filter');
   const resetBtn = document.getElementById('reset-filters-btn');
   const emptyResetBtn = document.getElementById('empty-reset-btn');
@@ -958,11 +973,22 @@
     });
 
   function initCalendar() {
-    // Populate stats
-    const total = allEvents.length;
-    const uniqueGroups = new Set(allEvents.map(e => e.organization)).size;
-    const categories = new Set(allEvents.map(e => e.activityType));
-    const areas = new Set(allEvents.map(e => e.area));
+    // Dynamically update Today pill label
+    const todayPill = document.querySelector('.time-pill[data-timeframe="today"]');
+    if (todayPill) {
+      const now = new Date();
+      const mName = now.toLocaleDateString('en-US', { month: 'short' });
+      const dNum = now.getDate();
+      todayPill.textContent = `Today (${mName} ${dNum})`;
+    }
+
+    // Populate stats based on upcoming events
+    const { todayStr } = getCalendarDateBounds();
+    const upcomingEvents = allEvents.filter(e => e.dateString >= todayStr);
+    const total = upcomingEvents.length;
+    const uniqueGroups = new Set(upcomingEvents.map(e => e.organization)).size;
+    const categories = new Set(upcomingEvents.map(e => e.activityType));
+    const areas = new Set(upcomingEvents.map(e => e.area));
 
     heroEventCount.textContent = total;
     statTotalEvents.textContent = total;
@@ -976,6 +1002,15 @@
       opt.value = cat;
       opt.textContent = cat;
       categoryFilter.appendChild(opt);
+    });
+
+    // Populate organization dropdown
+    const orgs = Array.from(new Set(allEvents.map(e => e.organization))).sort();
+    orgs.forEach(org => {
+      const opt = document.createElement('option');
+      opt.value = org;
+      opt.textContent = org;
+      if (orgFilter) orgFilter.appendChild(opt);
     });
 
     // Populate area dropdown
@@ -1000,6 +1035,7 @@
     });
 
     categoryFilter.addEventListener('change', renderAgenda);
+    if (orgFilter) orgFilter.addEventListener('change', renderAgenda);
     areaFilter.addEventListener('change', renderAgenda);
 
     resetBtn.addEventListener('click', resetFilters);
@@ -1021,6 +1057,7 @@
     searchInput.value = '';
     clearSearchBtn.style.display = 'none';
     categoryFilter.value = '';
+    if (orgFilter) orgFilter.value = '';
     areaFilter.value = '';
     activeTimeframe = 'all';
     timePills.forEach(p => p.classList.remove('active'));
@@ -1028,15 +1065,88 @@
     renderAgenda();
   }
 
-  // Helper date functions
+  // Helper date functions with dynamic browser date detection
+  function getLocalDateStr(d = new Date()) {
+    const y = d.getFullYear();
+    const m = String(d.getMonth() + 1).padStart(2, '0');
+    const day = String(d.getDate()).padStart(2, '0');
+    return `${y}-${m}-${day}`;
+  }
+
+  function getCalendarDateBounds(now = new Date()) {
+    const todayStr = getLocalDateStr(now);
+    const dayOfWeek = now.getDay(); // 0 = Sun, 1 = Mon, ..., 6 = Sat
+
+    // Tomorrow
+    const tom = new Date(now);
+    tom.setDate(now.getDate() + 1);
+    const tomorrowStr = getLocalDateStr(tom);
+
+    // End of this week (Sunday)
+    const daysToSun = (7 - dayOfWeek) % 7;
+    const endOfWeek = new Date(now);
+    endOfWeek.setDate(now.getDate() + daysToSun);
+    const endThisWeekStr = getLocalDateStr(endOfWeek);
+
+    // This weekend: Saturday & Sunday
+    const sat = new Date(now);
+    const sun = new Date(now);
+    if (dayOfWeek === 0) { // Today is Sunday
+      sat.setDate(now.getDate() - 1);
+      sun.setDate(now.getDate());
+    } else {
+      sat.setDate(now.getDate() + (6 - dayOfWeek));
+      sun.setDate(now.getDate() + (7 - dayOfWeek));
+    }
+    const thisWeekendSatStr = getLocalDateStr(sat);
+    const thisWeekendSunStr = getLocalDateStr(sun);
+
+    // Next week: Monday through Sunday after this week
+    const nextMon = new Date(now);
+    if (dayOfWeek === 0) {
+      nextMon.setDate(now.getDate() + 1);
+    } else {
+      nextMon.setDate(now.getDate() + (8 - dayOfWeek));
+    }
+    const nextSun = new Date(nextMon);
+    nextSun.setDate(nextMon.getDate() + 6);
+    const nextWeekStartStr = getLocalDateStr(nextMon);
+    const nextWeekEndStr = getLocalDateStr(nextSun);
+
+    return {
+      todayStr,
+      tomorrowStr,
+      endThisWeekStr,
+      thisWeekendSatStr,
+      thisWeekendSunStr,
+      nextWeekStartStr,
+      nextWeekEndStr
+    };
+  }
+
   function getRelativeDayLabel(dateStr) {
-    if (dateStr === '2026-09-20') return 'Today';
-    if (dateStr === '2026-09-21') return 'Tomorrow';
-    if (dateStr >= '2026-09-22' && dateStr <= '2026-09-25') return 'This Week';
-    if (dateStr === '2026-09-26' || dateStr === '2026-09-27') return 'This Weekend';
-    if (dateStr >= '2026-09-28' && dateStr <= '2026-10-04') return 'Next Week';
-    if (dateStr.startsWith('2026-10')) return 'October';
-    if (dateStr.startsWith('2026-11')) return 'November';
+    const {
+      todayStr,
+      tomorrowStr,
+      endThisWeekStr,
+      thisWeekendSatStr,
+      thisWeekendSunStr,
+      nextWeekStartStr,
+      nextWeekEndStr
+    } = getCalendarDateBounds();
+
+    if (dateStr < todayStr) return 'Past';
+    if (dateStr === todayStr) return 'Today';
+    if (dateStr === tomorrowStr) return 'Tomorrow';
+    if (dateStr === thisWeekendSatStr || dateStr === thisWeekendSunStr) return 'This Weekend';
+    if (dateStr <= endThisWeekStr) return 'This Week';
+    if (dateStr >= nextWeekStartStr && dateStr <= nextWeekEndStr) return 'Next Week';
+
+    const parts = dateStr.split('-');
+    const monthIndex = parseInt(parts[1], 10) - 1;
+    const monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+    if (monthNames[monthIndex]) return monthNames[monthIndex];
+
     return 'Upcoming';
   }
 
@@ -1116,31 +1226,71 @@
   function renderAgenda() {
     const query = searchInput.value.trim().toLowerCase();
     const selCat = categoryFilter.value;
+    const selOrg = orgFilter ? orgFilter.value : '';
     const selArea = areaFilter.value;
 
     const filtered = allEvents.filter(ev => {
       if (selCat && ev.activityType !== selCat) return false;
+      if (selOrg && ev.organization !== selOrg) return false;
       if (selArea && ev.area !== selArea) return false;
 
       if (query) {
+        // Smart normalization: handle common typos like 'audobon' -> 'audubon'
+        const normQuery = query.replace(/audobon/g, 'audubon');
         const matchText = `${ev.title} ${ev.organization} ${ev.venue} ${ev.area} ${ev.activityType} ${ev.description}`.toLowerCase();
-        if (!matchText.includes(query)) return false;
+        
+        // Match 1: Direct substring on normal text
+        const directMatch = matchText.includes(normQuery);
+
+        // Match 2: Compressed match without spaces/punctuation (e.g. 'eastsideaudobon', 'eastsideaudubon', 'birdsconnect')
+        const cleanMatch = matchText.replace(/[\s\-_,.]/g, '');
+        const cleanQuery = normQuery.replace(/[\s\-_,.]/g, '');
+        const compressedMatch = cleanMatch.includes(cleanQuery);
+
+        // Match 3: Multi-token match (all words anywhere in record)
+        const tokens = normQuery.split(/\s+/).filter(Boolean);
+        const tokenMatch = tokens.length > 0 && tokens.every(tok => {
+          const cleanTok = tok.replace(/[\s\-_,.]/g, '');
+          return matchText.includes(tok) || cleanMatch.includes(cleanTok);
+        });
+
+        if (!directMatch && !compressedMatch && !tokenMatch) return false;
       }
 
-      // Timeframe filtering
+      // Dynamic Timeframe filtering
+      const {
+        todayStr,
+        endThisWeekStr,
+        thisWeekendSatStr,
+        thisWeekendSunStr,
+        nextWeekStartStr,
+        nextWeekEndStr
+      } = getCalendarDateBounds();
+
       const dateStr = ev.dateString;
-      if (activeTimeframe === 'today') {
-        if (dateStr !== '2026-09-20') return false;
+
+      // Default 'all' hides past events, showing all upcoming from today onward
+      if (activeTimeframe === 'all') {
+        if (dateStr < todayStr) return false;
+      } else if (activeTimeframe === 'today') {
+        if (dateStr !== todayStr) return false;
       } else if (activeTimeframe === 'this-week') {
-        if (!(dateStr >= '2026-09-20' && dateStr <= '2026-09-27')) return false;
+        if (!(dateStr >= todayStr && dateStr <= endThisWeekStr)) return false;
       } else if (activeTimeframe === 'this-weekend') {
-        if (!(dateStr === '2026-09-26' || dateStr === '2026-09-27')) return false;
+        if (!(dateStr === thisWeekendSatStr || dateStr === thisWeekendSunStr)) return false;
       } else if (activeTimeframe === 'next-week') {
-        if (!(dateStr >= '2026-09-28' && dateStr <= '2026-10-04')) return false;
+        if (!(dateStr >= nextWeekStartStr && dateStr <= nextWeekEndStr)) return false;
       } else if (activeTimeframe === 'october') {
         if (!dateStr.startsWith('2026-10')) return false;
+        if (dateStr < todayStr) return false;
       } else if (activeTimeframe === 'november') {
         if (!dateStr.startsWith('2026-11')) return false;
+        if (dateStr < todayStr) return false;
+      } else if (activeTimeframe === 'december') {
+        if (!dateStr.startsWith('2026-12')) return false;
+        if (dateStr < todayStr) return false;
+      } else if (activeTimeframe === 'past') {
+        if (dateStr >= todayStr) return false;
       }
 
       return true;
@@ -1178,7 +1328,7 @@
         <section class="agenda-day-group" aria-label="${headerDate}">
           <div class="agenda-day-header">
             <h2 class="agenda-day-title">${headerDate}</h2>
-            <span class="agenda-day-relative ${relativeLabel === 'Today' ? 'is-today' : ''}">${relativeLabel}</span>
+            <span class="agenda-day-relative ${relativeLabel === 'Today' ? 'is-today' : (relativeLabel === 'Past' ? 'is-past' : '')}">${relativeLabel}</span>
             <span class="agenda-day-count">${dayEvents.length} event${dayEvents.length > 1 ? 's' : ''}</span>
           </div>
           <div class="agenda-events-list">
