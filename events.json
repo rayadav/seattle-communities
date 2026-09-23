@@ -960,6 +960,22 @@
     "recurrence": "4th Saturday of each month"
   },
   {
+    "id": "sglrg-saturday-morning-run-20260926",
+    "title": "Saturday Morning All-Paces Lake Run & Social",
+    "organization": "Seattle Green Lake Running Group",
+    "activityType": "Running & Fitness",
+    "area": "Seattle (Green Lake)",
+    "venue": "Green Lake Community Center (7201 E Green Lake Dr N, Seattle, WA 98115)",
+    "start": "2026-09-26T08:00:00-07:00",
+    "end": "2026-09-26T09:30:00-07:00",
+    "timeString": "8:00 AM – 9:30 AM",
+    "dateString": "2026-09-26",
+    "description": "Weekly Saturday morning group run around Green Lake for runners, joggers, and walkers of all paces, followed by coffee and community conversation.",
+    "url": "https://www.meetup.com/seattle-greenlake-running-group/",
+    "cost": "Free",
+    "recurrence": "Weekly on Saturdays"
+  },
+  {
     "id": "gsp-baker-park-2026-09-26",
     "title": "Green Seattle Partnership: Baker Park Forest Restoration Work Party",
     "organization": "Green Seattle Partnership Park Stewards",
@@ -2224,6 +2240,22 @@
     "recurrence": "Weekly on Saturdays"
   },
   {
+    "id": "earthcorps-duwamish-restoration-20261003",
+    "title": "Duwamish River Habitat Restoration Work Party",
+    "organization": "EarthCorps",
+    "activityType": "Nature & Conservation",
+    "area": "Seattle (Duwamish / West Seattle)",
+    "venue": "T-107 Park / Duwamish Waterway (4700 W Marginal Way SW, Seattle, WA 98106)",
+    "start": "2026-10-03T10:00:00-07:00",
+    "end": "2026-10-03T14:00:00-07:00",
+    "timeString": "10:00 AM – 2:00 PM",
+    "dateString": "2026-10-03",
+    "description": "Hands-on environmental stewardship work party along the Duwamish River shoreline. Volunteers clear invasive plants and restore native estuarine habitat supporting wild salmon.",
+    "url": "https://www.earthcorps.org/volunteer/calendar/",
+    "cost": "Free",
+    "recurrence": "Weekend Volunteer Work Party"
+  },
+  {
     "id": "bbg-journaling-2026-10-03",
     "title": "Journaling the Garden (Adult Nature Observation)",
     "organization": "Bellevue Botanical Garden Volunteers",
@@ -2880,6 +2912,22 @@
     "recurrence": "Annual invitational"
   },
   {
+    "id": "scc-fall-open-day1-20261010",
+    "title": "2026 Seattle Fall Open Chess Championship (Day 1)",
+    "organization": "Seattle Chess Club",
+    "activityType": "Games & Hobbies",
+    "area": "Seattle (Northgate)",
+    "venue": "Seattle Chess Club (2150 N 107th St, Suite 113, Seattle, WA 98133)",
+    "start": "2026-10-10T10:00:00-07:00",
+    "end": "2026-10-10T18:00:00-07:00",
+    "timeString": "10:00 AM – 6:00 PM",
+    "dateString": "2026-10-10",
+    "description": "Premier autumn weekend classical chess tournament hosted by the historic Seattle Chess Club. Multi-round rated match play with Open and Reserve divisions.",
+    "url": "https://seattlechess.club/events-calendar/",
+    "cost": "5 – 5",
+    "recurrence": "Annual Weekend Tournament"
+  },
+  {
     "id": "chtl-saturday-workshop-2026-10-10",
     "title": "Capitol Hill Tool Library: Open Woodshop & Tool Checkout",
     "organization": "Capitol Hill Tool Library",
@@ -3406,6 +3454,22 @@
     "url": "https://www.moxboardinghouse.com/pages/seattle-events",
     "cost": "Free",
     "recurrence": "Weekly on Thursdays"
+  },
+  {
+    "id": "mountaineers-mountainfilm-20261015",
+    "title": "Mountainfilm on Tour: Seattle 2026",
+    "organization": "The Mountaineers",
+    "activityType": "Outdoor Adventure",
+    "area": "Seattle (Magnuson Park)",
+    "venue": "Mountaineers Seattle Program Center (7700 Sand Point Way NE, Seattle, WA 98115)",
+    "start": "2026-10-15T19:00:00-07:00",
+    "end": "2026-10-15T21:30:00-07:00",
+    "timeString": "7:00 PM – 9:30 PM",
+    "dateString": "2026-10-15",
+    "description": "Inspiring outdoor adventure and environmental film screenings hosted at the Seattle Program Center in Magnuson Park, featuring local outdoor community tabling and prize drawings.",
+    "url": "https://www.mountaineers.org/locations-lodges/seattle-program-center/events/mountainfilm-on-tour-2026",
+    "cost": "8 GA / 3 Members",
+    "recurrence": "Annual Film Festival Tour"
   },
   {
     "id": "burke-qi-gong-2026-10-16",
