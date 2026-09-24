@@ -1792,6 +1792,38 @@
     "recurrence": "Annual forum"
   },
   {
+    "id": "burke-museum-free-first-thursday-20261001",
+    "title": "Free First Thursday Community Night",
+    "organization": "Burke Museum",
+    "activityType": "Science & Technology",
+    "area": "Seattle (University District)",
+    "venue": "Burke Museum (4300 15th Ave NE, Seattle, WA 98105)",
+    "start": "2026-10-01T10:00:00-07:00",
+    "end": "2026-10-01T20:00:00-07:00",
+    "timeString": "10:00 AM – 8:00 PM",
+    "dateString": "2026-10-01",
+    "description": "Free admission day at the Burke Museum. Explore visible working research labs, dinosaur fossils, Northwest wildlife, and cultural heritage exhibits during extended evening hours.",
+    "url": "https://www.burkemuseum.org/calendar/free-first-thursday-0",
+    "cost": "Free",
+    "recurrence": "Monthly (1st Thursdays)"
+  },
+  {
+    "id": "saam-free-first-thursday-20261001",
+    "title": "Free First Thursday in Volunteer Park",
+    "organization": "Seattle Asian Art Museum",
+    "activityType": "Arts & Culture",
+    "area": "Seattle (Capitol Hill)",
+    "venue": "Seattle Asian Art Museum (1400 E Prospect St, Seattle, WA 98112)",
+    "start": "2026-10-01T10:00:00-07:00",
+    "end": "2026-10-01T17:00:00-07:00",
+    "timeString": "10:00 AM – 5:00 PM",
+    "dateString": "2026-10-01",
+    "description": "Free monthly community admission day to the Seattle Asian Art Museum in Volunteer Park, featuring pan-Asian historical collections and contemporary art galleries.",
+    "url": "https://www.seattleartmuseum.org/",
+    "cost": "Free",
+    "recurrence": "Monthly (1st Thursdays)"
+  },
+  {
     "id": "sjg-hatsumomiji-2026-10-01",
     "title": "Hatsumomiji 2026: Autumn Maple Viewing Festival (Opening Day)",
     "organization": "Seattle Japanese Garden",
@@ -1886,6 +1918,22 @@
     "url": "https://www.museumofflight.org/exhibits-and-events/calendar-of-events",
     "cost": "FREE admission (5 PM – 9 PM)",
     "recurrence": "First Thursday monthly"
+  },
+  {
+    "id": "wstl-community-diy-night-20261001",
+    "title": "Thursday Community DIY Open Hours & Tool Care Night",
+    "organization": "West Seattle Tool Library",
+    "activityType": "Maker & Crafts",
+    "area": "Seattle (West Seattle / Delridge)",
+    "venue": "Youngstown Cultural Arts Center (4408 Delridge Way SW, Seattle, WA 98106)",
+    "start": "2026-10-01T17:00:00-07:00",
+    "end": "2026-10-01T20:00:00-07:00",
+    "timeString": "5:00 PM – 8:00 PM",
+    "dateString": "2026-10-01",
+    "description": "Weekly community tool-lending library open hours and maintenance night. Borrow DIY tools or get volunteer guidance on home repairs and sharpening.",
+    "url": "https://www.wstools.org/events",
+    "cost": "Free",
+    "recurrence": "Weekly on Thursdays"
   },
   {
     "id": "snw-space-happy-hour-2026-10-01",
@@ -2766,6 +2814,22 @@
     "url": "https://www.burkemuseum.org/calendar",
     "cost": "Registration required",
     "recurrence": "Weekly series on Fridays"
+  },
+  {
+    "id": "sfs-old-growth-oldtime-20261009",
+    "title": "4th Annual Old Growth Oldtime Seattle Gathering (Opening Night)",
+    "organization": "Seattle Folklore Society",
+    "activityType": "Arts & Culture",
+    "area": "North Seattle (Pinehurst)",
+    "venue": "Latvian Community Center (11710 3rd Ave NE, Seattle, WA 98125)",
+    "start": "2026-10-09T18:00:00-07:00",
+    "end": "2026-10-09T23:00:00-07:00",
+    "timeString": "6:00 PM – 11:00 PM",
+    "dateString": "2026-10-09",
+    "description": "Annual community old-time music and dance gathering hosted by the Seattle Folklore Society. Features live fiddle jams, workshops, and an evening community square dance.",
+    "url": "https://www.seafolklore.org/events/",
+    "cost": "5 – 5",
+    "recurrence": "Annual Weekend Gathering"
   },
   {
     "id": "mox-fnm-draft-2026-10-09",
