@@ -1312,6 +1312,22 @@
     "recurrence": "Annual 2-day championship"
   },
   {
+    "id": "sfdbc-lake-union-paddle-20260927",
+    "title": "Sunday Morning Community Dragon Boat Paddle",
+    "organization": "Seattle Flying Dragon Boat Club",
+    "activityType": "Water Sports",
+    "area": "Seattle (South Lake Union)",
+    "venue": "Kenmore Air Terminal Docks (950 Westlake Ave N, Seattle, WA 98109)",
+    "start": "2026-09-27T09:30:00-07:00",
+    "end": "2026-09-27T11:30:00-07:00",
+    "timeString": "9:30 AM – 11:30 AM",
+    "dateString": "2026-09-27",
+    "description": "Weekly recreational dragon boat paddling on Lake Union. Guest paddlers and beginners welcome. Paddles, life jackets, and steering coaching provided.",
+    "url": "https://www.seattleflyingdragons.org/practice-schedule",
+    "cost": "Free for first-time guests",
+    "recurrence": "Weekly on Sundays"
+  },
+  {
     "id": "seattle-center-festal-italian-2026-09-27",
     "title": "The Italian Festival (Festa Italiana Seattle - Day 2)",
     "organization": "Seattle Center",
@@ -1678,6 +1694,22 @@
     "url": "https://www.spacenorthwest.org/seattle-space-week",
     "cost": "Free with RSVP",
     "recurrence": "Seattle Space Week 2026"
+  },
+  {
+    "id": "soundbio-biomaterials-workshop-20260930",
+    "title": "Bio-Materials for Bio-Art Community Workshop",
+    "organization": "SoundBio Lab",
+    "activityType": "Science & Technology",
+    "area": "Seattle (University District)",
+    "venue": "SoundBio Lab (1100 NE 47th St #103, Seattle, WA 98105)",
+    "start": "2026-09-30T17:00:00-07:00",
+    "end": "2026-09-30T19:00:00-07:00",
+    "timeString": "5:00 PM – 7:00 PM",
+    "dateString": "2026-09-30",
+    "description": "Hands-on community biology and sustainable biomaterials workshop. Learn how to grow and craft fungal mycelium and bacterial cellulose materials in a DIY bio lab.",
+    "url": "https://www.sound.bio/workshops-events",
+    "cost": "5 – 5 (Materials included)",
+    "recurrence": "Workshop Series Session"
   },
   {
     "id": "burke-gyetk-2026-09-30",
@@ -2448,6 +2480,22 @@
     "recurrence": "Special event"
   },
   {
+    "id": "gearhouse-sunday-coffee-walk-20261004",
+    "title": "Sunday Morning Coffee Walk and Talk",
+    "organization": "Gearhouse",
+    "activityType": "Outdoors",
+    "area": "Seattle (Capitol Hill)",
+    "venue": "Gearhouse Basecamp (800 E Thomas St, Seattle, WA 98102)",
+    "start": "2026-10-04T09:30:00-07:00",
+    "end": "2026-10-04T11:00:00-07:00",
+    "timeString": "9:30 AM – 11:00 AM",
+    "dateString": "2026-10-04",
+    "description": "Casual social walk through Capitol Hill and Volunteer Park with fellow outdoor enthusiasts, finishing with coffee and trip planning at the Gearhouse clubhouse.",
+    "url": "https://www.joingearhouse.com/calendar",
+    "cost": "Free",
+    "recurrence": "Weekly on Sundays"
+  },
+  {
     "id": "sgc-monthly-tournament-2026-10-04",
     "title": "Seattle Go Center: October Monthly Ratings Tournament",
     "organization": "Seattle Go Center",
@@ -2574,6 +2622,22 @@
     "url": "https://sustainablecapitolhill.org/tool-library/",
     "cost": "Free for library members",
     "recurrence": "Weekly on Tuesdays"
+  },
+  {
+    "id": "silent-book-club-tailwind-20261006",
+    "title": "Silent Book Club Seattle @ Tailwind Cafe",
+    "organization": "Silent Book Club Seattle",
+    "activityType": "Community",
+    "area": "Seattle (Capitol Hill)",
+    "venue": "Tailwind Cafe & Bar (1122 E Pike St, Seattle, WA 98122)",
+    "start": "2026-10-06T18:00:00-07:00",
+    "end": "2026-10-06T20:00:00-07:00",
+    "timeString": "6:00 PM – 8:00 PM",
+    "dateString": "2026-10-06",
+    "description": "Low-pressure community reading hour. Bring whatever you are currently reading, enjoy a beverage, and read quietly among fellow book lovers with optional socializing afterwards.",
+    "url": "https://silentbook.club/",
+    "cost": "Free",
+    "recurrence": "Monthly (1st Tuesdays)"
   },
   {
     "id": "nwpc-tech-tuesday-2026-10-06",
