@@ -2112,6 +2112,22 @@
     "recurrence": "Civic panel"
   },
   {
+    "id": "wsg-marine-educators-symposium-20261002",
+    "title": "Northwest Aquatic & Marine Educators Regional Symposium",
+    "organization": "Washington Sea Grant",
+    "activityType": "Science & Technology",
+    "area": "Seattle (University District)",
+    "venue": "UW College of the Environment (3716 Brooklyn Ave NE, Seattle, WA 98105)",
+    "start": "2026-10-02T09:00:00-07:00",
+    "end": "2026-10-02T16:00:00-07:00",
+    "timeString": "9:00 AM – 4:00 PM",
+    "dateString": "2026-10-02",
+    "description": "Full-day regional symposium bringing together marine scientists, educators, and community naturalists to explore Salish Sea conservation, watershed health, and hands-on aquatic science.",
+    "url": "https://waseagrant.uw.edu/news-events/",
+    "cost": "5 – 0",
+    "recurrence": "Annual Fall Gathering"
+  },
+  {
     "id": "bbg-preschool-storytime-2026-10-02",
     "title": "Story Time at the Garden for Preschoolers",
     "organization": "Bellevue Botanical Garden Volunteers",
@@ -2240,6 +2256,22 @@
     "recurrence": "Author lecture"
   },
   {
+    "id": "rrc-adult-open-row-20261003",
+    "title": "Adult Community Open Row & Technique Session",
+    "organization": "Renton Rowing Center",
+    "activityType": "Water Sports",
+    "area": "South King County (Renton)",
+    "venue": "Cedar River Trailhead Boathouse (1060 Nishiwaki Ln, Renton, WA 98057)",
+    "start": "2026-10-03T08:30:00-07:00",
+    "end": "2026-10-03T10:30:00-07:00",
+    "timeString": "8:30 AM – 10:30 AM",
+    "dateString": "2026-10-03",
+    "description": "Community sculling and sweep rowing session on the south end of Lake Washington and the Cedar River. Coached water time focusing on boat handling, blade work, and fitness for recreational rowers.",
+    "url": "https://www.rentonrowingcenter.org/",
+    "cost": "0 drop-in",
+    "recurrence": "Weekly on Saturdays"
+  },
+  {
     "id": "tba-gateway-2026-10-03",
     "title": "Guided Birding Walk at Gateway Park in Gig Harbor",
     "organization": "Tahoma Bird Alliance",
@@ -2286,6 +2318,22 @@
     "url": "https://www.eastsideaudubon.org/marymoor-restoration",
     "cost": "Free (tools and gloves provided)",
     "recurrence": "First Saturday of the month"
+  },
+  {
+    "id": "pfm-derby-skills-basics-20261003",
+    "title": "Roller Derby Scrimmage Basics & New Skater Skills",
+    "organization": "PFM Roller Derby",
+    "activityType": "Indoor Sports",
+    "area": "Seattle (Ballard)",
+    "venue": "Ballard Community Center (6020 28th Ave NW, Seattle, WA 98107)",
+    "start": "2026-10-03T09:00:00-07:00",
+    "end": "2026-10-03T11:00:00-07:00",
+    "timeString": "9:00 AM – 11:00 AM",
+    "dateString": "2026-10-03",
+    "description": "Recreational roller derby non-contact skills session covering skating form, stopping, pack awareness, and positional play in an inclusive, supportive environment. Quad skates and safety gear required.",
+    "url": "https://pfmrollerderby.org/",
+    "cost": "5 drop-in",
+    "recurrence": "Weekly on Saturdays"
   },
   {
     "id": "sfr-green-lake-2026-10-03",
@@ -2990,6 +3038,22 @@
     "url": "https://www.eastsideaudubon.org/calendar",
     "cost": "Free",
     "recurrence": "Second Saturday of the month"
+  },
+  {
+    "id": "spac-guided-bird-walk-20261010",
+    "title": "Guided Autumn Old-Growth Forest & Bird Walk",
+    "organization": "Seward Park Audubon Center",
+    "activityType": "Nature & Conservation",
+    "area": "Seattle (Seward Park)",
+    "venue": "Seward Park Audubon Center (5902 Lake Washington Blvd S, Seattle, WA 98118)",
+    "start": "2026-10-10T09:00:00-07:00",
+    "end": "2026-10-10T11:00:00-07:00",
+    "timeString": "9:00 AM – 11:00 AM",
+    "dateString": "2026-10-10",
+    "description": "Naturalist-led autumn birding and forest ecology walk through Seward Park's old-growth forest. Search for resident owls, woodpeckers, and waterfowl along Lake Washington. Binoculars available to borrow.",
+    "url": "https://www.audubon.org/seward-park/explore/habitats-wildlife/guided-nature-walks",
+    "cost": "0 suggested donation",
+    "recurrence": "Monthly (2nd Saturdays)"
   },
   {
     "id": "psrg-kitsap-swap-2026-10-10",
