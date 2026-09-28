@@ -1520,6 +1520,22 @@
     "recurrence": "Weekly on Mondays through March 2027"
   },
   {
+    "id": "spl-monday-pinball-league-20260928",
+    "title": "Monday Night Community Pinball League",
+    "organization": "Seattle Pinball League",
+    "activityType": "Games & Hobbies",
+    "area": "Seattle (West Seattle)",
+    "venue": "The Admiral Pub (2306 California Ave SW, Seattle, WA 98116)",
+    "start": "2026-09-28T19:00:00-07:00",
+    "end": "2026-09-28T22:00:00-07:00",
+    "timeString": "7:00 PM – 10:00 PM",
+    "dateString": "2026-09-28",
+    "description": "Weekly community recreational pinball tournament for players of all skill levels. Compete on classic and modern machines in a friendly, social league format.",
+    "url": "https://www.ifpapinball.com/tournaments/view.php?t=23774",
+    "cost": " entry + coin-drop",
+    "recurrence": "Weekly on Mondays"
+  },
+  {
     "id": "town-hall-kolhatkar-2026-09-28",
     "title": "Sonali Kolhatkar with Josefina Mora-Cheung: Resisting Authoritarianism",
     "organization": "Town Hall Seattle",
@@ -2512,6 +2528,22 @@
     "recurrence": "Concert"
   },
   {
+    "id": "lwrc-tail-of-the-lake-20261004",
+    "title": "Tail of the Lake Regatta 2026",
+    "organization": "Lake Washington Rowing Club",
+    "activityType": "Water Sports",
+    "area": "Seattle (Fremont / Lake Union)",
+    "venue": "Lake Washington Rowing Club (910 N Northlake Way, Seattle, WA 98103)",
+    "start": "2026-10-04T07:00:00-07:00",
+    "end": "2026-10-04T13:00:00-07:00",
+    "timeString": "7:00 AM – 1:00 PM",
+    "dateString": "2026-10-04",
+    "description": "Historic annual 4km head-race regatta on Lake Union bringing together junior, collegiate, and master rowers from across the Northwest. Free to spectate from Gas Works Park.",
+    "url": "https://www.lakewashingtonrowing.com/",
+    "cost": "Free for spectators",
+    "recurrence": "Annual Fall Regatta"
+  },
+  {
     "id": "psrg-tour-de-forest-2026-10-04",
     "title": "Tour de Forest Rally Communications Support",
     "organization": "Puget Sound Repeater Group",
@@ -2958,6 +2990,22 @@
     "url": "https://www.moxboardinghouse.com/pages/seattle-events",
     "cost": "Draft entry fee ($18 - $22)",
     "recurrence": "Weekly on Fridays"
+  },
+  {
+    "id": "cfc-creative-mingle-20261009",
+    "title": "Film & Music Industry Monthly Mingle",
+    "organization": "Cocktails for Creatives Seattle",
+    "activityType": "Community",
+    "area": "Seattle (Belltown)",
+    "venue": "Black Bottle Gastrotavern (2600 1st Ave, Seattle, WA 98121)",
+    "start": "2026-10-09T19:00:00-07:00",
+    "end": "2026-10-09T22:00:00-07:00",
+    "timeString": "7:00 PM – 10:00 PM",
+    "dateString": "2026-10-09",
+    "description": "Monthly community networking mixer connecting Pacific Northwest filmmakers, musicians, designers, and creative artists to discuss collaborations and share project ideas.",
+    "url": "https://www.eventbrite.com/d/wa--seattle/craft-cocktail/",
+    "cost": "Free RSVP",
+    "recurrence": "Monthly (2nd Fridays)"
   },
   {
     "id": "nw-seaport-chantey-sing-20261009",
@@ -3934,6 +3982,22 @@
     "url": "https://tilthalliance.org/events/",
     "cost": "$20 – $40 per family",
     "recurrence": "Family workshop"
+  },
+  {
+    "id": "skwc-swamp-creek-restoration-20261017",
+    "title": "Swamp Creek Habitat Restoration Work Party",
+    "organization": "Sno-King Watershed Council",
+    "activityType": "Nature & Conservation",
+    "area": "North King County (Kenmore)",
+    "venue": "ƛ̕ax̌ʷadis Park (7515 NE 175th St, Kenmore, WA 98028)",
+    "start": "2026-10-17T11:00:00-07:00",
+    "end": "2026-10-17T14:00:00-07:00",
+    "timeString": "11:00 AM – 2:00 PM",
+    "dateString": "2026-10-17",
+    "description": "Volunteer watershed stewardship event along Swamp Creek. Help remove invasive plants and restore native riparian habitat supporting regional salmon recovery.",
+    "url": "https://swampcreekwatershed.org/events/",
+    "cost": "Free",
+    "recurrence": "Monthly Volunteer Work Party"
   },
   {
     "id": "tilth-bokashi-biochar-2026-10-17",
