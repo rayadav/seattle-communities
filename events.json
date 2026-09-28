@@ -2272,6 +2272,22 @@
     "recurrence": "Author lecture"
   },
   {
+    "id": "starfire-friday-dropin-soccer-20261002",
+    "title": "Friday Night Co-Ed Adult Drop-In Soccer",
+    "organization": "Starfire Sports",
+    "activityType": "Indoor Sports",
+    "area": "South King County (Tukwila)",
+    "venue": "Starfire Sports (14800 Starfire Way, Tukwila, WA 98188)",
+    "start": "2026-10-02T20:00:00-07:00",
+    "end": "2026-10-02T22:00:00-07:00",
+    "timeString": "8:00 PM – 10:00 PM",
+    "dateString": "2026-10-02",
+    "description": "Weekly recreational adult drop-in soccer on indoor turf fields. Players are sorted into rotating scrimmage teams; open to all skill levels.",
+    "url": "https://www.starfiresports.com/events/",
+    "cost": "0 drop-in",
+    "recurrence": "Weekly on Fridays"
+  },
+  {
     "id": "rrc-adult-open-row-20261003",
     "title": "Adult Community Open Row & Technique Session",
     "organization": "Renton Rowing Center",
@@ -2414,6 +2430,22 @@
     "url": "https://bellevuebotanical.org/calendar/",
     "cost": "Free",
     "recurrence": "First Saturday monthly"
+  },
+  {
+    "id": "wnps-magnuson-nursery-20261003",
+    "title": "Nursery Stewardship & Native Plant Work Party",
+    "organization": "Washington Native Plant Society",
+    "activityType": "Nature & Conservation",
+    "area": "Seattle (Magnuson Park)",
+    "venue": "The Brig / Magnuson Park Nursery (6344 NE 74th St, Seattle, WA 98115)",
+    "start": "2026-10-03T10:00:00-07:00",
+    "end": "2026-10-03T13:00:00-07:00",
+    "timeString": "10:00 AM – 1:00 PM",
+    "dateString": "2026-10-03",
+    "description": "Volunteer native plant propagation session at Magnuson Park. Pot native seedlings, care for growing beds, and learn Pacific Northwest native plant identification.",
+    "url": "https://www.meetup.com/washington-native-plant-society/events/316719822/",
+    "cost": "Free",
+    "recurrence": "Monthly (1st Saturdays)"
   },
   {
     "id": "makers-ceramic-pumpkin-2026-10-03",
@@ -2685,6 +2717,22 @@
     "description": "Monday night league round-robin draws.",
     "url": "https://curlingseattle.org/content/2026-2027-monday-night",
     "cost": "League play / Free for spectators",
+    "recurrence": "Weekly on Mondays"
+  },
+  {
+    "id": "seattle-aikikai-intro-aikido-20261005",
+    "title": "Introduction to Aikido Community Practice & Basics",
+    "organization": "Seattle Aikikai",
+    "activityType": "Fitness & Martial Arts",
+    "area": "Seattle (Capitol Hill)",
+    "venue": "Seattle Aikikai Dojo (1016 E Pike St, Seattle, WA 98122)",
+    "start": "2026-10-05T18:30:00-07:00",
+    "end": "2026-10-05T19:30:00-07:00",
+    "timeString": "6:30 PM – 7:30 PM",
+    "dateString": "2026-10-05",
+    "description": "Beginner martial arts class covering foundational Aikido principles, conditioning, safe falling, and partner techniques in a non-competitive dojo environment.",
+    "url": "https://www.seattleaikikai.com/join/",
+    "cost": "5 drop-in",
     "recurrence": "Weekly on Mondays"
   },
   {
@@ -3086,6 +3134,22 @@
     "url": "https://www.eastsideaudubon.org/calendar",
     "cost": "Free",
     "recurrence": "Second Saturday of the month"
+  },
+  {
+    "id": "bir-community-open-house-20261010",
+    "title": "Fall Community Open House & Learn to Row Day",
+    "organization": "Bainbridge Island Rowing",
+    "activityType": "Water Sports",
+    "area": "Bainbridge Island",
+    "venue": "Stan Pocock Rowing Center (221 Waterfront Park, Bainbridge Island, WA 98110)",
+    "start": "2026-10-10T09:00:00-07:00",
+    "end": "2026-10-10T12:00:00-07:00",
+    "timeString": "9:00 AM – 12:00 PM",
+    "dateString": "2026-10-10",
+    "description": "Free community rowing open house on Eagle Harbor. Tour the boathouse facility, try the indoor training tanks, and head onto the water with certified rowing coaches.",
+    "url": "https://bainbridgerowing.org/community-events/",
+    "cost": "Free",
+    "recurrence": "Seasonal Community Open House"
   },
   {
     "id": "spac-guided-bird-walk-20261010",
