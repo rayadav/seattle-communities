@@ -50,8 +50,19 @@ def find_candidate_groups(groups, events, count=8):
 
 def query_gemini_for_events(api_key, candidates, today_str):
     """Use Gemini with Google Search grounding to find verified upcoming community events."""
-    model = "gemini-2.5-flash"
-    url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={api_key}"
+    models_to_try = [
+        os.environ.get("GEMINI_MODEL", "").strip(),
+        "gemini-3.8-flash",
+        "gemini-2.5-flash",
+        "gemini-1.5-flash",
+    ]
+    # Remove duplicates and empty strings while preserving order
+    seen = set()
+    models = []
+    for m in models_to_try:
+        if m and m not in seen:
+            seen.add(m)
+            models.append(m)
 
     group_list_text = "\n".join([
         f"- {g['Group name']} (Category: {g.get('Activity type', 'Community')}, Area: {g.get('Area', 'Seattle')})\n"
@@ -108,35 +119,49 @@ Each event object in the array must adhere strictly to this schema:
     }
 
     req_data = json.dumps(payload).encode("utf-8")
-    req = urllib.request.Request(
-        url,
-        data=req_data,
-        headers={"Content-Type": "application/json"},
-        method="POST"
-    )
+    data = None
+    last_error = None
 
-    try:
-        with urllib.request.urlopen(req, timeout=60) as resp:
-            data = json.loads(resp.read().decode("utf-8"))
-    except urllib.error.HTTPError as e:
-        print(f"Gemini API HTTP Error {e.code}: {e.read().decode('utf-8')}", file=sys.stderr)
-        return []
-    except Exception as e:
-        print(f"Error calling Gemini API: {e}", file=sys.stderr)
-        return []
+    for model in models:
+        url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={api_key}"
+        req = urllib.request.Request(
+            url,
+            data=req_data,
+            headers={"Content-Type": "application/json"},
+            method="POST"
+        )
+        try:
+            print(f"Querying Gemini API with model: {model}...")
+            with urllib.request.urlopen(req, timeout=90) as resp:
+                data = json.loads(resp.read().decode("utf-8"))
+            last_error = None
+            break
+        except urllib.error.HTTPError as e:
+            err_body = e.read().decode("utf-8")
+            print(f"Gemini API HTTP Error {e.code} with model '{model}': {err_body}", file=sys.stderr)
+            last_error = f"HTTP {e.code}: {err_body}"
+            continue
+        except Exception as e:
+            print(f"Error calling Gemini API with model '{model}': {e}", file=sys.stderr)
+            last_error = str(e)
+            continue
+
+    if not data:
+        print(f"All Gemini models failed. Last error: {last_error}", file=sys.stderr)
+        return [], True  # Return empty list and is_error=True
 
     # Extract text content from candidate response
     try:
         candidates_resp = data.get("candidates", [])
         if not candidates_resp:
             print("No candidates returned from Gemini API.", file=sys.stderr)
-            return []
+            return [], True
         
         parts = candidates_resp[0].get("content", {}).get("parts", [])
         raw_text = "".join(p.get("text", "") for p in parts).strip()
     except Exception as e:
         print(f"Failed to parse Gemini response structure: {e}", file=sys.stderr)
-        return []
+        return [], True
 
     # Strip markdown code blocks if present (```json ... ```)
     cleaned_text = raw_text
@@ -151,11 +176,11 @@ Each event object in the array must adhere strictly to this schema:
             new_events = new_events["events"]
         if not isinstance(new_events, list):
             print(f"Expected a JSON list of events, got: {type(new_events)}", file=sys.stderr)
-            return []
-        return new_events
+            return [], True
+        return new_events, False
     except Exception as e:
         print(f"Failed to decode JSON from Gemini output: {e}\nRaw output:\n{raw_text}", file=sys.stderr)
-        return []
+        return [], True
 
 def validate_and_filter_event(ev, today_str, existing_ids, existing_title_starts):
     """Validate schema and ensure event is upcoming and not a duplicate."""
@@ -209,7 +234,11 @@ def main():
     for g in candidate_groups:
         print(f"  - {g['Group name']} ({g.get('Activity type', '')})")
 
-    proposed_events = query_gemini_for_events(api_key, candidate_groups, today_str)
+    proposed_events, is_error = query_gemini_for_events(api_key, candidate_groups, today_str)
+    if is_error:
+        print("Failed to retrieve valid event proposals from Gemini API.", file=sys.stderr)
+        sys.exit(1)
+
     print(f"\nReceived {len(proposed_events)} proposed events from Gemini research.")
 
     existing_ids = set(e.get("id") for e in events)
