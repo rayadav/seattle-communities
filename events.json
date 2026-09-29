@@ -2032,6 +2032,22 @@
     "recurrence": "Weekly in October"
   },
   {
+    "id": "sounders-fc-vs-sporting-kc-20261001",
+    "title": "Seattle Sounders FC vs. Sporting Kansas City",
+    "organization": "Sounders FC Pub Leagues & Fan Clubs",
+    "activityType": "Sports",
+    "venue": "Lumen Field (800 Occidental Ave S, Seattle, WA 98134)",
+    "area": "Seattle (SODO / Pioneer Square)",
+    "start": "2026-10-01T18:30:00-07:00",
+    "end": "2026-10-01T21:00:00-07:00",
+    "timeString": "6:30 PM – 9:00 PM",
+    "dateString": "2026-10-01",
+    "description": "Seattle Sounders FC hosts Western Conference foe Sporting Kansas City on the Emerald Queen Casino pitch at Lumen Field. Supporters groups gather across neighborhood partner pubs in Pioneer Square before participating in the traditional March to the Match.",
+    "url": "https://www.soundersfc.com/schedule/matches",
+    "cost": "Tickets from $30",
+    "recurrence": "Special Event"
+  },
+  {
     "id": "bbg-seed-banking-2026-10-01",
     "title": "The Role of Seed Banking in Native Plant Conservation",
     "organization": "Bellevue Botanical Garden Volunteers",
@@ -2206,6 +2222,22 @@
     "url": "https://www.pratt.org/mission",
     "cost": "Free and open to the public",
     "recurrence": "50th Anniversary milestone event"
+  },
+  {
+    "id": "starfire-adult-beginner-soccer-20261002",
+    "title": "Adult Beginner 5v5 Indoor Soccer Match Night",
+    "organization": "Starfire Sports Adult Soccer Leagues",
+    "activityType": "Sports",
+    "venue": "Starfire Sports (14800 Starfire Way, Tukwila, WA 98168)",
+    "area": "Tukwila",
+    "start": "2026-10-02T19:00:00-07:00",
+    "end": "2026-10-02T20:30:00-07:00",
+    "timeString": "7:00 PM – 8:30 PM",
+    "dateString": "2026-10-02",
+    "description": "Adult recreational soccer players take the pitch on indoor field 1 at Starfire Sports for an instructional 5v5 game night. Referees help coach and encourage players in a welcoming environment suited for beginners and those returning to the sport.",
+    "url": "https://www.starfiresports.com/events/",
+    "cost": "$120 per player season fee (Starfire membership required)",
+    "recurrence": "Weekly on Fridays"
   },
   {
     "id": "scc-friday-rated-2026-10-02",
@@ -2848,6 +2880,22 @@
     "recurrence": "Bi-weekly Wednesdays"
   },
   {
+    "id": "wta-inspiring-kids-preserve-trail-work-20261007",
+    "title": "Inspiring Kids Preserve Volunteer Trail Work Party",
+    "organization": "Washington Trails Association",
+    "activityType": "Outdoors",
+    "venue": "Inspiring Kids Preserve Trailhead (Olympia, WA 98506)",
+    "area": "Puget Sound area",
+    "start": "2026-10-07T08:30:00-07:00",
+    "end": "2026-10-07T15:30:00-07:00",
+    "timeString": "8:30 AM – 3:30 PM",
+    "dateString": "2026-10-07",
+    "description": "Join Washington Trails Association and Capitol Land Trust to complete construction on the final stretch of an accessible community nature trail. WTA provides all required tools, hard hats, safety gear, and on-site guidance for volunteers of all skill levels.",
+    "url": "https://www.wta.org/get-involved/events",
+    "cost": "Free",
+    "recurrence": "Special Event"
+  },
+  {
     "id": "bcs-lunch-learn-2026-10-07",
     "title": "Birds of Seattle Lunch and Learn",
     "organization": "Birds Connect Seattle",
@@ -3422,6 +3470,22 @@
     "url": "https://nwpinballcollective.org/Events",
     "cost": "Tournament entry",
     "recurrence": "Special format tournament"
+  },
+  {
+    "id": "birds-connect-birding-by-ear-westcrest-20261011",
+    "title": "Birding by Ear Field Trip: Identify Birds by Call and Song",
+    "organization": "Seattle Audubon Society (Birds Connect Seattle)",
+    "activityType": "Outdoors",
+    "venue": "Westcrest Park (9000 8th Ave SW, Seattle, WA 98106)",
+    "area": "Seattle (West Seattle)",
+    "start": "2026-10-11T08:00:00-07:00",
+    "end": "2026-10-11T10:30:00-07:00",
+    "timeString": "8:00 AM – 10:30 AM",
+    "dateString": "2026-10-11",
+    "description": "Join expert trip leaders Whitney Neufeld-Kaiser and Atul Tandon for an educational bird walk through the forested canopy of Westcrest Park. Birders of all backgrounds learn how to listen closely and identify Pacific Northwest resident and migratory species by sound.",
+    "url": "https://birdsconnectsea.org/calendar/",
+    "cost": "$15 registration fee",
+    "recurrence": "Special Event"
   },
   {
     "id": "bcs-seward-park-2026-10-11",
