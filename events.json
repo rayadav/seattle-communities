@@ -2480,6 +2480,22 @@
     "recurrence": "Monthly (1st Saturdays)"
   },
   {
+    "id": "evergreen-take-a-kid-mountain-biking-day-20261003",
+    "title": "Take a Kid Mountain Biking Day at Duthie Hill",
+    "organization": "Evergreen Mountain Bike Alliance",
+    "activityType": "Cycling",
+    "venue": "Duthie Hill Mountain Bike Park (26300 SE Issaquah-Fall City Rd, Issaquah, WA 98029)",
+    "area": "King County (Issaquah)",
+    "start": "2026-10-03T10:00:00-07:00",
+    "end": "2026-10-03T16:00:00-07:00",
+    "timeString": "10:00 AM – 4:00 PM",
+    "dateString": "2026-10-03",
+    "description": "Evergreen Mountain Bike Alliance hosts its annual celebration introducing youth to trail riding with guided rides, obstacle courses, pump track challenges, and dual slalom racing. Certified mountain bike instructors lead free beginner-to-intermediate skills clinics for kids and parents throughout the day. The family-friendly event is open to riders of all ages and experience levels.",
+    "url": "https://www.evergreenmtb.org/calendar",
+    "cost": "Free (donations welcome)",
+    "recurrence": "Special Event"
+  },
+  {
     "id": "makers-ceramic-pumpkin-2026-10-03",
     "title": "Ceramic Pumpkin Handbuilding Workshop",
     "organization": "Seattle Makers",
@@ -2606,6 +2622,22 @@
     "url": "https://www.lakewashingtonrowing.com/",
     "cost": "Free for spectators",
     "recurrence": "Annual Fall Regatta"
+  },
+  {
+    "id": "lwrc-tail-of-the-lake-regatta-20261004",
+    "title": "Tail of the Lake Regatta 2026",
+    "organization": "Lake Washington Rowing Club (LWRC)",
+    "activityType": "Water Sports",
+    "venue": "Lake Washington Rowing Club Boathouse & Docks (910 N Northlake Way, Seattle, WA 98103)",
+    "area": "Seattle (Fremont)",
+    "start": "2026-10-04T07:30:00-07:00",
+    "end": "2026-10-04T13:30:00-07:00",
+    "timeString": "7:30 AM – 1:30 PM",
+    "dateString": "2026-10-04",
+    "description": "Lake Washington Rowing Club serves as the launch point for the annual 4,000-meter Tail of the Lake head race winding counterclockwise around Lake Union to Gas Works Park. The regatta brings together collegiate, master, and junior crews competing across numerous sculling and sweep boat classes. Community members and rowing supporters are welcome to view and cheer along the shore.",
+    "url": "https://www.lakewashingtonrowing.com/lwrc-calendar",
+    "cost": "Free to spectate",
+    "recurrence": "Special Event"
   },
   {
     "id": "psrg-tour-de-forest-2026-10-04",
@@ -4542,6 +4574,22 @@
     "url": "https://www.eastsideaudubon.org/calendar/2026/5/beginner-intermediate-birding-class-c7xyl-6hs4b",
     "cost": "$25 registration",
     "recurrence": "Seasonal workshop"
+  },
+  {
+    "id": "arena-sports-sodo-winter-youth-league-kickoff-20261024",
+    "title": "Winter I Youth Indoor Soccer League Kickoff",
+    "organization": "Arena Sports SODO Indoor Soccer",
+    "activityType": "Indoor Sports",
+    "venue": "Arena Sports SODO (4636 E Marginal Way S, Seattle, WA 98134)",
+    "area": "Seattle (SODO)",
+    "start": "2026-10-24T08:30:00-07:00",
+    "end": "2026-10-24T18:00:00-07:00",
+    "timeString": "8:30 AM – 6:00 PM",
+    "dateString": "2026-10-24",
+    "description": "Arena Sports SODO launches opening weekend matches for the Winter I youth indoor soccer season spanning ages 5 through 18. Micro teams and youth division squads take to the enclosed turf fields for fast-paced 60-minute games in a positive, supportive sports atmosphere. Spectators and families are encouraged to watch and support community youth players from the viewing areas.",
+    "url": "https://www.arenasports.net/parties-events/events/",
+    "cost": "League registration required to play; free for spectators",
+    "recurrence": "Special Event"
   },
   {
     "id": "kubota-maple-sale-2026-10-24",
