@@ -2720,6 +2720,22 @@
     "recurrence": "Annual festival"
   },
   {
+    "id": "underdog-sports-fall-sunday-league-20261004",
+    "title": "Fall Sunday Adult Co-ed League Game Day",
+    "organization": "Underdog Sports Kickball (Seattle/South King County)",
+    "activityType": "Indoor Sports",
+    "venue": "Sound View Playfield (1590 NW 90th St, Seattle, WA 98117)",
+    "area": "Seattle (Crown Hill)",
+    "start": "2026-10-04T12:00:00-07:00",
+    "end": "2026-10-04T17:00:00-07:00",
+    "timeString": "12:00 PM – 5:00 PM",
+    "dateString": "2026-10-04",
+    "description": "Underdog Sports Leagues hosts weekly regular-season adult co-ed games designed for casual competition, teamwork, and active recreation. Adult players of varying skill levels take the field for scheduled Sunday afternoon matchups. Spectators and supporters from the community are welcome to attend and cheer on the teams.",
+    "url": "https://www.underdogseattle.com/league/102625/schedule",
+    "cost": "Free for spectators; league registration fee for players",
+    "recurrence": "Weekly on Sundays"
+  },
+  {
     "id": "eastside-audubon-juanita-bay-2026-10-04",
     "title": "Eastside Audubon: Juanita Bay Park Afternoon Bird Walk",
     "organization": "Eastside Audubon",
@@ -2798,6 +2814,22 @@
     "url": "https://www.seattleaikikai.com/join/",
     "cost": "5 drop-in",
     "recurrence": "Weekly on Mondays"
+  },
+  {
+    "id": "gearhouse-board-games-with-outdoorsy-people-20261006",
+    "title": "Board Games with Outdoorsy People",
+    "organization": "Gearhouse Community Outdoor Club",
+    "activityType": "Outdoors",
+    "venue": "Basecamp Cafe and Bar (800 E Thomas St, Seattle, WA 98102)",
+    "area": "Seattle (Capitol Hill)",
+    "start": "2026-10-06T18:00:00-07:00",
+    "end": "2026-10-06T21:00:00-07:00",
+    "timeString": "6:00 PM – 9:00 PM",
+    "dateString": "2026-10-06",
+    "description": "Join local outdoor enthusiasts for a casual social game night hosted inside Basecamp Cafe and Bar on Capitol Hill. Attendees gather to play an assortment of board games, card games, and group games while meeting potential hiking and outdoor partners. The event is open to everyone, whether current Gearhouse members or community members looking to connect.",
+    "url": "https://www.joingearhouse.com/calendar",
+    "cost": "Free",
+    "recurrence": "Weekly on Tuesdays"
   },
   {
     "id": "chtl-tuesday-hours-2026-10-06",
@@ -3472,6 +3504,22 @@
     "recurrence": "Bi-monthly meeting"
   },
   {
+    "id": "ymca-greater-seattle-150th-changemakers-gala-20261010",
+    "title": "Celebrating Community Changemakers 150th Anniversary Gala",
+    "organization": "YMCA of Greater Seattle",
+    "activityType": "Fitness",
+    "venue": "Hyatt Regency Seattle (808 Howell St, Seattle, WA 98101)",
+    "area": "Seattle (Downtown)",
+    "start": "2026-10-10T17:00:00-07:00",
+    "end": "2026-10-10T21:00:00-07:00",
+    "timeString": "5:00 PM – 9:00 PM",
+    "dateString": "2026-10-10",
+    "description": "The YMCA of Greater Seattle marks 150 years of community impact and wellness initiatives across Puget Sound with its Changemakers Gala. The special evening program highlights inspirational stories and honors volunteer leaders, partners, and community builders. Community supporters and guests are invited to participate in this landmark celebration.",
+    "url": "https://www.seattleymca.org/schedules/tr-activity-finder?utm_source=ygs_website_global_nav_fullwidth_bottom_button",
+    "cost": "Ticketed / Fundraiser admission",
+    "recurrence": "Special Event"
+  },
+  {
     "id": "makers-game-night-2026-10-10",
     "title": "Seattle Makers: Free Community Game Night",
     "organization": "Seattle Makers",
@@ -3806,6 +3854,22 @@
     "url": "https://www.moxboardinghouse.com/pages/seattle-events",
     "cost": "Free",
     "recurrence": "Weekly on Wednesdays"
+  },
+  {
+    "id": "seattle-mqg-october-general-meeting-20261014",
+    "title": "October General Guild Meeting",
+    "organization": "Seattle Modern Quilt Guild",
+    "activityType": "Art",
+    "venue": "Phinney Center (6532 Phinney Ave N, Seattle, WA 98103)",
+    "area": "Seattle (Phinney Ridge)",
+    "start": "2026-10-14T19:00:00-07:00",
+    "end": "2026-10-14T21:00:00-07:00",
+    "timeString": "7:00 PM – 9:00 PM",
+    "dateString": "2026-10-14",
+    "description": "The Seattle Modern Quilt Guild gathers for its monthly general meeting featuring featured quilting presentations, guild announcements, and a community sew-and-tell showcase. In-person doors open at 6:45 PM in Room 7 of the Phinney Center Blue Building for informal social time before presentations start. The hybrid meeting welcomes guild members and interested modern quilters.",
+    "url": "https://www.seattlemqg.com/Calendar-of-Everything",
+    "cost": "Free for members; visitor registration available",
+    "recurrence": "Monthly (2nd Wednesdays)"
   },
   {
     "id": "scc-wednesday-casual-2026-10-14",
