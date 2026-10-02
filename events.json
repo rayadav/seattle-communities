@@ -2320,6 +2320,22 @@
     "recurrence": "Weekly on Fridays"
   },
   {
+    "id": "sake-recreational-dragon-boat-20261003",
+    "title": "Recreational Crew Dragon Boat Practice",
+    "organization": "Seattle SAKE Paddling Club",
+    "activityType": "Sports",
+    "venue": "Leschi South Sailboat Moorage (150 Lakeside Ave S, Seattle, WA 98122)",
+    "area": "Seattle (Leschi)",
+    "start": "2026-10-03T08:00:00-07:00",
+    "end": "2026-10-03T09:00:00-07:00",
+    "timeString": "8:00 AM – 9:00 AM",
+    "dateString": "2026-10-03",
+    "description": "Head out onto Lake Washington with Seattle SAKE's recreational dragon boat crew for an energizing team paddle workout. Community members and newcomers can try out up to three sessions before joining, with life vests and paddles provided. Advance RSVP is required.",
+    "url": "https://www.clubsake.com/events/list?page=1",
+    "cost": "Free (first 3 sessions free for newcomers)",
+    "recurrence": "Weekly on Saturdays"
+  },
+  {
     "id": "rrc-adult-open-row-20261003",
     "title": "Adult Community Open Row & Technique Session",
     "organization": "Renton Rowing Center",
@@ -2446,6 +2462,22 @@
     "url": "https://www.earthcorps.org/volunteer/calendar/",
     "cost": "Free",
     "recurrence": "Weekend Volunteer Work Party"
+  },
+  {
+    "id": "friends-saltwater-forest-restoration-20261003",
+    "title": "Forest Restoration Work Party",
+    "organization": "Friends of Saltwater State Park",
+    "activityType": "Outdoors",
+    "venue": "Saltwater State Park (25205 8th Pl S, Des Moines, WA 98198)",
+    "area": "South King County (Des Moines)",
+    "start": "2026-10-03T10:00:00-07:00",
+    "end": "2026-10-03T12:00:00-07:00",
+    "timeString": "10:00 AM – 12:00 PM",
+    "dateString": "2026-10-03",
+    "description": "Join the Friends of Saltwater State Park to help protect and restore the local coastal forest ecosystem by removing invasive plant species. Tools and work gloves are provided on site. Community volunteers of all ages and experience levels are welcome to participate.",
+    "url": "https://www.friendssaltwater.org/upcoming-events",
+    "cost": "Free",
+    "recurrence": "Monthly (1st Saturdays)"
   },
   {
     "id": "bbg-journaling-2026-10-03",
@@ -2974,6 +3006,22 @@
     "url": "https://birdsconnectsea.org/calendar/",
     "cost": "Free",
     "recurrence": "Weekly on Wednesdays"
+  },
+  {
+    "id": "wba-monarch-migration-tracking-20261007",
+    "title": "Electronic Tracking of Monarch Migration in the PNW",
+    "organization": "Washington Butterfly Association",
+    "activityType": "Science & Technology",
+    "venue": "Online via Zoom / Washington Butterfly Association (PO Box 31131, Seattle, WA 98103)",
+    "area": "Seattle / Puget Sound area",
+    "start": "2026-10-07T18:00:00-07:00",
+    "end": "2026-10-07T19:30:00-07:00",
+    "timeString": "6:00 PM – 7:30 PM",
+    "dateString": "2026-10-07",
+    "description": "Lead scientist Dr. David James discusses the Adopt-A-Monarch community science project tracking monarch migration through the Pacific Northwest using innovative electronic tags. The presentation covers project goals, tracking data, and ways community members can get involved. Open to all nature enthusiasts.",
+    "url": "https://wabutterflyassoc.org/field-trips/",
+    "cost": "Free",
+    "recurrence": "Monthly (1st Wednesdays)"
   },
   {
     "id": "mox-paint-jam-2026-10-07",
@@ -4574,6 +4622,22 @@
     "url": "https://seattlerobotics.org/calendar/",
     "cost": "Free",
     "recurrence": "Monthly on 4th Thursday"
+  },
+  {
+    "id": "nwba-swaptoberfest-20261023",
+    "title": "Swaptoberfest 2026",
+    "organization": "Northwest Blacksmith Association",
+    "activityType": "Maker & Crafts",
+    "venue": "Cowlitz County Fairgrounds – NWBA Mentoring Center (1900 7th Ave, Longview, WA 98632)",
+    "area": "Puget Sound / Southwest WA (Longview)",
+    "start": "2026-10-23T09:00:00-07:00",
+    "end": "2026-10-23T17:00:00-07:00",
+    "timeString": "9:00 AM – 5:00 PM",
+    "dateString": "2026-10-23",
+    "description": "Swaptoberfest is the Northwest Blacksmith Association's annual fall gathering featuring metalworking demonstrations, tool and equipment swaps, and hands-on forging challenges. The event is open to the public, welcoming both experienced smiths and curious beginners.",
+    "url": "https://blacksmith.org/events/",
+    "cost": "$65 for non-member day ticket ($60 for members)",
+    "recurrence": "Special Event"
   },
   {
     "id": "mox-fnm-draft-2026-10-23",
