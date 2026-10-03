@@ -3856,6 +3856,22 @@
     "recurrence": "Monthly general meeting"
   },
   {
+    "id": "psnos-october-general-meeting-20261013",
+    "title": "October General Meeting: A Truffler's Tale with Dr. Benjamin Lemmond",
+    "organization": "Puget Sound Native Orchid Society",
+    "activityType": "Science & Technology",
+    "venue": "Center for Urban Horticulture (3501 NE 41st St, Seattle, WA 98105)",
+    "area": "Seattle (University District)",
+    "start": "2026-10-13T19:30:00-07:00",
+    "end": "2026-10-13T21:30:00-07:00",
+    "timeString": "7:30 PM – 9:30 PM",
+    "dateString": "2026-10-13",
+    "description": "Join Dr. Benjamin Lemmond, Research Mycologist at the Burke Herbarium, for an educational presentation exploring truffles, fungal evolution, and Pacific Northwest ecology. The gathering features announcements, expert identification resources, and community socializing. The meeting is free and open to the public both in person and virtually via Zoom.",
+    "url": "https://www.psms.org/",
+    "cost": "Free",
+    "recurrence": "Monthly (2nd Tuesdays)"
+  },
+  {
     "id": "bcs-lunch-learn-2026-10-14",
     "title": "Birds of Seattle Lunch and Learn",
     "organization": "Birds Connect Seattle",
@@ -4768,6 +4784,22 @@
     "recurrence": "Weekly on Saturdays"
   },
   {
+    "id": "sktl-fall-clothing-swap-20261024",
+    "title": "Fall / Winter Community Clothing Swap",
+    "organization": "South King Tool Library",
+    "activityType": "Maker & Crafts",
+    "venue": "South King Tool Library - Federal Way (1700 S 340th St, Federal Way, WA 98003)",
+    "area": "Federal Way",
+    "start": "2026-10-24T10:00:00-07:00",
+    "end": "2026-10-24T14:00:00-07:00",
+    "timeString": "10:00 AM – 2:00 PM",
+    "dateString": "2026-10-24",
+    "description": "Refresh your cold-weather wardrobe and help reduce textile waste at this community-wide clothing swap. Attendees can donate clean, gently used garments or simply browse and take home items at no cost. The event is free and open to all community members with no tool library membership required.",
+    "url": "https://www.southkingtools.org/classes-events",
+    "cost": "Free",
+    "recurrence": "Special Event"
+  },
+  {
     "id": "psms-wild-mushroom-show-2026-10-24",
     "title": "2026 PSMS Annual Wild Mushroom Show (Day 1)",
     "organization": "Puget Sound Mycological Society",
@@ -5150,6 +5182,22 @@
     "url": "https://sustainablecapitolhill.org/tool-library/",
     "cost": "Pay-what-you-can membership",
     "recurrence": "Weekly on Saturdays"
+  },
+  {
+    "id": "nwl-cemetery-lichen-walk-20261031",
+    "title": "Cemetery Lichen Walk at Mount Pleasant",
+    "organization": "Northwest Lichenologists",
+    "activityType": "Outdoors",
+    "venue": "Mount Pleasant Cemetery (700 W Raye St, Seattle, WA 98119)",
+    "area": "Seattle (Queen Anne)",
+    "start": "2026-10-31T10:00:00-07:00",
+    "end": "2026-10-31T12:00:00-07:00",
+    "timeString": "10:00 AM – 12:00 PM",
+    "dateString": "2026-10-31",
+    "description": "Explore urban lichen biodiversity on a guided field walk led by lichenologist Dr. Katherine Glew through Queen Anne's historic Mount Pleasant Cemetery. Participants will examine diverse species growing on stone monuments and trees while learning how lichens serve as ecological bioindicators. The educational walk is open to all nature enthusiasts; bringing a hand lens or camera magnifier is recommended.",
+    "url": "https://northwest-lichenologists.wildapricot.org/page-1816534",
+    "cost": "$25",
+    "recurrence": "Special Event"
   },
   {
     "id": "seattle-center-festal-dia-de-muertos-2026-10-31",
