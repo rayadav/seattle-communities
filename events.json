@@ -2784,6 +2784,22 @@
     "recurrence": "First Sunday of the month"
   },
   {
+    "id": "seattle-book-arts-guild-origami-book-workshop-20261004",
+    "title": "Origami Book Workshop with Rona Gurkewitz",
+    "organization": "Seattle Book Arts Guild",
+    "activityType": "Arts & Culture",
+    "venue": "Suzzallo Library, 5th Floor Conference Room (4000 15th Ave NE, Seattle, WA 98195)",
+    "area": "Seattle (University District)",
+    "start": "2026-10-04T14:00:00-07:00",
+    "end": "2026-10-04T16:00:00-07:00",
+    "timeString": "2:00 PM – 4:00 PM",
+    "dateString": "2026-10-04",
+    "description": "Join mathematician and author Rona Gurkewitz for a hands-on workshop exploring how to fold modular origami book structures. Folding paper is provided and no prior origami or bookbinding experience is necessary. This in-person community program is free and open to all book arts enthusiasts.",
+    "url": "https://www.bookartsguild.org/events",
+    "cost": "Free",
+    "recurrence": "Special Event"
+  },
+  {
     "id": "psms-id-clinic-2026-10-05",
     "title": "Hildegard Hendrickson Mushroom ID Clinic",
     "organization": "Puget Sound Mycological Society",
@@ -3952,6 +3968,22 @@
     "recurrence": "Weekly on Wednesdays"
   },
   {
+    "id": "pnw-glass-art-guild-refract-seattle-20261015",
+    "title": "Refract: The Pacific Northwest Glass Celebration 2026",
+    "organization": "PNW Glass Art Guild",
+    "activityType": "Arts & Culture",
+    "venue": "Various Studios and Glass Art Venues Citywide (Seattle, WA 98109)",
+    "area": "Seattle",
+    "start": "2026-10-15T10:00:00-07:00",
+    "end": "2026-10-18T21:00:00-07:00",
+    "timeString": "10:00 AM – 9:00 PM",
+    "dateString": "2026-10-15",
+    "description": "Refract is the premier annual festival highlighting the region's vibrant glass art community, featured on the PNW Glass Guild calendar. The multi-day festival spans open studios, demonstrations, exhibitions, and guild member showcases across Seattle. All community members and art lovers are welcome to attend the festivities.",
+    "url": "https://www.pnwglassguild.org/events",
+    "cost": "Free to attend (select special workshops ticketed)",
+    "recurrence": "Annual"
+  },
+  {
     "id": "makers-hardware-hacking-2026-10-15",
     "title": "Hardware Hacking Meetup",
     "organization": "Seattle Makers",
@@ -4190,6 +4222,22 @@
     "url": "https://www.duwamishalive.org/events/",
     "cost": "Free (tools, gloves, and refreshments provided)",
     "recurrence": "Biannual community day"
+  },
+  {
+    "id": "pnw-glass-art-guild-glass-and-decor-studio-tour-20261017",
+    "title": "Glass and Decor Studio Tour Seattle",
+    "organization": "PNW Glass Art Guild",
+    "activityType": "Arts & Culture",
+    "venue": "Guild Member Studios across North Seattle (755 NE 84th St, Seattle, WA 98115)",
+    "area": "Seattle (North Seattle)",
+    "start": "2026-10-17T10:00:00-07:00",
+    "end": "2026-10-18T17:00:00-07:00",
+    "timeString": "10:00 AM – 5:00 PM",
+    "dateString": "2026-10-17",
+    "description": "Pacific Northwest Glass Guild members welcome the public into neighborhood studios across North Seattle for an open studio tour and exhibition. Visitors can browse original glass and decorative arts from over 15 artists, view demonstrations, and enter to win original art pieces. The self-guided tour is free and open to all.",
+    "url": "https://www.pnwglassguild.org/events",
+    "cost": "Free",
+    "recurrence": "Annual"
   },
   {
     "id": "tilth-bioremediation-2026-10-17",
@@ -4894,6 +4942,22 @@
     "url": "https://www.seattlejapanesegarden.org/events-calendar",
     "cost": "$15 ticket + Garden admission",
     "recurrence": "Weekend tea ceremony"
+  },
+  {
+    "id": "pnw-glass-art-guild-meeting-options-for-glass-modeling-20261025",
+    "title": "PNW Glass Guild General Meeting: Options for Glass Modeling",
+    "organization": "PNW Glass Art Guild",
+    "activityType": "Arts & Culture",
+    "venue": "Online via Zoom (Pacific Northwest Glass Guild, Seattle, WA 98103)",
+    "area": "Seattle / Puget Sound area",
+    "start": "2026-10-25T15:30:00-07:00",
+    "end": "2026-10-25T17:00:00-07:00",
+    "timeString": "3:30 PM – 5:00 PM",
+    "dateString": "2026-10-25",
+    "description": "This educational guild meeting and demonstration features artist Lois Manno exploring techniques for sculpting with glass frit and Modeling Glass. Attendees will also participate in the guild's annual officer elections and community updates. The session is open to guild members, glass crafters, and newcomers alike.",
+    "url": "https://www.pnwglassguild.org/events",
+    "cost": "Free",
+    "recurrence": "Monthly"
   },
   {
     "id": "tba-hess-beginners-2026-10-26",
