@@ -3072,6 +3072,38 @@
     "recurrence": "Weekly on Wednesdays"
   },
   {
+    "id": "jcrd-bootcamp-20261007",
+    "title": "Autumn Roller Derby Boot Camp",
+    "organization": "Jet City Roller Derby",
+    "activityType": "Indoor Sports",
+    "venue": "Northgate Community Center (10510 5th Ave NE, Seattle, WA 98125)",
+    "area": "Seattle (Northgate)",
+    "start": "2026-10-07T20:00:00-07:00",
+    "end": "2026-10-07T22:00:00-07:00",
+    "timeString": "8:00 PM – 10:00 PM",
+    "dateString": "2026-10-07",
+    "description": "An intensive beginner skate and contact development session designed to teach gameplay fundamentals, safety stops, and scrimmage agility. The training prepares skaters to progress toward league draft and full-contact participation. Open to adults 18 and older who meet basic skating requirements.",
+    "url": "https://jetcityrollerderby.com/schedule",
+    "cost": "Paid registration required",
+    "recurrence": "Weekly on Wednesdays"
+  },
+  {
+    "id": "pocock-masters-practice-20261008",
+    "title": "Mixed Masters Morning Rowing Practice",
+    "organization": "Pocock Rowing Club",
+    "activityType": "Water Sports",
+    "venue": "Pocock Rowing Center (3320 Fuhrman Ave E, Seattle, WA 98102)",
+    "area": "Seattle (Eastlake)",
+    "start": "2026-10-08T05:15:00-07:00",
+    "end": "2026-10-08T06:45:00-07:00",
+    "timeString": "5:15 AM – 6:45 AM",
+    "dateString": "2026-10-08",
+    "description": "A coached on-the-water rowing session along Lake Union and the Montlake Cut focusing on sweep rowing technique, cardiovascular conditioning, and boat synchronization. The program provides a supportive community environment for competitive and recreational adult rowers. Open to intermediate adult participants registered with the club.",
+    "url": "https://www.pocockrowingclub.org/schedule",
+    "cost": "Club membership / session fee",
+    "recurrence": "Weekly on Tuesdays and Thursdays"
+  },
+  {
     "id": "tba-theler-2026-10-08",
     "title": "Guided Birding Walk at Theler Wetlands",
     "organization": "Tahoma Bird Alliance",
@@ -3278,6 +3310,22 @@
     "url": "https://www.seattleastro.org/",
     "cost": "Free",
     "recurrence": "Monthly star party"
+  },
+  {
+    "id": "seattle-zen-intro-20261010",
+    "title": "Introduction to Zen Meditation",
+    "organization": "Seattle Zen Center Sanzen-kai",
+    "activityType": "Fitness",
+    "venue": "Japanese Cultural & Community Center (1414 S Weller St, Seattle, WA 98144)",
+    "area": "Seattle (Central District)",
+    "start": "2026-10-10T08:00:00-07:00",
+    "end": "2026-10-10T11:30:00-07:00",
+    "timeString": "8:00 AM – 11:30 AM",
+    "dateString": "2026-10-10",
+    "description": "An experiential workshop introducing Zazen sitting meditation, breathing methods, and postural alignment to cultivate mental clarity and calm. Attendees participate in guided exercises, posture adjustments, and question-and-answer periods. Open to beginners and community members interested in establishing a meditation practice.",
+    "url": "https://www.seattlezendojo.org/profile/seattlezendojo/events",
+    "cost": "$100 suggested donation (sliding scale available)",
+    "recurrence": "Weekly series on Saturdays"
   },
   {
     "id": "bcs-discovery-park-2026-10-10",
@@ -3694,6 +3742,22 @@
     "url": "https://www.ipms-seattle.org/events.php",
     "cost": "Free for visitors / Open to all",
     "recurrence": "2nd Sunday monthly"
+  },
+  {
+    "id": "nw-leathercrafters-meeting-20261011",
+    "title": "Monthly Leathercraft Meeting & Mini-Demos",
+    "organization": "Northwest Leathercrafters Guild",
+    "activityType": "Maker & Crafts",
+    "venue": "Issaquah Valley Senior Center (75 NE Creek Way, Issaquah, WA 98027)",
+    "area": "Eastside (Issaquah)",
+    "start": "2026-10-11T13:00:00-07:00",
+    "end": "2026-10-11T16:00:00-07:00",
+    "timeString": "1:00 PM – 4:00 PM",
+    "dateString": "2026-10-11",
+    "description": "A monthly gathering of regional leather artisans and hobbyists featuring project show-and-tell, problem-solving discussions, and live technique demonstrations. Participants share tips on tooling, edge finishing, stitching, and hardware selection. Open to the public and all skill levels from novices to experienced crafters.",
+    "url": "https://tandyleather.com/pages/tandy-leather-seattle-126",
+    "cost": "Free",
+    "recurrence": "Monthly (2nd Sundays)"
   },
   {
     "id": "mof-docent-tour-2026-10-11",
