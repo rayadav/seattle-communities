@@ -3952,6 +3952,22 @@
     "recurrence": "Monthly (2nd Tuesdays)"
   },
   {
+    "id": "northwest-harvest-sodo-market-repack-20261014",
+    "title": "SODO Community Market Food Repack and Distribution",
+    "organization": "Northwest Harvest Food Packing Groups",
+    "activityType": "Community & Volunteering",
+    "venue": "SODO Community Market (1915 4th Ave S, Seattle, WA 98134)",
+    "area": "Seattle (SODO)",
+    "start": "2026-10-14T07:45:00-07:00",
+    "end": "2026-10-14T11:00:00-07:00",
+    "timeString": "7:45 AM – 11:00 AM",
+    "dateString": "2026-10-14",
+    "description": "Volunteers support back-of-house sorting and front-of-house stocking to prepare grocery staples for community distribution. Participants help provide equitable, dignified access to nutritious food for hundreds of Seattle households. Anyone aged nine and older is eligible to volunteer with advance registration.",
+    "url": "https://www.northwestharvest.org/get-involved/events/",
+    "cost": "Free",
+    "recurrence": "Weekly on Wednesdays"
+  },
+  {
     "id": "bcs-lunch-learn-2026-10-14",
     "title": "Birds of Seattle Lunch and Learn",
     "organization": "Birds Connect Seattle",
@@ -4254,6 +4270,22 @@
     "url": "https://www.beaconfoodforest.org/events",
     "cost": "Free (drop-in, tools and gloves provided)",
     "recurrence": "3rd Saturday monthly year-round"
+  },
+  {
+    "id": "birds-connect-seattle-block-printing-class-20261017",
+    "title": "Birds and Block Printing Workshop with Hanae Bettencourt",
+    "organization": "Birds Connect Seattle (formerly Seattle Audubon)",
+    "activityType": "Maker & Crafts",
+    "venue": "Birds Connect Seattle Headquarters (616 Olive Way, Seattle, WA 98101)",
+    "area": "Seattle (Downtown)",
+    "start": "2026-10-17T10:00:00-07:00",
+    "end": "2026-10-17T12:30:00-07:00",
+    "timeString": "10:00 AM – 12:30 PM",
+    "dateString": "2026-10-17",
+    "description": "Join local printmaker and community engagement manager Hanae Bettencourt for an introductory hands-on relief printmaking class celebrating local avian wildlife. Students learn carving safety, design transfer, and printing techniques to take home a custom stamp block and art prints. The workshop is open to bird lovers and crafters of all skill levels.",
+    "url": "https://birdsconnectsea.org/calendar/",
+    "cost": "Sliding scale with $15 materials fee",
+    "recurrence": "Special Event"
   },
   {
     "id": "chtl-saturday-workshop-2026-10-17",
@@ -4910,6 +4942,22 @@
     "url": "https://www.southkingtools.org/classes-events",
     "cost": "Free",
     "recurrence": "Special Event"
+  },
+  {
+    "id": "srcs-monthly-gathering-20261024",
+    "title": "Seattle Retro-Computing Society Monthly Meeting",
+    "organization": "Seattle Retro-Computing Society",
+    "activityType": "Science & Technology",
+    "venue": "SRCS Kirkland Space (6418 125th Ave NE, Kirkland, WA 98033)",
+    "area": "Eastside (Kirkland)",
+    "start": "2026-10-24T11:00:00-07:00",
+    "end": "2026-10-24T16:00:00-07:00",
+    "timeString": "11:00 AM – 4:00 PM",
+    "dateString": "2026-10-24",
+    "description": "An open community meetup for vintage technology hobbyists and curious learners to demonstrate, repair, and play with classic computing hardware. Attendees can bring their own systems to display, use available workbench power and tools, or participate in the group potluck. Anyone interested in historic computers is welcome to drop in at any point during the event.",
+    "url": "https://sea-rcs.org/",
+    "cost": "Free",
+    "recurrence": "Monthly (4th Saturdays)"
   },
   {
     "id": "psms-wild-mushroom-show-2026-10-24",
