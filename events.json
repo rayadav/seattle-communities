@@ -3648,6 +3648,22 @@
     "recurrence": "Bi-weekly Saturday series"
   },
   {
+    "id": "the-mountaineers-tree-hugger-bingo-20261010",
+    "title": "Tree Hugger Bingo with Ciscoe Morris",
+    "organization": "The Mountaineers",
+    "activityType": "Nature/Conservation",
+    "venue": "The Mountaineers Seattle Program Center (7700 Sand Point Way NE, Seattle, WA 98115)",
+    "area": "Magnuson Park, Seattle",
+    "start": "2026-10-10T18:00:00-07:00",
+    "end": "2026-10-10T21:00:00-07:00",
+    "timeString": "6:00 PM – 9:00 PM",
+    "dateString": "2026-10-10",
+    "description": "Community environmental trivia, bingo, and gardening entertainment hosted by Ciscoe Morris at the Seattle Program Center.",
+    "url": "https://www.mountaineers.org/locations-lodges/seattle-program-center",
+    "cost": "$25–$35 ticket",
+    "recurrence": "Special Event"
+  },
+  {
     "id": "nwpc-coop-tournament-2026-10-10",
     "title": "Howdy Pardner Co-Op Pinball Tournament",
     "organization": "Seattle Pinball League",
@@ -3694,6 +3710,22 @@
     "url": "https://birdsconnectsea.org/get-involved/go-birding/neighborhood-bird-outings/",
     "cost": "Free",
     "recurrence": "Second Sunday of the month"
+  },
+  {
+    "id": "birds-connect-seattle-westcrest-ear-20261011",
+    "title": "Field Trip: Practice Birding by Ear in Westcrest Park",
+    "organization": "Seattle Audubon Society (Birds Connect Seattle)",
+    "activityType": "Birding",
+    "venue": "Westcrest Park (9000 8th Ave SW, Seattle, WA 98106)",
+    "area": "West Seattle",
+    "start": "2026-10-11T08:00:00-07:00",
+    "end": "2026-10-11T11:00:00-07:00",
+    "timeString": "8:00 AM – 11:00 AM",
+    "dateString": "2026-10-11",
+    "description": "Volunteer-led morning field trip learning how to identify Pacific Northwest songbirds and resident species by vocalizations and habitat cues.",
+    "url": "https://birdsconnectsea.org/calendar/",
+    "cost": "$15 registration",
+    "recurrence": "Special Field Trip"
   },
   {
     "id": "cbc-kitsap-color-2026-10-11",
@@ -5264,6 +5296,22 @@
     "recurrence": "Special evening event"
   },
   {
+    "id": "birds-connect-seattle-field-guide-talk-20261029",
+    "title": "Author Talk: Seattle Field Guide with Maria Dolan & Kathryn True",
+    "organization": "Seattle Audubon Society (Birds Connect Seattle)",
+    "activityType": "Nature/Conservation",
+    "venue": "Birds Connect Seattle Nature Shop & Headquarters (5202 20th Ave NW, Seattle, WA 98107)",
+    "area": "Ballard, Seattle",
+    "start": "2026-10-29T18:30:00-07:00",
+    "end": "2026-10-29T20:00:00-07:00",
+    "timeString": "6:30 PM – 8:00 PM",
+    "dateString": "2026-10-29",
+    "description": "Author talk and community presentation exploring urban nature exploration, Seattle wildlife habitats, and birdwatching in neighborhood parks.",
+    "url": "https://birdsconnectsea.org/calendar/",
+    "cost": "Free",
+    "recurrence": "Special Event"
+  },
+  {
     "id": "mox-fnm-draft-2026-10-30",
     "title": "Mox Seattle: Halloween Friday Night Magic Booster Draft",
     "organization": "Mox Boarding House",
@@ -5502,6 +5550,22 @@
     "url": "https://curlingseattle.org/content/2026-2027-monday-night",
     "cost": "League registration / Spectating free",
     "recurrence": "Weekly on Mondays"
+  },
+  {
+    "id": "wos-monthly-meeting-20261102",
+    "title": "WOS Monthly Presentation & Community Birding Meeting",
+    "organization": "Washington Ornithological Society",
+    "activityType": "Birding",
+    "venue": "Online / Virtual via Zoom (wos.org)",
+    "area": "Seattle / Puget Sound area",
+    "start": "2026-11-02T19:00:00-08:00",
+    "end": "2026-11-02T20:30:00-08:00",
+    "timeString": "7:00 PM – 8:30 PM",
+    "dateString": "2026-11-02",
+    "description": "Monthly meeting featuring guest presentations on avian biology, regional conservation, and Pacific Northwest birding observations.",
+    "url": "https://wos.org/monthly-meetings/",
+    "cost": "Free",
+    "recurrence": "Monthly (1st Mondays)"
   },
   {
     "id": "gcc-tuesday-supper-2026-11-03",
@@ -7182,6 +7246,22 @@
     "url": "https://www.museumofflight.org/exhibits-and-events/calendar-of-events?p=13",
     "cost": "Free entry to store & lobby",
     "recurrence": "Annual event"
+  },
+  {
+    "id": "seattle-go-center-pair-go-20261129",
+    "title": "Seattle Go Center: Fall Pair Go Tournament & Social Match",
+    "organization": "Seattle Go Center",
+    "activityType": "Games",
+    "venue": "Phinney Community Center (6532 Phinney Ave N, Seattle, WA 98103)",
+    "area": "Phinney Ridge, Seattle",
+    "start": "2026-11-29T13:00:00-08:00",
+    "end": "2026-11-29T18:00:00-08:00",
+    "timeString": "1:00 PM – 6:00 PM",
+    "dateString": "2026-11-29",
+    "description": "Collaborative two-on-two tournament rounds, strategy discussion, and social games hosted at the Phinney Community Center.",
+    "url": "https://www.seattlego.org/events/",
+    "cost": "Free for spectators; $10–$15 tournament entry",
+    "recurrence": "Annual Tournament"
   },
   {
     "id": "gcc-monday-league-2026-11-30",
