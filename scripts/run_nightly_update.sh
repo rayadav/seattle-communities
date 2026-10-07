@@ -10,7 +10,12 @@ export PATH="/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PAT
 
 # Log file
 LOG_DIR="$HOME/Library/Logs"
-mkdir -p "$LOG_DIR"
+if ! touch "$LOG_DIR/.test_write" 2>/dev/null; then
+    LOG_DIR="$REPO_DIR/logs"
+    mkdir -p "$LOG_DIR"
+else
+    rm -f "$LOG_DIR/.test_write" 2>/dev/null || true
+fi
 LOG_FILE="$LOG_DIR/seattle-communities-updater.log"
 
 exec >> "$LOG_FILE" 2>&1
