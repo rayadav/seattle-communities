@@ -29,6 +29,24 @@ REQUIRED_FIELDS = [
     "dateString", "description", "url"
 ]
 
+def load_env_file():
+    """Load simple KEY=VALUE pairs from .env in REPO_DIR into os.environ if not already set."""
+    env_file = REPO_DIR / ".env"
+    if env_file.exists():
+        try:
+            with open(env_file, "r", encoding="utf-8") as f:
+                for line in f:
+                    line = line.strip()
+                    if not line or line.startswith("#") or "=" not in line:
+                        continue
+                    key, val = line.split("=", 1)
+                    key = key.strip()
+                    val = val.strip().strip("'\"")
+                    if key and key not in os.environ:
+                        os.environ[key] = val
+        except Exception as e:
+            print(f"Warning: could not read .env file: {e}", file=sys.stderr)
+
 def get_today_str():
     # Use Pacific Time (UTC-7 or UTC-8)
     utc_now = datetime.now(timezone.utc)
@@ -211,6 +229,7 @@ def main():
         print(f"Error: Missing CSV or events.json in {REPO_DIR}", file=sys.stderr)
         sys.exit(1)
 
+    load_env_file()
     today_str = get_today_str()
     print(f"Seattle Communities Auto-Updater running for {today_str}...")
 
@@ -225,8 +244,8 @@ def main():
     api_key = os.environ.get("GEMINI_API_KEY", "").strip()
     if not api_key:
         print("\nNotice: GEMINI_API_KEY is not set.")
-        print("To enable autonomous nightly updates in GitHub Actions, add GEMINI_API_KEY")
-        print("to your GitHub repository Settings -> Secrets and variables -> Actions.")
+        print("Set the GEMINI_API_KEY environment variable or create a .env file in the repository root:")
+        print("  GEMINI_API_KEY=your_gemini_api_key_here")
         sys.exit(0)
 
     candidate_groups = find_candidate_groups(groups, events, count=8)
