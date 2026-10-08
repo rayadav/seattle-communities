@@ -3328,6 +3328,22 @@
     "recurrence": "Weekly series on Saturdays"
   },
   {
+    "id": "seattle-sake-community-paddle-20261010",
+    "title": "Seattle SAKE: Community Dragon Boat Paddle & Intro Session",
+    "organization": "Seattle SAKE Paddling Club",
+    "activityType": "Water Sports",
+    "venue": "Leschi South Sailboat Moorage (150 Lakeside Ave S, Seattle, WA 98122)",
+    "area": "Leschi, Seattle",
+    "start": "2026-10-10T08:00:00-07:00",
+    "end": "2026-10-10T10:00:00-07:00",
+    "timeString": "8:00 AM – 10:00 AM",
+    "dateString": "2026-10-10",
+    "description": "Recreational dragon boat practice on Lake Washington with equipment provided and coaching for newcomers (up to three free trial sessions).",
+    "url": "https://www.clubsake.com/events/list?page=1",
+    "cost": "Free (up to 3 trial sessions)",
+    "recurrence": "Weekly on Saturdays"
+  },
+  {
     "id": "bcs-discovery-park-2026-10-10",
     "title": "Birds Connect Seattle: Neighborhood Bird Walk at Discovery Park",
     "organization": "Birds Connect Seattle",
@@ -4128,6 +4144,22 @@
     "recurrence": "Weekly on Thursdays"
   },
   {
+    "id": "spsw-monthly-demonstration-20261015",
+    "title": "South Puget Sound Woodturners Monthly Demonstration & Meeting",
+    "organization": "South Puget Sound Woodturners",
+    "activityType": "Art",
+    "venue": "WSU Puyallup Research & Extension Center - Allmendinger Center (2606 W Pioneer, Puyallup, WA 98371)",
+    "area": "South Puget Sound",
+    "start": "2026-10-15T18:30:00-07:00",
+    "end": "2026-10-15T21:00:00-07:00",
+    "timeString": "6:30 PM – 9:00 PM",
+    "dateString": "2026-10-15",
+    "description": "Monthly general chapter meeting featuring live woodturning lathe demonstrations, technique discussions, and community project show-and-tell.",
+    "url": "https://spswoodturners.org/events",
+    "cost": "Free for visitors",
+    "recurrence": "Monthly (3rd Thursdays)"
+  },
+  {
     "id": "mountaineers-mountainfilm-20261015",
     "title": "Mountainfilm on Tour: Seattle 2026",
     "organization": "The Mountaineers",
@@ -4848,6 +4880,22 @@
     "recurrence": "Weekly on Fridays"
   },
   {
+    "id": "burien-arts-7-stories-skeletons-20261023",
+    "title": "7 Stories Storytelling Night: Skeletons in the Closet",
+    "organization": "Burien Arts Association",
+    "activityType": "Art",
+    "venue": "Highline Heritage Museum (819 SW 152nd St, Burien, WA 98166)",
+    "area": "Burien",
+    "start": "2026-10-23T19:00:00-07:00",
+    "end": "2026-10-23T20:30:00-07:00",
+    "timeString": "7:00 PM – 8:30 PM",
+    "dateString": "2026-10-23",
+    "description": "Community storytelling evening presented by Burien Arts Association featuring seven local storytellers sharing real seven-minute stories on the theme Skeletons in the Closet.",
+    "url": "https://www.burienarts.org/",
+    "cost": "Free ($5 suggested donation)",
+    "recurrence": "Monthly (4th Fridays)"
+  },
+  {
     "id": "scc-friday-rated-2026-10-23",
     "title": "Seattle Chess Club: Friday Night USCF Rated Chess",
     "organization": "Seattle Chess Club",
@@ -5070,6 +5118,22 @@
     "url": "https://www.museumofflight.org/exhibits-and-events/calendar-of-events",
     "cost": "Included with admission",
     "recurrence": "Annual family festival"
+  },
+  {
+    "id": "cwb-free-public-sail-20261025",
+    "title": "Center for Wooden Boats: Free Public Sail Season Finale",
+    "organization": "Center for Wooden Boats",
+    "activityType": "Water Sports",
+    "venue": "The Center for Wooden Boats (1010 Valley St, Seattle, WA 98109)",
+    "area": "South Lake Union, Seattle",
+    "start": "2026-10-25T11:00:00-07:00",
+    "end": "2026-10-25T16:00:00-07:00",
+    "timeString": "11:00 AM – 4:00 PM",
+    "dateString": "2026-10-25",
+    "description": "Free volunteer-crewed boat rides on Lake Union aboard historic schooners, classic sloops, and wooden rowboats for the final Free Public Sail of the season.",
+    "url": "https://www.cwb.org/calendar",
+    "cost": "Free (in-person sign-ups begin at 10:00 AM)",
+    "recurrence": "Monthly (Last Sunday, Apr–Oct)"
   },
   {
     "id": "sjg-tea-2026-10-25",
@@ -6878,6 +6942,22 @@
     "url": "https://www.seattlego.org/schedule/",
     "cost": "Club fee",
     "recurrence": "Weekly on Saturdays"
+  },
+  {
+    "id": "seattle-print-arts-member-exhibition-20261121",
+    "title": "Seattle Print Arts: Ink, Plate, Paper Member Exhibition Opening Reception",
+    "organization": "Seattle Print Arts",
+    "activityType": "Art",
+    "venue": "Columbia City Gallery (4864 Rainier Ave S, Seattle, WA 98118)",
+    "area": "Columbia City, Seattle",
+    "start": "2026-11-21T17:00:00-08:00",
+    "end": "2026-11-21T20:00:00-08:00",
+    "timeString": "5:00 PM – 8:00 PM",
+    "dateString": "2026-11-21",
+    "description": "Opening artist reception for Seattle Print Arts annual member exhibition showcasing traditional and contemporary printmaking techniques.",
+    "url": "https://www.seattleprintarts.org/new-events",
+    "cost": "Free admission",
+    "recurrence": "Annual Member Exhibition"
   },
   {
     "id": "mof-pilot-lab-2026-11-22",
