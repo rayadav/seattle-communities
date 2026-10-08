@@ -17,10 +17,15 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Seattle Communities Directory">
 <meta name="twitter:description" content="Discover 120+ local clubs, leagues, outdoor groups, and enthusiast meetups across Greater Seattle.">
-<meta name="twitter:image" content="./hero.jpeg">
+<meta name="twitter:image" content="./hero.webp">
 
 <!-- SVG Favicon -->
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌲</text></svg>">
+
+<!-- Resource Prioritization: Preload LCP hero image & JSON data -->
+<link rel="preload" href="./hero.webp" as="image" type="image/webp" fetchpriority="high" media="(min-width: 769px)">
+<link rel="preload" href="./hero-mobile.webp" as="image" type="image/webp" fetchpriority="high" media="(max-width: 768px)">
+<link rel="preload" href="./groups.min.json" as="fetch" crossorigin="anonymous">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -98,8 +103,21 @@
     color: #fff;
     background:
       linear-gradient(160deg, rgba(11,28,52,.84) 0%, rgba(13,28,52,.75) 45%, rgba(11,24,46,.90) 100%),
-      url('./hero.jpeg') center/cover no-repeat;
+      url('./hero.webp') center/cover no-repeat;
+    background-image:
+      linear-gradient(160deg, rgba(11,28,52,.84) 0%, rgba(13,28,52,.75) 45%, rgba(11,24,46,.90) 100%),
+      image-set(
+        url('./hero.webp') type('image/webp') 1x,
+        url('./hero.jpeg') type('image/jpeg') 1x
+      );
     border-bottom: 1px solid rgba(255,255,255,.08);
+  }
+  @media (max-width: 768px) {
+    .hero {
+      background-image:
+        linear-gradient(160deg, rgba(11,28,52,.84) 0%, rgba(13,28,52,.75) 45%, rgba(11,24,46,.90) 100%),
+        url('./hero-mobile.webp');
+    }
   }
 
   .hero-glow {
@@ -398,6 +416,8 @@
 
   /* Group Card */
   .group-card {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 72px;
     display: grid;
     grid-template-columns: 2.2fr 1.3fr 1.2fr auto;
     align-items: center;
@@ -895,7 +915,7 @@
 
     filteredData = allData.filter(row => {
       // Category Chip Filter
-      if (activeCategory !== 'all' && classify(row['Activity type']) !== activeCategory) {
+      if (activeCategory !== 'all' && (row._category || classify(row['Activity type'])) !== activeCategory) {
         return false;
       }
       // Activity Select Filter
@@ -906,12 +926,16 @@
       if (area && row['Area'] !== area) {
         return false;
       }
-      // Comprehensive Search: match Name, Activity Type, or Area
+      // Comprehensive Search: match pre-indexed string
       if (search) {
-        const nameMatch = (row['Group name'] || '').toLowerCase().includes(search);
-        const actMatch = (row['Activity type'] || '').toLowerCase().includes(search);
-        const areaMatch = (row['Area'] || '').toLowerCase().includes(search);
-        if (!nameMatch && !actMatch && !areaMatch) return false;
+        if (row._searchLower) {
+          if (!row._searchLower.includes(search)) return false;
+        } else {
+          const nameMatch = (row['Group name'] || '').toLowerCase().includes(search);
+          const actMatch = (row['Activity type'] || '').toLowerCase().includes(search);
+          const areaMatch = (row['Area'] || '').toLowerCase().includes(search);
+          if (!nameMatch && !actMatch && !areaMatch) return false;
+        }
       }
       return true;
     });
@@ -1058,10 +1082,26 @@
     if (sort) document.getElementById('filter-sort').value = sort;
   }
 
+  // Register Service Worker for instant offline/repeat performance
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('./sw.js').catch(() => {});
+    });
+  }
+
   function boot() {
     document.getElementById('status-bar').style.display = 'none';
     document.getElementById('list-wrap').style.display = 'block';
     document.getElementById('foot').style.display = 'flex';
+
+    // Pre-index records for ultra-fast filtering
+    allData.forEach(r => {
+      r._nameLower = (r['Group name'] || '').toLowerCase();
+      r._actLower = (r['Activity type'] || '').toLowerCase();
+      r._areaLower = (r['Area'] || '').toLowerCase();
+      r._searchLower = `${r._nameLower} ${r._actLower} ${r._areaLower}`;
+      r._category = classify(r['Activity type']);
+    });
 
     populateSelects();
 
@@ -1078,7 +1118,7 @@
 
   function initEvents() {
     const searchInput = document.getElementById('search');
-    searchInput.addEventListener('input', debounce(filterAndSort, 120));
+    searchInput.addEventListener('input', debounce(filterAndSort, 100));
 
     document.getElementById('clear-search').addEventListener('click', () => {
       searchInput.value = '';
@@ -1137,7 +1177,7 @@
   }
 
   function loadCSV(url) {
-    fetch(url)
+    return fetch(url)
       .then(res => {
         if (!res.ok) throw new Error('Failed to load ' + url + ' (' + res.status + ')');
         return res.text();
@@ -1153,7 +1193,21 @@
         });
         if (allData.length === 0) throw new Error('No data rows found in CSV');
         boot();
+      });
+  }
+
+  // Load groups data with native JSON prioritization and CSV fallback
+  function loadGroupsData() {
+    fetch('./groups.min.json')
+      .then(res => {
+        if (!res.ok) throw new Error('groups.min.json unavailable');
+        return res.json();
       })
+      .then(data => {
+        allData = data;
+        boot();
+      })
+      .catch(() => loadCSV(DATA_URL))
       .catch(err => {
         document.getElementById('status-bar').style.display = 'block';
         document.getElementById('status-text').innerHTML =
@@ -1161,7 +1215,7 @@
       });
   }
 
-  loadCSV(DATA_URL);
+  loadGroupsData();
 })();
 </script>
 </body>

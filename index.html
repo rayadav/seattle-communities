@@ -17,10 +17,15 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Seattle Community Events Calendar">
 <meta name="twitter:description" content="Consolidated chronological agenda of upcoming events, runs, paddles, work parties, and meetups across Greater Seattle.">
-<meta name="twitter:image" content="./hero.jpeg">
+<meta name="twitter:image" content="./hero.webp">
 
 <!-- SVG Favicon -->
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📅</text></svg>">
+
+<!-- Resource Prioritization: Preload LCP hero image & JSON data -->
+<link rel="preload" href="./hero.webp" as="image" type="image/webp" fetchpriority="high" media="(min-width: 769px)">
+<link rel="preload" href="./hero-mobile.webp" as="image" type="image/webp" fetchpriority="high" media="(max-width: 768px)">
+<link rel="preload" href="./events.min.json" as="fetch" crossorigin="anonymous">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -152,8 +157,21 @@
     position: relative;
     background:
       linear-gradient(180deg, rgba(11,31,58,.82) 0%, rgba(11,31,58,.94) 70%, var(--bg) 100%),
-      url('./hero.jpeg') center/cover no-repeat;
+      url('./hero.webp') center/cover no-repeat;
+    background-image:
+      linear-gradient(180deg, rgba(11,31,58,.82) 0%, rgba(11,31,58,.94) 70%, var(--bg) 100%),
+      image-set(
+        url('./hero.webp') type('image/webp') 1x,
+        url('./hero.jpeg') type('image/jpeg') 1x
+      );
     border-bottom: 1px solid rgba(255,255,255,.08);
+  }
+  @media (max-width: 768px) {
+    .hero {
+      background-image:
+        linear-gradient(180deg, rgba(11,31,58,.82) 0%, rgba(11,31,58,.94) 70%, var(--bg) 100%),
+        url('./hero-mobile.webp');
+    }
   }
   .hero-glow {
     position: absolute;
@@ -455,6 +473,8 @@
 
   /* Day Section Group */
   .agenda-day-group {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 240px;
     display: flex;
     flex-direction: column;
     gap: 14px;
@@ -505,6 +525,8 @@
 
   /* Event Card in Agenda */
   .event-card {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 140px;
     background: var(--surface);
     border: 1px solid var(--line);
     border-radius: var(--radius);
@@ -957,18 +979,50 @@
   const statUniqueGroups = document.getElementById('stat-unique-groups');
   const statCategories = document.getElementById('stat-categories');
 
-  // Load events.json
-  fetch('./events.json')
-    .then(res => {
-      if (!res.ok) throw new Error('Network response was not ok');
-      return res.json();
-    })
+  // Register Service Worker for instant offline/repeat performance
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('./sw.js').catch(() => {});
+    });
+  }
+
+  function debounce(fn, ms) {
+    let timer;
+    return function(...args) {
+      clearTimeout(timer);
+      timer = setTimeout(() => fn.apply(this, args), ms);
+    };
+  }
+
+  // Load minified events data with fallback to events.json
+  const loadEventsData = () => {
+    return fetch('./events.min.json')
+      .then(res => {
+        if (!res.ok) throw new Error('events.min.json unavailable');
+        return res.json();
+      })
+      .catch(() => {
+        return fetch('./events.json').then(res => {
+          if (!res.ok) throw new Error('Network response was not ok');
+          return res.json();
+        });
+      });
+  };
+
+  loadEventsData()
     .then(data => {
       allEvents = data;
+      // Pre-index search tokens once for ultra-fast filtering
+      for (let i = 0; i < allEvents.length; i++) {
+        const ev = allEvents[i];
+        const raw = `${ev.title} ${ev.organization} ${ev.venue} ${ev.area} ${ev.activityType} ${ev.description}`.toLowerCase();
+        ev._searchStr = raw;
+        ev._cleanStr = raw.replace(/[\s\-_,.]/g, '');
+      }
       initCalendar();
     })
     .catch(err => {
-      console.error('Failed to load events.json:', err);
+      console.error('Failed to load events data:', err);
       agendaList.innerHTML = '<div style="padding:40px; text-align:center; color:#e11d48; font-weight:600;">Unable to load calendar events. Please ensure events.json exists.</div>';
     });
 
@@ -1021,10 +1075,11 @@
       areaFilter.appendChild(opt);
     });
 
-    // Event Listeners
+    // Event Listeners with Debounce for 60fps responsive typing
+    const debouncedRender = debounce(renderAgenda, 100);
     searchInput.addEventListener('input', () => {
       clearSearchBtn.style.display = searchInput.value ? 'block' : 'none';
-      renderAgenda();
+      debouncedRender();
     });
 
     clearSearchBtn.addEventListener('click', () => {
@@ -1224,34 +1279,36 @@
   };
 
   function renderAgenda() {
-    const query = searchInput.value.trim().toLowerCase();
+    const rawQuery = searchInput.value.trim().toLowerCase();
     const selCat = categoryFilter.value;
     const selOrg = orgFilter ? orgFilter.value : '';
     const selArea = areaFilter.value;
+
+    let normQuery = '';
+    let cleanQuery = '';
+    let tokens = [];
+    if (rawQuery) {
+      normQuery = rawQuery.replace(/audobon/g, 'audubon');
+      cleanQuery = normQuery.replace(/[\s\-_,.]/g, '');
+      tokens = normQuery.split(/\s+/).filter(Boolean).map(t => ({
+        tok: t,
+        clean: t.replace(/[\s\-_,.]/g, '')
+      }));
+    }
 
     const filtered = allEvents.filter(ev => {
       if (selCat && ev.activityType !== selCat) return false;
       if (selOrg && ev.organization !== selOrg) return false;
       if (selArea && ev.area !== selArea) return false;
 
-      if (query) {
-        // Smart normalization: handle common typos like 'audobon' -> 'audubon'
-        const normQuery = query.replace(/audobon/g, 'audubon');
-        const matchText = `${ev.title} ${ev.organization} ${ev.venue} ${ev.area} ${ev.activityType} ${ev.description}`.toLowerCase();
-        
-        // Match 1: Direct substring on normal text
-        const directMatch = matchText.includes(normQuery);
-
-        // Match 2: Compressed match without spaces/punctuation (e.g. 'eastsideaudobon', 'eastsideaudubon', 'birdsconnect')
-        const cleanMatch = matchText.replace(/[\s\-_,.]/g, '');
-        const cleanQuery = normQuery.replace(/[\s\-_,.]/g, '');
-        const compressedMatch = cleanMatch.includes(cleanQuery);
-
-        // Match 3: Multi-token match (all words anywhere in record)
-        const tokens = normQuery.split(/\s+/).filter(Boolean);
-        const tokenMatch = tokens.length > 0 && tokens.every(tok => {
-          const cleanTok = tok.replace(/[\s\-_,.]/g, '');
-          return matchText.includes(tok) || cleanMatch.includes(cleanTok);
+      if (normQuery) {
+        // Match 1: Direct substring on pre-indexed text
+        const directMatch = ev._searchStr.includes(normQuery);
+        // Match 2: Compressed match without spaces/punctuation
+        const compressedMatch = cleanQuery && ev._cleanStr.includes(cleanQuery);
+        // Match 3: Multi-token match
+        const tokenMatch = tokens.length > 0 && tokens.every(t => {
+          return ev._searchStr.includes(t.tok) || (t.clean && ev._cleanStr.includes(t.clean));
         });
 
         if (!directMatch && !compressedMatch && !tokenMatch) return false;

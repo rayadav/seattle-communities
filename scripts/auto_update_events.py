@@ -285,7 +285,11 @@ def main():
     with open(EVENTS_PATH, "w", encoding="utf-8") as f:
         json.dump(events, f, indent=2, ensure_ascii=False)
 
-    print(f"\nSuccessfully updated events.json. Total events now: {len(events)}")
+    min_path = REPO_DIR / "events.min.json"
+    with open(min_path, "w", encoding="utf-8") as f:
+        json.dump(events, f, separators=(',', ':'), ensure_ascii=False)
+
+    print(f"\nSuccessfully updated events.json and events.min.json. Total events now: {len(events)}")
 
 if __name__ == "__main__":
     main()
