@@ -3760,6 +3760,22 @@
     "recurrence": "Annual fall ride"
   },
   {
+    "id": "nw-railway-museum-halloween-train-20261011",
+    "title": "Halloween Train Excursion & Fall Festival",
+    "organization": "Northwest Railway Museum",
+    "activityType": "Science",
+    "venue": "Northwest Railway Museum - Snoqualmie Depot (38625 SE King St, Snoqualmie, WA 98065)",
+    "area": "Eastside (Snoqualmie)",
+    "start": "2026-10-11T11:00:00-07:00",
+    "end": "2026-10-11T13:00:00-07:00",
+    "timeString": "11:00 AM – 1:00 PM",
+    "dateString": "2026-10-11",
+    "description": "Take a scenic autumn train ride through the Upper Snoqualmie Valley aboard historic railcars. The family-friendly celebration includes apple coring, fresh cider press demonstrations, live music, and festive seasonal activities.",
+    "url": "https://trainmuseum.org/",
+    "cost": " – ",
+    "recurrence": "Weekends through October"
+  },
+  {
     "id": "seattle-center-festal-turkfest-2026-10-11",
     "title": "Turkfest 2026 (Turkish Cultural Festival - Day 2)",
     "organization": "Seattle Center",
@@ -3886,6 +3902,22 @@
     "url": "https://www.tahomabirdalliance.org/bird-walks",
     "cost": "Free",
     "recurrence": "2nd Tuesday monthly (April - October)"
+  },
+  {
+    "id": "pilchuck-audubon-spencer-island-20261013",
+    "title": "Spencer Island Guided Bird Walk",
+    "organization": "Pilchuck Audubon Society",
+    "activityType": "Birding",
+    "venue": "Spencer Island Park (Langus Riverfront Park, 400 Smith Island Rd, Everett, WA 98201)",
+    "area": "Snohomish County (Everett)",
+    "start": "2026-10-13T08:00:00-07:00",
+    "end": "2026-10-13T13:00:00-07:00",
+    "timeString": "8:00 AM – 1:00 PM",
+    "dateString": "2026-10-13",
+    "description": "Join the Pilchuck Audubon Society for a morning field trip exploring the wetlands and tidal sloughs of Spencer Island. Spot wintering waterfowl, raptors, and marsh birds. Open to all birders; bring binoculars and waterproof boots.",
+    "url": "https://www.pilchuckaudubon.org/calendar",
+    "cost": "Free",
+    "recurrence": "Special Event"
   },
   {
     "id": "tilth-autumn-abundance-2026-10-13",
@@ -4270,6 +4302,22 @@
     "url": "https://seattlechess.club/mec-category/uscf-rated/",
     "cost": "USCF membership + entry fee",
     "recurrence": "Weekly on Fridays"
+  },
+  {
+    "id": "kitsap-audubon-nisqually-nwr-20261017",
+    "title": "Nisqually National Wildlife Refuge Field Trip",
+    "organization": "Kitsap Audubon Society",
+    "activityType": "Birding",
+    "venue": "Billy Frank Jr. Nisqually NWR (100 Brown Farm Rd NE, Olympia, WA 98516)",
+    "area": "South Puget Sound (Nisqually)",
+    "start": "2026-10-17T08:00:00-07:00",
+    "end": "2026-10-17T13:00:00-07:00",
+    "timeString": "8:00 AM – 1:00 PM",
+    "dateString": "2026-10-17",
+    "description": "Explore the premier boardwalk trails and estuaries of Nisqually National Wildlife Refuge with Kitsap Audubon trip leaders Al and Carolyn Westphal. Observe arriving winter waterfowl, shorebirds, and birds of prey.",
+    "url": "https://www.kitsapaudubon.org/events-1",
+    "cost": "Free ( refuge entrance fee)",
+    "recurrence": "Special Event"
   },
   {
     "id": "tba-clarks-creek-2026-10-17",
@@ -4768,6 +4816,22 @@
     "recurrence": "Weekly on Wednesdays"
   },
   {
+    "id": "plantamnesty-pines-and-pints-20261021",
+    "title": "Pines & Pints: Wood Chips as a Soil Amendment",
+    "organization": "PlantAmnesty",
+    "activityType": "Nature/Conservation",
+    "venue": "7400 Woodlawn (7400 Woodlawn Ave NE, Seattle, WA 98115)",
+    "area": "Seattle (Green Lake)",
+    "start": "2026-10-21T18:30:00-07:00",
+    "end": "2026-10-21T20:30:00-07:00",
+    "timeString": "6:30 PM – 8:30 PM",
+    "dateString": "2026-10-21",
+    "description": "An informal evening discussion on soil health and urban forestry. Learn how wood chips enhance soil microbiology, retain moisture, and suppress weeds in urban landscapes while enjoying refreshments with fellow plant enthusiasts.",
+    "url": "https://www.plantamnesty.org/all-upcoming-events-classes",
+    "cost": "Free ( suggested donation)",
+    "recurrence": "Special Event"
+  },
+  {
     "id": "scc-wednesday-casual-2026-10-21",
     "title": "Seattle Chess Club: Wednesday Casual Chess Night",
     "organization": "Seattle Chess Club",
@@ -5021,6 +5085,22 @@
     "description": "Refresh your cold-weather wardrobe and help reduce textile waste at this community-wide clothing swap. Attendees can donate clean, gently used garments or simply browse and take home items at no cost. The event is free and open to all community members with no tool library membership required.",
     "url": "https://www.southkingtools.org/classes-events",
     "cost": "Free",
+    "recurrence": "Special Event"
+  },
+  {
+    "id": "plantamnesty-pinetum-walk-20261024",
+    "title": "Plant Walk at the Pinetum with Walt Bubelis and Van Bobbitt",
+    "organization": "PlantAmnesty",
+    "activityType": "Nature/Conservation",
+    "venue": "Washington Park Arboretum (2300 Arboretum Dr E, Seattle, WA 98112)",
+    "area": "Seattle (Montlake)",
+    "start": "2026-10-24T10:00:00-07:00",
+    "end": "2026-10-24T12:00:00-07:00",
+    "timeString": "10:00 AM – 12:00 PM",
+    "dateString": "2026-10-24",
+    "description": "Join PlantAmnesty for an educational guided plant walk through the Washington Park Arboretum Pinetum led by horticulturists Walt Bubelis and Van Bobbitt. Learn conifer identification, growth habits, and structural care in urban landscapes.",
+    "url": "https://www.plantamnesty.org/all-upcoming-events-classes",
+    "cost": "Free / Registration requested",
     "recurrence": "Special Event"
   },
   {
@@ -6030,6 +6110,22 @@
     "url": "https://seattlefrontrunners.org/calendar",
     "cost": "Free / All paces welcome",
     "recurrence": "Weekly on Saturdays"
+  },
+  {
+    "id": "friends-saltwater-forest-restoration-20261107",
+    "title": "Saltwater State Park Forest Restoration Work Party",
+    "organization": "Friends of Saltwater State Park",
+    "activityType": "Nature/Conservation",
+    "venue": "Saltwater State Park (25205 8th Pl S, Des Moines, WA 98198)",
+    "area": "South King County (Des Moines)",
+    "start": "2026-11-07T10:00:00-07:00",
+    "end": "2026-11-07T12:00:00-07:00",
+    "timeString": "10:00 AM – 12:00 PM",
+    "dateString": "2026-11-07",
+    "description": "Join the Friends of Saltwater State Park to protect and restore the local coastal forest ecosystem by removing invasive plants like English ivy and blackberry. Tools and work gloves provided; all ages welcome.",
+    "url": "https://www.friendssaltwater.org/upcoming-events",
+    "cost": "Free",
+    "recurrence": "Monthly (1st Saturdays)"
   },
   {
     "id": "chtl-saturday-workshop-2026-11-07",
