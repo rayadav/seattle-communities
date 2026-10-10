@@ -456,6 +456,106 @@
     font-weight: 700;
   }
 
+  /* Mobile Filter Toggle & Drawer Styles */
+  .filter-toggle-btn {
+    display: none;
+    align-items: center;
+    gap: 7px;
+    height: 42px;
+    padding: 0 14px;
+    border-radius: var(--radius-sm);
+    background: var(--surface-2);
+    border: 1px solid var(--line);
+    font-family: var(--font);
+    font-size: 13.5px;
+    font-weight: 600;
+    color: var(--text);
+    cursor: pointer;
+    white-space: nowrap;
+    flex-shrink: 0;
+    transition: all .2s ease;
+  }
+  .filter-toggle-btn:hover {
+    background: #fff;
+    border-color: #cbd5e1;
+    color: var(--violet);
+  }
+  .filter-toggle-btn.has-filters {
+    background: #f5f3ff;
+    border-color: var(--violet);
+    color: var(--violet);
+  }
+  .filter-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 19px;
+    height: 19px;
+    padding: 0 5px;
+    border-radius: 999px;
+    background: var(--violet);
+    color: #fff;
+    font-size: 11px;
+    font-weight: 800;
+    line-height: 1;
+  }
+
+  /* Desktop Filter Dropdowns Group */
+  .filter-dropdowns-group {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    flex: 1 1 auto;
+    flex-wrap: wrap;
+  }
+  .drawer-header-mobile,
+  .drawer-actions-mobile,
+  .mobile-filter-label,
+  .filter-drawer-backdrop {
+    display: none;
+  }
+
+  /* Active Filter Chips */
+  .active-filter-chips {
+    display: none;
+    align-items: center;
+    gap: 6px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+    padding: 2px 0 0;
+  }
+  .active-filter-chips::-webkit-scrollbar { display: none; }
+  .active-filter-chips.has-chips { display: flex; }
+  .active-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 3px 10px;
+    background: #f5f3ff;
+    border: 1px solid #ddd6fe;
+    color: var(--violet);
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 999px;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  .active-chip button {
+    background: none;
+    border: none;
+    color: var(--violet);
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 0;
+    margin-left: 2px;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   /* ================= AGENDA LIST CONTAINER ================= */
   .main-content {
     flex: 1;
@@ -804,14 +904,254 @@
     }
   }
 
-  @media (max-width: 640px) {
+  @media (max-width: 768px) {
     .hero h1 { font-size: 32px; }
     .hero-stats { gap: 20px; }
-    .hero-inner { padding: 36px 20px 65px; }
-    .filter-wrap { padding: 12px 16px 18px; }
-    .main-content { padding: 10px 16px 50px; }
-    .select-box { flex: 1 1 100%; }
-    .site-nav-inner { padding: 12px 18px; }
+    .hero-inner { padding: 36px 20px 60px; }
+
+    /* Compact Sticky Filter Bar on Mobile */
+    .filter-wrap {
+      padding: 8px 14px 10px;
+      margin-top: -24px;
+      background: linear-gradient(180deg, var(--bg) 92%, rgba(238,242,248,0));
+    }
+    .filter-inner {
+      padding: 10px 12px;
+      gap: 8px;
+      border-radius: 16px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+    }
+    .filter-controls-row {
+      display: flex;
+      flex-wrap: nowrap;
+      gap: 8px;
+      align-items: center;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    .search-box {
+      flex: 1 1 0%;
+      min-width: 0;
+      width: 0;
+    }
+    .search-box input {
+      min-width: 0;
+      width: 100%;
+      box-sizing: border-box;
+      height: 42px;
+      font-size: 16px; /* Prevents auto-zoom on iOS Safari */
+      padding: 0 32px 0 36px;
+      border-radius: 12px;
+    }
+    .filter-toggle-btn {
+      display: inline-flex;
+      flex: 0 0 auto;
+      height: 42px;
+      padding: 0 12px;
+      border-radius: 12px;
+      box-sizing: border-box;
+    }
+
+    /* Transform Filter Group into Slide-up Bottom Sheet Modal */
+    .filter-dropdowns-group {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      max-height: 85dvh;
+      background: var(--surface);
+      border-radius: 22px 22px 0 0;
+      padding: 16px 20px calc(24px + env(safe-area-inset-bottom));
+      box-shadow: 0 -10px 40px rgba(0,0,0,0.25);
+      z-index: 1001;
+      overflow-y: auto;
+      overscroll-behavior: contain;
+      flex-direction: column;
+      gap: 16px;
+      align-items: stretch;
+      animation: slideUpSheet .22s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .filter-dropdowns-group.is-open {
+      display: flex;
+    }
+
+    .filter-drawer-backdrop {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(15,23,42,0.5);
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+      z-index: 1000;
+      animation: fadeInBackdrop .2s ease;
+    }
+    .filter-drawer-backdrop.is-open {
+      display: block;
+    }
+
+    .drawer-header-mobile {
+      display: block;
+    }
+    .drawer-grab-bar {
+      width: 40px;
+      height: 4px;
+      background: #cbd5e1;
+      border-radius: 999px;
+      margin: -4px auto 14px;
+    }
+    .drawer-title-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--line-soft);
+    }
+    .drawer-title-row h3 {
+      font-family: var(--font-display);
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--ink);
+      margin: 0;
+    }
+    .drawer-close-btn {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      border: 1px solid var(--line);
+      background: var(--surface-2);
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--text-soft);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all .15s ease;
+    }
+    .drawer-close-btn:hover {
+      background: #fff;
+      color: var(--text);
+    }
+
+    .mobile-filter-label {
+      display: block;
+      font-size: 11.5px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .5px;
+      color: var(--text-faint);
+      margin-bottom: 6px;
+    }
+
+    .filter-dropdowns-group .select-box {
+      width: 100%;
+      min-width: 0;
+      flex: 0 0 auto;
+    }
+    .filter-dropdowns-group .select-box select {
+      height: 46px;
+      font-size: 15px;
+      border-radius: 12px;
+      background-color: #f8fafc;
+    }
+
+    /* Hide desktop reset button in drawer */
+    #reset-filters-btn {
+      display: none;
+    }
+
+    /* Drawer actions at bottom */
+    .drawer-actions-mobile {
+      display: flex;
+      gap: 10px;
+      margin-top: 8px;
+      padding-top: 14px;
+      border-top: 1px solid var(--line-soft);
+    }
+    .drawer-btn-reset {
+      flex: 0 0 auto;
+      height: 46px;
+      padding: 0 18px;
+      border-radius: 12px;
+      border: 1px solid var(--line);
+      background: var(--surface-2);
+      font-family: var(--font);
+      font-size: 13.5px;
+      font-weight: 600;
+      color: var(--text-soft);
+      cursor: pointer;
+    }
+    .drawer-btn-reset:hover {
+      background: #fff;
+      color: var(--text);
+    }
+    .drawer-btn-apply {
+      flex: 1;
+      height: 46px;
+      border-radius: 12px;
+      border: none;
+      background: var(--violet);
+      color: #ffffff;
+      font-family: var(--font);
+      font-size: 14.5px;
+      font-weight: 700;
+      cursor: pointer;
+      box-shadow: 0 4px 14px rgba(109,79,240,.35);
+      transition: all .15s ease;
+    }
+    .drawer-btn-apply:hover {
+      background: var(--violet-deep);
+    }
+
+    /* Timeframe pills row on mobile */
+    .time-pills-row {
+      overflow-x: auto;
+      flex-wrap: nowrap;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+      padding-bottom: 2px;
+      gap: 6px;
+    }
+    .time-pills-row::-webkit-scrollbar { display: none; }
+    .time-pills-label { display: none; }
+    .time-pill {
+      font-size: 12.5px;
+      padding: 5px 12px;
+      flex-shrink: 0;
+      border-radius: 999px;
+    }
+
+    /* Status row */
+    .filter-status-row {
+      padding: 2px 2px 0;
+      font-size: 12px;
+    }
+
+    /* Event Card mobile adjustments */
+    .event-card {
+      padding: 16px 18px;
+      border-radius: 14px;
+      gap: 16px;
+    }
+    .event-title {
+      font-size: 17.5px;
+    }
+    .main-content {
+      padding: 6px 14px 60px;
+    }
+    .site-nav-inner {
+      padding: 12px 16px;
+    }
+  }
+
+  @keyframes slideUpSheet {
+    from { transform: translateY(100%); }
+    to { transform: translateY(0); }
+  }
+  @keyframes fadeInBackdrop {
+    from { opacity: 0; }
+    to { opacity: 1; }
   }
 </style>
 </head>
@@ -866,6 +1206,9 @@
 
   <!-- Sticky Filter Bar -->
   <section class="filter-wrap" aria-label="Calendar Event Filters">
+    <!-- Backdrop for mobile filter drawer -->
+    <div class="filter-drawer-backdrop" id="filter-drawer-backdrop" aria-hidden="true"></div>
+
     <div class="filter-inner">
       <div class="filter-controls-row">
         <!-- Search Input -->
@@ -875,29 +1218,67 @@
           <button type="button" class="clear-btn" id="clear-search-btn" aria-label="Clear search">✕</button>
         </div>
 
-        <!-- Activity Category Select -->
-        <div class="select-box">
-          <select id="category-filter" aria-label="Filter by activity category">
-            <option value="">All Categories</option>
-          </select>
-        </div>
+        <!-- Mobile Filter Toggle Button -->
+        <button type="button" class="filter-toggle-btn" id="filter-toggle-btn" aria-label="Open filter options" aria-expanded="false" aria-controls="filter-dropdowns-group">
+          <svg class="filter-toggle-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="4" y1="21" x2="4" y2="14"></line>
+            <line x1="4" y1="10" x2="4" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="12"></line>
+            <line x1="12" y1="8" x2="12" y2="3"></line>
+            <line x1="20" y1="21" x2="20" y2="16"></line>
+            <line x1="20" y1="12" x2="20" y2="3"></line>
+            <line x1="1" y1="14" x2="7" y2="14"></line>
+            <line x1="9" y1="8" x2="15" y2="8"></line>
+            <line x1="17" y1="16" x2="23" y2="16"></line>
+          </svg>
+          <span>Filters</span>
+          <span class="filter-badge" id="filter-badge" style="display:none">0</span>
+        </button>
 
-        <!-- Host Organization Select -->
-        <div class="select-box">
-          <select id="org-filter" aria-label="Filter by host organization">
-            <option value="">All Organizations</option>
-          </select>
-        </div>
+        <!-- Dropdowns Group (Inline on Desktop, Slide-up Sheet on Mobile) -->
+        <div class="filter-dropdowns-group" id="filter-dropdowns-group" role="region" aria-label="Filter options">
+          <!-- Mobile Drawer Header -->
+          <div class="drawer-header-mobile">
+            <div class="drawer-grab-bar"></div>
+            <div class="drawer-title-row">
+              <h3>Filter Events</h3>
+              <button type="button" class="drawer-close-btn" id="drawer-close-btn" aria-label="Close filters">✕</button>
+            </div>
+          </div>
 
-        <!-- Area Select -->
-        <div class="select-box">
-          <select id="area-filter" aria-label="Filter by neighborhood or area">
-            <option value="">All Areas</option>
-          </select>
-        </div>
+          <!-- Activity Category Select -->
+          <div class="select-box">
+            <label class="mobile-filter-label" for="category-filter">Category</label>
+            <select id="category-filter" aria-label="Filter by activity category">
+              <option value="">All Categories</option>
+            </select>
+          </div>
 
-        <!-- Reset Button -->
-        <button type="button" class="btn-reset" id="reset-filters-btn">Reset Filters</button>
+          <!-- Host Organization Select -->
+          <div class="select-box">
+            <label class="mobile-filter-label" for="org-filter">Organization</label>
+            <select id="org-filter" aria-label="Filter by host organization">
+              <option value="">All Organizations</option>
+            </select>
+          </div>
+
+          <!-- Area Select -->
+          <div class="select-box">
+            <label class="mobile-filter-label" for="area-filter">Neighborhood / Area</label>
+            <select id="area-filter" aria-label="Filter by neighborhood or area">
+              <option value="">All Areas</option>
+            </select>
+          </div>
+
+          <!-- Reset Button (Desktop) -->
+          <button type="button" class="btn-reset" id="reset-filters-btn">Reset Filters</button>
+
+          <!-- Drawer Bottom Action Buttons (Mobile) -->
+          <div class="drawer-actions-mobile">
+            <button type="button" class="drawer-btn-reset" id="drawer-reset-btn">Reset All</button>
+            <button type="button" class="drawer-btn-apply" id="drawer-apply-btn">Show <span id="drawer-apply-count">0</span> Events</button>
+          </div>
+        </div>
       </div>
 
       <!-- Quick Timeframe Filter Pills -->
@@ -913,6 +1294,9 @@
         <button type="button" class="time-pill" data-timeframe="december">December 2026</button>
         <button type="button" class="time-pill" data-timeframe="past">Past Events</button>
       </div>
+
+      <!-- Active Filter Chips (removable on mobile) -->
+      <div class="active-filter-chips" id="active-filter-chips" aria-label="Active filters"></div>
 
       <!-- Status count row -->
       <div class="filter-status-row">
@@ -969,6 +1353,17 @@
   const resetBtn = document.getElementById('reset-filters-btn');
   const emptyResetBtn = document.getElementById('empty-reset-btn');
   const timePills = document.querySelectorAll('.time-pill');
+
+  // Mobile drawer elements
+  const filterToggleBtn = document.getElementById('filter-toggle-btn');
+  const filterBadge = document.getElementById('filter-badge');
+  const filterDropdownsGroup = document.getElementById('filter-dropdowns-group');
+  const filterDrawerBackdrop = document.getElementById('filter-drawer-backdrop');
+  const drawerCloseBtn = document.getElementById('drawer-close-btn');
+  const drawerResetBtn = document.getElementById('drawer-reset-btn');
+  const drawerApplyBtn = document.getElementById('drawer-apply-btn');
+  const drawerApplyCount = document.getElementById('drawer-apply-count');
+  const activeFilterChips = document.getElementById('active-filter-chips');
 
   const agendaList = document.getElementById('agenda-list');
   const emptyState = document.getElementById('empty-state');
@@ -1096,6 +1491,33 @@
     resetBtn.addEventListener('click', resetFilters);
     emptyResetBtn.addEventListener('click', resetFilters);
 
+    // Mobile drawer triggers
+    if (filterToggleBtn) filterToggleBtn.addEventListener('click', openFilterDrawer);
+    if (drawerCloseBtn) drawerCloseBtn.addEventListener('click', closeFilterDrawer);
+    if (filterDrawerBackdrop) filterDrawerBackdrop.addEventListener('click', closeFilterDrawer);
+    if (drawerResetBtn) {
+      drawerResetBtn.addEventListener('click', () => {
+        resetFilters();
+        closeFilterDrawer();
+      });
+    }
+    if (drawerApplyBtn) {
+      drawerApplyBtn.addEventListener('click', () => {
+        closeFilterDrawer();
+        const agendaEl = document.getElementById('agenda-main');
+        if (agendaEl) {
+          const top = agendaEl.getBoundingClientRect().top + window.pageYOffset - 110;
+          window.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
+        }
+      });
+    }
+
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && filterDropdownsGroup && filterDropdownsGroup.classList.contains('is-open')) {
+        closeFilterDrawer();
+      }
+    });
+
     timePills.forEach(pill => {
       pill.addEventListener('click', () => {
         timePills.forEach(p => p.classList.remove('active'));
@@ -1108,6 +1530,81 @@
     renderAgenda();
   }
 
+  function openFilterDrawer() {
+    if (!filterDropdownsGroup) return;
+    filterDropdownsGroup.classList.add('is-open');
+    if (filterDrawerBackdrop) filterDrawerBackdrop.classList.add('is-open');
+    if (filterToggleBtn) filterToggleBtn.setAttribute('aria-expanded', 'true');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeFilterDrawer() {
+    if (!filterDropdownsGroup) return;
+    filterDropdownsGroup.classList.remove('is-open');
+    if (filterDrawerBackdrop) filterDrawerBackdrop.classList.remove('is-open');
+    if (filterToggleBtn) filterToggleBtn.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+  }
+
+  function escapeHtml(str) {
+    if (!str) return '';
+    return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+  }
+
+  function updateMobileFilterStatus(selCat, selOrg, selArea, countVisible) {
+    let count = 0;
+    if (selCat) count++;
+    if (selOrg) count++;
+    if (selArea) count++;
+
+    if (filterBadge) {
+      if (count > 0) {
+        filterBadge.textContent = count;
+        filterBadge.style.display = 'inline-flex';
+      } else {
+        filterBadge.style.display = 'none';
+      }
+    }
+
+    if (filterToggleBtn) {
+      filterToggleBtn.classList.toggle('has-filters', count > 0);
+    }
+
+    if (drawerApplyCount) {
+      drawerApplyCount.textContent = countVisible;
+    }
+
+    if (activeFilterChips) {
+      if (count === 0) {
+        activeFilterChips.innerHTML = '';
+        activeFilterChips.classList.remove('has-chips');
+      } else {
+        let chipsHtml = '';
+        if (selCat) {
+          chipsHtml += `<span class="active-chip">Category: ${escapeHtml(selCat)} <button type="button" data-clear="cat" aria-label="Clear category filter">✕</button></span>`;
+        }
+        if (selOrg) {
+          chipsHtml += `<span class="active-chip">Host: ${escapeHtml(selOrg)} <button type="button" data-clear="org" aria-label="Clear organization filter">✕</button></span>`;
+        }
+        if (selArea) {
+          chipsHtml += `<span class="active-chip">Area: ${escapeHtml(selArea)} <button type="button" data-clear="area" aria-label="Clear area filter">✕</button></span>`;
+        }
+        activeFilterChips.innerHTML = chipsHtml;
+        activeFilterChips.classList.add('has-chips');
+
+        activeFilterChips.querySelectorAll('button[data-clear]').forEach(btn => {
+          btn.addEventListener('click', (e) => {
+            const target = e.currentTarget.getAttribute('data-clear');
+            if (target === 'cat') categoryFilter.value = '';
+            if (target === 'org' && orgFilter) orgFilter.value = '';
+            if (target === 'area') areaFilter.value = '';
+            renderAgenda();
+          });
+        });
+      }
+    }
+  }
+
   function resetFilters() {
     searchInput.value = '';
     clearSearchBtn.style.display = 'none';
@@ -1118,6 +1615,7 @@
     timePills.forEach(p => p.classList.remove('active'));
     document.querySelector('.time-pill[data-timeframe="all"]').classList.add('active');
     renderAgenda();
+    closeFilterDrawer();
   }
 
   // Helper date functions with dynamic browser date detection
@@ -1354,6 +1852,7 @@
     });
 
     visibleCountEl.textContent = filtered.length;
+    updateMobileFilterStatus(selCat, selOrg, selArea, filtered.length);
 
     if (filtered.length === 0) {
       agendaList.innerHTML = '';

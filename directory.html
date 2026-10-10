@@ -355,6 +355,106 @@
   }
   .result-count b { color: var(--text); font-weight: 700; }
 
+  /* Mobile Filter Toggle & Drawer Styles */
+  .directory-filter-toggle {
+    display: none;
+    align-items: center;
+    gap: 7px;
+    height: 42px;
+    padding: 0 14px;
+    border-radius: 12px;
+    background: var(--surface-2);
+    border: 1.5px solid var(--line);
+    font-family: var(--font);
+    font-size: 13.5px;
+    font-weight: 600;
+    color: var(--text);
+    cursor: pointer;
+    white-space: nowrap;
+    flex-shrink: 0;
+    transition: all .2s ease;
+  }
+  .directory-filter-toggle:hover {
+    background: #fff;
+    border-color: #cbd5e1;
+    color: var(--violet);
+  }
+  .directory-filter-toggle.has-filters {
+    background: #f5f3ff;
+    border-color: var(--violet);
+    color: var(--violet);
+  }
+  .directory-filter-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 19px;
+    height: 19px;
+    padding: 0 5px;
+    border-radius: 999px;
+    background: var(--violet);
+    color: #fff;
+    font-size: 11px;
+    font-weight: 800;
+    line-height: 1;
+  }
+
+  /* Desktop Filter Dropdowns Group */
+  .directory-dropdowns-group {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    flex: 1 1 auto;
+    flex-wrap: wrap;
+  }
+  .drawer-header-mobile,
+  .drawer-actions-mobile,
+  .mobile-filter-label,
+  .filter-drawer-backdrop {
+    display: none;
+  }
+
+  /* Active Filter Chips */
+  .active-filter-chips {
+    display: none;
+    align-items: center;
+    gap: 6px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+    padding: 2px 0 0;
+  }
+  .active-filter-chips::-webkit-scrollbar { display: none; }
+  .active-filter-chips.has-chips { display: flex; }
+  .active-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 3px 10px;
+    background: #f5f3ff;
+    border: 1px solid #ddd6fe;
+    color: var(--violet);
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 999px;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  .active-chip button {
+    background: none;
+    border: none;
+    color: var(--violet);
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 0;
+    margin-left: 2px;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   /* Quick-filter Category Pills Row */
   .category-chips {
     display: flex;
@@ -649,18 +749,238 @@
     .visit-btn, .events-btn { flex: 1 1 auto; justify-content: center; }
   }
 
-  @media (max-width: 640px) {
-    .hero-inner { padding-top: 36px; padding-bottom: 75px; padding-left: 20px; padding-right: 20px; }
+  @media (max-width: 768px) {
+    .hero-inner { padding: 36px 20px 60px; }
     .hero h1 { font-size: 32px; letter-spacing: -.8px; }
     .hero .subtitle { font-size: 16px; }
-    .hero-stats { gap: 24px; margin-top: 24px; }
-    .filter-wrap { padding: 0 16px 12px; }
-    .filters { margin-top: -38px; padding: 16px; }
-    .filter-select { width: 100%; min-width: auto; }
-    .result-count { width: 100%; margin-left: 0; justify-content: space-between; }
-    .list-wrap { padding: 18px 16px 60px; }
-    .category-chips { overflow-x: auto; flex-wrap: nowrap; padding-bottom: 6px; -webkit-overflow-scrolling: touch; }
-    .chip { flex-shrink: 0; }
+    .hero-stats { gap: 20px; margin-top: 24px; }
+
+    /* Compact Sticky Filter Bar on Mobile */
+    .filter-wrap {
+      padding: 0 14px 10px;
+    }
+    .filters {
+      margin-top: -30px;
+      padding: 10px 12px;
+      gap: 8px;
+      border-radius: 16px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+    }
+    .filter-row-top {
+      display: flex;
+      flex-wrap: nowrap;
+      gap: 8px;
+      align-items: center;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    .search-wrapper {
+      flex: 1 1 0%;
+      min-width: 0;
+      width: 0;
+    }
+    .search-box {
+      min-width: 0;
+      width: 100%;
+      box-sizing: border-box;
+      height: 42px;
+      font-size: 16px; /* Prevents auto-zoom on iOS */
+      padding: 10px 32px 10px 36px;
+      border-radius: 12px;
+    }
+    .directory-filter-toggle {
+      display: inline-flex;
+      flex: 0 0 auto;
+      height: 42px;
+      padding: 0 12px;
+      border-radius: 12px;
+      box-sizing: border-box;
+    }
+
+    /* Transform Directory Dropdowns into Slide-up Bottom Sheet Modal */
+    .directory-dropdowns-group {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      max-height: 85dvh;
+      background: var(--surface);
+      border-radius: 22px 22px 0 0;
+      padding: 16px 20px calc(24px + env(safe-area-inset-bottom));
+      box-shadow: 0 -10px 40px rgba(0,0,0,0.25);
+      z-index: 1001;
+      overflow-y: auto;
+      overscroll-behavior: contain;
+      flex-direction: column;
+      gap: 16px;
+      align-items: stretch;
+      animation: slideUpSheet .22s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .directory-dropdowns-group.is-open {
+      display: flex;
+    }
+
+    .filter-drawer-backdrop {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(15,23,42,0.5);
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+      z-index: 1000;
+      animation: fadeInBackdrop .2s ease;
+    }
+    .filter-drawer-backdrop.is-open {
+      display: block;
+    }
+
+    .drawer-header-mobile {
+      display: block;
+    }
+    .drawer-grab-bar {
+      width: 40px;
+      height: 4px;
+      background: #cbd5e1;
+      border-radius: 999px;
+      margin: -4px auto 14px;
+    }
+    .drawer-title-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--line-soft);
+    }
+    .drawer-title-row h3 {
+      font-family: var(--font-display);
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--ink);
+      margin: 0;
+    }
+    .drawer-close-btn {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      border: 1px solid var(--line);
+      background: var(--surface-2);
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--text-soft);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+    .drawer-close-btn:hover {
+      background: #fff;
+      color: var(--text);
+    }
+
+    .mobile-filter-label {
+      display: block;
+      font-size: 11.5px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .5px;
+      color: var(--text-faint);
+      margin-bottom: 6px;
+    }
+
+    .directory-dropdowns-group .filter-select {
+      width: 100%;
+      min-width: 0;
+      height: 46px;
+      font-size: 15px;
+      border-radius: 12px;
+      background-color: #f8fafc;
+    }
+
+    /* Hide desktop reset button and result count in drawer */
+    #reset-filters {
+      display: none !important;
+    }
+    .result-count {
+      display: none;
+    }
+
+    /* Drawer actions at bottom */
+    .drawer-actions-mobile {
+      display: flex;
+      gap: 10px;
+      margin-top: 8px;
+      padding-top: 14px;
+      border-top: 1px solid var(--line-soft);
+    }
+    .drawer-btn-reset {
+      flex: 0 0 auto;
+      height: 46px;
+      padding: 0 18px;
+      border-radius: 12px;
+      border: 1px solid var(--line);
+      background: var(--surface-2);
+      font-family: var(--font);
+      font-size: 13.5px;
+      font-weight: 600;
+      color: var(--text-soft);
+      cursor: pointer;
+    }
+    .drawer-btn-reset:hover {
+      background: #fff;
+      color: var(--text);
+    }
+    .drawer-btn-apply {
+      flex: 1;
+      height: 46px;
+      border-radius: 12px;
+      border: none;
+      background: var(--violet);
+      color: #ffffff;
+      font-family: var(--font);
+      font-size: 14.5px;
+      font-weight: 700;
+      cursor: pointer;
+      box-shadow: 0 4px 14px rgba(109,79,240,.35);
+      transition: all .15s ease;
+    }
+    .drawer-btn-apply:hover {
+      background: var(--violet-deep);
+    }
+
+    /* Category Quick Chips on mobile */
+    .category-chips {
+      overflow-x: auto;
+      flex-wrap: nowrap;
+      padding: 2px 0 2px;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+      gap: 6px;
+      border-top: none;
+    }
+    .category-chips::-webkit-scrollbar { display: none; }
+    .chip-label { display: none; }
+    .chip {
+      font-size: 12.5px;
+      padding: 5px 12px;
+      flex-shrink: 0;
+    }
+
+    .list-wrap {
+      padding: 14px 14px 60px;
+    }
+    .site-nav-inner {
+      padding: 12px 16px;
+    }
+  }
+
+  @keyframes slideUpSheet {
+    from { transform: translateY(100%); }
+    to { transform: translateY(0); }
+  }
+  @keyframes fadeInBackdrop {
+    from { opacity: 0; }
+    to { opacity: 1; }
   }
   /* ================= NAVIGATION BAR ================= */
   .site-nav {
@@ -772,29 +1092,81 @@
   </header>
 
   <div class="filter-wrap" role="region" aria-label="Filter and search controls">
+    <!-- Backdrop for mobile directory filter drawer -->
+    <div class="filter-drawer-backdrop" id="directory-backdrop" aria-hidden="true"></div>
+
     <div class="filters">
       <div class="filter-row-top">
         <div class="search-wrapper">
           <input type="text" id="search" class="search-box" placeholder="Search by name, activity, or area (e.g. kayak, Capitol Hill, birding)…" autocomplete="off" aria-label="Search community directory">
           <button type="button" id="clear-search" class="clear-search-btn" aria-label="Clear search input">&times;</button>
         </div>
-        <select id="filter-activity" class="filter-select" aria-label="Filter by specific activity">
-          <option value="">All activities</option>
-        </select>
-        <select id="filter-area" class="filter-select" aria-label="Filter by neighborhood or area">
-          <option value="">All areas</option>
-        </select>
-        <select id="filter-sort" class="filter-select" aria-label="Sort communities">
-          <option value="name-asc">Sort: Name (A → Z)</option>
-          <option value="name-desc">Sort: Name (Z → A)</option>
-          <option value="activity-asc">Sort: Activity Type</option>
-          <option value="area-asc">Sort: Area / Location</option>
-        </select>
-        <button type="button" id="reset-filters" class="reset-filters-btn" aria-label="Reset all filters">
-          <span>✕</span> Reset
+
+        <!-- Mobile Filter Toggle Button -->
+        <button type="button" class="directory-filter-toggle" id="directory-filter-toggle" aria-label="Open filter options" aria-expanded="false" aria-controls="directory-dropdowns-group">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="4" y1="21" x2="4" y2="14"></line>
+            <line x1="4" y1="10" x2="4" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="12"></line>
+            <line x1="12" y1="8" x2="12" y2="3"></line>
+            <line x1="20" y1="21" x2="20" y2="16"></line>
+            <line x1="20" y1="12" x2="20" y2="3"></line>
+            <line x1="1" y1="14" x2="7" y2="14"></line>
+            <line x1="9" y1="8" x2="15" y2="8"></line>
+            <line x1="17" y1="16" x2="23" y2="16"></line>
+          </svg>
+          <span>Filters</span>
+          <span class="directory-filter-badge" id="directory-filter-badge" style="display:none">0</span>
         </button>
-        <div class="result-count" id="result-count" role="status" aria-live="polite">
-          <span>Showing <b id="showing-count">0</b> of <span id="total-count">0</span></span>
+
+        <!-- Dropdowns Group (Inline on Desktop, Slide-up Sheet on Mobile) -->
+        <div class="directory-dropdowns-group" id="directory-dropdowns-group" role="region" aria-label="Directory filter options">
+          <!-- Mobile Drawer Header -->
+          <div class="drawer-header-mobile">
+            <div class="drawer-grab-bar"></div>
+            <div class="drawer-title-row">
+              <h3>Filter Communities</h3>
+              <button type="button" class="drawer-close-btn" id="drawer-dir-close-btn" aria-label="Close filters">✕</button>
+            </div>
+          </div>
+
+          <div class="select-wrapper">
+            <label class="mobile-filter-label" for="filter-activity">Activity Type</label>
+            <select id="filter-activity" class="filter-select" aria-label="Filter by specific activity">
+              <option value="">All activities</option>
+            </select>
+          </div>
+
+          <div class="select-wrapper">
+            <label class="mobile-filter-label" for="filter-area">Neighborhood / Area</label>
+            <select id="filter-area" class="filter-select" aria-label="Filter by neighborhood or area">
+              <option value="">All areas</option>
+            </select>
+          </div>
+
+          <div class="select-wrapper">
+            <label class="mobile-filter-label" for="filter-sort">Sort Order</label>
+            <select id="filter-sort" class="filter-select" aria-label="Sort communities">
+              <option value="name-asc">Sort: Name (A → Z)</option>
+              <option value="name-desc">Sort: Name (Z → A)</option>
+              <option value="activity-asc">Sort: Activity Type</option>
+              <option value="area-asc">Sort: Area / Location</option>
+            </select>
+          </div>
+
+          <button type="button" id="reset-filters" class="reset-filters-btn" aria-label="Reset all filters">
+            <span>✕</span> Reset
+          </button>
+
+          <div class="result-count" id="result-count" role="status" aria-live="polite">
+            <span>Showing <b id="showing-count">0</b> of <span id="total-count">0</span></span>
+          </div>
+
+          <!-- Drawer Bottom Actions (Mobile) -->
+          <div class="drawer-actions-mobile">
+            <button type="button" class="drawer-btn-reset" id="drawer-dir-reset-btn">Reset All</button>
+            <button type="button" class="drawer-btn-apply" id="drawer-dir-apply-btn">Show <span id="drawer-dir-count">0</span> Groups</button>
+          </div>
         </div>
       </div>
 
@@ -808,6 +1180,9 @@
         <button type="button" class="chip" data-cat="community">🤝 Community &amp; Civic</button>
         <button type="button" class="chip" data-cat="food">☕ Food &amp; Drink</button>
       </div>
+
+      <!-- Active Filter Chips (removable on mobile) -->
+      <div class="active-filter-chips" id="directory-active-chips" aria-label="Active filters"></div>
     </div>
   </div>
 
@@ -964,7 +1339,90 @@
 
     renderList();
     updateResultCount();
+    updateDirMobileStatus(activity, area, sortVal, filteredData.length);
     updateUrlState();
+  }
+
+  function openDirDrawer() {
+    const drawer = document.getElementById('directory-dropdowns-group');
+    const backdrop = document.getElementById('directory-backdrop');
+    const toggle = document.getElementById('directory-filter-toggle');
+    if (!drawer) return;
+    drawer.classList.add('is-open');
+    if (backdrop) backdrop.classList.add('is-open');
+    if (toggle) toggle.setAttribute('aria-expanded', 'true');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeDirDrawer() {
+    const drawer = document.getElementById('directory-dropdowns-group');
+    const backdrop = document.getElementById('directory-backdrop');
+    const toggle = document.getElementById('directory-filter-toggle');
+    if (!drawer) return;
+    drawer.classList.remove('is-open');
+    if (backdrop) backdrop.classList.remove('is-open');
+    if (toggle) toggle.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+  }
+
+  function updateDirMobileStatus(activity, area, sortVal, visibleCount) {
+    const badge = document.getElementById('directory-filter-badge');
+    const toggle = document.getElementById('directory-filter-toggle');
+    const drawerCount = document.getElementById('drawer-dir-count');
+    const activeChipsContainer = document.getElementById('directory-active-chips');
+
+    let count = 0;
+    if (activity) count++;
+    if (area) count++;
+    if (sortVal && sortVal !== 'name-asc') count++;
+
+    if (badge) {
+      if (count > 0) {
+        badge.textContent = count;
+        badge.style.display = 'inline-flex';
+      } else {
+        badge.style.display = 'none';
+      }
+    }
+
+    if (toggle) {
+      toggle.classList.toggle('has-filters', count > 0);
+    }
+
+    if (drawerCount) {
+      drawerCount.textContent = visibleCount;
+    }
+
+    if (activeChipsContainer) {
+      if (!activity && !area && (!sortVal || sortVal === 'name-asc')) {
+        activeChipsContainer.innerHTML = '';
+        activeChipsContainer.classList.remove('has-chips');
+      } else {
+        let chipsHtml = '';
+        if (activity) {
+          chipsHtml += `<span class="active-chip">Activity: ${escapeHtml(activity)} <button type="button" data-clear="act" aria-label="Clear activity filter">✕</button></span>`;
+        }
+        if (area) {
+          chipsHtml += `<span class="active-chip">Area: ${escapeHtml(area)} <button type="button" data-clear="area" aria-label="Clear area filter">✕</button></span>`;
+        }
+        if (sortVal && sortVal !== 'name-asc') {
+          const sortLabel = sortVal === 'name-desc' ? 'Z → A' : (sortVal === 'activity-asc' ? 'By Activity' : 'By Area');
+          chipsHtml += `<span class="active-chip">Sort: ${sortLabel} <button type="button" data-clear="sort" aria-label="Reset sort order">✕</button></span>`;
+        }
+        activeChipsContainer.innerHTML = chipsHtml;
+        activeChipsContainer.classList.add('has-chips');
+
+        activeChipsContainer.querySelectorAll('button[data-clear]').forEach(btn => {
+          btn.addEventListener('click', (e) => {
+            const target = e.currentTarget.getAttribute('data-clear');
+            if (target === 'act') document.getElementById('filter-activity').value = '';
+            if (target === 'area') document.getElementById('filter-area').value = '';
+            if (target === 'sort') document.getElementById('filter-sort').value = 'name-asc';
+            filterAndSort();
+          });
+        });
+      }
+    }
   }
 
   function renderList() {
@@ -1038,6 +1496,7 @@
       c.classList.toggle('active', c.dataset.cat === 'all');
     });
     filterAndSort();
+    closeDirDrawer();
   };
 
   function populateSelects() {
@@ -1130,6 +1589,40 @@
     document.getElementById('filter-area').addEventListener('change', filterAndSort);
     document.getElementById('filter-sort').addEventListener('change', filterAndSort);
     document.getElementById('reset-filters').addEventListener('click', window.resetAllFilters);
+
+    // Mobile drawer triggers
+    const dirToggle = document.getElementById('directory-filter-toggle');
+    const dirCloseBtn = document.getElementById('drawer-dir-close-btn');
+    const dirBackdrop = document.getElementById('directory-backdrop');
+    const dirResetBtn = document.getElementById('drawer-dir-reset-btn');
+    const dirApplyBtn = document.getElementById('drawer-dir-apply-btn');
+
+    if (dirToggle) dirToggle.addEventListener('click', openDirDrawer);
+    if (dirCloseBtn) dirCloseBtn.addEventListener('click', closeDirDrawer);
+    if (dirBackdrop) dirBackdrop.addEventListener('click', closeDirDrawer);
+    if (dirResetBtn) {
+      dirResetBtn.addEventListener('click', () => {
+        window.resetAllFilters();
+        closeDirDrawer();
+      });
+    }
+    if (dirApplyBtn) {
+      dirApplyBtn.addEventListener('click', () => {
+        closeDirDrawer();
+        const listEl = document.getElementById('list-wrap');
+        if (listEl) {
+          const top = listEl.getBoundingClientRect().top + window.pageYOffset - 110;
+          window.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
+        }
+      });
+    }
+
+    window.addEventListener('keydown', (e) => {
+      const drawer = document.getElementById('directory-dropdowns-group');
+      if (e.key === 'Escape' && drawer && drawer.classList.contains('is-open')) {
+        closeDirDrawer();
+      }
+    });
 
     // Category chips click handler
     document.getElementById('category-chips').addEventListener('click', e => {
