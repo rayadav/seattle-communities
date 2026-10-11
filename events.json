@@ -4208,6 +4208,22 @@
     "recurrence": "Annual Film Festival Tour"
   },
   {
+    "id": "usk-seattle-swansons-nursery-2026-10-16",
+    "title": "Urban Sketchers Seattle: Swansons Nursery Fall Sketch Outing",
+    "organization": "Urban Sketchers Seattle",
+    "activityType": "Art",
+    "area": "Seattle (Crown Hill / Ballard)",
+    "venue": "Swansons Nursery (9701 15th Ave NW, Seattle, WA 98117)",
+    "start": "2026-10-16T11:00:00-07:00",
+    "end": "2026-10-16T13:30:00-07:00",
+    "timeString": "11:00 AM – 1:30 PM",
+    "dateString": "2026-10-16",
+    "description": "Free open-air on-location sketching session at Swansons Nursery amidst autumn displays, pumpkins, koi ponds, and greenhouse foliage. Concludes with a traditional group sketchbook throwdown.",
+    "url": "http://seattle.urbansketchers.org/p/all-outings-begin-at-10-a.html",
+    "cost": "Free & open to all skill levels",
+    "recurrence": "Special Monthly Outing"
+  },
+  {
     "id": "burke-qi-gong-2026-10-16",
     "title": "Wellness Class: Introduction to Qi Gong (Series Finale)",
     "organization": "The Burke Museum",
@@ -4720,6 +4736,22 @@
     "recurrence": "Third Tuesday of the month"
   },
   {
+    "id": "wffc-dinner-meeting-phil-rowley-2026-10-20",
+    "title": "WFFC October Dinner Meeting: Stillwater Fly Fishing with Phil Rowley",
+    "organization": "Washington Fly Fishing Club",
+    "activityType": "Outdoors",
+    "area": "Seattle (Madison Park)",
+    "venue": "Seattle Tennis Club (922 McGilvra Blvd E, Seattle, WA 98112)",
+    "start": "2026-10-20T17:30:00-07:00",
+    "end": "2026-10-20T21:00:00-07:00",
+    "timeString": "5:30 PM – 9:00 PM",
+    "dateString": "2026-10-20",
+    "description": "Monthly gathering of the Washington Fly Fishing Club featuring acclaimed stillwater authority Phil Rowley sharing seasonal insect emergence tactics, fly design, and presentation strategies for Pacific Northwest lakes.",
+    "url": "https://wffc.com/",
+    "cost": "Free meeting attendance / optional dinner",
+    "recurrence": "Monthly (3rd Tuesday)"
+  },
+  {
     "id": "chtl-tuesday-hours-2026-10-20",
     "title": "Capitol Hill Tool Library: Midweek Tool Lending & Repair Desk",
     "organization": "Capitol Hill Tool Library",
@@ -4814,6 +4846,22 @@
     "url": "https://www.eastsideaudubon.org/calendar/bird-walk-lake-sammamish-park",
     "cost": "Free (Discover Pass required for parking)",
     "recurrence": "Third Wednesday of the month"
+  },
+  {
+    "id": "sass-wednesday-fun-fly-2026-10-21",
+    "title": "SASS Wednesday Morning Thermal Soaring Fun Fly",
+    "organization": "Seattle Area Soaring Society",
+    "activityType": "RC Soaring",
+    "area": "Eastside (Redmond)",
+    "venue": "60 Acres Park South Fields (15400 NE 116th St, Redmond, WA 98052)",
+    "start": "2026-10-21T08:00:00-07:00",
+    "end": "2026-10-21T11:30:00-07:00",
+    "timeString": "8:00 AM – 11:30 AM",
+    "dateString": "2026-10-21",
+    "description": "Weekly morning radio-controlled thermal soaring gathering hosted by the Seattle Area Soaring Society. Pilots launch winched and hand-launch gliders; spectators and prospective pilots warmly welcome.",
+    "url": "https://www.seattlesoaring.org/",
+    "cost": "Free for spectators / AMA card to fly",
+    "recurrence": "Weekly on Wednesdays"
   },
   {
     "id": "mox-paint-jam-2026-10-21",
@@ -4944,6 +4992,22 @@
     "recurrence": "Special Event"
   },
   {
+    "id": "usk-seattle-drink-and-draw-project9-2026-10-23",
+    "title": "Urban Sketchers Seattle: Drink & Draw at Project 9 Brewing",
+    "organization": "Urban Sketchers Seattle",
+    "activityType": "Art",
+    "area": "Seattle (Maple Leaf)",
+    "venue": "Project 9 Brewing Co. (1409 NE 80th St, Seattle, WA 98115)",
+    "start": "2026-10-23T16:00:00-07:00",
+    "end": "2026-10-23T18:00:00-07:00",
+    "timeString": "4:00 PM – 6:00 PM",
+    "dateString": "2026-10-23",
+    "description": "Casual Friday evening community sketch session inside the taproom at Project 9 Brewing Co. Bring your favorite pens, watercolors, and sketchbooks for relaxed indoor drawing and artistic camaraderie.",
+    "url": "http://seattle.urbansketchers.org/p/all-outings-begin-at-10-a.html",
+    "cost": "Free & open to all",
+    "recurrence": "Special Outing"
+  },
+  {
     "id": "mox-fnm-draft-2026-10-23",
     "title": "Mox Seattle: Friday Night Magic (FNM) Booster Draft",
     "organization": "Mox Boarding House",
@@ -5006,6 +5070,22 @@
     "url": "https://www.tahomabirdalliance.org/bird-walks",
     "cost": "Free",
     "recurrence": "4th Saturday of each month"
+  },
+  {
+    "id": "wffc-lake-hannan-outing-2026-10-24",
+    "title": "WFFC Fall Stillwater Outing at Lake Hannan",
+    "organization": "Washington Fly Fishing Club",
+    "activityType": "Outdoors",
+    "area": "Puget Sound / Kitsap County",
+    "venue": "Lake Hannan (Belfair / Bremerton Area, WA)",
+    "start": "2026-10-24T08:00:00-07:00",
+    "end": "2026-10-24T16:00:00-07:00",
+    "timeString": "8:00 AM – 4:00 PM",
+    "dateString": "2026-10-24",
+    "description": "Autumn stillwater fly angling club outing on Lake Hannan. Practice chironomid and leech presentations from pontoon boats and float tubes with experienced club mentors.",
+    "url": "https://wffc.com/",
+    "cost": "Free for members and guests",
+    "recurrence": "Special Club Outing"
   },
   {
     "id": "eastside-audubon-birding-class-2026-10-24",
@@ -5328,6 +5408,22 @@
     "recurrence": "Weekly on Tuesdays"
   },
   {
+    "id": "nwws-hook-watercolor-demo-2026-10-27",
+    "title": "NWWS October Meeting & Painting Demonstration with William G. Hook",
+    "organization": "Northwest Watercolor Society",
+    "activityType": "Art",
+    "area": "Seattle / Online",
+    "venue": "Online / NWWS Seattle Studio (Seattle, WA)",
+    "start": "2026-10-27T18:00:00-07:00",
+    "end": "2026-10-27T20:00:00-07:00",
+    "timeString": "6:00 PM – 8:00 PM",
+    "dateString": "2026-10-27",
+    "description": "Free public evening meeting and watercolor painting demonstration featuring acclaimed landscape master William G. Hook sharing composition, brush techniques, and watercolor handling.",
+    "url": "https://www.nwws.org/nwws-general-meetings/",
+    "cost": "Free & open to the public",
+    "recurrence": "Monthly (4th Tuesday)"
+  },
+  {
     "id": "psba-meeting-2026-10-27",
     "title": "Puget Sound Beekeepers Association October Meeting",
     "organization": "Puget Sound Beekeepers",
@@ -5486,6 +5582,22 @@
     "url": "https://www.moxboardinghouse.com/pages/seattle-events",
     "cost": "Draft entry fee",
     "recurrence": "Weekly on Fridays"
+  },
+  {
+    "id": "nwws-86th-annual-international-exhibition-2026-10-30",
+    "title": "NWWS 86th Annual International Open Exhibition Opening & Awards",
+    "organization": "Northwest Watercolor Society",
+    "activityType": "Art",
+    "area": "Seattle / Puget Sound area",
+    "venue": "Northwest Watercolor Society (Seattle, WA)",
+    "start": "2026-10-30T18:00:00-07:00",
+    "end": "2026-10-30T20:00:00-07:00",
+    "timeString": "6:00 PM – 8:00 PM",
+    "dateString": "2026-10-30",
+    "description": "Opening reception and awards presentation for the 86th Annual International Open Exhibition celebrating world-class contemporary watermedia artists from across the globe.",
+    "url": "https://www.nwws.org/",
+    "cost": "Free admission",
+    "recurrence": "Annual Exhibition"
   },
   {
     "id": "makers-halloween-party-2026-10-30",
@@ -5824,6 +5936,22 @@
     "recurrence": "Bi-weekly Wednesdays"
   },
   {
+    "id": "sass-wednesday-fun-fly-2026-11-04",
+    "title": "SASS Wednesday Morning Thermal Soaring Fun Fly",
+    "organization": "Seattle Area Soaring Society",
+    "activityType": "RC Soaring",
+    "area": "Eastside (Redmond)",
+    "venue": "60 Acres Park South Fields (15400 NE 116th St, Redmond, WA 98052)",
+    "start": "2026-11-04T08:00:00-08:00",
+    "end": "2026-11-04T11:30:00-08:00",
+    "timeString": "8:00 AM – 11:30 AM",
+    "dateString": "2026-11-04",
+    "description": "Midweek radio-controlled glider session at 60 Acres. Pilots launch winched and DLG gliders over the grass meadows with flight coaching available.",
+    "url": "https://www.seattlesoaring.org/",
+    "cost": "Free for spectators / AMA card to fly",
+    "recurrence": "Weekly on Wednesdays"
+  },
+  {
     "id": "gcc-wednesday-juniors-2026-11-04",
     "title": "Granite Curling Club: Wednesday Youth & Juniors League",
     "organization": "Seattle Curling Club",
@@ -6032,6 +6160,22 @@
     "recurrence": "Weekly on Fridays"
   },
   {
+    "id": "sckc-eric-hughes-regatta-2026-11-07",
+    "title": "Eric Hughes Memorial Distance Regatta",
+    "organization": "Seattle Canoe and Kayak Club",
+    "activityType": "Water Sports",
+    "area": "Green Lake, Seattle",
+    "venue": "Green Lake Small Craft Center (5900 W Green Lake Way N, Seattle, WA 98103)",
+    "start": "2026-11-07T08:30:00-08:00",
+    "end": "2026-11-07T14:00:00-08:00",
+    "timeString": "8:30 AM – 2:00 PM",
+    "dateString": "2026-11-07",
+    "description": "Annual long-distance paddling regatta on Green Lake featuring 2.5km, 5km, and 10km junior, master, and citizen divisions in sprint kayak, canoe, surfski, and SUP.",
+    "url": "https://seattlecanoekayak.club/",
+    "cost": "Free for spectators / entry fee for racers",
+    "recurrence": "Annual Regatta"
+  },
+  {
     "id": "tba-gateway-park-2026-11-07",
     "title": "Tahoma Bird Alliance: Guided Bird Walk at Gateway Park",
     "organization": "Tahoma Bird Alliance",
@@ -6158,6 +6302,22 @@
     "url": "https://sustainablecapitolhill.org/tool-library/",
     "cost": "Pay-what-you-can membership ($0 - $35/yr)",
     "recurrence": "Weekly on Saturdays"
+  },
+  {
+    "id": "nwssa-sculpture-crate-building-2026-11-07",
+    "title": "Stone Sculpture Crate Building Workshop",
+    "organization": "Northwest Stone Sculptors Association",
+    "activityType": "Art",
+    "area": "Seattle / Puget Sound area",
+    "venue": "The Stoneyard Studio (Puget Sound, WA)",
+    "start": "2026-11-07T10:00:00-08:00",
+    "end": "2026-11-07T16:00:00-08:00",
+    "timeString": "10:00 AM – 4:00 PM",
+    "dateString": "2026-11-07",
+    "description": "Hands-on sculpture transport workshop teaching artists how to safely construct custom wooden crating and cushioning systems to transport heavy carved stone sculptures.",
+    "url": "https://www.nwssa.org/",
+    "cost": "Registration required",
+    "recurrence": "Special Workshop"
   },
   {
     "id": "tilth-perennial-edibles-2026-11-07",
@@ -6446,6 +6606,22 @@
     "url": "https://www.seattlego.org/schedule/",
     "cost": "Club fee",
     "recurrence": "Weekly on Thursdays"
+  },
+  {
+    "id": "wnps-uw-herbarium-flora-lecture-2026-11-12",
+    "title": "25 Years of Exploring the PNW Vascular Plant Flora at the UW Herbarium",
+    "organization": "Washington Native Plant Society (Central Puget Sound)",
+    "activityType": "Nature/Conservation",
+    "area": "Seattle (Magnuson Park)",
+    "venue": "The Mountaineers Seattle Program Center (7700 Sand Point Way NE, Seattle, WA 98115)",
+    "start": "2026-11-12T19:00:00-08:00",
+    "end": "2026-11-12T21:00:00-08:00",
+    "timeString": "7:00 PM – 9:00 PM",
+    "dateString": "2026-11-12",
+    "description": "Central Puget Sound Chapter public lecture exploring the University of Washington Herbarium vast collection, documenting rare endemic flora, tracking invasive species, and climate change impacts across the Pacific Northwest.",
+    "url": "https://www.wnps.org/events/",
+    "cost": "Free & open to the public",
+    "recurrence": "Monthly (Second Thursday)"
   },
   {
     "id": "burke-julie-kim-2026-11-13",
