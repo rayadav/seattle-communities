@@ -4064,6 +4064,22 @@
     "recurrence": "Weekly on Wednesdays"
   },
   {
+    "id": "wstl-fixit-workshop-2026-10-14",
+    "title": "West Seattle Tool Library: Wednesday Community Fix-It Workshop",
+    "organization": "West Seattle Tool Library",
+    "activityType": "Tools",
+    "area": "Seattle (West Seattle)",
+    "venue": "Youngstown Cultural Arts Center (4408 Delridge Way SW, Seattle, WA 98106)",
+    "start": "2026-10-14T17:30:00-07:00",
+    "end": "2026-10-14T19:30:00-07:00",
+    "timeString": "5:30 PM – 7:30 PM",
+    "dateString": "2026-10-14",
+    "description": "Weekly volunteer community repair night. Bring broken household appliances, small electronics, lamps, hand tools, and toys to diagnose and repair alongside volunteer community fixers.",
+    "url": "https://wstools.org/",
+    "cost": "Free (donations appreciated)",
+    "recurrence": "Weekly on Wednesdays"
+  },
+  {
     "id": "tilth-garlic-2026-10-14",
     "title": "Grow Great Garlic: Fall Planting for Spring Harvest",
     "organization": "Seattle Tilth Alliance Garden Stewards",
@@ -4110,6 +4126,22 @@
     "url": "https://www.seattlemqg.com/Calendar-of-Everything",
     "cost": "Free for members; visitor registration available",
     "recurrence": "Monthly (2nd Wednesdays)"
+  },
+  {
+    "id": "scms-monthly-meeting-2026-10-14",
+    "title": "SCMS October Meeting: Fall Fungi Identification & Ecology",
+    "organization": "Snohomish County Mycological Society",
+    "activityType": "Nature/Conservation",
+    "area": "Snohomish County (Everett)",
+    "venue": "Everett Firefighter's Hall (2411 Hewitt Ave, Everett, WA 98201)",
+    "start": "2026-10-14T19:00:00-07:00",
+    "end": "2026-10-14T21:00:00-07:00",
+    "timeString": "7:00 PM – 9:00 PM",
+    "dateString": "2026-10-14",
+    "description": "Monthly educational gathering of the Snohomish County Mycological Society featuring fresh seasonal wild mushroom identification, microscopy tips, and a guest lecture on Pacific Northwest forest mycology.",
+    "url": "https://www.scmsfungi.org/",
+    "cost": "Free & open to the public",
+    "recurrence": "Monthly (2nd Wednesday)"
   },
   {
     "id": "scc-wednesday-casual-2026-10-14",
@@ -4174,6 +4206,22 @@
     "url": "https://www.moxboardinghouse.com/pages/seattle-events",
     "cost": "Free",
     "recurrence": "Weekly on Thursdays"
+  },
+  {
+    "id": "wac-brews-and-beta-2026-10-15",
+    "title": "WAC Brews & Beta: Backcountry Routes and Gear Night",
+    "organization": "Washington Alpine Club",
+    "activityType": "Climbing",
+    "area": "Eastside (Issaquah)",
+    "venue": "Formula Brewing (1875 NW Poplar Way, Issaquah, WA 98027)",
+    "start": "2026-10-15T18:00:00-07:00",
+    "end": "2026-10-15T21:00:00-07:00",
+    "timeString": "6:00 PM – 9:00 PM",
+    "dateString": "2026-10-15",
+    "description": "Casual social and route-planning night hosted by the Washington Alpine Club. Meet fellow climbers, discuss trip reports, share beta on PNW peaks, and connect with prospective rope partners.",
+    "url": "https://washingtonalpineclub.org/",
+    "cost": "Free & open to prospective members",
+    "recurrence": "Monthly (3rd Thursday)"
   },
   {
     "id": "spsw-monthly-demonstration-20261015",
@@ -4496,6 +4544,22 @@
     "recurrence": "Seasonal tour"
   },
   {
+    "id": "oxbow-oxtober-harvest-festival-2026-10-17",
+    "title": "Oxtober Fall Harvest Festival & Pumpkin Patch",
+    "organization": "Oxbow Farm & Conservation Center",
+    "activityType": "Nature/Conservation",
+    "area": "Eastside (Carnation)",
+    "venue": "Oxbow Farm & Conservation Center (10819 Carnation-Duvall Rd NE, Carnation, WA 98014)",
+    "start": "2026-10-17T10:00:00-07:00",
+    "end": "2026-10-17T16:00:00-07:00",
+    "timeString": "10:00 AM – 4:00 PM",
+    "dateString": "2026-10-17",
+    "description": "Celebration of fall in the Snoqualmie Valley featuring certified organic pumpkin picking, living playground exploration, guided native plant tours, farm crafts, and seasonal foods.",
+    "url": "https://www.oxbow.org/events/",
+    "cost": "Free general admission / activity tickets",
+    "recurrence": "Annual Festival Weekend"
+  },
+  {
     "id": "tilth-pruning-prop-2026-10-17",
     "title": "Pruning and Propagating for the Edible Garden",
     "organization": "Seattle Tilth Alliance Garden Stewards",
@@ -4510,6 +4574,22 @@
     "url": "https://tilthalliance.org/events/",
     "cost": "Free – $150 sliding scale",
     "recurrence": "Weekend workshop"
+  },
+  {
+    "id": "saf-skyscrapers-walking-tour-2026-10-17",
+    "title": "SAF Architectural Walking Tour: Framed - Seattle Skyscrapers",
+    "organization": "Seattle Architecture Foundation",
+    "activityType": "Art",
+    "area": "Downtown Seattle",
+    "venue": "Seattle Central Library (1000 4th Ave, Seattle, WA 98104)",
+    "start": "2026-10-17T10:00:00-07:00",
+    "end": "2026-10-17T12:00:00-07:00",
+    "timeString": "10:00 AM – 12:00 PM",
+    "dateString": "2026-10-17",
+    "description": "Expert-led architectural walking tour through the heart of Downtown Seattle exploring historic terracotta towers, mid-century modern skyscrapers, and contemporary structural engineering marvels.",
+    "url": "https://seattlearchitecture.org/tours/",
+    "cost": " –  / advance ticket",
+    "recurrence": "Weekly on Saturdays"
   },
   {
     "id": "srs-meeting-2026-10-17",
@@ -4608,6 +4688,22 @@
     "recurrence": "Monthly (3rd Sundays)"
   },
   {
+    "id": "scms-annual-wild-mushroom-show-2026-10-18",
+    "title": "SCMS Annual Wild Mushroom Show at Floral Hall",
+    "organization": "Snohomish County Mycological Society",
+    "activityType": "Nature/Conservation",
+    "area": "Snohomish County (Everett)",
+    "venue": "Floral Hall, Forest Park (802 E Mukilteo Blvd, Everett, WA 98203)",
+    "start": "2026-10-18T10:00:00-07:00",
+    "end": "2026-10-18T16:00:00-07:00",
+    "timeString": "10:00 AM – 4:00 PM",
+    "dateString": "2026-10-18",
+    "description": "Everett's premier annual wild mushroom exhibition featuring over 150 freshly collected native fungi specimens, expert identification tables, mushroom dyeing demonstrations, book sales, and kids activities.",
+    "url": "https://www.scmsfungi.org/",
+    "cost": "Free admission (donations welcome)",
+    "recurrence": "Annual Exhibition"
+  },
+  {
     "id": "discnw-friz-fest-2026-10-18",
     "title": "DiscNW: 2026 Fall Friz Fest Community Celebration",
     "organization": "DiscNW (Northwest Ultimate Association)",
@@ -4672,6 +4768,22 @@
     "recurrence": "Seasonal workshop"
   },
   {
+    "id": "wac-annual-meeting-2026-10-18",
+    "title": "Washington Alpine Club Annual Meeting 2026",
+    "organization": "Washington Alpine Club",
+    "activityType": "Climbing",
+    "area": "Capitol Hill, Seattle",
+    "venue": "Prospect Congregational Church (1919 E Prospect St, Seattle, WA 98112)",
+    "start": "2026-10-18T18:00:00-07:00",
+    "end": "2026-10-18T20:30:00-07:00",
+    "timeString": "6:00 PM – 8:30 PM",
+    "dateString": "2026-10-18",
+    "description": "Annual general meeting celebrating 110 years of alpine mountaineering with club trip recaps, community slide show, committee awards, and upcoming winter expedition planning.",
+    "url": "https://washingtonalpineclub.org/",
+    "cost": "Free & open to all",
+    "recurrence": "Annual Meeting"
+  },
+  {
     "id": "psms-id-clinic-2026-10-19",
     "title": "Hildegard Hendrickson Mushroom ID Clinic",
     "organization": "Puget Sound Mycological Society",
@@ -4702,6 +4814,22 @@
     "url": "https://curlingseattle.org/content/2026-2027-monday-night",
     "cost": "League play / Free for spectators",
     "recurrence": "Weekly on Mondays"
+  },
+  {
+    "id": "hugo-house-works-in-progress-2026-10-19",
+    "title": "Hugo House: Works in Progress Community Open Mic",
+    "organization": "Hugo House",
+    "activityType": "Art",
+    "area": "Capitol Hill, Seattle",
+    "venue": "Hugo House (1634 11th Ave, Seattle, WA 98122)",
+    "start": "2026-10-19T19:00:00-07:00",
+    "end": "2026-10-19T21:00:00-07:00",
+    "timeString": "7:00 PM – 9:00 PM",
+    "dateString": "2026-10-19",
+    "description": "Semi-monthly community open mic night at Hugo House on Capitol Hill. Writers of all genres (poetry, fiction, essay, humor, memoir) read up to 5 minutes of new work before a supportive community audience.",
+    "url": "https://hugohouse.org/events/",
+    "cost": "Free & open to the public",
+    "recurrence": "1st & 3rd Mondays"
   },
   {
     "id": "rainier-audubon-meeting-2026-10-19",
@@ -4861,6 +4989,22 @@
     "description": "Weekly morning radio-controlled thermal soaring gathering hosted by the Seattle Area Soaring Society. Pilots launch winched and hand-launch gliders; spectators and prospective pilots warmly welcome.",
     "url": "https://www.seattlesoaring.org/",
     "cost": "Free for spectators / AMA card to fly",
+    "recurrence": "Weekly on Wednesdays"
+  },
+  {
+    "id": "wstl-fixit-workshop-2026-10-21",
+    "title": "West Seattle Tool Library: Wednesday Community Fix-It Workshop",
+    "organization": "West Seattle Tool Library",
+    "activityType": "Tools",
+    "area": "Seattle (West Seattle)",
+    "venue": "Youngstown Cultural Arts Center (4408 Delridge Way SW, Seattle, WA 98106)",
+    "start": "2026-10-21T17:30:00-07:00",
+    "end": "2026-10-21T19:30:00-07:00",
+    "timeString": "5:30 PM – 7:30 PM",
+    "dateString": "2026-10-21",
+    "description": "Weekly volunteer community repair night. Bring broken household appliances, small electronics, lamps, hand tools, and toys to diagnose and repair alongside volunteer community fixers.",
+    "url": "https://wstools.org/",
+    "cost": "Free (donations appreciated)",
     "recurrence": "Weekly on Wednesdays"
   },
   {
@@ -5200,6 +5344,22 @@
     "recurrence": "Special Event"
   },
   {
+    "id": "saf-pioneer-square-walking-tour-2026-10-24",
+    "title": "SAF Architectural Walking Tour: Hidden Spaces of Pioneer Square",
+    "organization": "Seattle Architecture Foundation",
+    "activityType": "Art",
+    "area": "Pioneer Square, Seattle",
+    "venue": "Occidental Square (117 S Washington St, Seattle, WA 98104)",
+    "start": "2026-10-24T10:00:00-07:00",
+    "end": "2026-10-24T12:00:00-07:00",
+    "timeString": "10:00 AM – 12:00 PM",
+    "dateString": "2026-10-24",
+    "description": "Guided walking tour through Seattle's oldest historic district tracing Romanesque Revival brick facades, cast-iron architecture, post-1889 Great Fire rebuilding, and urban alleyway transformations.",
+    "url": "https://seattlearchitecture.org/tours/",
+    "cost": " –  / advance ticket",
+    "recurrence": "Weekly on Saturdays"
+  },
+  {
     "id": "srcs-monthly-gathering-20261024",
     "title": "Seattle Retro-Computing Society Monthly Meeting",
     "organization": "Seattle Retro-Computing Society",
@@ -5392,6 +5552,22 @@
     "recurrence": "Weekly on Mondays"
   },
   {
+    "id": "science-on-tap-ravenna-2026-10-26",
+    "title": "Science on Tap: Marine Ecosystems & Salish Sea Fungi",
+    "organization": "Science on Tap Seattle",
+    "activityType": "Science",
+    "area": "Seattle (Ravenna)",
+    "venue": "Third Place Books Ravenna / Cafe Arta (6504 20th Ave NE, Seattle, WA 98115)",
+    "start": "2026-10-26T19:00:00-07:00",
+    "end": "2026-10-26T20:30:00-07:00",
+    "timeString": "7:00 PM – 8:30 PM",
+    "dateString": "2026-10-26",
+    "description": "Monthly public science discussion series held at Cafe Arta inside Third Place Books Ravenna. Enjoy food and craft beverage while engaging in a casual, expert-led science talk and community Q&A.",
+    "url": "https://scienceontap.org/",
+    "cost": "Free & open to the public",
+    "recurrence": "Monthly (Last Monday)"
+  },
+  {
     "id": "chtl-tuesday-hours-2026-10-27",
     "title": "Capitol Hill Tool Library: Midweek Tool Lending & Repair Desk",
     "organization": "Capitol Hill Tool Library",
@@ -5488,6 +5664,22 @@
     "recurrence": "Fourth Tuesday of the month"
   },
   {
+    "id": "sskc-october-meeting-2026-10-27",
+    "title": "Seattle Sea Kayak Club October Meeting & Trip Planning",
+    "organization": "Seattle Sea Kayak Club",
+    "activityType": "Water Sports",
+    "area": "Seattle / Mercer Island",
+    "venue": "Mercer Island Community & Event Center (8236 SE 24th St, Mercer Island, WA 98040)",
+    "start": "2026-10-27T19:00:00-07:00",
+    "end": "2026-10-27T21:00:00-07:00",
+    "timeString": "7:00 PM – 9:00 PM",
+    "dateString": "2026-10-27",
+    "description": "Monthly gathering of Puget Sound sea kayakers featuring coastal trip reports, seamanship presentations, and coordinating upcoming Salish Sea saltwater paddles.",
+    "url": "https://seattleseakayakclub.org/",
+    "cost": "Free & open to prospective paddlers",
+    "recurrence": "Monthly (Last Tuesday)"
+  },
+  {
     "id": "mof-docent-tour-2026-10-28",
     "title": "The Museum of Flight: Midweek Docent Aviation Tour",
     "organization": "Museum of Flight Docent Corps (Tukwila)",
@@ -5566,6 +5758,22 @@
     "url": "https://birdsconnectsea.org/calendar/",
     "cost": "Free",
     "recurrence": "Special Event"
+  },
+  {
+    "id": "barn-tech-lab-open-studio-2026-10-30",
+    "title": "BARN Tech Lab & Digital Fabrication Community Open Studio",
+    "organization": "Bainbridge Artisan Resource Network (BARN)",
+    "activityType": "Art",
+    "area": "Puget Sound (Bainbridge Island)",
+    "venue": "BARN Center (8890 Three Tree Lane NE, Bainbridge Island, WA 98110)",
+    "start": "2026-10-30T17:00:00-07:00",
+    "end": "2026-10-30T20:00:00-07:00",
+    "timeString": "5:00 PM – 8:00 PM",
+    "dateString": "2026-10-30",
+    "description": "Community open studio in the BARN Electronic & Technical Arts lab featuring 3D printing, laser cutting, CNC routing, and collaborative project troubleshooting.",
+    "url": "https://bainbridgebarn.org/events/",
+    "cost": "Free for members / prospective artisans",
+    "recurrence": "Bi-weekly Open Studio"
   },
   {
     "id": "mox-fnm-draft-2026-10-30",
@@ -5776,6 +5984,22 @@
     "recurrence": "Annual festival"
   },
   {
+    "id": "kpms-annual-wild-mushroom-show-2026-11-01",
+    "title": "Kitsap Peninsula Wild Mushroom Show & Fungi Showcase",
+    "organization": "Kitsap Peninsula Mycological Society",
+    "activityType": "Nature/Conservation",
+    "area": "Kitsap County (Bremerton)",
+    "venue": "Bremer Student Center, Olympic College (1600 Chester Ave, Bremerton, WA 98337)",
+    "start": "2026-11-01T12:00:00-08:00",
+    "end": "2026-11-01T18:00:00-08:00",
+    "timeString": "12:00 PM – 6:00 PM",
+    "dateString": "2026-11-01",
+    "description": "West Sound's flagship wild mushroom show featuring over 200 locally collected mushroom species on display, expert identification table with Noah Siegel, cultivation displays, and edible tasting samples.",
+    "url": "https://kitsapmushrooms.org/outreach/wild-mushroom-show/",
+    "cost": "Free admission (donations welcome)",
+    "recurrence": "Annual Exhibition"
+  },
+  {
     "id": "eastside-audubon-juanita-bay-2026-11-01",
     "title": "Eastside Audubon: Juanita Bay Park Afternoon Bird Walk",
     "organization": "Eastside Audubon",
@@ -5822,6 +6046,22 @@
     "url": "https://curlingseattle.org/content/2026-2027-monday-night",
     "cost": "League registration / Spectating free",
     "recurrence": "Weekly on Mondays"
+  },
+  {
+    "id": "hugo-house-works-in-progress-2026-11-02",
+    "title": "Hugo House: Works in Progress Community Open Mic",
+    "organization": "Hugo House",
+    "activityType": "Art",
+    "area": "Capitol Hill, Seattle",
+    "venue": "Hugo House (1634 11th Ave, Seattle, WA 98122)",
+    "start": "2026-11-02T19:00:00-08:00",
+    "end": "2026-11-02T21:00:00-08:00",
+    "timeString": "7:00 PM – 9:00 PM",
+    "dateString": "2026-11-02",
+    "description": "Community literary open mic in Hugo House's salon space. Free admission; sign-up sheet available at 6:30 PM for 5-minute reading slots.",
+    "url": "https://hugohouse.org/events/",
+    "cost": "Free & open to the public",
+    "recurrence": "1st & 3rd Mondays"
   },
   {
     "id": "wos-monthly-meeting-20261102",
@@ -6432,6 +6672,22 @@
     "recurrence": "Weekend docent program"
   },
   {
+    "id": "seattle-recreative-upcycling-night-2026-11-09",
+    "title": "Seattle ReCreative: Community Upcycling & Fix-It Night",
+    "organization": "Seattle ReCreative",
+    "activityType": "Art",
+    "area": "Seattle (Greenwood)",
+    "venue": "Seattle ReCreative (8408 Greenwood Ave N, Seattle, WA 98103)",
+    "start": "2026-11-09T18:00:00-08:00",
+    "end": "2026-11-09T20:00:00-08:00",
+    "timeString": "6:00 PM – 8:00 PM",
+    "dateString": "2026-11-09",
+    "description": "Hands-on creative reuse and repair night. Bring damaged clothing, textiles, broken household goods, or craft supplies to mend and upcycle using shared studio tools and reclaimed materials.",
+    "url": "https://www.seattlerecreative.org/events",
+    "cost": "Free / pay-what-you-can donation",
+    "recurrence": "Monthly Workshop"
+  },
+  {
     "id": "gcc-monday-league-2026-11-09",
     "title": "Granite Curling Club: Monday Night Open League",
     "organization": "Seattle Curling Club",
@@ -6750,6 +7006,22 @@
     "url": "https://sustainablecapitolhill.org/tool-library/",
     "cost": "Pay-what-you-can membership",
     "recurrence": "Weekly on Saturdays"
+  },
+  {
+    "id": "oxbow-restoration-work-party-2026-11-14",
+    "title": "Second Saturday Volunteer Ecological Restoration Work Party",
+    "organization": "Oxbow Farm & Conservation Center",
+    "activityType": "Nature/Conservation",
+    "area": "Eastside (Carnation)",
+    "venue": "Oxbow Farm & Conservation Center (10819 Carnation-Duvall Rd NE, Carnation, WA 98014)",
+    "start": "2026-11-14T10:00:00-08:00",
+    "end": "2026-11-14T13:00:00-08:00",
+    "timeString": "10:00 AM – 1:00 PM",
+    "dateString": "2026-11-14",
+    "description": "Monthly hands-on volunteer habitat stewardship day helping restore riparian buffers along the Snoqualmie River with native tree planting, invasive weed removal, and mulch spreading.",
+    "url": "https://www.oxbow.org/events/",
+    "cost": "Free volunteer event (tools & gloves provided)",
+    "recurrence": "Monthly (2nd Saturday)"
   },
   {
     "id": "seattle-center-festal-hmong-2026-11-14",
@@ -7166,6 +7438,22 @@
     "url": "https://seattlefrontrunners.org/calendar",
     "cost": "Free",
     "recurrence": "Weekly on Saturdays"
+  },
+  {
+    "id": "barn-annual-holiday-bazaar-2026-11-21",
+    "title": "2026 BARN Annual Community Artisan Holiday Bazaar",
+    "organization": "Bainbridge Artisan Resource Network (BARN)",
+    "activityType": "Art",
+    "area": "Puget Sound (Bainbridge Island)",
+    "venue": "BARN Center (8890 Three Tree Lane NE, Bainbridge Island, WA 98110)",
+    "start": "2026-11-21T10:00:00-08:00",
+    "end": "2026-11-21T15:00:00-08:00",
+    "timeString": "10:00 AM – 3:00 PM",
+    "dateString": "2026-11-21",
+    "description": "Annual public artisan showcase and craft marketplace featuring handmade work created across BARN's 11 studios including woodworking, forged metal, jewelry, glass art, ceramics, and textiles.",
+    "url": "https://bainbridgebarn.org/events/",
+    "cost": "Free admission",
+    "recurrence": "Annual Event"
   },
   {
     "id": "bff-work-party-2026-11-21",
