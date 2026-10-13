@@ -4816,6 +4816,22 @@
     "recurrence": "Weekly Sunday morning open studio"
   },
   {
+    "id": "wkc-tukwila-pool-roll-2026-10-18",
+    "title": "Washington Kayak Club: Tukwila Pool Kayak Roll Session",
+    "organization": "Washington Kayak Club",
+    "activityType": "Water Sports",
+    "area": "Seattle / Puget Sound area",
+    "venue": "Tukwila Community Pool (4414 S 144th St, Tukwila, WA 98168)",
+    "start": "2026-10-18T10:00:00-07:00",
+    "end": "2026-10-18T12:00:00-07:00",
+    "timeString": "10:00 AM – Noon",
+    "dateString": "2026-10-18",
+    "description": "Warm water indoor pool session for kayak roll practice, wet exits, self-rescues, and mentor coaching; bring thoroughly rinsed clean boats.",
+    "url": "https://wakayakclub.clubexpress.com/calendar",
+    "cost": "$20 members, $25 non-members",
+    "recurrence": "Sunday indoor pool sessions"
+  },
+  {
     "id": "discnw-friz-fest-2026-10-18",
     "title": "DiscNW: 2026 Fall Friz Fest Community Celebration",
     "organization": "DiscNW (Northwest Ultimate Association)",
@@ -5024,6 +5040,22 @@
     "recurrence": "Weekly on Tuesdays"
   },
   {
+    "id": "cnw-roosevelt-track-workout-2026-10-20",
+    "title": "Club Northwest Tuesday Night Community Track Workout",
+    "organization": "Club Northwest",
+    "activityType": "Running",
+    "area": "Seattle / Puget Sound area",
+    "venue": "Roosevelt High School Track (1410 NE 66th St, Seattle, WA 98115)",
+    "start": "2026-10-20T18:00:00-07:00",
+    "end": "2026-10-20T19:30:00-07:00",
+    "timeString": "6:00 PM – 7:30 PM",
+    "dateString": "2026-10-20",
+    "description": "Structured interval track workouts for all pace groups coached by Club Northwest; open to community runners (2-week trial period).",
+    "url": "https://clubnorthwest.wildapricot.org/events",
+    "cost": "Free trial / $25 seasonal permit pass",
+    "recurrence": "Weekly Tuesday track session"
+  },
+  {
     "id": "sfr-volunteer-park-2026-10-20",
     "title": "Seattle Frontrunners: Tuesday Evening Volunteer Park Run & Walk",
     "organization": "Seattle Frontrunners",
@@ -5216,6 +5248,22 @@
     "recurrence": "Special Event"
   },
   {
+    "id": "pacsci-science-movie-2026-10-21",
+    "title": "Science & a Movie: Little Shop of Horrors at PACCAR Theater",
+    "organization": "Pacific Science Center Science Communication Guild",
+    "activityType": "Science",
+    "area": "Seattle / Puget Sound area",
+    "venue": "PACCAR IMAX Theater at Pacific Science Center (200 2nd Ave N, Seattle, WA 98109)",
+    "start": "2026-10-21T19:00:00-07:00",
+    "end": "2026-10-21T21:30:00-07:00",
+    "timeString": "7:00 PM – 9:30 PM",
+    "dateString": "2026-10-21",
+    "description": "Screening of the cult classic alongside a guided science discussion with PacSci educators exploring carnivorous plant botany and biology.",
+    "url": "https://pacificsciencecenter.org/events/",
+    "cost": "$15 – $20 general admission",
+    "recurrence": "Science & a Movie series"
+  },
+  {
     "id": "scc-wednesday-casual-2026-10-21",
     "title": "Seattle Chess Club: Wednesday Casual Chess Night",
     "organization": "Seattle Chess Club",
@@ -5294,6 +5342,22 @@
     "url": "https://www.moxboardinghouse.com/pages/seattle-events",
     "cost": "Free",
     "recurrence": "Weekly on Thursdays"
+  },
+  {
+    "id": "cam-belltown-figure-drawing-2026-10-22",
+    "title": "Common Area Maintenance: Community Figure Drawing Session",
+    "organization": "Common Area Maintenance",
+    "activityType": "Art",
+    "area": "Seattle",
+    "venue": "Common AREA Studio (2125 2nd Ave, Seattle, WA 98121)",
+    "start": "2026-10-22T18:30:00-07:00",
+    "end": "2026-10-22T21:00:00-07:00",
+    "timeString": "6:30 PM – 9:00 PM",
+    "dateString": "2026-10-22",
+    "description": "Drop-in uninstructed life drawing session with live model, drawing boards, and artist social time in Belltown; all skill levels welcome.",
+    "url": "https://www.camseattle.org/events",
+    "cost": "$15 drop-in fee",
+    "recurrence": "Bi-weekly community drawing"
   },
   {
     "id": "srs-arduino-2026-10-22",
@@ -5808,6 +5872,22 @@
     "recurrence": "Monthly"
   },
   {
+    "id": "kent-arts-centennial-gallery-2026-10-26",
+    "title": "Centennial Center Gallery: Pacific Northwest Artists Showcase",
+    "organization": "Kent Community Arts",
+    "activityType": "Art",
+    "area": "Kent",
+    "venue": "Centennial Center Gallery (400 W Gowe St, Kent, WA 98032)",
+    "start": "2026-10-26T08:00:00-07:00",
+    "end": "2026-10-26T17:00:00-07:00",
+    "timeString": "8:00 AM – 5:00 PM",
+    "dateString": "2026-10-26",
+    "description": "Visual arts exhibition curated by the Kent Arts Commission featuring regional contemporary painters and sculptors; free public municipal gallery.",
+    "url": "https://www.kentwa.gov/departments/kent-parks/arts",
+    "cost": "Free admission",
+    "recurrence": "Ongoing weekday exhibition"
+  },
+  {
     "id": "tba-hess-beginners-2026-10-26",
     "title": "Guided Beginning Birders Walk at Adriana Hess Audubon Center",
     "organization": "Tahoma Bird Alliance",
@@ -6318,6 +6398,38 @@
     "url": "https://www.seattlecenter.com/events/featured-events/festal/dia-de-muertos",
     "cost": "Free admission",
     "recurrence": "Annual 2-day festival"
+  },
+  {
+    "id": "pacsci-after-dark-fungi-2026-10-31",
+    "title": "Science After Dark: Fungi Fest Halloween Special (21+)",
+    "organization": "Pacific Science Center Science Communication Guild",
+    "activityType": "Science",
+    "area": "Seattle / Puget Sound area",
+    "venue": "Pacific Science Center (200 2nd Ave N, Seattle, WA 98109)",
+    "start": "2026-10-31T19:00:00-07:00",
+    "end": "2026-10-31T23:00:00-07:00",
+    "timeString": "7:00 PM – 11:00 PM",
+    "dateString": "2026-10-31",
+    "description": "After-hours adult science party featuring mycological exhibits, live laser shows, mushroom science demos, craft cocktails, and costume contest.",
+    "url": "https://pacificsciencecenter.org/events/",
+    "cost": "$30 ($25 members)",
+    "recurrence": "Science After Dark 21+ series"
+  },
+  {
+    "id": "wkc-tukwila-pool-roll-2026-11-01",
+    "title": "Indoor Kayak Skills & Roll Practice Clinic",
+    "organization": "Washington Kayak Club",
+    "activityType": "Water Sports",
+    "area": "Seattle / Puget Sound area",
+    "venue": "Tukwila Community Pool (4414 S 144th St, Tukwila, WA 98168)",
+    "start": "2026-11-01T10:00:00-07:00",
+    "end": "2026-11-01T12:00:00-07:00",
+    "timeString": "10:00 AM – Noon",
+    "dateString": "2026-11-01",
+    "description": "Practice bow rescues, sculling, and rolling in a heated indoor environment before winter paddling season.",
+    "url": "https://wakayakclub.clubexpress.com/calendar",
+    "cost": "$20 members, $25 non-members",
+    "recurrence": "Sunday indoor pool sessions"
   },
   {
     "id": "sgc-monthly-tournament-2026-11-01",
@@ -6912,6 +7024,22 @@
     "recurrence": "First Saturday of the month"
   },
   {
+    "id": "cnw-magnuson-grand-prix-2026-11-07",
+    "title": "CNW Winter Grand Prix: Magnuson Park Cross Country Series",
+    "organization": "Club Northwest",
+    "activityType": "Running",
+    "area": "Seattle / Puget Sound area",
+    "venue": "Warren G. Magnuson Park (7400 Sand Point Way NE, Seattle, WA 98115)",
+    "start": "2026-11-07T09:00:00-08:00",
+    "end": "2026-11-07T11:30:00-08:00",
+    "timeString": "9:00 AM – 11:30 AM",
+    "dateString": "2026-11-07",
+    "description": "Grass and trail cross-country race series with youth, open, and masters divisions; community runners welcome to test fitness on scenic lakeside trails.",
+    "url": "https://clubnorthwest.wildapricot.org/events",
+    "cost": "$15 – $25 registration",
+    "recurrence": "Monthly winter grand prix series"
+  },
+  {
     "id": "eastside-audubon-marymoor-restoration-2026-11-07",
     "title": "Eastside Audubon: Marymoor Park Bird Habitat Restoration",
     "organization": "Eastside Audubon",
@@ -7470,6 +7598,22 @@
     "url": "https://www.burkemuseum.org/calendar",
     "cost": "Included with museum admission",
     "recurrence": "Artist studio session"
+  },
+  {
+    "id": "cam-belltown-artwalk-2026-11-13",
+    "title": "CAM Belltown Artwalk & Open Printshop Night",
+    "organization": "Common Area Maintenance",
+    "activityType": "Art",
+    "area": "Seattle",
+    "venue": "Common AREA & Common OBJECTS (2125 2nd Ave, Seattle, WA 98121)",
+    "start": "2026-11-13T18:00:00-08:00",
+    "end": "2026-11-13T21:00:00-08:00",
+    "timeString": "6:00 PM – 9:00 PM",
+    "dateString": "2026-11-13",
+    "description": "Second Friday Belltown artwalk open house featuring member artist prints, zine bookstore displays, and live risograph printing demos.",
+    "url": "https://www.camseattle.org/events",
+    "cost": "Free admission",
+    "recurrence": "Monthly second Friday artwalk"
   },
   {
     "id": "gage-drink-and-draw-georgetown-2026-11-13",
@@ -8286,6 +8430,22 @@
     "url": "https://www.seattleprintarts.org/new-events",
     "cost": "Free admission",
     "recurrence": "Annual Member Exhibition"
+  },
+  {
+    "id": "pacsci-brewology-2026-11-21",
+    "title": "Brewology: Craft Beer Science After Dark (21+)",
+    "organization": "Pacific Science Center Science Communication Guild",
+    "activityType": "Science",
+    "area": "Seattle / Puget Sound area",
+    "venue": "Pacific Science Center (200 2nd Ave N, Seattle, WA 98109)",
+    "start": "2026-11-21T19:00:00-08:00",
+    "end": "2026-11-21T22:30:00-08:00",
+    "timeString": "7:00 PM – 10:30 PM",
+    "dateString": "2026-11-21",
+    "description": "Explore the microbiology of fermentation with local craft breweries, hands-on science demos, planetarium talks, and beer tastings.",
+    "url": "https://pacificsciencecenter.org/events/",
+    "cost": "$55 general / $65 VIP",
+    "recurrence": "Annual 21+ science tasting"
   },
   {
     "id": "mof-pilot-lab-2026-11-22",
