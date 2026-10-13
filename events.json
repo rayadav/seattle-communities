@@ -4576,6 +4576,22 @@
     "recurrence": "Seasonal tour"
   },
   {
+    "id": "psk-lake-union-kayak-cleanup-2026-10-17",
+    "title": "Lake Union Volunteer Kayak Cleanup & Waterway Patrol",
+    "organization": "Puget Soundkeeper Alliance",
+    "activityType": "Water Sports",
+    "area": "Seattle",
+    "venue": "Northwest Outdoor Center on Lake Union (2499 Westlake Ave N, Seattle, WA 98109)",
+    "start": "2026-10-17T10:00:00-07:00",
+    "end": "2026-10-17T13:00:00-07:00",
+    "timeString": "10:00 AM – 1:00 PM",
+    "dateString": "2026-10-17",
+    "description": "Paddle for clean water: volunteers take out kayaks to clean up trash along the Lake Union shoreline; kayaks, life jackets, paddles, and pickers provided.",
+    "url": "https://pugetsoundkeeper.org/events/",
+    "cost": "Free volunteer event (RSVP required)",
+    "recurrence": "Bi-weekly on-water sweep"
+  },
+  {
     "id": "oxbow-oxtober-harvest-festival-2026-10-17",
     "title": "Oxtober Fall Harvest Festival & Pumpkin Patch",
     "organization": "Oxbow Farm & Conservation Center",
@@ -4656,38 +4672,6 @@
     "recurrence": "Family workshop"
   },
   {
-    "id": "psk-lake-union-kayak-cleanup-2026-10-17",
-    "title": "Lake Union Volunteer Kayak Cleanup & Waterway Patrol",
-    "organization": "Puget Soundkeeper Alliance",
-    "activityType": "Water Sports",
-    "area": "Seattle",
-    "venue": "Northwest Outdoor Center on Lake Union (2499 Westlake Ave N, Seattle, WA 98109)",
-    "start": "2026-10-17T10:00:00-07:00",
-    "end": "2026-10-17T13:00:00-07:00",
-    "timeString": "10:00 AM – 1:00 PM",
-    "dateString": "2026-10-17",
-    "description": "Paddle for clean water: volunteers take out kayaks to clean up trash along the Lake Union shoreline; kayaks, life jackets, paddles, and pickers provided.",
-    "url": "https://pugetsoundkeeper.org/events/",
-    "cost": "Free volunteer event (RSVP required)",
-    "recurrence": "Bi-weekly on-water sweep"
-  },
-  {
-    "id": "skwc-swamp-creek-restoration-20261017",
-    "title": "Swamp Creek Habitat Restoration Work Party",
-    "organization": "Sno-King Watershed Council",
-    "activityType": "Nature & Conservation",
-    "area": "North King County (Kenmore)",
-    "venue": "ƛ̕ax̌ʷadis Park (7515 NE 175th St, Kenmore, WA 98028)",
-    "start": "2026-10-17T11:00:00-07:00",
-    "end": "2026-10-17T14:00:00-07:00",
-    "timeString": "11:00 AM – 2:00 PM",
-    "dateString": "2026-10-17",
-    "description": "Volunteer watershed stewardship event along Swamp Creek. Help remove invasive plants and restore native riparian habitat supporting regional salmon recovery.",
-    "url": "https://swampcreekwatershed.org/events/",
-    "cost": "Free",
-    "recurrence": "Monthly Volunteer Work Party"
-  },
-  {
     "id": "orca-network-recovery-day-2026-10-17",
     "title": "Orca Recovery Day at the Langley Whale Center",
     "organization": "Orca Network",
@@ -4718,6 +4702,22 @@
     "url": "https://soundwaterstewards.org/calendar/",
     "cost": "Free (Discover Pass required for state park parking)",
     "recurrence": "Low tide beach naturalist pop-up"
+  },
+  {
+    "id": "skwc-swamp-creek-restoration-20261017",
+    "title": "Swamp Creek Habitat Restoration Work Party",
+    "organization": "Sno-King Watershed Council",
+    "activityType": "Nature & Conservation",
+    "area": "North King County (Kenmore)",
+    "venue": "ƛ̕ax̌ʷadis Park (7515 NE 175th St, Kenmore, WA 98028)",
+    "start": "2026-10-17T11:00:00-07:00",
+    "end": "2026-10-17T14:00:00-07:00",
+    "timeString": "11:00 AM – 2:00 PM",
+    "dateString": "2026-10-17",
+    "description": "Volunteer watershed stewardship event along Swamp Creek. Help remove invasive plants and restore native riparian habitat supporting regional salmon recovery.",
+    "url": "https://swampcreekwatershed.org/events/",
+    "cost": "Free",
+    "recurrence": "Monthly Volunteer Work Party"
   },
   {
     "id": "tilth-bokashi-biochar-2026-10-17",
@@ -4752,6 +4752,22 @@
     "recurrence": "Weekend tea ceremony"
   },
   {
+    "id": "op-fungi-fest-community-market-2026-10-18",
+    "title": "Fungi Festival Community Market, Cultivation Demos & Presentations",
+    "organization": "Olympic Peninsula Fungi Festival",
+    "activityType": "Nature/Conservation",
+    "area": "Puget Sound",
+    "venue": "Vern Burton Community Center & City Pier (308 E 4th St, Port Angeles, WA 98362)",
+    "start": "2026-10-18T10:00:00-07:00",
+    "end": "2026-10-18T16:00:00-07:00",
+    "timeString": "10:00 AM – 4:00 PM",
+    "dateString": "2026-10-18",
+    "description": "Free public community market with local mushroom growers, artisan craft vendors, culinary demos, home fruiting bag workshops, and educational exhibits.",
+    "url": "https://www.olypenfungifest.com/",
+    "cost": "Free admission (workshops may require tickets)",
+    "recurrence": "Annual festival community day"
+  },
+  {
     "id": "usk-seattle-sculpture-park-20261018",
     "title": "October Waterfront & Sculpture Park Sketch Outing",
     "organization": "Urban Sketchers Seattle",
@@ -4782,22 +4798,6 @@
     "url": "https://www.scmsfungi.org/",
     "cost": "Free admission (donations welcome)",
     "recurrence": "Annual Exhibition"
-  },
-  {
-    "id": "op-fungi-fest-community-market-2026-10-18",
-    "title": "Fungi Festival Community Market, Cultivation Demos & Presentations",
-    "organization": "Olympic Peninsula Fungi Festival",
-    "activityType": "Nature/Conservation",
-    "area": "Puget Sound",
-    "venue": "Vern Burton Community Center & City Pier (308 E 4th St, Port Angeles, WA 98362)",
-    "start": "2026-10-18T10:00:00-07:00",
-    "end": "2026-10-18T16:00:00-07:00",
-    "timeString": "10:00 AM – 4:00 PM",
-    "dateString": "2026-10-18",
-    "description": "Free public community market with local mushroom growers, artisan craft vendors, culinary demos, home fruiting bag workshops, and educational exhibits.",
-    "url": "https://www.olypenfungifest.com/",
-    "cost": "Free admission (workshops may require tickets)",
-    "recurrence": "Annual festival community day"
   },
   {
     "id": "gage-open-life-drawing-2026-10-18",
@@ -4976,6 +4976,22 @@
     "recurrence": "Third Tuesday of the month"
   },
   {
+    "id": "seattle-food-committee-coalition-2026-10-20",
+    "title": "Seattle Food Committee: Monthly Food Bank Coalition Meeting",
+    "organization": "Seattle Food Committee",
+    "activityType": "Community/Volunteering",
+    "area": "Seattle",
+    "venue": "University Food Bank & Virtual (5001 Roosevelt Way NE, Seattle, WA 98105)",
+    "start": "2026-10-20T09:30:00-07:00",
+    "end": "2026-10-20T11:30:00-07:00",
+    "timeString": "9:30 AM – 11:30 AM",
+    "dateString": "2026-10-20",
+    "description": "Monthly coordination meeting for directors, volunteer managers, and partners across 27 Seattle neighborhood food banks strategizing supply logistics and anti-hunger advocacy.",
+    "url": "https://www.seattlefoodcommittee.org/events",
+    "cost": "Free coalition meeting",
+    "recurrence": "Monthly third Tuesday meeting"
+  },
+  {
     "id": "wffc-dinner-meeting-phil-rowley-2026-10-20",
     "title": "WFFC October Dinner Meeting: Stillwater Fly Fishing with Phil Rowley",
     "organization": "Washington Fly Fishing Club",
@@ -5104,6 +5120,54 @@
     "recurrence": "Weekly on Wednesdays"
   },
   {
+    "id": "meals-on-wheels-west-seattle-2026-10-21",
+    "title": "Meals on Wheels Senior Delivery Route: West Seattle",
+    "organization": "Seattle Meals on Wheels Delivery Drivers",
+    "activityType": "Community/Volunteering",
+    "area": "Seattle",
+    "venue": "Senior Center of West Seattle (4217 SW Oregon St, Seattle, WA 98116)",
+    "start": "2026-10-21T08:30:00-07:00",
+    "end": "2026-10-21T10:30:00-07:00",
+    "timeString": "8:30 AM – 10:30 AM",
+    "dateString": "2026-10-21",
+    "description": "Volunteer drivers pick up packaged frozen meals and conduct friendly wellness check-ins for homebound elders in West Seattle.",
+    "url": "https://soundgenerations.org/get-involved/attend-an-event/",
+    "cost": "Volunteer commitment (mileage reimbursed)",
+    "recurrence": "Weekly Wednesday morning delivery"
+  },
+  {
+    "id": "osl-meal-prep-shift-2026-10-21",
+    "title": "OSL Serves Community Kitchen Volunteer Meal Prep Shift",
+    "organization": "Operation Sack Lunch Volunteer Kitchen",
+    "activityType": "Community/Volunteering",
+    "area": "Seattle",
+    "venue": "OSL Production Kitchen (Compass Center, 77 S Washington St, Seattle, WA 98104)",
+    "start": "2026-10-21T09:00:00-07:00",
+    "end": "2026-10-21T14:00:00-07:00",
+    "timeString": "9:00 AM – 2:00 PM",
+    "dateString": "2026-10-21",
+    "description": "Help prep, chop, package, and cook nutritious meals for vulnerable and unhoused Seattle community members; no kitchen experience needed.",
+    "url": "https://www.oslserves.org/volunteer",
+    "cost": "Free volunteer shift",
+    "recurrence": "Wednesday – Sunday morning shifts"
+  },
+  {
+    "id": "sustainable-renton-food-sorting-2026-10-21",
+    "title": "Sustainable Renton: Food Rescue Sorting & Packing Shift",
+    "organization": "Renton Permaculture & Community Garden Stewards",
+    "activityType": "Nature/Conservation",
+    "area": "Renton",
+    "venue": "St. Matthew's Lutheran Church (1700 Edmonds Ave NE, Renton, WA 98056)",
+    "start": "2026-10-21T10:00:00-07:00",
+    "end": "2026-10-21T13:00:00-07:00",
+    "timeString": "10:00 AM – 1:00 PM",
+    "dateString": "2026-10-21",
+    "description": "Help sort gleaned fresh produce and rescued groceries from local distributors into family boxes for free community distribution in South King County.",
+    "url": "https://www.sustainablerenton.org/our-events",
+    "cost": "Free volunteer shift",
+    "recurrence": "Weekly Wednesday food rescue shift"
+  },
+  {
     "id": "wstl-fixit-workshop-2026-10-21",
     "title": "West Seattle Tool Library: Wednesday Community Fix-It Workshop",
     "organization": "West Seattle Tool Library",
@@ -5182,6 +5246,22 @@
     "url": "https://www.tahomabirdalliance.org/bird-walks",
     "cost": "Free",
     "recurrence": "2nd & 4th Thursday of each month"
+  },
+  {
+    "id": "elap-housing-clinic-2026-10-22",
+    "title": "ELAP Volunteer Legal Advice Clinic: Housing & Civil Rights",
+    "organization": "Eastside Legal Assistance Program (ELAP) Volunteers",
+    "activityType": "Community/Volunteering",
+    "area": "Eastside",
+    "venue": "Bellevue Community Center / Virtual Clinic (Bellevue, WA 98004)",
+    "start": "2026-10-22T17:30:00-07:00",
+    "end": "2026-10-22T19:30:00-07:00",
+    "timeString": "5:30 PM – 7:30 PM",
+    "dateString": "2026-10-22",
+    "description": "Volunteer attorneys and legal navigators provide free consultations for low-income King County residents facing eviction, tenant disputes, or domestic violence.",
+    "url": "https://elap.org/upcoming-events/",
+    "cost": "Free community clinic",
+    "recurrence": "Bi-weekly volunteer legal clinic"
   },
   {
     "id": "makers-kicad-pcb-2026-10-22",
@@ -5376,20 +5456,20 @@
     "recurrence": "Special Event"
   },
   {
-    "id": "kubota-maple-sale-2026-10-24",
-    "title": "Kubota Garden Annual Maple Tree Sale",
-    "organization": "Kubota Garden Foundation",
-    "activityType": "Nature/Conservation",
-    "area": "South Seattle",
-    "venue": "Kubota Garden (9817 55th Ave S, Seattle, WA 98118)",
-    "start": "2026-10-24T09:00:00-07:00",
-    "end": "2026-10-24T13:00:00-07:00",
-    "timeString": "9:00 AM – 1:00 PM",
+    "id": "habitat-columbia-city-build-2026-10-24",
+    "title": "Habitat SKKC Affordable Housing Build: 5022 MLK Columbia City",
+    "organization": "Habitat for Humanity King County Construction Volunteers",
+    "activityType": "Community/Volunteering",
+    "area": "South King County",
+    "venue": "5022 MLK Site (5022 Martin Luther King Jr Way S, Seattle, WA 98118)",
+    "start": "2026-10-24T08:45:00-07:00",
+    "end": "2026-10-24T16:00:00-07:00",
+    "timeString": "8:45 AM – 4:00 PM",
     "dateString": "2026-10-24",
-    "description": "Annual plant sale offering a curated selection of Japanese maples, laceleaf varieties, variegated specimens, and companion plantings. Drop in, no reservation needed.",
-    "url": "https://www.kubotagarden.org/event",
-    "cost": "Free admission / plants for purchase",
-    "recurrence": "Annual plant sale"
+    "description": "Volunteer construction shift framing, installing insulation, and working on multi-family affordable condominiums; no construction background required.",
+    "url": "https://www.habitatskc.org/news-events/events/",
+    "cost": "Free volunteer build (safety gear provided)",
+    "recurrence": "Wednesday, Thursday, and Saturday shifts"
   },
   {
     "id": "was-tracking-club-seward-2026-10-24",
@@ -5408,6 +5488,22 @@
     "recurrence": "Monthly fourth Saturday tracking club"
   },
   {
+    "id": "kubota-maple-sale-2026-10-24",
+    "title": "Kubota Garden Annual Maple Tree Sale",
+    "organization": "Kubota Garden Foundation",
+    "activityType": "Nature/Conservation",
+    "area": "South Seattle",
+    "venue": "Kubota Garden (9817 55th Ave S, Seattle, WA 98118)",
+    "start": "2026-10-24T09:00:00-07:00",
+    "end": "2026-10-24T13:00:00-07:00",
+    "timeString": "9:00 AM – 1:00 PM",
+    "dateString": "2026-10-24",
+    "description": "Annual plant sale offering a curated selection of Japanese maples, laceleaf varieties, variegated specimens, and companion plantings. Drop in, no reservation needed.",
+    "url": "https://www.kubotagarden.org/event",
+    "cost": "Free admission / plants for purchase",
+    "recurrence": "Annual plant sale"
+  },
+  {
     "id": "sfr-green-lake-2026-10-24",
     "title": "Seattle Frontrunners: Saturday Morning Green Lake Run & Walk",
     "organization": "Seattle Frontrunners",
@@ -5422,6 +5518,22 @@
     "url": "https://seattlefrontrunners.org/calendar",
     "cost": "Free",
     "recurrence": "Weekly on Saturdays"
+  },
+  {
+    "id": "coasst-beached-bird-training-2026-10-24",
+    "title": "COASST Beached Bird Citizen Science Field Surveyor Training",
+    "organization": "COASST",
+    "activityType": "Science",
+    "area": "Seattle",
+    "venue": "UW School of Aquatic and Fishery Sciences (1122 NE Boat St, Seattle, WA 98105)",
+    "start": "2026-10-24T10:00:00-07:00",
+    "end": "2026-10-24T15:00:00-07:00",
+    "timeString": "10:00 AM – 3:00 PM",
+    "dateString": "2026-10-24",
+    "description": "Hands-on training session for prospective citizen scientists teaching seabird identification, foot morphology, morphometrics, and coastal beach survey protocols.",
+    "url": "https://coasst.org/join-our-team/trainings-events/",
+    "cost": "Free volunteer training (materials provided)",
+    "recurrence": "Fall volunteer training course"
   },
   {
     "id": "chtl-saturday-workshop-2026-10-24",
@@ -5456,6 +5568,22 @@
     "recurrence": "Special Event"
   },
   {
+    "id": "kubota-fall-colors-tour-2026-10-24",
+    "title": "Kubota Garden Peak Fall Color Guided Walk",
+    "organization": "Kubota Garden Foundation Stewards (Rainier Beach)",
+    "activityType": "Nature/Conservation",
+    "area": "South Seattle",
+    "venue": "Kubota Garden (9817 55th Ave S, Seattle, WA 98118)",
+    "start": "2026-10-24T10:00:00-07:00",
+    "end": "2026-10-24T12:00:00-07:00",
+    "timeString": "10:00 AM – Noon",
+    "dateString": "2026-10-24",
+    "description": "Docent-led walking tour through Kubota Garden highlighting vibrant Japanese maples, garden history, and traditional pruning techniques during peak autumn foliage.",
+    "url": "https://www.kubotagarden.org/event",
+    "cost": "Free (online reservation required)",
+    "recurrence": "Seasonal weekend tour"
+  },
+  {
     "id": "plantamnesty-pinetum-walk-20261024",
     "title": "Plant Walk at the Pinetum with Walt Bubelis and Van Bobbitt",
     "organization": "PlantAmnesty",
@@ -5488,20 +5616,20 @@
     "recurrence": "Weekly on Saturdays"
   },
   {
-    "id": "coasst-beached-bird-training-2026-10-24",
-    "title": "COASST Beached Bird Citizen Science Field Surveyor Training",
-    "organization": "COASST",
-    "activityType": "Science",
-    "area": "Seattle",
-    "venue": "UW School of Aquatic and Fishery Sciences (1122 NE Boat St, Seattle, WA 98105)",
+    "id": "sustainable-renton-garden-work-party-2026-10-24",
+    "title": "Sustainable Renton Community Garden & Food Forest Fall Work Party",
+    "organization": "Renton Permaculture & Community Garden Stewards",
+    "activityType": "Nature/Conservation",
+    "area": "Renton",
+    "venue": "Sustainable Renton Community Garden (11840 148th Ave SE, Renton, WA 98059)",
     "start": "2026-10-24T10:00:00-07:00",
-    "end": "2026-10-24T15:00:00-07:00",
-    "timeString": "10:00 AM – 3:00 PM",
+    "end": "2026-10-24T13:00:00-07:00",
+    "timeString": "10:00 AM – 1:00 PM",
     "dateString": "2026-10-24",
-    "description": "Hands-on training session for prospective citizen scientists teaching seabird identification, foot morphology, morphometrics, and coastal beach survey protocols.",
-    "url": "https://coasst.org/join-our-team/trainings-events/",
-    "cost": "Free volunteer training (materials provided)",
-    "recurrence": "Fall volunteer training course"
+    "description": "Autumn garden prep, sheet mulching, bed weeding, and planting cover crops to nurture soil health in the community vegetable garden.",
+    "url": "https://www.sustainablerenton.org/our-events",
+    "cost": "Free community work party",
+    "recurrence": "Saturday community work party"
   },
   {
     "id": "srcs-monthly-gathering-20261024",
@@ -5534,6 +5662,22 @@
     "url": "https://www.psms.org/wild_mushroom_show.php",
     "cost": "Adults $10, Students $5, Children under 12 Free",
     "recurrence": "Annual 2-day exhibition"
+  },
+  {
+    "id": "bikeworks-open-shop-2026-10-24",
+    "title": "Bike Works Community Open Shop: DIY Bike Repair",
+    "organization": "Seattle Bike Works Community Mechanics",
+    "activityType": "Cycling",
+    "area": "Seattle",
+    "venue": "Bike Works Warehouse (3715 S Hudson St, Seattle, WA 98118)",
+    "start": "2026-10-24T13:00:00-07:00",
+    "end": "2026-10-24T17:00:00-07:00",
+    "timeString": "1:00 PM – 5:00 PM",
+    "dateString": "2026-10-24",
+    "description": "Self-directed repair session with access to professional bike repair stands, specialty tools, and mechanic guidance; pay what you can afford.",
+    "url": "https://bikeworks.org/events/",
+    "cost": "Sliding scale ($10 – $20/hr)",
+    "recurrence": "2nd and 4th Saturdays monthly"
   },
   {
     "id": "sjg-tea-2026-10-24",
@@ -5728,6 +5872,22 @@
     "recurrence": "Monthly (Last Monday)"
   },
   {
+    "id": "bloodworks-uw-red-square-2026-10-27",
+    "title": "UW Red Square Mobile Blood Drive: Bloodworks Northwest",
+    "organization": "Puget Sound Blood Center / Bloodworks NW Volunteers",
+    "activityType": "Community/Volunteering",
+    "area": "Puget Sound",
+    "venue": "University of Washington Red Square (Seattle, WA 98195)",
+    "start": "2026-10-27T10:00:00-07:00",
+    "end": "2026-10-27T16:00:00-07:00",
+    "timeString": "10:00 AM – 4:00 PM",
+    "dateString": "2026-10-27",
+    "description": "Community pop-up mobile blood donation drive on UW campus supporting trauma centers and hospitals across Western Washington.",
+    "url": "https://donate.bloodworksnw.org/",
+    "cost": "Community blood donation",
+    "recurrence": "Campus pop-up drive"
+  },
+  {
     "id": "chtl-tuesday-hours-2026-10-27",
     "title": "Capitol Hill Tool Library: Midweek Tool Lending & Repair Desk",
     "organization": "Capitol Hill Tool Library",
@@ -5840,6 +6000,22 @@
     "recurrence": "Monthly (Last Tuesday)"
   },
   {
+    "id": "meals-on-wheels-renton-2026-10-28",
+    "title": "Meals on Wheels Route & Wellness Check: Renton Distribution",
+    "organization": "Seattle Meals on Wheels Delivery Drivers",
+    "activityType": "Community/Volunteering",
+    "area": "Seattle",
+    "venue": "Renton Senior Activity Center (211 Burnett Ave N, Renton, WA 98057)",
+    "start": "2026-10-28T10:15:00-07:00",
+    "end": "2026-10-28T12:15:00-07:00",
+    "timeString": "10:15 AM – 12:15 PM",
+    "dateString": "2026-10-28",
+    "description": "Deliver nutritious weekly meals and provide essential social connection to older adults living independently across South King County.",
+    "url": "https://soundgenerations.org/get-involved/attend-an-event/",
+    "cost": "Volunteer commitment",
+    "recurrence": "Weekly Wednesday morning delivery"
+  },
+  {
     "id": "mof-docent-tour-2026-10-28",
     "title": "The Museum of Flight: Midweek Docent Aviation Tour",
     "organization": "Museum of Flight Docent Corps (Tukwila)",
@@ -5854,6 +6030,22 @@
     "url": "https://www.museumofflight.org/exhibits-and-events/calendar-of-events",
     "cost": "Free with museum admission",
     "recurrence": "Midweek docent tour"
+  },
+  {
+    "id": "osl-hot-lunch-service-2026-10-28",
+    "title": "OSL Open Meal Service: Hot Lunch Distribution",
+    "organization": "Operation Sack Lunch Volunteer Kitchen",
+    "activityType": "Community/Volunteering",
+    "area": "Seattle",
+    "venue": "Seattle City Hall Outdoor Plaza (600 4th Ave, Seattle, WA 98104)",
+    "start": "2026-10-28T11:30:00-07:00",
+    "end": "2026-10-28T13:30:00-07:00",
+    "timeString": "11:30 AM – 1:30 PM",
+    "dateString": "2026-10-28",
+    "description": "Assist in serving hot, freshly cooked meals with dignity to hundreds of community members at Seattle's central outdoor meal site.",
+    "url": "https://www.oslserves.org/volunteer",
+    "cost": "Free volunteer shift (18+)",
+    "recurrence": "Monday – Friday lunch service"
   },
   {
     "id": "mox-paint-jam-2026-10-28",
@@ -5918,6 +6110,22 @@
     "url": "https://www.burkemuseum.org/calendar",
     "cost": "$25 – $35 (21+)",
     "recurrence": "Special evening event"
+  },
+  {
+    "id": "bikeworks-volunteer-repair-party-2026-10-29",
+    "title": "Volunteer Bike Repair Party: Refurbishing Donated Youth Bikes",
+    "organization": "Seattle Bike Works Community Mechanics",
+    "activityType": "Cycling",
+    "area": "Seattle",
+    "venue": "Bike Works Columbia City Shop (3709 S Ferdinand St, Seattle, WA 98118)",
+    "start": "2026-10-29T18:00:00-07:00",
+    "end": "2026-10-29T21:00:00-07:00",
+    "timeString": "6:00 PM – 9:00 PM",
+    "dateString": "2026-10-29",
+    "description": "Join volunteer mechanics to overhaul, tune, and safety-check donated youth bicycles for community giveaways.",
+    "url": "https://bikeworks.org/events/",
+    "cost": "Free volunteer event",
+    "recurrence": "Weekly Thursday evening volunteer repair"
   },
   {
     "id": "birds-connect-seattle-field-guide-talk-20261029",
@@ -6078,6 +6286,22 @@
     "url": "https://northwest-lichenologists.wildapricot.org/page-1816534",
     "cost": "$25",
     "recurrence": "Special Event"
+  },
+  {
+    "id": "kubota-public-tour-2026-10-31",
+    "title": "Kubota Garden Monthly Public Heritage & Landscape Tour",
+    "organization": "Kubota Garden Foundation Stewards (Rainier Beach)",
+    "activityType": "Nature/Conservation",
+    "area": "South Seattle",
+    "venue": "Kubota Garden (9817 55th Ave S, Seattle, WA 98118)",
+    "start": "2026-10-31T10:00:00-07:00",
+    "end": "2026-10-31T11:30:00-07:00",
+    "timeString": "10:00 AM – 11:30 AM",
+    "dateString": "2026-10-31",
+    "description": "Guided 1.5-mile walking tour exploring Fujitaro Kubota's blend of traditional Japanese garden concepts with Pacific Northwest native plants.",
+    "url": "https://www.kubotagarden.org/event",
+    "cost": "Free public tour",
+    "recurrence": "Monthly public tour"
   },
   {
     "id": "seattle-center-festal-dia-de-muertos-2026-10-31",
@@ -6254,6 +6478,22 @@
     "url": "https://wos.org/monthly-meetings/",
     "cost": "Free",
     "recurrence": "Monthly (1st Mondays)"
+  },
+  {
+    "id": "bloodworks-pike-place-2026-11-03",
+    "title": "Pike Place Market Bloodmobile Community Donation Day",
+    "organization": "Puget Sound Blood Center / Bloodworks NW Volunteers",
+    "activityType": "Community/Volunteering",
+    "area": "Puget Sound",
+    "venue": "Pike Place Market (Pike Place & Stewart St, Seattle, WA 98101)",
+    "start": "2026-11-03T10:00:00-08:00",
+    "end": "2026-11-03T16:00:00-08:00",
+    "timeString": "10:00 AM – 4:00 PM",
+    "dateString": "2026-11-03",
+    "description": "Downtown mobile blood collection drive at historic Pike Place Market; all donors entered to win seasonal community giveaways.",
+    "url": "https://donate.bloodworksnw.org/",
+    "cost": "Community blood donation",
+    "recurrence": "Community pop-up drive"
   },
   {
     "id": "gcc-tuesday-supper-2026-11-03",
@@ -6640,6 +6880,22 @@
     "recurrence": "First Saturday of the month"
   },
   {
+    "id": "habitat-south-park-build-2026-11-07",
+    "title": "Habitat SKKC Community Build Day: South Park Townhomes",
+    "organization": "Habitat for Humanity King County Construction Volunteers",
+    "activityType": "Community/Volunteering",
+    "area": "South King County",
+    "venue": "South Park Build Site (South Park, Seattle, WA 98108)",
+    "start": "2026-11-07T08:45:00-08:00",
+    "end": "2026-11-07T16:00:00-08:00",
+    "timeString": "8:45 AM – 4:00 PM",
+    "dateString": "2026-11-07",
+    "description": "Hands-on building day constructing affordable family homes alongside future homeowners and experienced site leads.",
+    "url": "https://www.habitatskc.org/news-events/events/",
+    "cost": "Free volunteer build",
+    "recurrence": "Weekly community build"
+  },
+  {
     "id": "bcs-magnuson-park-2026-11-07",
     "title": "Birds Connect Seattle: Neighborhood Bird Outing at Magnuson Park",
     "organization": "Birds Connect Seattle",
@@ -6832,22 +7088,6 @@
     "recurrence": "Annual festival"
   },
   {
-    "id": "sgc-open-play-2026-11-07",
-    "title": "Seattle Go Center: Saturday Afternoon Open Play & Teaching",
-    "organization": "Seattle Go Center",
-    "activityType": "Games",
-    "area": "University District",
-    "venue": "Seattle Go Center (700 NE 45th St, Seattle, WA 98105)",
-    "start": "2026-11-07T13:00:00-08:00",
-    "end": "2026-11-07T18:00:00-08:00",
-    "timeString": "1:00 PM – 6:00 PM",
-    "dateString": "2026-11-07",
-    "description": "Saturday open Go playing sessions, library access, and youth/adult instruction.",
-    "url": "https://www.seattlego.org/schedule/",
-    "cost": "Club fee",
-    "recurrence": "Weekly on Saturdays"
-  },
-  {
     "id": "orca-network-docent-training-2026-11-07",
     "title": "Salish Sea Whale Sighting Volunteer Docent Training",
     "organization": "Orca Network",
@@ -6862,6 +7102,22 @@
     "url": "https://orcanetwork.org/events/",
     "cost": "Free volunteer training",
     "recurrence": "Quarterly volunteer training"
+  },
+  {
+    "id": "sgc-open-play-2026-11-07",
+    "title": "Seattle Go Center: Saturday Afternoon Open Play & Teaching",
+    "organization": "Seattle Go Center",
+    "activityType": "Games",
+    "area": "University District",
+    "venue": "Seattle Go Center (700 NE 45th St, Seattle, WA 98105)",
+    "start": "2026-11-07T13:00:00-08:00",
+    "end": "2026-11-07T18:00:00-08:00",
+    "timeString": "1:00 PM – 6:00 PM",
+    "dateString": "2026-11-07",
+    "description": "Saturday open Go playing sessions, library access, and youth/adult instruction.",
+    "url": "https://www.seattlego.org/schedule/",
+    "cost": "Club fee",
+    "recurrence": "Weekly on Saturdays"
   },
   {
     "id": "smg-open-bench-hollowware-2026-11-07",
@@ -6958,6 +7214,22 @@
     "url": "https://curlingseattle.org/content/2026-2027-monday-night",
     "cost": "League registration",
     "recurrence": "Weekly on Mondays"
+  },
+  {
+    "id": "nwgs-november-dinner-lecture-2026-11-10",
+    "title": "NWGS Monthly Dinner Meeting & Geological Lecture",
+    "organization": "PNW Geological Society Field Excursions",
+    "activityType": "Science",
+    "area": "Seattle / Puget Sound area",
+    "venue": "Talaris Conference Center / Seattle Venue (Seattle, WA 98105)",
+    "start": "2026-11-10T17:30:00-08:00",
+    "end": "2026-11-10T20:30:00-08:00",
+    "timeString": "5:30 PM Social, 6:30 PM Dinner, 7:30 PM Lecture",
+    "dateString": "2026-11-10",
+    "description": "Geological lecture by guest researchers exploring Pacific Northwest tectonics, regional fault zones, and stratigraphic mapping, followed by Q&A.",
+    "url": "https://nwgs.org/events/",
+    "cost": "Free lecture only / $35 dinner meeting",
+    "recurrence": "Monthly second Tuesday meeting"
   },
   {
     "id": "chtl-tuesday-hours-2026-11-10",
@@ -7200,22 +7472,6 @@
     "recurrence": "Artist studio session"
   },
   {
-    "id": "mox-fnm-draft-2026-11-13",
-    "title": "Mox Boarding House: Friday Night Magic (FNM) Booster Draft",
-    "organization": "Mox Boarding House",
-    "activityType": "Games",
-    "area": "Ballard, Seattle",
-    "venue": "Mox Boarding House Ballard (5105 Leary Ave NW, Seattle, WA 98107)",
-    "start": "2026-11-13T18:00:00-08:00",
-    "end": "2026-11-13T22:00:00-08:00",
-    "timeString": "6:00 PM – 10:00 PM",
-    "dateString": "2026-11-13",
-    "description": "Weekly MTG booster draft.",
-    "url": "https://www.moxboardinghouse.com/pages/seattle-events",
-    "cost": "$20 entry",
-    "recurrence": "Weekly on Fridays"
-  },
-  {
     "id": "gage-drink-and-draw-georgetown-2026-11-13",
     "title": "Drink & Draw Georgetown: Costumed Figure Creative Social",
     "organization": "Gage Academy of Art",
@@ -7230,6 +7486,22 @@
     "url": "https://gageacademy.org/calendar/",
     "cost": "$25 (includes beverage token)",
     "recurrence": "Monthly creative social"
+  },
+  {
+    "id": "mox-fnm-draft-2026-11-13",
+    "title": "Mox Boarding House: Friday Night Magic (FNM) Booster Draft",
+    "organization": "Mox Boarding House",
+    "activityType": "Games",
+    "area": "Ballard, Seattle",
+    "venue": "Mox Boarding House Ballard (5105 Leary Ave NW, Seattle, WA 98107)",
+    "start": "2026-11-13T18:00:00-08:00",
+    "end": "2026-11-13T22:00:00-08:00",
+    "timeString": "6:00 PM – 10:00 PM",
+    "dateString": "2026-11-13",
+    "description": "Weekly MTG booster draft.",
+    "url": "https://www.moxboardinghouse.com/pages/seattle-events",
+    "cost": "$20 entry",
+    "recurrence": "Weekly on Fridays"
   },
   {
     "id": "scc-friday-rated-2026-11-13",
@@ -7344,6 +7616,22 @@
     "recurrence": "Monthly watershed cleanup"
   },
   {
+    "id": "coasst-marine-debris-workshop-2026-11-14",
+    "title": "COASST Marine Debris & Microplastics Survey Volunteer Workshop",
+    "organization": "COASST",
+    "activityType": "Science",
+    "area": "Seattle",
+    "venue": "University of Washington Ocean Sciences Building (Seattle, WA 98195)",
+    "start": "2026-11-14T10:00:00-08:00",
+    "end": "2026-11-14T14:00:00-08:00",
+    "timeString": "10:00 AM – 2:00 PM",
+    "dateString": "2026-11-14",
+    "description": "Training volunteers to conduct standardized monthly surveys of marine plastics, fishing gear, and shoreline debris along Salish Sea coastlines.",
+    "url": "https://coasst.org/join-our-team/trainings-events/",
+    "cost": "Free volunteer training",
+    "recurrence": "Quarterly citizen science training"
+  },
+  {
     "id": "chtl-saturday-workshop-2026-11-14",
     "title": "Capitol Hill Tool Library: Open Woodshop & Tool Checkout",
     "organization": "Capitol Hill Tool Library",
@@ -7374,22 +7662,6 @@
     "url": "https://www.oxbow.org/events/",
     "cost": "Free volunteer event (tools & gloves provided)",
     "recurrence": "Monthly (2nd Saturday)"
-  },
-  {
-    "id": "coasst-marine-debris-workshop-2026-11-14",
-    "title": "COASST Marine Debris & Microplastics Survey Volunteer Workshop",
-    "organization": "COASST",
-    "activityType": "Science",
-    "area": "Seattle",
-    "venue": "University of Washington Ocean Sciences Building (Seattle, WA 98195)",
-    "start": "2026-11-14T10:00:00-08:00",
-    "end": "2026-11-14T14:00:00-08:00",
-    "timeString": "10:00 AM – 2:00 PM",
-    "dateString": "2026-11-14",
-    "description": "Training volunteers to conduct standardized monthly surveys of marine plastics, fishing gear, and shoreline debris along Salish Sea coastlines.",
-    "url": "https://coasst.org/join-our-team/trainings-events/",
-    "cost": "Free volunteer training",
-    "recurrence": "Quarterly citizen science training"
   },
   {
     "id": "seattle-center-festal-hmong-2026-11-14",
@@ -7552,6 +7824,22 @@
     "recurrence": "Annual meeting"
   },
   {
+    "id": "sws-salish-sea-science-lecture-2026-11-17",
+    "title": "Salish Sea Community Science: Forage Fish & Shoreline Habitat",
+    "organization": "Sound Water Stewards",
+    "activityType": "Nature/Conservation",
+    "area": "Puget Sound",
+    "venue": "Coupeville Rec Hall & Livestream (901 NW Alexander St, Coupeville, WA 98239)",
+    "start": "2026-11-17T18:30:00-08:00",
+    "end": "2026-11-17T20:00:00-08:00",
+    "timeString": "6:30 PM – 8:00 PM",
+    "dateString": "2026-11-17",
+    "description": "Educational talk detailing community-led surf smelt and sand lance beach egg surveys, and how forage fish health directly underpins salmon and orca survival.",
+    "url": "https://soundwaterstewards.org/calendar/",
+    "cost": "Free public presentation",
+    "recurrence": "Monthly community science lecture"
+  },
+  {
     "id": "sfr-volunteer-park-2026-11-17",
     "title": "Seattle Frontrunners: Tuesday Evening Volunteer Park Run & Walk",
     "organization": "Seattle Frontrunners",
@@ -7582,22 +7870,6 @@
     "url": "https://www.seattlego.org/schedule/",
     "cost": "Club fee",
     "recurrence": "Weekly on Tuesdays"
-  },
-  {
-    "id": "sws-salish-sea-science-lecture-2026-11-17",
-    "title": "Salish Sea Community Science: Forage Fish & Shoreline Habitat",
-    "organization": "Sound Water Stewards",
-    "activityType": "Nature/Conservation",
-    "area": "Puget Sound",
-    "venue": "Coupeville Rec Hall & Livestream (901 NW Alexander St, Coupeville, WA 98239)",
-    "start": "2026-11-17T18:30:00-08:00",
-    "end": "2026-11-17T20:00:00-08:00",
-    "timeString": "6:30 PM – 8:00 PM",
-    "dateString": "2026-11-17",
-    "description": "Educational talk detailing community-led surf smelt and sand lance beach egg surveys, and how forage fish health directly underpins salmon and orca survival.",
-    "url": "https://soundwaterstewards.org/calendar/",
-    "cost": "Free public presentation",
-    "recurrence": "Monthly community science lecture"
   },
   {
     "id": "ssmc-general-meeting-2026-11-17",
@@ -7952,22 +8224,6 @@
     "recurrence": "Monthly on 3rd Saturday"
   },
   {
-    "id": "makers-holiday-market-2026-11-21",
-    "title": "Maker Mania: Annual Community Holiday Artisan Market",
-    "organization": "Seattle Makers",
-    "activityType": "Art",
-    "area": "Interbay, Seattle",
-    "venue": "Seattle Makers (3012 16th Ave W, Seattle, WA 98119)",
-    "start": "2026-11-21T11:00:00-08:00",
-    "end": "2026-11-21T17:00:00-08:00",
-    "timeString": "11:00 AM – 5:00 PM",
-    "dateString": "2026-11-21",
-    "description": "Holiday makers market featuring handcrafted ceramics, laser-cut jewelry, screen-printed apparel, wooden homewares, and electronic crafts made by local artisans.",
-    "url": "https://seattlemakers.org/events/",
-    "cost": "Free admission",
-    "recurrence": "Annual holiday market"
-  },
-  {
     "id": "nestl-community-threads-2026-11-21",
     "title": "Community Threads: Textile Mending & Upcycling Studio",
     "organization": "Northeast Seattle Tool Library",
@@ -7982,6 +8238,22 @@
     "url": "https://seattlereconomy.org/events/",
     "cost": "Sliding scale $5 – $15",
     "recurrence": "Monthly textile repair workshop"
+  },
+  {
+    "id": "makers-holiday-market-2026-11-21",
+    "title": "Maker Mania: Annual Community Holiday Artisan Market",
+    "organization": "Seattle Makers",
+    "activityType": "Art",
+    "area": "Interbay, Seattle",
+    "venue": "Seattle Makers (3012 16th Ave W, Seattle, WA 98119)",
+    "start": "2026-11-21T11:00:00-08:00",
+    "end": "2026-11-21T17:00:00-08:00",
+    "timeString": "11:00 AM – 5:00 PM",
+    "dateString": "2026-11-21",
+    "description": "Holiday makers market featuring handcrafted ceramics, laser-cut jewelry, screen-printed apparel, wooden homewares, and electronic crafts made by local artisans.",
+    "url": "https://seattlemakers.org/events/",
+    "cost": "Free admission",
+    "recurrence": "Annual holiday market"
   },
   {
     "id": "sgc-open-play-2026-11-21",
