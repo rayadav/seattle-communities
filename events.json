@@ -4160,6 +4160,22 @@
     "recurrence": "Weekly on Wednesdays"
   },
   {
+    "id": "kce-drop-boxes-open-2026-10-15",
+    "title": "King County Elections: Official Ballot Drop Boxes Open Countywide",
+    "organization": "King County Elections Ballot Drop Box Volunteer Program",
+    "activityType": "Community/Volunteering",
+    "area": "South King County",
+    "venue": "King County Elections Headquarters & 100+ Regional Drop Boxes (919 SW Grady Way, Renton, WA 98057)",
+    "start": "2026-10-15T08:00:00-07:00",
+    "end": "2026-10-15T20:00:00-07:00",
+    "timeString": "8:00 AM – 8:00 PM",
+    "dateString": "2026-10-15",
+    "description": "Over 100 official secure ballot drop boxes open 24/7 across King County following the mailing of General Election ballots; election teams and volunteer observers mobilize.",
+    "url": "https://kingcounty.gov/en/dept/elections",
+    "cost": "Free civic event",
+    "recurrence": "Midterm General Election milestone"
+  },
+  {
     "id": "pnw-glass-art-guild-refract-seattle-20261015",
     "title": "Refract: The Pacific Northwest Glass Celebration 2026",
     "organization": "PNW Glass Art Guild",
@@ -4446,6 +4462,22 @@
     "url": "https://www.olypenfungifest.com/",
     "cost": "Festival registration required",
     "recurrence": "Annual festival field excursion"
+  },
+  {
+    "id": "pacific-raceways-swap-meet-2026-10-17",
+    "title": "Pacific Raceways 3rd Annual Fall Automotive Swap Meet",
+    "organization": "Pacific Raceways Drag Racing Enthusiasts (Kent)",
+    "activityType": "Motorsports",
+    "area": "Kent",
+    "venue": "Pacific Raceways (31001 144th Ave SE, Kent, WA 98042)",
+    "start": "2026-10-17T09:00:00-07:00",
+    "end": "2026-10-17T15:00:00-07:00",
+    "timeString": "9:00 AM – 3:00 PM",
+    "dateString": "2026-10-17",
+    "description": "Automotive, vintage race car, tools, performance parts, and collector vehicle marketplace across the Pacific Raceways paddock.",
+    "url": "https://pacificraceways.com/schedule/",
+    "cost": "$10 spectator admission, free parking",
+    "recurrence": "Annual fall swap meet"
   },
   {
     "id": "sfr-green-lake-2026-10-17",
@@ -4992,6 +5024,22 @@
     "recurrence": "Third Tuesday of the month"
   },
   {
+    "id": "auburn-food-market-mobile-2026-10-20",
+    "title": "The Auburn Food Bank: Mobile Food Market Distribution Shift",
+    "organization": "Auburn Food Bank Action Group",
+    "activityType": "Community/Volunteering",
+    "area": "Auburn",
+    "venue": "Auburn Community Distribution Site (2804 Auburn Way N, Auburn, WA 98002)",
+    "start": "2026-10-20T08:00:00-07:00",
+    "end": "2026-10-20T11:00:00-07:00",
+    "timeString": "8:00 AM – 11:00 AM",
+    "dateString": "2026-10-20",
+    "description": "Volunteer morning shift setting up outdoor produce tables, assisting neighbors, and loading grocery boxes for local families.",
+    "url": "https://www.theauburnfoodbank.org/events",
+    "cost": "Free volunteer shift",
+    "recurrence": "Monthly mobile food market"
+  },
+  {
     "id": "seattle-food-committee-coalition-2026-10-20",
     "title": "Seattle Food Committee: Monthly Food Bank Coalition Meeting",
     "organization": "Seattle Food Committee",
@@ -5006,6 +5054,22 @@
     "url": "https://www.seattlefoodcommittee.org/events",
     "cost": "Free coalition meeting",
     "recurrence": "Monthly third Tuesday meeting"
+  },
+  {
+    "id": "des-moines-evening-sorting-2026-10-20",
+    "title": "Des Moines Area Food Bank: Monthly Evening Community Shift",
+    "organization": "Des Moines Food Bank Volunteers",
+    "activityType": "Community/Volunteering",
+    "area": "Des Moines",
+    "venue": "Des Moines Area Food Bank (22225 9th Ave S, Des Moines, WA 98198)",
+    "start": "2026-10-20T17:30:00-07:00",
+    "end": "2026-10-20T20:15:00-07:00",
+    "timeString": "5:30 PM – 8:15 PM",
+    "dateString": "2026-10-20",
+    "description": "Special monthly evening volunteer sorting and distribution session for working professionals, students, and families.",
+    "url": "https://myfoodbank.org/volunteer/",
+    "cost": "Free volunteer shift",
+    "recurrence": "3rd Tuesday monthly evening shift"
   },
   {
     "id": "wffc-dinner-meeting-phil-rowley-2026-10-20",
@@ -5182,6 +5246,22 @@
     "url": "https://www.oslserves.org/volunteer",
     "cost": "Free volunteer shift",
     "recurrence": "Wednesday – Sunday morning shifts"
+  },
+  {
+    "id": "kent-food-bank-sorting-shift-2026-10-21",
+    "title": "Kent Food Bank: Community Food Sorting & Distribution Shift",
+    "organization": "Kent Food Bank Volunteer Sorting Crew",
+    "activityType": "Community/Volunteering",
+    "area": "Kent",
+    "venue": "Kent Food Bank Main Facility (515 W Harrison St, Kent, WA 98032)",
+    "start": "2026-10-21T09:30:00-07:00",
+    "end": "2026-10-21T13:00:00-07:00",
+    "timeString": "9:30 AM – 1:00 PM",
+    "dateString": "2026-10-21",
+    "description": "Help sort fresh produce, inspect shelf-stable donations, and support distribution lines serving South King County families.",
+    "url": "https://www.kentfoodbank.org/",
+    "cost": "Free volunteer shift",
+    "recurrence": "Wednesday & Friday volunteer distribution"
   },
   {
     "id": "sustainable-renton-food-sorting-2026-10-21",
@@ -5646,6 +5726,22 @@
     "url": "https://www.kubotagarden.org/event",
     "cost": "Free (online reservation required)",
     "recurrence": "Seasonal weekend tour"
+  },
+  {
+    "id": "pssa-autumn-glider-intro-2026-10-24",
+    "title": "PSSA Autumn Glider Operations & Intro Soaring Flights",
+    "organization": "Puget Sound Soaring Association",
+    "activityType": "Flight/Aviation",
+    "area": "Puget Sound",
+    "venue": "Bergseth Airfield (31500 SE 408th St, Enumclaw, WA 98022)",
+    "start": "2026-10-24T10:00:00-07:00",
+    "end": "2026-10-24T15:00:00-07:00",
+    "timeString": "10:00 AM – 3:00 PM",
+    "dateString": "2026-10-24",
+    "description": "Experience powerless motorless flight with certified glider instructors over the Cascade foothills and Mount Rainier vistas; temporary membership includes flight.",
+    "url": "https://pugetsoundsoaring.org/",
+    "cost": "$230 30-day temporary membership (includes flight)",
+    "recurrence": "Weekend flight operations (weather permitting)"
   },
   {
     "id": "plantamnesty-pinetum-walk-20261024",
@@ -6400,6 +6496,22 @@
     "recurrence": "Annual 2-day festival"
   },
   {
+    "id": "pacific-raceways-trunk-treat-2026-10-31",
+    "title": "Halloween Trunk-or-Treat, Car Show & Lead-Follow Track Drive",
+    "organization": "Pacific Raceways Drag Racing Enthusiasts (Kent)",
+    "activityType": "Motorsports",
+    "area": "Kent",
+    "venue": "Pacific Raceways Paddock & Road Course (31001 144th Ave SE, Kent, WA 98042)",
+    "start": "2026-10-31T11:00:00-07:00",
+    "end": "2026-10-31T14:00:00-07:00",
+    "timeString": "11:00 AM – 2:00 PM",
+    "dateString": "2026-10-31",
+    "description": "Community family costume trunk-or-treat, custom car showcase, and pace-car controlled lead-follow laps around the legendary 2.25-mile road course.",
+    "url": "https://pacificraceways.com/schedule/",
+    "cost": "Free community event ($20 road course pace lap)",
+    "recurrence": "Annual Halloween community event"
+  },
+  {
     "id": "pacsci-after-dark-fungi-2026-10-31",
     "title": "Science After Dark: Fungi Fest Halloween Special (21+)",
     "organization": "Pacific Science Center Science Communication Guild",
@@ -6592,6 +6704,22 @@
     "recurrence": "Monthly (1st Mondays)"
   },
   {
+    "id": "kce-general-election-day-2026-11-03",
+    "title": "2026 General Election Day: Final Ballot Collection & Processing",
+    "organization": "King County Elections Ballot Drop Box Volunteer Program",
+    "activityType": "Community/Volunteering",
+    "area": "South King County",
+    "venue": "King County Elections Headquarters (919 SW Grady Way, Renton, WA 98057)",
+    "start": "2026-11-03T07:00:00-08:00",
+    "end": "2026-11-03T20:00:00-08:00",
+    "timeString": "7:00 AM – 8:00 PM Sharp",
+    "dateString": "2026-11-03",
+    "description": "Final day to cast your ballot; all drop boxes and accessible voting centers close promptly at 8:00 PM, with election night returns posted at 8:15 PM.",
+    "url": "https://kingcounty.gov/en/dept/elections",
+    "cost": "Free civic election",
+    "recurrence": "General Election Day"
+  },
+  {
     "id": "bloodworks-pike-place-2026-11-03",
     "title": "Pike Place Market Bloodmobile Community Donation Day",
     "organization": "Puget Sound Blood Center / Bloodworks NW Volunteers",
@@ -6750,6 +6878,22 @@
     "url": "https://seattlecityclub.org/events/",
     "cost": "$25 – $40 (networking refreshments included)",
     "recurrence": "Monthly first Wednesday civic forum"
+  },
+  {
+    "id": "renton-art-lounge-november-2026-11-04",
+    "title": "Allied Arts of Renton: Art Lounge & Creative Studio Social",
+    "organization": "Renton Art League",
+    "activityType": "Art",
+    "area": "Renton",
+    "venue": "Renton Creative Arts Space (Downtown Renton, WA 98057)",
+    "start": "2026-11-04T18:00:00-08:00",
+    "end": "2026-11-04T20:00:00-08:00",
+    "timeString": "6:00 PM – 8:00 PM",
+    "dateString": "2026-11-04",
+    "description": "Community gathering for painters, sculptors, and creative makers featuring guest artist demonstrations, critique tables, and local arts networking.",
+    "url": "https://alliedartsofrenton.org/",
+    "cost": "Free admission",
+    "recurrence": "Monthly arts social"
   },
   {
     "id": "mox-minis-paint-2026-11-04",
@@ -8526,6 +8670,22 @@
     "url": "https://curlingseattle.org/content/2026-2027-monday-night",
     "cost": "League registration",
     "recurrence": "Weekly on Mondays"
+  },
+  {
+    "id": "auburn-thanksgiving-giveaway-2026-11-24",
+    "title": "Annual Thanksgiving Food Basket Packing & Distribution",
+    "organization": "Auburn Food Bank Action Group",
+    "activityType": "Community/Volunteering",
+    "area": "Auburn",
+    "venue": "Holy Family Parish Hall (505 17th St SE, Auburn, WA 98002)",
+    "start": "2026-11-24T08:00:00-08:00",
+    "end": "2026-11-24T14:00:00-08:00",
+    "timeString": "8:00 AM – 2:00 PM",
+    "dateString": "2026-11-24",
+    "description": "Massive community effort distributing full Thanksgiving holiday dinner boxes to over 1,000 Auburn and South King County households.",
+    "url": "https://www.theauburnfoodbank.org/events",
+    "cost": "Free volunteer shift",
+    "recurrence": "Annual Thanksgiving community distribution"
   },
   {
     "id": "chtl-tuesday-hours-2026-11-24",
@@ -10430,5 +10590,21 @@
     "url": "https://igniteseattle.com/",
     "cost": "$12 early bird / $20 regular",
     "recurrence": "Tri-annual community event"
+  },
+  {
+    "id": "unw-train-show-preview-2027-02-27",
+    "title": "34th Annual Washington State Model Railroad Show & Marketplace",
+    "organization": "United NorthWest Model Railroad Club",
+    "activityType": "Games",
+    "area": "Seattle",
+    "venue": "Evergreen State Fairgrounds (14405 179th Ave SE, Monroe, WA 98272)",
+    "start": "2027-02-27T10:00:00-08:00",
+    "end": "2027-02-27T16:00:00-08:00",
+    "timeString": "10:00 AM – 4:00 PM",
+    "dateString": "2027-02-27",
+    "description": "The Pacific Northwest's largest all-scale model railroad exposition featuring massive operating modular layouts, vendor tables, modeling clinics, and family activities.",
+    "url": "https://www.unwclub.com/unwshow/",
+    "cost": "$12 adults, $10 seniors/youth, free under 10",
+    "recurrence": "Annual model railroad exposition"
   }
 ]
