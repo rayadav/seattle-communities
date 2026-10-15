@@ -4784,6 +4784,22 @@
     "recurrence": "Weekend tea ceremony"
   },
   {
+    "id": "psgka-club-championship-2026-10-18",
+    "title": "PSGKA 2026 Club Championship Season Finale Race #8",
+    "organization": "Puget Sound Go Karting Association",
+    "activityType": "Motorsports",
+    "area": "Seattle",
+    "venue": "Mountain Highway Raceway (23515 Mountain Hwy E, Spanaway, WA 98387)",
+    "start": "2026-10-18T09:00:00-07:00",
+    "end": "2026-10-18T16:00:00-07:00",
+    "timeString": "9:00 AM – 4:00 PM",
+    "dateString": "2026-10-18",
+    "description": "Season finale championship races for Briggs LO206, Shifter, and TaG classes on the historic 1/2-mile paved road course.",
+    "url": "https://psgka.com/",
+    "cost": "Free spectator viewing / driver race fees apply",
+    "recurrence": "Championship club race"
+  },
+  {
     "id": "op-fungi-fest-community-market-2026-10-18",
     "title": "Fungi Festival Community Market, Cultivation Demos & Presentations",
     "organization": "Olympic Peninsula Fungi Festival",
@@ -5520,6 +5536,22 @@
     "recurrence": "Monthly (4th Fridays)"
   },
   {
+    "id": "pacific-slot-car-friday-nascar-2026-10-23",
+    "title": "Friday Night Stock Car Racing on 'The Twister' Road Course",
+    "organization": "Pacific Slot Car Raceways",
+    "activityType": "RC Soaring",
+    "area": "Seattle",
+    "venue": "Pacific Slot Car Raceways (2908 Meridian Ave E, Suite #104, Edgewood, WA 98371)",
+    "start": "2026-10-23T19:00:00-07:00",
+    "end": "2026-10-23T21:30:00-07:00",
+    "timeString": "7:00 PM – 9:30 PM",
+    "dateString": "2026-10-23",
+    "description": "Weekly competitive 1/24 scale NASCAR stock car racing heats for amateur and expert racers on the custom 8-lane road course.",
+    "url": "https://www.pacificslotcarraceways.com/events-calendar/",
+    "cost": "Spectators free / $10 – $15 race entry",
+    "recurrence": "Weekly Friday evening racing"
+  },
+  {
     "id": "scc-friday-rated-2026-10-23",
     "title": "Seattle Chess Club: Friday Night USCF Rated Chess",
     "organization": "Seattle Chess Club",
@@ -5792,6 +5824,22 @@
     "recurrence": "Saturday community work party"
   },
   {
+    "id": "lifelong-csb-kitchen-prep-2026-10-24",
+    "title": "Chicken Soup Brigade: Volunteer Kitchen Meal Prep Shift",
+    "organization": "Lifelong AIDS Alliance Volunteer Crew",
+    "activityType": "Community/Volunteering",
+    "area": "Seattle / Puget Sound area",
+    "venue": "Lifelong Georgetown Facility (4634 E Marginal Way S, Suite C200, Seattle, WA 98134)",
+    "start": "2026-10-24T10:30:00-07:00",
+    "end": "2026-10-24T13:00:00-07:00",
+    "timeString": "10:30 AM – 1:00 PM",
+    "dateString": "2026-10-24",
+    "description": "Prepare, chop, cook, and package nutritious medically tailored meals for homebound neighbors living with serious illnesses.",
+    "url": "https://www.lifelong.org/events",
+    "cost": "Free volunteer shift",
+    "recurrence": "Weekly Saturday morning shift"
+  },
+  {
     "id": "srcs-monthly-gathering-20261024",
     "title": "Seattle Retro-Computing Society Monthly Meeting",
     "organization": "Seattle Retro-Computing Society",
@@ -5902,6 +5950,22 @@
     "url": "https://www.museumofflight.org/exhibits-and-events/calendar-of-events",
     "cost": "Included with admission",
     "recurrence": "Annual family festival"
+  },
+  {
+    "id": "seattle-paragliding-autumn-tandem-2026-10-25",
+    "title": "Autumn Tandem Flights at Tiger Mountain Poo Poo Point",
+    "organization": "Seattle Paragliding & Hang Gliding Club",
+    "activityType": "Flight/Aviation",
+    "area": "Seattle",
+    "venue": "Seattle Paragliding Flight Center (11206 Issaquah-Hobart Rd SE, Issaquah, WA 98027)",
+    "start": "2026-10-25T11:00:00-07:00",
+    "end": "2026-10-25T13:30:00-07:00",
+    "timeString": "11:00 AM – 1:30 PM",
+    "dateString": "2026-10-25",
+    "description": "Fly tandem with USHPA-certified instructors launching from Poo Poo Point on Tiger Mountain with panoramic views of the Issaquah Alps and Lake Sammamish.",
+    "url": "https://www.seattleparagliding.com/",
+    "cost": "$325 flight booking (weather permitting)",
+    "recurrence": "Weekend flight windows"
   },
   {
     "id": "cwb-free-public-sail-20261025",
@@ -6480,6 +6544,22 @@
     "recurrence": "Monthly public tour"
   },
   {
+    "id": "psgka-time-attack-trunk-treat-2026-10-31",
+    "title": "PSGKA Time Attack #5 & Halloween Trunk-or-Treat",
+    "organization": "Puget Sound Go Karting Association",
+    "activityType": "Motorsports",
+    "area": "Seattle",
+    "venue": "Mountain Highway Raceway (23515 Mountain Hwy E, Spanaway, WA 98387)",
+    "start": "2026-10-31T10:00:00-07:00",
+    "end": "2026-10-31T15:00:00-07:00",
+    "timeString": "10:00 AM – 3:00 PM",
+    "dateString": "2026-10-31",
+    "description": "Competitive lap time attack trials followed by family-friendly costume paddock activities and go-kart trunk-or-treating.",
+    "url": "https://psgka.com/",
+    "cost": "Free for families and spectators",
+    "recurrence": "Annual Halloween motorsports celebration"
+  },
+  {
     "id": "seattle-center-festal-dia-de-muertos-2026-10-31",
     "title": "Día de Muertos Festival Seattle 2026 (Day 1)",
     "organization": "Seattle Center",
@@ -6784,6 +6864,22 @@
     "recurrence": "Weekly on Tuesdays"
   },
   {
+    "id": "pfs-yeast-bacteria-meeting-2026-11-03",
+    "title": "Peninsula Fermentation Society: Yeasts & Bacteria Education",
+    "organization": "Peninsula Fermentation Society",
+    "activityType": "Food/Brewing",
+    "area": "Puget Sound",
+    "venue": "Rainy Daze Brewing (322 NE State Hwy 308, Poulsbo, WA 98370)",
+    "start": "2026-11-03T18:30:00-08:00",
+    "end": "2026-11-03T20:30:00-08:00",
+    "timeString": "6:30 PM – 8:30 PM",
+    "dateString": "2026-11-03",
+    "description": "Monthly educational meeting exploring brewing microbiology, wild yeasts, and bacteria cultures, followed by Double IPA style reviews and member homebrew tastings.",
+    "url": "https://www.peninsulafermentation.org/calendar",
+    "cost": "Free and open to the public (21+)",
+    "recurrence": "1st Tuesday monthly meeting"
+  },
+  {
     "id": "sfr-volunteer-park-2026-11-03",
     "title": "Seattle Frontrunners: Tuesday Evening Volunteer Park Run & Walk",
     "organization": "Seattle Frontrunners",
@@ -6846,6 +6942,22 @@
     "url": "https://www.seattlesoaring.org/",
     "cost": "Free for spectators / AMA card to fly",
     "recurrence": "Weekly on Wednesdays"
+  },
+  {
+    "id": "lifelong-csb-grocery-packing-2026-11-04",
+    "title": "Chicken Soup Brigade: Medically Tailored Grocery Bagging",
+    "organization": "Lifelong AIDS Alliance Volunteer Crew",
+    "activityType": "Community/Volunteering",
+    "area": "Seattle / Puget Sound area",
+    "venue": "Lifelong Georgetown Facility (4634 E Marginal Way S, Suite C200, Seattle, WA 98134)",
+    "start": "2026-11-04T13:30:00-08:00",
+    "end": "2026-11-04T16:00:00-08:00",
+    "timeString": "1:30 PM – 4:00 PM",
+    "dateString": "2026-11-04",
+    "description": "Sort fresh local produce, organize food donations, and bag custom grocery orders for clients with specialized dietary needs across King County.",
+    "url": "https://www.lifelong.org/events",
+    "cost": "Free volunteer shift",
+    "recurrence": "Weekday afternoon shift"
   },
   {
     "id": "gcc-wednesday-juniors-2026-11-04",
@@ -7454,6 +7566,22 @@
     "url": "https://www.museumofflight.org/exhibits-and-events/calendar-of-events?p=13",
     "cost": "Included with museum admission",
     "recurrence": "Weekend docent program"
+  },
+  {
+    "id": "nw-cider-harvest-tasting-2026-11-08",
+    "title": "Northwest Cider Association: Autumn Harvest Tasting & Flights",
+    "organization": "Northwest Cider Association",
+    "activityType": "Food/Brewing",
+    "area": "Puget Sound",
+    "venue": "Watershed Pub & Kitchen (10104 3rd Ave NE, Seattle, WA 98125)",
+    "start": "2026-11-08T15:00:00-08:00",
+    "end": "2026-11-08T18:00:00-08:00",
+    "timeString": "3:00 PM – 6:00 PM",
+    "dateString": "2026-11-08",
+    "description": "Showcasing estate and wild-fermented Pacific Northwest ciders from Washington orchards; meet regional cidermakers with paired seasonal flights.",
+    "url": "https://www.nwcider.com/",
+    "cost": "Free entry / flight purchases",
+    "recurrence": "Monthly cider tasting feature"
   },
   {
     "id": "seattle-recreative-upcycling-night-2026-11-09",
@@ -8336,6 +8464,22 @@
     "recurrence": "Weekly on Fridays"
   },
   {
+    "id": "rbac-arts-roundtable-2026-11-20",
+    "title": "Rainier Beach Arts & Culture Roundtable: Creative Networking",
+    "organization": "Rainier Valley Food Innovation",
+    "activityType": "Community/Volunteering",
+    "area": "South Seattle",
+    "venue": "Rainier Beach Food Innovation Center (9059 MLK Jr Way S, Seattle, WA 98118)",
+    "start": "2026-11-20T18:00:00-08:00",
+    "end": "2026-11-20T19:30:00-08:00",
+    "timeString": "6:00 PM – 7:30 PM",
+    "dateString": "2026-11-20",
+    "description": "Monthly creative community roundtable presented by RBAC and Cascadia Poetics Lab fostering neighborhood arts visibility, cultural planning, and resource sharing.",
+    "url": "https://www.rbcoalition.org/event-calendar/",
+    "cost": "Free community gathering",
+    "recurrence": "3rd Friday monthly roundtable"
+  },
+  {
     "id": "scc-friday-rated-2026-11-20",
     "title": "Seattle Chess Club: Friday Night USCF Rated Chess",
     "organization": "Seattle Chess Club",
@@ -9070,6 +9214,22 @@
     "url": "https://www.moxboardinghouse.com/pages/seattle-events",
     "cost": "Free drop-in play",
     "recurrence": "Weekly on Tuesdays"
+  },
+  {
+    "id": "pfs-sensory-dubbel-meeting-2026-12-01",
+    "title": "Peninsula Fermentation Society: Sensory Evaluation & Belgian Dubbels",
+    "organization": "Peninsula Fermentation Society",
+    "activityType": "Food/Brewing",
+    "area": "Puget Sound",
+    "venue": "Rainy Daze Brewing (322 NE State Hwy 308, Poulsbo, WA 98370)",
+    "start": "2026-12-01T18:30:00-08:00",
+    "end": "2026-12-01T20:30:00-08:00",
+    "timeString": "6:30 PM – 8:30 PM",
+    "dateString": "2026-12-01",
+    "description": "Hands-on sensory identification workshop for homebrewers, off-flavor training, and Belgian Dubbel style exploration.",
+    "url": "https://www.peninsulafermentation.org/calendar",
+    "cost": "Free admission (21+)",
+    "recurrence": "1st Tuesday monthly meeting"
   },
   {
     "id": "sfr-volunteer-park-2026-12-01",
