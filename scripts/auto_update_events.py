@@ -41,7 +41,7 @@ PRIORITY_KEYWORDS = [
     "myco", "mush", "fungi", "forag", "salmon", "watershed", "river",
     "bird", "audubon", "plant", "botan", "tree", "forest", "track",
     "wild", "maker", "tool", "woodshop", "craft", "astronom", "science",
-    "repair", "salish", "marine"
+    "soundbio", "bio", "diybio", "microscop", "repair", "salish", "marine"
 ]
 
 def load_env_file():

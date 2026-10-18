@@ -23,7 +23,7 @@ Whenever reviewing, searching, or updating events, ALWAYS conduct an in-depth re
    - *Tool Libraries & Reuse:* Capitol Hill Tool Library, West Seattle Tool Library, Northeast Seattle Tool Library, Ballard Tool Library, South King Tool Library (repair cafés, fix-it nights, clothing swaps, tool classes).
 
 4. **Community Science, Discourse, Astronomy & Natural History**:
-   - *Citizen Science & Astronomy:* Seattle Astronomical Society (star parties, lectures), COASST (Coastal Observation and Seabird Survey Team), Pacific Northwest Microscopy Society, Seattle Robotics Society.
+   - *Citizen Science, DIY Bio & Astronomy:* SoundBio Lab (DIY community biology, biomaterials, microscopes, biosensors at https://www.sound.bio/workshops), Seattle Astronomical Society (star parties, lectures), COASST (Coastal Observation and Seabird Survey Team), Pacific Northwest Microscopy Society, Seattle Robotics Society.
    - *Public Lectures & Gatherings:* Science on Tap Seattle, Pacific Science Center Science Communication Guild, UW Herbarium lectures.
 
 ---
