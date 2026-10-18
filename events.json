@@ -4784,6 +4784,22 @@
     "recurrence": "Weekend tea ceremony"
   },
   {
+    "id": "bcs-arboretum-bird-walk-2026-10-18",
+    "title": "Neighborhood Bird Outing: LGBTQIA+ Birders at the Arboretum",
+    "organization": "Birds Connect Seattle",
+    "activityType": "Birding",
+    "area": "Seattle",
+    "venue": "Washington Park Arboretum Graham Visitors Center (2300 Arboretum Dr E, Seattle, WA 98112)",
+    "start": "2026-10-18T09:00:00-07:00",
+    "end": "2026-10-18T11:30:00-07:00",
+    "timeString": "9:00 AM – 11:30 AM",
+    "dateString": "2026-10-18",
+    "description": "Welcoming community bird walk exploring resident woodpeckers, autumn waterfowl, kinglets, and sparrows through the Arboretum; binoculars available to borrow.",
+    "url": "https://birdsconnectsea.org/events/",
+    "cost": "Free (no registration required)",
+    "recurrence": "Neighborhood bird outing"
+  },
+  {
     "id": "psgka-club-championship-2026-10-18",
     "title": "PSGKA 2026 Club Championship Season Finale Race #8",
     "organization": "Puget Sound Go Karting Association",
@@ -4878,6 +4894,22 @@
     "url": "https://wakayakclub.clubexpress.com/calendar",
     "cost": "$20 members, $25 non-members",
     "recurrence": "Sunday indoor pool sessions"
+  },
+  {
+    "id": "cedar-river-salmon-journey-2026-10-18",
+    "title": "Cedar River Salmon Journey: Spawning Salmon Viewing with Naturalists",
+    "organization": "Friends of the Cedar River Watershed",
+    "activityType": "Nature/Conservation",
+    "area": "Eastside",
+    "venue": "Cedar Grange #534 (22212 216th Ave SE, Maple Valley, WA 98038)",
+    "start": "2026-10-18T11:00:00-07:00",
+    "end": "2026-10-18T14:00:00-07:00",
+    "timeString": "11:00 AM – 2:00 PM",
+    "dateString": "2026-10-18",
+    "description": "Free riverside salmon viewing led by volunteer naturalists helping visitors spot spawning sockeye, Chinook, and coho salmon along the Cedar River.",
+    "url": "https://www.seattleaquarium.org/explore-the-aquarium/programs/cedar-river-salmon-journey/",
+    "cost": "Free community event",
+    "recurrence": "October weekend salmon viewing"
   },
   {
     "id": "discnw-friz-fest-2026-10-18",
@@ -5230,6 +5262,22 @@
     "url": "https://www.seattlesoaring.org/",
     "cost": "Free for spectators / AMA card to fly",
     "recurrence": "Weekly on Wednesdays"
+  },
+  {
+    "id": "bcs-juanita-bay-bird-walk-2026-10-21",
+    "title": "Birds Connect Seattle Field Trip: Juanita Bay Park Wetlands",
+    "organization": "Birds Connect Seattle",
+    "activityType": "Birding",
+    "area": "Eastside",
+    "venue": "Juanita Bay Park (2201 Market St, Kirkland, WA 98033)",
+    "start": "2026-10-21T08:30:00-07:00",
+    "end": "2026-10-21T11:30:00-07:00",
+    "timeString": "8:30 AM – 11:30 AM",
+    "dateString": "2026-10-21",
+    "description": "Explore marsh boardwalks searching for migrating grebes, ducks, Virginia rails, and autumn passerines along the Lake Washington shoreline.",
+    "url": "https://birdsconnectsea.org/events/",
+    "cost": "$15 registration",
+    "recurrence": "Mid-week birding field trip"
   },
   {
     "id": "meals-on-wheels-west-seattle-2026-10-21",
@@ -5776,6 +5824,22 @@
     "recurrence": "Weekly on Saturdays"
   },
   {
+    "id": "cedar-river-salmon-journey-2026-10-24",
+    "title": "Cedar River Salmon Journey at Riverview Park & Belmondo Reach",
+    "organization": "Friends of the Cedar River Watershed",
+    "activityType": "Nature/Conservation",
+    "area": "Renton",
+    "venue": "Riverview Park (3201 Maple Valley Hwy, Renton, WA 98058)",
+    "start": "2026-10-24T10:00:00-07:00",
+    "end": "2026-10-24T14:00:00-07:00",
+    "timeString": "10:00 AM – 2:00 PM",
+    "dateString": "2026-10-24",
+    "description": "Naturalists stationed along the river trail and footbridge sharing salmon life-cycle biology, habitat restoration efforts, and river conservation.",
+    "url": "https://www.seattleaquarium.org/explore-the-aquarium/programs/cedar-river-salmon-journey/",
+    "cost": "Free community event",
+    "recurrence": "Weekend salmon naturalist station"
+  },
+  {
     "id": "sktl-fall-clothing-swap-20261024",
     "title": "Fall / Winter Community Clothing Swap",
     "organization": "South King Tool Library",
@@ -5806,6 +5870,22 @@
     "url": "https://www.kubotagarden.org/event",
     "cost": "Free (online reservation required)",
     "recurrence": "Seasonal weekend tour"
+  },
+  {
+    "id": "uw-arboretum-landscape-walk-2026-10-24",
+    "title": "Landscape Architecture Walking Tour: Washington Park Arboretum",
+    "organization": "Seattle Architecture Foundation",
+    "activityType": "Nature/Conservation",
+    "area": "Seattle",
+    "venue": "Washington Park Arboretum Graham Visitors Center (2300 Arboretum Dr E, Seattle, WA 98112)",
+    "start": "2026-10-24T10:00:00-07:00",
+    "end": "2026-10-24T12:00:00-07:00",
+    "timeString": "10:00 AM – Noon",
+    "dateString": "2026-10-24",
+    "description": "Guided 2-mile walking tour led by landscape architects exploring Olmsted design principles, urban watershed ecology, and iconic autumn tree collections.",
+    "url": "https://seattlearchitecture.org/tours/",
+    "cost": "$30 ($25 members)",
+    "recurrence": "Special partnered tour"
   },
   {
     "id": "pssa-autumn-glider-intro-2026-10-24",
@@ -5888,6 +5968,22 @@
     "recurrence": "Weekly Saturday morning shift"
   },
   {
+    "id": "carkeek-salmon-stewards-opening-2026-10-24",
+    "title": "Carkeek Park Piper's Creek Salmon Stewards: Chum Salmon Viewing",
+    "organization": "Green Seattle Partnership Park Stewards",
+    "activityType": "Nature/Conservation",
+    "area": "Seattle",
+    "venue": "Carkeek Park (Piper's Creek Trail, 950 NW Carkeek Park Rd, Seattle, WA 98177)",
+    "start": "2026-10-24T11:00:00-07:00",
+    "end": "2026-10-24T15:00:00-07:00",
+    "timeString": "11:00 AM – 3:00 PM",
+    "dateString": "2026-10-24",
+    "description": "Volunteer Salmon Stewards stationed creekside along Piper's Creek helping visitors witness returning chum salmon as they navigate shallow gravels to spawn.",
+    "url": "https://www.carkeekpark.org/",
+    "cost": "Free community event",
+    "recurrence": "Weekend salmon viewing through Dec 5"
+  },
+  {
     "id": "srcs-monthly-gathering-20261024",
     "title": "Seattle Retro-Computing Society Monthly Meeting",
     "organization": "Seattle Retro-Computing Society",
@@ -5950,6 +6046,22 @@
     "url": "https://www.seattlejapanesegarden.org/events-calendar",
     "cost": "$15 ticket + Garden admission",
     "recurrence": "Weekend tea ceremony"
+  },
+  {
+    "id": "bcs-union-bay-natural-area-2026-10-25",
+    "title": "Neighborhood Bird Outing: Union Bay Natural Area (Montlake Fill)",
+    "organization": "Birds Connect Seattle",
+    "activityType": "Birding",
+    "area": "Seattle",
+    "venue": "Center for Urban Horticulture / UBNA (3501 NE 41st St, Seattle, WA 98105)",
+    "start": "2026-10-25T09:00:00-07:00",
+    "end": "2026-10-25T11:30:00-07:00",
+    "timeString": "9:00 AM – 11:30 AM",
+    "dateString": "2026-10-25",
+    "description": "Walk the gravel trails of Seattle's premier urban birding hotspot looking for autumn waterfowl, northern harriers, sparrows, and wintering passerines.",
+    "url": "https://birdsconnectsea.org/events/",
+    "cost": "Free community walk (no RSVP required)",
+    "recurrence": "Neighborhood bird outing"
   },
   {
     "id": "psms-wild-mushroom-show-2026-10-25",
@@ -6544,6 +6656,22 @@
     "recurrence": "Annual trail race"
   },
   {
+    "id": "bcs-ballard-locks-birding-2026-10-31",
+    "title": "Neighborhood Bird Outing: Ballard Locks & Botanical Garden",
+    "organization": "Birds Connect Seattle",
+    "activityType": "Birding",
+    "area": "Seattle",
+    "venue": "Hiram M. Chittenden Locks (3015 NW 54th St, Seattle, WA 98107)",
+    "start": "2026-10-31T09:00:00-07:00",
+    "end": "2026-10-31T11:30:00-07:00",
+    "timeString": "9:00 AM – 11:30 AM",
+    "dateString": "2026-10-31",
+    "description": "Birding walk around the ship canal, fish ladder viewing windows, and English garden trees for gulls, cormorants, herons, and autumn songbirds.",
+    "url": "https://birdsconnectsea.org/events/",
+    "cost": "Free community outing",
+    "recurrence": "Neighborhood bird outing"
+  },
+  {
     "id": "sfr-green-lake-2026-10-31",
     "title": "Seattle Frontrunners: Halloween Costume Green Lake Run & Walk",
     "organization": "Seattle Frontrunners",
@@ -6590,6 +6718,22 @@
     "url": "https://northwest-lichenologists.wildapricot.org/page-1816534",
     "cost": "$25",
     "recurrence": "Special Event"
+  },
+  {
+    "id": "uw-botanic-gardens-lichens-bogs-2026-10-31",
+    "title": "Halloween Workshop: Cemetery Lichens & Windowsill Carnivorous Bogs",
+    "organization": "Pacific Science Center Science Communication Guild",
+    "activityType": "Science",
+    "area": "Seattle",
+    "venue": "Center for Urban Horticulture (3501 NE 41st St, Seattle, WA 98105)",
+    "start": "2026-10-31T10:00:00-07:00",
+    "end": "2026-10-31T13:00:00-07:00",
+    "timeString": "10:00 AM – 1:00 PM",
+    "dateString": "2026-10-31",
+    "description": "Hands-on spooky botany workshop exploring the symbiotic ecology of graveyard lichens, sundews, and pitcher plants, with potting materials provided.",
+    "url": "https://botanicgardens.uw.edu/education/",
+    "cost": "$45 materials included",
+    "recurrence": "Seasonal botany workshop"
   },
   {
     "id": "kubota-public-tour-2026-10-31",
@@ -7952,6 +8096,22 @@
     "recurrence": "Monthly meeting"
   },
   {
+    "id": "wnps-uw-herbarium-meeting-2026-11-12",
+    "title": "WNPS: 25 Years of Exploring PNW Vascular Plant Flora at UW Herbarium",
+    "organization": "Washington Native Plant Society (Central Puget Sound)",
+    "activityType": "Nature/Conservation",
+    "area": "Seattle",
+    "venue": "The Mountaineers Seattle Program Center (7700 Sand Point Way NE, Seattle, WA 98115)",
+    "start": "2026-11-12T19:00:00-08:00",
+    "end": "2026-11-12T21:00:00-08:00",
+    "timeString": "7:00 PM – 9:00 PM (Plant ID Workshop 6:30 PM)",
+    "dateString": "2026-11-12",
+    "description": "Botanical presentation on 150 years of Pacific Northwest herbarium collections, rare plant mapping, invasive species shifts, and specimen archiving.",
+    "url": "https://www.wnps.org/central-puget-sound",
+    "cost": "Free and open to the public",
+    "recurrence": "Monthly chapter meeting"
+  },
+  {
     "id": "town-hall-science-psychedelics-2026-11-12",
     "title": "Town Hall Science: End-of-Life Psychedelic Care & Neuroscience",
     "organization": "Town Hall Seattle",
@@ -8766,6 +8926,22 @@
     "url": "https://seattlerobotics.org/calendar/",
     "cost": "Free",
     "recurrence": "Monthly on 3rd Saturday"
+  },
+  {
+    "id": "carkeek-annual-salmon-celebration-2026-11-21",
+    "title": "Carkeek Park Annual Salmon Celebration",
+    "organization": "Green Seattle Partnership Park Stewards",
+    "activityType": "Nature/Conservation",
+    "area": "Seattle",
+    "venue": "Carkeek Park Environmental Learning Center (950 NW Carkeek Park Rd, Seattle, WA 98177)",
+    "start": "2026-11-21T11:00:00-08:00",
+    "end": "2026-11-21T15:00:00-08:00",
+    "timeString": "11:00 AM – 3:00 PM",
+    "dateString": "2026-11-21",
+    "description": "Annual family festival celebrating the salmon return with live music, salmon dissection and dissection demos, children's art activities, and guided creek walks.",
+    "url": "https://www.carkeekpark.org/",
+    "cost": "Free community festival",
+    "recurrence": "Annual autumn salmon festival"
   },
   {
     "id": "nestl-community-threads-2026-11-21",
