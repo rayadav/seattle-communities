@@ -42,10 +42,10 @@ fi
 echo "Running auto_update_events.py..."
 python3 "$REPO_DIR/scripts/auto_update_events.py"
 
-# Commit and push if events.json changed
-if ! git diff --quiet events.json; then
-    echo "Changes detected in events.json. Committing and pushing..."
-    git add events.json events.min.json 2>/dev/null || git add events.json
+# Commit and push if events.json or sw.js changed
+if ! git diff --quiet events.json || ! git diff --quiet sw.js; then
+    echo "Changes detected in events.json or sw.js. Committing and pushing..."
+    git add events.json events.min.json sw.js
     git commit -m "Auto-update community events [skip ci]"
     if git push origin main; then
         echo "Successfully pushed updates to origin/main."
