@@ -5312,6 +5312,22 @@
     "recurrence": "Weekly on Wednesdays"
   },
   {
+    "id": "renton-lgbtq-cozy-crafting-2026-10-21",
+    "title": "Cozy Crafting & Social Evening with Renton LGBTQIA+",
+    "organization": "Renton LGBTQIA+ Community Coalition",
+    "activityType": "Advocacy",
+    "area": "Renton",
+    "venue": "Renton Library (100 Mill Ave S, Renton, WA 98057)",
+    "start": "2026-10-21T18:00:00-07:00",
+    "end": "2026-10-21T19:30:00-07:00",
+    "timeString": "6:00 PM – 7:30 PM",
+    "dateString": "2026-10-21",
+    "description": "Relaxed community social evening with tea, snacks, and crafting; materials provided or bring your own creative project.",
+    "url": "https://renton.lgbt/events/",
+    "cost": "Free community event",
+    "recurrence": "Monthly community craft night"
+  },
+  {
     "id": "mox-paint-jam-2026-10-21",
     "title": "Mox Seattle: Minis Paint Jam & Hobby Workshop",
     "organization": "Mox Boarding House",
@@ -5390,6 +5406,22 @@
     "url": "https://www.tahomabirdalliance.org/bird-walks",
     "cost": "Free",
     "recurrence": "2nd & 4th Thursday of each month"
+  },
+  {
+    "id": "pnms-fall-meeting-2026-10-22",
+    "title": "Pacific Northwest Microscopy Society 2026 Fall Meeting",
+    "organization": "Pacific Northwest Microscopy Society",
+    "activityType": "Science",
+    "area": "Seattle",
+    "venue": "UW Center for Advanced Materials & Virtual (Seattle, WA 98195)",
+    "start": "2026-10-22T13:00:00-07:00",
+    "end": "2026-10-22T16:30:00-07:00",
+    "timeString": "1:00 PM – 4:30 PM",
+    "dateString": "2026-10-22",
+    "description": "Regional symposium featuring scientific presentations on electron microscopy, super-resolution optical imaging, and sample preparation techniques across academia and industry.",
+    "url": "https://pnms.microscopy.org/Events",
+    "cost": "Free registration for students & researchers",
+    "recurrence": "Annual fall scientific meeting"
   },
   {
     "id": "elap-housing-clinic-2026-10-22",
@@ -5694,6 +5726,22 @@
     "url": "https://seattlefrontrunners.org/calendar",
     "cost": "Free",
     "recurrence": "Weekly on Saturdays"
+  },
+  {
+    "id": "auburn-garden-fall-cleanup-2026-10-24",
+    "title": "Auburn Community Garden: End-of-Season Plot Winterization Work Party",
+    "organization": "Auburn Community Garden Collective",
+    "activityType": "Nature/Conservation",
+    "area": "Auburn",
+    "venue": "Garna Botting Jones Community Garden (Auburn, WA 98002)",
+    "start": "2026-10-24T09:30:00-07:00",
+    "end": "2026-10-24T12:30:00-07:00",
+    "timeString": "9:30 AM – 12:30 PM",
+    "dateString": "2026-10-24",
+    "description": "Volunteer garden bed clearing, composting spent tomato vines, tool shed winterization, and spreading straw mulch before water turn-off.",
+    "url": "https://www.auburnwa.gov/visitors/community_calendar",
+    "cost": "Free volunteer work party",
+    "recurrence": "Seasonal garden cleanup"
   },
   {
     "id": "coasst-beached-bird-training-2026-10-24",
@@ -6304,6 +6352,22 @@
     "recurrence": "Weekly on Wednesdays"
   },
   {
+    "id": "seattle-reiki-circle-2026-10-28",
+    "title": "Community Reiki & Restorative Energy Practice Gathering",
+    "organization": "Greater Seattle Reiki Practice Group",
+    "activityType": "Fitness",
+    "area": "Seattle",
+    "venue": "Seattle City Reiki Healing Studio (Seattle, WA 98103)",
+    "start": "2026-10-28T18:30:00-07:00",
+    "end": "2026-10-28T20:00:00-07:00",
+    "timeString": "6:30 PM – 8:00 PM",
+    "dateString": "2026-10-28",
+    "description": "Guided group meditation and peer table shares for Usui Reiki practitioners and community members seeking relaxation and energetic balance.",
+    "url": "https://www.seattlecityreiki.com/classes",
+    "cost": "$15 suggested donation",
+    "recurrence": "Bi-weekly community circle"
+  },
+  {
     "id": "scc-wednesday-casual-2026-10-28",
     "title": "Seattle Chess Club: Wednesday Casual Chess Night",
     "organization": "Seattle Chess Club",
@@ -6606,6 +6670,22 @@
     "url": "https://pacificsciencecenter.org/events/",
     "cost": "$30 ($25 members)",
     "recurrence": "Science After Dark 21+ series"
+  },
+  {
+    "id": "green-lake-yoga-flow-reiki-2026-11-01",
+    "title": "Sunday Morning Gentle Yoga Flow & Hands-on Reiki",
+    "organization": "Green Lake Morning Yoga Collective",
+    "activityType": "Fitness",
+    "area": "Seattle / Puget Sound area",
+    "venue": "Green Lake Community Center Lawn (7201 E Green Lake Dr N, Seattle, WA 98115)",
+    "start": "2026-11-01T09:30:00-07:00",
+    "end": "2026-11-01T10:45:00-07:00",
+    "timeString": "9:30 AM – 10:45 AM",
+    "dateString": "2026-11-01",
+    "description": "All-levels outdoor mindful morning vinyasa flow followed by calming savasana with optional gentle hands-on Reiki; bring a mat and layers.",
+    "url": "https://www.wellnesshealingarts.com/seattleyoga",
+    "cost": "Sliding scale ($10 – $20)",
+    "recurrence": "Sunday morning weekly practice"
   },
   {
     "id": "wkc-tukwila-pool-roll-2026-11-01",
@@ -7056,6 +7136,22 @@
     "recurrence": "Weekly on Wednesdays"
   },
   {
+    "id": "renton-lgbtq-pflag-meeting-2026-11-04",
+    "title": "Renton LGBTQ+ & Family Peer Support Meeting",
+    "organization": "Renton LGBTQIA+ Community Coalition",
+    "activityType": "Advocacy",
+    "area": "Renton",
+    "venue": "Downtown Renton Community Center (Renton, WA 98057)",
+    "start": "2026-11-04T19:30:00-08:00",
+    "end": "2026-11-04T21:00:00-08:00",
+    "timeString": "7:30 PM – 9:00 PM",
+    "dateString": "2026-11-04",
+    "description": "Safe, confidential peer support and resource-sharing circle for LGBTQ+ individuals, family members, and allies in South King County.",
+    "url": "https://renton.lgbt/events/",
+    "cost": "Free (RSVP required)",
+    "recurrence": "1st Wednesday monthly support meeting"
+  },
+  {
     "id": "burke-free-first-thursday-2026-11-05",
     "title": "Burke Museum: Free First Thursday Admission",
     "organization": "The Burke Museum",
@@ -7150,6 +7246,22 @@
     "url": "https://www.seattlego.org/schedule/",
     "cost": "Club fee",
     "recurrence": "Weekly on Thursdays"
+  },
+  {
+    "id": "entsocwash-november-meeting-2026-11-05",
+    "title": "Entomological Society: 1263rd Regular Scientific Meeting",
+    "organization": "Entomological Society of Washington",
+    "activityType": "Nature/Conservation",
+    "area": "Seattle",
+    "venue": "University of Washington Biology & Virtual (Seattle, WA 98195)",
+    "start": "2026-11-05T19:00:00-08:00",
+    "end": "2026-11-05T20:30:00-08:00",
+    "timeString": "7:00 PM – 8:30 PM",
+    "dateString": "2026-11-05",
+    "description": "Monthly presentation by entomological researchers covering insect evolutionary ecology, biodiversity sampling, and Pacific Northwest pollinator health.",
+    "url": "https://www.entsocwash.org/events",
+    "cost": "Free and open to the public",
+    "recurrence": "1st Thursday monthly meeting"
   },
   {
     "id": "gcc-thursday-mens-2026-11-05",
