@@ -7200,6 +7200,22 @@
     "recurrence": "Weekly on Wednesdays"
   },
   {
+    "id": "bbg-lichen-walk-20261104",
+    "title": "Lichen Ecology & Forest Health Walk with Dr. Katherine Glew",
+    "organization": "Bellevue Botanical Garden Volunteers",
+    "activityType": "Nature/Conservation",
+    "venue": "Bellevue Botanical Garden (12001 Main St, Bellevue, WA 98005)",
+    "area": "Bellevue",
+    "start": "2026-11-04T13:00:00-08:00",
+    "end": "2026-11-04T15:00:00-08:00",
+    "timeString": "1:00 PM – 3:00 PM",
+    "dateString": "2026-11-04",
+    "description": "Specialized outdoor botanical walk exploring urban epiphytic lichens, their microscopic structure, and what their distribution reveals about Puget Sound air quality and forest canopy health.",
+    "url": "https://bellevuebotanical.org/calendar/",
+    "cost": " – ",
+    "recurrence": "Special Workshop"
+  },
+  {
     "id": "lifelong-csb-grocery-packing-2026-11-04",
     "title": "Chicken Soup Brigade: Medically Tailored Grocery Bagging",
     "organization": "Lifelong AIDS Alliance Volunteer Crew",
@@ -7390,6 +7406,22 @@
     "url": "https://seattlereconomy.org/events/",
     "cost": "Free (donations gratefully accepted)",
     "recurrence": "Monthly first Thursday repair clinic"
+  },
+  {
+    "id": "nestl-community-fixit-night-20261105",
+    "title": "Community Fix-It Night & Repair Café",
+    "organization": "Northeast Seattle Tool Library",
+    "activityType": "Tools",
+    "venue": "Northeast Seattle Tool Library (10228 Fischer Pl NE, Seattle, WA 98125)",
+    "area": "Seattle (Meadowbrook)",
+    "start": "2026-11-05T17:30:00-08:00",
+    "end": "2026-11-05T19:30:00-08:00",
+    "timeString": "5:30 PM – 7:30 PM",
+    "dateString": "2026-11-05",
+    "description": "Free community repair clinic pairing neighbors with volunteer fixers to troubleshoot and repair broken household items, lamps, small electronics, toys, and small tools to divert waste from landfills.",
+    "url": "https://seattlereconomy.org/events/",
+    "cost": "Free (Donations welcome)",
+    "recurrence": "Monthly (1st Thursdays)"
   },
   {
     "id": "mox-warhammer-2026-11-05",
@@ -7680,6 +7712,22 @@
     "recurrence": "Weekly on Saturdays"
   },
   {
+    "id": "bbg-nature-journaling-20261107",
+    "title": "Journaling the Garden: Adult Botanical Sketching & Field Observation",
+    "organization": "Bellevue Botanical Garden Volunteers",
+    "activityType": "Nature/Conservation",
+    "venue": "Bellevue Botanical Garden (12001 Main St, Bellevue, WA 98005)",
+    "area": "Bellevue",
+    "start": "2026-11-07T10:00:00-08:00",
+    "end": "2026-11-07T12:00:00-08:00",
+    "timeString": "10:00 AM – 12:00 PM",
+    "dateString": "2026-11-07",
+    "description": "Free outdoor adult nature journaling and field sketching session through the garden's woodland trails and collections, focusing on seasonal botanical changes and mindfulness.",
+    "url": "https://bellevuebotanical.org/calendar/",
+    "cost": "Free (Registration recommended)",
+    "recurrence": "Monthly (1st Saturdays)"
+  },
+  {
     "id": "nwssa-sculpture-crate-building-2026-11-07",
     "title": "Stone Sculpture Crate Building Workshop",
     "organization": "Northwest Stone Sculptors Association",
@@ -7694,6 +7742,22 @@
     "url": "https://www.nwssa.org/",
     "cost": "Registration required",
     "recurrence": "Special Workshop"
+  },
+  {
+    "id": "skwc-swamp-creek-restoration-20261107",
+    "title": "Swamp Creek Salmon Habitat Restoration Work Party",
+    "organization": "Sno-King Watershed Council",
+    "activityType": "Nature/Conservation",
+    "venue": "Wallace Swamp Creek Park (19851 73rd Ave NE, Kenmore, WA 98028)",
+    "area": "Kenmore",
+    "start": "2026-11-07T10:00:00-08:00",
+    "end": "2026-11-07T13:00:00-08:00",
+    "timeString": "10:00 AM – 1:00 PM",
+    "dateString": "2026-11-07",
+    "description": "Community watershed restoration work party planting native riparian trees and shrubs and removing invasive species to restore water quality and rearing pools for returning Chinook and Coho salmon.",
+    "url": "https://snokingwatershedcouncil.org/news/events/",
+    "cost": "Free",
+    "recurrence": "Monthly Work Party"
   },
   {
     "id": "tilth-perennial-edibles-2026-11-07",
@@ -8000,6 +8064,22 @@
     "recurrence": "Monthly general meeting"
   },
   {
+    "id": "psms-general-meeting-20261110",
+    "title": "PSMS November Meeting: Fungal Diversity & Global Conservation with Dr. Greg Mueller",
+    "organization": "Puget Sound Mycological Society",
+    "activityType": "Nature/Conservation",
+    "venue": "Center for Urban Horticulture (3501 NE 41st St, Seattle, WA 98105)",
+    "area": "Seattle (University District)",
+    "start": "2026-11-10T19:30:00-08:00",
+    "end": "2026-11-10T21:30:00-08:00",
+    "timeString": "7:30 PM – 9:30 PM (Doors 7:00 PM)",
+    "dateString": "2026-11-10",
+    "description": "Renowned mycologist Dr. Greg Mueller (Co-Chair IUCN SSC Fungal Conservation Committee) discusses global fungal biodiversity and why protecting fungi is critical for forest ecosystem health.",
+    "url": "https://www.psms.org/all_events.php",
+    "cost": "Free and open to the public",
+    "recurrence": "Monthly (2nd Tuesdays)"
+  },
+  {
     "id": "mox-minis-paint-2026-11-11",
     "title": "Mox Boarding House: Wednesday Minis Painting Jam",
     "organization": "Mox Boarding House",
@@ -8014,6 +8094,22 @@
     "url": "https://www.moxboardinghouse.com/pages/seattle-events",
     "cost": "Free",
     "recurrence": "Weekly on Wednesdays"
+  },
+  {
+    "id": "scms-conservation-of-fungi-20261111",
+    "title": "SCMS Monthly Meeting: Conservation of Fungi with Dr. Gregory M. Mueller",
+    "organization": "Snohomish County Mycological Society",
+    "activityType": "Nature/Conservation",
+    "venue": "Everett Firefighter's Hall (2411 Hewitt Ave, Everett, WA 98201)",
+    "area": "Everett",
+    "start": "2026-11-11T19:00:00-08:00",
+    "end": "2026-11-11T20:30:00-08:00",
+    "timeString": "7:00 PM – 8:30 PM",
+    "dateString": "2026-11-11",
+    "description": "Dr. Gregory M. Mueller presents on global fungi conservation initiatives, Red List assessments, and preserving wild Pacific Northwest mushroom habitats.",
+    "url": "https://www.scmsfungi.org/",
+    "cost": "Free and open to the public",
+    "recurrence": "Monthly (2nd Wednesdays)"
   },
   {
     "id": "scc-wednesday-casual-2026-11-11",
@@ -8304,6 +8400,22 @@
     "recurrence": "Second Saturday of the month"
   },
   {
+    "id": "seward-park-arctic-visitors-walk-20261114",
+    "title": "Arctic Visitors & Winter Waterfowl Bird Walk",
+    "organization": "Seward Park Audubon Center",
+    "activityType": "Birding",
+    "venue": "Seward Park Audubon Center (5902 Lake Washington Blvd S, Seattle, WA 98118)",
+    "area": "Seattle (Seward Park)",
+    "start": "2026-11-14T09:00:00-08:00",
+    "end": "2026-11-14T11:00:00-08:00",
+    "timeString": "9:00 AM – 11:00 AM",
+    "dateString": "2026-11-14",
+    "description": "Guided nature walk through the Seward Park old-growth peninsula and Lake Washington shore observing wintering waterfowl, diving grebes, mergansers, and resident forest raptors.",
+    "url": "https://www.audubon.org/events?view_type=row&location=Seward+Park+Audubon+Center",
+    "cost": " – ",
+    "recurrence": "Special Event"
+  },
+  {
     "id": "tba-point-ruston-2026-11-14",
     "title": "Tahoma Bird Alliance: Point Ruston Winter Shoreline Bird Walk",
     "organization": "Tahoma Bird Alliance",
@@ -8446,6 +8558,22 @@
     "url": "https://www.seattlego.org/schedule/",
     "cost": "Club fee",
     "recurrence": "Weekly on Saturdays"
+  },
+  {
+    "id": "bcs-bipoc-birding-ballard-locks-20261115",
+    "title": "Neighborhood Bird Outing: BIPOC Birding at the Ballard Locks",
+    "organization": "Birds Connect Seattle",
+    "activityType": "Birding",
+    "venue": "Hiram M. Chittenden Locks (3015 NW 54th St, Seattle, WA 98107)",
+    "area": "Seattle (Ballard)",
+    "start": "2026-11-15T09:00:00-08:00",
+    "end": "2026-11-15T11:00:00-08:00",
+    "timeString": "9:00 AM – 11:00 AM",
+    "dateString": "2026-11-15",
+    "description": "Free, community-led morning bird walk around the botanical grounds and waterways of the Ballard Locks tracking gulls, cormorants, kingfishers, and winter waterbirds. Open to all skill levels.",
+    "url": "https://birdsconnectsea.org/calendar/",
+    "cost": "Free",
+    "recurrence": "Special Outing"
   },
   {
     "id": "burke-archaeology-day-2026-11-15",
@@ -8768,6 +8896,22 @@
     "recurrence": "Monthly science social"
   },
   {
+    "id": "seward-park-evening-owl-prowl-20261120",
+    "title": "Evening Forest Owl Prowl at Seward Park",
+    "organization": "Seward Park Audubon Center",
+    "activityType": "Birding",
+    "venue": "Seward Park Audubon Center (5902 Lake Washington Blvd S, Seattle, WA 98118)",
+    "area": "Seattle (Seward Park)",
+    "start": "2026-11-20T18:00:00-08:00",
+    "end": "2026-11-20T20:00:00-08:00",
+    "timeString": "6:00 PM – 8:00 PM",
+    "dateString": "2026-11-20",
+    "description": "Nighttime sensory walk beneath the canopy of Seattle's oldest forest using red-light headlamps to listen for resident Barred and Great Horned Owls and explore nocturnal ecology.",
+    "url": "https://www.audubon.org/events?view_type=row&location=Seward+Park+Audubon+Center",
+    "cost": "",
+    "recurrence": "Special Event"
+  },
+  {
     "id": "mox-fnm-draft-2026-11-20",
     "title": "Mox Boarding House: Friday Night Magic (FNM) Booster Draft",
     "organization": "Mox Boarding House",
@@ -8862,6 +9006,22 @@
     "url": "https://birdsconnectsea.org/get-involved/go-birding/neighborhood-bird-outings/",
     "cost": "Free",
     "recurrence": "Third Saturday of the month"
+  },
+  {
+    "id": "bcs-carkeek-scope-and-sip-20261121",
+    "title": "Carkeek Park Scope and Sip: Salmon & Coastal Waterbirds",
+    "organization": "Birds Connect Seattle",
+    "activityType": "Birding",
+    "venue": "Carkeek Park Beach Parking (950 NW Carkeek Park Rd, Seattle, WA 98177)",
+    "area": "Seattle (Carkeek Park)",
+    "start": "2026-11-21T09:00:00-08:00",
+    "end": "2026-11-21T11:00:00-08:00",
+    "timeString": "9:00 AM – 11:00 AM",
+    "dateString": "2026-11-21",
+    "description": "All-ages coastal bird outing and spotting scope clinic over Puget Sound and Piper's Creek, viewing marine birds, gulls, and the returning Chum salmon run.",
+    "url": "https://birdsconnectsea.org/calendar/",
+    "cost": "Free",
+    "recurrence": "Special Outing"
   },
   {
     "id": "gcc-all-american-bonspiel-2026-11-21",
@@ -9104,6 +9264,22 @@
     "recurrence": "Holiday workshop"
   },
   {
+    "id": "npa-november-meeting-burke-20261122",
+    "title": "NPA November Meeting & Fossil Lecture at the Burke Museum",
+    "organization": "Northwest Paleontological Association",
+    "activityType": "Science",
+    "venue": "Burke Museum of Natural History and Culture (4300 15th Ave NE, Seattle, WA 98105)",
+    "area": "Seattle (University District)",
+    "start": "2026-11-22T13:00:00-08:00",
+    "end": "2026-11-22T15:00:00-08:00",
+    "timeString": "1:00 PM – 3:00 PM",
+    "dateString": "2026-11-22",
+    "description": "Monthly paleontological meeting featuring regional fossil discoveries, specimen show-and-tell, and a scientific presentation on Pacific Northwest prehistoric life.",
+    "url": "https://www.northwestpaleo.org/events",
+    "cost": "Free (Meeting attendance is free)",
+    "recurrence": "Monthly (4th Sundays)"
+  },
+  {
     "id": "kubota-houseplants-sale-2026-11-23",
     "title": "Houseplants for the Holidays Benefit Sale (Online Opening)",
     "organization": "Kubota Garden Foundation",
@@ -9166,6 +9342,22 @@
     "url": "https://www.theauburnfoodbank.org/events",
     "cost": "Free volunteer shift",
     "recurrence": "Annual Thanksgiving community distribution"
+  },
+  {
+    "id": "nestl-fabric-fixit-mending-20261124",
+    "title": "Fabric Fix-It & Community Textile Mending Circle",
+    "organization": "Northeast Seattle Tool Library",
+    "activityType": "Tools",
+    "venue": "Reuse Commons Lake City / NESTL (12544 Lake City Way NE, Seattle, WA 98125)",
+    "area": "Seattle (Lake City)",
+    "start": "2026-11-24T17:00:00-08:00",
+    "end": "2026-11-24T19:00:00-08:00",
+    "timeString": "5:00 PM – 7:00 PM",
+    "dateString": "2026-11-24",
+    "description": "Free community textile repair session with sewing machines, darning needles, and coaching to repair, patch, and upcycle worn garments, bags, and outdoor gear.",
+    "url": "https://seattlereconomy.org/events/",
+    "cost": "Free (Donations welcome)",
+    "recurrence": "Monthly (4th Tuesdays)"
   },
   {
     "id": "chtl-tuesday-hours-2026-11-24",
