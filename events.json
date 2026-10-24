@@ -6880,6 +6880,22 @@
     "recurrence": "Sunday indoor pool sessions"
   },
   {
+    "id": "tilth-herbal-infusions-20261101",
+    "title": "Make Herbal Infusions: Growing & Harvesting Medicinal Garden Herbs",
+    "organization": "Seattle Tilth Alliance Garden Stewards",
+    "activityType": "Nature/Conservation",
+    "venue": "Rainier Beach Urban Farm and Wetlands (5513 S Cloverdale St, Seattle, WA 98118)",
+    "area": "Seattle (Rainier Beach)",
+    "start": "2026-11-01T10:00:00-08:00",
+    "end": "2026-11-01T14:00:00-08:00",
+    "timeString": "10:00 AM – 2:00 PM",
+    "dateString": "2026-11-01",
+    "description": "Hands-on workshop exploring how to grow, harvest, and turn PNW garden herbs into culinary and medicinal infusions, decoctions, botanical vinegars, and herbal syrups.",
+    "url": "https://tilthalliance.org/classes-workshops/",
+    "cost": " –  (Sliding scale / BIPOC solidarity tickets available)",
+    "recurrence": "Special Workshop"
+  },
+  {
     "id": "sgc-monthly-tournament-2026-11-01",
     "title": "Seattle Go Center: November Monthly Ratings Tournament",
     "organization": "Seattle Go Center",
@@ -7280,6 +7296,22 @@
     "recurrence": "Monthly arts social"
   },
   {
+    "id": "seattle-makers-laser-certification-20261104",
+    "title": "Hands-on CO2 Laser Cutter Certification & LightBurn Workshop",
+    "organization": "Seattle Makers",
+    "activityType": "Art",
+    "venue": "Seattle Makers (3012 16th Ave W, Seattle, WA 98119)",
+    "area": "Seattle (Interbay)",
+    "start": "2026-11-04T18:00:00-08:00",
+    "end": "2026-11-04T20:30:00-08:00",
+    "timeString": "6:00 PM – 8:30 PM",
+    "dateString": "2026-11-04",
+    "description": "Operational safety certification and hands-on workshop covering vector design prep in LightBurn and cutting/etching wood and acrylic on 90W CO2 laser cutters.",
+    "url": "https://seattlemakers.org/events/",
+    "cost": " (Members discounted)",
+    "recurrence": "Monthly Workshop"
+  },
+  {
     "id": "mox-minis-paint-2026-11-04",
     "title": "Mox Boarding House: Wednesday Minis Painting Jam",
     "organization": "Mox Boarding House",
@@ -7502,6 +7534,22 @@
     "url": "https://nwsm.club/meetings/",
     "cost": "Free",
     "recurrence": "First Thursday of the month"
+  },
+  {
+    "id": "sas-duvall-star-party-20261106",
+    "title": "Duvall Public Stargaze & Community Star Party",
+    "organization": "Seattle Astronomical Society",
+    "activityType": "Science",
+    "venue": "Big Rock Ball Fields (Field #2, 28430 NE Big Rock Rd, Duvall, WA 98019)",
+    "area": "Eastside (Duvall)",
+    "start": "2026-11-06T17:00:00-08:00",
+    "end": "2026-11-06T22:00:00-08:00",
+    "timeString": "5:00 PM – 10:00 PM",
+    "dateString": "2026-11-06",
+    "description": "Free public stargaze hosted in partnership with Duvall Parks & Rec. Volunteer astronomers share high-powered telescopes for viewing Saturn, Jupiter, star clusters, and deep space nebulae.",
+    "url": "https://www.seattleastro.org/",
+    "cost": "Free",
+    "recurrence": "Public Star Party"
   },
   {
     "id": "mox-fnm-draft-2026-11-06",
@@ -7728,6 +7776,54 @@
     "recurrence": "Monthly (1st Saturdays)"
   },
   {
+    "id": "kitsap-audubon-salmon-tours-20261107",
+    "title": "Kitsap Salmon Tours & Naturalist Viewing at Poulsbo Fish Park",
+    "organization": "Kitsap Audubon Society",
+    "activityType": "Birding",
+    "venue": "Poulsbo Fish Park (288 NW Lindvig Way, Poulsbo, WA 98370)",
+    "area": "Kitsap County (Poulsbo)",
+    "start": "2026-11-07T10:00:00-08:00",
+    "end": "2026-11-07T14:00:00-08:00",
+    "timeString": "10:00 AM – 2:00 PM",
+    "dateString": "2026-11-07",
+    "description": "Annual Kitsap Salmon viewing tours with naturalists and biologists along Dogfish Creek and Liberty Bay estuary observing returning Chum salmon and estuary bird life.",
+    "url": "https://www.kitsapaudubon.org/events-1",
+    "cost": "Free",
+    "recurrence": "Annual Salmon Tour"
+  },
+  {
+    "id": "plantamnesty-hedging-your-bets-20261107",
+    "title": "Master Pruner Class: Hedging Your Bets – Pruning Art or Pruning Horror?",
+    "organization": "PlantAmnesty",
+    "activityType": "Nature/Conservation",
+    "venue": "7400 Woodlawn (7400 Woodlawn Ave NE, Seattle, WA 98115)",
+    "area": "Seattle (Green Lake)",
+    "start": "2026-11-07T10:00:00-08:00",
+    "end": "2026-11-07T12:00:00-08:00",
+    "timeString": "10:00 AM – 12:00 PM",
+    "dateString": "2026-11-07",
+    "description": "In-depth arboriculture class contrasting improper shearing with bona fide architectural pruning arts: pollarding, cloud pruning, topiary, and coppicing.",
+    "url": "https://www.plantamnesty.org/all-upcoming-events-classes",
+    "cost": " – ",
+    "recurrence": "Special Class"
+  },
+  {
+    "id": "tilth-plant-propagation-20261107",
+    "title": "Plant Propagation for Beginners: Hardwood Cuttings & Root Divisions",
+    "organization": "Seattle Tilth Alliance Garden Stewards",
+    "activityType": "Nature/Conservation",
+    "venue": "Good Shepherd Center (4649 Sunnyside Ave N, Seattle, WA 98103)",
+    "area": "Seattle (Wallingford)",
+    "start": "2026-11-07T10:00:00-08:00",
+    "end": "2026-11-07T13:00:00-08:00",
+    "timeString": "10:00 AM – 1:00 PM",
+    "dateString": "2026-11-07",
+    "description": "Hands-on plant propagation workshop multiplying plants through dormant hardwood cuttings, perennial root divisions, and layering techniques for native PNW gardens.",
+    "url": "https://tilthalliance.org/classes-workshops/",
+    "cost": " –  (Sliding scale)",
+    "recurrence": "Special Workshop"
+  },
+  {
     "id": "nwssa-sculpture-crate-building-2026-11-07",
     "title": "Stone Sculpture Crate Building Workshop",
     "organization": "Northwest Stone Sculptors Association",
@@ -7872,6 +7968,22 @@
     "recurrence": "Quarterly technique demonstration"
   },
   {
+    "id": "sas-snoqualmie-star-party-20261107",
+    "title": "Snoqualmie Point Park Stargaze & High-Elevation Star Party",
+    "organization": "Seattle Astronomical Society",
+    "activityType": "Science",
+    "venue": "Snoqualmie Point Park (37580 Winery Rd, Snoqualmie, WA 98065)",
+    "area": "East King County (Snoqualmie)",
+    "start": "2026-11-07T18:00:00-08:00",
+    "end": "2026-11-07T22:30:00-08:00",
+    "timeString": "6:00 PM – 10:30 PM",
+    "dateString": "2026-11-07",
+    "description": "High-elevation dark sky public star party where SAS volunteers guide visitors through deep-sky objects, the Andromeda Galaxy, and Saturns rings with large aperture telescopes.",
+    "url": "https://www.seattleastro.org/",
+    "cost": "Free",
+    "recurrence": "Public Star Party"
+  },
+  {
     "id": "bcs-seward-park-2026-11-08",
     "title": "Birds Connect Seattle: Seward Park Old-Growth Bird Outing",
     "organization": "Birds Connect Seattle",
@@ -7886,6 +7998,22 @@
     "url": "https://birdsconnectsea.org/get-involved/go-birding/neighborhood-bird-outings/",
     "cost": "Free",
     "recurrence": "Second Sunday of the month"
+  },
+  {
+    "id": "pratt-vitreography-glass-printing-20261108",
+    "title": "Beginning Vitreography: Fine Art Printmaking from Glass Plates",
+    "organization": "Pratt Fine Arts Center",
+    "activityType": "Art",
+    "venue": "Pratt Fine Arts Center (1902 S Main St, Seattle, WA 98144)",
+    "area": "Seattle (Central District)",
+    "start": "2026-11-08T09:30:00-08:00",
+    "end": "2026-11-08T17:30:00-08:00",
+    "timeString": "9:30 AM – 5:30 PM",
+    "dateString": "2026-11-08",
+    "description": "Hands-on printmaking intensive with Nikki Jabbora-Barber exploring vitreography, using diamond-point scribes and glass matrices to produce fine intaglio and relief prints on an etching press.",
+    "url": "https://www.pratt.org/classes",
+    "cost": " (Materials included)",
+    "recurrence": "One-Day Workshop"
   },
   {
     "id": "src-pntf-champs-2026-11-08",
@@ -7934,6 +8062,22 @@
     "url": "https://www.nwcider.com/",
     "cost": "Free entry / flight purchases",
     "recurrence": "Monthly cider tasting feature"
+  },
+  {
+    "id": "chtl-open-woodshop-studio-20261108",
+    "title": "Sunday Open Woodshop & Community DIY Project Studio",
+    "organization": "Capitol Hill Tool Library",
+    "activityType": "Tools",
+    "venue": "Capitol Hill Tool Library (1552 Crawford Pl, Seattle, WA 98122)",
+    "area": "Seattle (Capitol Hill)",
+    "start": "2026-11-08T16:00:00-08:00",
+    "end": "2026-11-08T19:00:00-08:00",
+    "timeString": "4:00 PM – 7:00 PM",
+    "dateString": "2026-11-08",
+    "description": "Open community workshop access featuring table saw, bandsaw, sliding miter saw, planer, jointer, drill press, sewing machines, and 3D printer for member DIY and repair projects.",
+    "url": "https://sustainablecapitolhill.org/events",
+    "cost": "Free (Pay-what-you-can / Member access)",
+    "recurrence": "Weekly on Sundays"
   },
   {
     "id": "seattle-recreative-upcycling-night-2026-11-09",
@@ -8096,6 +8240,22 @@
     "recurrence": "Weekly on Wednesdays"
   },
   {
+    "id": "chtl-community-mending-circle-20261111",
+    "title": "Community Textile & Garment Mending Circle",
+    "organization": "Capitol Hill Tool Library",
+    "activityType": "Tools",
+    "venue": "Capitol Hill Tool Library (1552 Crawford Pl, Seattle, WA 98122)",
+    "area": "Seattle (Capitol Hill)",
+    "start": "2026-11-11T18:30:00-08:00",
+    "end": "2026-11-11T20:30:00-08:00",
+    "timeString": "6:30 PM – 8:30 PM",
+    "dateString": "2026-11-11",
+    "description": "Drop-in community repair circle for fixing torn garments, patching jackets, darning socks, and learning basic hand and machine sewing techniques with shared supplies.",
+    "url": "https://sustainablecapitolhill.org/events",
+    "cost": "Free",
+    "recurrence": "Monthly Gathering"
+  },
+  {
     "id": "scms-conservation-of-fungi-20261111",
     "title": "SCMS Monthly Meeting: Conservation of Fungi with Dr. Gregory M. Mueller",
     "organization": "Snohomish County Mycological Society",
@@ -8142,6 +8302,22 @@
     "url": "https://www.tahomabirdalliance.org/bird-walks",
     "cost": "Free",
     "recurrence": "Second Thursday of the month"
+  },
+  {
+    "id": "kitsap-audubon-meeting-20261112",
+    "title": "Kitsap Audubon Monthly Meeting: Pacific Flyway Waterfowl Ecology",
+    "organization": "Kitsap Audubon Society",
+    "activityType": "Birding",
+    "venue": "Poulsbo Library (700 NE Lincoln Rd, Poulsbo, WA 98370)",
+    "area": "Kitsap County (Poulsbo)",
+    "start": "2026-11-12T18:00:00-08:00",
+    "end": "2026-11-12T20:00:00-08:00",
+    "timeString": "6:00 PM – 8:00 PM",
+    "dateString": "2026-11-12",
+    "description": "Monthly educational presentation and membership meeting examining Pacific Flyway winter waterfowl migration, local marine shoreline counts, and Puget Sound habitat stewardship.",
+    "url": "https://www.kitsapaudubon.org/events-1",
+    "cost": "Free and open to the public",
+    "recurrence": "Monthly (2nd Thursdays)"
   },
   {
     "id": "mox-warhammer-2026-11-12",
@@ -8368,6 +8544,22 @@
     "recurrence": "Civic & science forum"
   },
   {
+    "id": "rainier-audubon-nisqually-fieldtrip-20261114",
+    "title": "Billy Frank Jr. Nisqually NWR Estuary Birding Field Trip",
+    "organization": "Rainier Audubon Society",
+    "activityType": "Birding",
+    "venue": "Billy Frank Jr. Nisqually National Wildlife Refuge (100 Brown Farm Rd NE, Olympia, WA 98516)",
+    "area": "South Sound (Olympia)",
+    "start": "2026-11-14T07:30:00-08:00",
+    "end": "2026-11-14T12:00:00-08:00",
+    "timeString": "7:30 AM – 12:00 PM",
+    "dateString": "2026-11-14",
+    "description": "Morning guided birding walk through the Nisqually river delta estuary and boardwalk tracking thousands of wintering waterfowl, raptors, cormorants, and marsh birds.",
+    "url": "https://rainieraudubon.org/",
+    "cost": "Free (Refuge entry fee may apply)",
+    "recurrence": "Special Field Trip"
+  },
+  {
     "id": "bcs-discovery-park-2026-11-14",
     "title": "Birds Connect Seattle: Neighborhood Bird Walk at Discovery Park",
     "organization": "Birds Connect Seattle",
@@ -8544,6 +8736,22 @@
     "recurrence": "Seasonal DIY clinic"
   },
   {
+    "id": "bike-works-community-open-shop-20261114",
+    "title": "Bike Works Community Open Shop: DIY Bike Repair & Maintenance",
+    "organization": "Seattle Bike Works Community Mechanics",
+    "activityType": "Cycling",
+    "venue": "Bike Works Warehouse (3715 S Hudson St, Seattle, WA 98118)",
+    "area": "Seattle (Columbia City)",
+    "start": "2026-11-14T13:00:00-08:00",
+    "end": "2026-11-14T17:00:00-08:00",
+    "timeString": "1:00 PM – 5:00 PM",
+    "dateString": "2026-11-14",
+    "description": "Self-directed community bicycle repair shop for adults with full access to professional park tools, truing stands, bike stands, and volunteer mechanic assistance.",
+    "url": "https://bikeworks.org/volunteer/",
+    "cost": "Sliding scale ( – /hr)",
+    "recurrence": "2nd & 4th Saturdays"
+  },
+  {
     "id": "sgc-open-play-2026-11-14",
     "title": "Seattle Go Center: Saturday Afternoon Open Play",
     "organization": "Seattle Go Center",
@@ -8590,6 +8798,22 @@
     "url": "https://www.burkemuseum.org/calendar",
     "cost": "Included with museum admission (Free for members)",
     "recurrence": "Annual family festival"
+  },
+  {
+    "id": "chtl-open-woodshop-studio-20261115",
+    "title": "Sunday Open Woodshop & 3D Printing Maker Lab",
+    "organization": "Capitol Hill Tool Library",
+    "activityType": "Tools",
+    "venue": "Capitol Hill Tool Library (1552 Crawford Pl, Seattle, WA 98122)",
+    "area": "Seattle (Capitol Hill)",
+    "start": "2026-11-15T16:00:00-08:00",
+    "end": "2026-11-15T19:00:00-08:00",
+    "timeString": "4:00 PM – 7:00 PM",
+    "dateString": "2026-11-15",
+    "description": "Open community workshop hours for building woodworking projects, running Bambu 3D prints, soldering electronics, and using community sewing machines.",
+    "url": "https://sustainablecapitolhill.org/events",
+    "cost": "Free (Pay-what-you-can / Member access)",
+    "recurrence": "Weekly on Sundays"
   },
   {
     "id": "gcc-monday-league-2026-11-16",
@@ -8752,6 +8976,22 @@
     "recurrence": "Monthly on 3rd Tuesday"
   },
   {
+    "id": "ssmc-mushroom-mapping-meeting-20261117",
+    "title": "SSMC Monthly Meeting: Find More Mushrooms with Online Mapping Tools",
+    "organization": "South Sound Mushroom Club",
+    "activityType": "Nature/Conservation",
+    "venue": "Capital Vision Christian Church (1775 Yew Ave NE, Olympia, WA 98506)",
+    "area": "Olympia / South Sound",
+    "start": "2026-11-17T19:00:00-08:00",
+    "end": "2026-11-17T21:00:00-08:00",
+    "timeString": "7:00 PM – 9:00 PM",
+    "dateString": "2026-11-17",
+    "description": "Presentation exploring how to combine LiDAR topography, soil maps, USGS forest canopy data, and precipitation maps to identify wild fungi microclimates in Washington.",
+    "url": "https://www.southsoundmushroomclub.com/",
+    "cost": "Free and open to the public",
+    "recurrence": "Monthly (3rd Tuesdays)"
+  },
+  {
     "id": "bcs-union-bay-2026-11-18",
     "title": "Birds Connect Seattle: Union Bay Natural Area (Montlake Fill) Outing",
     "organization": "Birds Connect Seattle",
@@ -8782,6 +9022,22 @@
     "url": "https://www.eastsideaudubon.org/calendar/bird-walk-lake-sammamish-park",
     "cost": "Free (Discover Pass required)",
     "recurrence": "Third Wednesday of the month"
+  },
+  {
+    "id": "plantamnesty-pine-pruning-workshop-20261118",
+    "title": "Master Pruner Workshop: Pine Tree Care & Aesthetic Pruning Techniques",
+    "organization": "PlantAmnesty",
+    "activityType": "Nature/Conservation",
+    "venue": "Somerset Arboretum & Gardens (Bellevue, WA 98006)",
+    "area": "Bellevue",
+    "start": "2026-11-18T10:00:00-08:00",
+    "end": "2026-11-18T15:00:00-08:00",
+    "timeString": "10:00 AM – 3:00 PM",
+    "dateString": "2026-11-18",
+    "description": "Advanced 5-hour hands-on outdoor workshop mastering specialized pine candle pruning, needle thinning, and structural branch training on mature specimen pines.",
+    "url": "https://www.plantamnesty.org/all-upcoming-events-classes",
+    "cost": " – ",
+    "recurrence": "Special Workshop"
   },
   {
     "id": "mox-minis-paint-2026-11-18",
@@ -9118,6 +9374,22 @@
     "url": "https://sustainablecapitolhill.org/tool-library/",
     "cost": "Pay-what-you-can membership",
     "recurrence": "Weekly on Saturdays"
+  },
+  {
+    "id": "srs-collaborative-robotics-20261121",
+    "title": "Collaborative Air and Ground Robotics Lecture & Arduino Workshop",
+    "organization": "Seattle Robotics Society",
+    "activityType": "Science",
+    "venue": "Online via Zoom (Seattle Robotics Society)",
+    "area": "Seattle",
+    "start": "2026-11-21T10:00:00-08:00",
+    "end": "2026-11-21T12:00:00-08:00",
+    "timeString": "10:00 AM – 12:00 PM",
+    "dateString": "2026-11-21",
+    "description": "Dr. Safwan Mondal presents on multi-agent reinforcement learning for coordinating autonomous aerial drones and ground robots, followed by the Build it with Arduino workshop.",
+    "url": "https://seattlerobotics.org/",
+    "cost": "Free",
+    "recurrence": "Monthly (3rd Saturdays)"
   },
   {
     "id": "srs-meeting-2026-11-21",
