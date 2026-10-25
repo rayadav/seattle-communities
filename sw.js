@@ -1,5 +1,5 @@
 // Seattle Communities High-Performance Service Worker
-const CACHE_NAME = 'seattle-communities-v17';
+const CACHE_NAME = 'seattle-communities-v18';
 const STATIC_ASSETS = [
   './',
   './index.html',

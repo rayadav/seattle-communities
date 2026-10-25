@@ -41,9 +41,10 @@ When reviewing events for any given day, weekend, or month:
    - In **Winter (Dec–Feb)**: Winter bird counts, indoor tool library repair cafés, botany winter dormancy walks, microscopy meetings.
    - In **Spring (Mar–May)**: Spring flora blooms, morel foraging, spring bird arrival, community garden opening work parties.
    - In **Summer (Jun–Aug)**: Star parties, low-tide beach naturalist walks, outdoor foraging, kayak roll sessions.
-3. **Event Schema & Deduplication Integrity**:
+3. **Event Schema, URL Verification & Deduplication Integrity**:
    - Every event must strictly adhere to the schema in `events.json`:
      `id`, `title`, `organization`, `activityType`, `venue`, `area`, `start`, `end`, `timeString`, `dateString`, `description`, `url`, `cost`, `recurrence`.
+   - Verify that every event's `url` resolves to a live, non-404 webpage (`HTTP 200`). Prefer the specific event detail page or the organization's verified calendar URL in `groups_with_urls.csv`; never guess unverified `/events/` or `/calendar/` paths.
    - Prevent duplicates by matching against `id`, `(title.lower(), start)`, and `(url, dateString)`.
    - Maintain chronological sorting by `start`, then `title`.
 4. **Cache & Minification Protocol**:
