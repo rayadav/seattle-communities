@@ -7280,6 +7280,22 @@
     "recurrence": "Monthly first Wednesday civic forum"
   },
   {
+    "id": "wstl-fixit-workshop-20261104",
+    "title": "Wednesday Community Fix-It Workshop",
+    "organization": "West Seattle Tool Library",
+    "activityType": "Tools",
+    "venue": "Youngstown Cultural Arts Center (4408 Delridge Way SW, Seattle, WA 98106)",
+    "area": "Seattle (West Seattle)",
+    "start": "2026-11-04T17:30:00-08:00",
+    "end": "2026-11-04T19:30:00-08:00",
+    "timeString": "5:30 PM – 7:30 PM",
+    "dateString": "2026-11-04",
+    "description": "Weekly community repair clinic pairing visitors with volunteer fixers to diagnose, mend, and repair broken small household appliances, electronics, toys, and hand tools.",
+    "url": "https://wstools.org/",
+    "cost": "Free (Donations welcome)",
+    "recurrence": "Weekly on Wednesdays"
+  },
+  {
     "id": "renton-art-lounge-november-2026-11-04",
     "title": "Allied Arts of Renton: Art Lounge & Creative Studio Social",
     "organization": "Renton Art League",
@@ -7758,6 +7774,22 @@
     "url": "https://sustainablecapitolhill.org/tool-library/",
     "cost": "Pay-what-you-can membership ($0 - $35/yr)",
     "recurrence": "Weekly on Saturdays"
+  },
+  {
+    "id": "sktl-repair-cafe-20261107",
+    "title": "Community Repair Café & Fix-It Clinic",
+    "organization": "South King Tool Library",
+    "activityType": "Tools",
+    "venue": "South King Tool Library (1700 S 340th St, Federal Way, WA 98003)",
+    "area": "Federal Way",
+    "start": "2026-11-07T10:00:00-08:00",
+    "end": "2026-11-07T14:00:00-08:00",
+    "timeString": "10:00 AM – 2:00 PM",
+    "dateString": "2026-11-07",
+    "description": "Community repair clinic where volunteer fixers assist neighbors in repairing broken small appliances, electronics, furniture, dull knives, and mending clothing to divert waste.",
+    "url": "https://www.southkingtools.org/classes-events",
+    "cost": "Free",
+    "recurrence": "Monthly (1st Saturdays)"
   },
   {
     "id": "bbg-nature-journaling-20261107",
@@ -8416,6 +8448,22 @@
     "recurrence": "Monthly meeting"
   },
   {
+    "id": "pilchuck-audubon-woodpeckers-20261112",
+    "title": "Pilchuck Audubon Monthly Program: Ecology of White-headed Woodpeckers",
+    "organization": "Pilchuck Audubon Society",
+    "activityType": "Birding",
+    "venue": "Online via Zoom & Stanwood Library (9701 271st St NW, Stanwood, WA 98292)",
+    "area": "Snohomish County (Stanwood)",
+    "start": "2026-11-12T19:00:00-08:00",
+    "end": "2026-11-12T20:30:00-08:00",
+    "timeString": "7:00 PM – 8:30 PM",
+    "dateString": "2026-11-12",
+    "description": "Wildlife biologist Jeff Kozma (Yakama Nation) presents research on White-headed Woodpeckers in managed ponderosa pine forests of the eastern Cascades, covering nest-site selection, reproductive success, and habitat conservation.",
+    "url": "https://www.pilchuckaudubon.org/calendar",
+    "cost": "Free and open to the public",
+    "recurrence": "Monthly (2nd Thursdays)"
+  },
+  {
     "id": "wnps-uw-herbarium-meeting-2026-11-12",
     "title": "WNPS: 25 Years of Exploring PNW Vascular Plant Flora at UW Herbarium",
     "organization": "Washington Native Plant Society (Central Puget Sound)",
@@ -8752,6 +8800,22 @@
     "recurrence": "2nd & 4th Saturdays"
   },
   {
+    "id": "psrg-simplex-net-meeting-20261114",
+    "title": "PSRG Educational Meeting: Working the Simplex Net",
+    "organization": "Puget Sound Repeater Group",
+    "activityType": "Science",
+    "venue": "Online via Zoom (Puget Sound Repeater Group)",
+    "area": "Seattle / Puget Sound",
+    "start": "2026-11-14T13:00:00-08:00",
+    "end": "2026-11-14T15:00:00-08:00",
+    "timeString": "1:00 PM – 3:00 PM",
+    "dateString": "2026-11-14",
+    "description": "Educational presentation on VHF/UHF amateur radio communications, direct simplex protocols, portable emergency antenna rigging, and signal propagation across Puget Sound terrain.",
+    "url": "https://web.psrg.org/calendar/",
+    "cost": "Free",
+    "recurrence": "Monthly Meeting"
+  },
+  {
     "id": "sgc-open-play-2026-11-14",
     "title": "Seattle Go Center: Saturday Afternoon Open Play",
     "organization": "Seattle Go Center",
@@ -8766,6 +8830,22 @@
     "url": "https://www.seattlego.org/schedule/",
     "cost": "Club fee",
     "recurrence": "Weekly on Saturdays"
+  },
+  {
+    "id": "psrg-repeater-roundabout-20261115",
+    "title": "5th Annual Repeater Roundabout Amateur Radio Challenge",
+    "organization": "Puget Sound Repeater Group",
+    "activityType": "Science",
+    "venue": "Regional Repeaters & Airwaves (Seattle, WA 98101)",
+    "area": "Puget Sound",
+    "start": "2026-11-15T08:00:00-08:00",
+    "end": "2026-11-15T18:00:00-08:00",
+    "timeString": "8:00 AM – 6:00 PM",
+    "dateString": "2026-11-15",
+    "description": "Weekend collaborative amateur radio challenge connecting ham operators across Washington VHF/UHF repeater networks, logging signal reports and testing regional emergency communications readiness.",
+    "url": "https://web.psrg.org/calendar/",
+    "cost": "Free",
+    "recurrence": "Annual Event"
   },
   {
     "id": "bcs-bipoc-birding-ballard-locks-20261115",
@@ -9040,6 +9120,22 @@
     "recurrence": "Special Workshop"
   },
   {
+    "id": "sktl-tool-sharpening-20261118",
+    "title": "Hands-on Tool Sharpening Workshop: Knives, Pruners & Axes",
+    "organization": "South King Tool Library",
+    "activityType": "Tools",
+    "venue": "South King Tool Library (1700 S 340th St, Federal Way, WA 98003)",
+    "area": "Federal Way",
+    "start": "2026-11-18T13:00:00-08:00",
+    "end": "2026-11-18T15:00:00-08:00",
+    "timeString": "1:00 PM – 3:00 PM",
+    "dateString": "2026-11-18",
+    "description": "Hands-on sharpening clinic teaching safe techniques for maintaining edges on kitchen knives, garden pruners, scissors, chisels, and axes using whetstones and whetwheels.",
+    "url": "https://www.southkingtools.org/classes-events",
+    "cost": "Free (Donations welcome)",
+    "recurrence": "Special Workshop"
+  },
+  {
     "id": "mox-minis-paint-2026-11-18",
     "title": "Mox Boarding House: Wednesday Minis Painting Jam",
     "organization": "Mox Boarding House",
@@ -9280,6 +9376,22 @@
     "recurrence": "Special Outing"
   },
   {
+    "id": "sktl-celebration-park-workparty-20261121",
+    "title": "Celebration Park Urban Habitat Restoration Work Party",
+    "organization": "South King Tool Library",
+    "activityType": "Nature/Conservation",
+    "venue": "Celebration Park (1095 S 324th St, Federal Way, WA 98003)",
+    "area": "Federal Way",
+    "start": "2026-11-21T09:00:00-08:00",
+    "end": "2026-11-21T12:00:00-08:00",
+    "timeString": "9:00 AM – 12:00 PM",
+    "dateString": "2026-11-21",
+    "description": "Community volunteer work party planting native trees and shrubs, mulching trail beds, and removing invasive blackberry in the Celebration Park urban wetland buffer.",
+    "url": "https://www.southkingtools.org/classes-events",
+    "cost": "Free",
+    "recurrence": "Monthly Work Party"
+  },
+  {
     "id": "gcc-all-american-bonspiel-2026-11-21",
     "title": "Granite Curling Club: USWCA All-American Women's Bonspiel",
     "organization": "Seattle Curling Club",
@@ -9518,6 +9630,22 @@
     "url": "https://www.museumofflight.org/exhibits-and-events/calendar-of-events?p=13",
     "cost": "Included with museum admission",
     "recurrence": "Bi-weekly workshop"
+  },
+  {
+    "id": "carkeek-salmon-stewards-viewing-20261122",
+    "title": "Carkeek Park Piper's Creek Salmon Stewards: Peak Chum Salmon Viewing",
+    "organization": "Green Seattle Partnership Park Stewards",
+    "activityType": "Nature/Conservation",
+    "venue": "Carkeek Park (Piper's Creek Trail, 950 NW Carkeek Park Rd, Seattle, WA 98177)",
+    "area": "Seattle (Carkeek Park)",
+    "start": "2026-11-22T11:00:00-08:00",
+    "end": "2026-11-22T15:00:00-08:00",
+    "timeString": "11:00 AM – 3:00 PM",
+    "dateString": "2026-11-22",
+    "description": "Volunteer salmon stewards stationed creekside with viewing scopes and polarized glasses to guide the public in observing peak Chum salmon spawning in Piper's Creek.",
+    "url": "https://greenseattle.org/",
+    "cost": "Free",
+    "recurrence": "Weekend Salmon Run"
   },
   {
     "id": "makers-printmaking-cards-2026-11-22",
@@ -9872,6 +10000,22 @@
     "recurrence": "Weekly on Saturdays"
   },
   {
+    "id": "srcs-monthly-meeting-20261128",
+    "title": "Seattle Retro-Computing Society: Monthly Workshop & Vintage Hardware Lab",
+    "organization": "Seattle Retro-Computing Society",
+    "activityType": "Science",
+    "venue": "SRCS Kirkland Space (6418 125th Ave NE, Kirkland, WA 98033)",
+    "area": "Kirkland",
+    "start": "2026-11-28T11:00:00-08:00",
+    "end": "2026-11-28T16:00:00-08:00",
+    "timeString": "11:00 AM – 4:00 PM",
+    "dateString": "2026-11-28",
+    "description": "Hands-on community hardware restoration, vintage microcomputer demonstrations (Apple II, Commodore, PDP, vintage Unix), CRT repairs, and retro-computing hacking.",
+    "url": "https://www.seattleretrocomputing.com/",
+    "cost": "Free",
+    "recurrence": "Monthly (4th Saturdays)"
+  },
+  {
     "id": "sgc-open-play-2026-11-28",
     "title": "Seattle Go Center: Post-Thanksgiving Saturday Open Play",
     "organization": "Seattle Go Center",
@@ -9886,6 +10030,22 @@
     "url": "https://www.seattlego.org/schedule/",
     "cost": "Club fee",
     "recurrence": "Weekly on Saturdays"
+  },
+  {
+    "id": "bbg-garden-dlights-opening-20261128",
+    "title": "31st Annual Garden d'Lights Opening Weekend",
+    "organization": "Bellevue Botanical Garden Volunteers",
+    "activityType": "Nature/Conservation",
+    "venue": "Bellevue Botanical Garden (12001 Main St, Bellevue, WA 98005)",
+    "area": "Bellevue",
+    "start": "2026-11-28T16:30:00-08:00",
+    "end": "2026-11-28T21:00:00-08:00",
+    "timeString": "4:30 PM – 9:00 PM",
+    "dateString": "2026-11-28",
+    "description": "31st annual community light exhibition with over half a million sparkling lights shaped by volunteers into native botanical plants, flowers, birds, and waterfalls through the garden.",
+    "url": "https://bellevuebotanical.org/calendar/",
+    "cost": " adults, free under 10 (Advance tickets required)",
+    "recurrence": "Annual Winter Light Festival"
   },
   {
     "id": "seattle-marathon-2026-11-29",
@@ -11246,6 +11406,22 @@
     "url": "https://rainieraudubon.org/",
     "cost": "Free / Volunteer registration required",
     "recurrence": "Annual Christmas Bird Count"
+  },
+  {
+    "id": "bcs-seattle-christmas-bird-count-20261220",
+    "title": "Birds Connect Seattle: 2026 Seattle Christmas Bird Count (CBC)",
+    "organization": "Birds Connect Seattle",
+    "activityType": "Birding",
+    "venue": "Center for Urban Horticulture & Seattle Count Circle (3501 NE 41st St, Seattle, WA 98105)",
+    "area": "Seattle",
+    "start": "2026-12-20T08:00:00-08:00",
+    "end": "2026-12-20T16:00:00-08:00",
+    "timeString": "8:00 AM – 4:00 PM",
+    "dateString": "2026-12-20",
+    "description": "Flagship annual community science census where volunteer field teams survey bird species across a 15-mile Seattle circle to track century-long population trends and winter migrations.",
+    "url": "https://birdsconnectsea.org/calendar/",
+    "cost": "Free (Registration required)",
+    "recurrence": "Annual Community Science Census"
   },
   {
     "id": "gcc-monday-league-2026-12-21",
