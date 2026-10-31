@@ -2210,7 +2210,7 @@
   {
     "id": "pratt-50th-exhibition-2026-10-02",
     "title": "Pratt Fine Arts Center: 50th Anniversary Commemorative Exhibition Opening",
-    "organization": "The Pratt Fine Arts Center",
+    "organization": "Pratt Fine Arts Center",
     "activityType": "Art",
     "area": "Central District / Bainbridge, Seattle",
     "venue": "Bainbridge Island Museum of Art & Pratt Fine Arts Center (1902 S Main St, Seattle, WA 98144)",
@@ -3698,7 +3698,7 @@
   {
     "id": "birds-connect-birding-by-ear-westcrest-20261011",
     "title": "Birding by Ear Field Trip: Identify Birds by Call and Song",
-    "organization": "Seattle Audubon Society (Birds Connect Seattle)",
+    "organization": "Birds Connect Seattle",
     "activityType": "Outdoors",
     "venue": "Westcrest Park (9000 8th Ave SW, Seattle, WA 98106)",
     "area": "Seattle (West Seattle)",
@@ -3730,7 +3730,7 @@
   {
     "id": "birds-connect-seattle-westcrest-ear-20261011",
     "title": "Field Trip: Practice Birding by Ear in Westcrest Park",
-    "organization": "Seattle Audubon Society (Birds Connect Seattle)",
+    "organization": "Birds Connect Seattle",
     "activityType": "Birding",
     "venue": "Westcrest Park (9000 8th Ave SW, Seattle, WA 98106)",
     "area": "West Seattle",
@@ -4514,7 +4514,7 @@
   {
     "id": "birds-connect-seattle-block-printing-class-20261017",
     "title": "Birds and Block Printing Workshop with Hanae Bettencourt",
-    "organization": "Birds Connect Seattle (formerly Seattle Audubon)",
+    "organization": "Birds Connect Seattle",
     "activityType": "Maker & Crafts",
     "venue": "Birds Connect Seattle Headquarters (616 Olive Way, Seattle, WA 98101)",
     "area": "Seattle (Downtown)",
@@ -6562,7 +6562,7 @@
   {
     "id": "birds-connect-seattle-field-guide-talk-20261029",
     "title": "Author Talk: Seattle Field Guide with Maria Dolan & Kathryn True",
-    "organization": "Seattle Audubon Society (Birds Connect Seattle)",
+    "organization": "Birds Connect Seattle",
     "activityType": "Nature/Conservation",
     "venue": "Birds Connect Seattle Nature Shop & Headquarters (5202 20th Ave NW, Seattle, WA 98107)",
     "area": "Ballard, Seattle",
@@ -6704,6 +6704,38 @@
     "recurrence": "Weekly on Fridays"
   },
   {
+    "id": "nwff-collide-o-scope-halloween-2026-10-30",
+    "title": "2026 Collide-O-Scope Halloween Found-Footage Show (Opening Night)",
+    "organization": "Northwest Film Forum",
+    "activityType": "Art",
+    "venue": "Northwest Film Forum (1515 12th Ave, Seattle, WA 98122)",
+    "area": "Capitol Hill, Seattle",
+    "start": "2026-10-30T20:00:00-07:00",
+    "end": "2026-10-30T22:00:00-07:00",
+    "timeString": "8:00 PM – 10:00 PM",
+    "dateString": "2026-10-30",
+    "description": "Annual Halloween celebration at Northwest Film Forum featuring a wild, hilarious montage of rare archival ephemera, spooky VHS oddities, and found-footage cinema.",
+    "url": "https://nwfilmforum.org/calendar/",
+    "cost": "$12–$15",
+    "recurrence": "Annual"
+  },
+  {
+    "id": "cascade-halloween-pumpkin-farms-2026-10-31",
+    "title": "Cascade Free Group Ride: Hooarific Halloween Pumpkin Farms Loop (45 mi)",
+    "organization": "Cascade Bicycle Club",
+    "activityType": "Cycling",
+    "venue": "Auburn Start Point (Auburn, WA 98002)",
+    "area": "Auburn",
+    "start": "2026-10-31T09:00:00-07:00",
+    "end": "2026-10-31T14:00:00-07:00",
+    "timeString": "9:00 AM – 2:00 PM",
+    "dateString": "2026-10-31",
+    "description": "Festive Halloween morning Cascade Bicycle Club free group ride (45 miles, 1,600 ft elevation gain) rolling past Green River Valley farms and autumn pumpkin patches.",
+    "url": "https://cascade.org/rides-events/ride-event-search",
+    "cost": "Free (Registration required)",
+    "recurrence": "Annual"
+  },
+  {
     "id": "src-cougar-cup-2026-10-31",
     "title": "Cougar Cup Cross Country Race (7.5 Miles)",
     "organization": "Seattle Running Club",
@@ -6734,6 +6766,22 @@
     "url": "https://birdsconnectsea.org/calendar/",
     "cost": "Free community outing",
     "recurrence": "Neighborhood bird outing"
+  },
+  {
+    "id": "pilchuck-wallace-swamp-creek-2026-10-31",
+    "title": "Pilchuck Audubon Field Trip: Birding Wallace Swamp Creek Park",
+    "organization": "Pilchuck Audubon Society",
+    "activityType": "Birding",
+    "venue": "Wallace Swamp Creek Park (19851 73rd Ave NE, Kenmore, WA 98028)",
+    "area": "Snohomish County",
+    "start": "2026-10-31T09:00:00-07:00",
+    "end": "2026-10-31T12:00:00-07:00",
+    "timeString": "9:00 AM – 12:00 PM",
+    "dateString": "2026-10-31",
+    "description": "Guided last-Saturday morning birding walk along the 25-acre riparian forest trails of Wallace Swamp Creek Park in Kenmore led by Linda Phillips. Tall waterproof boots recommended.",
+    "url": "https://www.pilchuckaudubon.org/upcoming-trips",
+    "cost": "Free",
+    "recurrence": "Monthly (Last Saturday)"
   },
   {
     "id": "sfr-green-lake-2026-10-31",
@@ -6784,6 +6832,22 @@
     "recurrence": "Weekly on Saturdays"
   },
   {
+    "id": "cascade-eastside-coffee-loop-2026-10-31",
+    "title": "Cascade Free Group Ride: Eastside Coffee Loop (29 mi)",
+    "organization": "Cascade Bicycle Club",
+    "activityType": "Cycling",
+    "venue": "Wilmot Gateway Park (17301 131st Ave NE, Woodinville, WA 98072)",
+    "area": "Eastside",
+    "start": "2026-10-31T10:00:00-07:00",
+    "end": "2026-10-31T13:00:00-07:00",
+    "timeString": "10:00 AM – 1:00 PM",
+    "dateString": "2026-10-31",
+    "description": "Moderate-pace (14–16 mph) 29-mile Saturday morning social ride through the Sammamish River Valley and Eastside backroads with a mid-ride coffee stop.",
+    "url": "https://cascade.org/rides-events/ride-event-search",
+    "cost": "Free (Registration required)",
+    "recurrence": "Weekly"
+  },
+  {
     "id": "nwl-cemetery-lichen-walk-20261031",
     "title": "Cemetery Lichen Walk at Mount Pleasant",
     "organization": "Northwest Lichenologists",
@@ -6830,6 +6894,22 @@
     "url": "https://psgka.com/",
     "cost": "Free for families and spectators",
     "recurrence": "Annual Halloween motorsports celebration"
+  },
+  {
+    "id": "saf-downtown-architecture-tour-2026-10-31",
+    "title": "Seattle Architecture Foundation Guided Walking Tour: From Stone to Steel",
+    "organization": "Seattle Architecture Foundation",
+    "activityType": "Art",
+    "venue": "Center for Architecture & Design (1010 Western Ave, Seattle, WA 98104)",
+    "area": "Downtown Seattle",
+    "start": "2026-10-31T10:00:00-07:00",
+    "end": "2026-10-31T12:00:00-07:00",
+    "timeString": "10:00 AM – 12:00 PM",
+    "dateString": "2026-10-31",
+    "description": "Two-hour volunteer-led architectural history walking tour exploring Seattle's evolution from Romanesque masonry after the 1889 Great Fire to Terra Cotta skyscrapers and modern steel towers.",
+    "url": "https://seattlearchitecture.org/tours/",
+    "cost": "$25–$30",
+    "recurrence": "Saturdays"
   },
   {
     "id": "carkeek-salmon-stewards-2026-10-31",
@@ -6880,6 +6960,38 @@
     "recurrence": "Annual Halloween community event"
   },
   {
+    "id": "cascade-green-river-easy-loop-2026-10-31",
+    "title": "Cascade Free Group Ride: Green River & Interurban Trail Easy Loop (12.8 mi)",
+    "organization": "Cascade Bicycle Club",
+    "activityType": "Cycling",
+    "venue": "Three Friends Fishing Hole Park (20025 Russell Rd, Kent, WA 98032)",
+    "area": "Kent",
+    "start": "2026-10-31T12:00:00-07:00",
+    "end": "2026-10-31T14:00:00-07:00",
+    "timeString": "12:00 PM – 2:00 PM",
+    "dateString": "2026-10-31",
+    "description": "Beginner-friendly, flat 12.8-mile social group ride along the paved Green River Trail and Interurban Trail starting from Three Friends Fishing Hole in Kent. E-bike friendly!",
+    "url": "https://cascade.org/rides-events/ride-event-search",
+    "cost": "Free (Registration required)",
+    "recurrence": "Monthly"
+  },
+  {
+    "id": "sustainable-renton-the-table-2026-10-31",
+    "title": "Sustainable Renton: 'The Table' Free Community Meal & Harvest Share",
+    "organization": "Renton Permaculture & Community Garden Stewards",
+    "activityType": "Community/Volunteering",
+    "venue": "Luther's Table (419 S 2nd St, Renton, WA 98057)",
+    "area": "Renton",
+    "start": "2026-10-31T12:00:00-07:00",
+    "end": "2026-10-31T14:00:00-07:00",
+    "timeString": "12:00 PM – 2:00 PM",
+    "dateString": "2026-10-31",
+    "description": "Free community meal and fresh food share hosted by Sustainable Renton volunteers at Luther's Table fostering neighborhood connection and food justice.",
+    "url": "https://www.sustainablerenton.org/our-events",
+    "cost": "Free",
+    "recurrence": "Monthly"
+  },
+  {
     "id": "soundbio-diy-bioplastics-workshop-20261031",
     "title": "FREE DIY Bio-Plastics Community Workshop",
     "organization": "SoundBio Lab",
@@ -6928,6 +7040,22 @@
     "recurrence": "Weekly"
   },
   {
+    "id": "nwff-collide-o-scope-saturday-2026-10-31",
+    "title": "2026 Collide-O-Scope Halloween Show at Northwest Film Forum",
+    "organization": "Northwest Film Forum",
+    "activityType": "Art",
+    "venue": "Northwest Film Forum (1515 12th Ave, Seattle, WA 98122)",
+    "area": "Capitol Hill, Seattle",
+    "start": "2026-10-31T17:00:00-07:00",
+    "end": "2026-10-31T22:00:00-07:00",
+    "timeString": "5:00 PM & 8:00 PM Screenings",
+    "dateString": "2026-10-31",
+    "description": "Halloween night screenings (5:00 PM and 8:00 PM) of Collide-O-Scope's signature psychedelic and spooky found-footage video collage at Northwest Film Forum.",
+    "url": "https://nwfilmforum.org/calendar/",
+    "cost": "$12–$15",
+    "recurrence": "Annual"
+  },
+  {
     "id": "ballard-boo-bash-sustainable-ballard-2026-10-31",
     "title": "Sustainable Ballard Community Boo! Bash Halloween Party",
     "organization": "Ballard Tool Library",
@@ -6974,6 +7102,22 @@
     "url": "https://seattlereconomy.org/event/woodshop-open-hours-nestl-42/",
     "cost": "$15–$45 sliding scale",
     "recurrence": "Weekly"
+  },
+  {
+    "id": "cascade-alki-des-moines-2026-11-01",
+    "title": "Cascade Free Group Ride: Alki to Des Moines Marina Coastal Ride (45 mi)",
+    "organization": "Cascade Bicycle Club",
+    "activityType": "Cycling",
+    "venue": "Don Armeni Boat Ramp, Alki Beach (1222 Harbor Ave SW, Seattle, WA 98116)",
+    "area": "West Seattle",
+    "start": "2026-11-01T09:00:00-08:00",
+    "end": "2026-11-01T14:00:00-08:00",
+    "timeString": "9:00 AM – 2:00 PM",
+    "dateString": "2026-11-01",
+    "description": "Scenic 45.2-mile Puget Sound shoreline ride from West Seattle's Alki Beach south to the Des Moines Marina and back.",
+    "url": "https://cascade.org/rides-events/ride-event-search",
+    "cost": "Free (Registration required)",
+    "recurrence": "Monthly"
   },
   {
     "id": "green-lake-yoga-flow-reiki-2026-11-01",
@@ -7120,6 +7264,22 @@
     "recurrence": "Annual festival"
   },
   {
+    "id": "usk-dia-de-muertos-seattle-center-2026-11-01",
+    "title": "Urban Sketchers Seattle Outing: Día de Muertos at Seattle Center Armory",
+    "organization": "Urban Sketchers Seattle",
+    "activityType": "Art",
+    "venue": "Seattle Center Armory (305 Harrison St, Seattle, WA 98109)",
+    "area": "Seattle",
+    "start": "2026-11-01T11:00:00-08:00",
+    "end": "2026-11-01T13:30:00-08:00",
+    "timeString": "11:00 AM – 1:30 PM",
+    "dateString": "2026-11-01",
+    "description": "Free drop-in urban sketching outing drawing the vibrant community altars (ofrendas), traditional dancers, and musical performances at Seattle Center's Día de Muertos festival. Meet outside the Armory main entrance by the donut-shaped sculpture.",
+    "url": "http://seattle.urbansketchers.org/p/all-outings-begin-at-10-a.html",
+    "cost": "Free",
+    "recurrence": "Weekly / Biweekly"
+  },
+  {
     "id": "kpms-annual-wild-mushroom-show-2026-11-01",
     "title": "Kitsap Peninsula Wild Mushroom Show & Fungi Showcase",
     "organization": "Kitsap Peninsula Mycological Society",
@@ -7134,6 +7294,22 @@
     "url": "https://kitsapmushrooms.org/outreach/wild-mushroom-show/",
     "cost": "Free admission (donations welcome)",
     "recurrence": "Annual Exhibition"
+  },
+  {
+    "id": "cascade-ride-in-the-rain-alki-kickoff-2026-11-01",
+    "title": "Cascade x Sound Break 'Ride in the Rain' Kickoff: Alki Social Ride (15 mi)",
+    "organization": "Cascade Bicycle Club",
+    "activityType": "Cycling",
+    "venue": "Alki Trail / West Seattle Bridge Trailhead (Seattle, WA 98106)",
+    "area": "West Seattle",
+    "start": "2026-11-01T13:00:00-08:00",
+    "end": "2026-11-01T16:00:00-08:00",
+    "timeString": "1:00 PM – 4:00 PM",
+    "dateString": "2026-11-01",
+    "description": "Celebrate the November 1 launch of Cascade Bicycle Club's annual Ride in the Rain challenge with an all-paces 15-mile community social ride along the Elliott Bay and Alki waterfront.",
+    "url": "https://cascade.org/rides-events/ride-event-search",
+    "cost": "Free (Registration required)",
+    "recurrence": "Annual Kickoff"
   },
   {
     "id": "eastside-audubon-juanita-bay-2026-11-01",
@@ -7181,6 +7357,22 @@
     "description": "Learn traditional wool braiding and lacing techniques used in heirloom braided wool rugs using upcycled wool textiles at the Shoreline Tool Library.",
     "url": "https://seattlereconomy.org/event/learn-to-make-a-braided-wool-candy-cane-stl/",
     "cost": "$25–$65 sliding scale",
+    "recurrence": "One-time"
+  },
+  {
+    "id": "nwff-once-upon-a-time-in-seattle-2026-11-01",
+    "title": "Once Upon a Time In Seattle: Local Cinema Screening at NW Film Forum",
+    "organization": "Northwest Film Forum",
+    "activityType": "Art",
+    "venue": "Northwest Film Forum (1515 12th Ave, Seattle, WA 98122)",
+    "area": "Capitol Hill, Seattle",
+    "start": "2026-11-01T16:00:00-08:00",
+    "end": "2026-11-01T18:00:00-08:00",
+    "timeString": "4:00 PM – 6:00 PM",
+    "dateString": "2026-11-01",
+    "description": "Sunday matinee independent film screening and community conversation at Capitol Hill's Northwest Film Forum.",
+    "url": "https://nwfilmforum.org/calendar/",
+    "cost": "$12–$15",
     "recurrence": "One-time"
   },
   {
@@ -7262,6 +7454,22 @@
     "url": "https://kingcounty.gov/en/dept/elections",
     "cost": "Free civic election",
     "recurrence": "General Election Day"
+  },
+  {
+    "id": "pilchuck-blaine-semiahmoo-2026-11-03",
+    "title": "Pilchuck Audubon Field Trip: Birding Blaine Marine Park & Semiahmoo",
+    "organization": "Pilchuck Audubon Society",
+    "activityType": "Birding",
+    "venue": "Quil Ceda Carpool / Blaine Marine Park (Marysville / Blaine, WA 98230)",
+    "area": "Snohomish County",
+    "start": "2026-11-03T07:00:00-08:00",
+    "end": "2026-11-03T17:00:00-08:00",
+    "timeString": "7:00 AM – 5:00 PM",
+    "dateString": "2026-11-03",
+    "description": "Full-day coastal birding trip searching Drayton Harbor, Semiahmoo Spit, and Birch Bay for Long-tailed Ducks, Black Turnstones, Harlequin Ducks, scoters, and loons. Led by Graham Hutchison.",
+    "url": "https://www.pilchuckaudubon.org/upcoming-trips",
+    "cost": "Free",
+    "recurrence": "Seasonal"
   },
   {
     "id": "bloodworks-pike-place-2026-11-03",
@@ -7456,6 +7664,22 @@
     "recurrence": "Monthly"
   },
   {
+    "id": "usk-union-station-sketch-2026-11-04",
+    "title": "Urban Sketchers Seattle Outing: Historic Union Station Great Hall",
+    "organization": "Urban Sketchers Seattle",
+    "activityType": "Art",
+    "venue": "Union Station (401 S Jackson St, Seattle, WA 98104)",
+    "area": "Pioneer Square, Seattle",
+    "start": "2026-11-04T11:00:00-08:00",
+    "end": "2026-11-04T13:30:00-08:00",
+    "timeString": "11:00 AM – 1:30 PM",
+    "dateString": "2026-11-04",
+    "description": "Indoor architectural sketching outing inside historic 1911 Union Station's vaulted barrel-ceiling Great Hall in Pioneer Square / International District.",
+    "url": "http://seattle.urbansketchers.org/p/all-outings-begin-at-10-a.html",
+    "cost": "Free",
+    "recurrence": "Monthly"
+  },
+  {
     "id": "bbg-lichen-walk-20261104",
     "title": "Lichen Ecology & Forest Health Walk with Dr. Katherine Glew",
     "organization": "Bellevue Botanical Garden Volunteers",
@@ -7486,6 +7710,22 @@
     "url": "https://www.lifelong.org/events",
     "cost": "Free volunteer shift",
     "recurrence": "Weekday afternoon shift"
+  },
+  {
+    "id": "sustainable-renton-popup-pantry-2026-11-04",
+    "title": "Sustainable Renton Pop-Up Community Pantry & Food Rescue",
+    "organization": "Renton Permaculture & Community Garden Stewards",
+    "activityType": "Community/Volunteering",
+    "venue": "St. Matthew's Lutheran Church (1700 Edmonds Ave NE, Renton, WA 98056)",
+    "area": "Renton",
+    "start": "2026-11-04T15:00:00-08:00",
+    "end": "2026-11-04T18:00:00-08:00",
+    "timeString": "3:00 PM – 6:00 PM",
+    "dateString": "2026-11-04",
+    "description": "Volunteer-powered community food rescue and fresh produce distribution hosted by Sustainable Renton.",
+    "url": "https://www.sustainablerenton.org/our-events",
+    "cost": "Free",
+    "recurrence": "Wednesdays"
   },
   {
     "id": "gcc-wednesday-juniors-2026-11-04",
@@ -7696,6 +7936,22 @@
     "recurrence": "First Thursday of the month"
   },
   {
+    "id": "esw-regular-meeting-2026-11-05",
+    "title": "Entomological Society of Washington Monthly Meeting & Lecture",
+    "organization": "Entomological Society of Washington",
+    "activityType": "Nature/Conservation",
+    "venue": "Online & Hybrid Entomology Seminar (Seattle, WA)",
+    "area": "Seattle",
+    "start": "2026-11-05T16:00:00-08:00",
+    "end": "2026-11-05T17:30:00-08:00",
+    "timeString": "4:00 PM – 5:30 PM",
+    "dateString": "2026-11-05",
+    "description": "1263rd regular monthly scientific meeting of the Entomological Society featuring research presentations, specimen notes, and insect biodiversity discussion.",
+    "url": "https://www.entsocwash.org/events/1261th-esw-regular-meeting-g95at-zb4sw",
+    "cost": "Free",
+    "recurrence": "Monthly (1st Thursday)"
+  },
+  {
     "id": "mof-free-first-thursday-2026-11-05",
     "title": "Museum of Flight: FREE First Thursday Evening",
     "organization": "Museum of Flight Docent Corps (Tukwila)",
@@ -7904,6 +8160,22 @@
     "recurrence": "Weekly on Fridays"
   },
   {
+    "id": "pilchuck-seattle-shoreline-parks-2026-11-07",
+    "title": "Pilchuck Audubon Field Trip: Birding Bitter Lake, Llandover Woods & Twin Ponds",
+    "organization": "Pilchuck Audubon Society",
+    "activityType": "Birding",
+    "venue": "Bitter Lake & Twin Ponds Park (15401 1st Ave NE, Shoreline, WA 98155)",
+    "area": "North Seattle",
+    "start": "2026-11-07T08:00:00-08:00",
+    "end": "2026-11-07T12:00:00-08:00",
+    "timeString": "8:00 AM – 12:00 PM",
+    "dateString": "2026-11-07",
+    "description": "Half-day guided birding walk exploring urban forest and wetland habitats across Bitter Lake, Llandover Woods Greenspace, and Twin Ponds Park with trip leader Douglas Resnick.",
+    "url": "https://www.pilchuckaudubon.org/upcoming-trips",
+    "cost": "Free",
+    "recurrence": "Seasonal"
+  },
+  {
     "id": "sckc-eric-hughes-regatta-2026-11-07",
     "title": "Eric Hughes Memorial Distance Regatta",
     "organization": "Seattle Canoe and Kayak Club",
@@ -8075,7 +8347,7 @@
     "timeString": "9:30 AM – 1:30 PM",
     "dateString": "2026-11-07",
     "description": "Hands-on Master Pruner field workshop on a large Capitol Hill property practicing selective renovation pruning on both mature in-ground trees/shrubs and container specimens.",
-    "url": "https://www.plantamnesty.org/all-upcoming-events-classes",
+    "url": "https://www.plantamnesty.org/all-upcoming-events-classes/november7-reno-workshop",
     "cost": "Registration required",
     "recurrence": "Seasonal"
   },
@@ -8302,6 +8574,22 @@
     "url": "https://tilthalliance.org/event/the-everlasting-harvest-growing-perennial-edibles/",
     "cost": "$55 – $85 sliding scale",
     "recurrence": "Seasonal workshop"
+  },
+  {
+    "id": "wsg-molt-search-burien-2026-11-07",
+    "title": "WSG Crab Team Citizen Science: European Green Crab Molt Search Training",
+    "organization": "Washington Sea Grant",
+    "activityType": "Nature/Conservation",
+    "venue": "Seahurst Park / Burien Shoreline (1600 SW Seahurst Park Rd, Burien, WA 98166)",
+    "area": "Burien",
+    "start": "2026-11-07T10:00:00-08:00",
+    "end": "2026-11-07T12:00:00-08:00",
+    "timeString": "10:00 AM – 12:00 PM",
+    "dateString": "2026-11-07",
+    "description": "Hands-on citizen science training with UW Washington Sea Grant's Crab Team learning how to conduct 20-minute beach surveys for invasive European green crab and native Dungeness crab molts.",
+    "url": "https://waseagrant.uw.edu/news-events/calendar/?trumbaEmbed=view%3Devent%26eventid%3D207123736",
+    "cost": "Free",
+    "recurrence": "Seasonal"
   },
   {
     "id": "was-wild-plants-autumn-2026-11-07",
@@ -8720,6 +9008,38 @@
     "recurrence": "Weekly on Mondays"
   },
   {
+    "id": "pilchuck-samish-flats-raptors-2026-11-10",
+    "title": "Pilchuck Audubon Field Trip: Wintering Hawks, Falcons & Owls of Samish Flats",
+    "organization": "Pilchuck Audubon Society",
+    "activityType": "Birding",
+    "venue": "Quil Ceda Carpool / Padilla Bay & Samish Flats (Bow, WA 98232)",
+    "area": "Snohomish County",
+    "start": "2026-11-10T07:30:00-08:00",
+    "end": "2026-11-10T15:00:00-08:00",
+    "timeString": "7:30 AM – 3:00 PM",
+    "dateString": "2026-11-10",
+    "description": "Explore Padilla Bay, Samish Bay, and the Samish Flats looking for wintering raptors, short-eared owls, peregrine falcons, northern shrikes, and thousands of snow geese and waterfowl.",
+    "url": "https://www.pilchuckaudubon.org/upcoming-trips",
+    "cost": "Free",
+    "recurrence": "Seasonal"
+  },
+  {
+    "id": "sfc-monthly-coalition-meeting-2026-11-10",
+    "title": "Seattle Food Committee Monthly Coalition Meeting",
+    "organization": "Seattle Food Committee",
+    "activityType": "Community/Volunteering",
+    "venue": "Seattle Food Committee / Hybrid (Seattle, WA)",
+    "area": "Seattle",
+    "start": "2026-11-10T13:00:00-08:00",
+    "end": "2026-11-10T15:00:00-08:00",
+    "timeString": "1:00 PM – 3:00 PM",
+    "dateString": "2026-11-10",
+    "description": "Monthly coordination meeting of Seattle's food bank and meal program coalition addressing regional food security and mutual aid.",
+    "url": "https://www.seattlefoodcommittee.org/event/seattle-food-committee-general-meeting-43/",
+    "cost": "Free",
+    "recurrence": "Monthly"
+  },
+  {
     "id": "nwgs-november-dinner-lecture-2026-11-10",
     "title": "NWGS Monthly Dinner Meeting & Geological Lecture",
     "organization": "PNW Geological Society Field Excursions",
@@ -8798,6 +9118,22 @@
     "url": "https://www.seattlego.org/schedule/",
     "cost": "Club fee",
     "recurrence": "Weekly on Tuesdays"
+  },
+  {
+    "id": "skagit-audubon-bird-haven-2026-11-10",
+    "title": "Skagit Audubon Monthly Program: 'Making Your Space a Bird Haven' with Brian Zinke",
+    "organization": "Skagit Audubon Society",
+    "activityType": "Birding",
+    "venue": "Padilla Bay / Online via Zoom (Mount Vernon, WA 98273)",
+    "area": "Mount Vernon",
+    "start": "2026-11-10T19:00:00-08:00",
+    "end": "2026-11-10T20:30:00-08:00",
+    "timeString": "7:00 PM – 8:30 PM",
+    "dateString": "2026-11-10",
+    "description": "Wildlife biologist and Pilchuck Audubon Executive Director Brian Zinke shares practical native landscaping and habitat strategies to turn yards, patios, and community spaces into thriving bird sanctuaries.",
+    "url": "https://www.skagitaudubon.org/programs",
+    "cost": "Free",
+    "recurrence": "Monthly (2nd Tuesday)"
   },
   {
     "id": "sas-apsig-2026-11-10",
@@ -9216,6 +9552,22 @@
     "recurrence": "Special Field Trip"
   },
   {
+    "id": "pilchuck-chism-beach-bellevue-2026-11-14",
+    "title": "Pilchuck Audubon Field Trip: Birding Chism Beach Park in Bellevue",
+    "organization": "Pilchuck Audubon Society",
+    "activityType": "Birding",
+    "venue": "Chism Beach Park (9600 SE 11th St, Bellevue, WA 98004)",
+    "area": "Bellevue",
+    "start": "2026-11-14T08:00:00-08:00",
+    "end": "2026-11-14T11:00:00-08:00",
+    "timeString": "8:00 AM – 11:00 AM",
+    "dateString": "2026-11-14",
+    "description": "Morning birding outing led by naturalist David Droppers exploring Lake Washington waterfowl, grebes, and woodland songbirds at Bellevue's Chism Beach Park.",
+    "url": "https://www.pilchuckaudubon.org/upcoming-trips",
+    "cost": "Free",
+    "recurrence": "One-time"
+  },
+  {
     "id": "bcs-discovery-park-2026-11-14",
     "title": "Birds Connect Seattle: Neighborhood Bird Walk at Discovery Park",
     "organization": "Birds Connect Seattle",
@@ -9488,6 +9840,22 @@
     "recurrence": "Annual cultural celebration"
   },
   {
+    "id": "usk-colman-dock-ferry-terminal-2026-11-14",
+    "title": "Urban Sketchers Seattle Outing: Colman Dock (Pier 52) Ferry Terminal",
+    "organization": "Urban Sketchers Seattle",
+    "activityType": "Art",
+    "venue": "Colman Dock Pier 52 Ferry Terminal (801 Alaskan Way, Seattle, WA 98104)",
+    "area": "Downtown Seattle",
+    "start": "2026-11-14T11:00:00-08:00",
+    "end": "2026-11-14T13:30:00-08:00",
+    "timeString": "11:00 AM – 1:30 PM",
+    "dateString": "2026-11-14",
+    "description": "Sketch Washington State Ferries, Elliott Bay maritime traffic, and the new sheltered Colman Dock passenger terminal on the Seattle waterfront.",
+    "url": "http://seattle.urbansketchers.org/p/all-outings-begin-at-10-a.html",
+    "cost": "Free",
+    "recurrence": "Monthly"
+  },
+  {
     "id": "ballard-tool-sharpening-2026-11-14",
     "title": "Winter Garden Tool Maintenance & Blade Sharpening Clinic",
     "organization": "Ballard Tool Library",
@@ -9502,6 +9870,22 @@
     "url": "https://www.sustainableballard.org/events/",
     "cost": "$10 suggested donation",
     "recurrence": "Seasonal DIY clinic"
+  },
+  {
+    "id": "wcg-festive-flourishes-calligraphy-2026-11-14",
+    "title": "Washington Calligraphers Guild Workshop: 'Festive Flourishes' with Younghae Chung",
+    "organization": "Washington Calligraphers Guild",
+    "activityType": "Art",
+    "venue": "Online Interactive Studio via Zoom (Puget Sound)",
+    "area": "Puget Sound",
+    "start": "2026-11-14T11:30:00-08:00",
+    "end": "2026-11-14T14:30:00-08:00",
+    "timeString": "11:30 AM – 2:30 PM",
+    "dateString": "2026-11-14",
+    "description": "Three-hour pointed pen and flourishing workshop with calligrapher Younghae Chung creating botanical flourished wreaths and lettering.",
+    "url": "https://www.calligraphersguild.org/events-1",
+    "cost": "Registration required",
+    "recurrence": "Seasonal"
   },
   {
     "id": "bikeworks-open-shop-2026-11-14",
@@ -9648,6 +10032,22 @@
     "recurrence": "Weekends in Nov (Sat & Sun)"
   },
   {
+    "id": "pnw-glass-guild-meeting-2026-11-15",
+    "title": "PNW Glass Art Guild November General Meeting & Artist Showcase",
+    "organization": "PNW Glass Art Guild",
+    "activityType": "Art",
+    "venue": "Online via Zoom (Seattle / Puget Sound area)",
+    "area": "Seattle / Puget Sound area",
+    "start": "2026-11-15T15:30:00-08:00",
+    "end": "2026-11-15T17:00:00-08:00",
+    "timeString": "3:30 PM – 5:00 PM",
+    "dateString": "2026-11-15",
+    "description": "Monthly gathering of Pacific Northwest kiln-formed, fused, and stained glass artists featuring member work shares and studio techniques.",
+    "url": "https://www.pnwglassguild.org/event/general-meeting-via-zoom-8/",
+    "cost": "Free for members / Guests welcome",
+    "recurrence": "Monthly"
+  },
+  {
     "id": "chtl-open-woodshop-studio-20261115",
     "title": "Sunday Open Woodshop & 3D Printing Maker Lab",
     "organization": "Capitol Hill Tool Library",
@@ -9696,6 +10096,22 @@
     "recurrence": "Third Monday of the month"
   },
   {
+    "id": "pilchuck-point-no-point-ferry-2026-11-17",
+    "title": "Pilchuck Audubon Field Trip: Sea-Watching at Point No Point & Foulweather Bluff",
+    "organization": "Pilchuck Audubon Society",
+    "activityType": "Birding",
+    "venue": "Edmonds Ferry / Point No Point Park (950 Main St, Edmonds, WA 98020)",
+    "area": "Snohomish County",
+    "start": "2026-11-17T07:15:00-08:00",
+    "end": "2026-11-17T15:00:00-08:00",
+    "timeString": "7:15 AM – 3:00 PM",
+    "dateString": "2026-11-17",
+    "description": "Ferry across Puget Sound from Edmonds to Kitsap Peninsula for premier alcid, loon, and sea duck watching at Point No Point lighthouse and a forest-to-marsh walk at Foulweather Bluff Preserve.",
+    "url": "https://www.pilchuckaudubon.org/upcoming-trips",
+    "cost": "Free (Ferry fare applies)",
+    "recurrence": "Seasonal"
+  },
+  {
     "id": "eastside-audubon-juanita-bay-tuesday-2026-11-17",
     "title": "Eastside Audubon: Juanita Bay Park Morning Bird Walk",
     "organization": "Eastside Audubon",
@@ -9710,6 +10126,22 @@
     "url": "https://www.eastsideaudubon.org/juanita-bay-bird-walk",
     "cost": "Free",
     "recurrence": "Third Tuesday of the month"
+  },
+  {
+    "id": "wffc-november-meeting-tim-bird-2026-11-17",
+    "title": "Washington Fly Fishing Club November Meeting & Presentation",
+    "organization": "Washington Fly Fishing Club",
+    "activityType": "Outdoors",
+    "venue": "Seattle Tennis Club (922 McGilvra Blvd E, Seattle, WA 98112)",
+    "area": "Seattle",
+    "start": "2026-11-17T17:30:00-08:00",
+    "end": "2026-11-17T21:00:00-08:00",
+    "timeString": "5:30 PM – 9:00 PM",
+    "dateString": "2026-11-17",
+    "description": "Monthly gathering of the Washington Fly Fishing Club featuring fly-tying demonstrations, conservation updates, and guest speaker Tim Bird.",
+    "url": "https://wffc.com/event/november-2026-club-dinner-meeting-featuring-john-shewey/",
+    "cost": "See event page",
+    "recurrence": "Monthly (3rd Tuesday)"
   },
   {
     "id": "chtl-tuesday-hours-2026-11-17",
@@ -9984,6 +10416,22 @@
     "recurrence": "Third Thursday of the month"
   },
   {
+    "id": "tahoma-bird-eagles-pride-2026-11-19",
+    "title": "Tahoma Bird Alliance: Morning Bird Walk at Eagle's Pride (JBLM)",
+    "organization": "Tahoma Bird Alliance",
+    "activityType": "Birding",
+    "venue": "Eagle's Pride Golf Course, I-5 Exit 116 (DuPont, WA 98327)",
+    "area": "Tacoma",
+    "start": "2026-11-19T08:00:00-08:00",
+    "end": "2026-11-19T12:00:00-08:00",
+    "timeString": "8:00 AM – 12:00 PM",
+    "dateString": "2026-11-19",
+    "description": "Third-Thursday guided bird walk exploring oak-prairie and conifer edge habitats at Eagle's Pride (no base pass required).",
+    "url": "https://www.tahomabirdalliance.org/field-trips",
+    "cost": "Free",
+    "recurrence": "Monthly (3rd Thursday)"
+  },
+  {
     "id": "bbg-audubon-bird-walk-2026-11-19",
     "title": "Eastside Audubon Monthly Bird Walk at Bellevue Botanical Garden",
     "organization": "Eastside Audubon",
@@ -10158,6 +10606,22 @@
     "url": "https://www.tahomabirdalliance.org/bird-walks",
     "cost": "Free",
     "recurrence": "Third Saturday of the month"
+  },
+  {
+    "id": "tahoma-bird-clarks-creek-2026-11-21",
+    "title": "Tahoma Bird Alliance: Guided Bird Walk at Clark's Creek & DeCoursey Park",
+    "organization": "Tahoma Bird Alliance",
+    "activityType": "Birding",
+    "venue": "DeCoursey Park (2100 7th Ave SW, Puyallup, WA 98371)",
+    "area": "Tacoma",
+    "start": "2026-11-21T08:30:00-08:00",
+    "end": "2026-11-21T10:30:00-08:00",
+    "timeString": "8:30 AM – 10:30 AM",
+    "dateString": "2026-11-21",
+    "description": "Third-Saturday morning bird walk along spring-fed Clark's Creek and DeCoursey Pond searching for wood ducks, hooded mergansers, American dippers, and winter songbirds.",
+    "url": "https://www.tahomabirdalliance.org/field-trips",
+    "cost": "Free",
+    "recurrence": "Monthly (3rd Saturday)"
   },
   {
     "id": "bcs-green-lake-2026-11-21",
@@ -10576,6 +11040,22 @@
     "recurrence": "Fourth Monday of the month"
   },
   {
+    "id": "tahoma-bird-adriana-hess-beginners-2026-11-23",
+    "title": "Tahoma Bird Alliance: Guided Beginning Birders Walk at Adriana Hess",
+    "organization": "Tahoma Bird Alliance",
+    "activityType": "Birding",
+    "venue": "Adriana Hess Audubon Center (2917 Morrison Rd W, University Place, WA 98466)",
+    "area": "Tacoma",
+    "start": "2026-11-23T09:30:00-08:00",
+    "end": "2026-11-23T11:30:00-08:00",
+    "timeString": "9:30 AM – 11:30 AM",
+    "dateString": "2026-11-23",
+    "description": "Welcoming fourth-Monday morning walk designed for beginning birders around Adriana Hess Wetland Park. Free loaner binoculars and field guides available!",
+    "url": "https://www.tahomabirdalliance.org/field-trips",
+    "cost": "Free",
+    "recurrence": "Monthly (4th Monday)"
+  },
+  {
     "id": "gcc-monday-league-2026-11-23",
     "title": "Granite Curling Club: Monday Night Open League",
     "organization": "Seattle Curling Club",
@@ -10768,6 +11248,22 @@
     "recurrence": "Marathon race weekend"
   },
   {
+    "id": "usk-gab-and-grab-northgate-2026-11-27",
+    "title": "Urban Sketchers Seattle Annual 'Gab & Grab' Art Supply Swap & Sketch Meet",
+    "organization": "Urban Sketchers Seattle",
+    "activityType": "Art",
+    "venue": "Northgate Branch Library (10548 5th Ave NE, Seattle, WA 98125)",
+    "area": "North Seattle",
+    "start": "2026-11-27T12:00:00-08:00",
+    "end": "2026-11-27T14:30:00-08:00",
+    "timeString": "12:00 PM – 2:30 PM",
+    "dateString": "2026-11-27",
+    "description": "One of Urban Sketchers Seattle's most popular annual gatherings! Bring your sketchbooks to share at noon and swap gently used paints, pens, brushes, and paper starting at 1:00 PM.",
+    "url": "http://seattle.urbansketchers.org/p/all-outings-begin-at-10-a.html",
+    "cost": "Free",
+    "recurrence": "Annual"
+  },
+  {
     "id": "mox-fnm-draft-2026-11-27",
     "title": "Mox Boarding House: Black Friday FNM Booster Draft",
     "organization": "Mox Boarding House",
@@ -10800,6 +11296,22 @@
     "recurrence": "Weekly on Fridays"
   },
   {
+    "id": "pilchuck-wallace-swamp-creek-2026-11-28",
+    "title": "Pilchuck Audubon Field Trip: Birding Wallace Swamp Creek Park",
+    "organization": "Pilchuck Audubon Society",
+    "activityType": "Birding",
+    "venue": "Wallace Swamp Creek Park (19851 73rd Ave NE, Kenmore, WA 98028)",
+    "area": "Snohomish County",
+    "start": "2026-11-28T09:00:00-08:00",
+    "end": "2026-11-28T12:00:00-08:00",
+    "timeString": "9:00 AM – 12:00 PM",
+    "dateString": "2026-11-28",
+    "description": "Guided late-autumn birding walk along Swamp Creek's riparian corridor in Kenmore led by Linda Phillips.",
+    "url": "https://www.pilchuckaudubon.org/upcoming-trips",
+    "cost": "Free",
+    "recurrence": "Monthly (Last Saturday)"
+  },
+  {
     "id": "seattle-kids-marathon-2026-11-28",
     "title": "Seattle Kids Marathon 2026",
     "organization": "Seattle Running Club",
@@ -10814,6 +11326,22 @@
     "url": "https://www.seattlemarathon.org/marathon-and-half-marathon",
     "cost": "Registration required",
     "recurrence": "Annual race"
+  },
+  {
+    "id": "tahoma-bird-nisqually-nwr-2026-11-28",
+    "title": "Tahoma Bird Alliance: Fourth Saturday Bird Walk at Billy Frank Jr. Nisqually NWR",
+    "organization": "Tahoma Bird Alliance",
+    "activityType": "Birding",
+    "venue": "Billy Frank Jr. Nisqually National Wildlife Refuge (100 Brown Farm Rd NE, Olympia, WA 98516)",
+    "area": "South Sound",
+    "start": "2026-11-28T09:00:00-08:00",
+    "end": "2026-11-28T13:00:00-08:00",
+    "timeString": "9:00 AM – 1:00 PM",
+    "dateString": "2026-11-28",
+    "description": "Fourth-Saturday guided walk across the Nisqually River delta and estuary boardwalks observing thousands of wintering waterfowl, raptors, and marsh birds.",
+    "url": "https://www.tahomabirdalliance.org/field-trips",
+    "cost": "Free ($3 refuge entry or pass)",
+    "recurrence": "Monthly (4th Saturday)"
   },
   {
     "id": "tba-nisqually-2026-11-28",
@@ -11184,6 +11712,38 @@
     "recurrence": "First Thursday of the month"
   },
   {
+    "id": "swg-ruth-hallows-weaving-program-2026-12-03",
+    "title": "Seattle Weavers' Guild Program: Ksm Lx'sg̱a̱n Ruth Hallows on Ravenstail & Chilkat Weaving",
+    "organization": "Seattle Weavers' Guild",
+    "activityType": "Art",
+    "venue": "St. Mark's Bloedel Hall (1245 10th Ave E, Seattle, WA 98102)",
+    "area": "Capitol Hill, Seattle",
+    "start": "2026-12-03T11:00:00-08:00",
+    "end": "2026-12-03T13:00:00-08:00",
+    "timeString": "11:00 AM – 1:00 PM",
+    "dateString": "2026-12-03",
+    "description": "Seattle Weavers' Guild December program featuring Indigenous weaver Ksm Lx'sg̱a̱n Ruth Hallows sharing traditional Northwest Coast textile arts.",
+    "url": "https://www.seattleweaversguild.com/events/hallows-program26-27",
+    "cost": "Free for members / Guests welcome",
+    "recurrence": "Monthly"
+  },
+  {
+    "id": "esw-regular-meeting-2026-12-03",
+    "title": "1264th Entomological Society Regular Meeting & Lecture",
+    "organization": "Entomological Society of Washington",
+    "activityType": "Nature/Conservation",
+    "venue": "Online & Hybrid Entomology Seminar (Seattle, WA)",
+    "area": "Seattle",
+    "start": "2026-12-03T16:00:00-08:00",
+    "end": "2026-12-03T17:30:00-08:00",
+    "timeString": "4:00 PM – 5:30 PM",
+    "dateString": "2026-12-03",
+    "description": "Monthly scientific meeting of the Entomological Society featuring research talks on insect taxonomy, ecology, and natural history.",
+    "url": "https://www.entsocwash.org/events/1261th-esw-regular-meeting-g95at-zb4sw-f849b",
+    "cost": "Free",
+    "recurrence": "Monthly (1st Thursday)"
+  },
+  {
     "id": "nestl-fixit-night-2026-12-03",
     "title": "Community Fix-It Night @ NE Seattle Tool Library",
     "organization": "Northeast Seattle Tool Library",
@@ -11230,6 +11790,38 @@
     "url": "https://www.moxboardinghouse.com/pages/seattle-events",
     "cost": "Free",
     "recurrence": "Weekly on Thursdays"
+  },
+  {
+    "id": "nwwoodworkers-december-meeting-2026-12-03",
+    "title": "Northwest Woodworkers Guild Monthly Meeting: Woodworking Q&A and Show & Tell",
+    "organization": "Northwest Woodworkers Guild",
+    "activityType": "Art",
+    "venue": "Woodcraft of Seattle (5963 Corson Ave S, Seattle, WA 98108)",
+    "area": "Georgetown, Seattle",
+    "start": "2026-12-03T18:00:00-08:00",
+    "end": "2026-12-03T20:00:00-08:00",
+    "timeString": "6:00 PM – 8:00 PM",
+    "dateString": "2026-12-03",
+    "description": "In-person gathering of the Northwest Woodworkers Association at Woodcraft of Seattle in Georgetown featuring furniture and fine woodworking Show & Tell, joinery Q&A, and shop tips.",
+    "url": "https://nwwoodworkers.org/schedule.html",
+    "cost": "Free",
+    "recurrence": "Monthly"
+  },
+  {
+    "id": "plantamnesty-holiday-party-2026-12-03",
+    "title": "PlantAmnesty Annual Holiday Party & Arborist Community Celebration",
+    "organization": "PlantAmnesty",
+    "activityType": "Nature/Conservation",
+    "venue": "Seattle / Magnuson Park (Seattle, WA 98115)",
+    "area": "Seattle",
+    "start": "2026-12-03T18:00:00-08:00",
+    "end": "2026-12-03T21:00:00-08:00",
+    "timeString": "6:00 PM – 9:00 PM",
+    "dateString": "2026-12-03",
+    "description": "Celebrate another year of urban forestry, selective pruning education, and heritage tree stewardship at PlantAmnesty's annual holiday gathering.",
+    "url": "https://www.plantamnesty.org/all-upcoming-events-classes/ygf1r4r5wljyloyxn6ntx5htiv2cts-3xk9z-zzkwa-ke87s",
+    "cost": "See registration page",
+    "recurrence": "Annual"
   },
   {
     "id": "sgc-handicap-league-2026-12-03",
@@ -11326,6 +11918,22 @@
     "url": "https://seattlechess.club/mec-category/uscf-rated/",
     "cost": "USCF membership + Club entry fee",
     "recurrence": "Weekly on Fridays"
+  },
+  {
+    "id": "pilchuck-lynnwood-loops-2026-12-05",
+    "title": "Pilchuck Audubon Field Trip: Birding Two Loops in Lynnwood",
+    "organization": "Pilchuck Audubon Society",
+    "activityType": "Birding",
+    "venue": "Lynndale Park & Golf Course Trail (18927 72nd Ave W, Lynnwood, WA 98036)",
+    "area": "Snohomish County",
+    "start": "2026-12-05T08:00:00-08:00",
+    "end": "2026-12-05T12:00:00-08:00",
+    "timeString": "8:00 AM – 12:00 PM",
+    "dateString": "2026-12-05",
+    "description": "Half-day winter forest birding walk across the Lynnwood Golf Course Trail and Lynndale Park's mature second-growth conifer forest with trip leader Douglas Resnick.",
+    "url": "https://www.pilchuckaudubon.org/upcoming-trips",
+    "cost": "Free",
+    "recurrence": "Seasonal"
   },
   {
     "id": "tba-gateway-park-2026-12-05",
@@ -11454,6 +12062,22 @@
     "url": "https://www.seattlego.org/schedule/",
     "cost": "Club fee",
     "recurrence": "Weekly on Saturdays"
+  },
+  {
+    "id": "pilchuck-lake-cassidy-2026-12-06",
+    "title": "Pilchuck Audubon Field Trip: Winter Passerines & Waterfowl at Lake Cassidy",
+    "organization": "Pilchuck Audubon Society",
+    "activityType": "Birding",
+    "venue": "Getchell Trailhead, Centennial Trail / Lake Cassidy (Marysville, WA 98270)",
+    "area": "Snohomish County",
+    "start": "2026-12-06T08:00:00-08:00",
+    "end": "2026-12-06T12:00:00-08:00",
+    "timeString": "8:00 AM – 12:00 PM",
+    "dateString": "2026-12-06",
+    "description": "Three-mile level walk along the Centennial Trail to the Lake Cassidy wetland dock searching for wintering passerines, woodpeckers, and ring-necked ducks.",
+    "url": "https://www.pilchuckaudubon.org/upcoming-trips",
+    "cost": "Free",
+    "recurrence": "Seasonal"
   },
   {
     "id": "sgc-monthly-tournament-2026-12-06",
