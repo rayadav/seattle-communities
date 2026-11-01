@@ -9,6 +9,7 @@ Designed to run unattended via scheduled jobs or locally.
    - Watersheds, Salmon Runs, Botany & Birding
    - Maker Culture, Community Woodshops, Tool Libraries & Reuse
    - Community Science, Discourse & Natural History
+   - Standup Comedy, Improv Theater, Open Mics & Showcases
 3. Analyzes upcoming events (on or after today) per organization.
 4. Uses Gemini API with Google Search grounding to discover 12-25 verified upcoming events.
 5. Validates schema, deduplicates against existing events, appends, and sorts chronologically.
@@ -41,7 +42,8 @@ PRIORITY_KEYWORDS = [
     "myco", "mush", "fungi", "forag", "salmon", "watershed", "river",
     "bird", "audubon", "plant", "botan", "tree", "forest", "track",
     "wild", "maker", "tool", "woodshop", "craft", "astronom", "science",
-    "soundbio", "bio", "diybio", "microscop", "repair", "salish", "marine"
+    "soundbio", "bio", "diybio", "microscop", "repair", "salish", "marine",
+    "comedy", "improv", "standup", "laughs", "bandit", "twisted flicks"
 ]
 
 def load_env_file():
@@ -165,6 +167,7 @@ Rules for Event Discovery:
    - Native plant walks and botanical tours
    - Tool library repair cafés, fix-it nights, and hands-on maker workshops
    - Public natural science and astronomy lectures
+   - Standup comedy open mics, improv comedy jams, drop-in workshops, and community comedy showcases
 5. Every event must include a valid source URL linking to the organization's official event page or calendar.
 6. Output MUST be ONLY a valid raw JSON array of event objects with no additional markdown, no code blocks, and no extra commentary.
 
@@ -173,7 +176,7 @@ Each event object in the array must adhere strictly to this schema:
   "id": "unique-kebab-cased-id-with-date-e.g-org-event-20261025",
   "title": "Clear Title of Event",
   "organization": "Exact Organization Name matching the candidate list or official group",
-  "activityType": "Category matching the organization (e.g. Nature/Conservation, Birding, Tools, Maker & Crafts, Science, Art, Outdoors)",
+  "activityType": "Category matching the organization (e.g. Nature/Conservation, Birding, Tools, Maker & Crafts, Science, Art, Outdoors, Comedy/Improv)",
   "venue": "Full venue name and address (e.g. 'Floral Hall, Forest Park (802 E Mukilteo Blvd, Everett, WA 98203)')",
   "area": "Neighborhood or region (e.g. 'Seattle (Washington Park)', 'Seattle (Carkeek Park)', 'Everett', 'Shoreline', 'Renton')",
   "start": "ISO 8601 start timestamp with timezone offset (e.g. '2026-10-25T10:00:00-07:00')",

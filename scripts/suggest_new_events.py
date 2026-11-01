@@ -21,7 +21,8 @@ PRIORITY_PILLARS = {
     "Salmon & Watersheds": ["salmon", "watershed", "river", "marine", "salish", "estuary"],
     "Botany & Birding": ["bird", "audubon", "plant", "botan", "tree", "forest", "track", "wild"],
     "Maker & Tool Libraries": ["maker", "tool", "woodshop", "craft", "repair", "metal", "blacksmith"],
-    "Community Science & Discourse": ["astronom", "science", "soundbio", "bio", "microscop", "robotic"]
+    "Community Science & Discourse": ["astronom", "science", "soundbio", "bio", "microscop", "robotic"],
+    "Standup Comedy & Improv": ["comedy", "improv", "laughs", "bandit", "twisted flicks", "upfront", "unexpected productions"]
 }
 
 def get_today_str():

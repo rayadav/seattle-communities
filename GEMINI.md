@@ -7,7 +7,7 @@ The goal is to maintain rich, comprehensive, and up-to-date listings of real com
 ---
 
 ## High-Priority Interest Pillars
-Whenever reviewing, searching, or updating events, ALWAYS conduct an in-depth review across these four priority pillars:
+Whenever reviewing, searching, or updating events, ALWAYS conduct an in-depth review across these five priority pillars:
 
 1. **Fungi, Mycology, Foraging & Lichenology**:
    - *Key Organizations:* Puget Sound Mycological Society (PSMS), Snohomish County Mycological Society (SCMS), Kitsap Peninsula Mycological Society (KPMS), South Sound Mushroom Club (SSMC), Northwest Mushroomers Association (NWMA), Tilth Alliance Foraging, Olympic Peninsula Fungi Festival.
@@ -25,6 +25,10 @@ Whenever reviewing, searching, or updating events, ALWAYS conduct an in-depth re
 4. **Community Science, Discourse, Astronomy & Natural History**:
    - *Citizen Science, DIY Bio & Astronomy:* SoundBio Lab (DIY community biology, biomaterials, microscopes, biosensors at https://www.sound.bio/workshops), Seattle Astronomical Society (star parties, lectures), COASST (Coastal Observation and Seabird Survey Team), Pacific Northwest Microscopy Society, Seattle Robotics Society.
    - *Public Lectures & Gatherings:* Science on Tap Seattle, Pacific Science Center Science Communication Guild, UW Herbarium lectures.
+
+5. **Standup Comedy, Improv Theater, Open Mics & Community Showcases**:
+   - *Improv Theaters, Jams & Schools:* Unexpected Productions Improv (Market Theater at Pike Place Market — Seattle Theatresports, Improv Happy Hour, Duo Comedy Showcase, Cinema Unexpected), Jet City Improv (U-District Drama Room & West of Lenin — The Jet City Show, Improv Dojo, REPS, Improv of Shame, DnDprov), Seattle Comedy Theater (Home of ComedySportz in Fremont — ComedySportz matches, weekly Improv Jam, Outside the Lines BIPOC jam/showcase), Bandit Theater, Eastside Improv, The Improv Place (Seattle Black Improv), Twisted Flicks, Improv for Real Life (IRL), Go Before You're Ready (GBYR Improv in Tacoma), The Upfront Theatre (Bellingham).
+   - *Standup Clubs, Indie Showcases & Open Mics:* Laughs Comedy Club (U-District), Emerald City Comedy Club (Capitol Hill — headliners & Tuesday free open mic), Tacoma Comedy Club (Downtown & 6th & Proctor — headliners, Funny 4 Food, New Talent Tuesday), Cozy Comedy, Killer Set Productions PNW Open Mics (The Comedy Nest, Twatties, The Local 907, Kitchen Sink, Lock N' Laugh, Halcyon Brewing).
 
 ---
 
