@@ -7120,6 +7120,38 @@
     "recurrence": "Monthly"
   },
   {
+    "id": "emtb-swan-creek-dig-day-2026-11-01",
+    "title": "Evergreen MTB: Swan Creek Bike Park Trail Dig & Maintenance Day",
+    "organization": "Evergreen Mountain Bike Alliance",
+    "activityType": "Cycling",
+    "venue": "Swan Creek Park Mountain Bike Trails (3999 E Roosevelt Ave, Tacoma, WA 98404)",
+    "area": "Tacoma",
+    "start": "2026-11-01T09:00:00-08:00",
+    "end": "2026-11-01T14:00:00-08:00",
+    "timeString": "9:00 AM – 2:00 PM",
+    "dateString": "2026-11-01",
+    "description": "Community trail maintenance and dig day at Tacoma's Swan Creek Park with Evergreen Mountain Bike Alliance reshaping berms, clearing drains for winter rain, and tuning flow trails. Tools and lunch provided.",
+    "url": "https://www.evergreenmtb.org/calendar/eventdetail/26701/swan-creek-dig-day-presented-by-trek-university-place",
+    "cost": "Free (Tools provided)",
+    "recurrence": "Monthly"
+  },
+  {
+    "id": "nwharvest-home-team-harvest-kickoff-2026-11-01",
+    "title": "Northwest Harvest: KING 5 Home Team Harvest 2026 Season Kickoff",
+    "organization": "Northwest Harvest Food Packing Groups",
+    "activityType": "Community/Volunteering",
+    "venue": "Northwest Harvest SODO Community Market (1915 4th Ave S, Seattle, WA 98134)",
+    "area": "SODO",
+    "start": "2026-11-01T09:00:00-08:00",
+    "end": "2026-11-01T16:00:00-08:00",
+    "timeString": "9:00 AM – 4:00 PM",
+    "dateString": "2026-11-01",
+    "description": "Opening day of Northwest Harvest's 26th annual Home Team Harvest food drive and volunteer mobilization supporting community food access across Washington.",
+    "url": "https://www.northwestharvest.org/get-involved/events/",
+    "cost": "Free",
+    "recurrence": "Annual"
+  },
+  {
     "id": "green-lake-yoga-flow-reiki-2026-11-01",
     "title": "Sunday Morning Gentle Yoga Flow & Hands-on Reiki",
     "organization": "Green Lake Morning Yoga Collective",
@@ -7134,6 +7166,22 @@
     "url": "https://www.wellnesshealingarts.com/seattleyoga",
     "cost": "Sliding scale ($10 – $20)",
     "recurrence": "Sunday morning weekly practice"
+  },
+  {
+    "id": "emtb-paradise-valley-work-party-2026-11-01",
+    "title": "Evergreen MTB: Paradise Valley Conservation Area Trail Work Party",
+    "organization": "Evergreen Mountain Bike Alliance",
+    "activityType": "Cycling",
+    "venue": "Paradise Valley Conservation Area (23210 Paradise Lake Rd, Woodinville, WA 98077)",
+    "area": "Eastside",
+    "start": "2026-11-01T09:30:00-08:00",
+    "end": "2026-11-01T14:30:00-08:00",
+    "timeString": "9:30 AM – 2:30 PM",
+    "dateString": "2026-11-01",
+    "description": "Join Evergreen Mountain Bike Alliance trail stewards in Woodinville's Paradise Valley Conservation Area for autumn trail brushing, drainage work, and tread repair.",
+    "url": "https://www.evergreenmtb.org/calendar/eventdetail/27595/paradise-valley-work-party",
+    "cost": "Free (Tools provided)",
+    "recurrence": "Seasonal"
   },
   {
     "id": "wkc-tukwila-pool-roll-2026-11-01",
@@ -7248,6 +7296,38 @@
     "recurrence": "Sundays"
   },
   {
+    "id": "emtb-crank-sisters-duthie-ride-2026-11-01",
+    "title": "Evergreen Crank Sisters Ride at Duthie Hill (Beginner/Intermediate)",
+    "organization": "Evergreen Mountain Bike Alliance",
+    "activityType": "Cycling",
+    "venue": "Duthie Hill Mountain Bike Park (26300 SE Issaquah-Fall City Rd, Issaquah, WA 98029)",
+    "area": "Eastside",
+    "start": "2026-11-01T11:00:00-08:00",
+    "end": "2026-11-01T13:30:00-08:00",
+    "timeString": "11:00 AM – 1:30 PM",
+    "dateString": "2026-11-01",
+    "description": "Welcoming women and non-binary mountain bike group ride at Duthie Hill Park in Issaquah practicing cross-country loops and beginner/intermediate flow trails.",
+    "url": "https://www.evergreenmtb.org/calendar/eventdetail/27192/crank-sisters-ride-duthie-beginner-intermediate",
+    "cost": "Free",
+    "recurrence": "Monthly"
+  },
+  {
+    "id": "clubsake-oc6-sunday-paddle-2026-11-01",
+    "title": "Seattle SAKE Outrigger Canoe (OC6) Sunday Paddling Session",
+    "organization": "Seattle SAKE Paddling Club",
+    "activityType": "Water Sports",
+    "venue": "Lakewood Marina (4500 Lake Washington Blvd S, Seattle, WA 98118)",
+    "area": "South Seattle",
+    "start": "2026-11-01T11:00:00-08:00",
+    "end": "2026-11-01T13:00:00-08:00",
+    "timeString": "11:00 AM – 1:00 PM",
+    "dateString": "2026-11-01",
+    "description": "Six-person outrigger canoe (OC6) community paddling session on southern Lake Washington departing from Lakewood Marina. New paddlers may try up to three sessions before joining.",
+    "url": "https://www.clubsake.com/events/list?page=1",
+    "cost": "First 3 trial paddles free",
+    "recurrence": "Sundays"
+  },
+  {
     "id": "town-hall-catrinas-2026-11-01",
     "title": "Town Hall Seattle: Seattle Catrinas Festival (Día de los Muertos)",
     "organization": "Town Hall Seattle",
@@ -7294,6 +7374,22 @@
     "url": "https://kitsapmushrooms.org/outreach/wild-mushroom-show/",
     "cost": "Free admission (donations welcome)",
     "recurrence": "Annual Exhibition"
+  },
+  {
+    "id": "emtb-raging-river-upper-last-call-2026-11-01",
+    "title": "Evergreen MTB Trail Work Party: Upper Last Call at Raging River",
+    "organization": "Evergreen Mountain Bike Alliance",
+    "activityType": "Cycling",
+    "venue": "Raging River State Forest, Snoqualmie Point Trailhead (North Bend, WA 98045)",
+    "area": "Eastside",
+    "start": "2026-11-01T12:30:00-08:00",
+    "end": "2026-11-01T16:30:00-08:00",
+    "timeString": "12:30 PM – 4:30 PM",
+    "dateString": "2026-11-01",
+    "description": "Afternoon trail building and maintenance session on Upper Last Call in Raging River State Forest near Snoqualmie Pass.",
+    "url": "https://www.evergreenmtb.org/calendar/eventdetail/27594/work-party-upper-last-call-at-raging-river",
+    "cost": "Free (Tools provided)",
+    "recurrence": "Seasonal"
   },
   {
     "id": "cascade-ride-in-the-rain-alki-kickoff-2026-11-01",
@@ -7406,6 +7502,38 @@
     "url": "https://curlingseattle.org/content/2026-2027-monday-night",
     "cost": "League registration / Spectating free",
     "recurrence": "Weekly on Mondays"
+  },
+  {
+    "id": "smqg-monday-sew-in-2026-11-02",
+    "title": "Seattle Modern Quilt Guild Monday Night Community Sew-In",
+    "organization": "Seattle Modern Quilt Guild",
+    "activityType": "Art",
+    "venue": "Online Studio Sew-In via Zoom (Seattle, WA)",
+    "area": "Seattle",
+    "start": "2026-11-02T18:30:00-08:00",
+    "end": "2026-11-02T20:30:00-08:00",
+    "timeString": "6:30 PM – 8:30 PM",
+    "dateString": "2026-11-02",
+    "description": "Weekly evening quilting and piecing social session with members of the Seattle Modern Quilt Guild.",
+    "url": "https://seattlemqg.com/Calendar-of-Everything",
+    "cost": "Members / Guests",
+    "recurrence": "Mondays"
+  },
+  {
+    "id": "discnw-fall-goaltimate-league-2026-11-02",
+    "title": "2026 DiscNW Fall Goaltimate League Opening Night",
+    "organization": "DiscNW (Northwest Ultimate Association)",
+    "activityType": "Indoor Sports",
+    "venue": "Seattle Turf Fields (Seattle, WA 98115)",
+    "area": "Seattle",
+    "start": "2026-11-02T19:00:00-08:00",
+    "end": "2026-11-02T21:30:00-08:00",
+    "timeString": "7:00 PM – 9:30 PM",
+    "dateString": "2026-11-02",
+    "description": "Fast-paced 4v4 half-court flying disc Goaltimate league organized by DiscNW for the Seattle ultimate community.",
+    "url": "https://www.discnw.org/registration-is-currently-open-for-these-events",
+    "cost": "Pay-what-you-can registration",
+    "recurrence": "Mondays in Nov"
   },
   {
     "id": "hugo-house-works-in-progress-2026-11-02",
@@ -7872,6 +8000,22 @@
     "recurrence": "Weekly on Wednesdays"
   },
   {
+    "id": "wac-november-board-meeting-2026-11-04",
+    "title": "Washington Alpine Club November Monthly Meeting",
+    "organization": "Washington Alpine Club",
+    "activityType": "Climbing",
+    "venue": "Seattle / Hybrid via Zoom (Seattle, WA)",
+    "area": "Seattle",
+    "start": "2026-11-04T19:00:00-08:00",
+    "end": "2026-11-04T21:00:00-08:00",
+    "timeString": "7:00 PM – 9:00 PM",
+    "dateString": "2026-11-04",
+    "description": "Monthly leadership and membership meeting of the volunteer-run Washington Alpine Club planning winter mountaineering, backcountry ski classes, and Guye Cabin stewardship.",
+    "url": "https://washingtonalpineclub.org/events/",
+    "cost": "Free",
+    "recurrence": "Monthly (1st Wednesday)"
+  },
+  {
     "id": "renton-lgbtq-pflag-meeting-2026-11-04",
     "title": "Renton LGBTQ+ & Family Peer Support Meeting",
     "organization": "Renton LGBTQIA+ Community Coalition",
@@ -8144,6 +8288,22 @@
     "recurrence": "Weekly on Fridays"
   },
   {
+    "id": "wac-110th-anniversary-banquet-2026-11-06",
+    "title": "Washington Alpine Club 110th Anniversary Banquet at Leif Erikson Hall",
+    "organization": "Washington Alpine Club",
+    "activityType": "Climbing",
+    "venue": "Leif Erikson Hall (2245 NW 57th St, Seattle, WA 98107)",
+    "area": "Ballard",
+    "start": "2026-11-06T18:00:00-08:00",
+    "end": "2026-11-06T21:00:00-08:00",
+    "timeString": "6:00 PM – 9:00 PM",
+    "dateString": "2026-11-06",
+    "description": "Celebrate 110 years of grassroots Pacific Northwest mountaineering with the Washington Alpine Club at Leif Erikson Hall in Ballard! Evening includes dinner, mountaineering stories, and alpine history.",
+    "url": "https://washingtonalpineclub.org/events/",
+    "cost": "Ticketed dinner",
+    "recurrence": "Annual"
+  },
+  {
     "id": "scc-friday-rated-2026-11-06",
     "title": "Seattle Chess Club: Friday Night USCF Rated Chess",
     "organization": "Seattle Chess Club",
@@ -8270,6 +8430,38 @@
     "url": "https://www.eastsideaudubon.org/marymoor-restoration",
     "cost": "Free",
     "recurrence": "First Saturday of the month"
+  },
+  {
+    "id": "emtb-beacon-hill-reseeding-2026-11-07",
+    "title": "Evergreen MTB: Beacon Hill Bike Park Fall Reseeding & Trail Work Party",
+    "organization": "Evergreen Mountain Bike Alliance",
+    "activityType": "Cycling",
+    "venue": "Beacon Hill Bike Park / Cheasty Greenspace (1501 S Dakota St, Seattle, WA 98108)",
+    "area": "South Seattle",
+    "start": "2026-11-07T09:00:00-08:00",
+    "end": "2026-11-07T13:00:00-08:00",
+    "timeString": "9:00 AM – 1:00 PM",
+    "dateString": "2026-11-07",
+    "description": "Join Evergreen Mountain Bike Alliance in Seattle's Cheasty Greenspace at Beacon Hill Bike Park for native forest reseeding, erosion control, and jump/trail maintenance.",
+    "url": "https://www.evergreenmtb.org/calendar/eventdetail/27209/beacon-hill-reseeding",
+    "cost": "Free (Tools & gloves provided)",
+    "recurrence": "Seasonal"
+  },
+  {
+    "id": "emtb-raging-tiger-work-party-2026-11-07",
+    "title": "Evergreen MTB: Raging River & Tiger Mountain Fall Trail Maintenance",
+    "organization": "Evergreen Mountain Bike Alliance",
+    "activityType": "Cycling",
+    "venue": "Tiger Mountain State Forest, Hwy 18 Exit 25 (Issaquah, WA 98027)",
+    "area": "Eastside",
+    "start": "2026-11-07T09:00:00-08:00",
+    "end": "2026-11-07T15:00:00-08:00",
+    "timeString": "9:00 AM – 3:00 PM",
+    "dateString": "2026-11-07",
+    "description": "Hands-on backcountry singletrack maintenance day at Tiger Mountain and Raging River State Forests keeping premier Cascade foothills trails running smoothly through winter.",
+    "url": "https://www.evergreenmtb.org/calendar/eventdetail/26736/raging-tiger-fall-trail-maintenance-series",
+    "cost": "Free",
+    "recurrence": "Monthly"
   },
   {
     "id": "kubota-forest-bathing-2026-11-07",
@@ -8624,6 +8816,22 @@
     "recurrence": "Weekends in Nov (Sat & Sun)"
   },
   {
+    "id": "clubsake-dragon-boat-101-2026-11-07",
+    "title": "Dragon Boat 101: Intro to Dragon Boat Paddling on Lake Washington",
+    "organization": "Seattle SAKE Paddling Club",
+    "activityType": "Water Sports",
+    "venue": "Leschi South Sailboat Moorage (300 Lakeside Ave S, Seattle, WA 98144)",
+    "area": "Central District / Leschi",
+    "start": "2026-11-07T11:30:00-08:00",
+    "end": "2026-11-07T13:30:00-08:00",
+    "timeString": "11:30 AM – 1:30 PM",
+    "dateString": "2026-11-07",
+    "description": "Beginner-friendly Dragon Boat 101 clinic at Leschi Moorage introducing stroke technique, boat safety, and team timing on Lake Washington. Paddles and PFDs provided.",
+    "url": "https://www.clubsake.com/events/list?page=1",
+    "cost": "Free trial session",
+    "recurrence": "Monthly"
+  },
+  {
     "id": "seattle-center-festal-diwali-2026-11-07",
     "title": "Diwali: Lights of India 2026",
     "organization": "Seattle Center",
@@ -8736,6 +8944,22 @@
     "recurrence": "One-time"
   },
   {
+    "id": "emtb-singletrack-soiree-2026-11-07",
+    "title": "Evergreen Mountain Bike Alliance: 2026 Singletrack Soirée",
+    "organization": "Evergreen Mountain Bike Alliance",
+    "activityType": "Cycling",
+    "venue": "Seattle Event Hall (Seattle, WA 98104)",
+    "area": "Seattle",
+    "start": "2026-11-07T18:00:00-08:00",
+    "end": "2026-11-07T22:00:00-08:00",
+    "timeString": "6:00 PM – 10:00 PM",
+    "dateString": "2026-11-07",
+    "description": "Evergreen Mountain Bike Alliance's annual statewide trail builder celebration and gala supporting new singletrack trails and public land conservation across Washington.",
+    "url": "https://www.evergreenmtb.org/calendar/eventdetail/27200/singletrack-soiree-2026",
+    "cost": "Ticketed fundraiser",
+    "recurrence": "Annual"
+  },
+  {
     "id": "sas-snoqualmie-star-party-20261107",
     "title": "Snoqualmie Point Park Stargaze & High-Elevation Star Party",
     "organization": "Seattle Astronomical Society",
@@ -8784,6 +9008,22 @@
     "recurrence": "Seasonal Course"
   },
   {
+    "id": "wac-guye-cabin-work-party-2026-11-08",
+    "title": "Washington Alpine Club: Guye Cabin Fall Stewardship Work Party",
+    "organization": "Washington Alpine Club",
+    "activityType": "Climbing",
+    "venue": "Historic Guye Cabin at Snoqualmie Pass (40190 Denny Creek Rd, Snoqualmie Pass, WA 98068)",
+    "area": "Eastside",
+    "start": "2026-11-08T09:00:00-08:00",
+    "end": "2026-11-08T12:00:00-08:00",
+    "timeString": "9:00 AM – 12:00 PM",
+    "dateString": "2026-11-08",
+    "description": "Final pre-winter volunteer work party at the Washington Alpine Club's historic Guye Cabin at Snoqualmie Pass stacking firewood, bucking downed timber, and winterizing the lodge.",
+    "url": "https://washingtonalpineclub.org/events/",
+    "cost": "Free",
+    "recurrence": "Seasonal"
+  },
+  {
     "id": "pratt-vitreography-glass-printing-20261108",
     "title": "Beginning Vitreography: Fine Art Printmaking from Glass Plates",
     "organization": "Pratt Fine Arts Center",
@@ -8816,6 +9056,38 @@
     "recurrence": "Annual regional championship"
   },
   {
+    "id": "emtb-beacon-hill-sunday-maintenance-2026-11-08",
+    "title": "Evergreen MTB: Beacon Hill Bike Park Sunday Trail Maintenance",
+    "organization": "Evergreen Mountain Bike Alliance",
+    "activityType": "Cycling",
+    "venue": "Beacon Hill Bike Park / Cheasty Greenspace (1501 S Dakota St, Seattle, WA 98108)",
+    "area": "South Seattle",
+    "start": "2026-11-08T10:00:00-08:00",
+    "end": "2026-11-08T14:00:00-08:00",
+    "timeString": "10:00 AM – 2:00 PM",
+    "dateString": "2026-11-08",
+    "description": "Sunday volunteer trail stewardship session at Seattle's Beacon Hill Bike Park with Evergreen East and SolNix tuning berms, drainage, and forest lines.",
+    "url": "https://www.evergreenmtb.org/calendar/eventdetail/27189/beacon-hill-maintenance-with-evergreen-east-solnix",
+    "cost": "Free (Tools provided)",
+    "recurrence": "Biweekly Sundays"
+  },
+  {
+    "id": "emtb-tennant-trailhead-work-party-2026-11-08",
+    "title": "Evergreen MTB: Tennant Trailhead Park Maintenance Work Party",
+    "organization": "Evergreen Mountain Bike Alliance",
+    "activityType": "Cycling",
+    "venue": "Tennant Trailhead Park (845 Ribary Way, North Bend, WA 98045)",
+    "area": "Eastside",
+    "start": "2026-11-08T10:00:00-08:00",
+    "end": "2026-11-08T14:00:00-08:00",
+    "timeString": "10:00 AM – 2:00 PM",
+    "dateString": "2026-11-08",
+    "description": "Community trail work party in partnership with Si View Metropolitan Park District maintaining the progressive mountain bike trails at Tennant Trailhead Park in North Bend.",
+    "url": "https://www.evergreenmtb.org/calendar/eventdetail/27202/tennant-maintenance-work-party-with-si-view-parks",
+    "cost": "Free (Tools provided)",
+    "recurrence": "Monthly"
+  },
+  {
     "id": "kpms-islandwood-mushroom-mania-2026-11-08",
     "title": "Mushroom Mania Guided Forest Forays at IslandWood",
     "organization": "Kitsap Peninsula Mycological Society",
@@ -8846,6 +9118,38 @@
     "url": "https://www.seattle.gov/parks/allparks/carkeek-park",
     "cost": "Free",
     "recurrence": "Weekends in Nov (Sat & Sun)"
+  },
+  {
+    "id": "cwb-sunday-public-sail-2026-11-08",
+    "title": "Center for Wooden Boats: Sunday Public Sail on Lake Union",
+    "organization": "Center for Wooden Boats",
+    "activityType": "Water Sports",
+    "venue": "Center for Wooden Boats (1010 Valley St, Seattle, WA 98109)",
+    "area": "South Lake Union",
+    "start": "2026-11-08T11:00:00-08:00",
+    "end": "2026-11-08T15:00:00-08:00",
+    "timeString": "11:00 AM – 3:00 PM",
+    "dateString": "2026-11-08",
+    "description": "Free Sunday sailing tradition on South Lake Union! Sign up in person starting at 10:00 AM to ride aboard historic wooden sailboats and classic Northwest craft.",
+    "url": "https://www.cwb.org/events",
+    "cost": "Free",
+    "recurrence": "Sundays"
+  },
+  {
+    "id": "clubsake-oc6-sunday-paddle-2026-11-08",
+    "title": "Seattle SAKE Outrigger Canoe (OC6) Sunday Session on Lake Washington",
+    "organization": "Seattle SAKE Paddling Club",
+    "activityType": "Water Sports",
+    "venue": "Lakewood Marina (4500 Lake Washington Blvd S, Seattle, WA 98118)",
+    "area": "South Seattle",
+    "start": "2026-11-08T11:00:00-08:00",
+    "end": "2026-11-08T13:00:00-08:00",
+    "timeString": "11:00 AM – 1:00 PM",
+    "dateString": "2026-11-08",
+    "description": "Sunday outrigger canoe (OC6) group paddle on Lake Washington from Lakewood Marina.",
+    "url": "https://www.clubsake.com/events/list?page=1",
+    "cost": "First 3 trial paddles free",
+    "recurrence": "Sundays"
   },
   {
     "id": "nestl-community-threads-rclc-2026-11-08",
@@ -8990,6 +9294,22 @@
     "url": "https://www.seattlerecreative.org/events",
     "cost": "Free / pay-what-you-can donation",
     "recurrence": "Monthly Workshop"
+  },
+  {
+    "id": "wac-women-of-wac-meetup-2026-11-09",
+    "title": "Women of the Washington Alpine Club Monthly Climbing & Outdoors Meetup",
+    "organization": "Washington Alpine Club",
+    "activityType": "Climbing",
+    "venue": "Seattle Gathering Spot (Seattle, WA 98103)",
+    "area": "Seattle",
+    "start": "2026-11-09T18:00:00-08:00",
+    "end": "2026-11-09T20:00:00-08:00",
+    "timeString": "6:00 PM – 8:00 PM",
+    "dateString": "2026-11-09",
+    "description": "Second-Monday monthly social meetup for women and non-binary climbers, mountaineers, and backcountry skiers in the Washington Alpine Club.",
+    "url": "https://washingtonalpineclub.org/events/",
+    "cost": "Free",
+    "recurrence": "Monthly (2nd Monday)"
   },
   {
     "id": "gcc-monday-league-2026-11-09",
@@ -9568,6 +9888,22 @@
     "recurrence": "One-time"
   },
   {
+    "id": "wac-wilderness-first-aid-2026-11-14",
+    "title": "Washington Alpine Club: Wilderness First Aid (WFA) 2-Day Certification Course",
+    "organization": "Washington Alpine Club",
+    "activityType": "Climbing",
+    "venue": "CPR Seattle in Ballard (1406 NW 53rd St, Seattle, WA 98107)",
+    "area": "Ballard",
+    "start": "2026-11-14T08:00:00-08:00",
+    "end": "2026-11-14T18:30:00-08:00",
+    "timeString": "8:00 AM – 6:30 PM (Sat & Sun)",
+    "dateString": "2026-11-14",
+    "description": "Hands-on 16-hour Wilderness First Aid certification course tailored for climbers, mountaineers, and backcountry skiers covering patient assessment, hypothermia, splinting, and backcountry evacuation.",
+    "url": "https://washingtonalpineclub.org/events/",
+    "cost": "Registration required",
+    "recurrence": "Seasonal"
+  },
+  {
     "id": "bcs-discovery-park-2026-11-14",
     "title": "Birds Connect Seattle: Neighborhood Bird Walk at Discovery Park",
     "organization": "Birds Connect Seattle",
@@ -9758,6 +10094,22 @@
     "url": "https://kitsapmushrooms.org/event/november-14-mushroom-week-photography-in-the-woods/",
     "cost": "See registration page",
     "recurrence": "Annual Mushroom Week"
+  },
+  {
+    "id": "saf-downtown-architecture-tour-2026-11-14",
+    "title": "Seattle Architecture Foundation Guided Walking Tour: Diamonds & Gold Art Deco",
+    "organization": "Seattle Architecture Foundation",
+    "activityType": "Art",
+    "venue": "Center for Architecture & Design (1010 Western Ave, Seattle, WA 98104)",
+    "area": "Downtown Seattle",
+    "start": "2026-11-14T10:00:00-08:00",
+    "end": "2026-11-14T12:00:00-08:00",
+    "timeString": "10:00 AM – 12:00 PM",
+    "dateString": "2026-11-14",
+    "description": "Explore Seattle's Roaring Twenties and Great Depression Art Deco masterpieces—including the Seattle Tower, Exchange Building, and Federal Office Building—with Seattle Architecture Foundation guides.",
+    "url": "https://seattlearchitecture.org/tours/",
+    "cost": "$25–$30",
+    "recurrence": "Saturdays"
   },
   {
     "id": "oxbow-restoration-work-party-2026-11-14",
@@ -10030,6 +10382,22 @@
     "url": "https://www.seattle.gov/parks/allparks/carkeek-park",
     "cost": "Free",
     "recurrence": "Weekends in Nov (Sat & Sun)"
+  },
+  {
+    "id": "cwb-sunday-public-sail-2026-11-15",
+    "title": "Center for Wooden Boats: Sunday Public Sail on Lake Union",
+    "organization": "Center for Wooden Boats",
+    "activityType": "Water Sports",
+    "venue": "Center for Wooden Boats (1010 Valley St, Seattle, WA 98109)",
+    "area": "South Lake Union",
+    "start": "2026-11-15T11:00:00-08:00",
+    "end": "2026-11-15T15:00:00-08:00",
+    "timeString": "11:00 AM – 3:00 PM",
+    "dateString": "2026-11-15",
+    "description": "Experience Puget Sound maritime heritage firsthand with a free Sunday sail on Lake Union skippered by Center for Wooden Boats volunteer captains.",
+    "url": "https://www.cwb.org/events",
+    "cost": "Free",
+    "recurrence": "Sundays"
   },
   {
     "id": "pnw-glass-guild-meeting-2026-11-15",
@@ -10624,6 +10992,22 @@
     "recurrence": "Monthly (3rd Saturday)"
   },
   {
+    "id": "discnw-seattle-turkey-bowl-2026-11-21",
+    "title": "2026 DiscNW Seattle Turkey Bowl Ultimate Hat Tournament",
+    "organization": "DiscNW (Northwest Ultimate Association)",
+    "activityType": "Indoor Sports",
+    "venue": "Magnuson Park Sports Fields (7400 Sand Point Way NE, Seattle, WA 98115)",
+    "area": "Magnuson, Seattle",
+    "start": "2026-11-21T09:00:00-08:00",
+    "end": "2026-11-21T16:00:00-08:00",
+    "timeString": "9:00 AM – 4:00 PM",
+    "dateString": "2026-11-21",
+    "description": "Annual pre-Thanksgiving mixed ultimate frisbee hat tournament hosted by DiscNW bringing together players of all experience levels for a festive day of ultimate.",
+    "url": "https://www.discnw.org/registration-is-currently-open-for-these-events",
+    "cost": "Registration required",
+    "recurrence": "Annual"
+  },
+  {
     "id": "bcs-green-lake-2026-11-21",
     "title": "Birds Connect Seattle: Neighborhood Bird Walk at Green Lake",
     "organization": "Birds Connect Seattle",
@@ -10944,6 +11328,38 @@
     "recurrence": "Seasonal"
   },
   {
+    "id": "emtb-cranksisters-tiger-trail-maintenance-2026-11-22",
+    "title": "Evergreen Crank Sisters Co-Ed Tiger Mountain Fall Trail Work Party",
+    "organization": "Evergreen Mountain Bike Alliance",
+    "activityType": "Cycling",
+    "venue": "Tiger Mountain State Forest, Hwy 18 Exit 25 (Issaquah, WA 98027)",
+    "area": "Eastside",
+    "start": "2026-11-22T10:00:00-08:00",
+    "end": "2026-11-22T15:00:00-08:00",
+    "timeString": "10:00 AM – 3:00 PM",
+    "dateString": "2026-11-22",
+    "description": "Welcoming co-ed trail maintenance day hosted by Evergreen's Crank Sisters program on Tiger Mountain's singletrack trails.",
+    "url": "https://www.evergreenmtb.org/calendar/eventdetail/26738/cranksisters-coed-tiger-fall-trail-maintenance",
+    "cost": "Free (Tools provided)",
+    "recurrence": "Seasonal"
+  },
+  {
+    "id": "emtb-beacon-hill-sunday-maintenance-2026-11-22",
+    "title": "Evergreen MTB: Beacon Hill Bike Park Sunday Trail Maintenance",
+    "organization": "Evergreen Mountain Bike Alliance",
+    "activityType": "Cycling",
+    "venue": "Beacon Hill Bike Park / Cheasty Greenspace (1501 S Dakota St, Seattle, WA 98108)",
+    "area": "South Seattle",
+    "start": "2026-11-22T10:00:00-08:00",
+    "end": "2026-11-22T14:00:00-08:00",
+    "timeString": "10:00 AM – 2:00 PM",
+    "dateString": "2026-11-22",
+    "description": "Community mountain bike trail maintenance work party in Seattle's Cheasty Greenspace at Beacon Hill Bike Park.",
+    "url": "https://www.evergreenmtb.org/calendar/eventdetail/27190/beacon-hill-maintenance-with-evergreen-east-solnix",
+    "cost": "Free (Tools provided)",
+    "recurrence": "Biweekly Sundays"
+  },
+  {
     "id": "mof-pilot-lab-2026-11-22",
     "title": "Museum of Flight: The Pilot Experience Flight Education Lab",
     "organization": "Museum of Flight Docent Corps (Tukwila)",
@@ -10974,6 +11390,22 @@
     "url": "https://greenseattle.org/",
     "cost": "Free",
     "recurrence": "Weekend Salmon Run"
+  },
+  {
+    "id": "cwb-sunday-public-sail-2026-11-22",
+    "title": "Center for Wooden Boats: Sunday Public Sail on Lake Union",
+    "organization": "Center for Wooden Boats",
+    "activityType": "Water Sports",
+    "venue": "Center for Wooden Boats (1010 Valley St, Seattle, WA 98109)",
+    "area": "South Lake Union",
+    "start": "2026-11-22T11:00:00-08:00",
+    "end": "2026-11-22T15:00:00-08:00",
+    "timeString": "11:00 AM – 3:00 PM",
+    "dateString": "2026-11-22",
+    "description": "Free Sunday public sails aboard classic wooden boats on South Lake Union.",
+    "url": "https://www.cwb.org/events",
+    "cost": "Free",
+    "recurrence": "Sundays"
   },
   {
     "id": "makers-printmaking-cards-2026-11-22",
@@ -11392,6 +11824,22 @@
     "recurrence": "Weekly on Saturdays"
   },
   {
+    "id": "carkeek-salmon-stewards-2026-11-28",
+    "title": "Carkeek Park Piper's Creek Salmon Stewards: Thanksgiving Weekend Chum Viewing",
+    "organization": "Green Seattle Partnership Park Stewards",
+    "activityType": "Nature/Conservation",
+    "venue": "Carkeek Park Piper's Creek Trail (950 NW Carkeek Park Rd, Seattle, WA 98177)",
+    "area": "North Seattle",
+    "start": "2026-11-28T11:00:00-08:00",
+    "end": "2026-11-28T14:00:00-08:00",
+    "timeString": "11:00 AM – 2:00 PM",
+    "dateString": "2026-11-28",
+    "description": "Walk off Thanksgiving dinner along Piper's Creek in Carkeek Park and meet volunteer Salmon Stewards interpreting the final weekend of the November chum and coho salmon run.",
+    "url": "https://www.seattle.gov/parks/allparks/carkeek-park",
+    "cost": "Free",
+    "recurrence": "Weekends in Nov (Sat & Sun)"
+  },
+  {
     "id": "srcs-monthly-meeting-20261128",
     "title": "Seattle Retro-Computing Society: Monthly Workshop & Vintage Hardware Lab",
     "organization": "Seattle Retro-Computing Society",
@@ -11456,6 +11904,22 @@
     "recurrence": "Annual Winter Light Festival"
   },
   {
+    "id": "bbg-garden-dlights-opening-2026-11-28",
+    "title": "Bellevue Botanical Garden: Garden d'Lights 2026 Opening Night",
+    "organization": "Bellevue Botanical Garden Volunteers",
+    "activityType": "Nature/Conservation",
+    "venue": "Bellevue Botanical Garden (12001 Main St, Bellevue, WA 98005)",
+    "area": "Bellevue",
+    "start": "2026-11-28T16:30:00-08:00",
+    "end": "2026-11-28T21:00:00-08:00",
+    "timeString": "4:30 PM – 9:00 PM",
+    "dateString": "2026-11-28",
+    "description": "Opening night of the 31st annual Garden d'Lights at Bellevue Botanical Garden featuring over half a million lights crafted into botanical flowers, fungi, birds, and Northwest wildlife.",
+    "url": "https://bellevuebotanical.org/event/garden-dlights-5/2026-11-28/",
+    "cost": "$10 (Under 11 free)",
+    "recurrence": "Nightly Nov 28 – Dec 31"
+  },
+  {
     "id": "seattle-marathon-2026-11-29",
     "title": "UW Medicine Seattle Marathon & Half Marathon 2026",
     "organization": "Seattle Running Club",
@@ -11472,6 +11936,22 @@
     "recurrence": "Annual Sunday after Thanksgiving"
   },
   {
+    "id": "discnw-tacoma-turkey-bowl-2026-11-29",
+    "title": "2026 DiscNW Tacoma Turkey Bowl Ultimate Hat Tournament",
+    "organization": "DiscNW (Northwest Ultimate Association)",
+    "activityType": "Indoor Sports",
+    "venue": "SERA Sports Complex (6002 S Adams St, Tacoma, WA 98409)",
+    "area": "Tacoma",
+    "start": "2026-11-29T09:00:00-08:00",
+    "end": "2026-11-29T16:00:00-08:00",
+    "timeString": "9:00 AM – 4:00 PM",
+    "dateString": "2026-11-29",
+    "description": "South Sound post-Thanksgiving ultimate frisbee hat tournament featuring both Adult and Youth divisions.",
+    "url": "https://www.discnw.org/registration-is-currently-open-for-these-events",
+    "cost": "Registration required",
+    "recurrence": "Annual"
+  },
+  {
     "id": "mof-museum-store-sunday-2026-11-29",
     "title": "Museum of Flight: Museum Store Sunday & Aviation Craft Fair",
     "organization": "Museum of Flight Docent Corps (Tukwila)",
@@ -11486,6 +11966,38 @@
     "url": "https://www.museumofflight.org/exhibits-and-events/calendar-of-events?p=13",
     "cost": "Free entry to store & lobby",
     "recurrence": "Annual event"
+  },
+  {
+    "id": "carkeek-salmon-stewards-2026-11-29",
+    "title": "Carkeek Park Piper's Creek Salmon Stewards: Final Sunday Salmon Viewing",
+    "organization": "Green Seattle Partnership Park Stewards",
+    "activityType": "Nature/Conservation",
+    "venue": "Carkeek Park Piper's Creek Trail (950 NW Carkeek Park Rd, Seattle, WA 98177)",
+    "area": "North Seattle",
+    "start": "2026-11-29T11:00:00-08:00",
+    "end": "2026-11-29T14:00:00-08:00",
+    "timeString": "11:00 AM – 2:00 PM",
+    "dateString": "2026-11-29",
+    "description": "Final Sunday of the 2026 Carkeek Park Salmon Stewards season along Piper's Creek observing late-spawning chum and coho salmon.",
+    "url": "https://www.seattle.gov/parks/allparks/carkeek-park",
+    "cost": "Free",
+    "recurrence": "Weekends in Nov (Sat & Sun)"
+  },
+  {
+    "id": "cwb-sunday-public-sail-2026-11-29",
+    "title": "Center for Wooden Boats: Sunday Public Sail on Lake Union",
+    "organization": "Center for Wooden Boats",
+    "activityType": "Water Sports",
+    "venue": "Center for Wooden Boats (1010 Valley St, Seattle, WA 98109)",
+    "area": "South Lake Union",
+    "start": "2026-11-29T11:00:00-08:00",
+    "end": "2026-11-29T15:00:00-08:00",
+    "timeString": "11:00 AM – 3:00 PM",
+    "dateString": "2026-11-29",
+    "description": "Free Sunday public sails on Lake Union aboard classic wooden sailboats and historic vessels at the Center for Wooden Boats.",
+    "url": "https://www.cwb.org/events",
+    "cost": "Free",
+    "recurrence": "Sundays"
   },
   {
     "id": "seattle-go-center-pair-go-20261129",
@@ -12574,6 +13086,22 @@
     "url": "https://www.seattlego.org/schedule/",
     "cost": "Club fee",
     "recurrence": "Weekly on Saturdays"
+  },
+  {
+    "id": "wac-annual-snow-dinner-2026-12-12",
+    "title": "Washington Alpine Club Annual Snow Dinner at Guye Cabin (Tradition Since 1932)",
+    "organization": "Washington Alpine Club",
+    "activityType": "Climbing",
+    "venue": "Historic Guye Cabin at Snoqualmie Pass (40190 Denny Creek Rd, Snoqualmie Pass, WA 98068)",
+    "area": "Eastside",
+    "start": "2026-12-12T15:00:00-08:00",
+    "end": "2026-12-12T19:00:00-08:00",
+    "timeString": "3:00 PM – 7:00 PM",
+    "dateString": "2026-12-12",
+    "description": "Beloved Snoqualmie Pass alpine club tradition held annually since 1932 at Guye Cabin celebrating the arrival of winter snows with a communal potluck feast.",
+    "url": "https://washingtonalpineclub.org/events/",
+    "cost": "Free for members & guests (RSVP required)",
+    "recurrence": "Annual"
   },
   {
     "id": "makers-game-night-2026-12-12",
