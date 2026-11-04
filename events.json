@@ -8032,6 +8032,22 @@
     "recurrence": "Monthly"
   },
   {
+    "id": "cascade-lumps-burke-gilman-pie-ride-2026-11-04",
+    "title": "Cascade Free Group Ride: LUMPs Burke-Gilman Trail Pie Ramble (17 mi)",
+    "organization": "Cascade Bicycle Club",
+    "activityType": "Cycling/Outdoors",
+    "venue": "Blyth Park Trailhead, 16950 W Riverside Dr, Bothell",
+    "area": "Bothell / North Seattle",
+    "start": "2026-11-04T10:30:00",
+    "end": "2026-11-04T13:30:00",
+    "timeString": "10:30 AM – 1:30 PM",
+    "dateString": "2026-11-04",
+    "description": "Steady-paced (12–14 mph) 17-mile social ride along the Burke-Gilman Trail with a mid-ride bakery stop for pie and coffee.",
+    "url": "https://cascade.org/rides-events/ride-event-search",
+    "cost": "Free",
+    "recurrence": "Weekly (Wednesdays)"
+  },
+  {
     "id": "usk-union-station-sketch-2026-11-04",
     "title": "Urban Sketchers Seattle Outing: Historic Union Station Great Hall",
     "organization": "Urban Sketchers Seattle",
@@ -8144,6 +8160,22 @@
     "recurrence": "Weekly on Wednesdays"
   },
   {
+    "id": "cascade-road-ride-after-dark-2026-11-04",
+    "title": "Cascade Evening Ride: ROAD – Ride On After Dark (21.4 mi)",
+    "organization": "Cascade Bicycle Club",
+    "activityType": "Cycling/Outdoors",
+    "venue": "Redmond Central Connector Park, Redmond",
+    "area": "Redmond / Eastside",
+    "start": "2026-11-04T18:00:00",
+    "end": "2026-11-04T20:30:00",
+    "timeString": "6:00 PM – 8:30 PM",
+    "dateString": "2026-11-04",
+    "description": "Evening training and fitness group ride (steady, moderate, and brisk pace groups) around Redmond and Lake Sammamish. Front headlight and rear taillight required.",
+    "url": "https://cascade.org/rides-events/ride-event-search",
+    "cost": "Free",
+    "recurrence": "Weekly (Wednesdays)"
+  },
+  {
     "id": "renton-art-lounge-november-2026-11-04",
     "title": "Allied Arts of Renton: Art Lounge & Creative Studio Social",
     "organization": "Renton Art League",
@@ -8254,6 +8286,22 @@
     "url": "https://eastsideimprov.org/",
     "cost": "Free / Suggested Donation",
     "recurrence": "Seasonal Showcase"
+  },
+  {
+    "id": "nwff-engauge-tactility-memory-2026-11-04",
+    "title": "Engauge Experimental Film Festival 2026: Tactility and Memory",
+    "organization": "Northwest Film Forum",
+    "activityType": "Film/Media",
+    "venue": "Northwest Film Forum, 1515 12th Ave, Capitol Hill",
+    "area": "Capitol Hill, Seattle",
+    "start": "2026-11-04T19:00:00",
+    "end": "2026-11-04T21:00:00",
+    "timeString": "7:00 PM – 9:00 PM",
+    "dateString": "2026-11-04",
+    "description": "Opening week program of the 2026 Engauge Experimental Film Festival showcasing celluloid-only 16mm, 8mm, and 35mm experimental works by international and PNW filmmakers.",
+    "url": "https://nwfilmforum.org/calendar/",
+    "cost": "Sliding scale / Festival pass",
+    "recurrence": "Annual Festival"
   },
   {
     "id": "ksp-kitchen-sink-belltown-mic-20261104",
@@ -8432,22 +8480,6 @@
     "recurrence": "First Thursday of the month"
   },
   {
-    "id": "esw-regular-meeting-2026-11-05",
-    "title": "Entomological Society of Washington Monthly Meeting & Lecture",
-    "organization": "Entomological Society of Washington",
-    "activityType": "Nature/Conservation",
-    "venue": "Online & Hybrid Entomology Seminar (Seattle, WA)",
-    "area": "Seattle",
-    "start": "2026-11-05T16:00:00-08:00",
-    "end": "2026-11-05T17:30:00-08:00",
-    "timeString": "4:00 PM – 5:30 PM",
-    "dateString": "2026-11-05",
-    "description": "1263rd regular monthly scientific meeting of the Entomological Society featuring research presentations, specimen notes, and insect biodiversity discussion.",
-    "url": "https://www.entsocwash.org/events/1261th-esw-regular-meeting-g95at-zb4sw",
-    "cost": "Free",
-    "recurrence": "Monthly (1st Thursday)"
-  },
-  {
     "id": "mof-free-first-thursday-2026-11-05",
     "title": "Museum of Flight: FREE First Thursday Evening",
     "organization": "Museum of Flight Docent Corps (Tukwila)",
@@ -8478,6 +8510,22 @@
     "url": "https://seattlereconomy.org/event/fix-it-night-at-the-ne-seattle-tool-library-15/",
     "cost": "Free (donations gratefully accepted)",
     "recurrence": "Monthly first Thursday repair clinic"
+  },
+  {
+    "id": "cascade-major-taylor-book-release-2026-11-05",
+    "title": "Cascade Community Event: Major Taylor Book Release & Discussion",
+    "organization": "Cascade Bicycle Club",
+    "activityType": "Cycling/Outdoors",
+    "venue": "Cascade Bicycle Club Center, 7787 62nd Ave NE, Magnuson Park",
+    "area": "Magnuson, Seattle",
+    "start": "2026-11-05T18:00:00",
+    "end": "2026-11-05T20:00:00",
+    "timeString": "6:00 PM – 8:00 PM",
+    "dateString": "2026-11-05",
+    "description": "Community book celebration and cycling history discussion honoring world champion cyclist Marshall 'Major' Taylor and Cascade's Major Taylor Project youth riders.",
+    "url": "https://cascade.org/rides-events/ride-event-search",
+    "cost": "Free (RSVP requested)",
+    "recurrence": "One-time"
   },
   {
     "id": "nestl-3d-printer-orientation-stl-2026-11-05",
@@ -8528,20 +8576,20 @@
     "recurrence": "Weekly on Thursdays"
   },
   {
-    "id": "entsocwash-november-meeting-2026-11-05",
-    "title": "Entomological Society: 1263rd Regular Scientific Meeting",
-    "organization": "Entomological Society of Washington",
-    "activityType": "Nature/Conservation",
-    "area": "Seattle",
-    "venue": "University of Washington Biology & Virtual (Seattle, WA 98195)",
-    "start": "2026-11-05T19:00:00-08:00",
-    "end": "2026-11-05T20:30:00-08:00",
-    "timeString": "7:00 PM – 8:30 PM",
+    "id": "tacoma-comedy-proctor-open-mic-2026-11-05",
+    "title": "Tacoma Comedy Club 6th & Proctor: Free Thursday Open Mic Night",
+    "organization": "Tacoma Comedy Club",
+    "activityType": "Comedy/Improv",
+    "venue": "Tacoma Comedy Club (6th & Proctor), 3829 6th Ave, Tacoma",
+    "area": "Tacoma",
+    "start": "2026-11-05T19:00:00",
+    "end": "2026-11-05T21:00:00",
+    "timeString": "7:00 PM – 9:00 PM",
     "dateString": "2026-11-05",
-    "description": "Monthly presentation by entomological researchers covering insect evolutionary ecology, biodiversity sampling, and Pacific Northwest pollinator health.",
-    "url": "https://www.entsocwash.org/events",
-    "cost": "Free and open to the public",
-    "recurrence": "1st Thursday monthly meeting"
+    "description": "Free neighborhood stand-up comedy open mic night at Tacoma Comedy Club's 6th & Proctor room featuring South Sound comics testing fresh material.",
+    "url": "https://www.tacomacomedyclub.com/events/142558",
+    "cost": "Free admission",
+    "recurrence": "Select Thursdays"
   },
   {
     "id": "gcc-thursday-mens-2026-11-05",
@@ -8768,6 +8816,22 @@
     "recurrence": "Annual"
   },
   {
+    "id": "nwff-engauge-expanded-cinema-2026-11-06",
+    "title": "Engauge 2026: Expanded Cinema Live Projection & Sound Performance",
+    "organization": "Northwest Film Forum",
+    "activityType": "Film/Media",
+    "venue": "Northwest Film Forum, 1515 12th Ave, Capitol Hill",
+    "area": "Capitol Hill, Seattle",
+    "start": "2026-11-06T19:00:00",
+    "end": "2026-11-06T21:00:00",
+    "timeString": "7:00 PM – 9:00 PM",
+    "dateString": "2026-11-06",
+    "description": "Live multi-projector 16mm film and sound performance evening at Northwest Film Forum as part of the 2026 Engauge Experimental Film Festival.",
+    "url": "https://nwfilmforum.org/calendar/",
+    "cost": "Sliding scale / Festival pass",
+    "recurrence": "Annual Festival"
+  },
+  {
     "id": "bandit-triple-feature-20261106",
     "title": "Bandit Theater Long-Form Improv Triple Feature: Mad Science, Off the Page & Regency",
     "organization": "Bandit Theater",
@@ -8814,6 +8878,22 @@
     "url": "https://seattlechess.club/mec-category/uscf-rated/",
     "cost": "USCF membership + Club entry fee",
     "recurrence": "Weekly on Fridays"
+  },
+  {
+    "id": "up-kit-cat-caboodle-2026-11-06",
+    "title": "Kit, Cat and Caboodle: An Improvised Musical Retrospective",
+    "organization": "Unexpected Productions Improv",
+    "activityType": "Comedy/Improv",
+    "venue": "Market Theater, 1428 Post Alley, Pike Place Market",
+    "area": "Downtown Seattle",
+    "start": "2026-11-06T19:30:00",
+    "end": "2026-11-06T21:00:00",
+    "timeString": "7:30 PM – 9:00 PM",
+    "dateString": "2026-11-06",
+    "description": "Fully improvised musical comedy show at the Market Theater creating original songs, lyrics, and Broadway-style showstoppers on the spot from audience suggestions.",
+    "url": "https://www.unexpectedproductions.org/event/kit-cat-and-caboodle-an-improvised-musical-retrospective-2/2026-11-06/",
+    "cost": "$20",
+    "recurrence": "Fridays & Saturdays in Nov"
   },
   {
     "id": "sct-cabaret-roulette-20261106",
@@ -8942,6 +9022,38 @@
     "url": "https://www.habitatskc.org/news-events/events/",
     "cost": "Free volunteer build",
     "recurrence": "Weekly community build"
+  },
+  {
+    "id": "cascade-road-n-gravel-fall-city-duvall-2026-11-07",
+    "title": "Cascade Free Group Ride: Road-n-Gravel Fall City to Duvall (33 mi)",
+    "organization": "Cascade Bicycle Club",
+    "activityType": "Cycling/Outdoors",
+    "venue": "Snoqualmie Valley Trailhead, Fall City / Sammamish",
+    "area": "Sammamish /Snoqualmie Valley",
+    "start": "2026-11-07T09:00:00",
+    "end": "2026-11-07T12:30:00",
+    "timeString": "9:00 AM – 12:30 PM",
+    "dateString": "2026-11-07",
+    "description": "Steady-paced 33-mile mixed-surface road and Snoqualmie Valley Trail gravel ride from Fall City to Duvall and back.",
+    "url": "https://cascade.org/rides-events/ride-event-search",
+    "cost": "Free",
+    "recurrence": "One-time"
+  },
+  {
+    "id": "smqg-saturday-sew-in-2026-11-07",
+    "title": "Seattle Modern Quilt Guild: Saturday Morning Community Sew-In",
+    "organization": "Seattle Modern Quilt Guild",
+    "activityType": "Maker/Crafting",
+    "venue": "Online Zoom Studio (Seattle Modern Quilt Guild)",
+    "area": "Seattle",
+    "start": "2026-11-07T09:00:00",
+    "end": "2026-11-07T12:00:00",
+    "timeString": "9:00 AM – 12:00 PM",
+    "dateString": "2026-11-07",
+    "description": "Saturday morning virtual sew-in for Seattle Modern Quilt Guild members and quilters working on community outreach quilts and block-of-the-month projects.",
+    "url": "https://seattlemqg.com/Calendar-of-Everything",
+    "cost": "Free for members",
+    "recurrence": "Weekly (Saturdays)"
   },
   {
     "id": "bcs-magnuson-park-2026-11-07",
@@ -9102,6 +9214,38 @@
     "url": "https://www.plantamnesty.org/all-upcoming-events-classes/november7-reno-workshop",
     "cost": "Registration required",
     "recurrence": "Seasonal"
+  },
+  {
+    "id": "plantamnesty-hedging-class-2026-11-07",
+    "title": "PlantAmnesty Class: Hedging Your Bets – Pruning Art or Pruning Horror?",
+    "organization": "PlantAmnesty",
+    "activityType": "Gardening/Botany",
+    "venue": "7400 Woodlawn Ave NE, Green Lake, Seattle",
+    "area": "Green Lake, Seattle",
+    "start": "2026-11-07T10:00:00",
+    "end": "2026-11-07T12:00:00",
+    "timeString": "10:00 AM – 12:00 PM",
+    "dateString": "2026-11-07",
+    "description": "Learn to distinguish destructive shearing and topping from true horticultural pruning arts including pollarding, cloud pruning, topiary, pleaching, and coppicing.",
+    "url": "https://www.plantamnesty.org/events/",
+    "cost": "Registration required",
+    "recurrence": "One-time"
+  },
+  {
+    "id": "plantamnesty-fall-renovation-2026-11-07",
+    "title": "PlantAmnesty Master Pruner Workshop: Fall Renovation on Capitol Hill",
+    "organization": "PlantAmnesty",
+    "activityType": "Gardening/Botany",
+    "venue": "Historic Capitol Hill Estate Garden, Seattle",
+    "area": "Capitol Hill, Seattle",
+    "start": "2026-11-07T10:00:00",
+    "end": "2026-11-07T15:00:00",
+    "timeString": "10:00 AM – 3:00 PM",
+    "dateString": "2026-11-07",
+    "description": "Hands-on PlantAmnesty pruning workshop on a large Capitol Hill property covering selective thinning, restorative pruning, and care for both container and in-ground woody ornamentals.",
+    "url": "https://www.plantamnesty.org/events/",
+    "cost": "Registration required",
+    "recurrence": "One-time"
   },
   {
     "id": "friends-saltwater-forest-restoration-20261107",
@@ -9424,6 +9568,22 @@
     "recurrence": "Annual festival"
   },
   {
+    "id": "cascade-member-meeting-volunteer-celebration-2026-11-07",
+    "title": "Cascade Bicycle Club Annual Member Meeting & Volunteer Celebration",
+    "organization": "Cascade Bicycle Club",
+    "activityType": "Cycling/Outdoors",
+    "venue": "Cascade Bicycle Club Center, 7787 62nd Ave NE, Magnuson Park",
+    "area": "Magnuson, Seattle",
+    "start": "2026-11-07T13:00:00",
+    "end": "2026-11-07T17:00:00",
+    "timeString": "1:00 PM – 5:00 PM",
+    "dateString": "2026-11-07",
+    "description": "Annual gathering celebrating Cascade ride leaders,Pedaling Relief Project volunteers, advocacy milestones, and 2027 regional trail plans.",
+    "url": "https://cascade.org/rides-events/ride-event-search",
+    "cost": "Free",
+    "recurrence": "Annual"
+  },
+  {
     "id": "bikeworks-warehouse-sale-2026-11-07",
     "title": "Bike Works Monthly Community Warehouse Bike & Parts Sale",
     "organization": "Seattle Bike Works Community Mechanics",
@@ -9520,6 +9680,22 @@
     "recurrence": "Family Matinee"
   },
   {
+    "id": "nwff-engauge-pattern-and-place-2026-11-07",
+    "title": "Engauge Experimental Film Festival: Pattern & Place + Rankin Renwick Solo Show",
+    "organization": "Northwest Film Forum",
+    "activityType": "Film/Media",
+    "venue": "Northwest Film Forum, 1515 12th Ave, Capitol Hill",
+    "area": "Capitol Hill, Seattle",
+    "start": "2026-11-07T15:00:00",
+    "end": "2026-11-07T21:00:00",
+    "timeString": "3:00 PM, 5:00 PM & 7:30 PM",
+    "dateString": "2026-11-07",
+    "description": "Saturday showcase of analog experimental shorts ('Pattern and Place' at 3 PM, 'We Are All Together' at 5 PM, and Rankin Renwick Solo Show at 7:30 PM).",
+    "url": "https://nwfilmforum.org/calendar/",
+    "cost": "Sliding scale / Festival pass",
+    "recurrence": "Annual Festival"
+  },
+  {
     "id": "up-couples-improv-workshop-20261107",
     "title": "Playful Connections: An Improv Workshop for Couples & Partners",
     "organization": "Unexpected Productions Improv",
@@ -9550,6 +9726,22 @@
     "url": "https://townhallseattle.org/event-listings/",
     "cost": "$10–$35 sliding scale",
     "recurrence": "One-time"
+  },
+  {
+    "id": "up-improv-happy-hour-2026-11-07",
+    "title": "Improv Happy Hour at Pike Place Market (Saturday Early Show)",
+    "organization": "Unexpected Productions Improv",
+    "activityType": "Comedy/Improv",
+    "venue": "Market Theater, 1428 Post Alley, Pike Place Market",
+    "area": "Downtown Seattle",
+    "start": "2026-11-07T18:00:00",
+    "end": "2026-11-07T19:00:00",
+    "timeString": "6:00 PM – 7:00 PM",
+    "dateString": "2026-11-07",
+    "description": "Fast-paced 60-minute early evening improv comedy show at Pike Place Market's Gum Wall theater.",
+    "url": "https://www.unexpectedproductions.org/event/improv-happy-hour/2026-11-07/",
+    "cost": "$15",
+    "recurrence": "Fridays & Saturdays"
   },
   {
     "id": "emtb-singletrack-soiree-2026-11-07",
@@ -9744,6 +9936,22 @@
     "recurrence": "Seasonal"
   },
   {
+    "id": "green-lake-yoga-flow-2026-11-08",
+    "title": "Sunday Morning Gentle Yoga Flow & Hands-on Reiki",
+    "organization": "Green Lake Morning Yoga Collective",
+    "activityType": "Fitness/Wellness",
+    "venue": "Green Lake Community Wellness Studio, Seattle",
+    "area": "Green Lake, Seattle",
+    "start": "2026-11-08T09:30:00",
+    "end": "2026-11-08T10:45:00",
+    "timeString": "9:30 AM – 10:45 AM",
+    "dateString": "2026-11-08",
+    "description": "Restorative Sunday morning gentle vinyasa flow, breathwork, and optional hands-on Reiki grounding session near Green Lake.",
+    "url": "https://www.wellnesshealingarts.com/seattleyoga",
+    "cost": "Sliding scale / Class pass",
+    "recurrence": "Weekly (Sundays)"
+  },
+  {
     "id": "pratt-vitreography-glass-printing-20261108",
     "title": "Beginning Vitreography: Fine Art Printmaking from Glass Plates",
     "organization": "Pratt Fine Arts Center",
@@ -9872,6 +10080,38 @@
     "recurrence": "Sundays"
   },
   {
+    "id": "cascade-women-nonbinary-hot-cocoa-ride-2026-11-08",
+    "title": "Cascade Free Group Ride: Women & Nonbinary Hot Cocoa Ride (20.1 mi)",
+    "organization": "Cascade Bicycle Club",
+    "activityType": "Cycling/Outdoors",
+    "venue": "Cascade Bicycle Club Center, Magnuson Park, Seattle",
+    "area": "Seattle",
+    "start": "2026-11-08T13:00:00",
+    "end": "2026-11-08T16:00:00",
+    "timeString": "1:00 PM – 4:00 PM",
+    "dateString": "2026-11-08",
+    "description": "Welcoming 20-mile steady-paced ride for women and nonbinary cyclists exploring Seattle trails and finishing with hot cocoa.",
+    "url": "https://cascade.org/rides-events/ride-event-search",
+    "cost": "Free",
+    "recurrence": "Seasonal"
+  },
+  {
+    "id": "irl-improv-drama-club-2026-11-08",
+    "title": "Improv for Real Life: Grown Up Drama Club & Storytelling Workshop",
+    "organization": "Improv for Real Life (IRL)",
+    "activityType": "Comedy/Improv",
+    "venue": "University Heights Center, 5031 University Way NE",
+    "area": "U-District, Seattle",
+    "start": "2026-11-08T13:00:00",
+    "end": "2026-11-08T15:00:00",
+    "timeString": "1:00 PM – 3:00 PM",
+    "dateString": "2026-11-08",
+    "description": "Playful afternoon applied-improv and personal storytelling session at University Heights Center designed to build spontaneity, active listening, and joyful human connection.",
+    "url": "https://www.irlimprov.com/events",
+    "cost": "Sliding scale registration",
+    "recurrence": "Weekly (Sundays)"
+  },
+  {
     "id": "improv-place-flow-jam-20261108",
     "title": "The Improv Place: Improv & Flow Sunday Community Jam at Seattle Center",
     "organization": "The Improv Place (Seattle Black Improv)",
@@ -9952,6 +10192,22 @@
     "recurrence": "Monthly cider tasting feature"
   },
   {
+    "id": "eastside-improv-sunday-jam-2026-11-08",
+    "title": "Eastside Improv: Sunday Afternoon Community Drop-In Jam",
+    "organization": "Eastside Improv",
+    "activityType": "Comedy/Improv",
+    "venue": "Kirkland Performance Center Studios, 350 Kirkland Ave",
+    "area": "Kirkland / Eastside",
+    "start": "2026-11-08T16:00:00",
+    "end": "2026-11-08T18:00:00",
+    "timeString": "4:00 PM – 6:00 PM",
+    "dateString": "2026-11-08",
+    "description": "Inclusive, welcoming Sunday afternoon improv jam on the Eastside open to beginners and experienced improvisers alike.",
+    "url": "https://eastsideimprov.org/",
+    "cost": "Free / Suggested donation",
+    "recurrence": "Weekly (Sundays)"
+  },
+  {
     "id": "chtl-open-woodshop-studio-20261108",
     "title": "Sunday Open Woodshop & Community DIY Project Studio",
     "organization": "Capitol Hill Tool Library",
@@ -9966,6 +10222,22 @@
     "url": "https://sustainablecapitolhill.org/events",
     "cost": "Free (Pay-what-you-can / Member access)",
     "recurrence": "Weekly on Sundays"
+  },
+  {
+    "id": "nwff-three-dollar-bill-two-eyes-2026-11-08",
+    "title": "Three Dollar Bill Cinema Presents: Two Eyes Screening & Discussion",
+    "organization": "Northwest Film Forum",
+    "activityType": "Film/Media",
+    "venue": "Northwest Film Forum, 1515 12th Ave, Capitol Hill",
+    "area": "Capitol Hill, Seattle",
+    "start": "2026-11-08T18:00:00",
+    "end": "2026-11-08T20:15:00",
+    "timeString": "6:00 PM – 8:15 PM",
+    "dateString": "2026-11-08",
+    "description": "Community queer cinema screening co-presented by Three Dollar Bill Cinema and Northwest Film Forum on Capitol Hill.",
+    "url": "https://nwfilmforum.org/calendar/",
+    "cost": "Sliding scale tickets",
+    "recurrence": "One-time"
   },
   {
     "id": "sct-outside-the-lines-bipoc-jam-20261108",
@@ -10096,6 +10368,22 @@
     "recurrence": "Weekly on Mondays"
   },
   {
+    "id": "smqg-monday-sew-in-2026-11-09",
+    "title": "Seattle Modern Quilt Guild: Monday Night Community Sew-In",
+    "organization": "Seattle Modern Quilt Guild",
+    "activityType": "Maker/Crafting",
+    "venue": "Online Zoom Studio (Seattle Modern Quilt Guild)",
+    "area": "Seattle",
+    "start": "2026-11-09T19:00:00",
+    "end": "2026-11-09T21:00:00",
+    "timeString": "7:00 PM – 9:00 PM",
+    "dateString": "2026-11-09",
+    "description": "Weekly Monday night quilting social and sew-in hosted by the Seattle Modern Quilt Guild.",
+    "url": "https://seattlemqg.com/Calendar-of-Everything",
+    "cost": "Free for members",
+    "recurrence": "Weekly (Mondays)"
+  },
+  {
     "id": "tcc-monday-mic-20261109",
     "title": "The Monday Mic: Free Stand-Up Comedy Open Mic at 6th & Proctor",
     "organization": "Tacoma Comedy Club",
@@ -10224,6 +10512,22 @@
     "recurrence": "Weekly on Tuesdays"
   },
   {
+    "id": "irl-improv-drop-in-jam-2026-11-10",
+    "title": "Improv for Real Life (IRL): Tuesday Drop-In Community Improv Jam",
+    "organization": "Improv for Real Life (IRL)",
+    "activityType": "Comedy/Improv",
+    "venue": "University Heights Center, 5031 University Way NE",
+    "area": "U-District, Seattle",
+    "start": "2026-11-10T19:00:00",
+    "end": "2026-11-10T21:00:00",
+    "timeString": "7:00 PM – 9:00 PM",
+    "dateString": "2026-11-10",
+    "description": "Supportive, low-stakes Tuesday evening improv jam in the U-District featuring warm-up games, two-person scene work, and group storytelling.",
+    "url": "https://www.irlimprov.com/events",
+    "cost": "$10 – $20 sliding scale",
+    "recurrence": "Biweekly (Tuesdays)"
+  },
+  {
     "id": "skagit-audubon-bird-haven-2026-11-10",
     "title": "Skagit Audubon Monthly Program: 'Making Your Space a Bird Haven' with Brian Zinke",
     "organization": "Skagit Audubon Society",
@@ -10256,6 +10560,22 @@
     "recurrence": "2nd Tuesday of the month"
   },
   {
+    "id": "emerald-city-perfect-person-2026-11-10",
+    "title": "Perfect Person Live: The Grey Area Comedy Tour",
+    "organization": "Emerald City Comedy Club",
+    "activityType": "Comedy/Improv",
+    "venue": "Emerald City Comedy Club, 210 Broadway E, Capitol Hill",
+    "area": "Capitol Hill, Seattle",
+    "start": "2026-11-10T19:30:00",
+    "end": "2026-11-10T21:15:00",
+    "timeString": "7:30 PM – 9:15 PM",
+    "dateString": "2026-11-10",
+    "description": "Interactive live comedy and advice show at Emerald City Comedy Club on Capitol Hill.",
+    "url": "https://www.emeraldcitycomedy.com/events/138942",
+    "cost": "Ticketed (21+)",
+    "recurrence": "One-time"
+  },
+  {
     "id": "psms-general-meeting-20261110",
     "title": "PSMS November Meeting: Fungal Diversity & Global Conservation with Dr. Greg Mueller",
     "organization": "Puget Sound Mycological Society",
@@ -10270,6 +10590,86 @@
     "url": "https://www.psms.org/all_events.php",
     "cost": "Free and open to the public",
     "recurrence": "Monthly (2nd Tuesdays)"
+  },
+  {
+    "id": "cascade-veterans-day-velo-2026-11-11",
+    "title": "Cascade Free Group Ride: Veterans Day Velo #13 (37 mi)",
+    "organization": "Cascade Bicycle Club",
+    "activityType": "Cycling/Outdoors",
+    "venue": "North Seattle / Shoreline Trailhead",
+    "area": "North Seattle",
+    "start": "2026-11-11T10:00:00",
+    "end": "2026-11-11T14:00:00",
+    "timeString": "10:00 AM – 2:00 PM",
+    "dateString": "2026-11-11",
+    "description": "13th annual Veterans Day Velo 37-mile brisk group ride through North Seattle, Shoreline, and Lake Washington viewpoints.",
+    "url": "https://cascade.org/rides-events/ride-event-search",
+    "cost": "Free",
+    "recurrence": "Annual"
+  },
+  {
+    "id": "saltwater-forest-walk-2026-11-11",
+    "title": "Friends of Saltwater State Park: Veterans Day Guided Forest & Creek Walk",
+    "organization": "Friends of Saltwater State Park",
+    "activityType": "Nature/Conservation",
+    "venue": "Saltwater State Park, 25205 8th Pl S, Des Moines",
+    "area": "South King County",
+    "start": "2026-11-11T10:00:00",
+    "end": "2026-11-11T12:00:00",
+    "timeString": "10:00 AM – 12:00 PM",
+    "dateString": "2026-11-11",
+    "description": "Guided natural history and watershed walk through Saltwater State Park exploring the McSorley Creek ravine, native forest restoration sites, and returning fall salmon.",
+    "url": "https://www.friendssaltwater.org/upcoming-events",
+    "cost": "Free (State Parks Free Day)",
+    "recurrence": "Monthly"
+  },
+  {
+    "id": "lifelong-chicken-soup-brigade-2026-11-11",
+    "title": "Lifelong Chicken Soup Brigade: Medically Tailored Grocery Bagging",
+    "organization": "Lifelong AIDS Alliance Volunteer Crew",
+    "activityType": "Community/Volunteering",
+    "venue": "Lifelong Georgetown Kitchen & Distribution Center, 6876 S. Perimeter Rd",
+    "area": "Georgetown, Seattle",
+    "start": "2026-11-11T13:30:00",
+    "end": "2026-11-11T16:00:00",
+    "timeString": "1:30 PM – 4:00 PM",
+    "dateString": "2026-11-11",
+    "description": "Hands-on volunteer shift packing medically tailored meal bags and fresh groceries for King County neighbors living with chronic illnesses.",
+    "url": "https://www.lifelong.org/events",
+    "cost": "Free (Volunteer)",
+    "recurrence": "Weekly (Wednesdays)"
+  },
+  {
+    "id": "sustainable-renton-food-pantry-2026-11-11",
+    "title": "Sustainable Renton: Wednesday Pop-Up Community Pantry & Food Rescue",
+    "organization": "Renton Permaculture & Community Garden Stewards",
+    "activityType": "Community/Volunteering",
+    "venue": "St. Matthew's Lutheran Church Parking Lot, 1700 Edmonds Ave NE, Renton",
+    "area": "Renton",
+    "start": "2026-11-11T15:00:00",
+    "end": "2026-11-11T18:00:00",
+    "timeString": "3:00 PM – 6:00 PM",
+    "dateString": "2026-11-11",
+    "description": "Volunteer food rescue and gleaning distribution sharing fresh produce and baked goods with Renton families while reducing local food waste.",
+    "url": "https://www.sustainablerenton.org/our-events",
+    "cost": "Free",
+    "recurrence": "Weekly (Wednesdays)"
+  },
+  {
+    "id": "wstl-fix-it-night-2026-11-11",
+    "title": "West Seattle Tool Library: Wednesday Community Fix-It Night",
+    "organization": "West Seattle Tool Library",
+    "activityType": "Maker/Crafting",
+    "venue": "Youngstown Cultural Arts Center, 4408 Delridge Way SW",
+    "area": "West Seattle",
+    "start": "2026-11-11T17:00:00",
+    "end": "2026-11-11T20:00:00",
+    "timeString": "5:00 PM – 8:00 PM",
+    "dateString": "2026-11-11",
+    "description": "Weekly drop-in community repair and fix-it night at the West Seattle Tool Library. Bring small appliances, lamps, bikes, or woodworking repairs to troubleshoot with volunteer fixers.",
+    "url": "https://wstools.org/",
+    "cost": "Free / Donation-based",
+    "recurrence": "Weekly (Wednesdays)"
   },
   {
     "id": "mox-minis-paint-2026-11-11",
@@ -10494,6 +10894,54 @@
     "url": "https://www.sound.bio/workshops",
     "cost": "Free",
     "recurrence": "Monthly (2nd Thursdays)"
+  },
+  {
+    "id": "up-mime-physical-improv-2026-11-12",
+    "title": "Mime and Physical Improv Workshop with Jay Hitt",
+    "organization": "Unexpected Productions Improv",
+    "activityType": "Comedy/Improv",
+    "venue": "Unexpected Productions Improv School, Georgetown / Market Theater",
+    "area": "Seattle",
+    "start": "2026-11-12T19:00:00",
+    "end": "2026-11-12T21:30:00",
+    "timeString": "7:00 PM – 9:30 PM",
+    "dateString": "2026-11-12",
+    "description": "Hands-on physical comedy, object work, and stage movement workshop for improvisers led by Jay Hitt.",
+    "url": "https://www.unexpectedproductions.org/event/mime-and-physical-improv-with-jay-hitt-2/",
+    "cost": "Registration required",
+    "recurrence": "One-time"
+  },
+  {
+    "id": "soundbio-spotlight-2026-11-12",
+    "title": "SoundBio Spotlight: Monthly Community Biotech & DIY Science Seminar",
+    "organization": "SoundBio Lab",
+    "activityType": "Science",
+    "venue": "SoundBio Lab, 1100 NE 47th St #103, U-District",
+    "area": "U-District, Seattle",
+    "start": "2026-11-12T19:00:00",
+    "end": "2026-11-12T20:30:00",
+    "timeString": "7:00 PM – 8:30 PM",
+    "dateString": "2026-11-12",
+    "description": "Monthly second-Thursday seminar series where SoundBio Lab community members showcase ongoing open-science, synthetic biology, biomaterials, and environmental DNA projects.",
+    "url": "https://www.sound.bio/workshops",
+    "cost": "Free",
+    "recurrence": "Monthly (2nd Thursday)"
+  },
+  {
+    "id": "tacoma-comedy-leyla-ingalls-2026-11-12",
+    "title": "Stand-Up Showcase: Leyla Ingalls Live at Tacoma Comedy Club",
+    "organization": "Tacoma Comedy Club",
+    "activityType": "Comedy/Improv",
+    "venue": "Tacoma Comedy Club, 933 Market St, Tacoma",
+    "area": "Tacoma",
+    "start": "2026-11-12T19:00:00",
+    "end": "2026-11-12T20:45:00",
+    "timeString": "7:00 PM – 8:45 PM",
+    "dateString": "2026-11-12",
+    "description": "Thursday night stand-up comedy headliner Leyla Ingalls performing live in downtown Tacoma.",
+    "url": "https://www.tacomacomedyclub.com/events/141366",
+    "cost": "Ticketed (18+)",
+    "recurrence": "One-time"
   },
   {
     "id": "wnps-uw-herbarium-flora-lecture-2026-11-12",
@@ -10736,6 +11184,22 @@
     "recurrence": "Headliner Weekend"
   },
   {
+    "id": "up-kit-cat-caboodle-2026-11-13",
+    "title": "Kit, Cat and Caboodle: An Improvised Musical Retrospective",
+    "organization": "Unexpected Productions Improv",
+    "activityType": "Comedy/Improv",
+    "venue": "Market Theater, 1428 Post Alley, Pike Place Market",
+    "area": "Downtown Seattle",
+    "start": "2026-11-13T19:30:00",
+    "end": "2026-11-13T21:00:00",
+    "timeString": "7:30 PM – 9:00 PM",
+    "dateString": "2026-11-13",
+    "description": "Live musical improv comedy at Pike Place Market where every song, melody, and choreographed number is invented spontaneously.",
+    "url": "https://www.unexpectedproductions.org/event/kit-cat-and-caboodle-an-improvised-musical-retrospective-2/2026-11-13/",
+    "cost": "$20",
+    "recurrence": "Fridays & Saturdays in Nov"
+  },
+  {
     "id": "town-hall-watershed-stewardship-2026-11-13",
     "title": "From Awe to Action: Indigenous Knowledge & Future of Stewardship",
     "organization": "Town Hall Seattle",
@@ -10766,6 +11230,22 @@
     "url": "https://www.jetcityimprov.org/shows.html",
     "cost": "Pay What You Can",
     "recurrence": "Monthly on 2nd Fridays"
+  },
+  {
+    "id": "up-theatresports-2026-11-13",
+    "title": "Seattle Theatresports 2026 (Friday Night Mainstage)",
+    "organization": "Unexpected Productions Improv",
+    "activityType": "Comedy/Improv",
+    "venue": "Market Theater, 1428 Post Alley, Pike Place Market",
+    "area": "Downtown Seattle",
+    "start": "2026-11-13T21:30:00",
+    "end": "2026-11-13T23:00:00",
+    "timeString": "9:30 PM – 11:00 PM",
+    "dateString": "2026-11-13",
+    "description": "Seattle's longest-running competitive comedy improv match where two teams battle for audience laughs and judges' points.",
+    "url": "https://www.unexpectedproductions.org/event/seattle-theatresports-2026-3/2026-11-13/",
+    "cost": "$20",
+    "recurrence": "Weekly (Fridays & Saturdays)"
   },
   {
     "id": "rainier-audubon-nisqually-fieldtrip-20261114",
@@ -10848,6 +11328,38 @@
     "recurrence": "Second Saturday of the month"
   },
   {
+    "id": "northwest-harvest-sodo-volunteer-shift-2026-11-14",
+    "title": "Northwest Harvest SODO Community Market & Food Repack Shift",
+    "organization": "Northwest Harvest Food Packing Groups",
+    "activityType": "Community/Volunteering",
+    "venue": "Northwest Harvest SODO Community Market, 1915 4th Ave S",
+    "area": "SODO, Seattle",
+    "start": "2026-11-14T09:00:00",
+    "end": "2026-11-14T12:00:00",
+    "timeString": "9:00 AM – 12:00 PM",
+    "dateString": "2026-11-14",
+    "description": "Volunteer shift restocking fresh produce, sorting bulk staples, and assisting shoppers at Northwest Harvest's free SODO Community Market ahead of Thanksgiving.",
+    "url": "https://www.northwestharvest.org/get-involved/events/",
+    "cost": "Free (Volunteer)",
+    "recurrence": "Weekly"
+  },
+  {
+    "id": "scms-late-fall-foray-2026-11-14",
+    "title": "SCMS Late-Fall Chanterelle & Winter Fungi Foray",
+    "organization": "Snohomish County Mycological Society",
+    "activityType": "Nature/Foraging",
+    "venue": "Mountain Loop Highway Trailhead (Darrington / Granite Falls)",
+    "area": "Snohomish County",
+    "start": "2026-11-14T09:00:00",
+    "end": "2026-11-14T14:00:00",
+    "timeString": "9:00 AM – 2:00 PM",
+    "dateString": "2026-11-14",
+    "description": "Guided Snohomish County Mycological Society field foray exploring low-elevation conifer forests for yellowfoot chanterelles, hedgehogs, and late-autumn fungi.",
+    "url": "https://www.scmsfungi.org/",
+    "cost": "Free with membership",
+    "recurrence": "Seasonal"
+  },
+  {
     "id": "seward-park-arctic-visitors-walk-20261114",
     "title": "Arctic Visitors & Winter Waterfowl Bird Walk",
     "organization": "Seward Park Audubon Center",
@@ -10926,6 +11438,38 @@
     "url": "https://pugetsoundkeeper.org/events/",
     "cost": "Free volunteer event",
     "recurrence": "Monthly watershed cleanup"
+  },
+  {
+    "id": "seattle-japanese-garden-family-saturday-2026-11-14",
+    "title": "Seattle Japanese Garden: Autumn Family Saturday & Maple Viewing",
+    "organization": "Seattle Japanese Garden",
+    "activityType": "Gardening/Botany",
+    "venue": "Seattle Japanese Garden, 1075 Lake Washington Blvd E",
+    "area": "Madison Park, Seattle",
+    "start": "2026-11-14T10:00:00",
+    "end": "2026-11-14T14:00:00",
+    "timeString": "10:00 AM – 2:00 PM",
+    "dateString": "2026-11-14",
+    "description": "Explore peak late-autumn Japanese maple foliage with family-friendly botany activities, seasonal crafts, and docent-led garden walks in the Washington Park Arboretum.",
+    "url": "https://www.seattlejapanesegarden.org/events",
+    "cost": "Free for youth 12 & under with adult admission",
+    "recurrence": "Monthly"
+  },
+  {
+    "id": "snoking-swamp-creek-salmon-survey-2026-11-14",
+    "title": "Swamp Creek Co-ho & Chum Salmon Habitat Walk & Restoration",
+    "organization": "Sno-King Watershed Council",
+    "activityType": "Nature/Conservation",
+    "venue": "Wallace Swamp Creek Park, 19851 73rd Ave NE, Kenmore",
+    "area": "Kenmore / Bothell",
+    "start": "2026-11-14T10:00:00",
+    "end": "2026-11-14T12:30:00",
+    "timeString": "10:00 AM – 12:30 PM",
+    "dateString": "2026-11-14",
+    "description": "Join Sno-King Watershed Council stewards for riparian habitat restoration and citizen science observation of returning fall coho and chum salmon in Swamp Creek.",
+    "url": "https://snokingwatershedcouncil.org/news/events/",
+    "cost": "Free",
+    "recurrence": "Seasonal"
   },
   {
     "id": "coasst-marine-debris-workshop-2026-11-14",
@@ -11168,6 +11712,22 @@
     "recurrence": "Seasonal"
   },
   {
+    "id": "soundbio-pcr-electrophoresis-2026-11-14",
+    "title": "SoundBio Lab: Intro to PCR & Gel Electrophoresis Hands-On Workshop",
+    "organization": "SoundBio Lab",
+    "activityType": "Science",
+    "venue": "SoundBio Lab, 1100 NE 47th St #103, U-District",
+    "area": "U-District, Seattle",
+    "start": "2026-11-14T13:00:00",
+    "end": "2026-11-14T16:00:00",
+    "timeString": "1:00 PM – 4:00 PM",
+    "dateString": "2026-11-14",
+    "description": "Beginner-friendly wet-lab workshop at Seattle's community biology makerspace covering micropipetting, polymerase chain reaction (PCR) amplification, and agarose gel electrophoresis.",
+    "url": "https://www.sound.bio/workshops",
+    "cost": "$30 (50% off for members; fee waivers available)",
+    "recurrence": "Monthly"
+  },
+  {
     "id": "bikeworks-open-shop-2026-11-14",
     "title": "Bike Works Community Open Shop: DIY Bicycle Repair & Maintenance",
     "organization": "Seattle Bike Works Community Mechanics",
@@ -11344,6 +11904,22 @@
     "recurrence": "Annual Event"
   },
   {
+    "id": "wakayakclub-pool-roll-clinic-2026-11-15",
+    "title": "Washington Kayak Club: Indoor Pool Roll & Rescue Practice Session",
+    "organization": "Washington Kayak Club",
+    "activityType": "Paddling/Watersports",
+    "venue": "Tukwila Pool, 4414 S 144th St, Tukwila",
+    "area": "South King County",
+    "start": "2026-11-15T09:00:00",
+    "end": "2026-11-15T11:00:00",
+    "timeString": "9:00 AM – 11:00 AM",
+    "dateString": "2026-11-15",
+    "description": "Warm-water indoor pool session for whitewater and sea kayakers to practice Eskimo rolls, wet exits, and assisted T-rescues with Washington Kayak Club peers.",
+    "url": "https://wakayakclub.clubexpress.com/calendar",
+    "cost": "Pool fee ($15–$20)",
+    "recurrence": "Biweekly (Sundays)"
+  },
+  {
     "id": "bcs-bipoc-birding-ballard-locks-20261115",
     "title": "Neighborhood Bird Outing: BIPOC Birding at the Ballard Locks",
     "organization": "Birds Connect Seattle",
@@ -11358,6 +11934,22 @@
     "url": "https://birdsconnectsea.org/calendar/",
     "cost": "Free",
     "recurrence": "Special Outing"
+  },
+  {
+    "id": "pratt-woodturning-bowls-2026-11-15",
+    "title": "Pratt Fine Arts Center: Weekend Woodturning & Bowl Studio",
+    "organization": "Pratt Fine Arts Center",
+    "activityType": "Maker/Crafting",
+    "venue": "Pratt Fine Arts Center Woodshop, 1902 S Main St",
+    "area": "Central District, Seattle",
+    "start": "2026-11-15T10:00:00",
+    "end": "2026-11-15T16:00:00",
+    "timeString": "10:00 AM – 4:00 PM",
+    "dateString": "2026-11-15",
+    "description": "Hands-on woodshop intensive at Pratt Fine Arts Center covering lathe safety, gouge sharpening, and turning green and seasoned hardwood bowls.",
+    "url": "https://www.pratt.org/classes",
+    "cost": "Tuition / Scholarships available",
+    "recurrence": "Seasonal"
   },
   {
     "id": "burke-archaeology-day-2026-11-15",
@@ -11389,6 +11981,22 @@
     "description": "Learn how to properly file, tension, and maintain chainsaw chains, guide bars, and depth gauges for safe storm cleanup and firewood cutting.",
     "url": "https://seattlereconomy.org/event/chainsaw-sharpening-rclc/",
     "cost": "Sliding scale",
+    "recurrence": "Seasonal"
+  },
+  {
+    "id": "orca-network-chum-orca-watch-2026-11-15",
+    "title": "Orca Network: Puget Sound Chum Run & Southern Resident Whale Watch",
+    "organization": "Orca Network",
+    "activityType": "Nature/Conservation",
+    "venue": "Alki Point & Central Puget Sound Shoreline Overlooks",
+    "area": "West Seattle / Puget Sound",
+    "start": "2026-11-15T11:00:00",
+    "end": "2026-11-15T14:00:00",
+    "timeString": "11:00 AM – 2:00 PM",
+    "dateString": "2026-11-15",
+    "description": "Shore-based citizen science whale sighting session with Orca Network naturalists tracking Southern Resident and Bigg's killer whales during the November chum salmon run.",
+    "url": "https://orcanetwork.org/events/",
+    "cost": "Free",
     "recurrence": "Seasonal"
   },
   {
@@ -11424,6 +12032,22 @@
     "recurrence": "Sundays"
   },
   {
+    "id": "irl-improv-drama-club-2026-11-15",
+    "title": "Improv for Real Life: Grown Up Drama Club & Storytelling Finale",
+    "organization": "Improv for Real Life (IRL)",
+    "activityType": "Comedy/Improv",
+    "venue": "University Heights Center, 5031 University Way NE",
+    "area": "U-District, Seattle",
+    "start": "2026-11-15T13:00:00",
+    "end": "2026-11-15T15:00:00",
+    "timeString": "1:00 PM – 3:00 PM",
+    "dateString": "2026-11-15",
+    "description": "Sunday afternoon improv and storytelling session at University Heights Center combining theater games, character play, and true-life narrative sharing.",
+    "url": "https://www.irlimprov.com/events",
+    "cost": "Sliding scale registration",
+    "recurrence": "Weekly (Sundays)"
+  },
+  {
     "id": "pnw-glass-guild-meeting-2026-11-15",
     "title": "PNW Glass Art Guild November General Meeting & Artist Showcase",
     "organization": "PNW Glass Art Guild",
@@ -11438,6 +12062,22 @@
     "url": "https://www.pnwglassguild.org/event/general-meeting-via-zoom-8/",
     "cost": "Free for members / Guests welcome",
     "recurrence": "Monthly"
+  },
+  {
+    "id": "eastside-improv-sunday-jam-2026-11-15",
+    "title": "Eastside Improv: Sunday Afternoon Community Drop-In Jam",
+    "organization": "Eastside Improv",
+    "activityType": "Comedy/Improv",
+    "venue": "Kirkland Performance Center Studios, 350 Kirkland Ave",
+    "area": "Kirkland / Eastside",
+    "start": "2026-11-15T16:00:00",
+    "end": "2026-11-15T18:00:00",
+    "timeString": "4:00 PM – 6:00 PM",
+    "dateString": "2026-11-15",
+    "description": "Drop-in short-form and scene work improv jam hosted by Eastside Improv in downtown Kirkland.",
+    "url": "https://eastsideimprov.org/",
+    "cost": "Free / Suggested donation",
+    "recurrence": "Weekly (Sundays)"
   },
   {
     "id": "tcc-scott-losse-20261115",
@@ -11502,6 +12142,38 @@
     "url": "https://www.unexpectedproductions.org/event/cinema-unexpected-an-improvised-movie-live/2026-11-15/",
     "cost": "$15–$20",
     "recurrence": "Weekly on Sundays in November"
+  },
+  {
+    "id": "psms-late-autumn-id-clinic-2026-11-16",
+    "title": "PSMS Monday Wild Mushroom Identification Clinic",
+    "organization": "Puget Sound Mycological Society",
+    "activityType": "Nature/Foraging",
+    "venue": "Center for Urban Horticulture (UW), 3501 NE 41st St",
+    "area": "Seattle",
+    "start": "2026-11-16T16:00:00",
+    "end": "2026-11-16T19:00:00",
+    "timeString": "4:00 PM – 7:00 PM",
+    "dateString": "2026-11-16",
+    "description": "Free drop-in mushroom identification clinic hosted by PSMS identifiers. Bring fresh wild mushroom specimens in paper bags or wax paper to learn species traits, spore prints, and autumn habitat associations.",
+    "url": "https://www.psms.org/events.php",
+    "cost": "Free",
+    "recurrence": "Mondays in Fall"
+  },
+  {
+    "id": "seattle-recreative-upcycling-2026-11-16",
+    "title": "Seattle ReCreative: Creative Reuse & Upcycling Open Studio",
+    "organization": "Seattle ReCreative",
+    "activityType": "Maker/Crafting",
+    "venue": "Seattle ReCreative Greenwood, 8408 Greenwood Ave N",
+    "area": "Greenwood, Seattle",
+    "start": "2026-11-16T18:00:00",
+    "end": "2026-11-16T20:00:00",
+    "timeString": "6:00 PM – 8:00 PM",
+    "dateString": "2026-11-16",
+    "description": "Community creative reuse evening exploring textile mending, collage, and upcycled craft materials diverted from the waste stream.",
+    "url": "https://www.seattlerecreative.org/events",
+    "cost": "Sliding scale / Free",
+    "recurrence": "Weekly (Mondays)"
   },
   {
     "id": "gcc-monday-league-2026-11-16",
@@ -11776,6 +12448,22 @@
     "recurrence": "Third Wednesday of the month"
   },
   {
+    "id": "plantamnesty-pines-workshop-2026-11-18",
+    "title": "PlantAmnesty Master Pruner Workshop: Japanese White Pines",
+    "organization": "PlantAmnesty",
+    "activityType": "Gardening/Botany",
+    "venue": "North Seattle Demonstration Garden, Seattle",
+    "area": "North Seattle",
+    "start": "2026-11-18T10:00:00",
+    "end": "2026-11-18T14:00:00",
+    "timeString": "10:00 AM – 2:00 PM",
+    "dateString": "2026-11-18",
+    "description": "Specialized hands-on pruning intensive focused on structural thinning, deadwooding, and aesthetic shaping of Japanese white pines and conifers.",
+    "url": "https://www.plantamnesty.org/events/",
+    "cost": "Registration required",
+    "recurrence": "One-time"
+  },
+  {
     "id": "plantamnesty-pine-pruning-workshop-20261118",
     "title": "Master Pruner Workshop: Pine Tree Care & Aesthetic Pruning Techniques",
     "organization": "PlantAmnesty",
@@ -11806,6 +12494,22 @@
     "url": "https://www.southkingtools.org/classes-events",
     "cost": "Free (Donations welcome)",
     "recurrence": "Special Workshop"
+  },
+  {
+    "id": "wstl-fix-it-night-2026-11-18",
+    "title": "West Seattle Tool Library: Wednesday Community Fix-It Night",
+    "organization": "West Seattle Tool Library",
+    "activityType": "Maker/Crafting",
+    "venue": "Youngstown Cultural Arts Center, 4408 Delridge Way SW",
+    "area": "West Seattle",
+    "start": "2026-11-18T17:00:00",
+    "end": "2026-11-18T20:00:00",
+    "timeString": "5:00 PM – 8:00 PM",
+    "dateString": "2026-11-18",
+    "description": "Hands-on Wednesday evening fix-it workshop and community repair session at the West Seattle Tool Library.",
+    "url": "https://wstools.org/",
+    "cost": "Free / Donation-based",
+    "recurrence": "Weekly (Wednesdays)"
   },
   {
     "id": "nestl-fixit-night-shoreline-2026-11-18",
@@ -12000,6 +12704,22 @@
     "recurrence": "Seasonal"
   },
   {
+    "id": "pnms-microscopy-meeting-2026-11-19",
+    "title": "Pacific Northwest Microscopy Society: Autumn Imaging & Micro-Analysis Lecture",
+    "organization": "Pacific Northwest Microscopy Society",
+    "activityType": "Science",
+    "venue": "UW Molecular Engineering & Sciences Building / Hybrid",
+    "area": "Seattle",
+    "start": "2026-11-19T18:30:00",
+    "end": "2026-11-19T20:30:00",
+    "timeString": "6:30 PM – 8:30 PM",
+    "dateString": "2026-11-19",
+    "description": "Evening gathering of amateur and professional microscopists exploring optical, fluorescence, and electron microscopy imaging of biological and mineral specimens.",
+    "url": "https://pnms.microscopy.org/Events",
+    "cost": "Free",
+    "recurrence": "Quarterly"
+  },
+  {
     "id": "sgc-handicap-league-2026-11-19",
     "title": "Seattle Go Center: Thursday Handicap League",
     "organization": "Seattle Go Center",
@@ -12016,6 +12736,22 @@
     "recurrence": "Weekly on Thursdays"
   },
   {
+    "id": "nwba-fireside-chat-2026-11-19",
+    "title": "Northwest Blacksmith Association: November Fireside Chat",
+    "organization": "Northwest Blacksmith Association",
+    "activityType": "Maker/Crafting",
+    "venue": "Online Zoom Forge Gathering (PNW Blacksmiths)",
+    "area": "Seattle / Puget Sound area",
+    "start": "2026-11-19T19:00:00",
+    "end": "2026-11-19T21:00:00",
+    "timeString": "7:00 PM – 9:00 PM",
+    "dateString": "2026-11-19",
+    "description": "Monthly Northwest Blacksmith Association virtual shop tour and technical Q&A covering hand-forged joinery, hammer control, and winter shop projects.",
+    "url": "https://blacksmith.org/event/fireside-chat-5/",
+    "cost": "Free",
+    "recurrence": "Monthly"
+  },
+  {
     "id": "nerd-nite-seattle-98-2026-11-19",
     "title": "Nerd Nite Seattle: Fungi Networks, Marine Soundscapes & Space Tech",
     "organization": "Nerd Nite Seattle",
@@ -12030,6 +12766,22 @@
     "url": "https://seattle.nerdnite.com/",
     "cost": "Free admission (RSVP via Eventbrite for raffle)",
     "recurrence": "Monthly science social"
+  },
+  {
+    "id": "emerald-city-don-mcmillan-2026-11-19",
+    "title": "Stand-Up Headliner: Don McMillan 2.0 (Powered by PowerPoint & AI)",
+    "organization": "Emerald City Comedy Club",
+    "activityType": "Comedy/Improv",
+    "venue": "Emerald City Comedy Club, 210 Broadway E, Capitol Hill",
+    "area": "Capitol Hill, Seattle",
+    "start": "2026-11-19T19:30:00",
+    "end": "2026-11-19T21:15:00",
+    "timeString": "7:30 PM – 9:15 PM",
+    "dateString": "2026-11-19",
+    "description": "Former engineer and tech-satire stand-up comedian Don McMillan delivers data-driven charts, graphs, and observational comedy on Capitol Hill.",
+    "url": "https://www.emeraldcitycomedy.com/events/138906",
+    "cost": "Ticketed (21+)",
+    "recurrence": "One-time"
   },
   {
     "id": "up-loose-cannons-20261119",
@@ -12192,6 +12944,22 @@
     "recurrence": "Pop-Up Stand-Up Showcase"
   },
   {
+    "id": "up-theatresports-2026-11-20",
+    "title": "Seattle Theatresports 2026 (Friday Night Mainstage)",
+    "organization": "Unexpected Productions Improv",
+    "activityType": "Comedy/Improv",
+    "venue": "Market Theater, 1428 Post Alley, Pike Place Market",
+    "area": "Downtown Seattle",
+    "start": "2026-11-20T21:30:00",
+    "end": "2026-11-20T23:00:00",
+    "timeString": "9:30 PM – 11:00 PM",
+    "dateString": "2026-11-20",
+    "description": "High-energy Friday night Theatresports improv showdown at the Market Theater in Pike Place Market.",
+    "url": "https://www.unexpectedproductions.org/event/seattle-theatresports-2026-3/2026-11-20/",
+    "cost": "$20",
+    "recurrence": "Weekly (Fridays & Saturdays)"
+  },
+  {
     "id": "rainier-audubon-green-river-2026-11-21",
     "title": "Rainier Audubon: Green River Trail / Kent Ponds Bird Walk",
     "organization": "Rainier Audubon Society",
@@ -12237,6 +13005,38 @@
     "description": "Third-Saturday morning bird walk along spring-fed Clark's Creek and DeCoursey Pond searching for wood ducks, hooded mergansers, American dippers, and winter songbirds.",
     "url": "https://www.tahomabirdalliance.org/field-trips",
     "cost": "Free",
+    "recurrence": "Monthly (3rd Saturday)"
+  },
+  {
+    "id": "cascade-cranksgiving-2026-11-21",
+    "title": "Cranksgiving Seattle 2026: Charity Bicycle Food Drive & Alleycat Ride",
+    "organization": "Cascade Bicycle Club",
+    "activityType": "Cycling/Outdoors",
+    "venue": "Seattle Neighborhood Grocery Route & Food Bank Drop-Off",
+    "area": "Seattle",
+    "start": "2026-11-21T09:00:00",
+    "end": "2026-11-21T13:00:00",
+    "timeString": "9:00 AM – 1:00 PM",
+    "dateString": "2026-11-21",
+    "description": "Annual bicycle-powered food drive and scavenger hunt where riders visit local grocery stores to purchase non-perishable items for Seattle food banks.",
+    "url": "https://cascade.org/rides-events/ride-event-search",
+    "cost": "Free registration (bring $15–$25 for food bank donations)",
+    "recurrence": "Annual"
+  },
+  {
+    "id": "nwba-open-forge-2026-11-21",
+    "title": "NWBA Mentoring Center: Monthly Community Open Forge",
+    "organization": "Northwest Blacksmith Association",
+    "activityType": "Maker/Crafting",
+    "venue": "NWBA Mentoring Center, Cowlitz County Event Center",
+    "area": "Puget Sound / SW WA",
+    "start": "2026-11-21T09:00:00",
+    "end": "2026-11-21T16:00:00",
+    "timeString": "9:00 AM – 4:00 PM",
+    "dateString": "2026-11-21",
+    "description": "Full-day hands-on open forge hosted by the Northwest Blacksmith Association with coal and propane stations, anvils, power hammers, and experienced smiths mentoring all skill levels.",
+    "url": "https://blacksmith.org/event/open-forge/",
+    "cost": "NWBA Members / Guest day pass",
     "recurrence": "Monthly (3rd Saturday)"
   },
   {
@@ -12382,6 +13182,38 @@
     "url": "https://seattlefrontrunners.org/runs-walks",
     "cost": "Free",
     "recurrence": "Weekly on Saturdays"
+  },
+  {
+    "id": "kpms-november-foray-2026-11-21",
+    "title": "KPMS Late-Autumn Kitsap Forest Mushroom Foray & ID Session",
+    "organization": "Kitsap Peninsula Mycological Society",
+    "activityType": "Nature/Foraging",
+    "venue": "Green Mountain State Forest, Bremerton",
+    "area": "Kitsap Peninsula",
+    "start": "2026-11-21T09:30:00",
+    "end": "2026-11-21T13:30:00",
+    "timeString": "9:30 AM – 1:30 PM",
+    "dateString": "2026-11-21",
+    "description": "Field foray and specimen basket review with Kitsap Peninsula Mycological Society mentors focusing on late-November chanterelles, matsutake, and wood-decay polypores.",
+    "url": "https://kitsapmushrooms.org/",
+    "cost": "Free for members / Guests welcome",
+    "recurrence": "Monthly"
+  },
+  {
+    "id": "nwl-winter-lichen-keying-2026-11-21",
+    "title": "Northwest Lichenologists: Autumn Epiphytic Macrolichen Study Session",
+    "organization": "Northwest Lichenologists",
+    "activityType": "Nature/Conservation",
+    "venue": "UW Herbarium / Burke Museum Study Room & Zoom",
+    "area": "Seattle",
+    "start": "2026-11-21T10:00:00",
+    "end": "2026-11-21T13:00:00",
+    "timeString": "10:00 AM – 1:00 PM",
+    "dateString": "2026-11-21",
+    "description": "Collaborative lichenology keying workshop examining Pacific Northwest windfall macrolichens (Usnea, Lobaria, Hypogymnia, and Peltigera) using chemical spot tests and dissecting scopes.",
+    "url": "https://northwest-lichenologists.wildapricot.org/page-1816534",
+    "cost": "Free",
+    "recurrence": "Seasonal"
   },
   {
     "id": "barn-annual-holiday-bazaar-2026-11-21",
@@ -12768,6 +13600,22 @@
     "recurrence": "Monthly (4th Sundays)"
   },
   {
+    "id": "eastside-improv-sunday-jam-2026-11-22",
+    "title": "Eastside Improv: Sunday Afternoon Community Drop-In Jam",
+    "organization": "Eastside Improv",
+    "activityType": "Comedy/Improv",
+    "venue": "Kirkland Performance Center Studios, 350 Kirkland Ave",
+    "area": "Kirkland / Eastside",
+    "start": "2026-11-22T16:00:00",
+    "end": "2026-11-22T18:00:00",
+    "timeString": "4:00 PM – 6:00 PM",
+    "dateString": "2026-11-22",
+    "description": "Friendly community improv jam on the Eastside featuring ensemble warm-ups, character games, and supportive coaching.",
+    "url": "https://eastsideimprov.org/",
+    "cost": "Free / Suggested donation",
+    "recurrence": "Weekly (Sundays)"
+  },
+  {
     "id": "up-cinema-unexpected-20261122",
     "title": "Cinema Unexpected: An Improvised Movie Live",
     "organization": "Unexpected Productions Improv",
@@ -12830,6 +13678,22 @@
     "url": "https://www.tahomabirdalliance.org/field-trips",
     "cost": "Free",
     "recurrence": "Monthly (4th Monday)"
+  },
+  {
+    "id": "psms-late-autumn-id-clinic-2026-11-23",
+    "title": "PSMS Monday Wild Mushroom Identification Clinic",
+    "organization": "Puget Sound Mycological Society",
+    "activityType": "Nature/Foraging",
+    "venue": "Center for Urban Horticulture (UW), 3501 NE 41st St",
+    "area": "Seattle",
+    "start": "2026-11-23T16:00:00",
+    "end": "2026-11-23T19:00:00",
+    "timeString": "4:00 PM – 7:00 PM",
+    "dateString": "2026-11-23",
+    "description": "Drop-in late-autumn mushroom identification clinic with Puget Sound Mycological Society identifiers at UW Center for Urban Horticulture.",
+    "url": "https://www.psms.org/events.php",
+    "cost": "Free",
+    "recurrence": "Mondays in Fall"
   },
   {
     "id": "gcc-monday-league-2026-11-23",
@@ -12928,6 +13792,22 @@
     "recurrence": "Weekly on Tuesdays"
   },
   {
+    "id": "irl-improv-drop-in-jam-2026-11-24",
+    "title": "Improv for Real Life (IRL): Tuesday Drop-In Community Improv Jam",
+    "organization": "Improv for Real Life (IRL)",
+    "activityType": "Comedy/Improv",
+    "venue": "University Heights Center, 5031 University Way NE",
+    "area": "U-District, Seattle",
+    "start": "2026-11-24T19:00:00",
+    "end": "2026-11-24T21:00:00",
+    "timeString": "7:00 PM – 9:00 PM",
+    "dateString": "2026-11-24",
+    "description": "Welcoming evening drop-in improv jam at University Heights Center for adults looking to practice grounded scene work and comedic play.",
+    "url": "https://www.irlimprov.com/events",
+    "cost": "$10 – $20 sliding scale",
+    "recurrence": "Biweekly (Tuesdays)"
+  },
+  {
     "id": "eastside-audubon-book-club-2026-11-24",
     "title": "Eastside Audubon: Conservation Book Club",
     "organization": "Eastside Audubon",
@@ -13024,6 +13904,22 @@
     "recurrence": "Holiday special tour"
   },
   {
+    "id": "tacoma-comedy-thanksgiving-eve-bash-2026-11-25",
+    "title": "Thanksgiving Eve Stand-Up Comedy Bash at Tacoma Comedy Club",
+    "organization": "Tacoma Comedy Club",
+    "activityType": "Comedy/Improv",
+    "venue": "Tacoma Comedy Club, 933 Market St, Tacoma",
+    "area": "Tacoma",
+    "start": "2026-11-25T19:00:00",
+    "end": "2026-11-25T21:00:00",
+    "timeString": "7:00 PM – 9:00 PM",
+    "dateString": "2026-11-25",
+    "description": "Annual Thanksgiving Eve stand-up showcase featuring top Pacific Northwest comedians in downtown Tacoma.",
+    "url": "https://www.tacomacomedyclub.com/events/144448",
+    "cost": "Ticketed (18+)",
+    "recurrence": "Annual"
+  },
+  {
     "id": "scc-wednesday-casual-2026-11-25",
     "title": "Seattle Chess Club: Thanksgiving Eve Casual Chess Night",
     "organization": "Seattle Chess Club",
@@ -13038,6 +13934,22 @@
     "url": "https://seattlechess.club/mec-category/free-event/",
     "cost": "Free",
     "recurrence": "Weekly on Wednesdays"
+  },
+  {
+    "id": "up-duo-showcase-2026-11-25",
+    "title": "Duo Comedy Showcase 2026 (Thanksgiving Eve)",
+    "organization": "Unexpected Productions Improv",
+    "activityType": "Comedy/Improv",
+    "venue": "Market Theater, 1428 Post Alley, Pike Place Market",
+    "area": "Downtown Seattle",
+    "start": "2026-11-25T20:00:00",
+    "end": "2026-11-25T21:30:00",
+    "timeString": "8:00 PM – 9:30 PM",
+    "dateString": "2026-11-25",
+    "description": "Intimate two-person improv showcase featuring rotating comedy duos performing high-wire long-form scenes.",
+    "url": "https://www.unexpectedproductions.org/event/duo-comedy-showcase-2026/2026-11-25/",
+    "cost": "$15",
+    "recurrence": "Weekly (Wednesdays)"
   },
   {
     "id": "laughs-wednesday-comedy-mix-20261125",
@@ -13152,6 +14064,22 @@
     "recurrence": "Annual Holiday Show"
   },
   {
+    "id": "laughs-kevin-sullivan-2026-11-27",
+    "title": "Stand-Up Headliner: Kevin Sullivan Live at Laughs Comedy Club",
+    "organization": "Laughs Comedy Club",
+    "activityType": "Comedy/Improv",
+    "venue": "Laughs Comedy Club, 5220 Roosevelt Way NE",
+    "area": "U-District, Seattle",
+    "start": "2026-11-27T19:15:00",
+    "end": "2026-11-27T21:00:00",
+    "timeString": "7:15 PM & 9:30 PM",
+    "dateString": "2026-11-27",
+    "description": "Thanksgiving weekend stand-up comedy headliner sets by Kevin Sullivan at Laughs Comedy Club in the University District.",
+    "url": "https://laughscomedyclub.com/ticket/comedy-show-kevin-sullivan-on-nov-27th-28th-laughs-comedy-club-seattle/",
+    "cost": "$25",
+    "recurrence": "Weekend Headliner"
+  },
+  {
     "id": "scc-friday-rated-2026-11-27",
     "title": "Seattle Chess Club: Post-Thanksgiving USCF Rated Chess",
     "organization": "Seattle Chess Club",
@@ -13262,6 +14190,22 @@
     "url": "https://seattlefrontrunners.org/runs-walks",
     "cost": "Free",
     "recurrence": "Weekly on Saturdays"
+  },
+  {
+    "id": "kubota-garden-tour-2026-11-28",
+    "title": "Kubota Garden Late-Autumn Public Heritage & Landscape Tour",
+    "organization": "Kubota Garden Foundation Stewards (Rainier Beach)",
+    "activityType": "Gardening/Botany",
+    "venue": "Kubota Garden Terrace, 9817 55th Ave S",
+    "area": "Rainier Beach, Seattle",
+    "start": "2026-11-28T10:00:00",
+    "end": "2026-11-28T12:00:00",
+    "timeString": "10:00 AM – 12:00 PM",
+    "dateString": "2026-11-28",
+    "description": "Guided docent tour of Fujitaro Kubota's historic 20-acre Japanese-American garden showcasing winter conifer structure, waterfalls, bridges, and late-season maples.",
+    "url": "https://www.kubotagarden.org/event",
+    "cost": "Free",
+    "recurrence": "Monthly (4th Saturday)"
   },
   {
     "id": "chtl-saturday-workshop-2026-11-28",
@@ -13422,6 +14366,22 @@
     "url": "https://www.emeraldcitycomedy.com/events/145439",
     "cost": "Ticketed",
     "recurrence": "Headliner Weekend"
+  },
+  {
+    "id": "up-christmas-carol-2026-11-28",
+    "title": "An Improvised Christmas Carol at Market Theater",
+    "organization": "Unexpected Productions Improv",
+    "activityType": "Comedy/Improv",
+    "venue": "Market Theater, 1428 Post Alley, Pike Place Market",
+    "area": "Downtown Seattle",
+    "start": "2026-11-28T19:30:00",
+    "end": "2026-11-28T21:00:00",
+    "timeString": "7:30 PM – 9:00 PM",
+    "dateString": "2026-11-28",
+    "description": "Seattle holiday improv tradition since 1985 where audience suggestions reshape Ebenezer Scrooge's job, obsessions, and ghostly redemption arc.",
+    "url": "https://www.unexpectedproductions.org/event/an-improvised-christmas-carol/2026-11-28/",
+    "cost": "$25",
+    "recurrence": "Holiday Season Run"
   },
   {
     "id": "gbyr-armando-night-jam-20261128",
@@ -13630,6 +14590,22 @@
     "url": "https://curlingseattle.org/content/2026-2027-monday-night",
     "cost": "League registration",
     "recurrence": "Weekly on Mondays"
+  },
+  {
+    "id": "science-on-tap-november-2026-11-30",
+    "title": "Science on Tap Seattle: November Public Science Cafe & Q&A",
+    "organization": "Science on Tap Seattle",
+    "activityType": "Science",
+    "venue": "Third Place Books Ravenna (Downstairs Pub), 6504 20th Ave NE",
+    "area": "Ravenna, Seattle",
+    "start": "2026-11-30T19:00:00",
+    "end": "2026-11-30T20:30:00",
+    "timeString": "7:00 PM – 8:30 PM (Doors 6:00 PM)",
+    "dateString": "2026-11-30",
+    "description": "Informal neighborhood science cafe where University of Washington and regional researchers share accessible talks and lively Q&A over food and drinks.",
+    "url": "https://scienceontap.org/",
+    "cost": "Free",
+    "recurrence": "Monthly (Last Monday)"
   },
   {
     "id": "seattle-center-winterfest-train-2026-12-01",
@@ -13856,6 +14832,22 @@
     "recurrence": "Weekly on Wednesdays"
   },
   {
+    "id": "emerald-city-aaron-weber-2026-12-02",
+    "title": "Stand-Up Headliner: Aaron Weber Live at Emerald City Comedy Club",
+    "organization": "Emerald City Comedy Club",
+    "activityType": "Comedy/Improv",
+    "venue": "Emerald City Comedy Club, 210 Broadway E, Capitol Hill",
+    "area": "Capitol Hill, Seattle",
+    "start": "2026-12-02T19:30:00",
+    "end": "2026-12-02T21:15:00",
+    "timeString": "7:30 PM – 9:15 PM",
+    "dateString": "2026-12-02",
+    "description": "Stand-up comedy headliner Aaron Weber (Nateland Podcast, The Tonight Show) live at Emerald City Comedy Club.",
+    "url": "https://www.emeraldcitycomedy.com/events/131919",
+    "cost": "Ticketed (21+)",
+    "recurrence": "One-time"
+  },
+  {
     "id": "up-duo-comedy-showcase-20261202",
     "title": "Duo Comedy Showcase 2026 at Market Theater",
     "organization": "Unexpected Productions Improv",
@@ -13918,22 +14910,6 @@
     "url": "https://www.seattleweaversguild.com/events/hallows-program26-27",
     "cost": "Free for members / Guests welcome",
     "recurrence": "Monthly"
-  },
-  {
-    "id": "esw-regular-meeting-2026-12-03",
-    "title": "1264th Entomological Society Regular Meeting & Lecture",
-    "organization": "Entomological Society of Washington",
-    "activityType": "Nature/Conservation",
-    "venue": "Online & Hybrid Entomology Seminar (Seattle, WA)",
-    "area": "Seattle",
-    "start": "2026-12-03T16:00:00-08:00",
-    "end": "2026-12-03T17:30:00-08:00",
-    "timeString": "4:00 PM – 5:30 PM",
-    "dateString": "2026-12-03",
-    "description": "Monthly scientific meeting of the Entomological Society featuring research talks on insect taxonomy, ecology, and natural history.",
-    "url": "https://www.entsocwash.org/events/1261th-esw-regular-meeting-g95at-zb4sw-f849b",
-    "cost": "Free",
-    "recurrence": "Monthly (1st Thursday)"
   },
   {
     "id": "nestl-fixit-night-2026-12-03",
@@ -14030,6 +15006,22 @@
     "url": "https://www.seattlego.org/schedule/",
     "cost": "Club fee",
     "recurrence": "Weekly on Thursdays"
+  },
+  {
+    "id": "laughs-liz-blanc-2026-12-03",
+    "title": "Stand-Up Showcase: Liz Blanc Live at Laughs Comedy Club",
+    "organization": "Laughs Comedy Club",
+    "activityType": "Comedy/Improv",
+    "venue": "Laughs Comedy Club, 5220 Roosevelt Way NE",
+    "area": "U-District, Seattle",
+    "start": "2026-12-03T19:00:00",
+    "end": "2026-12-03T20:45:00",
+    "timeString": "7:00 PM – 8:45 PM",
+    "dateString": "2026-12-03",
+    "description": "Thursday night stand-up comedy headliner performance by Liz Blanc at Laughs Comedy Club in Seattle.",
+    "url": "https://laughscomedyclub.com/ticket/comedy-show-liz-blanc-on-dec-3rd-at-7pm-at-laughs-comedy-club/",
+    "cost": "$20",
+    "recurrence": "One-time"
   },
   {
     "id": "gcc-thursday-mens-2026-12-03",
@@ -14270,6 +15262,22 @@
     "url": "https://seattlefrontrunners.org/runs-walks",
     "cost": "Free / All paces welcome",
     "recurrence": "Weekly on Saturdays"
+  },
+  {
+    "id": "saltwater-forest-restoration-2026-12-05",
+    "title": "Saltwater State Park December Forest Restoration Work Party",
+    "organization": "Friends of Saltwater State Park",
+    "activityType": "Nature/Conservation",
+    "venue": "Saltwater State Park, 25205 8th Pl S, Des Moines",
+    "area": "South King County",
+    "start": "2026-12-05T10:00:00",
+    "end": "2026-12-05T13:00:00",
+    "timeString": "10:00 AM – 1:00 PM",
+    "dateString": "2026-12-05",
+    "description": "Volunteer habitat stewardship work party removing invasive English ivy and planting native understory shrubs along the McSorley Creek watershed.",
+    "url": "https://www.friendssaltwater.org/upcoming-events",
+    "cost": "Free",
+    "recurrence": "Monthly (1st Saturday)"
   },
   {
     "id": "chtl-saturday-workshop-2026-12-05",
@@ -14576,6 +15584,22 @@
     "recurrence": "Weekly on Tuesdays"
   },
   {
+    "id": "psms-holiday-potluck-2026-12-08",
+    "title": "PSMS Annual December Membership Banquet & Holiday Potluck",
+    "organization": "Puget Sound Mycological Society",
+    "activityType": "Nature/Foraging",
+    "venue": "Center for Urban Horticulture (NHS Hall), 3501 NE 41st St",
+    "area": "Seattle",
+    "start": "2026-12-08T18:30:00",
+    "end": "2026-12-08T21:00:00",
+    "timeString": "6:30 PM – 9:00 PM",
+    "dateString": "2026-12-08",
+    "description": "Annual December gathering of the Puget Sound Mycological Society featuring fungal culinary dishes, year-in-review photography from autumn field trips, and community fellowship.",
+    "url": "https://www.psms.org/events.php",
+    "cost": "Free for members / Potluck",
+    "recurrence": "Annual"
+  },
+  {
     "id": "mof-lecture-2026-12-08",
     "title": "Museum of Flight: Evening Aerospace Presentation",
     "organization": "Museum of Flight Docent Corps (Tukwila)",
@@ -14766,6 +15790,38 @@
     "url": "https://www.seattlego.org/schedule/",
     "cost": "Club fee",
     "recurrence": "Weekly on Thursdays"
+  },
+  {
+    "id": "nwba-fireside-chat-2026-12-10",
+    "title": "Northwest Blacksmith Association: December Fireside Chat",
+    "organization": "Northwest Blacksmith Association",
+    "activityType": "Maker/Crafting",
+    "venue": "Online Zoom Forge Gathering (PNW Blacksmiths)",
+    "area": "Seattle / Puget Sound area",
+    "start": "2026-12-10T19:00:00",
+    "end": "2026-12-10T21:00:00",
+    "timeString": "7:00 PM – 9:00 PM",
+    "dateString": "2026-12-10",
+    "description": "December evening fireside chat with Northwest Blacksmith Association master smiths sharing seasonal ironwork demonstrations and tooling tips.",
+    "url": "https://blacksmith.org/event/fireside-chat-6/",
+    "cost": "Free",
+    "recurrence": "Monthly"
+  },
+  {
+    "id": "soundbio-spotlight-2026-12-10",
+    "title": "SoundBio Spotlight: December Community Biology Showcase",
+    "organization": "SoundBio Lab",
+    "activityType": "Science",
+    "venue": "SoundBio Lab, 1100 NE 47th St #103, U-District",
+    "area": "U-District, Seattle",
+    "start": "2026-12-10T19:00:00",
+    "end": "2026-12-10T20:30:00",
+    "timeString": "7:00 PM – 8:30 PM",
+    "dateString": "2026-12-10",
+    "description": "Second-Thursday community science seminar featuring member presentations on DIY microscopy, biosensors, and open biotechnology.",
+    "url": "https://www.sound.bio/workshops",
+    "cost": "Free",
+    "recurrence": "Monthly (2nd Thursday)"
   },
   {
     "id": "nerd-nite-seattle-99-2026-12-10",
@@ -15454,6 +16510,22 @@
     "url": "https://www.tahomabirdalliance.org/bird-walks",
     "cost": "Free",
     "recurrence": "Third Saturday of the month"
+  },
+  {
+    "id": "nwba-open-forge-2026-12-19",
+    "title": "NWBA Mentoring Center: December Open Forge",
+    "organization": "Northwest Blacksmith Association",
+    "activityType": "Maker/Crafting",
+    "venue": "NWBA Mentoring Center, Cowlitz County Event Center",
+    "area": "Puget Sound / SW WA",
+    "start": "2026-12-19T09:00:00",
+    "end": "2026-12-19T16:00:00",
+    "timeString": "9:00 AM – 4:00 PM",
+    "dateString": "2026-12-19",
+    "description": "Monthly hands-on blacksmithing open forge session with NWBA mentors guiding beginners and intermediate smiths on tongs, hooks, and tool steel forging.",
+    "url": "https://blacksmith.org/event/mentoring-center-open-forge-3/",
+    "cost": "NWBA Members / Guest day pass",
+    "recurrence": "Monthly (3rd Saturday)"
   },
   {
     "id": "bcs-green-lake-2026-12-19",
