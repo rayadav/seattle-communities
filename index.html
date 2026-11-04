@@ -441,6 +441,146 @@
     box-shadow: 0 2px 8px rgba(109,79,240,.3);
   }
 
+  /* Specific Date Box in Filter Dropdowns Group */
+  .select-box.date-box {
+    position: relative;
+    flex: 0 1 185px;
+    min-width: 155px;
+  }
+  .select-box.date-box::after {
+    display: none !important;
+  }
+  .date-input-wrap {
+    position: relative;
+    width: 100%;
+    height: 44px;
+    display: flex;
+    align-items: center;
+  }
+  .date-input-wrap .date-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 14px;
+    pointer-events: none;
+    z-index: 1;
+    line-height: 1;
+  }
+  .date-input-wrap input[type="date"] {
+    width: 100%;
+    height: 44px;
+    padding: 0 30px 0 34px;
+    background: var(--surface-2);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-sm);
+    font-family: var(--font);
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text);
+    outline: none;
+    cursor: pointer;
+    transition: all .2s ease;
+    accent-color: var(--violet);
+    color-scheme: light;
+    box-sizing: border-box;
+  }
+  .date-input-wrap input[type="date"]:focus {
+    background: #fff;
+    border-color: var(--violet);
+    box-shadow: 0 0 0 3px rgba(109,79,240,.15);
+  }
+  .date-input-wrap input[type="date"].has-value {
+    background: #f5f3ff;
+    border-color: var(--violet);
+    color: var(--violet-deep);
+    font-weight: 600;
+  }
+  .date-input-wrap .date-clear-btn {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: var(--text-faint);
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 700;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    line-height: 1;
+    transition: all .15s ease;
+    z-index: 2;
+  }
+  .date-input-wrap .date-clear-btn:hover {
+    color: var(--text);
+    background: var(--line);
+  }
+
+  /* Date Picker Pill in Timeframe Row */
+  .time-pill.date-picker-pill {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    flex-shrink: 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  .time-pill.date-picker-pill .pill-date-input {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 1;
+    border: none;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    appearance: none;
+    -webkit-appearance: none;
+    color-scheme: light;
+  }
+  .time-pill.date-picker-pill .date-pill-clear-btn {
+    position: relative;
+    z-index: 2;
+    background: none;
+    border: none;
+    color: inherit;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 2px 4px;
+    margin-left: 2px;
+    border-radius: 999px;
+    line-height: 1;
+    display: none;
+    opacity: 0.85;
+    transition: opacity .15s ease;
+  }
+  .time-pill.date-picker-pill .date-pill-clear-btn:hover {
+    opacity: 1;
+    background: rgba(255, 255, 255, 0.25);
+  }
+  .time-pill.date-picker-pill.active {
+    background: var(--violet);
+    border-color: var(--violet);
+    color: #ffffff;
+    box-shadow: 0 2px 8px rgba(109,79,240,.3);
+  }
+  .time-pill.date-picker-pill.active .date-pill-clear-btn {
+    display: inline-flex;
+  }
+
   /* Filter Status Line */
   .filter-status-row {
     display: flex;
@@ -1061,6 +1201,15 @@
       border-radius: 12px;
       background-color: #f8fafc;
     }
+    .filter-dropdowns-group .select-box.date-box .date-input-wrap {
+      height: 46px;
+    }
+    .filter-dropdowns-group .select-box.date-box input[type="date"] {
+      height: 46px;
+      font-size: 15px;
+      border-radius: 12px;
+      background-color: #f8fafc;
+    }
 
     /* Hide desktop reset button in drawer */
     #reset-filters-btn {
@@ -1276,6 +1425,16 @@
             </select>
           </div>
 
+          <!-- Specific Date Select Box in Filter Bar & Mobile Drawer -->
+          <div class="select-box date-box">
+            <label class="mobile-filter-label" for="filter-date-input">Specific Date</label>
+            <div class="date-input-wrap">
+              <span class="date-icon" aria-hidden="true">📅</span>
+              <input type="date" id="filter-date-input" aria-label="Filter by specific date" min="2026-09-01" max="2027-12-31" list="event-dates-list">
+              <button type="button" class="date-clear-btn" id="filter-date-clear-btn" aria-label="Clear date filter" title="Clear date">✕</button>
+            </div>
+          </div>
+
           <!-- Reset Button (Desktop) -->
           <button type="button" class="btn-reset" id="reset-filters-btn">Reset Filters</button>
 
@@ -1293,6 +1452,15 @@
         <button type="button" class="time-pill active" data-timeframe="all">All Upcoming</button>
         <button type="button" class="time-pill" data-timeframe="today" id="pill-today">Today</button>
         <button type="button" class="time-pill" data-timeframe="tomorrow" id="pill-tomorrow">Tomorrow</button>
+
+        <!-- Date Picker Pill -->
+        <div class="time-pill date-picker-pill" id="date-picker-pill" role="button" tabindex="0" aria-haspopup="dialog" title="Filter events for a specific date">
+          <span class="date-pill-icon" aria-hidden="true">📅</span>
+          <span class="date-pill-label" id="date-picker-pill-label">Pick Date</span>
+          <input type="date" id="calendar-date-input" class="pill-date-input" aria-label="Select specific calendar date" min="2026-09-01" max="2027-12-31" list="event-dates-list">
+          <button type="button" class="date-pill-clear-btn" id="date-pill-clear-btn" aria-label="Clear selected date" title="Clear date">✕</button>
+        </div>
+
         <button type="button" class="time-pill" data-timeframe="this-week">This Week</button>
         <button type="button" class="time-pill" data-timeframe="this-weekend">This Weekend</button>
         <button type="button" class="time-pill" data-timeframe="next-week">Next Week</button>
@@ -1301,6 +1469,9 @@
         <button type="button" class="time-pill" data-timeframe="december">December 2026</button>
         <button type="button" class="time-pill" data-timeframe="past">Past Events</button>
       </div>
+
+      <!-- Datalist of unique event dates for native calendar highlights -->
+      <datalist id="event-dates-list"></datalist>
 
       <!-- Active Filter Chips (removable on mobile) -->
       <div class="active-filter-chips" id="active-filter-chips" aria-label="Active filters"></div>
@@ -1351,6 +1522,7 @@
 (function() {
   let allEvents = [];
   let activeTimeframe = 'all';
+  let selectedCustomDate = '';
 
   const searchInput = document.getElementById('calendar-search');
   const clearSearchBtn = document.getElementById('clear-search-btn');
@@ -1360,6 +1532,16 @@
   const resetBtn = document.getElementById('reset-filters-btn');
   const emptyResetBtn = document.getElementById('empty-reset-btn');
   const timePills = document.querySelectorAll('.time-pill');
+
+  // Calendar Date Picker elements
+  const calendarDateInput = document.getElementById('calendar-date-input');
+  const datePickerPill = document.getElementById('date-picker-pill');
+  const datePickerPillLabel = document.getElementById('date-picker-pill-label');
+  const datePillClearBtn = document.getElementById('date-pill-clear-btn');
+  const filterDateInput = document.getElementById('filter-date-input');
+  const filterDateClearBtn = document.getElementById('filter-date-clear-btn');
+  const eventDatesList = document.getElementById('event-dates-list');
+  const statusCountEl = document.querySelector('.status-count');
 
   // Mobile drawer elements
   const filterToggleBtn = document.getElementById('filter-toggle-btn');
@@ -1394,6 +1576,115 @@
       clearTimeout(timer);
       timer = setTimeout(() => fn.apply(this, args), ms);
     };
+  }
+
+  function formatDisplayDateFull(dateStr) {
+    if (typeof Temporal !== 'undefined' && Temporal.PlainDate) {
+      try {
+        return Temporal.PlainDate.from(dateStr).toLocaleString('en-US', {
+          weekday: 'long',
+          month: 'long',
+          day: 'numeric',
+          year: 'numeric'
+        });
+      } catch (_) {}
+    }
+    const parts = dateStr.split('-');
+    const d = new Date(parseInt(parts[0], 10), parseInt(parts[1], 10) - 1, parseInt(parts[2], 10));
+    return d.toLocaleDateString('en-US', {
+      weekday: 'long',
+      month: 'long',
+      day: 'numeric',
+      year: 'numeric'
+    });
+  }
+
+  function formatDisplayDateShort(dateStr) {
+    if (typeof Temporal !== 'undefined' && Temporal.PlainDate) {
+      try {
+        return Temporal.PlainDate.from(dateStr).toLocaleString('en-US', {
+          weekday: 'short',
+          month: 'short',
+          day: 'numeric'
+        });
+      } catch (_) {}
+    }
+    const parts = dateStr.split('-');
+    const d = new Date(parseInt(parts[0], 10), parseInt(parts[1], 10) - 1, parseInt(parts[2], 10));
+    return d.toLocaleDateString('en-US', {
+      weekday: 'short',
+      month: 'short',
+      day: 'numeric'
+    });
+  }
+
+  function updateUrlParam(key, value) {
+    try {
+      const url = new URL(window.location.href);
+      if (value) {
+        url.searchParams.set(key, value);
+      } else {
+        url.searchParams.delete(key);
+      }
+      window.history.replaceState({}, '', url.toString());
+    } catch (_) {}
+  }
+
+  function applyCustomDate(dateVal) {
+    if (!dateVal) {
+      clearCustomDate();
+      return;
+    }
+    selectedCustomDate = dateVal;
+    activeTimeframe = 'custom-date';
+
+    if (calendarDateInput) calendarDateInput.value = dateVal;
+    if (filterDateInput) {
+      filterDateInput.value = dateVal;
+      filterDateInput.classList.add('has-value');
+    }
+    if (filterDateClearBtn) filterDateClearBtn.style.display = 'flex';
+
+    if (datePickerPill) {
+      datePickerPill.classList.add('active');
+      if (datePickerPillLabel) {
+        datePickerPillLabel.textContent = formatDisplayDateShort(dateVal);
+      }
+      datePickerPill.setAttribute('title', `Selected: ${formatDisplayDateFull(dateVal)}. Click to change or ✕ to clear.`);
+    }
+    if (datePillClearBtn) datePillClearBtn.style.display = 'inline-flex';
+
+    timePills.forEach(p => {
+      if (p.id !== 'date-picker-pill') p.classList.remove('active');
+    });
+
+    updateUrlParam('date', dateVal);
+    renderAgenda();
+  }
+
+  function clearCustomDate() {
+    selectedCustomDate = '';
+    if (calendarDateInput) calendarDateInput.value = '';
+    if (filterDateInput) {
+      filterDateInput.value = '';
+      filterDateInput.classList.remove('has-value');
+    }
+    if (filterDateClearBtn) filterDateClearBtn.style.display = 'none';
+
+    if (datePickerPill) {
+      datePickerPill.classList.remove('active');
+      if (datePickerPillLabel) datePickerPillLabel.textContent = 'Pick Date';
+      datePickerPill.setAttribute('title', 'Filter events for a specific date');
+    }
+    if (datePillClearBtn) datePillClearBtn.style.display = 'none';
+
+    activeTimeframe = 'all';
+    timePills.forEach(p => p.classList.remove('active'));
+    const allPill = document.querySelector('.time-pill[data-timeframe="all"]');
+    if (allPill) allPill.classList.add('active');
+
+    updateUrlParam('date', null);
+    renderAgenda();
   }
 
   // Load minified events data with fallback to events.json
@@ -1485,6 +1776,12 @@
       areaFilter.appendChild(opt);
     });
 
+    // Populate datalist of unique event dates for native calendar highlights
+    if (eventDatesList && allEvents.length > 0) {
+      const uniqueDates = Array.from(new Set(allEvents.map(e => e.dateString))).sort();
+      eventDatesList.innerHTML = uniqueDates.map(d => `<option value="${d}"></option>`).join('');
+    }
+
     // Event Listeners with Debounce for 60fps responsive typing
     const debouncedRender = debounce(renderAgenda, 100);
     searchInput.addEventListener('input', () => {
@@ -1505,6 +1802,83 @@
 
     resetBtn.addEventListener('click', resetFilters);
     emptyResetBtn.addEventListener('click', resetFilters);
+
+    // Date Picker event listeners
+    if (datePickerPill) {
+      datePickerPill.addEventListener('click', (e) => {
+        if (e.target.closest('#date-pill-clear-btn')) {
+          e.preventDefault();
+          e.stopPropagation();
+          clearCustomDate();
+          return;
+        }
+        if (e.target === calendarDateInput) return;
+        if (calendarDateInput && 'showPicker' in HTMLInputElement.prototype) {
+          try {
+            calendarDateInput.showPicker();
+            return;
+          } catch (_) {}
+        }
+        if (calendarDateInput) {
+          calendarDateInput.focus();
+          calendarDateInput.click();
+        }
+      });
+
+      datePickerPill.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          if (e.target.closest('#date-pill-clear-btn')) return;
+          e.preventDefault();
+          if (calendarDateInput && 'showPicker' in HTMLInputElement.prototype) {
+            try {
+              calendarDateInput.showPicker();
+              return;
+            } catch (_) {}
+          }
+          if (calendarDateInput) {
+            calendarDateInput.focus();
+            calendarDateInput.click();
+          }
+        }
+      });
+    }
+
+    if (datePillClearBtn) {
+      datePillClearBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        clearCustomDate();
+      });
+    }
+
+    if (calendarDateInput) {
+      calendarDateInput.addEventListener('change', (e) => {
+        applyCustomDate(e.target.value);
+      });
+      calendarDateInput.addEventListener('input', (e) => {
+        if (e.target.value) {
+          applyCustomDate(e.target.value);
+        }
+      });
+    }
+
+    if (filterDateInput) {
+      filterDateInput.addEventListener('change', (e) => {
+        applyCustomDate(e.target.value);
+      });
+      filterDateInput.addEventListener('input', (e) => {
+        if (e.target.value) {
+          applyCustomDate(e.target.value);
+        }
+      });
+    }
+
+    if (filterDateClearBtn) {
+      filterDateClearBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        clearCustomDate();
+      });
+    }
 
     // Mobile drawer triggers
     if (filterToggleBtn) filterToggleBtn.addEventListener('click', openFilterDrawer);
@@ -1535,6 +1909,25 @@
 
     timePills.forEach(pill => {
       pill.addEventListener('click', () => {
+        if (pill.id === 'date-picker-pill') return;
+
+        if (selectedCustomDate) {
+          selectedCustomDate = '';
+          if (calendarDateInput) calendarDateInput.value = '';
+          if (filterDateInput) {
+            filterDateInput.value = '';
+            filterDateInput.classList.remove('has-value');
+          }
+          if (filterDateClearBtn) filterDateClearBtn.style.display = 'none';
+          if (datePickerPill) {
+            datePickerPill.classList.remove('active');
+            if (datePickerPillLabel) datePickerPillLabel.textContent = 'Pick Date';
+            datePickerPill.setAttribute('title', 'Filter events for a specific date');
+          }
+          if (datePillClearBtn) datePillClearBtn.style.display = 'none';
+          updateUrlParam('date', null);
+        }
+
         timePills.forEach(p => p.classList.remove('active'));
         pill.classList.add('active');
         activeTimeframe = pill.getAttribute('data-timeframe');
@@ -1542,7 +1935,14 @@
       });
     });
 
-    renderAgenda();
+    // Handle URL parameters on initial page load
+    const urlParams = new URLSearchParams(window.location.search);
+    const initialDate = urlParams.get('date') || urlParams.get('d');
+    if (initialDate && /^\d{4}-\d{2}-\d{2}$/.test(initialDate)) {
+      applyCustomDate(initialDate);
+    } else {
+      renderAgenda();
+    }
   }
 
   function openFilterDrawer() {
@@ -1571,6 +1971,7 @@
     if (selCat) count++;
     if (selOrg) count++;
     if (selArea) count++;
+    if (selectedCustomDate) count++;
 
     if (filterBadge) {
       if (count > 0) {
@@ -1590,11 +1991,15 @@
     }
 
     if (activeFilterChips) {
-      if (count === 0) {
+      if (count === 0 && !selectedCustomDate) {
         activeFilterChips.innerHTML = '';
         activeFilterChips.classList.remove('has-chips');
       } else {
         let chipsHtml = '';
+        if (selectedCustomDate) {
+          const shortDate = formatDisplayDateShort(selectedCustomDate);
+          chipsHtml += `<span class="active-chip">Date: ${escapeHtml(shortDate)} <button type="button" data-clear="date" aria-label="Clear date filter">✕</button></span>`;
+        }
         if (selCat) {
           chipsHtml += `<span class="active-chip">Category: ${escapeHtml(selCat)} <button type="button" data-clear="cat" aria-label="Clear category filter">✕</button></span>`;
         }
@@ -1610,6 +2015,7 @@
         activeFilterChips.querySelectorAll('button[data-clear]').forEach(btn => {
           btn.addEventListener('click', (e) => {
             const target = e.currentTarget.getAttribute('data-clear');
+            if (target === 'date') clearCustomDate();
             if (target === 'cat') categoryFilter.value = '';
             if (target === 'org' && orgFilter) orgFilter.value = '';
             if (target === 'area') areaFilter.value = '';
@@ -1626,9 +2032,25 @@
     categoryFilter.value = '';
     if (orgFilter) orgFilter.value = '';
     areaFilter.value = '';
+
+    selectedCustomDate = '';
+    if (calendarDateInput) calendarDateInput.value = '';
+    if (filterDateInput) {
+      filterDateInput.value = '';
+      filterDateInput.classList.remove('has-value');
+    }
+    if (filterDateClearBtn) filterDateClearBtn.style.display = 'none';
+    if (datePickerPill) {
+      datePickerPill.classList.remove('active');
+      if (datePickerPillLabel) datePickerPillLabel.textContent = 'Pick Date';
+      datePickerPill.setAttribute('title', 'Filter events for a specific date');
+    }
+    if (datePillClearBtn) datePillClearBtn.style.display = 'none';
+
     activeTimeframe = 'all';
     timePills.forEach(p => p.classList.remove('active'));
     document.querySelector('.time-pill[data-timeframe="all"]').classList.add('active');
+    updateUrlParam('date', null);
     renderAgenda();
     closeFilterDrawer();
   }
@@ -1840,8 +2262,10 @@
 
       const dateStr = ev.dateString;
 
-      // Default 'all' hides past events, showing all upcoming from today onward
-      if (activeTimeframe === 'all') {
+      // Filter based on active timeframe or custom picked date
+      if (activeTimeframe === 'custom-date') {
+        if (dateStr !== selectedCustomDate) return false;
+      } else if (activeTimeframe === 'all') {
         if (dateStr < todayStr) return false;
       } else if (activeTimeframe === 'today') {
         if (dateStr !== todayStr) return false;
@@ -1869,11 +2293,40 @@
       return true;
     });
 
-    visibleCountEl.textContent = filtered.length;
+    if (statusCountEl) {
+      if (selectedCustomDate) {
+        const fullDateText = formatDisplayDateFull(selectedCustomDate);
+        statusCountEl.innerHTML = `Showing <strong id="visible-count">${filtered.length}</strong> event${filtered.length === 1 ? '' : 's'} on <strong>${escapeHtml(fullDateText)}</strong>`;
+      } else if (activeTimeframe === 'past') {
+        statusCountEl.innerHTML = `Showing <strong id="visible-count">${filtered.length}</strong> past event${filtered.length === 1 ? '' : 's'}`;
+      } else {
+        const { todayStr } = getCalendarDateBounds();
+        const totalUpcoming = allEvents.filter(e => e.dateString >= todayStr).length;
+        statusCountEl.innerHTML = `Showing <strong id="visible-count">${filtered.length}</strong> of <strong id="total-count">${totalUpcoming}</strong> upcoming events`;
+      }
+    } else {
+      visibleCountEl.textContent = filtered.length;
+    }
     updateMobileFilterStatus(selCat, selOrg, selArea, filtered.length);
 
     if (filtered.length === 0) {
       agendaList.innerHTML = '';
+      if (selectedCustomDate) {
+        const fullDateText = formatDisplayDateFull(selectedCustomDate);
+        const iconEl = emptyState.querySelector('.icon');
+        if (iconEl) iconEl.textContent = '📅';
+        const h3El = emptyState.querySelector('h3');
+        if (h3El) h3El.textContent = 'No events scheduled on this date';
+        const pEl = emptyState.querySelector('p');
+        if (pEl) pEl.innerHTML = `There are no community events listed for <strong>${escapeHtml(fullDateText)}</strong> matching your search or filters. Try picking another date or clearing your filters.`;
+      } else {
+        const iconEl = emptyState.querySelector('.icon');
+        if (iconEl) iconEl.textContent = '🔍';
+        const h3El = emptyState.querySelector('h3');
+        if (h3El) h3El.textContent = 'No events found';
+        const pEl = emptyState.querySelector('p');
+        if (pEl) pEl.textContent = 'No community events match your current search and filter selections. Try clearing your filters or broadening your search.';
+      }
       emptyState.style.display = 'block';
       return;
     }
