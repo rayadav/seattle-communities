@@ -3,70 +3,273 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Seattle Community Events Calendar | Consolidated Schedule</title>
-<meta name="description" content="Explore a consolidated chronological calendar of upcoming group runs, trail work parties, kayak paddles, maker sessions, book clubs, and enthusiast meetups across Greater Seattle.">
+<meta name="color-scheme" content="light dark">
+<title>Puget Sound Field Almanac — Seattle Community Events Calendar</title>
+<meta name="description" content="An editorial field almanac and chronological gazette of grassroots community gatherings across Greater Seattle: mushroom forays, salmon &amp; watershed walks, tool library repair cafés, citizen science, standup comedy, improv theater, and outdoor clubs.">
 
 <!-- OpenGraph / Social Media Meta Tags -->
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://rayadav.github.io/seattle-communities/">
-<meta property="og:title" content="Seattle Community Events Calendar">
-<meta property="og:description" content="Consolidated chronological agenda of upcoming events, runs, paddles, work parties, and meetups across Greater Seattle.">
+<meta property="og:url" content="https://rayadav.github.io/seattle-communities/index.html">
+<meta property="og:title" content="Puget Sound Field Almanac — Seattle Community Events Calendar">
+<meta property="og:description" content="A curated chronological gazette of grassroots community gatherings, mycology forays, watershed walks, maker workshops, citizen science, and indie comedy across Greater Seattle.">
 <meta property="og:image" content="./hero.jpeg">
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Seattle Community Events Calendar">
-<meta name="twitter:description" content="Consolidated chronological agenda of upcoming events, runs, paddles, work parties, and meetups across Greater Seattle.">
+<meta name="twitter:title" content="Puget Sound Field Almanac — Seattle Community Events Calendar">
+<meta name="twitter:description" content="Discover upcoming grassroots community events, mushroom forays, birding walks, maker repair cafés, and comedy showcases across Greater Seattle.">
 <meta name="twitter:image" content="./hero.webp">
 
 <!-- SVG Favicon -->
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📅</text></svg>">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌲</text></svg>">
 
 <!-- Resource Prioritization: Preload LCP hero image & JSON data -->
 <link rel="preload" href="./hero.webp" as="image" type="image/webp" fetchpriority="high" media="(min-width: 769px)">
 <link rel="preload" href="./hero-mobile.webp" as="image" type="image/webp" fetchpriority="high" media="(max-width: 768px)">
 <link rel="preload" href="./events.min.json" as="fetch" crossorigin="anonymous">
 
+<!-- Google Fonts: Fraunces (Editorial Display Serif), Geist (Humanist Sans), Geist Mono (Tabular Telemetry) -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..800;1,9..144,400..700&family=Geist:wght@400..700&family=Geist+Mono:wght@400..600&display=swap" rel="stylesheet">
+
+<script>
+  // Apply saved or system theme immediately to prevent flash
+  (function() {
+    try {
+      var saved = localStorage.getItem('sc-theme');
+      if (saved === 'dark' || saved === 'light') {
+        document.documentElement.setAttribute('data-theme', saved);
+      }
+    } catch (_) {}
+  })();
+</script>
 
 <style>
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  *, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
 
+  /* ==========================================================================
+     1. ADAPTIVE DESIGN TOKENS — "PARCHMENT & OLD-GROWTH CEDAR" (LIGHT)
+        & "PUGET SOUND NOCTURNE" (DARK)
+     ========================================================================== */
   :root {
-    --ink:         #091931;
-    --ink-soft:    #132a4a;
-    --violet:      #6347f5;
-    --violet-deep: #4c2fe0;
-    --violet-light:#f3f1ff;
-    --violet-glow: rgba(99, 71, 245, 0.22);
-    --teal:        #0d9488;
-    --teal-deep:   #0f766e;
-    --teal-light:  #f0fdfa;
-    --emerald:     #10b981;
-    --sky:         #38bdf8;
-    --amber:       #f59e0b;
-    --rose:        #f43f5e;
-    --bg:          #f1f5f9;
-    --surface:     #ffffff;
-    --surface-2:   #f8fafc;
-    --surface-glass: rgba(255, 255, 255, 0.92);
-    --line:        #e2e8f0;
-    --line-soft:   #eef2f6;
-    --text:        #0f172a;
-    --text-soft:   #475569;
-    --text-faint:  #64748b;
+    color-scheme: light dark;
 
-    --shadow-sm: 0 1px 3px rgba(9, 25, 49, 0.05), 0 1px 2px rgba(9, 25, 49, 0.03);
-    --shadow-md: 0 10px 30px -5px rgba(9, 25, 49, 0.08), 0 4px 12px -2px rgba(9, 25, 49, 0.04);
-    --shadow-lg: 0 22px 50px -12px rgba(9, 25, 49, 0.16), 0 8px 20px -6px rgba(9, 25, 49, 0.06);
-    --radius-sm: 10px;
-    --radius:    16px;
-    --radius-lg: 22px;
+    /* Surfaces & Archival Paper Palette */
+    --bg:              #f4efe4;
+    --bg-subtle:       #eae2d2;
+    --surface:         #fcfaf5;
+    --surface-2:       #f2ece0;
+    --surface-3:       #e7dfd0;
+    --surface-glass:   rgba(252, 250, 245, 0.90);
+    --surface-raised:  #ffffff;
 
-    --font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    --font-display: 'Sora', var(--font);
+    /* Forest Ink & Typography Colors */
+    --ink:             #121e17;
+    --ink-secondary:   #3e4e44;
+    --ink-muted:       #637368;
+    --ink-faint:       #849389;
+
+    /* Hairline Rules & Borders */
+    --rule:            #d3cab8;
+    --rule-strong:     #b5a992;
+    --rule-soft:       #e4ddd0;
+
+    /* Primary Botanical & Regional Accents */
+    --forest:          #164e35;
+    --forest-deep:     #0e3624;
+    --forest-tint:     #e3efe9;
+    --amber:           #b84a14;
+    --amber-deep:      #93380b;
+    --amber-tint:      #fbece3;
+    --pelagic:         #0e5a8a;
+    --pelagic-tint:    #e3eff8;
+    --terracotta:      #ab2c24;
+    --terracotta-tint: #fae8e6;
+
+    /* 7 Priority Pillar Tokens (Light Mode) */
+    --pillar-fungi-fg:      #9e3c0e;
+    --pillar-fungi-bg:      #fceddf;
+    --pillar-fungi-border:  #e8be9b;
+
+    --pillar-watershed-fg:  #145337;
+    --pillar-watershed-bg:  #e2f2ea;
+    --pillar-watershed-border: #9fd0b6;
+
+    --pillar-maker-fg:      #854d0e;
+    --pillar-maker-bg:      #fef3c7;
+    --pillar-maker-border:  #e5c578;
+
+    --pillar-science-fg:    #1e40af;
+    --pillar-science-bg:    #e6effe;
+    --pillar-science-border:#a8c5f8;
+
+    --pillar-comedy-fg:     #9f1239;
+    --pillar-comedy-bg:     #fce7f3;
+    --pillar-comedy-border: #f2aecb;
+
+    --pillar-outdoors-fg:   #0f5e59;
+    --pillar-outdoors-bg:   #dff5f2;
+    --pillar-outdoors-border:#96d8d0;
+
+    --pillar-arts-fg:       #5b21b6;
+    --pillar-arts-bg:       #ede9fe;
+    --pillar-arts-border:   #c4b5fd;
+
+    /* Shadows & Radii */
+    --shadow-xs:       0 1px 2px rgba(18, 30, 23, 0.05);
+    --shadow-sm:       0 3px 10px -2px rgba(18, 30, 23, 0.07), 0 1px 3px rgba(18, 30, 23, 0.05);
+    --shadow-md:       0 12px 28px -6px rgba(18, 30, 23, 0.10), 0 4px 10px -2px rgba(18, 30, 23, 0.05);
+    --shadow-lg:       0 24px 54px -12px rgba(18, 30, 23, 0.16), 0 8px 20px -6px rgba(18, 30, 23, 0.08);
+
+    --radius-xs:       6px;
+    --radius-sm:       10px;
+    --radius:          14px;
+    --radius-lg:       20px;
+    --radius-xl:       26px;
+
+    /* Typography Stacks */
+    --font-sans:       'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-display:    'Fraunces', Georgia, 'Times New Roman', serif;
+    --font-mono:       'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+    /* Motion */
+    --ease-out-expo:   cubic-bezier(0.16, 1, 0.3, 1);
+    --ease-standard:   cubic-bezier(0.2, 0, 0, 1);
+  }
+
+  /* Dark Mode Tokens — Automatic via OS preference unless overridden */
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg:              #0b130f;
+      --bg-subtle:       #080e0b;
+      --surface:         #121e18;
+      --surface-2:       #182720;
+      --surface-3:       #203329;
+      --surface-glass:   rgba(18, 30, 24, 0.90);
+      --surface-raised:  #1b2c23;
+
+      --ink:             #eee8dc;
+      --ink-secondary:   #a9b8ae;
+      --ink-muted:       #7c8e82;
+      --ink-faint:       #58695e;
+
+      --rule:            #24352c;
+      --rule-strong:     #364d40;
+      --rule-soft:       #1b2922;
+
+      --forest:          #34d399;
+      --forest-deep:     #10b981;
+      --forest-tint:     rgba(52, 211, 153, 0.14);
+      --amber:           #fb923c;
+      --amber-deep:      #f97316;
+      --amber-tint:      rgba(251, 146, 60, 0.15);
+      --pelagic:         #38bdf8;
+      --pelagic-tint:    rgba(56, 189, 248, 0.14);
+      --terracotta:      #fb7185;
+      --terracotta-tint: rgba(251, 113, 133, 0.15);
+
+      --pillar-fungi-fg:      #fdba74;
+      --pillar-fungi-bg:      rgba(194, 65, 12, 0.22);
+      --pillar-fungi-border:  rgba(251, 146, 60, 0.38);
+
+      --pillar-watershed-fg:  #6ee7b7;
+      --pillar-watershed-bg:  rgba(5, 150, 105, 0.22);
+      --pillar-watershed-border: rgba(52, 211, 153, 0.38);
+
+      --pillar-maker-fg:      #fde047;
+      --pillar-maker-bg:      rgba(161, 98, 7, 0.24);
+      --pillar-maker-border:  rgba(250, 204, 21, 0.36);
+
+      --pillar-science-fg:    #93c5fd;
+      --pillar-science-bg:    rgba(37, 99, 235, 0.22);
+      --pillar-science-border:rgba(96, 165, 250, 0.38);
+
+      --pillar-comedy-fg:     #fda4af;
+      --pillar-comedy-bg:     rgba(190, 18, 60, 0.24);
+      --pillar-comedy-border: rgba(251, 113, 133, 0.38);
+
+      --pillar-outdoors-fg:   #5eead4;
+      --pillar-outdoors-bg:   rgba(13, 148, 136, 0.22);
+      --pillar-outdoors-border:rgba(45, 212, 191, 0.38);
+
+      --pillar-arts-fg:       #d8b4fe;
+      --pillar-arts-bg:       rgba(109, 40, 217, 0.24);
+      --pillar-arts-border:   rgba(192, 132, 252, 0.38);
+
+      --shadow-xs:       0 1px 2px rgba(0, 0, 0, 0.35);
+      --shadow-sm:       0 4px 12px rgba(0, 0, 0, 0.40);
+      --shadow-md:       0 14px 34px rgba(0, 0, 0, 0.50);
+      --shadow-lg:       0 26px 60px rgba(0, 0, 0, 0.65);
+    }
+  }
+
+  /* Explicit Dark Mode Override via Theme Toggle */
+  :root[data-theme="dark"] {
+    --bg:              #0b130f;
+    --bg-subtle:       #080e0b;
+    --surface:         #121e18;
+    --surface-2:       #182720;
+    --surface-3:       #203329;
+    --surface-glass:   rgba(18, 30, 24, 0.90);
+    --surface-raised:  #1b2c23;
+
+    --ink:             #eee8dc;
+    --ink-secondary:   #a9b8ae;
+    --ink-muted:       #7c8e82;
+    --ink-faint:       #58695e;
+
+    --rule:            #24352c;
+    --rule-strong:     #364d40;
+    --rule-soft:       #1b2922;
+
+    --forest:          #34d399;
+    --forest-deep:     #10b981;
+    --forest-tint:     rgba(52, 211, 153, 0.14);
+    --amber:           #fb923c;
+    --amber-deep:      #f97316;
+    --amber-tint:      rgba(251, 146, 60, 0.15);
+    --pelagic:         #38bdf8;
+    --pelagic-tint:    rgba(56, 189, 248, 0.14);
+    --terracotta:      #fb7185;
+    --terracotta-tint: rgba(251, 113, 133, 0.15);
+
+    --pillar-fungi-fg:      #fdba74;
+    --pillar-fungi-bg:      rgba(194, 65, 12, 0.22);
+    --pillar-fungi-border:  rgba(251, 146, 60, 0.38);
+
+    --pillar-watershed-fg:  #6ee7b7;
+    --pillar-watershed-bg:  rgba(5, 150, 105, 0.22);
+    --pillar-watershed-border: rgba(52, 211, 153, 0.38);
+
+    --pillar-maker-fg:      #fde047;
+    --pillar-maker-bg:      rgba(161, 98, 7, 0.24);
+    --pillar-maker-border:  rgba(250, 204, 21, 0.36);
+
+    --pillar-science-fg:    #93c5fd;
+    --pillar-science-bg:    rgba(37, 99, 235, 0.22);
+    --pillar-science-border:rgba(96, 165, 250, 0.38);
+
+    --pillar-comedy-fg:     #fda4af;
+    --pillar-comedy-bg:     rgba(190, 18, 60, 0.24);
+    --pillar-comedy-border: rgba(251, 113, 133, 0.38);
+
+    --pillar-outdoors-fg:   #5eead4;
+    --pillar-outdoors-bg:   rgba(13, 148, 136, 0.22);
+    --pillar-outdoors-border:rgba(45, 212, 191, 0.38);
+
+    --pillar-arts-fg:       #d8b4fe;
+    --pillar-arts-bg:       rgba(109, 40, 217, 0.24);
+    --pillar-arts-border:   rgba(192, 132, 252, 0.38);
+
+    --shadow-xs:       0 1px 2px rgba(0, 0, 0, 0.35);
+    --shadow-sm:       0 4px 12px rgba(0, 0, 0, 0.40);
+    --shadow-md:       0 14px 34px rgba(0, 0, 0, 0.50);
+    --shadow-lg:       0 26px 60px rgba(0, 0, 0, 0.65);
   }
 
   html {
@@ -74,12 +277,13 @@
   }
 
   body {
-    font-family: var(--font);
+    font-family: var(--font-sans);
+    font-size-adjust: from-font;
     background-color: var(--bg);
     background-image:
-      radial-gradient(circle at 12% 0%, rgba(99, 71, 245, 0.05), transparent 38%),
-      radial-gradient(circle at 88% 8%, rgba(20, 184, 166, 0.05), transparent 38%);
-    color: var(--text);
+      radial-gradient(ellipse 80% 50% at 15% 0%, rgba(22, 78, 53, 0.06), transparent 60%),
+      radial-gradient(ellipse 70% 45% at 88% 5%, rgba(184, 74, 20, 0.05), transparent 55%);
+    color: var(--ink);
     line-height: 1.55;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
@@ -88,1010 +292,1041 @@
     flex-direction: column;
   }
 
-  /* Modern Web Guidance: text-wrap balance for headings, pretty for body copy */
+  /* Modern Web Guidance: Scoped text-wrap rules & visually stable font fallbacks */
   h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    font-size-adjust: from-font;
     text-wrap: balance;
   }
-  p, .event-desc, .subtitle {
+
+  p, .event-desc, .hero-lead {
     text-wrap: pretty;
   }
 
+  /* Skip link for keyboard accessibility */
   .skip-link {
     position: absolute;
-    top: -50px;
-    left: 20px;
-    background: var(--violet);
-    color: #fff;
+    left: 16px;
+    top: -64px;
+    z-index: 200;
     padding: 10px 18px;
     border-radius: var(--radius-sm);
-    z-index: 100;
-    text-decoration: none;
+    background: var(--forest);
+    color: #fff;
     font-weight: 600;
     font-size: 0.875rem;
-    transition: top .2s ease;
+    text-decoration: none;
+    transition: top 0.2s var(--ease-standard);
     box-shadow: var(--shadow-md);
   }
-  .skip-link:focus { top: 16px; outline: 3px solid #fff; }
-
-  /* ================= NAVIGATION BAR ================= */
-  .site-nav {
-    position: relative;
-    z-index: 30;
-    background: rgba(7, 19, 36, 0.86);
-    backdrop-filter: blur(16px) saturate(180%);
-    -webkit-backdrop-filter: blur(16px) saturate(180%);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  .skip-link:focus {
+    top: 12px;
+    outline: 3px solid var(--amber);
   }
-  .site-nav-inner {
-    max-width: 1280px;
+
+  /* ==========================================================================
+     2. ALMANAC MASTHEAD & GAZETTE NAVIGATION
+     ========================================================================== */
+  .masthead {
+    position: relative;
+    z-index: 45;
+    background: var(--surface);
+    border-bottom: 2px solid var(--ink);
+  }
+
+  /* Top Telemetry & Edition Ribbon */
+  .masthead-meta-bar {
+    border-bottom: 1px solid var(--rule);
+    background: var(--surface-2);
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    color: var(--ink-secondary);
+    letter-spacing: 0.04em;
+  }
+
+  .masthead-meta-inner {
+    max-width: 1360px;
     margin: 0 auto;
-    padding: 13px 28px;
+    padding: 7px 28px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 16px;
+    flex-wrap: wrap;
   }
-  .nav-brand {
+
+  .meta-coords {
     display: inline-flex;
     align-items: center;
-    gap: 11px;
-    text-decoration: none;
-    color: #ffffff;
-    font-family: var(--font-display);
-    font-weight: 700;
-    font-size: 1.125rem;
-    letter-spacing: -0.02em;
-    transition: opacity .15s ease;
+    gap: 10px;
+    text-transform: uppercase;
   }
-  .nav-brand:hover { opacity: 0.92; }
-  .nav-emoji {
+
+  .meta-pulse-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--forest);
+    box-shadow: 0 0 0 3px var(--forest-tint);
+    display: inline-block;
+  }
+
+  .meta-divider {
+    color: var(--rule-strong);
+  }
+
+  .meta-right {
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .theme-switch-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 3px 10px;
+    border-radius: 999px;
+    border: 1px solid var(--rule-strong);
+    background: var(--surface);
+    color: var(--ink);
+    font-family: var(--font-mono);
+    font-size: 0.70rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
+  }
+  .theme-switch-btn:hover {
+    background: var(--surface-3);
+    border-color: var(--ink-secondary);
+  }
+
+  /* Main Navigation Bar */
+  .site-nav-inner {
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 16px 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .brand-lockup {
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    text-decoration: none;
+    color: var(--ink);
+  }
+
+  .brand-seal {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background: var(--ink);
+    color: var(--bg);
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 34px;
-    height: 34px;
-    border-radius: 10px;
-    background: linear-gradient(135deg, rgba(16, 185, 129, 0.25), rgba(99, 71, 245, 0.35));
-    border: 1px solid rgba(255, 255, 255, 0.16);
-    font-size: 1.15rem;
-    line-height: 1;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    font-size: 1.35rem;
+    border: 1.5px solid var(--rule-strong);
+    box-shadow: var(--shadow-xs);
+    flex-shrink: 0;
   }
-  .nav-links {
+
+  .brand-text-col {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .brand-kicker {
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--amber);
+    font-weight: 600;
+  }
+
+  .brand-title {
+    font-family: var(--font-display);
+    font-size: clamp(1.25rem, 1.05rem + 0.6vw, 1.55rem);
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    line-height: 1.1;
+    color: var(--ink);
+  }
+
+  .nav-actions-group {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .nav-tabs {
     display: inline-flex;
     align-items: center;
-    gap: 6px;
-    background: rgba(255, 255, 255, 0.06);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: var(--surface-2);
+    border: 1px solid var(--rule);
     padding: 4px;
     border-radius: 999px;
+    gap: 4px;
   }
-  .nav-link {
+
+  .nav-tab {
     display: inline-flex;
     align-items: center;
-    gap: 6px;
-    padding: 7px 16px;
+    gap: 7px;
+    padding: 8px 16px;
     border-radius: 999px;
     font-size: 0.84375rem;
     font-weight: 600;
-    color: #cbd5e1;
+    color: var(--ink-secondary);
     text-decoration: none;
-    transition: background-color .2s ease, color .2s ease, box-shadow .2s ease;
-    border: 1px solid transparent;
+    transition: background-color 0.18s ease, color 0.18s ease, box-shadow 0.18s ease;
   }
-  .nav-link:hover {
-    color: #ffffff;
-    background: rgba(255, 255, 255, 0.08);
+  .nav-tab:hover {
+    color: var(--ink);
+    background: var(--surface-3);
   }
-  .nav-link.active {
-    color: #ffffff;
-    background: linear-gradient(135deg, var(--violet) 0%, #4f46e5 100%);
-    border-color: rgba(196, 181, 253, 0.4);
-    box-shadow: 0 2px 12px rgba(99, 71, 245, 0.45);
+  .nav-tab.active {
+    background: var(--ink);
+    color: var(--bg);
+    box-shadow: var(--shadow-xs);
   }
 
-  /* ================= HERO HEADER ================= */
-  .hero {
+  .nav-quick-date-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 8px 15px;
+    border-radius: 999px;
+    border: 1.5px solid var(--amber);
+    background: var(--amber-tint);
+    color: var(--amber);
+    font-family: var(--font-sans);
+    font-size: 0.8125rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.18s ease, color 0.18s ease, transform 0.15s ease;
+  }
+  .nav-quick-date-btn:hover {
+    background: var(--amber);
+    color: #fff;
+    transform: translateY(-1px);
+  }
+
+  /* ==========================================================================
+     3. ASYMMETRIC EDITORIAL HERO & TOPOGRAPHIC FIELD PLATE
+     ========================================================================== */
+  .hero-almanac {
     position: relative;
-    overflow: hidden;
+    border-bottom: 1px solid var(--rule);
     background:
-      linear-gradient(180deg, rgba(7, 19, 36, 0.78) 0%, rgba(9, 25, 49, 0.92) 74%, var(--bg) 100%),
-      url('./hero.webp') center/cover no-repeat;
-    background-image:
-      linear-gradient(180deg, rgba(7, 19, 36, 0.78) 0%, rgba(9, 25, 49, 0.92) 74%, var(--bg) 100%),
-      image-set(
-        url('./hero.webp') type('image/webp') 1x,
-        url('./hero.jpeg') type('image/jpeg') 1x
-      );
-    border-bottom: 1px solid rgba(255,255,255,.08);
+      radial-gradient(circle at 8% 15%, var(--forest-tint), transparent 45%),
+      radial-gradient(circle at 90% 80%, var(--amber-tint), transparent 45%),
+      var(--bg);
+    overflow: hidden;
   }
-  @media (max-width: 768px) {
-    .hero {
-      background-image:
-        linear-gradient(180deg, rgba(7, 19, 36, 0.80) 0%, rgba(9, 25, 49, 0.94) 76%, var(--bg) 100%),
-        url('./hero-mobile.webp');
-    }
-  }
-  .hero-glow {
+
+  /* Subtle Topographic Grid Overlay */
+  .hero-almanac::before {
+    content: "";
     position: absolute;
     inset: 0;
     pointer-events: none;
-    background:
-      radial-gradient(650px circle at 18% 22%, rgba(99, 71, 245, 0.28), transparent 60%),
-      radial-gradient(550px circle at 82% 28%, rgba(20, 184, 166, 0.22), transparent 60%);
-    opacity: .95;
+    background-image:
+      linear-gradient(to right, var(--rule-soft) 1px, transparent 1px),
+      linear-gradient(to bottom, var(--rule-soft) 1px, transparent 1px);
+    background-size: 64px 64px;
+    opacity: 0.45;
   }
-  .hero-inner {
+
+  .hero-almanac-inner {
     position: relative;
     z-index: 2;
-    max-width: 1280px;
+    max-width: 1360px;
     margin: 0 auto;
-    padding: 52px 28px 92px;
+    padding: 40px 28px 34px;
   }
 
-  .pill {
-    display: inline-flex;
-    align-items: center;
-    gap: 9px;
-    font-size: 0.8125rem;
-    font-weight: 600;
-    letter-spacing: 0.015em;
-    color: #e0e7ff;
-    background: rgba(99, 71, 245, 0.28);
-    border: 1px solid rgba(165, 180, 252, 0.42);
-    padding: 7px 16px;
-    border-radius: 999px;
-    margin-bottom: 20px;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
-    text-wrap: nowrap;
-  }
-  .pill .count {
-    color: #fff;
-    font-weight: 800;
-    font-variant-numeric: tabular-nums;
-  }
-  .pill-dot {
-    width: 8px; height: 8px; border-radius: 50%;
-    background: #34d399;
-    box-shadow: 0 0 0 3px rgba(52,211,153,.32);
-  }
-
-  .hero h1 {
-    font-family: var(--font-display);
-    font-size: clamp(2.15rem, 1.35rem + 3.2vw, 3.5rem);
-    font-weight: 800;
-    letter-spacing: -0.03em;
-    line-height: 1.08;
-    margin-bottom: 16px;
-    max-width: 22ch;
-    color: #ffffff;
-    text-shadow: 0 4px 18px rgba(0,0,0,.45);
-  }
-  .hero h1 .accent {
-    background: linear-gradient(95deg, #a78bfa 0%, #38bdf8 52%, #34d399 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-  }
-  .hero .subtitle {
-    font-size: clamp(1rem, 0.92rem + 0.35vw, 1.15rem);
-    font-weight: 400;
-    color: #dbeafe;
-    max-width: 64ch;
-    line-height: 1.6;
-    text-shadow: 0 1px 6px rgba(0,0,0,.5);
-    opacity: 0.94;
-  }
-
-  .hero-stats {
+  .hero-editorial-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 195px));
-    gap: 14px;
-    margin-top: 32px;
-    max-width: 840px;
+    grid-template-columns: 1.25fr 0.95fr;
+    gap: 36px;
+    align-items: stretch;
   }
-  .hero-stat {
+
+  /* Left Column: Gazette Copy & Telemetry */
+  .hero-copy-col {
     display: flex;
     flex-direction: column;
-    padding: 14px 18px;
-    border-radius: 14px;
-    background: rgba(15, 23, 42, 0.52);
-    border: 1px solid rgba(255, 255, 255, 0.14);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+    justify-content: space-between;
+    gap: 22px;
   }
-  .hero-stat .num {
+
+  .edition-badge-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .edition-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 5px 13px;
+    border-radius: 999px;
+    background: var(--surface);
+    border: 1px solid var(--rule-strong);
+    font-family: var(--font-mono);
+    font-size: 0.74rem;
+    font-weight: 600;
+    color: var(--ink);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    box-shadow: var(--shadow-xs);
+  }
+  .edition-pill .live-count {
+    color: var(--amber);
+    font-weight: 700;
+  }
+
+  .season-tag {
+    font-family: var(--font-mono);
+    font-size: 0.74rem;
+    color: var(--forest);
+    background: var(--forest-tint);
+    border: 1px solid var(--pillar-watershed-border);
+    padding: 5px 12px;
+    border-radius: 999px;
+    font-weight: 600;
+  }
+
+  .hero-headline {
     font-family: var(--font-display);
-    font-size: 1.65rem;
-    font-weight: 800;
-    color: #fff;
-    letter-spacing: -0.025em;
+    font-size: clamp(2.25rem, 1.5rem + 2.9vw, 3.85rem);
+    font-weight: 600;
+    line-height: 1.04;
+    letter-spacing: -0.03em;
+    color: var(--ink);
+  }
+
+  .hero-headline em {
+    font-style: italic;
+    font-weight: 400;
+    color: var(--forest);
+    text-decoration: underline;
+    text-decoration-color: var(--pillar-watershed-border);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 6px;
+  }
+
+  .hero-lead {
+    font-size: clamp(1rem, 0.94rem + 0.28vw, 1.14rem);
+    color: var(--ink-secondary);
+    line-height: 1.62;
+    max-width: 62ch;
+  }
+
+  /* Archival Telemetry Ledger Strip */
+  .telemetry-ledger {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background: var(--surface);
+    border: 1px solid var(--rule-strong);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+  }
+
+  .telemetry-cell {
+    padding: 14px 16px;
+    border-right: 1px solid var(--rule);
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .telemetry-cell:last-child {
+    border-right: none;
+  }
+
+  .telemetry-code {
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--ink-muted);
+  }
+
+  .telemetry-val {
+    font-family: var(--font-display);
+    font-size: clamp(1.35rem, 1.1rem + 0.8vw, 1.85rem);
+    font-weight: 700;
+    color: var(--ink);
     line-height: 1.15;
     font-variant-numeric: tabular-nums;
   }
-  .hero-stat .lbl {
-    font-size: 0.72rem;
-    color: #cbd5e1;
+
+  .telemetry-lbl {
+    font-size: 0.76rem;
     font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    margin-top: 4px;
+    color: var(--ink-secondary);
   }
 
-  /* ================= FILTER SECTION ================= */
+  /* Right Column: Framed Archival Plate & 7-Day Pulse */
+  .hero-plate-col {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .field-plate-card {
+    position: relative;
+    flex: 1;
+    background: var(--surface);
+    border: 1.5px solid var(--ink);
+    border-radius: var(--radius-lg);
+    padding: 12px;
+    box-shadow: var(--shadow-md);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .field-plate-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    color: var(--ink-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    padding: 0 4px;
+  }
+
+  .field-plate-media {
+    position: relative;
+    flex: 1;
+    min-height: 210px;
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+    border: 1px solid var(--rule);
+    background:
+      linear-gradient(180deg, rgba(11, 19, 15, 0.15) 0%, rgba(11, 19, 15, 0.78) 100%),
+      url('./hero.webp') center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 18px;
+    color: #fdfbf7;
+  }
+  @media (max-width: 768px) {
+    .field-plate-media {
+      background-image:
+        linear-gradient(180deg, rgba(11, 19, 15, 0.18) 0%, rgba(11, 19, 15, 0.82) 100%),
+        url('./hero-mobile.webp');
+    }
+  }
+
+  .plate-topo-svg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    opacity: 0.28;
+  }
+
+  .plate-caption-box {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 12px;
+  }
+
+  .plate-caption-title {
+    font-family: var(--font-display);
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #ffffff;
+    line-height: 1.2;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+  }
+
+  .plate-caption-sub {
+    font-family: var(--font-mono);
+    font-size: 0.70rem;
+    color: rgba(255, 255, 255, 0.85);
+    margin-top: 3px;
+  }
+
+  /* Interactive Next-7-Days Horizon Strip inside Field Plate */
+  .week-horizon-box {
+    background: var(--surface-2);
+    border: 1px solid var(--rule);
+    border-radius: var(--radius-sm);
+    padding: 10px 12px;
+  }
+
+  .week-horizon-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--ink-secondary);
+  }
+
+  .week-horizon-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 6px;
+  }
+
+  .horizon-day-btn {
+    appearance: none;
+    border: 1px solid var(--rule);
+    background: var(--surface);
+    border-radius: 8px;
+    padding: 6px 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    cursor: pointer;
+    color: var(--ink);
+    transition: transform 0.15s ease, border-color 0.15s ease, background-color 0.15s ease;
+  }
+  .horizon-day-btn:hover {
+    border-color: var(--forest);
+    transform: translateY(-1px);
+  }
+  .horizon-day-btn.is-active {
+    background: var(--forest);
+    border-color: var(--forest);
+    color: #ffffff;
+  }
+  .horizon-day-dow {
+    font-family: var(--font-mono);
+    font-size: 0.62rem;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+  }
+  .horizon-day-btn.is-active .horizon-day-dow {
+    color: rgba(255, 255, 255, 0.85);
+  }
+  .horizon-day-num {
+    font-family: var(--font-display);
+    font-size: 0.95rem;
+    font-weight: 700;
+    line-height: 1.1;
+  }
+  .horizon-day-cnt {
+    font-family: var(--font-mono);
+    font-size: 0.62rem;
+    font-weight: 600;
+    padding: 1px 5px;
+    border-radius: 999px;
+    background: var(--surface-2);
+    color: var(--forest);
+  }
+  .horizon-day-btn.is-active .horizon-day-cnt {
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+  }
+
+  /* ==========================================================================
+     4. INTERACTIVE PRIORITY PILLARS FIELD SHOWCASE
+     ========================================================================== */
+  .pillars-showcase {
+    margin-top: 28px;
+    padding-top: 22px;
+    border-top: 1px solid var(--rule);
+  }
+
+  .pillars-header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 12px;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .pillars-kicker {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--ink-secondary);
+    font-weight: 600;
+  }
+
+  .pillars-hint {
+    font-size: 0.78rem;
+    color: var(--ink-muted);
+  }
+
+  .pillars-strip {
+    display: grid;
+    grid-template-columns: repeat(8, minmax(135px, 1fr));
+    gap: 10px;
+    overflow-x: auto;
+    padding-bottom: 4px;
+    scrollbar-width: thin;
+  }
+
+  .pillar-card-btn {
+    appearance: none;
+    text-align: left;
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: var(--radius-sm);
+    padding: 11px 12px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 8px;
+    color: var(--ink);
+    transition: transform 0.16s var(--ease-standard), border-color 0.16s ease, box-shadow 0.16s ease, background-color 0.16s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  .pillar-card-btn::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: var(--p-color, var(--forest));
+    opacity: 0.75;
+  }
+  .pillar-card-btn:hover {
+    transform: translateY(-2px);
+    border-color: var(--rule-strong);
+    box-shadow: var(--shadow-sm);
+  }
+  .pillar-card-btn.active {
+    background: var(--ink);
+    color: var(--bg);
+    border-color: var(--ink);
+    box-shadow: var(--shadow-md);
+  }
+  .pillar-card-btn.active::before {
+    opacity: 1;
+    background: var(--amber);
+  }
+
+  .pillar-card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .pillar-icon {
+    font-size: 1.15rem;
+    line-height: 1;
+  }
+
+  .pillar-count-badge {
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    font-weight: 600;
+    padding: 2px 7px;
+    border-radius: 999px;
+    background: var(--surface-2);
+    color: var(--ink-secondary);
+    font-variant-numeric: tabular-nums;
+  }
+  .pillar-card-btn.active .pillar-count-badge {
+    background: rgba(255, 255, 255, 0.16);
+    color: var(--bg);
+  }
+
+  .pillar-name {
+    font-family: var(--font-display);
+    font-size: 0.86rem;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+  }
+
+  .pillar-sub {
+    font-size: 0.68rem;
+    color: var(--ink-muted);
+    line-height: 1.25;
+  }
+  .pillar-card-btn.active .pillar-sub {
+    color: rgba(255, 255, 255, 0.75);
+  }
+
+  /* ==========================================================================
+     5. STICKY COMMAND & FILTER BAR
+     ========================================================================== */
   .filter-wrap {
     position: sticky;
-    z-index: 40;
     top: 0;
-    background: linear-gradient(180deg, rgba(241, 245, 249, 0.92) 78%, rgba(241, 245, 249, 0));
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    padding: 14px 28px 18px;
-    margin-top: -44px;
+    z-index: 40;
+    padding: 12px 28px 10px;
+    background: linear-gradient(180deg, var(--bg) 75%, transparent 100%);
+    pointer-events: none;
   }
+  .filter-wrap > * {
+    pointer-events: auto;
+  }
+
   .filter-inner {
-    max-width: 1280px;
+    max-width: 1360px;
     margin: 0 auto;
     background: var(--surface-glass);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
-    border: 1px solid rgba(203, 213, 225, 0.85);
+    border: 1.5px solid var(--rule-strong);
     border-radius: var(--radius-lg);
-    padding: 18px 22px;
-    box-shadow: var(--shadow-lg);
+    padding: 14px 18px;
+    box-shadow: var(--shadow-md);
     display: flex;
     flex-direction: column;
-    gap: 14px;
+    gap: 12px;
   }
 
   .filter-controls-row {
     display: flex;
-    gap: 10px;
     flex-wrap: wrap;
+    gap: 10px;
     align-items: center;
   }
 
+  /* Search Input */
   .search-box {
     position: relative;
-    flex: 1 1 280px;
+    flex: 1 1 260px;
     min-width: 220px;
   }
-  .search-box input {
-    width: 100%;
-    height: 44px;
-    padding: 0 38px 0 42px;
-    background: var(--surface-2);
-    border: 1.5px solid var(--line);
-    border-radius: 12px;
-    font-family: var(--font);
-    font-size: 0.90625rem;
-    font-weight: 500;
-    color: var(--text);
-    outline: none;
-    transition: border-color .2s ease, box-shadow .2s ease, background-color .2s ease;
-  }
-  .search-box input::placeholder { color: var(--text-faint); font-weight: 400; }
-  .search-box input:hover { border-color: #cbd5e1; }
-  .search-box input:focus {
-    background: #fff;
-    border-color: var(--violet);
-    box-shadow: 0 0 0 4px rgba(99, 71, 245, 0.15);
-  }
+
   .search-box .icon {
     position: absolute;
-    left: 14px;
+    left: 13px;
     top: 50%;
     transform: translateY(-50%);
-    color: var(--text-faint);
+    color: var(--ink-muted);
     pointer-events: none;
-    display: inline-flex;
-    align-items: center;
-  }
-  .search-box .clear-btn {
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    background: var(--line-soft);
-    border: none;
-    color: var(--text-soft);
-    cursor: pointer;
-    font-size: 12px;
-    font-weight: 700;
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    transition: background-color .15s ease, color .15s ease;
-  }
-  .search-box .clear-btn:hover { background: var(--line); color: var(--text); }
-
-  .select-box {
-    position: relative;
-    flex: 0 1 195px;
-    min-width: 158px;
-  }
-  .select-box select {
-    width: 100%;
-    height: 44px;
-    padding: 0 32px 0 14px;
-    background: var(--surface-2);
-    border: 1.5px solid var(--line);
-    border-radius: 12px;
-    font-family: var(--font);
-    font-size: 0.875rem;
-    font-weight: 500;
-    color: var(--text);
-    outline: none;
-    appearance: none;
-    cursor: pointer;
-    transition: border-color .2s ease, box-shadow .2s ease, background-color .2s ease;
-  }
-  .select-box select:hover { border-color: #cbd5e1; background: #fff; }
-  .select-box select:focus {
-    background: #fff;
-    border-color: var(--violet);
-    box-shadow: 0 0 0 4px rgba(99, 71, 245, 0.15);
-  }
-  .select-box::after {
-    content: '▾';
-    position: absolute;
-    right: 13px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 12px;
-    color: var(--text-faint);
-    pointer-events: none;
-  }
-
-  /* Custom Date Trigger Box in Filter Controls Row */
-  .select-box.date-box {
-    flex: 0 1 190px;
-    min-width: 162px;
-  }
-  .select-box.date-box::after {
-    display: none !important;
-  }
-  .date-trigger-wrap {
-    position: relative;
-    width: 100%;
-    height: 44px;
     display: flex;
     align-items: center;
   }
-  .date-trigger-btn {
+
+  .search-box input {
     width: 100%;
-    height: 44px;
-    padding: 0 32px 0 13px;
-    background: var(--surface-2);
-    border: 1.5px solid var(--line);
-    border-radius: 12px;
-    font-family: var(--font);
+    height: 42px;
+    padding: 0 36px 0 38px;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--rule-strong);
+    background: var(--surface);
+    color: var(--ink);
+    font-family: var(--font-sans);
     font-size: 0.875rem;
-    font-weight: 600;
-    color: var(--text);
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    cursor: pointer;
-    text-align: left;
-    transition: border-color .2s ease, box-shadow .2s ease, background-color .2s ease, color .2s ease;
-    white-space: nowrap;
-    overflow: hidden;
-  }
-  .date-trigger-btn:hover {
-    background: #fff;
-    border-color: #cbd5e1;
-  }
-  .date-trigger-btn:focus-visible {
+    font-weight: 500;
     outline: none;
-    border-color: var(--violet);
-    box-shadow: 0 0 0 4px rgba(99, 71, 245, 0.15);
+    transition: border-color 0.16s ease, box-shadow 0.16s ease;
   }
-  .date-trigger-btn.has-value {
-    background: var(--violet-light);
-    border-color: var(--violet);
-    color: var(--violet-deep);
+  .search-box input::placeholder {
+    color: var(--ink-muted);
+    font-weight: 400;
   }
-  .date-trigger-btn svg {
-    flex-shrink: 0;
-    color: var(--violet);
+  .search-box input:focus {
+    border-color: var(--forest);
+    box-shadow: 0 0 0 3px var(--forest-tint);
   }
-  .date-trigger-btn .date-trigger-chevron {
-    margin-left: auto;
-    font-size: 11px;
-    color: var(--text-faint);
-  }
-  .date-trigger-btn.has-value .date-trigger-chevron {
-    display: none;
-  }
-  .date-trigger-clear-btn {
+
+  .clear-btn {
     position: absolute;
-    right: 8px;
+    right: 9px;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(99, 71, 245, 0.14);
-    border: none;
-    color: var(--violet-deep);
-    cursor: pointer;
-    font-size: 11px;
-    font-weight: 800;
     width: 22px;
     height: 22px;
     border-radius: 50%;
+    border: none;
+    background: var(--surface-3);
+    color: var(--ink-secondary);
+    font-size: 0.72rem;
+    cursor: pointer;
     display: none;
     align-items: center;
     justify-content: center;
-    padding: 0;
-    line-height: 1;
-    transition: background-color .15s ease, color .15s ease;
-    z-index: 2;
+  }
+  .clear-btn:hover {
+    background: var(--ink);
+    color: var(--bg);
+  }
+
+  /* Filter Dropdowns Group */
+  .filter-dropdowns-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+  }
+
+  .drawer-header-mobile,
+  .drawer-actions-mobile,
+  .mobile-filter-label,
+  .filter-drawer-backdrop,
+  .filter-toggle-btn {
+    display: none;
+  }
+
+  .select-box {
+    position: relative;
+  }
+
+  .select-box select {
+    height: 42px;
+    padding: 0 32px 0 12px;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--rule-strong);
+    background-color: var(--surface);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11' height='11' viewBox='0 0 12 12'%3E%3Cpath fill='%23637368' d='M6 8.2L1.2 3.4h9.6z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 11px center;
+    color: var(--ink);
+    font-family: var(--font-sans);
+    font-size: 0.8125rem;
+    font-weight: 500;
+    appearance: none;
+    cursor: pointer;
+    min-width: 152px;
+    max-width: 215px;
+    text-overflow: ellipsis;
+    outline: none;
+    transition: border-color 0.16s ease, box-shadow 0.16s ease;
+  }
+  .select-box select:hover {
+    border-color: var(--ink-secondary);
+  }
+  .select-box select:focus {
+    border-color: var(--forest);
+    box-shadow: 0 0 0 3px var(--forest-tint);
+  }
+
+  /* Custom Date Trigger inside Filter Bar */
+  .date-trigger-wrap {
+    display: inline-flex;
+    align-items: stretch;
+    height: 42px;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--rule-strong);
+    background: var(--surface);
+    overflow: hidden;
+    transition: border-color 0.16s ease, box-shadow 0.16s ease;
+  }
+  .date-trigger-wrap:hover {
+    border-color: var(--ink-secondary);
+  }
+
+  .date-trigger-btn {
+    appearance: none;
+    border: none;
+    background: transparent;
+    color: var(--ink);
+    padding: 0 12px;
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    font-family: var(--font-sans);
+    font-size: 0.8125rem;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  .date-trigger-btn svg {
+    color: var(--amber);
+    flex-shrink: 0;
+  }
+  .date-trigger-btn.has-value {
+    background: var(--amber-tint);
+    color: var(--amber);
+  }
+  .date-trigger-chevron {
+    font-size: 0.7rem;
+    color: var(--ink-muted);
+  }
+
+  .date-trigger-clear-btn {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 0 9px;
+    border: none;
+    border-left: 1px solid var(--rule);
+    background: var(--surface-2);
+    color: var(--ink-secondary);
+    font-size: 0.75rem;
+    cursor: pointer;
   }
   .date-trigger-clear-btn:hover {
-    background: var(--violet);
+    background: var(--terracotta);
     color: #fff;
   }
 
   .btn-reset {
-    height: 44px;
-    padding: 0 15px;
-    background: var(--surface-2);
-    border: 1.5px solid var(--line);
-    border-radius: 12px;
-    font-family: var(--font);
-    font-size: 0.84375rem;
-    font-weight: 600;
-    color: var(--text-soft);
-    cursor: pointer;
-    transition: background-color .2s ease, color .2s ease, border-color .2s ease;
-    white-space: nowrap;
-  }
-  .btn-reset:hover {
-    background: #fff;
-    color: var(--text);
-    border-color: #cbd5e1;
-  }
-
-  /* Quick Timeframe Filter Pills */
-  .time-pills-row {
-    display: flex;
-    align-items: center;
-    gap: 7px;
-    overflow-x: auto;
-    padding-bottom: 2px;
-    scrollbar-width: none;
-  }
-  .time-pills-row::-webkit-scrollbar { display: none; }
-  .time-pills-label {
-    font-size: 0.72rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    color: var(--text-faint);
-    margin-right: 4px;
-    white-space: nowrap;
-  }
-  .time-pill {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    padding: 7px 14px;
-    border-radius: 999px;
-    border: 1.5px solid var(--line);
-    background: var(--surface);
-    font-family: var(--font);
-    font-size: 0.8125rem;
-    font-weight: 600;
-    color: var(--text-soft);
-    cursor: pointer;
-    transition: background-color .18s ease, border-color .18s ease, color .18s ease, box-shadow .18s ease, transform .18s ease;
-    white-space: nowrap;
-    flex-shrink: 0;
-  }
-  .time-pill:hover {
-    background: #fff;
-    border-color: #94a3b8;
-    color: var(--text);
-  }
-  .time-pill.active {
-    background: linear-gradient(135deg, var(--violet) 0%, var(--violet-deep) 100%);
-    border-color: var(--violet);
-    color: #ffffff;
-    box-shadow: 0 4px 12px rgba(99, 71, 245, 0.32);
-  }
-
-  /* Modern Interactive Date Picker Pill in Timeframe Row */
-  .time-pill.date-picker-pill {
-    position: relative;
-    background: linear-gradient(180deg, #ffffff 0%, #f5f3ff 100%);
-    border-color: #c4b5fd;
-    color: var(--violet-deep);
-    font-weight: 700;
-    padding-right: 13px;
-  }
-  .time-pill.date-picker-pill:hover {
-    background: #ede9fe;
-    border-color: var(--violet);
-    color: var(--violet-deep);
-    box-shadow: 0 3px 10px rgba(99, 71, 245, 0.16);
-  }
-  .time-pill.date-picker-pill svg {
-    flex-shrink: 0;
-    color: currentColor;
-  }
-  .time-pill.date-picker-pill .date-pill-chevron {
-    font-size: 10px;
-    opacity: 0.75;
-    margin-left: 1px;
-  }
-  .time-pill.date-picker-pill.active {
-    background: linear-gradient(135deg, var(--violet) 0%, var(--violet-deep) 100%);
-    border-color: var(--violet);
-    color: #ffffff;
-    box-shadow: 0 4px 14px rgba(99, 71, 245, 0.36);
-  }
-  .time-pill.date-picker-pill.active .date-pill-chevron {
-    display: none;
-  }
-  .time-pill.date-picker-pill .date-pill-clear-btn {
-    display: none;
-    align-items: center;
-    justify-content: center;
-    width: 18px;
-    height: 18px;
-    margin-left: 3px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.24);
-    color: #ffffff;
-    font-size: 11px;
-    font-weight: 800;
-    line-height: 1;
-    cursor: pointer;
-    transition: background-color .15s ease;
-  }
-  .time-pill.date-picker-pill .date-pill-clear-btn:hover {
-    background: rgba(255, 255, 255, 0.42);
-  }
-  .time-pill.date-picker-pill.active .date-pill-clear-btn {
-    display: inline-flex;
-  }
-
-  /* ================= MODERN CUSTOM CALENDAR DIALOG ================= */
-  dialog#calendar-picker-dialog {
-    margin: auto;
-    padding: 0;
-    border: 1px solid rgba(203, 213, 225, 0.9);
-    border-radius: 22px;
-    background: var(--surface);
-    color: var(--text);
-    box-shadow: 0 28px 70px -12px rgba(9, 25, 49, 0.32), 0 0 0 1px rgba(99, 71, 245, 0.08);
-    max-width: 440px;
-    width: calc(100vw - 28px);
-    overflow: hidden;
-  }
-  dialog#calendar-picker-dialog:modal {
-    overscroll-behavior: contain;
-  }
-  dialog#calendar-picker-dialog::backdrop {
-    background: rgba(9, 25, 49, 0.55);
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(6px);
-    overflow: hidden;
-    overscroll-behavior: contain;
-  }
-  @media (prefers-reduced-motion: no-preference) {
-    dialog#calendar-picker-dialog[open] {
-      animation: calDialogIn .2s cubic-bezier(0.16, 1, 0.3, 1);
-    }
-  }
-  @keyframes calDialogIn {
-    from { opacity: 0; transform: translateY(10px) scale(0.97); }
-    to   { opacity: 1; transform: translateY(0) scale(1); }
-  }
-
-  .cal-dialog-card {
-    display: flex;
-    flex-direction: column;
-  }
-  .cal-dialog-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 12px;
-    padding: 18px 20px 14px;
-    background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
-    border-bottom: 1px solid var(--line-soft);
-  }
-  .cal-dialog-title-wrap h3 {
-    font-family: var(--font-display);
-    font-size: 1.125rem;
-    font-weight: 800;
-    color: var(--ink);
-    letter-spacing: -0.02em;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
-  .cal-dialog-title-wrap p {
-    font-size: 0.78rem;
-    color: var(--text-faint);
-    margin-top: 2px;
-  }
-  .cal-close-btn {
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    border: 1px solid var(--line);
-    background: var(--surface);
-    color: var(--text-soft);
-    font-size: 14px;
-    font-weight: 700;
-    cursor: pointer;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    transition: background-color .15s ease, color .15s ease, border-color .15s ease;
-  }
-  .cal-close-btn:hover {
-    background: var(--surface-2);
-    color: var(--text);
-    border-color: #cbd5e1;
-  }
-
-  /* Quick Presets Strip inside Dialog */
-  .cal-presets-bar {
-    display: flex;
-    gap: 6px;
-    padding: 10px 20px;
-    background: var(--surface-2);
-    border-bottom: 1px solid var(--line-soft);
-    overflow-x: auto;
-    scrollbar-width: none;
-  }
-  .cal-presets-bar::-webkit-scrollbar { display: none; }
-  .cal-preset-btn {
-    padding: 5px 11px;
-    border-radius: 999px;
-    border: 1px solid var(--line);
-    background: var(--surface);
-    color: var(--text-soft);
-    font-family: var(--font);
-    font-size: 0.75rem;
-    font-weight: 600;
-    cursor: pointer;
-    white-space: nowrap;
-    transition: all .15s ease;
-  }
-  .cal-preset-btn:hover {
-    border-color: var(--violet);
-    color: var(--violet-deep);
-    background: var(--violet-light);
-  }
-  .cal-preset-btn.is-active {
-    background: var(--violet);
-    border-color: var(--violet);
-    color: #fff;
-  }
-
-  /* Month / Year Navigator */
-  .cal-month-bar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 14px 20px 10px;
-    gap: 8px;
-  }
-  .cal-month-title-group {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
-  .cal-month-title {
-    font-family: var(--font-display);
-    font-size: 1.02rem;
-    font-weight: 800;
-    color: var(--ink);
-    letter-spacing: -0.015em;
-  }
-  .cal-month-badge {
-    font-size: 0.7rem;
-    font-weight: 700;
-    color: var(--teal-deep);
-    background: var(--teal-light);
-    border: 1px solid #99f6e4;
-    padding: 2px 8px;
-    border-radius: 999px;
-    font-variant-numeric: tabular-nums;
-  }
-  .cal-nav-controls {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-  }
-  .cal-today-jump-btn {
-    padding: 5px 10px;
-    border-radius: 8px;
-    border: 1px solid var(--line);
-    background: var(--surface-2);
-    color: var(--text-soft);
-    font-family: var(--font);
-    font-size: 0.75rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all .15s ease;
-  }
-  .cal-today-jump-btn:hover {
-    background: #fff;
-    border-color: #cbd5e1;
-    color: var(--text);
-  }
-  .cal-nav-btn {
-    width: 32px;
-    height: 32px;
-    border-radius: 9px;
-    border: 1px solid var(--line);
-    background: var(--surface-2);
-    color: var(--text);
-    font-size: 16px;
-    font-weight: 700;
-    cursor: pointer;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    transition: all .15s ease;
-  }
-  .cal-nav-btn:hover {
-    background: var(--violet-light);
-    border-color: #c4b5fd;
-    color: var(--violet-deep);
-  }
-
-  /* 7-Column Calendar Grid */
-  .cal-grid-wrap {
-    padding: 4px 18px 16px;
-  }
-  .cal-weekdays {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    text-align: center;
-    margin-bottom: 6px;
-  }
-  .cal-weekdays span {
-    font-size: 0.7rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    color: var(--text-faint);
-    padding: 4px 0;
-  }
-  .cal-days-grid {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    gap: 5px;
-  }
-  .cal-day-cell {
-    position: relative;
-    height: 48px;
-    border-radius: 11px;
-    border: 1px solid transparent;
-    background: transparent;
-    font-family: var(--font);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 2px;
-    cursor: pointer;
-    padding: 3px 2px;
-    transition: background-color .14s ease, border-color .14s ease, transform .14s ease, box-shadow .14s ease;
-    color: var(--text);
-    font-variant-numeric: tabular-nums;
-  }
-  .cal-day-cell:hover {
-    background: var(--violet-light);
-    border-color: #ddd6fe;
-    transform: translateY(-1px);
-  }
-  .cal-day-cell:focus-visible {
-    outline: none;
-    border-color: var(--violet);
-    box-shadow: 0 0 0 3px rgba(99, 71, 245, 0.22);
-  }
-  .cal-day-num {
-    font-size: 0.85rem;
-    font-weight: 700;
-    line-height: 1.1;
-  }
-  .cal-day-count {
-    font-size: 0.625rem;
-    font-weight: 700;
-    line-height: 1;
-    padding: 2px 5px;
-    border-radius: 999px;
-    background: #eef2ff;
-    color: var(--violet-deep);
-    min-width: 18px;
-    text-align: center;
-  }
-  .cal-day-cell.has-many-events .cal-day-count {
-    background: #ccfbf1;
-    color: #0f766e;
-  }
-  .cal-day-cell.no-events {
-    color: #94a3b8;
-  }
-  .cal-day-cell.no-events .cal-day-num {
-    font-weight: 500;
-  }
-  .cal-day-cell.no-events .cal-day-count {
-    visibility: hidden;
-  }
-  .cal-day-cell.is-outside {
-    opacity: 0.38;
-  }
-  .cal-day-cell.is-today {
-    border-color: var(--emerald);
-    background: #ecfdf5;
-  }
-  .cal-day-cell.is-today .cal-day-num {
-    color: #047857;
-    font-weight: 800;
-  }
-  .cal-day-cell.is-selected {
-    background: linear-gradient(135deg, var(--violet) 0%, var(--violet-deep) 100%) !important;
-    border-color: var(--violet-deep) !important;
-    color: #ffffff !important;
-    box-shadow: 0 4px 12px rgba(99, 71, 245, 0.35);
-    opacity: 1 !important;
-  }
-  .cal-day-cell.is-selected .cal-day-num {
-    color: #ffffff !important;
-    font-weight: 800;
-  }
-  .cal-day-cell.is-selected .cal-day-count {
-    background: rgba(255, 255, 255, 0.24) !important;
-    color: #ffffff !important;
-  }
-
-  /* Dialog Footer */
-  .cal-dialog-footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 10px;
-    padding: 12px 20px;
-    background: var(--surface-2);
-    border-top: 1px solid var(--line);
-    font-size: 0.78rem;
-    color: var(--text-soft);
-  }
-  .cal-footer-status {
-    font-weight: 600;
-    color: var(--text-soft);
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
-  .cal-footer-status strong {
-    color: var(--ink);
-  }
-  .cal-footer-actions {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    flex-shrink: 0;
-  }
-  .cal-clear-btn {
-    padding: 6px 12px;
-    border-radius: 8px;
-    border: 1px solid #fecdd3;
-    background: #fff1f2;
-    color: #e11d48;
-    font-family: var(--font);
-    font-size: 0.76rem;
-    font-weight: 700;
-    cursor: pointer;
-    display: none;
-    transition: background-color .15s ease;
-  }
-  .cal-clear-btn:hover {
-    background: #ffe4e6;
-  }
-  .cal-done-btn {
-    padding: 6px 14px;
-    border-radius: 8px;
-    border: none;
-    background: var(--ink);
-    color: #fff;
-    font-family: var(--font);
-    font-size: 0.76rem;
-    font-weight: 700;
-    cursor: pointer;
-    transition: background-color .15s ease;
-  }
-  .cal-done-btn:hover {
-    background: var(--ink-soft);
-  }
-
-  /* Filter Status Line */
-  .filter-status-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 6px 4px 0;
-    font-size: 0.84375rem;
-    color: var(--text-soft);
-    border-top: 1px solid var(--line-soft);
-    font-variant-numeric: tabular-nums;
-  }
-  .status-count strong {
-    color: var(--text);
-    font-weight: 700;
-  }
-
-  /* Mobile Filter Toggle & Drawer Styles */
-  .filter-toggle-btn {
-    display: none;
-    align-items: center;
-    gap: 7px;
     height: 42px;
     padding: 0 14px;
     border-radius: var(--radius-sm);
+    border: 1px solid var(--rule-strong);
     background: var(--surface-2);
-    border: 1px solid var(--line);
-    font-family: var(--font);
-    font-size: 13.5px;
+    color: var(--ink-secondary);
+    font-family: var(--font-sans);
+    font-size: 0.8125rem;
     font-weight: 600;
-    color: var(--text);
     cursor: pointer;
-    white-space: nowrap;
-    flex-shrink: 0;
-    transition: all .2s ease;
+    transition: background-color 0.15s ease, color 0.15s ease;
   }
-  .filter-toggle-btn:hover {
-    background: #fff;
-    border-color: #cbd5e1;
-    color: var(--violet);
+  .btn-reset:hover {
+    background: var(--terracotta-tint);
+    color: var(--terracotta);
+    border-color: var(--terracotta);
   }
-  .filter-toggle-btn.has-filters {
-    background: #f5f3ff;
-    border-color: var(--violet);
-    color: var(--violet);
+
+  /* Timeframe Pills & View Mode Row */
+  .filter-bottom-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding-top: 10px;
+    border-top: 1px solid var(--rule-soft);
+    flex-wrap: wrap;
   }
-  .filter-badge {
+
+  .time-pills-row {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: wrap;
+    flex: 1;
+  }
+
+  .time-pills-label {
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--ink-muted);
+    margin-right: 4px;
+    font-weight: 600;
+  }
+
+  .time-pill {
+    appearance: none;
+    border: 1px solid var(--rule);
+    background: var(--surface);
+    color: var(--ink-secondary);
+    font-family: var(--font-sans);
+    font-size: 0.78rem;
+    font-weight: 600;
+    padding: 5px 12px;
+    border-radius: 999px;
+    cursor: pointer;
     display: inline-flex;
     align-items: center;
+    gap: 6px;
+    white-space: nowrap;
+    transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+  }
+  .time-pill:hover {
+    border-color: var(--ink-secondary);
+    color: var(--ink);
+  }
+  .time-pill.active {
+    background: var(--forest);
+    color: #ffffff;
+    border-color: var(--forest);
+  }
+
+  .date-picker-pill {
+    border-color: var(--amber);
+    color: var(--amber);
+    background: var(--amber-tint);
+  }
+  .date-picker-pill.active {
+    background: var(--amber);
+    color: #ffffff;
+    border-color: var(--amber);
+  }
+
+  .date-pill-clear-btn {
+    display: none;
+    align-items: center;
     justify-content: center;
-    min-width: 19px;
-    height: 19px;
-    padding: 0 5px;
-    border-radius: 999px;
-    background: var(--violet);
-    color: #fff;
-    font-size: 11px;
-    font-weight: 800;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.25);
+    font-size: 0.68rem;
     line-height: 1;
   }
 
-  /* Desktop Filter Dropdowns Group */
-  .filter-dropdowns-group {
+  /* Telemetry Count + View Layout Toggle */
+  .filter-meta-controls {
     display: flex;
-    gap: 12px;
     align-items: center;
-    flex: 1 1 auto;
-    flex-wrap: wrap;
+    gap: 14px;
+    margin-left: auto;
   }
-  .drawer-header-mobile,
-  .drawer-actions-mobile,
-  .mobile-filter-label,
-  .filter-drawer-backdrop {
-    display: none;
+
+  .status-count {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--ink-secondary);
+    white-space: nowrap;
+  }
+  .status-count strong {
+    color: var(--ink);
+    font-weight: 700;
+  }
+
+  .view-mode-switch {
+    display: inline-flex;
+    background: var(--surface-2);
+    border: 1px solid var(--rule);
+    border-radius: 8px;
+    padding: 2px;
+    gap: 2px;
+  }
+
+  .view-mode-btn {
+    appearance: none;
+    border: none;
+    background: transparent;
+    color: var(--ink-muted);
+    padding: 4px 9px;
+    border-radius: 6px;
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .view-mode-btn.active {
+    background: var(--surface);
+    color: var(--ink);
+    box-shadow: var(--shadow-xs);
   }
 
   /* Active Filter Chips */
@@ -1099,49 +1334,375 @@
     display: none;
     align-items: center;
     gap: 6px;
-    overflow-x: auto;
-    scrollbar-width: none;
-    -webkit-overflow-scrolling: touch;
-    padding: 2px 0 0;
+    flex-wrap: wrap;
+    padding-top: 4px;
   }
-  .active-filter-chips::-webkit-scrollbar { display: none; }
-  .active-filter-chips.has-chips { display: flex; }
+  .active-filter-chips.has-chips {
+    display: flex;
+  }
   .active-chip {
     display: inline-flex;
     align-items: center;
-    gap: 5px;
+    gap: 6px;
     padding: 3px 10px;
-    background: #f5f3ff;
-    border: 1px solid #ddd6fe;
-    color: var(--violet);
-    font-size: 12px;
-    font-weight: 600;
     border-radius: 999px;
-    white-space: nowrap;
-    flex-shrink: 0;
+    background: var(--forest-tint);
+    border: 1px solid var(--pillar-watershed-border);
+    color: var(--forest);
+    font-size: 0.74rem;
+    font-weight: 600;
   }
   .active-chip button {
-    background: none;
     border: none;
-    color: var(--violet);
-    font-size: 13px;
+    background: none;
+    color: inherit;
     font-weight: 700;
     cursor: pointer;
+    font-size: 0.78rem;
+  }
+
+  /* ==========================================================================
+     6. TOP-LAYER EPHEMERIS CALENDAR <DIALOG>
+        (Modern Web Guidance: dialog, light-dismiss, animate-to-from-top-layer)
+     ========================================================================== */
+  dialog#calendar-picker-dialog {
+    margin: auto;
     padding: 0;
-    margin-left: 2px;
-    line-height: 1;
+    border: 1.5px solid var(--ink);
+    border-radius: var(--radius-xl);
+    background: var(--surface);
+    color: var(--ink);
+    max-width: 500px;
+    width: calc(100% - 28px);
+    box-shadow: var(--shadow-lg);
+    overflow: hidden;
+
+    /* Exit state (closed or data-closing) */
+    opacity: 0;
+    transform: translateY(12px) scale(0.97);
+    transition-property: opacity, transform, display, overlay;
+    transition-duration: 0.22s;
+    transition-timing-function: var(--ease-out-expo);
+    transition-behavior: allow-discrete;
+  }
+
+  dialog#calendar-picker-dialog:modal {
+    overscroll-behavior: contain;
+  }
+
+  dialog#calendar-picker-dialog[open]:where(:not([data-closing])) {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+
+  @starting-style {
+    dialog#calendar-picker-dialog[open]:where(:not([data-closing])) {
+      opacity: 0;
+      transform: translateY(12px) scale(0.97);
+    }
+  }
+
+  dialog#calendar-picker-dialog::backdrop {
+    background: rgba(11, 19, 15, 0.58);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    overflow: hidden;
+    overscroll-behavior: contain;
+    opacity: 0;
+    transition-property: opacity, display, overlay;
+    transition-duration: 0.22s;
+    transition-behavior: allow-discrete;
+  }
+
+  dialog#calendar-picker-dialog[open]:where(:not([data-closing]))::backdrop {
+    opacity: 1;
+  }
+
+  @starting-style {
+    dialog#calendar-picker-dialog[open]:where(:not([data-closing]))::backdrop {
+      opacity: 0;
+    }
+  }
+
+  .cal-dialog-card {
     display: flex;
+    flex-direction: column;
+  }
+
+  .cal-dialog-header {
+    padding: 18px 22px 14px;
+    border-bottom: 1px solid var(--rule);
+    background: var(--surface-2);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .cal-dialog-title-wrap h3 {
+    font-family: var(--font-display);
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--ink);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .cal-dialog-title-wrap p {
+    font-size: 0.78rem;
+    color: var(--ink-secondary);
+    margin-top: 2px;
+  }
+
+  .cal-close-btn {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid var(--rule-strong);
+    background: var(--surface);
+    color: var(--ink-secondary);
+    font-size: 0.85rem;
+    cursor: pointer;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
   }
+  .cal-close-btn:hover {
+    background: var(--ink);
+    color: var(--bg);
+  }
 
-  /* ================= AGENDA LIST CONTAINER ================= */
+  .cal-presets-bar {
+    padding: 10px 22px;
+    border-bottom: 1px solid var(--rule-soft);
+    display: flex;
+    gap: 6px;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .cal-presets-bar::-webkit-scrollbar { display: none; }
+
+  .cal-preset-btn {
+    padding: 5px 11px;
+    border-radius: 999px;
+    border: 1px solid var(--rule-strong);
+    background: var(--surface);
+    color: var(--ink-secondary);
+    font-family: var(--font-sans);
+    font-size: 0.75rem;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  .cal-preset-btn:hover {
+    border-color: var(--forest);
+    color: var(--forest);
+  }
+  .cal-preset-btn.is-active {
+    background: var(--forest);
+    color: #fff;
+    border-color: var(--forest);
+  }
+
+  .cal-month-bar {
+    padding: 14px 22px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .cal-month-title-group {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+  }
+
+  .cal-month-title {
+    font-family: var(--font-display);
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--ink);
+  }
+
+  .cal-month-badge {
+    font-family: var(--font-mono);
+    font-size: 0.70rem;
+    padding: 2px 8px;
+    border-radius: 999px;
+    background: var(--forest-tint);
+    color: var(--forest);
+    font-weight: 600;
+  }
+
+  .cal-nav-controls {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .cal-today-jump-btn {
+    padding: 5px 10px;
+    border-radius: 8px;
+    border: 1px solid var(--rule-strong);
+    background: var(--surface-2);
+    color: var(--ink);
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .cal-today-jump-btn:hover {
+    background: var(--surface-3);
+  }
+
+  .cal-nav-btn {
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    border: 1px solid var(--rule-strong);
+    background: var(--surface);
+    color: var(--ink);
+    font-size: 1.1rem;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .cal-nav-btn:hover {
+    background: var(--surface-2);
+  }
+
+  .cal-grid-wrap {
+    padding: 4px 22px 16px;
+  }
+
+  .cal-weekdays {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--ink-muted);
+    padding-bottom: 8px;
+  }
+
+  .cal-days-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+  }
+
+  .cal-day-cell {
+    appearance: none;
+    border: 1px solid var(--rule-soft);
+    background: var(--surface);
+    border-radius: 10px;
+    min-height: 50px;
+    padding: 5px 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    color: var(--ink);
+    transition: border-color 0.14s ease, transform 0.14s ease, background-color 0.14s ease;
+  }
+  .cal-day-cell:hover {
+    border-color: var(--forest);
+    transform: translateY(-1px);
+  }
+  .cal-day-cell.is-outside {
+    opacity: 0.38;
+  }
+  .cal-day-cell.is-today {
+    border-color: var(--amber);
+    box-shadow: inset 0 0 0 1px var(--amber);
+  }
+  .cal-day-cell.is-selected {
+    background: var(--forest);
+    border-color: var(--forest);
+    color: #ffffff;
+  }
+
+  .cal-day-num {
+    font-family: var(--font-display);
+    font-size: 0.92rem;
+    font-weight: 600;
+    line-height: 1.1;
+  }
+
+  .cal-day-count {
+    font-family: var(--font-mono);
+    font-size: 0.64rem;
+    font-weight: 600;
+    padding: 1px 6px;
+    border-radius: 999px;
+    background: var(--forest-tint);
+    color: var(--forest);
+  }
+  .cal-day-cell.no-events .cal-day-count {
+    background: transparent;
+    color: var(--ink-faint);
+  }
+  .cal-day-cell.is-selected .cal-day-count {
+    background: rgba(255, 255, 255, 0.22);
+    color: #ffffff;
+  }
+
+  .cal-dialog-footer {
+    padding: 12px 22px;
+    border-top: 1px solid var(--rule);
+    background: var(--surface-2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .cal-footer-status {
+    font-size: 0.78rem;
+    color: var(--ink-secondary);
+  }
+
+  .cal-footer-actions {
+    display: flex;
+    gap: 8px;
+  }
+
+  .cal-clear-btn {
+    padding: 7px 12px;
+    border-radius: 8px;
+    border: 1px solid var(--rule-strong);
+    background: var(--surface);
+    color: var(--ink-secondary);
+    font-size: 0.78rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .cal-done-btn {
+    padding: 7px 16px;
+    border-radius: 8px;
+    border: none;
+    background: var(--ink);
+    color: var(--bg);
+    font-size: 0.78rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  /* ==========================================================================
+     7. EDITORIAL AGENDA CHAPTERS & LETTERPRESS FIELD-DISPATCH CARDS
+     ========================================================================== */
   .main-content {
-    flex: 1;
-    max-width: 1280px;
-    width: 100%;
+    max-width: 1360px;
     margin: 0 auto;
-    padding: 12px 28px 80px;
+    padding: 18px 28px 80px;
+    width: 100%;
+    flex: 1;
   }
 
   .agenda-container {
@@ -1150,281 +1711,362 @@
     gap: 36px;
   }
 
-  /* Day Section Group */
-  .agenda-day-group {
+  /* Modern Web Guidance: Defer rendering ONLY on below-the-fold day groups */
+  .agenda-day-group.day-group-deferred {
     content-visibility: auto;
-    contain-intrinsic-size: auto 240px;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+    contain-intrinsic-size: auto none auto 280px;
   }
 
-  .agenda-events-list {
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-  }
-
+  /* Almanac Chapter Day Header */
   .agenda-day-header {
     display: flex;
     align-items: center;
-    gap: 14px;
-    padding: 12px 16px;
-    background: rgba(255, 255, 255, 0.85);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(203, 213, 225, 0.85);
-    border-radius: 16px;
-    box-shadow: var(--shadow-sm);
+    gap: 18px;
+    padding: 14px 20px;
+    background: var(--surface);
+    border-top: 2px solid var(--ink);
+    border-bottom: 1px solid var(--rule-strong);
+    border-left: 1px solid var(--rule);
+    border-right: 1px solid var(--rule);
+    border-radius: var(--radius-sm);
+    margin-bottom: 14px;
+    box-shadow: var(--shadow-xs);
   }
+
   .day-cal-tile {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 46px;
-    height: 46px;
+    min-width: 58px;
+    height: 58px;
+    padding: 4px 8px;
     border-radius: 12px;
-    background: var(--surface);
-    border: 1px solid var(--line);
-    box-shadow: 0 2px 6px rgba(9, 25, 49, 0.06);
-    overflow: hidden;
+    background: var(--surface-2);
+    border: 1px solid var(--rule-strong);
+    color: var(--ink);
     flex-shrink: 0;
-    font-variant-numeric: tabular-nums;
   }
-  .day-cal-tile-month {
-    width: 100%;
-    text-align: center;
-    font-size: 0.6rem;
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    background: var(--violet);
+  .day-cal-tile.is-today-tile {
+    background: var(--amber);
+    border-color: var(--amber);
     color: #ffffff;
-    padding: 2px 0;
-    line-height: 1.1;
   }
-  .day-cal-tile.is-today-tile .day-cal-tile-month {
-    background: var(--emerald);
+
+  .day-cal-tile-month {
+    font-family: var(--font-mono);
+    font-size: 0.64rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    line-height: 1;
   }
+
   .day-cal-tile-num {
     font-family: var(--font-display);
-    font-size: 1.05rem;
-    font-weight: 800;
-    color: var(--ink);
-    line-height: 1.25;
-    margin-top: 1px;
+    font-size: 1.45rem;
+    font-weight: 700;
+    line-height: 1.05;
+    margin-top: 2px;
   }
+
   .agenda-day-title-wrap {
     display: flex;
-    align-items: center;
-    gap: 10px;
+    align-items: baseline;
+    gap: 12px;
     flex-wrap: wrap;
-    min-width: 0;
+    flex: 1;
   }
+
   .agenda-day-title {
     font-family: var(--font-display);
-    font-size: clamp(1.08rem, 0.98rem + 0.35vw, 1.28rem);
-    font-weight: 800;
-    color: var(--ink);
+    font-size: clamp(1.2rem, 1.05rem + 0.55vw, 1.55rem);
+    font-weight: 600;
     letter-spacing: -0.02em;
+    color: var(--ink);
   }
+
   .agenda-day-relative {
+    font-family: var(--font-mono);
     font-size: 0.72rem;
-    font-weight: 700;
-    color: var(--violet-deep);
-    background: var(--violet-light);
-    border: 1px solid rgba(99, 71, 245, 0.22);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
     padding: 3px 10px;
     border-radius: 999px;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    white-space: nowrap;
+    background: var(--surface-2);
+    border: 1px solid var(--rule);
+    color: var(--ink-secondary);
   }
   .agenda-day-relative.is-today {
-    color: #047857;
-    background: #ecfdf5;
-    border-color: #a7f3d0;
-    box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.15);
+    background: var(--amber-tint);
+    border-color: var(--amber);
+    color: var(--amber);
   }
   .agenda-day-relative.is-tomorrow {
-    color: #1d4ed8;
-    background: #eff6ff;
-    border-color: #bfdbfe;
-    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.15);
+    background: var(--forest-tint);
+    border-color: var(--pillar-watershed-border);
+    color: var(--forest);
   }
-  .agenda-day-relative.is-past {
-    color: #64748b;
-    background: #f1f5f9;
-    border-color: #cbd5e1;
-  }
+
   .agenda-day-count {
-    margin-left: auto;
-    font-size: 0.78rem;
-    font-weight: 700;
-    color: var(--text-soft);
-    background: var(--surface-2);
-    border: 1px solid var(--line);
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--ink-secondary);
     padding: 4px 11px;
     border-radius: 999px;
+    background: var(--surface-2);
+    border: 1px solid var(--rule);
     white-space: nowrap;
-    font-variant-numeric: tabular-nums;
   }
 
-  /* Event Card in Agenda */
-  .event-card {
-    position: relative;
-    content-visibility: auto;
-    contain-intrinsic-size: auto 150px;
-    background: var(--surface);
-    border: 1px solid rgba(226, 232, 240, 0.95);
-    border-left: 4px solid var(--card-accent, var(--violet));
-    border-radius: var(--radius);
-    box-shadow: var(--shadow-sm);
-    padding: 22px 24px;
-    display: grid;
-    grid-template-columns: 185px 1fr auto;
-    gap: 24px;
-    align-items: start;
-    transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+  /* Events List Container — Supports Both Editorial Ledger & Grid View */
+  .agenda-events-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
   }
-  .event-card:hover {
+
+  .agenda-container.view-grid .agenda-events-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    gap: 16px;
+  }
+
+  /* Modern Web Guidance: Card with container-type: inline-size */
+  article.event-card {
+    container-type: inline-size;
+    position: relative;
+    background: var(--surface);
+    border: 1px solid var(--rule-strong);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-xs);
+    transition: transform 0.18s var(--ease-standard), box-shadow 0.18s ease, border-color 0.18s ease;
+    overflow: hidden;
+  }
+
+  article.event-card:hover {
     transform: translateY(-2px);
     box-shadow: var(--shadow-md);
-    border-color: rgba(99, 71, 245, 0.32);
-    border-left-color: var(--card-accent, var(--violet));
+    border-color: var(--ink-secondary);
   }
-  .event-card[data-pillar="nature"]    { --card-accent: #0d9488; }
-  .event-card[data-pillar="comedy"]    { --card-accent: #f59e0b; }
-  .event-card[data-pillar="science"]   { --card-accent: #6347f5; }
-  .event-card[data-pillar="sport"]     { --card-accent: #10b981; }
-  .event-card[data-pillar="arts"]      { --card-accent: #ec4899; }
-  .event-card[data-pillar="community"] { --card-accent: #8b5cf6; }
 
-  /* Time Column */
+  /* Pillar Accent Bar on Left Edge */
+  article.event-card::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 5px;
+    background: var(--card-accent, var(--forest));
+  }
+
+  article.event-card[data-pillar="fungi"] {
+    --card-accent: var(--pillar-fungi-fg);
+    --badge-fg: var(--pillar-fungi-fg);
+    --badge-bg: var(--pillar-fungi-bg);
+    --badge-border: var(--pillar-fungi-border);
+  }
+  article.event-card[data-pillar="watershed"],
+  article.event-card[data-pillar="nature"] {
+    --card-accent: var(--pillar-watershed-fg);
+    --badge-fg: var(--pillar-watershed-fg);
+    --badge-bg: var(--pillar-watershed-bg);
+    --badge-border: var(--pillar-watershed-border);
+  }
+  article.event-card[data-pillar="maker"] {
+    --card-accent: var(--pillar-maker-fg);
+    --badge-fg: var(--pillar-maker-fg);
+    --badge-bg: var(--pillar-maker-bg);
+    --badge-border: var(--pillar-maker-border);
+  }
+  article.event-card[data-pillar="science"] {
+    --card-accent: var(--pillar-science-fg);
+    --badge-fg: var(--pillar-science-fg);
+    --badge-bg: var(--pillar-science-bg);
+    --badge-border: var(--pillar-science-border);
+  }
+  article.event-card[data-pillar="comedy"] {
+    --card-accent: var(--pillar-comedy-fg);
+    --badge-fg: var(--pillar-comedy-fg);
+    --badge-bg: var(--pillar-comedy-bg);
+    --badge-border: var(--pillar-comedy-border);
+  }
+  article.event-card[data-pillar="outdoors"],
+  article.event-card[data-pillar="sport"] {
+    --card-accent: var(--pillar-outdoors-fg);
+    --badge-fg: var(--pillar-outdoors-fg);
+    --badge-bg: var(--pillar-outdoors-bg);
+    --badge-border: var(--pillar-outdoors-border);
+  }
+  article.event-card[data-pillar="arts"],
+  article.event-card[data-pillar="community"] {
+    --card-accent: var(--pillar-arts-fg);
+    --badge-fg: var(--pillar-arts-fg);
+    --badge-bg: var(--pillar-arts-bg);
+    --badge-border: var(--pillar-arts-border);
+  }
+
+  .event-card-inner {
+    padding: 20px 22px 20px 24px;
+    display: grid;
+    grid-template-columns: 175px 1fr 178px;
+    gap: 22px;
+    align-items: start;
+  }
+
+  /* Container Query: Adapt card automatically when in Grid View or Narrow Containers */
+  @container (max-width: 720px) {
+    .event-card-inner {
+      grid-template-columns: 1fr;
+      gap: 14px;
+      padding: 18px 18px 18px 20px;
+    }
+    .event-time-col {
+      flex-direction: row !important;
+      justify-content: space-between;
+      align-items: center;
+      border-right: none !important;
+      border-bottom: 1px dashed var(--rule);
+      padding-right: 0 !important;
+      padding-bottom: 10px;
+    }
+    .event-actions-col {
+      flex-direction: row !important;
+      width: 100%;
+      padding-top: 8px;
+      border-top: 1px solid var(--rule-soft);
+    }
+    .event-actions-col .btn-source {
+      flex: 1;
+    }
+  }
+
+  /* Left Column: Timestamp & Cost Stamp */
   .event-time-col {
     display: flex;
     flex-direction: column;
-    gap: 7px;
-    background: var(--surface-2);
-    border: 1px solid var(--line-soft);
-    border-radius: 12px;
-    padding: 12px 14px;
+    gap: 8px;
+    padding-right: 16px;
+    border-right: 1px dashed var(--rule-strong);
+    height: 100%;
   }
+
   .event-time {
-    font-size: 0.92rem;
-    font-weight: 800;
+    font-family: var(--font-mono);
+    font-size: 0.90rem;
+    font-weight: 600;
     color: var(--ink);
-    letter-spacing: -0.015em;
     line-height: 1.3;
     font-variant-numeric: tabular-nums;
   }
+
   .event-meta-pills {
     display: flex;
     flex-wrap: wrap;
-    gap: 5px;
-  }
-  .event-duration {
-    display: inline-flex;
-    align-items: center;
-    gap: 4px;
-    font-size: 0.72rem;
-    font-weight: 600;
-    color: var(--text-soft);
-    background: var(--surface);
-    border: 1px solid var(--line);
-    padding: 2px 8px;
-    border-radius: 6px;
-    width: fit-content;
-    font-variant-numeric: tabular-nums;
-  }
-  .event-cost-pill {
-    display: inline-flex;
-    align-items: center;
-    font-size: 0.72rem;
-    font-weight: 700;
-    color: #065f46;
-    background: #ecfdf5;
-    border: 1px solid #a7f3d0;
-    padding: 2px 8px;
-    border-radius: 6px;
-    width: fit-content;
+    gap: 6px;
   }
 
-  /* Details Column */
+  .event-duration {
+    font-family: var(--font-mono);
+    font-size: 0.70rem;
+    color: var(--ink-secondary);
+    background: var(--surface-2);
+    border: 1px solid var(--rule);
+    padding: 2px 8px;
+    border-radius: 6px;
+  }
+
+  .event-cost-pill {
+    font-family: var(--font-mono);
+    font-size: 0.70rem;
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: 6px;
+    background: var(--pillar-watershed-bg);
+    color: var(--pillar-watershed-fg);
+    border: 1px solid var(--pillar-watershed-border);
+  }
+
+  /* Center Column: Badges, Fraunces Title, Host & Description */
   .event-details-col {
     display: flex;
     flex-direction: column;
-    gap: 9px;
+    gap: 8px;
     min-width: 0;
   }
+
   .event-tags-row {
     display: flex;
-    align-items: center;
-    gap: 7px;
     flex-wrap: wrap;
+    gap: 6px;
+    align-items: center;
   }
+
   .event-badge {
     display: inline-flex;
     align-items: center;
     gap: 5px;
-    font-size: 0.7rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
+    font-size: 0.73rem;
+    font-weight: 600;
     padding: 3px 10px;
     border-radius: 999px;
-    white-space: nowrap;
+    line-height: 1.2;
   }
+
   .badge-category {
-    background: #f1f5f9;
-    color: #1e293b;
-    border: 1px solid #cbd5e1;
+    background: var(--badge-bg, var(--forest-tint));
+    color: var(--badge-fg, var(--forest));
+    border: 1px solid var(--badge-border, var(--pillar-watershed-border));
   }
+
   .badge-area {
-    background: #f0fdfa;
-    color: #0f766e;
-    border: 1px solid #99f6e4;
+    background: var(--surface-2);
+    color: var(--ink-secondary);
+    border: 1px solid var(--rule);
   }
+
   .badge-recurrence {
-    background: #f5f3ff;
-    color: #6d28d9;
-    border: 1px solid #ddd6fe;
+    font-family: var(--font-mono);
+    font-size: 0.69rem;
+    background: var(--surface-2);
+    color: var(--ink-muted);
+    border: 1px solid var(--rule);
   }
 
   .event-title {
     font-family: var(--font-display);
-    font-size: 1.18rem;
-    font-weight: 700;
+    font-size: clamp(1.12rem, 1.02rem + 0.3vw, 1.32rem);
+    font-weight: 600;
     color: var(--ink);
-    line-height: 1.3;
-    letter-spacing: -0.02em;
+    line-height: 1.26;
+    letter-spacing: -0.015em;
   }
+
   .event-org-venue-row {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     gap: 6px 16px;
+    font-size: 0.83rem;
   }
+
   .event-org-line {
     display: inline-flex;
     align-items: center;
-    gap: 6px;
-    font-size: 0.84375rem;
+    gap: 5px;
     font-weight: 600;
-    color: var(--violet);
+    color: var(--forest);
   }
+
   .event-org-link {
     color: inherit;
     text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    gap: 4px;
-    border-bottom: 1px dashed rgba(99, 71, 245, 0.4);
-    transition: color .15s ease, border-color .15s ease;
+    border-bottom: 1px dashed currentColor;
   }
   .event-org-link:hover {
-    color: var(--violet-deep);
     border-bottom-style: solid;
   }
 
@@ -1432,82 +2074,75 @@
     display: inline-flex;
     align-items: center;
     gap: 5px;
-    font-size: 0.84375rem;
-    color: var(--text-soft);
-    line-height: 1.4;
+    color: var(--ink-secondary);
   }
   .event-venue svg {
+    color: var(--amber);
     flex-shrink: 0;
-    color: var(--teal);
   }
 
   .event-desc {
     font-size: 0.885rem;
-    color: var(--text-soft);
-    line-height: 1.6;
+    color: var(--ink-secondary);
+    line-height: 1.58;
     max-width: 72ch;
   }
 
-  /* Actions Column */
+  /* Right Column: Tactile Dispatch Actions */
   .event-actions-col {
     display: flex;
     flex-direction: column;
-    gap: 8px;
-    min-width: 168px;
+    gap: 7px;
   }
+
   .event-actions-subrow {
     display: flex;
     gap: 6px;
   }
+
   .action-btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     gap: 6px;
-    padding: 9px 14px;
-    font-family: var(--font);
-    font-size: 0.8125rem;
+    padding: 9px 13px;
+    border-radius: var(--radius-xs);
+    font-family: var(--font-sans);
+    font-size: 0.80rem;
     font-weight: 600;
     text-decoration: none;
-    border-radius: 10px;
-    transition: background-color .18s ease, border-color .18s ease, color .18s ease, box-shadow .18s ease, transform .18s ease;
     cursor: pointer;
     white-space: nowrap;
+    transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
   }
+
   .btn-source {
-    background: linear-gradient(135deg, var(--violet) 0%, var(--violet-deep) 100%);
-    color: #ffffff;
-    border: 1px solid var(--violet-deep);
-    box-shadow: 0 2px 8px rgba(99, 71, 245, 0.22);
+    background: var(--ink);
+    color: var(--bg);
+    border: 1px solid var(--ink);
   }
   .btn-source:hover {
+    background: var(--forest);
+    border-color: var(--forest);
+    color: #ffffff;
     transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(99, 71, 245, 0.35);
   }
-  .btn-gcal {
+
+  .btn-gcal,
+  .btn-ics {
     flex: 1;
     background: var(--surface-2);
-    color: var(--text);
-    border: 1px solid var(--line);
-    font-size: 0.76rem;
-    padding: 7px 10px;
+    color: var(--ink-secondary);
+    border: 1px solid var(--rule-strong);
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    padding: 6px 9px;
   }
-  .btn-gcal:hover {
-    background: #fff;
-    border-color: #cbd5e1;
-    color: var(--violet);
-  }
-  .btn-ics {
-    background: var(--surface-2);
-    color: var(--text-soft);
-    border: 1px solid var(--line);
-    font-size: 0.75rem;
-    padding: 7px 10px;
-  }
+  .btn-gcal:hover,
   .btn-ics:hover {
-    color: var(--text);
-    border-color: #cbd5e1;
-    background: #fff;
+    background: var(--surface-3);
+    color: var(--ink);
+    border-color: var(--ink);
   }
 
   /* Empty State */
@@ -1516,162 +2151,206 @@
     text-align: center;
     padding: 64px 24px;
     background: var(--surface);
-    border: 1px dashed #cbd5e1;
+    border: 1.5px dashed var(--rule-strong);
     border-radius: var(--radius-lg);
     margin-top: 20px;
-    box-shadow: var(--shadow-sm);
   }
+
   .empty-state .icon {
-    font-size: 46px;
+    font-size: 2.5rem;
     margin-bottom: 12px;
   }
+
   .empty-state h3 {
     font-family: var(--font-display);
-    font-size: 1.25rem;
-    font-weight: 700;
+    font-size: 1.35rem;
+    font-weight: 600;
     color: var(--ink);
     margin-bottom: 8px;
   }
+
   .empty-state p {
-    color: var(--text-soft);
+    color: var(--ink-secondary);
     font-size: 0.92rem;
-    max-width: 46ch;
-    margin: 0 auto 22px;
+    max-width: 48ch;
+    margin: 0 auto 20px;
   }
 
-  /* ================= FOOTER ================= */
+  /* ==========================================================================
+     8. EDITORIAL COLOPHON & SITE FOOTER
+     ========================================================================== */
   .site-footer {
-    background: #071324;
-    color: #94a3b8;
-    padding: 42px 28px;
-    border-top: 1px solid rgba(255,255,255,.08);
+    background: var(--surface);
+    border-top: 2px solid var(--ink);
+    padding: 40px 28px;
     margin-top: auto;
   }
+
   .footer-inner {
-    max-width: 1280px;
+    max-width: 1360px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    gap: 20px;
-    font-size: 0.84375rem;
-  }
-  .footer-brand {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    color: #fff;
-    font-weight: 700;
-    font-family: var(--font-display);
-  }
-  .footer-links {
-    display: flex;
-    gap: 22px;
-  }
-  .footer-links a {
-    color: #cbd5e1;
-    text-decoration: none;
-    transition: color .2s ease;
-  }
-  .footer-links a:hover {
-    color: #fff;
+    gap: 24px;
   }
 
-  /* Responsive Adjustments */
-  @media (max-width: 960px) {
-    .event-card {
+  .footer-colophon {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    max-width: 52ch;
+  }
+
+  .footer-brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--font-display);
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--ink);
+  }
+
+  .footer-note {
+    font-size: 0.80rem;
+    color: var(--ink-muted);
+  }
+
+  .footer-links {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+  }
+
+  .footer-links a {
+    color: var(--ink-secondary);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: color 0.15s ease, border-color 0.15s ease;
+  }
+  .footer-links a:hover {
+    color: var(--forest);
+    border-bottom-color: var(--forest);
+  }
+
+  /* ==========================================================================
+     9. RESPONSIVE BREAKPOINTS & REDUCED MOTION
+     ========================================================================== */
+  @media (max-width: 1080px) {
+    .hero-editorial-grid {
       grid-template-columns: 1fr;
-      gap: 16px;
+      gap: 24px;
     }
-    .event-time-col {
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      padding: 10px 14px;
-    }
-    .event-actions-col {
-      flex-direction: row;
-      flex-wrap: wrap;
-      width: 100%;
-    }
-    .btn-source {
-      flex: 1 1 160px;
-    }
-    .event-actions-subrow {
-      flex: 1 1 160px;
+    .pillars-strip {
+      grid-template-columns: repeat(4, minmax(150px, 1fr));
     }
   }
 
   @media (max-width: 768px) {
-    .hero-inner { padding: 36px 20px 64px; }
-    .hero-stats {
-      grid-template-columns: repeat(2, 1fr);
-      gap: 10px;
-      margin-top: 24px;
+    .masthead-meta-inner {
+      padding: 6px 16px;
+      font-size: 0.66rem;
     }
-    .hero-stat { padding: 11px 14px; }
-    .hero-stat .num { font-size: 1.35rem; }
+    .meta-hide-mobile {
+      display: none;
+    }
+    .site-nav-inner {
+      padding: 12px 16px;
+    }
+    .hero-almanac-inner {
+      padding: 24px 16px 22px;
+    }
+    .telemetry-ledger {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .telemetry-cell:nth-child(2) {
+      border-right: none;
+    }
+    .telemetry-cell:nth-child(1),
+    .telemetry-cell:nth-child(2) {
+      border-bottom: 1px solid var(--rule);
+    }
+    .pillars-strip {
+      display: flex;
+      overflow-x: auto;
+      gap: 8px;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+    }
+    .pillars-strip::-webkit-scrollbar { display: none; }
+    .pillar-card-btn {
+      flex: 0 0 154px;
+    }
 
-    /* Compact Sticky Filter Bar on Mobile */
     .filter-wrap {
-      padding: 8px 14px 10px;
-      margin-top: -28px;
-      background: linear-gradient(180deg, rgba(241, 245, 249, 0.95) 90%, rgba(241, 245, 249, 0));
+      padding: 8px 12px;
     }
     .filter-inner {
-      padding: 12px 14px;
-      gap: 10px;
-      border-radius: 18px;
-    }
-    .filter-controls-row {
-      display: flex;
-      flex-wrap: nowrap;
-      gap: 8px;
-      align-items: center;
-      width: 100%;
-    }
-    .search-box {
-      flex: 1 1 0%;
-      min-width: 0;
-      width: 0;
+      padding: 12px;
+      border-radius: var(--radius);
     }
     .search-box input {
-      min-width: 0;
-      width: 100%;
-      height: 42px;
-      font-size: 16px; /* Prevents auto-zoom on iOS Safari */
-      padding: 0 32px 0 38px;
-      border-radius: 12px;
-    }
-    .filter-toggle-btn {
-      display: inline-flex;
-      flex: 0 0 auto;
-      height: 42px;
-      padding: 0 12px;
-      border-radius: 12px;
+      font-size: 16px; /* Prevents iOS zoom */
     }
 
-    /* Transform Filter Group into Slide-up Bottom Sheet Modal */
+    .filter-toggle-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      height: 42px;
+      padding: 0 12px;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--rule-strong);
+      background: var(--surface);
+      color: var(--ink);
+      font-family: var(--font-sans);
+      font-size: 0.8125rem;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .filter-toggle-btn.has-filters {
+      border-color: var(--forest);
+      background: var(--forest-tint);
+      color: var(--forest);
+    }
+    .filter-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 18px;
+      height: 18px;
+      padding: 0 5px;
+      border-radius: 999px;
+      background: var(--forest);
+      color: #fff;
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      font-weight: 700;
+    }
+
+    /* Mobile Bottom Sheet Drawer */
     .filter-dropdowns-group {
       display: none;
       position: fixed;
-      bottom: 0;
       left: 0;
       right: 0;
-      max-height: 85dvh;
+      bottom: 0;
+      z-index: 1001;
       background: var(--surface);
+      border-top: 2px solid var(--ink);
       border-radius: 22px 22px 0 0;
       padding: 16px 20px calc(24px + env(safe-area-inset-bottom));
-      box-shadow: 0 -10px 40px rgba(0,0,0,0.25);
-      z-index: 1001;
+      box-shadow: var(--shadow-lg);
+      max-height: 85dvh;
       overflow-y: auto;
       overscroll-behavior: contain;
       flex-direction: column;
-      gap: 16px;
       align-items: stretch;
-      animation: slideUpSheet .22s cubic-bezier(0.16, 1, 0.3, 1);
+      gap: 14px;
     }
     .filter-dropdowns-group.is-open {
       display: flex;
@@ -1681,11 +2360,9 @@
       display: none;
       position: fixed;
       inset: 0;
-      background: rgba(15,23,42,0.5);
-      backdrop-filter: blur(4px);
-      -webkit-backdrop-filter: blur(4px);
       z-index: 1000;
-      animation: fadeInBackdrop .2s ease;
+      background: rgba(11, 19, 15, 0.55);
+      backdrop-filter: blur(4px);
     }
     .filter-drawer-backdrop.is-open {
       display: block;
@@ -1697,240 +2374,327 @@
     .drawer-grab-bar {
       width: 40px;
       height: 4px;
-      background: #cbd5e1;
       border-radius: 999px;
-      margin: -4px auto 14px;
+      background: var(--rule-strong);
+      margin: 0 auto 12px;
     }
     .drawer-title-row {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding-bottom: 8px;
-      border-bottom: 1px solid var(--line-soft);
-    }
-    .drawer-title-row h3 {
-      font-family: var(--font-display);
-      font-size: 18px;
-      font-weight: 700;
-      color: var(--ink);
-      margin: 0;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--rule);
     }
     .drawer-close-btn {
-      width: 32px;
-      height: 32px;
+      width: 30px;
+      height: 30px;
       border-radius: 50%;
-      border: 1px solid var(--line);
+      border: 1px solid var(--rule-strong);
       background: var(--surface-2);
-      font-size: 14px;
-      font-weight: 700;
-      color: var(--text-soft);
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      color: var(--ink);
       cursor: pointer;
-      transition: all .15s ease;
-    }
-    .drawer-close-btn:hover {
-      background: #fff;
-      color: var(--text);
     }
 
     .mobile-filter-label {
       display: block;
-      font-size: 11.5px;
-      font-weight: 700;
+      font-family: var(--font-mono);
+      font-size: 0.70rem;
       text-transform: uppercase;
-      letter-spacing: .5px;
-      color: var(--text-faint);
-      margin-bottom: 6px;
+      letter-spacing: 0.06em;
+      color: var(--ink-muted);
+      margin-bottom: 5px;
     }
 
-    .filter-dropdowns-group .select-box {
-      width: 100%;
-      min-width: 0;
-      flex: 0 0 auto;
-    }
     .filter-dropdowns-group .select-box select,
-    .filter-dropdowns-group .select-box.date-box .date-trigger-btn {
-      height: 46px;
-      font-size: 15px;
-      border-radius: 12px;
-      background-color: #f8fafc;
-    }
-    .filter-dropdowns-group .select-box.date-box .date-trigger-wrap {
-      height: 46px;
+    .filter-dropdowns-group .date-trigger-wrap {
+      width: 100%;
+      max-width: none;
+      height: 44px;
     }
 
-    /* Hide desktop reset button in drawer */
     #reset-filters-btn {
       display: none;
     }
 
-    /* Drawer actions at bottom */
     .drawer-actions-mobile {
       display: flex;
       gap: 10px;
-      margin-top: 8px;
-      padding-top: 14px;
-      border-top: 1px solid var(--line-soft);
+      padding-top: 10px;
+      border-top: 1px solid var(--rule);
     }
     .drawer-btn-reset {
-      flex: 0 0 auto;
-      height: 46px;
-      padding: 0 18px;
-      border-radius: 12px;
-      border: 1px solid var(--line);
+      height: 44px;
+      padding: 0 16px;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--rule-strong);
       background: var(--surface-2);
-      font-family: var(--font);
-      font-size: 13.5px;
+      color: var(--ink);
       font-weight: 600;
-      color: var(--text-soft);
       cursor: pointer;
-    }
-    .drawer-btn-reset:hover {
-      background: #fff;
-      color: var(--text);
     }
     .drawer-btn-apply {
       flex: 1;
-      height: 46px;
-      border-radius: 12px;
+      height: 44px;
+      border-radius: var(--radius-sm);
       border: none;
-      background: var(--violet);
-      color: #ffffff;
-      font-family: var(--font);
-      font-size: 14.5px;
+      background: var(--forest);
+      color: #fff;
       font-weight: 700;
       cursor: pointer;
-      box-shadow: 0 4px 14px rgba(109,79,240,.35);
-      transition: all .15s ease;
-    }
-    .drawer-btn-apply:hover {
-      background: var(--violet-deep);
     }
 
-    /* Timeframe pills row on mobile */
     .time-pills-row {
       overflow-x: auto;
       flex-wrap: nowrap;
-      -webkit-overflow-scrolling: touch;
       scrollbar-width: none;
+      -webkit-overflow-scrolling: touch;
       padding-bottom: 2px;
-      gap: 6px;
     }
     .time-pills-row::-webkit-scrollbar { display: none; }
     .time-pills-label { display: none; }
-    .time-pill {
-      font-size: 0.78rem;
-      padding: 6px 12px;
-      flex-shrink: 0;
-      border-radius: 999px;
-    }
 
-    /* Status row */
-    .filter-status-row {
-      padding: 4px 2px 0;
-      font-size: 0.76rem;
-    }
-
-    .agenda-day-header {
-      padding: 10px 12px;
-      gap: 10px;
-    }
-    .day-cal-tile {
-      width: 40px;
-      height: 40px;
-    }
-    .day-cal-tile-num {
-      font-size: 0.95rem;
-    }
-
-    /* Event Card mobile adjustments */
-    .event-card {
-      padding: 16px 16px;
-      border-radius: 14px;
-      gap: 14px;
-    }
-    .event-title {
-      font-size: 1.08rem;
-    }
     .main-content {
-      padding: 6px 14px 60px;
+      padding: 12px 14px 64px;
     }
-    .site-nav-inner {
-      padding: 10px 14px;
-    }
-    .nav-brand .nav-title {
-      font-size: 1rem;
-    }
-    .nav-link {
-      padding: 6px 12px;
-      font-size: 0.78rem;
+    .agenda-day-header {
+      padding: 12px 14px;
+      gap: 12px;
     }
   }
 
-  @keyframes slideUpSheet {
-    from { transform: translateY(100%); }
-    to { transform: translateY(0); }
-  }
-  @keyframes fadeInBackdrop {
-    from { opacity: 0; }
-    to { opacity: 1; }
+  /* Modern Web Guidance: Respect prefers-reduced-motion */
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
   }
 </style>
 </head>
 <body>
-  <a class="skip-link" href="#agenda-main">Skip to calendar agenda</a>
+  <a class="skip-link" href="#agenda-main">Skip to events almanac</a>
 
-  <!-- Top Navigation Bar -->
-  <nav class="site-nav" aria-label="Main Navigation">
-    <div class="site-nav-inner">
-      <a href="./index.html" class="nav-brand">
-        <span class="nav-emoji" aria-hidden="true">🌲</span>
-        <span class="nav-title">Seattle Communities</span>
+  <!-- ========================================================================
+       ALMANAC MASTHEAD & GAZETTE NAVIGATION
+       ======================================================================== -->
+  <header class="masthead">
+    <div class="masthead-meta-bar">
+      <div class="masthead-meta-inner">
+        <div class="meta-coords">
+          <span class="meta-pulse-dot" aria-hidden="true"></span>
+          <span>47°36′N · 122°19′W</span>
+          <span class="meta-divider" aria-hidden="true">·</span>
+          <span>PUGET SOUND BIOREGION</span>
+          <span class="meta-divider meta-hide-mobile" aria-hidden="true">·</span>
+          <span class="meta-hide-mobile" id="masthead-live-date">AUTUMN EDITION · 2026</span>
+        </div>
+        <div class="meta-right">
+          <span class="meta-hide-mobile">GRASSROOTS &amp; NON-COMMERCIAL</span>
+          <button type="button" class="theme-switch-btn" id="theme-switch-btn" aria-label="Toggle color theme" title="Switch between Light and Dark mode">
+            <span id="theme-switch-icon" aria-hidden="true">◐</span>
+            <span id="theme-switch-label">Theme</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <nav class="site-nav-inner" aria-label="Main Navigation">
+      <a href="./index.html" class="brand-lockup">
+        <span class="brand-seal" aria-hidden="true">🌲</span>
+        <span class="brand-text-col">
+          <span class="brand-kicker">Puget Sound Field Almanac</span>
+          <span class="brand-title">Seattle Communities</span>
+        </span>
       </a>
-      <div class="nav-links">
-        <a href="./index.html" class="nav-link active">📅 Events Calendar</a>
-        <a href="./directory.html" class="nav-link">🧭 Directory</a>
-      </div>
-    </div>
-  </nav>
 
-  <!-- Hero Header -->
-  <header class="hero">
-    <div class="hero-glow"></div>
-    <div class="hero-inner">
-      <div class="pill">
-        <span class="pill-dot"></span>
-        <span><span class="count" id="hero-event-count">0</span> Upcoming Community Events</span>
+      <div class="nav-actions-group">
+        <div class="nav-tabs">
+          <a href="./index.html" class="nav-tab active" aria-current="page">📅 Events Almanac</a>
+          <a href="./directory.html" class="nav-tab">🧭 Communities Index</a>
+        </div>
+        <button type="button" class="nav-quick-date-btn" id="nav-jump-date-btn" aria-haspopup="dialog" aria-controls="calendar-picker-dialog">
+          <span aria-hidden="true">🗓</span>
+          <span>Jump to Date</span>
+        </button>
       </div>
-      <h1>Seattle Community <span class="accent">Events Calendar</span></h1>
-      <p class="subtitle">A consolidated chronological agenda of group runs, trail work parties, mushroom forays, standup comedy &amp; improv shows, maker open houses, and enthusiast meetups across Greater Seattle.</p>
-
-      <div class="hero-stats">
-        <div class="hero-stat">
-          <span class="num" id="stat-total-events">0</span>
-          <span class="lbl">Upcoming Events</span>
-        </div>
-        <div class="hero-stat">
-          <span class="num" id="stat-unique-groups">0</span>
-          <span class="lbl">Host Groups</span>
-        </div>
-        <div class="hero-stat">
-          <span class="num" id="stat-categories">0</span>
-          <span class="lbl">Activity Pillars</span>
-        </div>
-        <div class="hero-stat">
-          <span class="num">2026–27</span>
-          <span class="lbl">Schedule Horizon</span>
-        </div>
-      </div>
-    </div>
+    </nav>
   </header>
 
-  <!-- Sticky Filter Bar -->
+  <!-- ========================================================================
+       EDITORIAL HERO & INTERACTIVE PRIORITY PILLARS
+       ======================================================================== -->
+  <section class="hero-almanac" aria-label="Almanac Overview">
+    <div class="hero-almanac-inner">
+      <div class="hero-editorial-grid">
+        <!-- Left Column: Editorial Headline & Telemetry Ledger -->
+        <div class="hero-copy-col">
+          <div class="edition-badge-row">
+            <span class="edition-pill">
+              <span>FIELD DISPATCH</span>
+              <span>·</span>
+              <span><span class="live-count" id="hero-event-count">0</span> UPCOMING GATHERINGS</span>
+            </span>
+            <span class="season-tag" id="hero-season-badge">🍄 Peak Fall Foraging &amp; Salmon Run Season</span>
+          </div>
+
+          <h1 class="hero-headline">
+            Gatherings of the <em>Puget Sound Commons</em>.
+          </h1>
+
+          <p class="hero-lead">
+            A curated chronological gazette of real, grassroots community life across Greater Seattle — wild mushroom forays, Cedar River &amp; Carkeek salmon watches, neighborhood tool library repair cafés, DIY biology &amp; star parties, indie standup &amp; improv jams, and outdoor clubs.
+          </p>
+
+          <div class="telemetry-ledger" role="region" aria-label="Almanac Statistics">
+            <div class="telemetry-cell">
+              <span class="telemetry-code">FIG. 01 // SCHEDULE</span>
+              <span class="telemetry-val" id="stat-total-events">0</span>
+              <span class="telemetry-lbl">Upcoming Events</span>
+            </div>
+            <div class="telemetry-cell">
+              <span class="telemetry-code">FIG. 02 // STEWARDS</span>
+              <span class="telemetry-val" id="stat-unique-groups">0</span>
+              <span class="telemetry-lbl">Host Organizations</span>
+            </div>
+            <div class="telemetry-cell">
+              <span class="telemetry-code">FIG. 03 // TAXONOMY</span>
+              <span class="telemetry-val" id="stat-categories">0</span>
+              <span class="telemetry-lbl">Field Disciplines</span>
+            </div>
+            <div class="telemetry-cell">
+              <span class="telemetry-code">FIG. 04 // HORIZON</span>
+              <span class="telemetry-val">2026–27</span>
+              <span class="telemetry-lbl">Almanac Span</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Framed Archival Plate + Next-7-Days Horizon Pulse -->
+        <div class="hero-plate-col">
+          <div class="field-plate-card">
+            <div class="field-plate-header">
+              <span>PLATE I · SALISH SEA WATERSHED &amp; COMMONS</span>
+              <span>ELEV. 0–4,392 M</span>
+            </div>
+
+            <div class="field-plate-media" role="img" aria-label="Puget Sound evergreen forest, mountains, and community gathering">
+              <!-- Topographic Contour SVG Overlay -->
+              <svg class="plate-topo-svg" viewBox="0 0 600 300" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M-40 60 C120 20, 260 110, 420 50 C520 15, 580 80, 660 40" stroke="#ffffff" stroke-width="1"/>
+                <path d="M-40 120 C100 80, 250 170, 410 110 C510 75, 570 140, 660 100" stroke="#ffffff" stroke-width="1"/>
+                <path d="M-40 180 C140 140, 280 220, 440 165 C530 135, 590 190, 660 160" stroke="#ffffff" stroke-width="1"/>
+                <path d="M-40 240 C160 200, 300 265, 460 220 C540 195, 600 240, 660 220" stroke="#ffffff" stroke-width="1"/>
+              </svg>
+              <div class="plate-caption-box">
+                <div>
+                  <div class="plate-caption-title">Cascade Foothills to Puget Sound</div>
+                  <div class="plate-caption-sub">Verified community-led calendar · Updated daily</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="week-horizon-box">
+              <div class="week-horizon-header">
+                <span>7-Day Field Pulse (Click a day to inspect)</span>
+                <span id="week-horizon-range">Next 7 Days</span>
+              </div>
+              <div class="week-horizon-grid" id="week-horizon-grid" role="group" aria-label="Next 7 days quick filter">
+                <!-- Populated dynamically by JS -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Interactive Priority Pillars Explorer -->
+      <div class="pillars-showcase" role="region" aria-label="Priority Community Pillars">
+        <div class="pillars-header-row">
+          <span class="pillars-kicker">Explore by Curated Field Pillar</span>
+          <span class="pillars-hint">Select any pillar to filter the chronological ledger</span>
+        </div>
+        <div class="pillars-strip" id="pillars-strip">
+          <button type="button" class="pillar-card-btn active" data-pillar-filter="all" style="--p-color: var(--forest)">
+            <div class="pillar-card-top">
+              <span class="pillar-icon" aria-hidden="true">🧭</span>
+              <span class="pillar-count-badge" id="pcount-all">0</span>
+            </div>
+            <div class="pillar-name">All Gatherings</div>
+            <div class="pillar-sub">Complete regional schedule</div>
+          </button>
+
+          <button type="button" class="pillar-card-btn" data-pillar-filter="fungi" style="--p-color: var(--pillar-fungi-fg)">
+            <div class="pillar-card-top">
+              <span class="pillar-icon" aria-hidden="true">🍄</span>
+              <span class="pillar-count-badge" id="pcount-fungi">0</span>
+            </div>
+            <div class="pillar-name">Fungi &amp; Foraging</div>
+            <div class="pillar-sub">PSMS, mycology &amp; wild edibles</div>
+          </button>
+
+          <button type="button" class="pillar-card-btn" data-pillar-filter="watershed" style="--p-color: var(--pillar-watershed-fg)">
+            <div class="pillar-card-top">
+              <span class="pillar-icon" aria-hidden="true">🌿</span>
+              <span class="pillar-count-badge" id="pcount-watershed">0</span>
+            </div>
+            <div class="pillar-name">Watersheds &amp; Flora</div>
+            <div class="pillar-sub">Salmon runs, birding &amp; botany</div>
+          </button>
+
+          <button type="button" class="pillar-card-btn" data-pillar-filter="maker" style="--p-color: var(--pillar-maker-fg)">
+            <div class="pillar-card-top">
+              <span class="pillar-icon" aria-hidden="true">🛠️</span>
+              <span class="pillar-count-badge" id="pcount-maker">0</span>
+            </div>
+            <div class="pillar-name">Maker &amp; Tool Libraries</div>
+            <div class="pillar-sub">Repair cafés, woodshops &amp; reuse</div>
+          </button>
+
+          <button type="button" class="pillar-card-btn" data-pillar-filter="science" style="--p-color: var(--pillar-science-fg)">
+            <div class="pillar-card-top">
+              <span class="pillar-icon" aria-hidden="true">🔭</span>
+              <span class="pillar-count-badge" id="pcount-science">0</span>
+            </div>
+            <div class="pillar-name">Science &amp; Astronomy</div>
+            <div class="pillar-sub">SoundBio, star parties &amp; talks</div>
+          </button>
+
+          <button type="button" class="pillar-card-btn" data-pillar-filter="comedy" style="--p-color: var(--pillar-comedy-fg)">
+            <div class="pillar-card-top">
+              <span class="pillar-icon" aria-hidden="true">🎭</span>
+              <span class="pillar-count-badge" id="pcount-comedy">0</span>
+            </div>
+            <div class="pillar-name">Comedy &amp; Improv</div>
+            <div class="pillar-sub">Theatersports, standup &amp; mics</div>
+          </button>
+
+          <button type="button" class="pillar-card-btn" data-pillar-filter="outdoors" style="--p-color: var(--pillar-outdoors-fg)">
+            <div class="pillar-card-top">
+              <span class="pillar-icon" aria-hidden="true">🚣</span>
+              <span class="pillar-count-badge" id="pcount-outdoors">0</span>
+            </div>
+            <div class="pillar-name">Outdoors &amp; Athletics</div>
+            <div class="pillar-sub">Group runs, paddling &amp; trails</div>
+          </button>
+
+          <button type="button" class="pillar-card-btn" data-pillar-filter="arts" style="--p-color: var(--pillar-arts-fg)">
+            <div class="pillar-card-top">
+              <span class="pillar-icon" aria-hidden="true">🎨</span>
+              <span class="pillar-count-badge" id="pcount-arts">0</span>
+            </div>
+            <div class="pillar-name">Arts, Games &amp; Civic</div>
+            <div class="pillar-sub">Board games, crafts &amp; mutual aid</div>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       STICKY COMMAND & FILTER BAR
+       ======================================================================== -->
   <section class="filter-wrap" aria-label="Calendar Event Filters">
-    <!-- Backdrop for mobile filter drawer -->
     <div class="filter-drawer-backdrop" id="filter-drawer-backdrop" aria-hidden="true"></div>
 
     <div class="filter-inner">
@@ -1938,60 +2702,53 @@
         <!-- Search Input -->
         <div class="search-box">
           <span class="icon" aria-hidden="true">
-            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
               <circle cx="11" cy="11" r="8"></circle>
               <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
             </svg>
           </span>
-          <input type="text" id="calendar-search" placeholder="Search events, clubs, venues, neighborhoods..." aria-label="Search events">
+          <input type="text" id="calendar-search" placeholder="Search events, organizations, venues, or keywords (e.g. PSMS, Carkeek, improv)..." aria-label="Search events">
           <button type="button" class="clear-btn" id="clear-search-btn" aria-label="Clear search">✕</button>
         </div>
 
         <!-- Mobile Filter Toggle Button -->
         <button type="button" class="filter-toggle-btn" id="filter-toggle-btn" aria-label="Open filter options" aria-expanded="false" aria-controls="filter-dropdowns-group">
-          <svg class="filter-toggle-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <line x1="4" y1="21" x2="4" y2="14"></line>
             <line x1="4" y1="10" x2="4" y2="3"></line>
             <line x1="12" y1="21" x2="12" y2="12"></line>
             <line x1="12" y1="8" x2="12" y2="3"></line>
             <line x1="20" y1="21" x2="20" y2="16"></line>
             <line x1="20" y1="12" x2="20" y2="3"></line>
-            <line x1="1" y1="14" x2="7" y2="14"></line>
-            <line x1="9" y1="8" x2="15" y2="8"></line>
-            <line x1="17" y1="16" x2="23" y2="16"></line>
           </svg>
           <span>Filters</span>
           <span class="filter-badge" id="filter-badge" style="display:none">0</span>
         </button>
 
-        <!-- Dropdowns Group (Inline on Desktop, Slide-up Sheet on Mobile) -->
+        <!-- Dropdowns Group -->
         <div class="filter-dropdowns-group" id="filter-dropdowns-group" role="region" aria-label="Filter options">
-          <!-- Mobile Drawer Header -->
           <div class="drawer-header-mobile">
             <div class="drawer-grab-bar"></div>
             <div class="drawer-title-row">
-              <h3>Filter Events</h3>
+              <h3>Filter Field Almanac</h3>
               <button type="button" class="drawer-close-btn" id="drawer-close-btn" aria-label="Close filters">✕</button>
             </div>
           </div>
 
-          <!-- Activity Category Select -->
           <div class="select-box">
-            <label class="mobile-filter-label" for="category-filter">Category</label>
+            <label class="mobile-filter-label" for="category-filter">Discipline / Category</label>
             <select id="category-filter" aria-label="Filter by activity category">
               <option value="">All Categories</option>
             </select>
           </div>
 
-          <!-- Host Organization Select -->
           <div class="select-box">
-            <label class="mobile-filter-label" for="org-filter">Organization</label>
+            <label class="mobile-filter-label" for="org-filter">Host Organization</label>
             <select id="org-filter" aria-label="Filter by host organization">
               <option value="">All Organizations</option>
             </select>
           </div>
 
-          <!-- Area Select -->
           <div class="select-box">
             <label class="mobile-filter-label" for="area-filter">Neighborhood / Area</label>
             <select id="area-filter" aria-label="Filter by neighborhood or area">
@@ -1999,12 +2756,11 @@
             </select>
           </div>
 
-          <!-- Modern Custom Calendar Trigger Button in Filter Bar & Mobile Drawer -->
           <div class="select-box date-box">
             <label class="mobile-filter-label" for="filter-date-trigger-btn">Specific Date</label>
             <div class="date-trigger-wrap">
-              <button type="button" class="date-trigger-btn" id="filter-date-trigger-btn" aria-haspopup="dialog" aria-controls="calendar-picker-dialog" title="Open interactive calendar picker">
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <button type="button" class="date-trigger-btn" id="filter-date-trigger-btn" aria-haspopup="dialog" aria-controls="calendar-picker-dialog" title="Open interactive ephemeris calendar">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                   <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
                   <line x1="16" y1="2" x2="16" y2="6"></line>
                   <line x1="8" y1="2" x2="8" y2="6"></line>
@@ -2017,10 +2773,8 @@
             </div>
           </div>
 
-          <!-- Reset Button (Desktop) -->
           <button type="button" class="btn-reset" id="reset-filters-btn">Reset</button>
 
-          <!-- Drawer Bottom Action Buttons (Mobile) -->
           <div class="drawer-actions-mobile">
             <button type="button" class="drawer-btn-reset" id="drawer-reset-btn">Reset All</button>
             <button type="button" class="drawer-btn-apply" id="drawer-apply-btn">Show <span id="drawer-apply-count">0</span> Events</button>
@@ -2028,67 +2782,75 @@
         </div>
       </div>
 
-      <!-- Quick Timeframe Filter Pills -->
-      <div class="time-pills-row">
-        <span class="time-pills-label">Timeframe:</span>
-        <button type="button" class="time-pill active" data-timeframe="all">All Upcoming</button>
-        <button type="button" class="time-pill" data-timeframe="today" id="pill-today">Today</button>
-        <button type="button" class="time-pill" data-timeframe="tomorrow" id="pill-tomorrow">Tomorrow</button>
+      <!-- Timeframe Strip + View Switcher -->
+      <div class="filter-bottom-bar">
+        <div class="time-pills-row">
+          <span class="time-pills-label">Horizon:</span>
+          <button type="button" class="time-pill active" data-timeframe="all">All Upcoming</button>
+          <button type="button" class="time-pill" data-timeframe="today" id="pill-today">Today</button>
+          <button type="button" class="time-pill" data-timeframe="tomorrow" id="pill-tomorrow">Tomorrow</button>
 
-        <!-- Modern Interactive Date Picker Pill Button -->
-        <button type="button" class="time-pill date-picker-pill" id="date-picker-pill" aria-haspopup="dialog" aria-controls="calendar-picker-dialog" title="Choose a specific date on the calendar">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-            <line x1="16" y1="2" x2="16" y2="6"></line>
-            <line x1="8" y1="2" x2="8" y2="6"></line>
-            <line x1="3" y1="10" x2="21" y2="10"></line>
-          </svg>
-          <span class="date-pill-label" id="date-picker-pill-label">Pick a Date</span>
-          <span class="date-pill-chevron" aria-hidden="true">▾</span>
-          <span class="date-pill-clear-btn" id="date-pill-clear-btn" role="button" tabindex="0" aria-label="Clear selected date" title="Clear date">✕</span>
-        </button>
-
-        <button type="button" class="time-pill" data-timeframe="this-week">This Week</button>
-        <button type="button" class="time-pill" data-timeframe="this-weekend">This Weekend</button>
-        <button type="button" class="time-pill" data-timeframe="next-week">Next Week</button>
-        <button type="button" class="time-pill" data-timeframe="october">October 2026</button>
-        <button type="button" class="time-pill" data-timeframe="november">November 2026</button>
-        <button type="button" class="time-pill" data-timeframe="december">December 2026</button>
-        <button type="button" class="time-pill" data-timeframe="past">Past Events</button>
-      </div>
-
-      <!-- Active Filter Chips (removable on mobile) -->
-      <div class="active-filter-chips" id="active-filter-chips" aria-label="Active filters"></div>
-
-      <!-- Status count row -->
-      <div class="filter-status-row">
-        <div class="status-count">
-          Showing <strong id="visible-count">0</strong> of <strong id="total-count">0</strong> upcoming events
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Modern Interactive Calendar Picker Dialog -->
-  <dialog id="calendar-picker-dialog" closedby="any" aria-labelledby="cal-dialog-title">
-    <div class="cal-dialog-card">
-      <div class="cal-dialog-header">
-        <div class="cal-dialog-title-wrap">
-          <h3 id="cal-dialog-title">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--violet)" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <button type="button" class="time-pill date-picker-pill" id="date-picker-pill" aria-haspopup="dialog" aria-controls="calendar-picker-dialog" title="Choose a specific date on the calendar">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
               <line x1="16" y1="2" x2="16" y2="6"></line>
               <line x1="8" y1="2" x2="8" y2="6"></line>
               <line x1="3" y1="10" x2="21" y2="10"></line>
             </svg>
-            <span>Select a Date</span>
+            <span class="date-pill-label" id="date-picker-pill-label">Pick a Date</span>
+            <span class="date-pill-chevron" aria-hidden="true">▾</span>
+            <span class="date-pill-clear-btn" id="date-pill-clear-btn" role="button" tabindex="0" aria-label="Clear selected date" title="Clear date">✕</span>
+          </button>
+
+          <button type="button" class="time-pill" data-timeframe="this-week">This Week</button>
+          <button type="button" class="time-pill" data-timeframe="this-weekend">This Weekend</button>
+          <button type="button" class="time-pill" data-timeframe="next-week">Next Week</button>
+          <button type="button" class="time-pill" data-timeframe="november">Nov 2026</button>
+          <button type="button" class="time-pill" data-timeframe="december">Dec 2026</button>
+          <button type="button" class="time-pill" data-timeframe="past">Past Archive</button>
+        </div>
+
+        <div class="filter-meta-controls">
+          <div class="status-count">
+            Showing <strong id="visible-count">0</strong> of <strong id="total-count">0</strong> upcoming events
+          </div>
+          <div class="view-mode-switch" role="group" aria-label="Layout view mode">
+            <button type="button" class="view-mode-btn active" id="view-ledger-btn" data-view="ledger" title="Editorial Ledger View">
+              <span>☰ Ledger</span>
+            </button>
+            <button type="button" class="view-mode-btn" id="view-grid-btn" data-view="grid" title="Field Card Grid View">
+              <span>⊞ Grid</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Active Filter Chips -->
+      <div class="active-filter-chips" id="active-filter-chips" aria-label="Active filters"></div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       EPHEMERIS CALENDAR PICKER <DIALOG>
+       ======================================================================== -->
+  <dialog id="calendar-picker-dialog" closedby="any" aria-labelledby="cal-dialog-title">
+    <div class="cal-dialog-card">
+      <div class="cal-dialog-header">
+        <div class="cal-dialog-title-wrap">
+          <h3 id="cal-dialog-title">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--amber)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+              <line x1="16" y1="2" x2="16" y2="6"></line>
+              <line x1="8" y1="2" x2="8" y2="6"></line>
+              <line x1="3" y1="10" x2="21" y2="10"></line>
+            </svg>
+            <span>Monthly Ephemeris &amp; Date Picker</span>
           </h3>
-          <p>Badge numbers show how many events are scheduled each day</p>
+          <p>Select any date to inspect scheduled gatherings across Puget Sound</p>
         </div>
         <button type="button" class="cal-close-btn" id="cal-close-btn" aria-label="Close calendar">✕</button>
       </div>
 
-      <!-- Quick Jump Presets inside Calendar Modal -->
       <div class="cal-presets-bar" id="cal-presets-bar" aria-label="Quick date presets">
         <button type="button" class="cal-preset-btn" data-preset="today">Today</button>
         <button type="button" class="cal-preset-btn" data-preset="tomorrow">Tomorrow</button>
@@ -2097,7 +2859,6 @@
         <button type="button" class="cal-preset-btn" data-preset="next-sat">Next Saturday</button>
       </div>
 
-      <!-- Month / Year Navigation Bar -->
       <div class="cal-month-bar">
         <div class="cal-month-title-group">
           <h4 class="cal-month-title" id="cal-month-year-label">November 2026</h4>
@@ -2110,7 +2871,6 @@
         </div>
       </div>
 
-      <!-- 7-Column Calendar Grid -->
       <div class="cal-grid-wrap">
         <div class="cal-weekdays" aria-hidden="true">
           <span>Sun</span>
@@ -2124,7 +2884,6 @@
         <div class="cal-days-grid" id="cal-days-grid" role="grid" aria-label="Calendar dates"></div>
       </div>
 
-      <!-- Dialog Footer -->
       <div class="cal-dialog-footer">
         <div class="cal-footer-status" id="cal-footer-status">Click any date to view its schedule</div>
         <div class="cal-footer-actions">
@@ -2135,50 +2894,60 @@
     </div>
   </dialog>
 
-  <!-- Agenda Content Section -->
+  <!-- ========================================================================
+       CHRONOLOGICAL ALMANAC LEDGER
+       ======================================================================== -->
   <main class="main-content" id="agenda-main">
     <div class="agenda-container" id="agenda-list" aria-live="polite">
-      <!-- Generated day groups will be inserted here dynamically -->
+      <!-- Populated dynamically by JS -->
     </div>
 
-    <!-- Empty State -->
     <div class="empty-state" id="empty-state">
-      <div class="icon">🔍</div>
-      <h3>No events found</h3>
-      <p>No community events match your current search and filter selections. Try clearing your filters or broadening your search.</p>
-      <button type="button" class="btn-reset" id="empty-reset-btn" style="height:40px; padding:0 20px; font-weight:700;">Clear All Filters</button>
+      <div class="icon" aria-hidden="true">🧭</div>
+      <h3>No gatherings match this field query</h3>
+      <p>No community events match your current search and filter selections. Try clearing your filters or picking another date on the ephemeris calendar.</p>
+      <button type="button" class="btn-reset" id="empty-reset-btn" style="height:42px; padding:0 22px;">Reset All Filters</button>
     </div>
   </main>
 
-  <!-- Site Footer -->
+  <!-- ========================================================================
+       COLOPHON & SITE FOOTER
+       ======================================================================== -->
   <footer class="site-footer">
     <div class="footer-inner">
-      <div class="footer-brand">
-        <span>🌲</span>
-        <span>Seattle Communities</span>
+      <div class="footer-colophon">
+        <div class="footer-brand">
+          <span aria-hidden="true">🌲</span>
+          <span>Puget Sound Field Almanac · Seattle Communities</span>
+        </div>
+        <p class="footer-note">
+          An open-source public directory &amp; chronological gazette dedicated to authentic, grassroots, non-commercial community gatherings across Greater Seattle and the Salish Sea bioregion.
+        </p>
       </div>
       <div class="footer-links">
-        <a href="./index.html">Events Calendar</a>
-        <a href="./directory.html">Directory</a>
-        <a href="https://github.com/rayadav/seattle-communities" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
-      </div>
-      <div>
-        <p>&copy; 2026 Seattle Communities Directory. Open-source local directory.</p>
+        <a href="./index.html">Events Almanac</a>
+        <a href="./directory.html">Communities Index (182)</a>
+        <a href="https://github.com/rayadav/seattle-communities" target="_blank" rel="noopener noreferrer">Source Archive ↗</a>
+        <a href="#agenda-main">Top of Ledger ↑</a>
       </div>
     </div>
   </footer>
 
 <script>
 (function() {
+  'use strict';
+
   let allEvents = [];
   let activeTimeframe = 'all';
+  let activePillar = 'all';
   let selectedCustomDate = '';
+  let currentViewMode = 'ledger';
 
-  // Currently viewed year/month in the custom calendar dialog
   const initialNow = new Date();
   let calViewYear = initialNow.getFullYear();
-  let calViewMonth = initialNow.getMonth(); // 0-indexed (0 = Jan, 10 = Nov)
+  let calViewMonth = initialNow.getMonth();
 
+  // DOM References
   const searchInput = document.getElementById('calendar-search');
   const clearSearchBtn = document.getElementById('clear-search-btn');
   const categoryFilter = document.getElementById('category-filter');
@@ -2187,8 +2956,19 @@
   const resetBtn = document.getElementById('reset-filters-btn');
   const emptyResetBtn = document.getElementById('empty-reset-btn');
   const timePills = document.querySelectorAll('.time-pill');
+  const pillarsStrip = document.getElementById('pillars-strip');
+  const weekHorizonGrid = document.getElementById('week-horizon-grid');
+  const weekHorizonRange = document.getElementById('week-horizon-range');
 
-  // Custom Calendar Picker Trigger & Dialog elements
+  // Theme & View Switchers
+  const themeSwitchBtn = document.getElementById('theme-switch-btn');
+  const themeSwitchLabel = document.getElementById('theme-switch-label');
+  const themeSwitchIcon = document.getElementById('theme-switch-icon');
+  const viewLedgerBtn = document.getElementById('view-ledger-btn');
+  const viewGridBtn = document.getElementById('view-grid-btn');
+
+  // Calendar Picker Trigger & Dialog Elements
+  const navJumpDateBtn = document.getElementById('nav-jump-date-btn');
   const datePickerPill = document.getElementById('date-picker-pill');
   const datePickerPillLabel = document.getElementById('date-picker-pill-label');
   const datePillClearBtn = document.getElementById('date-pill-clear-btn');
@@ -2210,7 +2990,7 @@
   const calModalClearBtn = document.getElementById('cal-modal-clear-btn');
   const calModalDoneBtn = document.getElementById('cal-modal-done-btn');
 
-  // Mobile drawer elements
+  // Mobile Drawer Elements
   const filterToggleBtn = document.getElementById('filter-toggle-btn');
   const filterBadge = document.getElementById('filter-badge');
   const filterDropdownsGroup = document.getElementById('filter-dropdowns-group');
@@ -2230,11 +3010,80 @@
   const statUniqueGroups = document.getElementById('stat-unique-groups');
   const statCategories = document.getElementById('stat-categories');
 
-  // Register Service Worker for instant offline/repeat performance
+  // Register Service Worker
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
       navigator.serviceWorker.register('./sw.js').catch(() => {});
     });
+  }
+
+  // ==========================================================================
+  // THEME MANAGEMENT (Light / Dark / System)
+  // ==========================================================================
+  function getEffectiveTheme() {
+    const attr = document.documentElement.getAttribute('data-theme');
+    if (attr === 'dark' || attr === 'light') return attr;
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  }
+
+  function syncThemeButton() {
+    const mode = getEffectiveTheme();
+    if (themeSwitchIcon) themeSwitchIcon.textContent = mode === 'dark' ? '☀' : '☾';
+    if (themeSwitchLabel) themeSwitchLabel.textContent = mode === 'dark' ? 'Parchment' : 'Nocturne';
+  }
+  syncThemeButton();
+
+  if (themeSwitchBtn) {
+    themeSwitchBtn.addEventListener('click', () => {
+      const next = getEffectiveTheme() === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      try { localStorage.setItem('sc-theme', next); } catch (_) {}
+      syncThemeButton();
+    });
+  }
+
+  // Update Masthead Live Date
+  const mastheadDateEl = document.getElementById('masthead-live-date');
+  if (mastheadDateEl) {
+    const dStr = initialNow.toLocaleDateString('en-US', {
+      weekday: 'short',
+      month: 'short',
+      day: 'numeric',
+      year: 'numeric'
+    }).toUpperCase();
+    mastheadDateEl.textContent = dStr;
+  }
+
+  // ==========================================================================
+  // MODERN WEB GUIDANCE: TOP-LAYER EXIT ANIMATION HELPER
+  // ==========================================================================
+  let _canTransitionDisplay;
+  function canTransitionDisplay() {
+    if (_canTransitionDisplay === undefined) {
+      const p = document.createElement('div');
+      p.style.cssText = 'transition: display 1s allow-discrete; display: none';
+      document.body.appendChild(p);
+      _canTransitionDisplay = getComputedStyle(p).transitionProperty === 'display';
+      p.remove();
+    }
+    return _canTransitionDisplay;
+  }
+
+  function closeTopLayer(el) {
+    if (!el || !el.open) return;
+    if (canTransitionDisplay()) {
+      el.close();
+      return;
+    }
+    el.dataset.closing = '';
+    const done = () => {
+      delete el.dataset.closing;
+      if (el.open) el.close();
+    };
+    el.addEventListener('transitionend', (e) => {
+      if (e.target === el) done();
+    }, { once: true });
+    setTimeout(done, 260);
   }
 
   function debounce(fn, ms) {
@@ -2245,15 +3094,43 @@
     };
   }
 
-  function classifyEventPillar(activityType) {
-    const n = (activityType || '').toLowerCase();
-    if (/(comedy|improv|standup|stand-up|open[ _-]mic|sketch|humor)/.test(n)) return 'comedy';
-    if (/(nature|outdoor|bird|wildlife|tree|forest|mushroom|mycolog|forag|salmon|watershed|environmental|conservation|gardening|native|botan|lichen|beekeep)/.test(n)) return 'nature';
-    if (/(sport|league|soccer|tennis|running|cycling|kayak|canoe|paddl|sail|row|swim|surf|ski|hike|backpack|climb|orient|pickleball|volley|fitness|yoga)/.test(n)) return 'sport';
-    if (/(art|music|dance|paint|sculpt|photo|print|pottery|ceramic|glass|calli|storytell|textile|quilt|book)/.test(n)) return 'arts';
-    if (/(volunteer|civic|advocac|humanitarian|mutual[ _-]aid|neighbor|community)/.test(n)) return 'community';
-    return 'science';
+  // Classify each event into one of the 7 Priority Field Pillars
+  function classifyEventPillar(ev) {
+    const act = ((ev && ev.activityType) || '').toLowerCase();
+    const org = ((ev && ev.organization) || '').toLowerCase();
+    const title = ((ev && ev.title) || '').toLowerCase();
+    const combined = `${act} ${org} ${title}`;
+
+    if (/(mycolog|mushroom|fungi|forag|lichen|psms|morel|chanterelle)/.test(combined)) {
+      return 'fungi';
+    }
+    if (/(comedy|improv|standup|stand-up|open[ _-]mic|sketch|humor|theatresports|comedysportz)/.test(combined)) {
+      return 'comedy';
+    }
+    if (/(tool[ _-]library|maker|woodwork|woodshop|blacksmith|repair[ _-]caf|fix-it|textile|craft|bike[ _-]works)/.test(combined)) {
+      return 'maker';
+    }
+    if (/(salmon|watershed|bird|audubon|botan|native[ _-]plant|arboretum|kubota|plantamnesty|stewardship|forest|park|garden|conservation|wildlife[ _-]tracking|ecology)/.test(combined)) {
+      return 'watershed';
+    }
+    if (/(astronom|science|microscop|soundbio|biology|robotic|coasst|lecture|tech|coding|python|ai|electronics|ham[ _-]radio)/.test(combined)) {
+      return 'science';
+    }
+    if (/(running|cycling|kayak|paddl|row|mountaineer|hiking|climbing|orienteer|soccer|pickleball|skating|fitness|yoga|outdoors|sailing|swimming)/.test(combined)) {
+      return 'outdoors';
+    }
+    return 'arts';
   }
+
+  const PILLAR_EMBLEMS = {
+    fungi: '🍄',
+    watershed: '🌿',
+    maker: '🛠️',
+    science: '🔭',
+    comedy: '🎭',
+    outdoors: '🚣',
+    arts: '🎨'
+  };
 
   function formatDisplayDateFull(dateStr) {
     if (typeof Temporal !== 'undefined' && Temporal.PlainDate) {
@@ -2338,6 +3215,13 @@
       }
       if (filterDateClearBtn) filterDateClearBtn.style.display = 'none';
     }
+
+    // Sync 7-day horizon strip active state
+    if (weekHorizonGrid) {
+      weekHorizonGrid.querySelectorAll('.horizon-day-btn').forEach(btn => {
+        btn.classList.toggle('is-active', !!selectedCustomDate && btn.getAttribute('data-date') === selectedCustomDate);
+      });
+    }
   }
 
   function applyCustomDate(dateVal) {
@@ -2383,7 +3267,6 @@
     }
   }
 
-  // Compute event count per YYYY-MM-DD respecting current search/category/org/area filters
   function getEventCountsByDate() {
     const rawQuery = searchInput ? searchInput.value.trim().toLowerCase() : '';
     const selCat = categoryFilter ? categoryFilter.value : '';
@@ -2405,6 +3288,7 @@
     const counts = {};
     for (let i = 0; i < allEvents.length; i++) {
       const ev = allEvents[i];
+      if (activePillar !== 'all' && ev._pillar !== activePillar) continue;
       if (selCat && ev.activityType !== selCat) continue;
       if (selOrg && ev.organization !== selOrg) continue;
       if (selArea && ev.area !== selArea) continue;
@@ -2455,6 +3339,31 @@
     };
   }
 
+  function renderWeekHorizonStrip() {
+    if (!weekHorizonGrid) return;
+    const counts = getEventCountsByDate();
+    const now = new Date();
+    const dows = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+    let html = '';
+
+    for (let i = 0; i < 7; i++) {
+      const d = new Date(now);
+      d.setDate(now.getDate() + i);
+      const dStr = getLocalDateStr(d);
+      const cnt = counts[dStr] || 0;
+      const isSelected = selectedCustomDate === dStr;
+      const dow = i === 0 ? 'Today' : dows[d.getDay()];
+      html += `
+        <button type="button" class="horizon-day-btn ${isSelected ? 'is-active' : ''}" data-date="${dStr}" title="${formatDisplayDateFull(dStr)} (${cnt} events)">
+          <span class="horizon-day-dow">${dow}</span>
+          <span class="horizon-day-num">${d.getDate()}</span>
+          <span class="horizon-day-cnt">${cnt}</span>
+        </button>
+      `;
+    }
+    weekHorizonGrid.innerHTML = html;
+  }
+
   function renderCalendarMonth() {
     if (!calDaysGrid) return;
     const counts = getEventCountsByDate();
@@ -2480,7 +3389,6 @@
       calMonthEventPill.textContent = `${monthTotalEvents} event${monthTotalEvents === 1 ? '' : 's'}`;
     }
 
-    // Highlight active preset button if selectedCustomDate matches
     if (calPresetsBar) {
       calPresetsBar.querySelectorAll('.cal-preset-btn').forEach(btn => {
         const key = btn.getAttribute('data-preset');
@@ -2489,7 +3397,7 @@
     }
 
     const firstDayOfMonth = new Date(calViewYear, calViewMonth, 1);
-    const startWeekday = firstDayOfMonth.getDay(); // 0 (Sun) .. 6 (Sat)
+    const startWeekday = firstDayOfMonth.getDay();
     const daysInMonth = new Date(calViewYear, calViewMonth + 1, 0).getDate();
     const daysInPrevMonth = new Date(calViewYear, calViewMonth, 0).getDate();
 
@@ -2582,11 +3490,11 @@
 
   function closeCalendarDialog() {
     if (calendarDialog && calendarDialog.open) {
-      calendarDialog.close();
+      closeTopLayer(calendarDialog);
     }
   }
 
-  // Load minified events data with fallback to events.json
+  // Load events data
   const loadEventsData = () => {
     return fetch('./events.min.json')
       .then(res => {
@@ -2604,23 +3512,21 @@
   loadEventsData()
     .then(data => {
       allEvents = data;
-      // Pre-index search tokens once for ultra-fast filtering
       for (let i = 0; i < allEvents.length; i++) {
         const ev = allEvents[i];
         const raw = `${ev.title} ${ev.organization} ${ev.venue} ${ev.area} ${ev.activityType} ${ev.description}`.toLowerCase();
         ev._searchStr = raw;
         ev._cleanStr = raw.replace(/[\s\-_,.]/g, '');
-        ev._pillar = classifyEventPillar(ev.activityType);
+        ev._pillar = classifyEventPillar(ev);
       }
       initCalendar();
     })
     .catch(err => {
       console.error('Failed to load events data:', err);
-      agendaList.innerHTML = '<div style="padding:40px; text-align:center; color:#e11d48; font-weight:600;">Unable to load calendar events. Please ensure events.json exists.</div>';
+      agendaList.innerHTML = '<div style="padding:40px; text-align:center; color:var(--terracotta); font-weight:600;">Unable to load calendar events. Please ensure events.json exists.</div>';
     });
 
   function initCalendar() {
-    // Dynamically update Today and Tomorrow pill labels
     const todayPill = document.querySelector('.time-pill[data-timeframe="today"]');
     if (todayPill) {
       const now = new Date();
@@ -2637,7 +3543,6 @@
       tomorrowPill.textContent = `Tomorrow (${mName} ${dNum})`;
     }
 
-    // Populate stats based on upcoming events
     const { todayStr } = getCalendarDateBounds();
     const upcomingEvents = allEvents.filter(e => e.dateString >= todayStr);
     const total = upcomingEvents.length;
@@ -2651,7 +3556,17 @@
     statCategories.textContent = categories.size;
     totalCountEl.textContent = total;
 
-    // Populate category dropdown
+    // Populate Pillar Counts
+    const pCounts = { all: total, fungi: 0, watershed: 0, maker: 0, science: 0, comedy: 0, outdoors: 0, arts: 0 };
+    upcomingEvents.forEach(e => {
+      if (pCounts[e._pillar] !== undefined) pCounts[e._pillar]++;
+    });
+    Object.keys(pCounts).forEach(k => {
+      const badge = document.getElementById(`pcount-${k}`);
+      if (badge) badge.textContent = pCounts[k];
+    });
+
+    // Populate Selects
     Array.from(categories).sort().forEach(cat => {
       const opt = document.createElement('option');
       opt.value = cat;
@@ -2659,7 +3574,6 @@
       categoryFilter.appendChild(opt);
     });
 
-    // Populate organization dropdown
     const orgs = Array.from(new Set(allEvents.map(e => e.organization))).sort();
     orgs.forEach(org => {
       const opt = document.createElement('option');
@@ -2668,7 +3582,6 @@
       if (orgFilter) orgFilter.appendChild(opt);
     });
 
-    // Populate area dropdown
     Array.from(areas).sort().forEach(area => {
       const opt = document.createElement('option');
       opt.value = area;
@@ -2676,8 +3589,14 @@
       areaFilter.appendChild(opt);
     });
 
-    // Event Listeners with Debounce for 60fps responsive typing
-    const debouncedRender = debounce(renderAgenda, 100);
+    renderWeekHorizonStrip();
+
+    // Listeners
+    const debouncedRender = debounce(() => {
+      renderWeekHorizonStrip();
+      renderAgenda();
+    }, 100);
+
     searchInput.addEventListener('input', () => {
       clearSearchBtn.style.display = searchInput.value ? 'inline-flex' : 'none';
       debouncedRender();
@@ -2687,17 +3606,75 @@
       searchInput.value = '';
       clearSearchBtn.style.display = 'none';
       searchInput.focus();
+      renderWeekHorizonStrip();
       renderAgenda();
     });
 
-    categoryFilter.addEventListener('change', renderAgenda);
-    if (orgFilter) orgFilter.addEventListener('change', renderAgenda);
-    areaFilter.addEventListener('change', renderAgenda);
+    categoryFilter.addEventListener('change', () => {
+      renderWeekHorizonStrip();
+      renderAgenda();
+    });
+    if (orgFilter) orgFilter.addEventListener('change', () => {
+      renderWeekHorizonStrip();
+      renderAgenda();
+    });
+    areaFilter.addEventListener('change', () => {
+      renderWeekHorizonStrip();
+      renderAgenda();
+    });
 
     resetBtn.addEventListener('click', resetFilters);
     emptyResetBtn.addEventListener('click', resetFilters);
 
-    // Custom Calendar Picker Trigger Listeners
+    // Priority Pillar Cards Click Handler
+    if (pillarsStrip) {
+      pillarsStrip.addEventListener('click', (e) => {
+        const card = e.target.closest('.pillar-card-btn');
+        if (!card) return;
+        const p = card.getAttribute('data-pillar-filter') || 'all';
+        activePillar = p;
+        pillarsStrip.querySelectorAll('.pillar-card-btn').forEach(btn => {
+          btn.classList.toggle('active', btn.getAttribute('data-pillar-filter') === p);
+        });
+        renderWeekHorizonStrip();
+        renderAgenda();
+      });
+    }
+
+    // 7-Day Horizon Strip Click Handler
+    if (weekHorizonGrid) {
+      weekHorizonGrid.addEventListener('click', (e) => {
+        const btn = e.target.closest('.horizon-day-btn');
+        if (!btn) return;
+        const dStr = btn.getAttribute('data-date');
+        if (selectedCustomDate === dStr) {
+          clearCustomDate();
+        } else {
+          applyCustomDate(dStr);
+        }
+      });
+    }
+
+    // View Mode Switcher (Ledger vs Grid)
+    if (viewLedgerBtn && viewGridBtn) {
+      viewLedgerBtn.addEventListener('click', () => {
+        currentViewMode = 'ledger';
+        viewLedgerBtn.classList.add('active');
+        viewGridBtn.classList.remove('active');
+        agendaList.classList.remove('view-grid');
+      });
+      viewGridBtn.addEventListener('click', () => {
+        currentViewMode = 'grid';
+        viewGridBtn.classList.add('active');
+        viewLedgerBtn.classList.remove('active');
+        agendaList.classList.add('view-grid');
+      });
+    }
+
+    // Calendar Picker Triggers
+    if (navJumpDateBtn) {
+      navJumpDateBtn.addEventListener('click', openCalendarDialog);
+    }
     if (datePickerPill) {
       datePickerPill.addEventListener('click', (e) => {
         if (e.target.closest('#date-pill-clear-btn')) {
@@ -2709,7 +3686,6 @@
         openCalendarDialog();
       });
     }
-
     if (datePillClearBtn) {
       datePillClearBtn.addEventListener('click', (e) => {
         e.preventDefault();
@@ -2724,13 +3700,9 @@
         }
       });
     }
-
     if (filterDateTriggerBtn) {
-      filterDateTriggerBtn.addEventListener('click', () => {
-        openCalendarDialog();
-      });
+      filterDateTriggerBtn.addEventListener('click', openCalendarDialog);
     }
-
     if (filterDateClearBtn) {
       filterDateClearBtn.addEventListener('click', (e) => {
         e.preventDefault();
@@ -2739,7 +3711,7 @@
       });
     }
 
-    // Calendar Dialog internal controls
+    // Calendar Dialog Controls
     if (calCloseBtn) calCloseBtn.addEventListener('click', closeCalendarDialog);
     if (calModalDoneBtn) calModalDoneBtn.addEventListener('click', closeCalendarDialog);
     if (calModalClearBtn) {
@@ -2759,7 +3731,6 @@
         renderCalendarMonth();
       });
     }
-
     if (calNextMonthBtn) {
       calNextMonthBtn.addEventListener('click', () => {
         calViewMonth++;
@@ -2770,7 +3741,6 @@
         renderCalendarMonth();
       });
     }
-
     if (calJumpTodayBtn) {
       calJumpTodayBtn.addEventListener('click', () => {
         const now = new Date();
@@ -2779,7 +3749,6 @@
         renderCalendarMonth();
       });
     }
-
     if (calPresetsBar) {
       calPresetsBar.addEventListener('click', (e) => {
         const btn = e.target.closest('.cal-preset-btn');
@@ -2792,7 +3761,6 @@
         }
       });
     }
-
     if (calDaysGrid) {
       calDaysGrid.addEventListener('click', (e) => {
         const cell = e.target.closest('.cal-day-cell');
@@ -2817,13 +3785,13 @@
       });
       calendarDialog.addEventListener('pointerup', (e) => {
         if (pointerDownOutside && isOutside(e)) {
-          calendarDialog.close();
+          closeTopLayer(calendarDialog);
         }
         pointerDownOutside = false;
       });
     }
 
-    // Mobile drawer triggers
+    // Mobile Drawer Triggers
     if (filterToggleBtn) filterToggleBtn.addEventListener('click', openFilterDrawer);
     if (drawerCloseBtn) drawerCloseBtn.addEventListener('click', closeFilterDrawer);
     if (filterDrawerBackdrop) filterDrawerBackdrop.addEventListener('click', closeFilterDrawer);
@@ -2869,7 +3837,6 @@
       });
     });
 
-    // Handle URL parameters on initial page load
     const urlParams = new URLSearchParams(window.location.search);
     const initialQuery = urlParams.get('q');
     if (initialQuery && searchInput) {
@@ -2907,6 +3874,7 @@
 
   function updateMobileFilterStatus(selCat, selOrg, selArea, countVisible) {
     let count = 0;
+    if (activePillar !== 'all') count++;
     if (selCat) count++;
     if (selOrg) count++;
     if (selArea) count++;
@@ -2930,11 +3898,14 @@
     }
 
     if (activeFilterChips) {
-      if (count === 0 && !selectedCustomDate) {
+      if (count === 0) {
         activeFilterChips.innerHTML = '';
         activeFilterChips.classList.remove('has-chips');
       } else {
         let chipsHtml = '';
+        if (activePillar !== 'all') {
+          chipsHtml += `<span class="active-chip">${PILLAR_EMBLEMS[activePillar] || '🧭'} Pillar: ${escapeHtml(activePillar.toUpperCase())} <button type="button" data-clear="pillar" aria-label="Clear pillar filter">✕</button></span>`;
+        }
         if (selectedCustomDate) {
           const shortDate = formatDisplayDateShort(selectedCustomDate);
           chipsHtml += `<span class="active-chip">📅 ${escapeHtml(shortDate)} <button type="button" data-clear="date" aria-label="Clear date filter">✕</button></span>`;
@@ -2954,10 +3925,19 @@
         activeFilterChips.querySelectorAll('button[data-clear]').forEach(btn => {
           btn.addEventListener('click', (e) => {
             const target = e.currentTarget.getAttribute('data-clear');
+            if (target === 'pillar') {
+              activePillar = 'all';
+              if (pillarsStrip) {
+                pillarsStrip.querySelectorAll('.pillar-card-btn').forEach(b => {
+                  b.classList.toggle('active', b.getAttribute('data-pillar-filter') === 'all');
+                });
+              }
+            }
             if (target === 'date') clearCustomDate();
             if (target === 'cat') categoryFilter.value = '';
             if (target === 'org' && orgFilter) orgFilter.value = '';
             if (target === 'area') areaFilter.value = '';
+            renderWeekHorizonStrip();
             renderAgenda();
           });
         });
@@ -2972,6 +3952,13 @@
     if (orgFilter) orgFilter.value = '';
     areaFilter.value = '';
 
+    activePillar = 'all';
+    if (pillarsStrip) {
+      pillarsStrip.querySelectorAll('.pillar-card-btn').forEach(b => {
+        b.classList.toggle('active', b.getAttribute('data-pillar-filter') === 'all');
+      });
+    }
+
     selectedCustomDate = '';
     syncDateTriggerLabels();
 
@@ -2981,11 +3968,11 @@
     if (allPill) allPill.classList.add('active');
     updateUrlParam('date', null);
     updateUrlParam('q', null);
+    renderWeekHorizonStrip();
     renderAgenda();
     closeFilterDrawer();
   }
 
-  // Helper date functions with dynamic browser date detection
   function getLocalDateStr(d = new Date()) {
     const y = d.getFullYear();
     const m = String(d.getMonth() + 1).padStart(2, '0');
@@ -2995,23 +3982,20 @@
 
   function getCalendarDateBounds(now = new Date()) {
     const todayStr = getLocalDateStr(now);
-    const dayOfWeek = now.getDay(); // 0 = Sun, 1 = Mon, ..., 6 = Sat
+    const dayOfWeek = now.getDay();
 
-    // Tomorrow
     const tom = new Date(now);
     tom.setDate(now.getDate() + 1);
     const tomorrowStr = getLocalDateStr(tom);
 
-    // End of this week (Sunday)
     const daysToSun = (7 - dayOfWeek) % 7;
     const endOfWeek = new Date(now);
     endOfWeek.setDate(now.getDate() + daysToSun);
     const endThisWeekStr = getLocalDateStr(endOfWeek);
 
-    // This weekend: Saturday & Sunday
     const sat = new Date(now);
     const sun = new Date(now);
-    if (dayOfWeek === 0) { // Today is Sunday
+    if (dayOfWeek === 0) {
       sat.setDate(now.getDate() - 1);
       sun.setDate(now.getDate());
     } else {
@@ -3021,7 +4005,6 @@
     const thisWeekendSatStr = getLocalDateStr(sat);
     const thisWeekendSunStr = getLocalDateStr(sun);
 
-    // Next week: Monday through Sunday after this week
     const nextMon = new Date(now);
     if (dayOfWeek === 0) {
       nextMon.setDate(now.getDate() + 1);
@@ -3055,7 +4038,7 @@
       nextWeekEndStr
     } = getCalendarDateBounds();
 
-    if (dateStr < todayStr) return 'Past';
+    if (dateStr < todayStr) return 'Past Archive';
     if (dateStr === todayStr) return 'Today';
     if (dateStr === tomorrowStr) return 'Tomorrow';
     if (dateStr === thisWeekendSatStr || dateStr === thisWeekendSunStr) return 'This Weekend';
@@ -3073,8 +4056,7 @@
   function formatDayHeader(dateStr) {
     const parts = dateStr.split('-');
     const d = new Date(parseInt(parts[0], 10), parseInt(parts[1], 10) - 1, parseInt(parts[2], 10));
-    const options = { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' };
-    return d.toLocaleDateString('en-US', options);
+    return d.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' });
   }
 
   function getDayTileParts(dateStr) {
@@ -3171,6 +4153,7 @@
     }
 
     const filtered = allEvents.filter(ev => {
+      if (activePillar !== 'all' && ev._pillar !== activePillar) return false;
       if (selCat && ev.activityType !== selCat) return false;
       if (selOrg && ev.organization !== selOrg) return false;
       if (selArea && ev.area !== selArea) return false;
@@ -3181,7 +4164,6 @@
         const tokenMatch = tokens.length > 0 && tokens.every(t => {
           return ev._searchStr.includes(t.tok) || (t.clean && ev._cleanStr.includes(t.clean));
         });
-
         if (!directMatch && !compressedMatch && !tokenMatch) return false;
       }
 
@@ -3238,8 +4220,6 @@
         const totalUpcoming = allEvents.filter(e => e.dateString >= todayStr).length;
         statusCountEl.innerHTML = `Showing <strong id="visible-count">${filtered.length}</strong> of <strong id="total-count">${totalUpcoming}</strong> upcoming events`;
       }
-    } else if (visibleCountEl) {
-      visibleCountEl.textContent = filtered.length;
     }
     updateMobileFilterStatus(selCat, selOrg, selArea, filtered.length);
 
@@ -3250,14 +4230,14 @@
         const iconEl = emptyState.querySelector('.icon');
         if (iconEl) iconEl.textContent = '📅';
         const h3El = emptyState.querySelector('h3');
-        if (h3El) h3El.textContent = 'No events scheduled on this date';
+        if (h3El) h3El.textContent = 'No gatherings scheduled on this date';
         const pEl = emptyState.querySelector('p');
-        if (pEl) pEl.innerHTML = `There are no community events listed for <strong>${escapeHtml(fullDateText)}</strong> matching your search or filters. Try picking another date on the calendar or clearing your filters.`;
+        if (pEl) pEl.innerHTML = `There are no community events listed for <strong>${escapeHtml(fullDateText)}</strong> matching your current filters. Try picking another date on the calendar or resetting your filters.`;
       } else {
         const iconEl = emptyState.querySelector('.icon');
-        if (iconEl) iconEl.textContent = '🔍';
+        if (iconEl) iconEl.textContent = '🧭';
         const h3El = emptyState.querySelector('h3');
-        if (h3El) h3El.textContent = 'No events found';
+        if (h3El) h3El.textContent = 'No gatherings match this field query';
         const pEl = emptyState.querySelector('p');
         if (pEl) pEl.textContent = 'No community events match your current search and filter selections. Try clearing your filters or broadening your search.';
       }
@@ -3278,25 +4258,27 @@
     let html = '';
     const sortedDates = Object.keys(groupedByDate).sort();
 
-    sortedDates.forEach(dateStr => {
+    sortedDates.forEach((dateStr, dayIndex) => {
       const dayEvents = groupedByDate[dateStr];
       const headerDate = formatDayHeader(dateStr);
       const relativeLabel = getRelativeDayLabel(dateStr);
       const tile = getDayTileParts(dateStr);
       const isToday = relativeLabel === 'Today';
+      // Modern Web Guidance: Apply content-visibility: auto ONLY to below-the-fold day groups
+      const deferredClass = dayIndex >= 2 ? 'day-group-deferred' : '';
 
       html += `
-        <section class="agenda-day-group" aria-label="${headerDate}">
+        <section class="agenda-day-group ${deferredClass}" aria-label="${escapeHtml(headerDate)}">
           <div class="agenda-day-header">
             <div class="day-cal-tile ${isToday ? 'is-today-tile' : ''}" aria-hidden="true">
               <span class="day-cal-tile-month">${tile.month}</span>
               <span class="day-cal-tile-num">${tile.day}</span>
             </div>
             <div class="agenda-day-title-wrap">
-              <h2 class="agenda-day-title">${headerDate}</h2>
-              <span class="agenda-day-relative ${isToday ? 'is-today' : (relativeLabel === 'Tomorrow' ? 'is-tomorrow' : (relativeLabel === 'Past' ? 'is-past' : ''))}">${relativeLabel}</span>
+              <h2 class="agenda-day-title">${escapeHtml(headerDate)}</h2>
+              <span class="agenda-day-relative ${isToday ? 'is-today' : (relativeLabel === 'Tomorrow' ? 'is-tomorrow' : '')}">${escapeHtml(relativeLabel)}</span>
             </div>
-            <span class="agenda-day-count">${dayEvents.length} event${dayEvents.length > 1 ? 's' : ''}</span>
+            <span class="agenda-day-count">${dayEvents.length} gathering${dayEvents.length > 1 ? 's' : ''}</span>
           </div>
           <div class="agenda-events-list">
       `;
@@ -3304,60 +4286,63 @@
       dayEvents.forEach(ev => {
         const duration = calculateDuration(ev.start, ev.end);
         const gcalUrl = makeGoogleCalendarUrl(ev);
-        const pillar = ev._pillar || classifyEventPillar(ev.activityType);
+        const pillar = ev._pillar || classifyEventPillar(ev);
+        const emblem = PILLAR_EMBLEMS[pillar] || '🌲';
 
         html += `
           <article class="event-card" data-pillar="${pillar}">
-            <!-- Time Column -->
-            <div class="event-time-col">
-              <div class="event-time">${ev.timeString}</div>
-              <div class="event-meta-pills">
-                ${duration ? `<span class="event-duration">⏱ ${duration}</span>` : ''}
-                ${ev.cost ? `<span class="event-cost-pill">${ev.cost}</span>` : ''}
-              </div>
-            </div>
-
-            <!-- Details Column -->
-            <div class="event-details-col">
-              <div class="event-tags-row">
-                <span class="event-badge badge-category">${ev.activityType}</span>
-                <span class="event-badge badge-area">📍 ${ev.area}</span>
-                ${ev.recurrence ? `<span class="event-badge badge-recurrence">🔁 ${ev.recurrence}</span>` : ''}
-              </div>
-
-              <h3 class="event-title">${ev.title}</h3>
-
-              <div class="event-org-venue-row">
-                <div class="event-org-line">
-                  <span>Host:</span>
-                  <a href="${ev.url}" target="_blank" rel="noopener noreferrer" class="event-org-link">
-                    ${ev.organization} ↗
-                  </a>
-                </div>
-                <div class="event-venue">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                    <circle cx="12" cy="10" r="3"></circle>
-                  </svg>
-                  <span>${ev.venue}</span>
+            <div class="event-card-inner">
+              <!-- Time & Cost Stamp Column -->
+              <div class="event-time-col">
+                <div class="event-time">${escapeHtml(ev.timeString)}</div>
+                <div class="event-meta-pills">
+                  ${duration ? `<span class="event-duration">⏱ ${escapeHtml(duration)}</span>` : ''}
+                  ${ev.cost ? `<span class="event-cost-pill">${escapeHtml(ev.cost)}</span>` : ''}
                 </div>
               </div>
 
-              <p class="event-desc">${ev.description}</p>
-            </div>
+              <!-- Editorial Details Column -->
+              <div class="event-details-col">
+                <div class="event-tags-row">
+                  <span class="event-badge badge-category"><span aria-hidden="true">${emblem}</span> ${escapeHtml(ev.activityType)}</span>
+                  <span class="event-badge badge-area">📍 ${escapeHtml(ev.area)}</span>
+                  ${ev.recurrence ? `<span class="event-badge badge-recurrence">🔁 ${escapeHtml(ev.recurrence)}</span>` : ''}
+                </div>
 
-            <!-- Actions Column -->
-            <div class="event-actions-col">
-              <a href="${ev.url}" target="_blank" rel="noopener noreferrer" class="action-btn btn-source">
-                <span>Event Website ↗</span>
-              </a>
-              <div class="event-actions-subrow">
-                <a href="${gcalUrl}" target="_blank" rel="noopener noreferrer" class="action-btn btn-gcal" title="Add to Google Calendar">
-                  <span>+ Google Cal</span>
+                <h3 class="event-title">${escapeHtml(ev.title)}</h3>
+
+                <div class="event-org-venue-row">
+                  <div class="event-org-line">
+                    <span>Steward:</span>
+                    <a href="${escapeHtml(ev.url)}" target="_blank" rel="noopener noreferrer" class="event-org-link">
+                      ${escapeHtml(ev.organization)} ↗
+                    </a>
+                  </div>
+                  <div class="event-venue">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                      <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                    <span>${escapeHtml(ev.venue)}</span>
+                  </div>
+                </div>
+
+                <p class="event-desc">${escapeHtml(ev.description)}</p>
+              </div>
+
+              <!-- Actions Column -->
+              <div class="event-actions-col">
+                <a href="${escapeHtml(ev.url)}" target="_blank" rel="noopener noreferrer" class="action-btn btn-source">
+                  <span>Field Dispatch ↗</span>
                 </a>
-                <button type="button" class="action-btn btn-ics" onclick="downloadIcs('${ev.id}')" title="Download .ics calendar file">
-                  <span>.ICS</span>
-                </button>
+                <div class="event-actions-subrow">
+                  <a href="${gcalUrl}" target="_blank" rel="noopener noreferrer" class="action-btn btn-gcal" title="Add to Google Calendar">
+                    <span>+ Google Cal</span>
+                  </a>
+                  <button type="button" class="action-btn btn-ics" onclick="downloadIcs('${escapeHtml(ev.id)}')" title="Download .ics calendar file">
+                    <span>.ICS</span>
+                  </button>
+                </div>
               </div>
             </div>
           </article>
