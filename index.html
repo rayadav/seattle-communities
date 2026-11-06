@@ -1329,6 +1329,103 @@
     box-shadow: var(--shadow-xs);
   }
 
+  /* High-Level Time-of-Day (Daypart) Filter Bar */
+  .daypart-filter-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding-top: 9px;
+    margin-top: 2px;
+    border-top: 1px dashed var(--rule);
+    flex-wrap: wrap;
+  }
+
+  .daypart-pills-row {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    flex-wrap: wrap;
+    flex: 1;
+  }
+
+  .daypart-pill {
+    appearance: none;
+    border: 1px solid var(--rule);
+    background: var(--surface);
+    color: var(--ink-secondary);
+    font-family: var(--font-sans);
+    font-size: 0.78rem;
+    font-weight: 600;
+    padding: 5px 11px;
+    border-radius: 999px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    white-space: nowrap;
+    transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+  }
+  .daypart-pill:hover {
+    border-color: var(--ink-secondary);
+    color: var(--ink);
+    background: var(--surface-2);
+  }
+  .daypart-pill.active {
+    background: var(--forest);
+    color: #ffffff;
+    border-color: var(--forest);
+    box-shadow: var(--shadow-xs);
+  }
+  .daypart-pill[data-daypart="morning"].active {
+    background: #b85d19;
+    border-color: #b85d19;
+    color: #ffffff;
+  }
+  .daypart-pill[data-daypart="afternoon"].active {
+    background: #1b6b58;
+    border-color: #1b6b58;
+    color: #ffffff;
+  }
+  .daypart-pill[data-daypart="evening"].active {
+    background: #3d348b;
+    border-color: #3d348b;
+    color: #ffffff;
+  }
+
+  .daypart-icon {
+    font-size: 0.88rem;
+    line-height: 1;
+  }
+
+  .daypart-range {
+    font-family: var(--font-mono);
+    font-size: 0.66rem;
+    font-weight: 500;
+    opacity: 0.78;
+  }
+
+  .daypart-count {
+    font-family: var(--font-mono);
+    font-size: 0.66rem;
+    font-weight: 700;
+    padding: 1px 6px;
+    border-radius: 999px;
+    background: var(--surface-2);
+    color: var(--ink-secondary);
+    border: 1px solid var(--rule-soft);
+    font-variant-numeric: tabular-nums;
+  }
+  .daypart-pill.active .daypart-count {
+    background: rgba(255, 255, 255, 0.22);
+    color: #ffffff;
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+
+  .mobile-only-daypart-box {
+    display: none;
+  }
+
   /* Active Filter Chips */
   .active-filter-chips {
     display: none;
@@ -1990,6 +2087,35 @@
     border: 1px solid var(--pillar-watershed-border);
   }
 
+  .event-daypart-pill {
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: 6px;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    background: var(--surface-2);
+    color: var(--ink-secondary);
+    border: 1px solid var(--rule);
+  }
+  .event-daypart-pill[data-daypart="morning"] {
+    background: var(--pillar-fungi-bg);
+    color: var(--pillar-fungi-fg);
+    border-color: var(--pillar-fungi-border);
+  }
+  .event-daypart-pill[data-daypart="afternoon"] {
+    background: var(--pillar-watershed-bg);
+    color: var(--pillar-watershed-fg);
+    border-color: var(--pillar-watershed-border);
+  }
+  .event-daypart-pill[data-daypart="evening"] {
+    background: var(--pillar-comedy-bg);
+    color: var(--pillar-comedy-fg);
+    border-color: var(--pillar-comedy-border);
+  }
+
   /* Center Column: Badges, Fraunces Title, Host & Description */
   .event-details-col {
     display: flex;
@@ -2443,15 +2569,19 @@
       cursor: pointer;
     }
 
-    .time-pills-row {
+    .time-pills-row,
+    .daypart-pills-row {
       overflow-x: auto;
       flex-wrap: nowrap;
       scrollbar-width: none;
       -webkit-overflow-scrolling: touch;
       padding-bottom: 2px;
     }
-    .time-pills-row::-webkit-scrollbar { display: none; }
+    .time-pills-row::-webkit-scrollbar,
+    .daypart-pills-row::-webkit-scrollbar { display: none; }
     .time-pills-label { display: none; }
+    .daypart-range { display: none; }
+    .mobile-only-daypart-box { display: flex; }
 
     .main-content {
       padding: 12px 14px 64px;
@@ -2756,6 +2886,16 @@
             </select>
           </div>
 
+          <div class="select-box mobile-only-daypart-box">
+            <label class="mobile-filter-label" for="daypart-filter-select">Time of Day</label>
+            <select id="daypart-filter-select" aria-label="Filter by time of day">
+              <option value="all">All Times of Day</option>
+              <option value="morning">🌅 Morning (Before 12 PM)</option>
+              <option value="afternoon">☀️ Afternoon (12 PM – 5 PM)</option>
+              <option value="evening">🌙 Evening &amp; Night (5 PM+)</option>
+            </select>
+          </div>
+
           <div class="select-box date-box">
             <label class="mobile-filter-label" for="filter-date-trigger-btn">Specific Date</label>
             <div class="date-trigger-wrap">
@@ -2822,6 +2962,35 @@
               <span>⊞ Grid</span>
             </button>
           </div>
+        </div>
+      </div>
+
+      <!-- High-Level Time-of-Day Filter Bar -->
+      <div class="daypart-filter-bar" role="group" aria-label="Filter by time of day">
+        <div class="daypart-pills-row" id="daypart-pills-row">
+          <span class="time-pills-label">Time of Day:</span>
+          <button type="button" class="daypart-pill active" data-daypart="all" aria-pressed="true">
+            <span>All Times</span>
+            <span class="daypart-count" id="dp-count-all">0</span>
+          </button>
+          <button type="button" class="daypart-pill" data-daypart="morning" aria-pressed="false" title="Morning gatherings starting before 12:00 PM">
+            <span class="daypart-icon" aria-hidden="true">🌅</span>
+            <span>Morning</span>
+            <span class="daypart-range">Before 12p</span>
+            <span class="daypart-count" id="dp-count-morning">0</span>
+          </button>
+          <button type="button" class="daypart-pill" data-daypart="afternoon" aria-pressed="false" title="Afternoon gatherings starting between 12:00 PM and 5:00 PM">
+            <span class="daypart-icon" aria-hidden="true">☀️</span>
+            <span>Afternoon</span>
+            <span class="daypart-range">12p–5p</span>
+            <span class="daypart-count" id="dp-count-afternoon">0</span>
+          </button>
+          <button type="button" class="daypart-pill" data-daypart="evening" aria-pressed="false" title="Evening and night gatherings starting at 5:00 PM or later">
+            <span class="daypart-icon" aria-hidden="true">🌙</span>
+            <span>Evening &amp; Night</span>
+            <span class="daypart-range">5p+</span>
+            <span class="daypart-count" id="dp-count-evening">0</span>
+          </button>
         </div>
       </div>
 
@@ -2939,6 +3108,7 @@
 
   let allEvents = [];
   let activeTimeframe = 'all';
+  let activeDaypart = 'all';
   let activePillar = 'all';
   let selectedCustomDate = '';
   let currentViewMode = 'ledger';
@@ -2956,6 +3126,12 @@
   const resetBtn = document.getElementById('reset-filters-btn');
   const emptyResetBtn = document.getElementById('empty-reset-btn');
   const timePills = document.querySelectorAll('.time-pill');
+  const daypartPills = document.querySelectorAll('.daypart-pill');
+  const daypartFilterSelect = document.getElementById('daypart-filter-select');
+  const dpCountAll = document.getElementById('dp-count-all');
+  const dpCountMorning = document.getElementById('dp-count-morning');
+  const dpCountAfternoon = document.getElementById('dp-count-afternoon');
+  const dpCountEvening = document.getElementById('dp-count-evening');
   const pillarsStrip = document.getElementById('pillars-strip');
   const weekHorizonGrid = document.getElementById('week-horizon-grid');
   const weekHorizonRange = document.getElementById('week-horizon-range');
@@ -3132,6 +3308,51 @@
     arts: '🎨'
   };
 
+  // Classify each event into a high-level Time of Day (Daypart):
+  // - 'morning': Before 12:00 PM (00:00 – 11:59)
+  // - 'afternoon': 12:00 PM – 4:59 PM (12:00 – 16:59)
+  // - 'evening': 5:00 PM & Night (17:00 – 23:59)
+  function classifyEventDaypart(ev) {
+    const startStr = (ev && ev.start) || '';
+    const m = startStr.match(/T(\d{2}):(\d{2})/);
+    if (m) {
+      const hour = parseInt(m[1], 10);
+      if (hour < 12) return 'morning';
+      if (hour < 17) return 'afternoon';
+      return 'evening';
+    }
+    const tStr = ((ev && ev.timeString) || '').toUpperCase();
+    const tm = tStr.match(/(\d{1,2})(?::(\d{2}))?\s*(AM|PM)/);
+    if (tm) {
+      let hr = parseInt(tm[1], 10);
+      const ampm = tm[3];
+      if (ampm === 'PM' && hr !== 12) hr += 12;
+      if (ampm === 'AM' && hr === 12) hr = 0;
+      if (hr < 12) return 'morning';
+      if (hr < 17) return 'afternoon';
+      return 'evening';
+    }
+    return 'afternoon';
+  }
+
+  const DAYPART_META = {
+    morning: { icon: '🌅', label: 'Morning', range: 'Before 12 PM', badge: 'Morning' },
+    afternoon: { icon: '☀️', label: 'Afternoon', range: '12–5 PM', badge: 'Afternoon' },
+    evening: { icon: '🌙', label: 'Evening & Night', range: '5 PM+', badge: 'Evening' }
+  };
+
+  function syncDaypartControls() {
+    daypartPills.forEach(btn => {
+      const dp = btn.getAttribute('data-daypart');
+      const isAct = dp === activeDaypart;
+      btn.classList.toggle('active', isAct);
+      btn.setAttribute('aria-pressed', isAct ? 'true' : 'false');
+    });
+    if (daypartFilterSelect && daypartFilterSelect.value !== activeDaypart) {
+      daypartFilterSelect.value = activeDaypart;
+    }
+  }
+
   function formatDisplayDateFull(dateStr) {
     if (typeof Temporal !== 'undefined' && Temporal.PlainDate) {
       try {
@@ -3289,6 +3510,7 @@
     for (let i = 0; i < allEvents.length; i++) {
       const ev = allEvents[i];
       if (activePillar !== 'all' && ev._pillar !== activePillar) continue;
+      if (activeDaypart !== 'all' && ev._daypart !== activeDaypart) continue;
       if (selCat && ev.activityType !== selCat) continue;
       if (selOrg && ev.organization !== selOrg) continue;
       if (selArea && ev.area !== selArea) continue;
@@ -3518,6 +3740,7 @@
         ev._searchStr = raw;
         ev._cleanStr = raw.replace(/[\s\-_,.]/g, '');
         ev._pillar = classifyEventPillar(ev);
+        ev._daypart = classifyEventDaypart(ev);
       }
       initCalendar();
     })
@@ -3837,11 +4060,45 @@
       });
     });
 
+    // High-Level Time-of-Day (Daypart) Filter Listeners
+    daypartPills.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const dp = btn.getAttribute('data-daypart') || 'all';
+        activeDaypart = (activeDaypart === dp && dp !== 'all') ? 'all' : dp;
+        syncDaypartControls();
+        updateUrlParam('time', activeDaypart === 'all' ? null : activeDaypart);
+        renderWeekHorizonStrip();
+        renderAgenda();
+        if (calendarDialog && calendarDialog.open) {
+          renderCalendarMonth();
+        }
+      });
+    });
+
+    if (daypartFilterSelect) {
+      daypartFilterSelect.addEventListener('change', () => {
+        activeDaypart = daypartFilterSelect.value || 'all';
+        syncDaypartControls();
+        updateUrlParam('time', activeDaypart === 'all' ? null : activeDaypart);
+        renderWeekHorizonStrip();
+        renderAgenda();
+        if (calendarDialog && calendarDialog.open) {
+          renderCalendarMonth();
+        }
+      });
+    }
+
     const urlParams = new URLSearchParams(window.location.search);
     const initialQuery = urlParams.get('q');
     if (initialQuery && searchInput) {
       searchInput.value = initialQuery;
       clearSearchBtn.style.display = 'inline-flex';
+    }
+    const rawTimeParam = (urlParams.get('time') || urlParams.get('daypart') || '').toLowerCase();
+    if (rawTimeParam === 'morning' || rawTimeParam === 'afternoon' || rawTimeParam === 'evening' || rawTimeParam === 'night') {
+      activeDaypart = rawTimeParam === 'night' ? 'evening' : rawTimeParam;
+      syncDaypartControls();
+      renderWeekHorizonStrip();
     }
     const initialDate = urlParams.get('date') || urlParams.get('d');
     if (initialDate && /^\d{4}-\d{2}-\d{2}$/.test(initialDate)) {
@@ -3875,6 +4132,7 @@
   function updateMobileFilterStatus(selCat, selOrg, selArea, countVisible) {
     let count = 0;
     if (activePillar !== 'all') count++;
+    if (activeDaypart !== 'all') count++;
     if (selCat) count++;
     if (selOrg) count++;
     if (selArea) count++;
@@ -3906,6 +4164,10 @@
         if (activePillar !== 'all') {
           chipsHtml += `<span class="active-chip">${PILLAR_EMBLEMS[activePillar] || '🧭'} Pillar: ${escapeHtml(activePillar.toUpperCase())} <button type="button" data-clear="pillar" aria-label="Clear pillar filter">✕</button></span>`;
         }
+        if (activeDaypart !== 'all' && DAYPART_META[activeDaypart]) {
+          const dpMeta = DAYPART_META[activeDaypart];
+          chipsHtml += `<span class="active-chip">${dpMeta.icon} Time: ${escapeHtml(dpMeta.label)} (${escapeHtml(dpMeta.range)}) <button type="button" data-clear="daypart" aria-label="Clear time of day filter">✕</button></span>`;
+        }
         if (selectedCustomDate) {
           const shortDate = formatDisplayDateShort(selectedCustomDate);
           chipsHtml += `<span class="active-chip">📅 ${escapeHtml(shortDate)} <button type="button" data-clear="date" aria-label="Clear date filter">✕</button></span>`;
@@ -3933,6 +4195,11 @@
                 });
               }
             }
+            if (target === 'daypart') {
+              activeDaypart = 'all';
+              syncDaypartControls();
+              updateUrlParam('time', null);
+            }
             if (target === 'date') clearCustomDate();
             if (target === 'cat') categoryFilter.value = '';
             if (target === 'org' && orgFilter) orgFilter.value = '';
@@ -3959,6 +4226,9 @@
       });
     }
 
+    activeDaypart = 'all';
+    syncDaypartControls();
+
     selectedCustomDate = '';
     syncDateTriggerLabels();
 
@@ -3967,6 +4237,7 @@
     const allPill = document.querySelector('.time-pill[data-timeframe="all"]');
     if (allPill) allPill.classList.add('active');
     updateUrlParam('date', null);
+    updateUrlParam('time', null);
     updateUrlParam('q', null);
     renderWeekHorizonStrip();
     renderAgenda();
@@ -4152,7 +4423,18 @@
       }));
     }
 
-    const filtered = allEvents.filter(ev => {
+    const {
+      todayStr,
+      tomorrowStr,
+      endThisWeekStr,
+      thisWeekendSatStr,
+      thisWeekendSunStr,
+      nextWeekStartStr,
+      nextWeekEndStr
+    } = getCalendarDateBounds();
+
+    // Step 1: Filter by all criteria except Daypart so we can compute live Morning / Afternoon / Evening counts
+    const baseMatches = allEvents.filter(ev => {
       if (activePillar !== 'all' && ev._pillar !== activePillar) return false;
       if (selCat && ev.activityType !== selCat) return false;
       if (selOrg && ev.organization !== selOrg) return false;
@@ -4166,16 +4448,6 @@
         });
         if (!directMatch && !compressedMatch && !tokenMatch) return false;
       }
-
-      const {
-        todayStr,
-        tomorrowStr,
-        endThisWeekStr,
-        thisWeekendSatStr,
-        thisWeekendSunStr,
-        nextWeekStartStr,
-        nextWeekEndStr
-      } = getCalendarDateBounds();
 
       const dateStr = ev.dateString;
 
@@ -4208,6 +4480,22 @@
 
       return true;
     });
+
+    // Update live Daypart count badges for the current Horizon/Date/Filter context
+    const dpCounts = { all: baseMatches.length, morning: 0, afternoon: 0, evening: 0 };
+    for (let i = 0; i < baseMatches.length; i++) {
+      const dp = baseMatches[i]._daypart || classifyEventDaypart(baseMatches[i]);
+      if (dpCounts[dp] !== undefined) dpCounts[dp]++;
+    }
+    if (dpCountAll) dpCountAll.textContent = dpCounts.all;
+    if (dpCountMorning) dpCountMorning.textContent = dpCounts.morning;
+    if (dpCountAfternoon) dpCountAfternoon.textContent = dpCounts.afternoon;
+    if (dpCountEvening) dpCountEvening.textContent = dpCounts.evening;
+
+    // Step 2: Apply active Time-of-Day (Daypart) filter
+    const filtered = activeDaypart === 'all'
+      ? baseMatches
+      : baseMatches.filter(ev => (ev._daypart || classifyEventDaypart(ev)) === activeDaypart);
 
     if (statusCountEl) {
       if (selectedCustomDate) {
@@ -4288,6 +4576,8 @@
         const gcalUrl = makeGoogleCalendarUrl(ev);
         const pillar = ev._pillar || classifyEventPillar(ev);
         const emblem = PILLAR_EMBLEMS[pillar] || '🌲';
+        const daypart = ev._daypart || classifyEventDaypart(ev);
+        const dpInfo = DAYPART_META[daypart] || DAYPART_META.afternoon;
 
         html += `
           <article class="event-card" data-pillar="${pillar}">
@@ -4296,6 +4586,7 @@
               <div class="event-time-col">
                 <div class="event-time">${escapeHtml(ev.timeString)}</div>
                 <div class="event-meta-pills">
+                  <span class="event-daypart-pill" data-daypart="${daypart}" title="${escapeHtml(dpInfo.label)} (${escapeHtml(dpInfo.range)})"><span aria-hidden="true">${dpInfo.icon}</span> ${escapeHtml(dpInfo.badge)}</span>
                   ${duration ? `<span class="event-duration">⏱ ${escapeHtml(duration)}</span>` : ''}
                   ${ev.cost ? `<span class="event-cost-pill">${escapeHtml(ev.cost)}</span>` : ''}
                 </div>
