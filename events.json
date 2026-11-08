@@ -9920,6 +9920,22 @@
     "recurrence": "Second Sunday of the month"
   },
   {
+    "id": "psms-sunday-foray-tiger-mtn-2026-11-08",
+    "title": "PSMS Sunday Field Foray: Tiger Mountain Late-Fall Chanterelles & Hedgehog Mushrooms",
+    "organization": "Puget Sound Mycological Society",
+    "activityType": "Nature/Conservation",
+    "venue": "Tiger Mountain State Forest – High Point Trailhead (Issaquah, WA 98027)",
+    "area": "Eastside (Issaquah)",
+    "start": "2026-11-08T09:00:00",
+    "end": "2026-11-08T14:00:00",
+    "timeString": "9:00 AM – 2:00 PM",
+    "dateString": "2026-11-08",
+    "description": "Guided Sunday field foray exploring second-growth conifer stands on Tiger Mountain for Pacific golden chanterelles, sweet tooth (Hydnum), angel wings, and autumn polypores with PSMS identifiers.",
+    "url": "https://www.psms.org/events.php",
+    "cost": "Free for PSMS members",
+    "recurrence": "Autumn Field Foray Series"
+  },
+  {
     "id": "was-intro-to-mushrooms-2026-11-08",
     "title": "Intro to Mushrooms: Western Washington Field Course",
     "organization": "Wilderness Awareness School",
@@ -10160,6 +10176,22 @@
     "recurrence": "Monthly (2nd Sundays)"
   },
   {
+    "id": "uwbg-arboretum-sunday-walk-2026-11-08",
+    "title": "Washington Park Arboretum Free Weekend Guided Walk: Late-Autumn Maples & Conifers",
+    "organization": "UW Botanic Gardens / Washington Park Arboretum",
+    "activityType": "Nature/Conservation",
+    "venue": "Graham Visitors Center, Washington Park Arboretum (2300 Arboretum Dr E, Seattle, WA 98112)",
+    "area": "Seattle (Washington Park)",
+    "start": "2026-11-08T13:00:00",
+    "end": "2026-11-08T14:30:00",
+    "timeString": "1:00 PM – 2:30 PM",
+    "dateString": "2026-11-08",
+    "description": "Free naturalist-led Sunday afternoon walking tour through the Washington Park Arboretum highlighting late-turning Japanese maples, sorbus berries, and Pacific Northwest conifers.",
+    "url": "https://botanicgardens.uw.edu/about/events/",
+    "cost": "Free",
+    "recurrence": "Select Weekends"
+  },
+  {
     "id": "improv-place-flow-jam-20261108",
     "title": "The Improv Place: Improv & Flow Sunday Community Jam at Seattle Center",
     "organization": "The Improv Place (Seattle Black Improv)",
@@ -10190,6 +10222,22 @@
     "url": "https://seattlereconomy.org/event/community-threads-nestl-23/",
     "cost": "Free / Donation",
     "recurrence": "Monthly"
+  },
+  {
+    "id": "chtl-intro-woodshop-2026-11-08",
+    "title": "Capitol Hill Tool Library: Intro to Woodshop Safety & Power Tool Basics",
+    "organization": "Capitol Hill Tool Library",
+    "activityType": "Tools",
+    "venue": "Capitol Hill Tool Library (420 E Pike St / Crawford Pl, Seattle, WA 98122)",
+    "area": "Seattle (Capitol Hill)",
+    "start": "2026-11-08T14:30:00",
+    "end": "2026-11-08T16:30:00",
+    "timeString": "2:30 PM – 4:30 PM",
+    "dateString": "2026-11-08",
+    "description": "Hands-on introductory woodshop safety and tool orientation covering miter saws, band saws, drill presses, and sanders so members can safely work during open shop hours.",
+    "url": "https://www.meetup.com/capitol-hill-tool-library/",
+    "cost": "Pay-what-you-can / Free for members",
+    "recurrence": "Bi-weekly on Sundays"
   },
   {
     "id": "nestl-fruit-tree-care-2026-11-08",
@@ -10304,6 +10352,22 @@
     "recurrence": "Monthly on 2nd Sundays"
   },
   {
+    "id": "eccc-sunday-showcase-2026-11-08",
+    "title": "Emerald City Comedy Club: Sunday Night Pacific Northwest Stand-Up Showcase",
+    "organization": "Emerald City Comedy Club",
+    "activityType": "Comedy/Improv",
+    "venue": "Emerald City Comedy Club (210 Broadway E, Seattle, WA 98102)",
+    "area": "Seattle (Capitol Hill)",
+    "start": "2026-11-08T19:00:00",
+    "end": "2026-11-08T20:45:00",
+    "timeString": "7:00 PM – 8:45 PM",
+    "dateString": "2026-11-08",
+    "description": "Cap off the weekend on Broadway with a curated lineup of top Seattle and Pacific Northwest stand-up comedians in an intimate Capitol Hill showroom.",
+    "url": "https://www.emeraldcitycomedy.com/",
+    "cost": "Ticketed (21+)",
+    "recurrence": "Weekly on Sundays"
+  },
+  {
     "id": "up-cinema-unexpected-20261108",
     "title": "Cinema Unexpected: An Improvised Movie Live",
     "organization": "Unexpected Productions Improv",
@@ -10320,6 +10384,22 @@
     "recurrence": "Weekly on Sundays in November"
   },
   {
+    "id": "seward-park-forest-week-2026-11-09",
+    "title": "Seward Park Audubon: Seattle Forest Week Old-Growth Habitat Stewardship",
+    "organization": "Seward Park Audubon Center",
+    "activityType": "Birding",
+    "venue": "Seward Park Audubon Center (5902 Lake Washington Blvd S, Seattle, WA 98118)",
+    "area": "Seattle (Seward Park)",
+    "start": "2026-11-09T09:30:00",
+    "end": "2026-11-09T12:00:00",
+    "timeString": "9:30 AM – 12:00 PM",
+    "dateString": "2026-11-09",
+    "description": "Celebrate Seattle Forest Week by removing invasive English ivy and holly and preparing understory beds for winter native plantings in Seward Park's magnificent old-growth forest.",
+    "url": "https://sewardpark.audubon.org/events",
+    "cost": "Free",
+    "recurrence": "Seattle Forest Week"
+  },
+  {
     "id": "psms-monday-id-clinic-2026-11-09",
     "title": "PSMS Monday Wild Mushroom Identification Clinic",
     "organization": "Puget Sound Mycological Society",
@@ -10334,6 +10414,22 @@
     "url": "https://www.psms.org/events.php",
     "cost": "Free & open to the public",
     "recurrence": "Weekly (Autumn Mondays)"
+  },
+  {
+    "id": "btl-monday-lending-weatherization-2026-11-09",
+    "title": "Ballard Tool Library: Monday Evening Tool Lending & DIY Home Weatherization Help Desk",
+    "organization": "Ballard Tool Library",
+    "activityType": "Tools",
+    "venue": "Ballard Tool Library (7549B 15th Ave NW, Seattle, WA 98117)",
+    "area": "Seattle (Ballard)",
+    "start": "2026-11-09T17:00:00",
+    "end": "2026-11-09T19:00:00",
+    "timeString": "5:00 PM – 7:00 PM",
+    "dateString": "2026-11-09",
+    "description": "Borrow thermal leak detectors, caulking guns, pipe insulation cutters, and over 2,000 community tools while getting advice from volunteer tool librarians.",
+    "url": "https://www.sustainableballard.org/events/",
+    "cost": "Free with membership",
+    "recurrence": "Weekly on Mondays"
   },
   {
     "id": "nestl-fixit-night-rclc-2026-11-09",
@@ -10736,6 +10832,38 @@
     "recurrence": "Monthly"
   },
   {
+    "id": "seward-park-veterans-day-planting-2026-11-11",
+    "title": "Seward Park Audubon: Veterans Day Seattle Forest Week Community Native Planting",
+    "organization": "Seward Park Audubon Center",
+    "activityType": "Birding",
+    "venue": "Seward Park Audubon Center (5902 Lake Washington Blvd S, Seattle, WA 98118)",
+    "area": "Seattle (Seward Park)",
+    "start": "2026-11-11T10:00:00",
+    "end": "2026-11-11T13:00:00",
+    "timeString": "10:00 AM – 1:00 PM",
+    "dateString": "2026-11-11",
+    "description": "Kick off the autumn-winter native planting season on Veterans Day by planting sword ferns, snowberry, and Oregon grape to support resident songbirds and woodpeckers.",
+    "url": "https://sewardpark.audubon.org/events",
+    "cost": "Free",
+    "recurrence": "Seattle Forest Week"
+  },
+  {
+    "id": "bcs-lunch-learn-waterfowl-2026-11-11",
+    "title": "Birds Connect Seattle Lunch & Learn: Winter Waterfowl & Grebes of Puget Sound",
+    "organization": "Birds Connect Seattle",
+    "activityType": "Birding",
+    "venue": "Birds Connect Seattle Downtown Hub (616 Olive Way, Seattle, WA 98101)",
+    "area": "Seattle (Downtown)",
+    "start": "2026-11-11T12:15:00",
+    "end": "2026-11-11T12:45:00",
+    "timeString": "12:15 PM – 12:45 PM",
+    "dateString": "2026-11-11",
+    "description": "Midday 30-minute visual presentation at the downtown Birds Connect Seattle hub covering identification tips for Barrow's Goldeneyes, Buffleheads, Horned Grebes, and Surf Scoters.",
+    "url": "https://birdsconnectsea.org/calendar/",
+    "cost": "Free",
+    "recurrence": "Weekly on Wednesdays"
+  },
+  {
     "id": "lifelong-chicken-soup-brigade-2026-11-11",
     "title": "Lifelong Chicken Soup Brigade: Medically Tailored Grocery Bagging",
     "organization": "Lifelong AIDS Alliance Volunteer Crew",
@@ -10896,6 +11024,22 @@
     "recurrence": "Special Stand-Up Event"
   },
   {
+    "id": "laughs-wednesday-comedy-mix-2026-11-11",
+    "title": "Wednesday Night Comedy Mix Showcase at Laughs Comedy Club",
+    "organization": "Laughs Comedy Club",
+    "activityType": "Comedy/Improv",
+    "venue": "Laughs Comedy Club (5220 Roosevelt Way NE, Seattle, WA 98105)",
+    "area": "Seattle (University District)",
+    "start": "2026-11-11T20:00:00",
+    "end": "2026-11-11T21:30:00",
+    "timeString": "8:00 PM – 9:30 PM",
+    "dateString": "2026-11-11",
+    "description": "Midweek stand-up comedy showcase in the U-District featuring rising Seattle comics and surprise touring drop-in sets.",
+    "url": "https://laughscomedyclub.com/",
+    "cost": "$15 admission",
+    "recurrence": "Weekly on Wednesdays"
+  },
+  {
     "id": "up-duo-comedy-showcase-20261111",
     "title": "Duo Comedy Showcase 2026 at Market Theater",
     "organization": "Unexpected Productions Improv",
@@ -10926,6 +11070,22 @@
     "url": "https://www.tahomabirdalliance.org/bird-walks",
     "cost": "Free",
     "recurrence": "Second Thursday of the month"
+  },
+  {
+    "id": "bike-works-repair-party-2026-11-12",
+    "title": "Bike Works Thursday Night Adult Volunteer Bike Repair Party (18+)",
+    "organization": "Seattle Bike Works Community Mechanics",
+    "activityType": "Tools",
+    "venue": "Bike Works Warehouse (3715 S Hudson St, Seattle, WA 98118)",
+    "area": "Seattle (Columbia City)",
+    "start": "2026-11-12T18:00:00",
+    "end": "2026-11-12T20:30:00",
+    "timeString": "6:00 PM – 8:30 PM",
+    "dateString": "2026-11-12",
+    "description": "Hands-on volunteer bicycle refurbishment evening where mechanics of all experience levels tune brakes, true wheels, and overhaul donated bikes for community giveaway programs.",
+    "url": "https://bikeworks.org/events/",
+    "cost": "Free",
+    "recurrence": "Weekly on Thursdays"
   },
   {
     "id": "kitsap-audubon-meeting-20261112",
@@ -11136,6 +11296,22 @@
     "recurrence": "Monthly (2nd Thursdays)"
   },
   {
+    "id": "eccc-deric-cahill-thursday-2026-11-12",
+    "title": "Stand-Up Comedy Headliner: Deric Cahill Live (Thursday Opening Night)",
+    "organization": "Emerald City Comedy Club",
+    "activityType": "Comedy/Improv",
+    "venue": "Emerald City Comedy Club (210 Broadway E, Seattle, WA 98102)",
+    "area": "Seattle (Capitol Hill)",
+    "start": "2026-11-12T19:30:00",
+    "end": "2026-11-12T21:15:00",
+    "timeString": "7:30 PM – 9:15 PM",
+    "dateString": "2026-11-12",
+    "description": "Sharp, fast-paced crowd work and storytelling stand-up from headliner Deric Cahill kicking off his weekend run on Capitol Hill.",
+    "url": "https://www.emeraldcitycomedy.com/",
+    "cost": "Ticketed (21+)",
+    "recurrence": "Special Headliner Run"
+  },
+  {
     "id": "cozy-comedy-scott-losse-20261112",
     "title": "Cozy Comedy Presents: Laughs on Draft with Scott Losse",
     "organization": "Cozy Comedy",
@@ -11166,6 +11342,22 @@
     "url": "https://townhallseattle.org/events/",
     "cost": "$5 sliding scale, free for youth 22 & under",
     "recurrence": "Science lecture series"
+  },
+  {
+    "id": "laughs-friendsgiving-showcase-2026-11-12",
+    "title": "Friendsgiving Stand-Up Comedy Showcase at Laughs Comedy Club",
+    "organization": "Laughs Comedy Club",
+    "activityType": "Comedy/Improv",
+    "venue": "Laughs Comedy Club (5220 Roosevelt Way NE, Seattle, WA 98105)",
+    "area": "Seattle (University District)",
+    "start": "2026-11-12T20:00:00",
+    "end": "2026-11-12T21:45:00",
+    "timeString": "8:00 PM – 9:45 PM",
+    "dateString": "2026-11-12",
+    "description": "Gather your crew for a festive Friendsgiving stand-up comedy night featuring favorite local comics riffing on chosen family, holiday feasts, and Seattle autumn life.",
+    "url": "https://laughscomedyclub.com/",
+    "cost": "$20 admission",
+    "recurrence": "Seasonal Showcase"
   },
   {
     "id": "up-loose-cannons-20261112",
@@ -12144,6 +12336,38 @@
     "recurrence": "Annual Event"
   },
   {
+    "id": "psms-sunday-foray-cougar-mtn-2026-11-15",
+    "title": "PSMS Mid-November Field Foray: Cougar Mountain Winter Chanterelles & Cortinarius",
+    "organization": "Puget Sound Mycological Society",
+    "activityType": "Nature/Conservation",
+    "venue": "Cougar Mountain Regional Wildland Park – Red Town Trailhead (Bellevue, WA 98006)",
+    "area": "Eastside (Bellevue / Issaquah)",
+    "start": "2026-11-15T09:00:00",
+    "end": "2026-11-15T14:00:00",
+    "timeString": "9:00 AM – 2:00 PM",
+    "dateString": "2026-11-15",
+    "description": "Mid-November mushroom foray and field identification table focusing on yellowfoot winter chanterelles (Craterellus tubaeformis), candy caps, and late-autumn mycorrhizal fungi.",
+    "url": "https://www.psms.org/events.php",
+    "cost": "Free for PSMS members",
+    "recurrence": "Autumn Field Foray Series"
+  },
+  {
+    "id": "seattle-auto-club-wet-skidpad-2026-11-15",
+    "title": "Seattle Auto Club: Wet-Surface Car Control, Braking & Winter Skidpad Clinic",
+    "organization": "Seattle Auto Club Track Day Enthusiasts",
+    "activityType": "Motorsports",
+    "venue": "Evergreen Speedway / Monroe Fairgrounds Paddock (14405 179th Ave SE, Monroe, WA 98272)",
+    "area": "North Sound (Monroe)",
+    "start": "2026-11-15T09:00:00",
+    "end": "2026-11-15T16:00:00",
+    "timeString": "9:00 AM – 4:00 PM",
+    "dateString": "2026-11-15",
+    "description": "Instructed driver safety and car control clinic focusing on threshold braking, wet-pavement weight transfer, and winter hydroplaning recovery in a controlled paddock environment.",
+    "url": "https://www.motorsportreg.com/event-management",
+    "cost": "Registration required (spectators free)",
+    "recurrence": "Seasonal Clinic"
+  },
+  {
     "id": "wakayakclub-pool-roll-clinic-2026-11-15",
     "title": "Washington Kayak Club: Indoor Pool Roll & Rescue Practice Session",
     "organization": "Washington Kayak Club",
@@ -12176,6 +12400,38 @@
     "recurrence": "Special Outing"
   },
   {
+    "id": "nwma-chuckanut-late-fall-foray-2026-11-15",
+    "title": "NWMA Chuckanut Mountain Late-Autumn Mushroom Foray & Field Keying Session",
+    "organization": "Northwest Mushroomers Association",
+    "activityType": "Nature/Conservation",
+    "venue": "Larrabee State Park – Lost Lake Trailhead (245 Chuckanut Dr, Bellingham, WA 98229)",
+    "area": "North Sound (Bellingham)",
+    "start": "2026-11-15T10:00:00",
+    "end": "2026-11-15T14:00:00",
+    "timeString": "10:00 AM – 2:00 PM",
+    "dateString": "2026-11-15",
+    "description": "Community mushroom foray and specimen sorting table in the Chuckanut Mountains examining late-fruiting Russula, Lactarius, Craterellus, and wood-decaying fungi.",
+    "url": "https://www.northwestmushroomers.org/",
+    "cost": "Free for NWMA members",
+    "recurrence": "Monthly Autumn Foray"
+  },
+  {
+    "id": "opff-elwha-winter-chanterelle-foray-2026-11-15",
+    "title": "Olympic Peninsula Fungi Festival: Post-Season Elwha Rainforest Winter Chanterelle & Polypore Walk",
+    "organization": "Olympic Peninsula Fungi Festival",
+    "activityType": "Nature/Conservation",
+    "venue": "Elwha River Valley & Madison Falls Trailhead (Port Angeles, WA 98363)",
+    "area": "Olympic Peninsula (Port Angeles)",
+    "start": "2026-11-15T10:00:00",
+    "end": "2026-11-15T14:00:00",
+    "timeString": "10:00 AM – 2:00 PM",
+    "dateString": "2026-11-15",
+    "description": "Late-autumn rainforest mycology walk studying mossy old-growth nurse logs, winter chanterelles, medicinal conks, and riparian fungal ecology along the Elwha River.",
+    "url": "https://www.olypenfungifest.com/",
+    "cost": "Sliding scale registration",
+    "recurrence": "Seasonal Field Walk"
+  },
+  {
     "id": "pratt-woodturning-bowls-2026-11-15",
     "title": "Pratt Fine Arts Center: Weekend Woodturning & Bowl Studio",
     "organization": "Pratt Fine Arts Center",
@@ -12190,6 +12446,22 @@
     "url": "https://www.pratt.org/classes",
     "cost": "Tuition / Scholarships available",
     "recurrence": "Seasonal"
+  },
+  {
+    "id": "wnps-magnuson-stewardship-2026-11-15",
+    "title": "WNPS Central Puget Sound: Magnuson Park Native Plant & Promontory Restoration Stewardship",
+    "organization": "Washington Native Plant Society (Central Puget Sound)",
+    "activityType": "Nature/Conservation",
+    "venue": "Warren G. Magnuson Park – Promontory Point (7400 Sand Point Way NE, Seattle, WA 98115)",
+    "area": "Seattle (Sand Point / Magnuson)",
+    "start": "2026-11-15T10:00:00",
+    "end": "2026-11-15T12:30:00",
+    "timeString": "10:00 AM – 12:30 PM",
+    "dateString": "2026-11-15",
+    "description": "Join Washington Native Plant Society stewards to tend native Pacific Northwest prairie and woodland plantings while learning winter twig and seedhead identification.",
+    "url": "https://www.wnps.org/events/",
+    "cost": "Free",
+    "recurrence": "Monthly Stewardship"
   },
   {
     "id": "burke-archaeology-day-2026-11-15",
@@ -12272,6 +12544,22 @@
     "recurrence": "Sundays"
   },
   {
+    "id": "wstl-sunday-open-shop-2026-11-15",
+    "title": "West Seattle Tool Library: Sunday Open Woodshop & Community Tool Lending Hours",
+    "organization": "West Seattle Tool Library",
+    "activityType": "Tools",
+    "venue": "Youngstown Cultural Arts Center (4408 Delridge Way SW, Seattle, WA 98106)",
+    "area": "Seattle (West Seattle / Delridge)",
+    "start": "2026-11-15T11:00:00",
+    "end": "2026-11-15T14:00:00",
+    "timeString": "11:00 AM – 2:00 PM",
+    "dateString": "2026-11-15",
+    "description": "Weekend tool borrowing, cider press returns, and supervised community woodshop access at Youngstown Cultural Arts Center.",
+    "url": "https://wstools.org/",
+    "cost": "Pay-what-you-can membership",
+    "recurrence": "Weekly on Sundays"
+  },
+  {
     "id": "carkeek-salmon-stewards-2026-11-15",
     "title": "Carkeek Park Piper's Creek Salmon Stewards: Sunday Peak Chum Viewing",
     "organization": "Green Seattle Partnership Park Stewards",
@@ -12334,6 +12622,22 @@
     "url": "https://www.bookartsguild.org/events",
     "cost": "Free",
     "recurrence": "Monthly Guild Workshop"
+  },
+  {
+    "id": "chtl-electronics-mending-2026-11-15",
+    "title": "Capitol Hill Tool Library: Electronics Mending & Small Appliance Repair Circle",
+    "organization": "Capitol Hill Tool Library",
+    "activityType": "Tools",
+    "venue": "Capitol Hill Tool Library (420 E Pike St / Crawford Pl, Seattle, WA 98122)",
+    "area": "Seattle (Capitol Hill)",
+    "start": "2026-11-15T14:30:00",
+    "end": "2026-11-15T17:00:00",
+    "timeString": "2:30 PM – 5:00 PM",
+    "dateString": "2026-11-15",
+    "description": "Bring broken lamps, toasters, audio gear, or small electronics to troubleshoot circuits, test continuity with multimeters, and learn soldering repair skills.",
+    "url": "https://www.meetup.com/capitol-hill-tool-library/",
+    "cost": "Free / Donations welcome",
+    "recurrence": "Monthly on 3rd Sundays"
   },
   {
     "id": "pnw-glass-guild-meeting-2026-11-15",
@@ -12400,6 +12704,38 @@
     "recurrence": "Weekly on Sundays"
   },
   {
+    "id": "jci-sunday-narrative-improv-2026-11-15",
+    "title": "Jet City Improv: Sunday Night Long-Form Narrative Improv Showcase",
+    "organization": "Jet City Improv",
+    "activityType": "Comedy/Improv",
+    "venue": "University Heights Center – Drama Room (5031 University Way NE, Seattle, WA 98105)",
+    "area": "Seattle (University District)",
+    "start": "2026-11-15T19:00:00",
+    "end": "2026-11-15T20:30:00",
+    "timeString": "7:00 PM – 8:30 PM",
+    "dateString": "2026-11-15",
+    "description": "Intimate Sunday evening of unscripted narrative storytelling and long-form ensemble comedy performed by Jet City Improv's house repertory players.",
+    "url": "https://www.jetcityimprov.org/shows.html",
+    "cost": "Pay-what-you-can / $15",
+    "recurrence": "Select Sundays"
+  },
+  {
+    "id": "eccc-mark-paul-sunday-2026-11-15",
+    "title": "Stand-Up Comedy Showcase: Mark Paul Live at Emerald City Comedy Club",
+    "organization": "Emerald City Comedy Club",
+    "activityType": "Comedy/Improv",
+    "venue": "Emerald City Comedy Club (210 Broadway E, Seattle, WA 98102)",
+    "area": "Seattle (Capitol Hill)",
+    "start": "2026-11-15T19:00:00",
+    "end": "2026-11-15T20:45:00",
+    "timeString": "7:00 PM – 8:45 PM",
+    "dateString": "2026-11-15",
+    "description": "Sunday night headlining comedy showcase featuring Mark Paul and local guest openers at Emerald City Comedy Club on Broadway.",
+    "url": "https://www.emeraldcitycomedy.com/",
+    "cost": "Ticketed (21+)",
+    "recurrence": "Special Headliner"
+  },
+  {
     "id": "laughs-connor-king-20261115",
     "title": "Stand-Up Comedy Showcase: Connor King at Laughs Comedy Club",
     "organization": "Laughs Comedy Club",
@@ -12448,6 +12784,38 @@
     "recurrence": "Mondays in Fall"
   },
   {
+    "id": "bike-works-repair-party-2026-11-16",
+    "title": "Bike Works Monday Night Volunteer Bike Repair Party (18+)",
+    "organization": "Seattle Bike Works Community Mechanics",
+    "activityType": "Tools",
+    "venue": "Bike Works Warehouse (3715 S Hudson St, Seattle, WA 98118)",
+    "area": "Seattle (Columbia City)",
+    "start": "2026-11-16T18:00:00",
+    "end": "2026-11-16T20:30:00",
+    "timeString": "6:00 PM – 8:30 PM",
+    "dateString": "2026-11-16",
+    "description": "Learn practical bicycle mechanics while refurbishing donated adult and youth bikes alongside Bike Works staff mechanics. Beginners welcome and trained on-site.",
+    "url": "https://bikeworks.org/events/",
+    "cost": "Free",
+    "recurrence": "Weekly on Mondays"
+  },
+  {
+    "id": "seattle-makers-queer-crafters-2026-11-16",
+    "title": "Seattle Makers: Queer Crafters Bi-Weekly Community Craft & Maker Night",
+    "organization": "Seattle Makers",
+    "activityType": "Maker & Crafts",
+    "venue": "Seattle Makers (3012 16th Ave W, Seattle, WA 98119)",
+    "area": "Seattle (Interbay)",
+    "start": "2026-11-16T18:00:00",
+    "end": "2026-11-16T20:30:00",
+    "timeString": "6:00 PM – 8:30 PM",
+    "dateString": "2026-11-16",
+    "description": "Welcoming bi-weekly evening meetup for LGBTQIA+ makers and allies to bring textile, leather, electronics, 3D printing, or illustration projects and share tools.",
+    "url": "https://seattlemakers.org/events/",
+    "cost": "Free / Pay-what-you-can",
+    "recurrence": "Bi-weekly on Mondays"
+  },
+  {
     "id": "seattle-recreative-upcycling-2026-11-16",
     "title": "Seattle ReCreative: Creative Reuse & Upcycling Open Studio",
     "organization": "Seattle ReCreative",
@@ -12478,6 +12846,22 @@
     "url": "https://curlingseattle.org/content/2026-2027-monday-night",
     "cost": "League registration",
     "recurrence": "Weekly on Mondays"
+  },
+  {
+    "id": "nestl-book-club-nov-2026-11-16",
+    "title": "NE Seattle Tool Library Book Club: Sustainable Craft, Repair & Circular Economy",
+    "organization": "Northeast Seattle Tool Library",
+    "activityType": "Tools",
+    "venue": "NE Seattle Tool Library (10228 Fischer Pl NE, Seattle, WA 98125)",
+    "area": "Seattle (Wedgwood / Lake City)",
+    "start": "2026-11-16T19:00:00",
+    "end": "2026-11-16T20:30:00",
+    "timeString": "7:00 PM – 8:30 PM",
+    "dateString": "2026-11-16",
+    "description": "Monthly community book club at the Northeast Seattle Tool Library discussing community-voted books on repair culture, ecological stewardship, and resilience.",
+    "url": "https://seattlereconomy.org/events/",
+    "cost": "Free",
+    "recurrence": "Monthly on 3rd Mondays"
   },
   {
     "id": "psms-id-clinic-2026-11-16",
@@ -12606,6 +12990,22 @@
     "url": "https://wffc.com/event/november-2026-club-dinner-meeting-featuring-john-shewey/",
     "cost": "See event page",
     "recurrence": "Monthly (3rd Tuesday)"
+  },
+  {
+    "id": "cnw-tuesday-track-workout-2026-11-17",
+    "title": "Club Northwest Tuesday Night Community Track Workout at Roosevelt High School",
+    "organization": "Club Northwest",
+    "activityType": "Running",
+    "venue": "Roosevelt High School Track (1410 NE 66th St, Seattle, WA 98115)",
+    "area": "Seattle (Roosevelt)",
+    "start": "2026-11-17T18:00:00",
+    "end": "2026-11-17T19:30:00",
+    "timeString": "6:00 PM – 7:30 PM",
+    "dateString": "2026-11-17",
+    "description": "Coached all-paces interval and cross-country conditioning track workout open to distance runners, sprinters, and masters athletes across Seattle.",
+    "url": "https://clubnorthwest.wildapricot.org/events",
+    "cost": "Free for first-time guests / Club membership",
+    "recurrence": "Weekly on Tuesdays"
   },
   {
     "id": "chtl-tuesday-hours-2026-11-17",
@@ -12880,6 +13280,22 @@
     "recurrence": "Special Workshop"
   },
   {
+    "id": "bcs-nature-sketching-social-2026-11-18",
+    "title": "Birds Connect Seattle: Drop-In Nature Sketching & Bird Illustration Social Hour",
+    "organization": "Birds Connect Seattle",
+    "activityType": "Birding",
+    "venue": "Birds Connect Seattle Downtown Hub (616 Olive Way, Seattle, WA 98101)",
+    "area": "Seattle (Downtown)",
+    "start": "2026-11-18T16:30:00",
+    "end": "2026-11-18T17:30:00",
+    "timeString": "4:30 PM – 5:30 PM",
+    "dateString": "2026-11-18",
+    "description": "Bring a field journal or sketchpad to practice drawing winter songbirds and waterfowl from study skins and reference photos alongside fellow nature artists and birders.",
+    "url": "https://birdsconnectsea.org/calendar/",
+    "cost": "Free",
+    "recurrence": "Monthly on Wednesdays"
+  },
+  {
     "id": "wstl-fix-it-night-2026-11-18",
     "title": "West Seattle Tool Library: Wednesday Community Fix-It Night",
     "organization": "West Seattle Tool Library",
@@ -12944,6 +13360,22 @@
     "recurrence": "Weekly on Wednesdays"
   },
   {
+    "id": "nshg-november-club-meeting-2026-11-18",
+    "title": "North Seattle Homebrewers Guild: Winter Dark Ales, Porters & Holiday Spiced Brews Share",
+    "organization": "North Seattle Homebrewers Guild",
+    "activityType": "Food/Brewing",
+    "venue": "Halcyon Brewing Company Community Table (8525 Greenwood Ave N, Seattle, WA 98103)",
+    "area": "Seattle (Greenwood)",
+    "start": "2026-11-18T19:00:00",
+    "end": "2026-11-18T21:00:00",
+    "timeString": "7:00 PM – 9:00 PM",
+    "dateString": "2026-11-18",
+    "description": "Monthly North Seattle homebrewing meetup featuring BJCP-style sensory feedback on robust porters, imperial stouts, and winter warmers, plus all-grain recipe troubleshooting.",
+    "url": "https://www.northseattlehomebrewers.com/events",
+    "cost": "Free (21+)",
+    "recurrence": "Monthly (3rd Wednesdays)"
+  },
+  {
     "id": "scc-wednesday-casual-2026-11-18",
     "title": "Seattle Chess Club: Wednesday Casual Chess Night",
     "organization": "Seattle Chess Club",
@@ -12990,6 +13422,22 @@
     "url": "https://www.seattleastro.org/",
     "cost": "Free and open to the public",
     "recurrence": "3rd Wednesday of the month"
+  },
+  {
+    "id": "laughs-wednesday-comedy-mix-2026-11-18",
+    "title": "Wednesday Night Comedy Mix Showcase at Laughs Comedy Club",
+    "organization": "Laughs Comedy Club",
+    "activityType": "Comedy/Improv",
+    "venue": "Laughs Comedy Club (5220 Roosevelt Way NE, Seattle, WA 98105)",
+    "area": "Seattle (University District)",
+    "start": "2026-11-18T20:00:00",
+    "end": "2026-11-18T21:30:00",
+    "timeString": "8:00 PM – 9:30 PM",
+    "dateString": "2026-11-18",
+    "description": "Weekly stand-up showcase spotlighting eight to ten emerging and established Northwest comics working out fresh material.",
+    "url": "https://laughscomedyclub.com/",
+    "cost": "$15 admission",
+    "recurrence": "Weekly on Wednesdays"
   },
   {
     "id": "up-duo-comedy-showcase-20261118",
@@ -13104,6 +13552,22 @@
     "recurrence": "Bi-weekly volunteer legal clinic"
   },
   {
+    "id": "sktl-auburn-help-listening-2026-11-19",
+    "title": "South King Tool Library Auburn: Housing Equity Listening Project (HELP) & Tenant Repair Resources",
+    "organization": "South King Tool Library",
+    "activityType": "Tools",
+    "venue": "South King Tool Library – Auburn Branch (410 H St NE, Auburn, WA 98002)",
+    "area": "South King County (Auburn)",
+    "start": "2026-11-19T17:30:00",
+    "end": "2026-11-19T19:00:00",
+    "timeString": "5:30 PM – 7:00 PM",
+    "dateString": "2026-11-19",
+    "description": "Community gathering at the Auburn Tool Library connecting South King County renters and homeowners with free weatherization supplies, healthy home repair tools, and tenant advocacy.",
+    "url": "https://southkingtools.org/",
+    "cost": "Free",
+    "recurrence": "Monthly (3rd Thursdays)"
+  },
+  {
     "id": "pnms-microscopy-meeting-2026-11-19",
     "title": "Pacific Northwest Microscopy Society: Autumn Imaging & Micro-Analysis Lecture",
     "organization": "Pacific Northwest Microscopy Society",
@@ -13216,6 +13680,38 @@
     "recurrence": "Select Thursdays"
   },
   {
+    "id": "soundbio-phytoremediation-workshop-2026-11-20",
+    "title": "SoundBio Lab: FREE! Plants vs Pollution – Aquatic Phytoremediation Workshop",
+    "organization": "SoundBio Lab",
+    "activityType": "Science",
+    "venue": "SoundBio Lab (1100 NE 47th St, Suite 103, Seattle, WA 98105)",
+    "area": "Seattle (University District)",
+    "start": "2026-11-20T16:00:00",
+    "end": "2026-11-20T18:00:00",
+    "timeString": "4:00 PM – 6:00 PM",
+    "dateString": "2026-11-20",
+    "description": "Hands-on environmental biotechnology workshop building a phytoremediation chamber with local duckweed (Lemna minor) and Azolla water ferns to filter heavy metals and quantify uptake.",
+    "url": "https://www.sound.bio/workshops",
+    "cost": "Free (RSVP required)",
+    "recurrence": "Special Workshop"
+  },
+  {
+    "id": "up-improv-happy-hour-2026-11-20",
+    "title": "Improv Happy Hour at Market Theater: Fast-Paced Short-Form Comedy",
+    "organization": "Unexpected Productions Improv",
+    "activityType": "Comedy/Improv",
+    "venue": "Market Theater, Pike Place Market (1428 Post Alley, Seattle, WA 98101)",
+    "area": "Seattle (Pike Place Market)",
+    "start": "2026-11-20T18:00:00",
+    "end": "2026-11-20T19:00:00",
+    "timeString": "6:00 PM – 7:00 PM",
+    "dateString": "2026-11-20",
+    "description": "Kick off Friday night in Post Alley with 60 minutes of rapid-fire improv games, musical mashups, and audience-driven comedy experiments.",
+    "url": "https://www.unexpectedproductions.org/shows/",
+    "cost": "$15",
+    "recurrence": "Weekly on Fridays & Saturdays"
+  },
+  {
     "id": "seward-park-evening-owl-prowl-20261120",
     "title": "Evening Forest Owl Prowl at Seward Park",
     "organization": "Seward Park Audubon Center",
@@ -13228,7 +13724,7 @@
     "dateString": "2026-11-20",
     "description": "Nighttime sensory walk beneath the canopy of Seattle's oldest forest using red-light headlamps to listen for resident Barred and Great Horned Owls and explore nocturnal ecology.",
     "url": "https://www.audubon.org/events?view_type=row&location=Seward+Park+Audubon+Center",
-    "cost": "",
+    "cost": "Free",
     "recurrence": "Special Event"
   },
   {
@@ -13312,6 +13808,22 @@
     "recurrence": "Headliner Weekend"
   },
   {
+    "id": "bandit-dear-diary-2026-11-20",
+    "title": "Bandit Theater Presents: Dear Diary – Real Teenage Journals Turned Improv Comedy",
+    "organization": "Bandit Theater",
+    "activityType": "Comedy/Improv",
+    "venue": "Seattle Open Arts Place / Fremont Abbey (Seattle, WA 98103)",
+    "area": "Seattle (Fremont / Wallingford)",
+    "start": "2026-11-20T19:30:00",
+    "end": "2026-11-20T21:00:00",
+    "timeString": "7:30 PM – 9:00 PM",
+    "dateString": "2026-11-20",
+    "description": "Brave readers share verbatim entries from their real childhood and teenage diaries, inspiring hilarious, heartfelt long-form improv scenes from Bandit Theater's cast.",
+    "url": "https://www.bandittheater.org/",
+    "cost": "$18 advance / $22 door",
+    "recurrence": "Monthly Showcase"
+  },
+  {
     "id": "jci-dndprov-20261120",
     "title": "DnDprov: Improvised Dungeons & Dragons Fantasy Comedy",
     "organization": "Jet City Improv",
@@ -13374,6 +13886,22 @@
     "url": "https://www.unexpectedproductions.org/event/seattle-theatresports-2026-3/2026-11-20/",
     "cost": "$20",
     "recurrence": "Weekly (Fridays & Saturdays)"
+  },
+  {
+    "id": "habitat-skkc-build-day-2026-11-21",
+    "title": "Habitat SKKC Community Build Day: Burien & South Park Affordable Townhomes",
+    "organization": "Habitat for Humanity King County Construction Volunteers",
+    "activityType": "Community/Volunteering",
+    "venue": "Habitat SKKC South Park Construction Site (South Park, Seattle, WA 98108)",
+    "area": "South King County / South Park",
+    "start": "2026-11-21T08:30:00",
+    "end": "2026-11-21T15:30:00",
+    "timeString": "8:30 AM – 3:30 PM",
+    "dateString": "2026-11-21",
+    "description": "Join Habitat for Humanity Seattle-King & Kittitas Counties site supervisors and future homeowners for hands-on framing, siding, and interior trim work. No prior construction experience required.",
+    "url": "https://www.habitatskc.org/news-events/events/",
+    "cost": "Free (tools & safety gear provided)",
+    "recurrence": "Weekly on Saturdays"
   },
   {
     "id": "wta-tiger-mtn-work-party-2026-11-21",
@@ -13888,6 +14416,22 @@
     "recurrence": "Monthly Musical Jam"
   },
   {
+    "id": "seward-park-walk-n-talk-2026-11-21",
+    "title": "Seward Park Walk 'n Talk with Queer Mountaineers & Seward Park Audubon",
+    "organization": "Seward Park Audubon Center",
+    "activityType": "Birding",
+    "venue": "Seward Park Audubon Center (5902 Lake Washington Blvd S, Seattle, WA 98118)",
+    "area": "Seattle (Seward Park)",
+    "start": "2026-11-21T13:00:00",
+    "end": "2026-11-21T15:30:00",
+    "timeString": "1:00 PM – 3:30 PM",
+    "dateString": "2026-11-21",
+    "description": "Welcoming community afternoon stroll along the Seward Park shoreline loop and interior old-growth trails co-hosted with Queer Mountaineers, spotting winter diving ducks and eagles.",
+    "url": "https://sewardpark.audubon.org/events",
+    "cost": "Free",
+    "recurrence": "Special Community Outing"
+  },
+  {
     "id": "soundbio-fungal-dna-barcoding-2026-11-21",
     "title": "SoundBio Lab: Fungal DNA Barcoding & Molecular Mycology Hands-On Workshop",
     "organization": "SoundBio Lab",
@@ -14064,6 +14608,86 @@
     "recurrence": "Weekly on Fridays & Saturdays"
   },
   {
+    "id": "eastside-audubon-juanita-bay-2026-11-22",
+    "title": "Eastside Audubon: Juanita Bay Park Sunday Waterfowl, Wood Duck & Bald Eagle Walk",
+    "organization": "Eastside Audubon",
+    "activityType": "Birding",
+    "venue": "Juanita Bay Park Main Parking Lot (2201 Market St, Kirkland, WA 98033)",
+    "area": "Eastside (Kirkland)",
+    "start": "2026-11-22T08:30:00",
+    "end": "2026-11-22T11:30:00",
+    "timeString": "8:30 AM – 11:30 AM",
+    "dateString": "2026-11-22",
+    "description": "Guided boardwalk birding walk scanning sheltered Lake Washington wetlands for Wood Ducks, Hooded Mergansers, Green-winged Teal, Virginia Rails, and resident Bald Eagles.",
+    "url": "https://www.eastsideaudubon.org/calendar",
+    "cost": "Free",
+    "recurrence": "Monthly Bird Walk"
+  },
+  {
+    "id": "scms-lord-hill-foray-2026-11-22",
+    "title": "SCMS Late-November Field Foray: Lord Hill Regional Park Winter Chanterelles & Wood-Decay Fungi",
+    "organization": "Snohomish County Mycological Society",
+    "activityType": "Nature/Conservation",
+    "venue": "Lord Hill Regional Park Upper Parking Lot (12921 Tester Rd, Snohomish, WA 98290)",
+    "area": "North Sound (Snohomish)",
+    "start": "2026-11-22T09:30:00",
+    "end": "2026-11-22T13:30:00",
+    "timeString": "9:30 AM – 1:30 PM",
+    "dateString": "2026-11-22",
+    "description": "Guided late-fall mushroom foray through Lord Hill's mixed conifer and alder forests with SCMS field identifiers reviewing edible winter chanterelles, oyster mushrooms, and toxic lookalikes.",
+    "url": "https://www.scmsfungi.org/",
+    "cost": "Free for SCMS members",
+    "recurrence": "Seasonal Foray"
+  },
+  {
+    "id": "sskc-lake-washington-arboretum-paddle-2026-11-22",
+    "title": "Seattle Sea Kayak Club: Late-Autumn Lake Washington & Arboretum Waterfront Paddle",
+    "organization": "Seattle Sea Kayak Club",
+    "activityType": "Water Sports",
+    "venue": "Sunnyside Ave N Boat Ramp / Union Bay (2101 N Northlake Way, Seattle, WA 98103)",
+    "area": "Seattle (Lake Union / Montlake)",
+    "start": "2026-11-22T09:30:00",
+    "end": "2026-11-22T14:30:00",
+    "timeString": "9:30 AM – 2:30 PM",
+    "dateString": "2026-11-22",
+    "description": "Sheltered cold-water sea kayaking excursion paddling through the Montlake Cut, Foster Island lagoons, and Union Bay wildlife marsh. Immersion gear and PFD required.",
+    "url": "https://www.meetup.com/seattle-sea-kayak-club/",
+    "cost": "Free (bring own sea kayak & cold-water gear)",
+    "recurrence": "Monthly Club Paddle"
+  },
+  {
+    "id": "kpms-green-mountain-foray-2026-11-22",
+    "title": "KPMS Green Mountain State Forest Late-Fall Mushroom Foray & ID Walk",
+    "organization": "Kitsap Peninsula Mycological Society",
+    "activityType": "Nature/Conservation",
+    "venue": "Green Mountain State Forest – Gold Creek Trailhead (Bremerton, WA 98312)",
+    "area": "Kitsap Peninsula (Bremerton)",
+    "start": "2026-11-22T10:00:00",
+    "end": "2026-11-22T13:30:00",
+    "timeString": "10:00 AM – 1:30 PM",
+    "dateString": "2026-11-22",
+    "description": "Explore Kitsap Peninsula's Douglas-fir and western hemlock woods for late-season hedgehog mushrooms, yellowfeet, cauliflower fungi, and polypores with KPMS guides.",
+    "url": "https://www.kitsapmushrooms.org/",
+    "cost": "Free for KPMS members",
+    "recurrence": "Monthly Field Foray"
+  },
+  {
+    "id": "norwest-horology-escapement-clinic-2026-11-22",
+    "title": "Norwest School of Horology & PNW Watchmakers: Mechanical Escapement & Balance Wheel Servicing Clinic",
+    "organization": "Norwest School of Horology",
+    "activityType": "Tools",
+    "venue": "North Seattle Horological Workshop & Chapter 50 Study Room (Northgate, Seattle, WA 98125)",
+    "area": "Seattle (Northgate)",
+    "start": "2026-11-22T10:00:00",
+    "end": "2026-11-22T13:00:00",
+    "timeString": "10:00 AM – 1:00 PM",
+    "dateString": "2026-11-22",
+    "description": "Hands-on horological bench clinic covering vintage mechanical pocket watch and wristwatch disassembly, ultrasonic cleaning, jewel oiling, and timing machine regulation.",
+    "url": "https://www.nawcc.org/",
+    "cost": "Free for members & prospective students",
+    "recurrence": "Monthly Horology Bench Session"
+  },
+  {
     "id": "uwbg-arboretum-lichens-2026-11-22",
     "title": "Arboretum Lichens Guided Field Walk",
     "organization": "UW Botanic Gardens / Washington Park Arboretum",
@@ -14160,6 +14784,54 @@
     "recurrence": "Sundays"
   },
   {
+    "id": "bam-docent-craft-orientation-2026-11-22",
+    "title": "Bellevue Arts Community Docent & Pacific Northwest Craft Exhibition Volunteer Gathering",
+    "organization": "Bellevue Arts Museum Arts Fair Volunteers",
+    "activityType": "Science",
+    "venue": "Bellevue Downtown Library – Makerspace & Community Room (1111 110th Ave NE, Bellevue, WA 98004)",
+    "area": "Eastside (Bellevue)",
+    "start": "2026-11-22T13:00:00",
+    "end": "2026-11-22T15:00:00",
+    "timeString": "1:00 PM – 3:00 PM",
+    "dateString": "2026-11-22",
+    "description": "Community gathering for Eastside arts and craft volunteers exploring material science in glass, wood, and fiber arts and planning upcoming public studio education.",
+    "url": "https://www.bellevuearts.org/events",
+    "cost": "Free",
+    "recurrence": "Monthly Volunteer Meetup"
+  },
+  {
+    "id": "emerald-city-stained-glass-suncatcher-2026-11-22",
+    "title": "Emerald City Stained Glass Crafters: Copper Foil (Tiffany Method) Sun-Catcher Soldering Studio",
+    "organization": "Emerald City Stained Glass Crafters",
+    "activityType": "Art",
+    "venue": "Greenwood Community Glass Studio (Greenwood Ave N, Seattle, WA 98103)",
+    "area": "Seattle (Greenwood)",
+    "start": "2026-11-22T13:00:00",
+    "end": "2026-11-22T16:00:00",
+    "timeString": "1:00 PM – 4:00 PM",
+    "dateString": "2026-11-22",
+    "description": "Community stained-glass crafting afternoon practicing glass scoring and breaking, diamond wheel grinding, copper-foil wrapping, and lead-free solder beading.",
+    "url": "https://scottishstainedglass.com/cities/seattle-stained-glass/",
+    "cost": "$25 glass & foil materials fee",
+    "recurrence": "Monthly Studio Meetup"
+  },
+  {
+    "id": "psbmg-conifer-resins-workshop-2026-11-22",
+    "title": "Puget Sound Botanical Medicine Guild: PNW Conifer Resins, Usnea & Winter Herbal Salves",
+    "organization": "Puget Sound Botanical Medicine Guild",
+    "activityType": "Nature/Conservation",
+    "venue": "Phinney Center Brick Building (6532 Phinney Ave N, Seattle, WA 98103)",
+    "area": "Seattle (Phinney Ridge)",
+    "start": "2026-11-22T13:00:00",
+    "end": "2026-11-22T15:30:00",
+    "timeString": "1:00 PM – 3:30 PM",
+    "dateString": "2026-11-22",
+    "description": "Hands-on ethnobotanical workshop exploring ethical windfall harvesting of Douglas-fir pitch, western redcedar, and Usnea lichen to craft traditional winter respiratory balms and salves.",
+    "url": "https://www.pugetsoundnaturopathic.com/services",
+    "cost": "$15 suggested materials donation",
+    "recurrence": "Monthly Guild Workshop"
+  },
+  {
     "id": "makers-printmaking-cards-2026-11-22",
     "title": "Holiday Card Linocut Printmaking Workshop",
     "organization": "Seattle Makers",
@@ -14192,6 +14864,22 @@
     "recurrence": "Monthly (4th Sundays)"
   },
   {
+    "id": "chtl-intro-woodshop-2026-11-22",
+    "title": "Capitol Hill Tool Library: Intro to Woodshop Safety & Power Tool Basics",
+    "organization": "Capitol Hill Tool Library",
+    "activityType": "Tools",
+    "venue": "Capitol Hill Tool Library (420 E Pike St / Crawford Pl, Seattle, WA 98122)",
+    "area": "Seattle (Capitol Hill)",
+    "start": "2026-11-22T14:30:00",
+    "end": "2026-11-22T16:30:00",
+    "timeString": "2:30 PM – 4:30 PM",
+    "dateString": "2026-11-22",
+    "description": "Hands-on woodshop orientation covering safe operation of the miter saw, band saw, drill press, and dust collection system for community woodshop certification.",
+    "url": "https://www.meetup.com/capitol-hill-tool-library/",
+    "cost": "Pay-what-you-can / Free for members",
+    "recurrence": "Bi-weekly on Sundays"
+  },
+  {
     "id": "eastside-improv-sunday-jam-2026-11-22",
     "title": "Eastside Improv: Sunday Afternoon Community Drop-In Jam",
     "organization": "Eastside Improv",
@@ -14206,6 +14894,38 @@
     "url": "https://eastsideimprov.org/",
     "cost": "Free / Suggested donation",
     "recurrence": "Weekly (Sundays)"
+  },
+  {
+    "id": "eccc-musical-comedy-matinee-2026-11-22",
+    "title": "Musical Comedy & Improvised Song Showcase at Emerald City Comedy Club",
+    "organization": "Emerald City Comedy Club",
+    "activityType": "Comedy/Improv",
+    "venue": "Emerald City Comedy Club (210 Broadway E, Seattle, WA 98102)",
+    "area": "Seattle (Capitol Hill)",
+    "start": "2026-11-22T16:00:00",
+    "end": "2026-11-22T18:00:00",
+    "timeString": "4:00 PM – 6:00 PM",
+    "dateString": "2026-11-22",
+    "description": "Afternoon musical comedy cabaret and improvised Broadway-style song showcase featuring Seattle musical comedians and accompanists.",
+    "url": "https://www.emeraldcitycomedy.com/",
+    "cost": "Ticketed (21+)",
+    "recurrence": "Monthly Matinee"
+  },
+  {
+    "id": "tcc-native-american-comedy-jam-2026-11-22",
+    "title": "Native American Heritage Month Comedy Jam at Tacoma Comedy Club",
+    "organization": "Tacoma Comedy Club",
+    "activityType": "Comedy/Improv",
+    "venue": "Tacoma Comedy Club (933 Market St, Tacoma, WA 98402)",
+    "area": "South Sound (Downtown Tacoma)",
+    "start": "2026-11-22T19:00:00",
+    "end": "2026-11-22T20:45:00",
+    "timeString": "7:00 PM – 8:45 PM",
+    "dateString": "2026-11-22",
+    "description": "Celebrate Native American Heritage Month with an all-star lineup of Indigenous stand-up comedians from across the Pacific Northwest and beyond.",
+    "url": "https://www.tacomacomedyclub.com/",
+    "cost": "Ticketed (18+)",
+    "recurrence": "Annual Heritage Showcase"
   },
   {
     "id": "up-cinema-unexpected-20261122",
@@ -14288,6 +15008,22 @@
     "recurrence": "Mondays in Fall"
   },
   {
+    "id": "btl-knife-sharpening-monday-2026-11-23",
+    "title": "Ballard Tool Library: Pre-Holiday Kitchen Knife Sharpening & Hand Tool Tune-Up",
+    "organization": "Ballard Tool Library",
+    "activityType": "Tools",
+    "venue": "Ballard Tool Library (7549B 15th Ave NW, Seattle, WA 98117)",
+    "area": "Seattle (Ballard)",
+    "start": "2026-11-23T17:00:00",
+    "end": "2026-11-23T19:00:00",
+    "timeString": "5:00 PM – 7:00 PM",
+    "dateString": "2026-11-23",
+    "description": "Get your chef's knives, paring knives, and carving tools whetstone-sharpened ahead of Thanksgiving while checking out specialty baking and woodworking tools.",
+    "url": "https://www.sustainableballard.org/events/",
+    "cost": "Free / Donations welcome",
+    "recurrence": "Seasonal Skillshare"
+  },
+  {
     "id": "seattle-recreative-upcycling-2026-11-23",
     "title": "Seattle ReCreative: Creative Reuse & Upcycling Open Studio",
     "organization": "Seattle ReCreative",
@@ -14302,6 +15038,22 @@
     "url": "https://www.seattlerecreative.org/events",
     "cost": "Sliding scale / Free",
     "recurrence": "Weekly (Mondays)"
+  },
+  {
+    "id": "soundbio-crispr-course-s1-2026-11-23",
+    "title": "SoundBio Lab Skills Course: CRISPR-Cas9 Gene Editing & Bacterial Transformation (Session 1)",
+    "organization": "SoundBio Lab",
+    "activityType": "Science",
+    "venue": "SoundBio Lab (1100 NE 47th St, Suite 103, Seattle, WA 98105)",
+    "area": "Seattle (University District)",
+    "start": "2026-11-23T18:00:00",
+    "end": "2026-11-23T20:30:00",
+    "timeString": "6:00 PM – 8:30 PM",
+    "dateString": "2026-11-23",
+    "description": "Learn the molecular biology of CRISPR-Cas9 genome editing by performing a live guide-RNA transformation in non-pathogenic E. coli at Seattle's community biology lab.",
+    "url": "https://www.sound.bio/workshops",
+    "cost": "Sliding scale course registration",
+    "recurrence": "Multi-Week Lab Course"
   },
   {
     "id": "gcc-monday-league-2026-11-23",
@@ -14336,6 +15088,22 @@
     "recurrence": "Weekly on Mondays (Autumn Season)"
   },
   {
+    "id": "tcc-monday-open-mic-2026-11-23",
+    "title": "Tacoma Comedy Club: The Never Ending Monday Open Mic Night",
+    "organization": "Tacoma Comedy Club",
+    "activityType": "Comedy/Improv",
+    "venue": "Tacoma Comedy Club (933 Market St, Tacoma, WA 98402)",
+    "area": "South Sound (Downtown Tacoma)",
+    "start": "2026-11-23T19:30:00",
+    "end": "2026-11-23T21:30:00",
+    "timeString": "7:30 PM – 9:30 PM",
+    "dateString": "2026-11-23",
+    "description": "High-energy Monday night stand-up open mic in downtown Tacoma where dozens of regional comics test new material in rapid-fire sets.",
+    "url": "https://www.tacomacomedyclub.com/",
+    "cost": "Free / $5 cover",
+    "recurrence": "Weekly on Mondays"
+  },
+  {
     "id": "auburn-thanksgiving-giveaway-2026-11-24",
     "title": "Annual Thanksgiving Food Basket Packing & Distribution",
     "organization": "Auburn Food Bank Action Group",
@@ -14350,6 +15118,22 @@
     "url": "https://www.theauburnfoodbank.org/events",
     "cost": "Free volunteer shift",
     "recurrence": "Annual Thanksgiving community distribution"
+  },
+  {
+    "id": "bcs-seward-park-owling-2026-11-24",
+    "title": "Birds Connect Seattle: Dusk Owling & Nocturnal Wildlife Walk at Seward Park",
+    "organization": "Birds Connect Seattle",
+    "activityType": "Birding",
+    "venue": "Seward Park Amphitheater & Old-Growth Trailhead (5900 Lake Washington Blvd S, Seattle, WA 98118)",
+    "area": "Seattle (Seward Park)",
+    "start": "2026-11-24T16:00:00",
+    "end": "2026-11-24T18:00:00",
+    "timeString": "4:00 PM – 6:00 PM",
+    "dateString": "2026-11-24",
+    "description": "Twilight guided walk through Seward Park's ancient Douglas-fir canopy listening and watching for Barred Owls, Western Screech-Owls, and Northern Saw-whet Owls at dusk.",
+    "url": "https://birdsconnectsea.org/calendar/",
+    "cost": "Free (registration required)",
+    "recurrence": "Autumn Field Trip"
   },
   {
     "id": "nestl-fabric-fixit-mending-20261124",
@@ -14416,6 +15200,22 @@
     "recurrence": "Weekly on Tuesdays"
   },
   {
+    "id": "eccc-tuesday-open-mic-2026-11-24",
+    "title": "Emerald City Comedy Club Free Tuesday Open Mic Night & Lucky Bucket",
+    "organization": "Emerald City Comedy Club",
+    "activityType": "Comedy/Improv",
+    "venue": "Emerald City Comedy Club (210 Broadway E, Seattle, WA 98102)",
+    "area": "Seattle (Capitol Hill)",
+    "start": "2026-11-24T19:00:00",
+    "end": "2026-11-24T21:00:00",
+    "timeString": "7:00 PM – 9:00 PM",
+    "dateString": "2026-11-24",
+    "description": "Capitol Hill's signature Tuesday night stand-up open mic featuring pre-selected comics plus live Lucky Bucket sign-ups for 3-minute sets.",
+    "url": "https://www.emeraldcitycomedy.com/",
+    "cost": "Free admission",
+    "recurrence": "Weekly on Tuesdays"
+  },
+  {
     "id": "irl-improv-drop-in-jam-2026-11-24",
     "title": "Improv for Real Life (IRL): Tuesday Drop-In Community Improv Jam",
     "organization": "Improv for Real Life (IRL)",
@@ -14430,6 +15230,22 @@
     "url": "https://www.irlimprov.com/events",
     "cost": "$10 – $20 sliding scale",
     "recurrence": "Biweekly (Tuesdays)"
+  },
+  {
+    "id": "nwws-november-meeting-demo-2026-11-24",
+    "title": "NWWS November Monthly Meeting & Live Watercolor Demonstration",
+    "organization": "Northwest Watercolor Society",
+    "activityType": "Art",
+    "venue": "Northwest Watercolor Society Seattle Hub / Hybrid Zoom (Seattle, WA)",
+    "area": "Seattle",
+    "start": "2026-11-24T19:00:00",
+    "end": "2026-11-24T21:00:00",
+    "timeString": "7:00 PM – 9:00 PM",
+    "dateString": "2026-11-24",
+    "description": "Monthly gathering of the Northwest Watercolor Society alongside the 86th Annual International Open Exhibition, featuring a live transparent watercolor painting demonstration.",
+    "url": "https://www.nwws.org/",
+    "cost": "Free and open to the public",
+    "recurrence": "Monthly (4th Tuesdays)"
   },
   {
     "id": "eastside-audubon-book-club-2026-11-24",
@@ -14544,6 +15360,22 @@
     "recurrence": "Holiday special tour"
   },
   {
+    "id": "nestl-cutting-board-part2-2026-11-25",
+    "title": "Hardwood Cutting Board Workshop (Part 2: Planing, Routing & Food-Safe Finishing) @ NESTL",
+    "organization": "Northeast Seattle Tool Library",
+    "activityType": "Tools",
+    "venue": "NE Seattle Tool Library (10228 Fischer Pl NE, Seattle, WA 98125)",
+    "area": "Seattle (Wedgwood)",
+    "start": "2026-11-25T17:00:00",
+    "end": "2026-11-25T20:00:00",
+    "timeString": "5:00 PM – 8:00 PM",
+    "dateString": "2026-11-25",
+    "description": "Second session of the two-part hardwood cutting board woodworking class, focusing on thickness planing, router edge profiling, orbital sanding, and mineral-oil beeswax finishing.",
+    "url": "https://seattlereconomy.org/events/",
+    "cost": "Included in 2-part registration",
+    "recurrence": "Woodshop Class Series"
+  },
+  {
     "id": "wstl-fix-it-night-2026-11-25",
     "title": "West Seattle Tool Library: Wednesday Community Fix-It Night",
     "organization": "West Seattle Tool Library",
@@ -14640,6 +15472,22 @@
     "recurrence": "Weekly on Wednesdays"
   },
   {
+    "id": "tba-theler-wetlands-thanksgiving-2026-11-26",
+    "title": "Tahoma Bird Alliance: Fourth Thursday Bird Walk at Theler Wetlands (Belfair)",
+    "organization": "Tahoma Bird Alliance",
+    "activityType": "Birding",
+    "venue": "Mary E. Theler Community Center & Wetlands (22871 NE State Route 3, Belfair, WA 98528)",
+    "area": "Hood Canal / South Sound (Belfair)",
+    "start": "2026-11-26T08:00:00",
+    "end": "2026-11-26T12:00:00",
+    "timeString": "8:00 AM – 12:00 PM",
+    "dateString": "2026-11-26",
+    "description": "Start Thanksgiving morning along the Union River estuary dikes and saltmarsh trails spotting wintering trumpeter swans, northern pintails, belted kingfishers, and raptors.",
+    "url": "https://www.tahomabirdalliance.org/",
+    "cost": "Free",
+    "recurrence": "2nd & 4th Thursdays"
+  },
+  {
     "id": "srs-arduino-2026-11-26",
     "title": "Build it with Arduino Meetup Workshop",
     "organization": "Seattle Robotics Society",
@@ -14654,6 +15502,38 @@
     "url": "https://seattlerobotics.org/calendar/",
     "cost": "Free",
     "recurrence": "Monthly on 4th Thursday"
+  },
+  {
+    "id": "bcs-opt-outside-nisqually-2026-11-27",
+    "title": "Birds Connect Seattle Opt Outside Field Trip: Billy Frank Jr. Nisqually National Wildlife Refuge",
+    "organization": "Birds Connect Seattle",
+    "activityType": "Birding",
+    "venue": "Billy Frank Jr. Nisqually National Wildlife Refuge Visitor Center (100 Brown Farm Rd NE, Olympia, WA 98516)",
+    "area": "South Sound (Olympia / Nisqually)",
+    "start": "2026-11-27T08:00:00",
+    "end": "2026-11-27T15:00:00",
+    "timeString": "8:00 AM – 3:00 PM",
+    "dateString": "2026-11-27",
+    "description": "Skip the Black Friday malls and join Birds Connect Seattle on the Nisqually Estuary boardwalks to observe thousands of wintering ducks, geese, shorebirds, and hunting Peregrine Falcons.",
+    "url": "https://birdsconnectsea.org/calendar/",
+    "cost": "Free ($3 refuge day fee or America the Beautiful Pass)",
+    "recurrence": "Annual Opt Outside Field Trip"
+  },
+  {
+    "id": "carkeek-salmon-opt-outside-2026-11-27",
+    "title": "Carkeek Park Piper's Creek Salmon Stewards: Green Friday Opt Outside Chum Salmon Viewing",
+    "organization": "Green Seattle Partnership Park Stewards",
+    "activityType": "Nature/Conservation",
+    "venue": "Carkeek Park – Piper's Creek Bridge & Lower Meadow (950 NW Carkeek Park Rd, Seattle, WA 98177)",
+    "area": "Seattle (Broadview / Carkeek Park)",
+    "start": "2026-11-27T11:00:00",
+    "end": "2026-11-27T14:00:00",
+    "timeString": "11:00 AM – 2:00 PM",
+    "dateString": "2026-11-27",
+    "description": "Bring visiting family to Piper's Creek on Green Friday to watch spawning Chum and Coho salmon dig redds and learn watershed ecology from volunteer Salmon Stewards.",
+    "url": "https://greenseattle.org/",
+    "cost": "Free",
+    "recurrence": "Autumn Salmon Run Season"
   },
   {
     "id": "seattle-marathon-expo-2026-11-27",
@@ -14686,6 +15566,22 @@
     "url": "http://seattle.urbansketchers.org/p/all-outings-begin-at-10-a.html",
     "cost": "Free",
     "recurrence": "Annual"
+  },
+  {
+    "id": "soundbio-biosensors-project-2026-11-27",
+    "title": "SoundBio Lab: Biosensors Community Project & Open Biotech Meetup",
+    "organization": "SoundBio Lab",
+    "activityType": "Science",
+    "venue": "SoundBio Lab (1100 NE 47th St, Suite 103, Seattle, WA 98105)",
+    "area": "Seattle (University District)",
+    "start": "2026-11-27T16:00:00",
+    "end": "2026-11-27T18:00:00",
+    "timeString": "4:00 PM – 6:00 PM",
+    "dateString": "2026-11-27",
+    "description": "Collaborate with community scientists engineering low-cost cell-free and microbial biosensors to detect water contaminants and environmental toxins.",
+    "url": "https://www.sound.bio/workshops",
+    "cost": "Free",
+    "recurrence": "Weekly on Fridays"
   },
   {
     "id": "mox-fnm-draft-2026-11-27",
@@ -14798,6 +15694,22 @@
     "url": "https://www.unexpectedproductions.org/event/an-improvised-christmas-carol/2026-11-27/",
     "cost": "$20 Online / $25 Door",
     "recurrence": "Holiday Season Run"
+  },
+  {
+    "id": "bcs-port-townsend-marrowstone-2026-11-28",
+    "title": "Birds Connect Seattle Field Trip: Port Townsend & Marrowstone Island Coastal Alcids & Loons",
+    "organization": "Birds Connect Seattle",
+    "activityType": "Birding",
+    "venue": "Fort Flagler Historical State Park & Point Wilson (10541 Flagler Rd, Nordland, WA 98358)",
+    "area": "Olympic Peninsula (Port Townsend / Marrowstone)",
+    "start": "2026-11-28T08:00:00",
+    "end": "2026-11-28T16:00:00",
+    "timeString": "8:00 AM – 4:00 PM",
+    "dateString": "2026-11-28",
+    "description": "Full-day coastal birding excursion scanning Admiralty Inlet and Kilisut Harbor for Marbled Murrelets, Ancient Murrelets, Pacific and Red-throated Loons, and Long-tailed Ducks.",
+    "url": "https://birdsconnectsea.org/calendar/",
+    "cost": "Free (ferry fare & Discover Pass shared by carpools)",
+    "recurrence": "Seasonal Field Trip"
   },
   {
     "id": "scms-post-thanksgiving-foray-2026-11-28",
@@ -15216,6 +16128,22 @@
     "recurrence": "Annual Sunday after Thanksgiving"
   },
   {
+    "id": "eastside-audubon-marymoor-2026-11-29",
+    "title": "Eastside Audubon: Marymoor Park Post-Thanksgiving Winter Birding Walk",
+    "organization": "Eastside Audubon",
+    "activityType": "Birding",
+    "venue": "Marymoor Park – Audobon BirdLoop Lot G (6046 W Lake Sammamish Pkwy NE, Redmond, WA 98052)",
+    "area": "Eastside (Redmond)",
+    "start": "2026-11-29T08:30:00",
+    "end": "2026-11-29T11:30:00",
+    "timeString": "8:30 AM – 11:30 AM",
+    "dateString": "2026-11-29",
+    "description": "Guided morning walk along the Sammamish River slough and East Meadow trails at Marymoor Park spotting Northern Shrikes, Fox Sparrows, Golden-crowned Kinglets, and winter raptors.",
+    "url": "https://www.eastsideaudubon.org/calendar",
+    "cost": "Free ($1 Marymoor parking)",
+    "recurrence": "Monthly Bird Walk"
+  },
+  {
     "id": "discnw-tacoma-turkey-bowl-2026-11-29",
     "title": "2026 DiscNW Tacoma Turkey Bowl Ultimate Hat Tournament",
     "organization": "DiscNW (Northwest Ultimate Association)",
@@ -15230,6 +16158,22 @@
     "url": "https://www.discnw.org/registration-is-currently-open-for-these-events",
     "cost": "Registration required",
     "recurrence": "Annual"
+  },
+  {
+    "id": "psms-post-thanksgiving-foray-2026-11-29",
+    "title": "PSMS Post-Thanksgiving Forest Foray: Saint Edward State Park Late-Season Fungi",
+    "organization": "Puget Sound Mycological Society",
+    "activityType": "Nature/Conservation",
+    "venue": "Saint Edward State Park – North Trailhead (14445 Juanita Dr NE, Kenmore, WA 98028)",
+    "area": "North King County (Kenmore)",
+    "start": "2026-11-29T10:00:00",
+    "end": "2026-11-29T14:00:00",
+    "timeString": "10:00 AM – 2:00 PM",
+    "dateString": "2026-11-29",
+    "description": "Walk off Thanksgiving dinner in the mossy ravines above Lake Washington while identifying late-fruiting Tricholoma, Craterellus, Mycena, and winter polypores.",
+    "url": "https://www.psms.org/events.php",
+    "cost": "Free (Discover Pass required for parking)",
+    "recurrence": "Seasonal Field Walk"
   },
   {
     "id": "pratt-blacksmithing-forge-2026-11-29",
@@ -15248,6 +16192,22 @@
     "recurrence": "Seasonal"
   },
   {
+    "id": "ssmc-capitol-forest-foray-2026-11-29",
+    "title": "SSMC Capitol State Forest Late-Autumn Yellowfoot & Hedgehog Mushroom Foray",
+    "organization": "South Sound Mushroom Club",
+    "activityType": "Nature/Conservation",
+    "venue": "Margaret McKenny Campground Trailhead, Capitol State Forest (Olympia, WA 98512)",
+    "area": "South Sound (Olympia)",
+    "start": "2026-11-29T10:00:00",
+    "end": "2026-11-29T13:30:00",
+    "timeString": "10:00 AM – 1:30 PM",
+    "dateString": "2026-11-29",
+    "description": "South Sound Mushroom Club post-holiday foray searching mossy conifer flats for winter chanterelles, sweet tooth hedgehog mushrooms, and late-fall agarics.",
+    "url": "https://www.southsoundmushroomclub.com/",
+    "cost": "Free for SSMC members",
+    "recurrence": "Monthly Club Foray"
+  },
+  {
     "id": "mof-museum-store-sunday-2026-11-29",
     "title": "Museum of Flight: Museum Store Sunday & Aviation Craft Fair",
     "organization": "Museum of Flight Docent Corps (Tukwila)",
@@ -15262,6 +16222,22 @@
     "url": "https://www.museumofflight.org/exhibits-and-events/calendar-of-events?p=13",
     "cost": "Free entry to store & lobby",
     "recurrence": "Annual event"
+  },
+  {
+    "id": "uwbg-witt-winter-garden-walk-2026-11-29",
+    "title": "Joseph A. Witt Winter Garden Guided Tour: Early Witch Hazels, Camellias & Exfoliating Bark",
+    "organization": "UW Botanic Gardens / Washington Park Arboretum",
+    "activityType": "Nature/Conservation",
+    "venue": "Graham Visitors Center, Washington Park Arboretum (2300 Arboretum Dr E, Seattle, WA 98112)",
+    "area": "Seattle (Washington Park)",
+    "start": "2026-11-29T11:00:00",
+    "end": "2026-11-29T12:30:00",
+    "timeString": "11:00 AM – 12:30 PM",
+    "dateString": "2026-11-29",
+    "description": "Discover the botanical highlights of the Joseph A. Witt Winter Garden as winter-blooming Viburnum, Mahonia, witch hazels, and striped-bark maples take center stage.",
+    "url": "https://botanicgardens.uw.edu/about/events/",
+    "cost": "Free",
+    "recurrence": "Seasonal Guided Walk"
   },
   {
     "id": "orca-network-chum-watch-2026-11-29",
@@ -15344,6 +16320,22 @@
     "recurrence": "Seasonal Showcase"
   },
   {
+    "id": "soundbio-liquid-biopsy-workshop-2026-11-29",
+    "title": "SoundBio Lab: Liquid Biopsy Workshop – Detecting Cancer Genes with PCR & COSMIC",
+    "organization": "SoundBio Lab",
+    "activityType": "Science",
+    "venue": "SoundBio Lab (1100 NE 47th St, Suite 103, Seattle, WA 98105)",
+    "area": "Seattle (University District)",
+    "start": "2026-11-29T15:00:00",
+    "end": "2026-11-29T18:00:00",
+    "timeString": "3:00 PM – 6:00 PM",
+    "dateString": "2026-11-29",
+    "description": "Hands-on molecular diagnostics workshop using the COSMIC cancer mutation database to design primers and run a PCR & gel electrophoresis assay on simulated circulating tumor DNA.",
+    "url": "https://www.sound.bio/workshops",
+    "cost": "Sliding scale registration",
+    "recurrence": "Special Workshop"
+  },
+  {
     "id": "eastside-improv-sunday-jam-2026-11-29",
     "title": "Eastside Improv: Sunday Afternoon Community Drop-In Jam",
     "organization": "Eastside Improv",
@@ -15358,6 +16350,22 @@
     "url": "https://eastsideimprov.org/",
     "cost": "Free / Suggested donation",
     "recurrence": "Weekly (Sundays)"
+  },
+  {
+    "id": "tcc-gabriel-rutledge-sunday-2026-11-29",
+    "title": "Stand-Up Headliners: Gabriel Rutledge & Rachel Aflleje Live at Tacoma Comedy Club",
+    "organization": "Tacoma Comedy Club",
+    "activityType": "Comedy/Improv",
+    "venue": "Tacoma Comedy Club (933 Market St, Tacoma, WA 98402)",
+    "area": "South Sound (Downtown Tacoma)",
+    "start": "2026-11-29T19:00:00",
+    "end": "2026-11-29T20:45:00",
+    "timeString": "7:00 PM – 8:45 PM",
+    "dateString": "2026-11-29",
+    "description": "Seattle International Comedy Competition winner Gabriel Rutledge and Tacoma favorite Rachel Aflleje close out Thanksgiving weekend with a Sunday night stand-up showcase.",
+    "url": "https://www.tacomacomedyclub.com/",
+    "cost": "Ticketed (18+)",
+    "recurrence": "Holiday Weekend Headliner"
   },
   {
     "id": "cozy-comedy-susan-rice-kpc-20261129",
@@ -15376,6 +16384,38 @@
     "recurrence": "Special Theater Headliner"
   },
   {
+    "id": "up-cinema-unexpected-2026-11-29",
+    "title": "Cinema Unexpected: An Improvised Movie Live (Thanksgiving Weekend)",
+    "organization": "Unexpected Productions Improv",
+    "activityType": "Comedy/Improv",
+    "venue": "Market Theater, Pike Place Market (1428 Post Alley, Seattle, WA 98101)",
+    "area": "Seattle (Pike Place Market)",
+    "start": "2026-11-29T19:30:00",
+    "end": "2026-11-29T20:45:00",
+    "timeString": "7:30 PM – 8:45 PM",
+    "dateString": "2026-11-29",
+    "description": "Unexpected Productions' ensemble improvises a complete feature film live on stage using camera angles, cuts, and genre tropes inspired by audience movie titles.",
+    "url": "https://www.unexpectedproductions.org/shows/",
+    "cost": "$15",
+    "recurrence": "Weekly on Sundays"
+  },
+  {
+    "id": "kubota-houseplants-pickup-stroll-2026-11-30",
+    "title": "Kubota Garden Foundation: Houseplants for the Holidays Benefit Pickup & Winter Stroll",
+    "organization": "Kubota Garden Foundation",
+    "activityType": "Nature/Conservation",
+    "venue": "Kubota Garden Terrace Overlook (9817 55th Ave S, Seattle, WA 98118)",
+    "area": "Seattle (Rainier Beach)",
+    "start": "2026-11-30T10:00:00",
+    "end": "2026-11-30T15:00:00",
+    "timeString": "10:00 AM – 3:00 PM",
+    "dateString": "2026-11-30",
+    "description": "Support the Kubota Garden Foundation's annual Houseplants for the Holidays fundraiser and enjoy a self-guided late-autumn stroll past the Necklace of Ponds and Moon Bridge.",
+    "url": "https://kubotagarden.org/",
+    "cost": "Free admission",
+    "recurrence": "Annual Holiday Benefit"
+  },
+  {
     "id": "psms-monday-id-clinic-2026-11-30",
     "title": "PSMS Monday Wild Mushroom Identification Clinic",
     "organization": "Puget Sound Mycological Society",
@@ -15392,6 +16432,38 @@
     "recurrence": "Weekly (Autumn Mondays)"
   },
   {
+    "id": "bike-works-repair-party-2026-11-30",
+    "title": "Bike Works Monday Night Volunteer Bike Repair Party (Holiday Bike Giveaway Prep)",
+    "organization": "Seattle Bike Works Community Mechanics",
+    "activityType": "Tools",
+    "venue": "Bike Works Warehouse (3715 S Hudson St, Seattle, WA 98118)",
+    "area": "Seattle (Columbia City)",
+    "start": "2026-11-30T18:00:00",
+    "end": "2026-11-30T20:30:00",
+    "timeString": "6:00 PM – 8:30 PM",
+    "dateString": "2026-11-30",
+    "description": "Help Bike Works mechanics finish tuning and safety-checking kids' and youth bicycles ahead of the annual December Bikes-for-All holiday giveaway.",
+    "url": "https://bikeworks.org/events/",
+    "cost": "Free",
+    "recurrence": "Weekly on Mondays"
+  },
+  {
+    "id": "seattle-makers-queer-crafters-2026-11-30",
+    "title": "Seattle Makers: Queer Crafters Bi-Weekly Community Craft & Maker Night",
+    "organization": "Seattle Makers",
+    "activityType": "Maker & Crafts",
+    "venue": "Seattle Makers (3012 16th Ave W, Seattle, WA 98119)",
+    "area": "Seattle (Interbay)",
+    "start": "2026-11-30T18:00:00",
+    "end": "2026-11-30T20:30:00",
+    "timeString": "6:00 PM – 8:30 PM",
+    "dateString": "2026-11-30",
+    "description": "Bring handmade gift projects, fiber arts, woodworking, or laser-cut designs to collaborate with fellow LGBTQIA+ makers at Seattle Makers in Interbay.",
+    "url": "https://seattlemakers.org/events/",
+    "cost": "Free / Pay-what-you-can",
+    "recurrence": "Bi-weekly on Mondays"
+  },
+  {
     "id": "seattle-recreative-upcycling-2026-11-30",
     "title": "Seattle ReCreative: Creative Reuse & Upcycling Open Studio",
     "organization": "Seattle ReCreative",
@@ -15406,6 +16478,22 @@
     "url": "https://www.seattlerecreative.org/events",
     "cost": "Sliding scale / Free",
     "recurrence": "Weekly (Mondays)"
+  },
+  {
+    "id": "soundbio-crispr-course-s2-2026-11-30",
+    "title": "SoundBio Lab Skills Course: CRISPR-Cas9 Screening & Gel Electrophoresis Analysis (Session 2)",
+    "organization": "SoundBio Lab",
+    "activityType": "Science",
+    "venue": "SoundBio Lab (1100 NE 47th St, Suite 103, Seattle, WA 98105)",
+    "area": "Seattle (University District)",
+    "start": "2026-11-30T18:00:00",
+    "end": "2026-11-30T20:30:00",
+    "timeString": "6:00 PM – 8:30 PM",
+    "dateString": "2026-11-30",
+    "description": "Second session of SoundBio's CRISPR-Cas9 lab course analyzing edited bacterial colonies, extracting DNA, and verifying edits via agarose gel electrophoresis.",
+    "url": "https://www.sound.bio/workshops",
+    "cost": "Included in course registration",
+    "recurrence": "Multi-Week Lab Course"
   },
   {
     "id": "gcc-monday-league-2026-11-30",
@@ -15438,6 +16526,22 @@
     "url": "https://scienceontap.org/",
     "cost": "Free",
     "recurrence": "Monthly (Last Monday)"
+  },
+  {
+    "id": "tcc-monday-open-mic-2026-11-30",
+    "title": "Tacoma Comedy Club: The Never Ending Monday Open Mic Night",
+    "organization": "Tacoma Comedy Club",
+    "activityType": "Comedy/Improv",
+    "venue": "Tacoma Comedy Club (933 Market St, Tacoma, WA 98402)",
+    "area": "South Sound (Downtown Tacoma)",
+    "start": "2026-11-30T19:30:00",
+    "end": "2026-11-30T21:30:00",
+    "timeString": "7:30 PM – 9:30 PM",
+    "dateString": "2026-11-30",
+    "description": "Weekly Monday open mic showcase giving new and veteran South Sound stand-up comics stage time in a professional comedy club.",
+    "url": "https://www.tacomacomedyclub.com/",
+    "cost": "Free / $5 cover",
+    "recurrence": "Weekly on Mondays"
   },
   {
     "id": "seattle-center-winterfest-train-2026-12-01",
@@ -15616,6 +16720,22 @@
     "recurrence": "1st & Last Tuesdays"
   },
   {
+    "id": "bcs-lunch-learn-cbc-prep-2026-12-02",
+    "title": "Birds Connect Seattle Lunch & Learn: Preparing for the 2026 Christmas Bird Count",
+    "organization": "Birds Connect Seattle",
+    "activityType": "Birding",
+    "venue": "Birds Connect Seattle Downtown Hub (616 Olive Way, Seattle, WA 98101)",
+    "area": "Seattle (Downtown)",
+    "start": "2026-12-02T12:15:00",
+    "end": "2026-12-02T12:45:00",
+    "timeString": "12:15 PM – 12:45 PM",
+    "dateString": "2026-12-02",
+    "description": "Learn how community birders and feeder-watchers of all skill levels can participate in the 127th Audubon Christmas Bird Count across Seattle count circles.",
+    "url": "https://birdsconnectsea.org/calendar/",
+    "cost": "Free",
+    "recurrence": "Weekly on Wednesdays"
+  },
+  {
     "id": "gcc-wednesday-juniors-2026-12-02",
     "title": "Granite Curling Club: Wednesday Youth & Juniors League",
     "organization": "Seattle Curling Club",
@@ -15760,6 +16880,22 @@
     "recurrence": "One-time"
   },
   {
+    "id": "tcc-jake-cornell-2026-12-02",
+    "title": "Stand-Up Headliner: Jake Cornell Live at Tacoma Comedy Club",
+    "organization": "Tacoma Comedy Club",
+    "activityType": "Comedy/Improv",
+    "venue": "Tacoma Comedy Club (933 Market St, Tacoma, WA 98402)",
+    "area": "South Sound (Downtown Tacoma)",
+    "start": "2026-12-02T19:30:00",
+    "end": "2026-12-02T21:15:00",
+    "timeString": "7:30 PM – 9:15 PM",
+    "dateString": "2026-12-02",
+    "description": "Touring comedian and podcast host Jake Cornell brings his high-energy observational stand-up and crowd-work hour to downtown Tacoma.",
+    "url": "https://www.tacomacomedyclub.com/",
+    "cost": "Ticketed (18+)",
+    "recurrence": "Special Headliner"
+  },
+  {
     "id": "up-duo-comedy-showcase-20261202",
     "title": "Duo Comedy Showcase 2026 at Market Theater",
     "organization": "Unexpected Productions Improv",
@@ -15870,6 +17006,22 @@
     "url": "https://www.museumofflight.org/exhibits-and-events/calendar-of-events?p=5",
     "cost": "Free (no tickets required)",
     "recurrence": "First Thursday of the month"
+  },
+  {
+    "id": "plantamnesty-holiday-party-bingo-2026-12-03",
+    "title": "PlantAmnesty Annual Holiday Party & Tree Hugger Bingo at Egan Hall",
+    "organization": "PlantAmnesty",
+    "activityType": "Nature/Conservation",
+    "venue": "St. John the Evangelist Parish – Egan Hall (125 N 79th St, Seattle, WA 98103)",
+    "area": "Seattle (Greenwood)",
+    "start": "2026-12-03T18:00:00",
+    "end": "2026-12-03T21:30:00",
+    "timeString": "6:00 PM – 9:30 PM",
+    "dateString": "2026-12-03",
+    "description": "Celebrate a year of ethical tree care and urban forestry advocacy with fellow arborists, master pruners, and gardeners featuring PlantAmnesty's famous Tree Hugger Bingo.",
+    "url": "https://www.plantamnesty.org/events/",
+    "cost": "Free / RSVP requested",
+    "recurrence": "Annual Holiday Gathering"
   },
   {
     "id": "mox-warhammer-2026-12-03",
@@ -16032,6 +17184,22 @@
     "recurrence": "Monthly"
   },
   {
+    "id": "soundbio-friday-open-lab-2026-12-04",
+    "title": "SoundBio Lab: Friday Open Community Biology Meetup & Lab Tour",
+    "organization": "SoundBio Lab",
+    "activityType": "Science",
+    "venue": "SoundBio Lab (1100 NE 47th St, Suite 103, Seattle, WA 98105)",
+    "area": "Seattle (University District)",
+    "start": "2026-12-04T16:00:00",
+    "end": "2026-12-04T18:00:00",
+    "timeString": "4:00 PM – 6:00 PM",
+    "dateString": "2026-12-04",
+    "description": "Drop into Seattle's DIY community biology makerspace to tour the BSL-1 molecular lab, view tardigrades and bryophytes under phase-contrast microscopes, and meet member researchers.",
+    "url": "https://www.sound.bio/workshops",
+    "cost": "Free",
+    "recurrence": "Weekly on Fridays"
+  },
+  {
     "id": "mox-fnm-draft-2026-12-04",
     "title": "Mox Boarding House: Friday Night Magic (FNM) Booster Draft",
     "organization": "Mox Boarding House",
@@ -16046,6 +17214,22 @@
     "url": "https://www.moxboardinghouse.com/pages/seattle-events",
     "cost": "$20 entry",
     "recurrence": "Weekly on Fridays"
+  },
+  {
+    "id": "sas-intro-night-sky-woodinville-2026-12-04",
+    "title": "Seattle Astronomical Society: Introduction to the Night Sky & Telescopes Class + Stargazing",
+    "organization": "Seattle Astronomical Society",
+    "activityType": "Science",
+    "venue": "Woodinville Community Classroom & Observing Field (Woodinville, WA 98072)",
+    "area": "Eastside (Woodinville)",
+    "start": "2026-12-04T19:00:00",
+    "end": "2026-12-04T23:00:00",
+    "timeString": "7:00 PM – 11:00 PM",
+    "dateString": "2026-12-04",
+    "description": "Beginner-friendly astronomy class covering star charts, Dobsonian and equatorial telescope operation, and eyepiece selection, followed by outdoor viewing of Jupiter, Saturn, and the Orion Nebula.",
+    "url": "https://www.seattleastro.org/",
+    "cost": "Free (RSVP to SAS instructor)",
+    "recurrence": "Monthly Astronomy Class"
   },
   {
     "id": "bandit-december-friday-20261204",
@@ -16142,6 +17326,22 @@
     "url": "https://www.pilchuckaudubon.org/upcoming-trips",
     "cost": "Free",
     "recurrence": "Seasonal"
+  },
+  {
+    "id": "tba-gateway-park-gig-harbor-2026-12-05",
+    "title": "Tahoma Bird Alliance: First Saturday Bird Walk at Gateway Park (Gig Harbor)",
+    "organization": "Tahoma Bird Alliance",
+    "activityType": "Birding",
+    "venue": "Gateway Park Trailhead (10405 State Route 302 NW, Gig Harbor, WA 98329)",
+    "area": "Kitsap / Key Peninsula (Gig Harbor)",
+    "start": "2026-12-05T08:30:00",
+    "end": "2026-12-05T10:30:00",
+    "timeString": "8:30 AM – 10:30 AM",
+    "dateString": "2026-12-05",
+    "description": "First Saturday morning bird walk through mixed woodlands, meadows, and salmon-bearing creek corridors at Gateway Park searching for Varied Thrushes, Red-breasted Sapsuckers, and kinglets.",
+    "url": "https://www.tahomabirdalliance.org/",
+    "cost": "Free",
+    "recurrence": "Monthly (1st Saturdays)"
   },
   {
     "id": "wta-lord-hill-work-party-2026-12-05",
@@ -16288,6 +17488,22 @@
     "recurrence": "Seasonal Weekend Excursions"
   },
   {
+    "id": "seward-park-root-in-reciprocity-2026-12-05",
+    "title": "Root in Reciprocity: Tend Together Forest Stewardship at Seward Park",
+    "organization": "Seward Park Audubon Center",
+    "activityType": "Birding",
+    "venue": "Seward Park Audubon Center (5902 Lake Washington Blvd S, Seattle, WA 98118)",
+    "area": "Seattle (Seward Park)",
+    "start": "2026-12-05T10:00:00",
+    "end": "2026-12-05T13:00:00",
+    "timeString": "10:00 AM – 1:00 PM",
+    "dateString": "2026-12-05",
+    "description": "Community-centered habitat restoration morning tending native forest plantings, mulching young conifers, and sharing warm tea at Seward Park.",
+    "url": "https://sewardpark.audubon.org/events",
+    "cost": "Free",
+    "recurrence": "Monthly (1st Saturdays)"
+  },
+  {
     "id": "saltwater-forest-restoration-2026-12-05",
     "title": "Saltwater State Park December Forest Restoration Work Party",
     "organization": "Friends of Saltwater State Park",
@@ -16302,6 +17518,22 @@
     "url": "https://www.friendssaltwater.org/upcoming-events",
     "cost": "Free",
     "recurrence": "Monthly (1st Saturday)"
+  },
+  {
+    "id": "seattle-makers-saturday-tour-2026-12-05",
+    "title": "Seattle Makers: Free Saturday Morning Public Makerspace Tour & Orientation",
+    "organization": "Seattle Makers",
+    "activityType": "Maker & Crafts",
+    "venue": "Seattle Makers (3012 16th Ave W, Seattle, WA 98119)",
+    "area": "Seattle (Interbay)",
+    "start": "2026-12-05T10:00:00",
+    "end": "2026-12-05T11:00:00",
+    "timeString": "10:00 AM – 11:00 AM",
+    "dateString": "2026-12-05",
+    "description": "Guided tour of Seattle Makers' woodshop, 90W CO2 laser cutters, 3D printing lab, electronics bench, sewing studio, and ceramics workspace.",
+    "url": "https://seattlemakers.org/events/",
+    "cost": "Free",
+    "recurrence": "Weekly on Saturdays"
   },
   {
     "id": "chtl-saturday-workshop-2026-12-05",
@@ -16336,6 +17568,22 @@
     "recurrence": "Monthly (1st Saturday)"
   },
   {
+    "id": "carkeek-salmon-early-dec-2026-12-05",
+    "title": "Carkeek Park Piper's Creek Salmon Stewards: Early-December Late Chum & Coho Run Viewing",
+    "organization": "Green Seattle Partnership Park Stewards",
+    "activityType": "Nature/Conservation",
+    "venue": "Carkeek Park – Piper's Creek Trail (950 NW Carkeek Park Rd, Seattle, WA 98177)",
+    "area": "Seattle (Broadview / Carkeek Park)",
+    "start": "2026-12-05T11:00:00",
+    "end": "2026-12-05T14:00:00",
+    "timeString": "11:00 AM – 2:00 PM",
+    "dateString": "2026-12-05",
+    "description": "Observe late-arriving Chum and Coho salmon and learn how marine-derived nutrients from salmon carcasses nourish Piper's Creek cedar forests, aquatic insects, and winter wrens.",
+    "url": "https://greenseattle.org/",
+    "cost": "Free",
+    "recurrence": "Autumn Salmon Run Season"
+  },
+  {
     "id": "seattle-center-winterfest-ice-sculpting-2026-12-05",
     "title": "Seattle Center Winterfest: Live Ice Sculpting Showcase",
     "organization": "Seattle Center",
@@ -16350,6 +17598,22 @@
     "url": "https://www.seattlecenter.com/events/featured-events/winterfest",
     "cost": "Free",
     "recurrence": "Saturdays in December"
+  },
+  {
+    "id": "opff-winter-cultivation-workshop-2026-12-05",
+    "title": "Olympic Peninsula Fungi Festival: Winter Mushroom Cultivation & Hardwood Log Inoculation Workshop",
+    "organization": "Olympic Peninsula Fungi Festival",
+    "activityType": "Nature/Conservation",
+    "venue": "Dungeness River Nature Center (1943 W Hendrickson Rd, Sequim, WA 98382)",
+    "area": "Olympic Peninsula (Sequim)",
+    "start": "2026-12-05T13:00:00",
+    "end": "2026-12-05T15:30:00",
+    "timeString": "1:00 PM – 3:30 PM",
+    "dateString": "2026-12-05",
+    "description": "Hands-on winter mycology workshop covering oyster, lion's mane, and shiitake plug-spawn log inoculation and indoor fruiting block care for home growers.",
+    "url": "https://www.olypenfungifest.com/",
+    "cost": "$20 materials fee",
+    "recurrence": "Winter Education Series"
   },
   {
     "id": "pacsci-meet-a-scientist-2026-12-05",
@@ -16576,6 +17840,38 @@
     "recurrence": "Monthly Citizen Science Survey"
   },
   {
+    "id": "chtl-textile-mending-circle-2026-12-06",
+    "title": "Capitol Hill Tool Library: Textile Mending Circle (Hand Sewing & Visible Darning)",
+    "organization": "Capitol Hill Tool Library",
+    "activityType": "Tools",
+    "venue": "Capitol Hill Tool Library (420 E Pike St / Crawford Pl, Seattle, WA 98122)",
+    "area": "Seattle (Capitol Hill)",
+    "start": "2026-12-06T13:00:00",
+    "end": "2026-12-06T15:30:00",
+    "timeString": "1:00 PM – 3:30 PM",
+    "dateString": "2026-12-06",
+    "description": "Bring wool sweaters, denim, socks, or winter coats to repair using sashiko stitching, darning mushrooms, and communal thread and fabric supplies.",
+    "url": "https://www.meetup.com/capitol-hill-tool-library/",
+    "cost": "Free / Pay-what-you-can",
+    "recurrence": "Monthly on 1st Sundays"
+  },
+  {
+    "id": "uwbg-first-sunday-walk-2026-12-06",
+    "title": "First Sunday Guided Walk: Winter Conifers, Hollies & Fragrant Blooms at the Arboretum",
+    "organization": "UW Botanic Gardens / Washington Park Arboretum",
+    "activityType": "Nature/Conservation",
+    "venue": "Graham Visitors Center, Washington Park Arboretum (2300 Arboretum Dr E, Seattle, WA 98112)",
+    "area": "Seattle (Washington Park)",
+    "start": "2026-12-06T13:00:00",
+    "end": "2026-12-06T14:30:00",
+    "timeString": "1:00 PM – 2:30 PM",
+    "dateString": "2026-12-06",
+    "description": "Explore the Washington Park Arboretum's historic Holly Collection, Pinetum conifers, and fragrant winter blooms with a trained UW Botanic Gardens naturalist guide.",
+    "url": "https://botanicgardens.uw.edu/about/events/",
+    "cost": "Free",
+    "recurrence": "Monthly (1st Sundays)"
+  },
+  {
     "id": "eastside-audubon-juanita-bay-2026-12-06",
     "title": "Eastside Audubon: Juanita Bay Park Afternoon Bird Walk",
     "organization": "Eastside Audubon",
@@ -16688,6 +17984,22 @@
     "recurrence": "Indie Stand-Up Showcase"
   },
   {
+    "id": "up-cinema-unexpected-2026-12-06",
+    "title": "Cinema Unexpected: An Improvised Holiday Movie Live at Market Theater",
+    "organization": "Unexpected Productions Improv",
+    "activityType": "Comedy/Improv",
+    "venue": "Market Theater, Pike Place Market (1428 Post Alley, Seattle, WA 98101)",
+    "area": "Seattle (Pike Place Market)",
+    "start": "2026-12-06T19:30:00",
+    "end": "2026-12-06T20:45:00",
+    "timeString": "7:30 PM – 8:45 PM",
+    "dateString": "2026-12-06",
+    "description": "Sunday night improvised cinema showcase at Pike Place Market where improvisers create a brand-new movie on the spot from audience title suggestions.",
+    "url": "https://www.unexpectedproductions.org/shows/",
+    "cost": "$15",
+    "recurrence": "Weekly on Sundays"
+  },
+  {
     "id": "psms-monday-id-clinic-2026-12-07",
     "title": "PSMS Final Autumn Monday Mushroom Identification Clinic",
     "organization": "Puget Sound Mycological Society",
@@ -16702,6 +18014,22 @@
     "url": "https://www.psms.org/events.php",
     "cost": "Free & open to the public",
     "recurrence": "Weekly (Autumn Mondays)"
+  },
+  {
+    "id": "btl-monday-winter-fixit-2026-12-07",
+    "title": "Ballard Tool Library: Monday Evening Tool Checkout & Winter Fix-It Consultations",
+    "organization": "Ballard Tool Library",
+    "activityType": "Tools",
+    "venue": "Ballard Tool Library (7549B 15th Ave NW, Seattle, WA 98117)",
+    "area": "Seattle (Ballard)",
+    "start": "2026-12-07T17:00:00",
+    "end": "2026-12-07T19:00:00",
+    "timeString": "5:00 PM – 7:00 PM",
+    "dateString": "2026-12-07",
+    "description": "Drop in to borrow woodworking and home-repair tools or consult with Ballard Tool Library volunteers on winter household maintenance projects.",
+    "url": "https://www.sustainableballard.org/events/",
+    "cost": "Free with membership",
+    "recurrence": "Weekly on Mondays"
   },
   {
     "id": "seattle-recreative-upcycling-2026-12-07",
@@ -16861,6 +18189,22 @@
     "description": "Weekly drop-in Go play and game reviews.",
     "url": "https://www.seattlego.org/schedule/",
     "cost": "Club fee",
+    "recurrence": "Weekly on Tuesdays"
+  },
+  {
+    "id": "eccc-tuesday-open-mic-2026-12-08",
+    "title": "Emerald City Comedy Club Free Tuesday Open Mic Night & Lucky Bucket",
+    "organization": "Emerald City Comedy Club",
+    "activityType": "Comedy/Improv",
+    "venue": "Emerald City Comedy Club (210 Broadway E, Seattle, WA 98102)",
+    "area": "Seattle (Capitol Hill)",
+    "start": "2026-12-08T19:00:00",
+    "end": "2026-12-08T21:00:00",
+    "timeString": "7:00 PM – 9:00 PM",
+    "dateString": "2026-12-08",
+    "description": "Free weekly Tuesday open mic night on Capitol Hill welcoming first-time comics, seasoned local stand-ups, and comedy fans.",
+    "url": "https://www.emeraldcitycomedy.com/",
+    "cost": "Free admission",
     "recurrence": "Weekly on Tuesdays"
   },
   {
@@ -17040,6 +18384,38 @@
     "recurrence": "Special Touring Event"
   },
   {
+    "id": "up-duo-comedy-showcase-2026-12-09",
+    "title": "Duo Comedy Showcase 2026 at Market Theater",
+    "organization": "Unexpected Productions Improv",
+    "activityType": "Comedy/Improv",
+    "venue": "Market Theater, Pike Place Market (1428 Post Alley, Seattle, WA 98101)",
+    "area": "Seattle (Pike Place Market)",
+    "start": "2026-12-09T20:00:00",
+    "end": "2026-12-09T21:30:00",
+    "timeString": "8:00 PM – 9:30 PM",
+    "dateString": "2026-12-09",
+    "description": "Wednesday night showcase featuring rotating two-person improv duos performing high-wire unscripted scenes and character comedy.",
+    "url": "https://www.unexpectedproductions.org/shows/",
+    "cost": "$12",
+    "recurrence": "Weekly on Wednesdays"
+  },
+  {
+    "id": "laughs-wednesday-comedy-mix-2026-12-09",
+    "title": "Wednesday Night Comedy Mix Showcase at Laughs Comedy Club",
+    "organization": "Laughs Comedy Club",
+    "activityType": "Comedy/Improv",
+    "venue": "Laughs Comedy Club (5220 Roosevelt Way NE, Seattle, WA 98105)",
+    "area": "Seattle (University District)",
+    "start": "2026-12-09T20:00:00",
+    "end": "2026-12-09T21:30:00",
+    "timeString": "8:00 PM – 9:30 PM",
+    "dateString": "2026-12-09",
+    "description": "Midweek stand-up comedy showcase at Laughs featuring a fast-moving lineup of Seattle and regional comedians.",
+    "url": "https://laughscomedyclub.com/",
+    "cost": "$15 admission",
+    "recurrence": "Weekly on Wednesdays"
+  },
+  {
     "id": "tba-theler-wetlands-2026-12-10",
     "title": "Tahoma Bird Alliance: Guided Birding Walk at Theler Wetlands",
     "organization": "Tahoma Bird Alliance",
@@ -17200,6 +18576,22 @@
     "recurrence": "Holiday Feature Run"
   },
   {
+    "id": "sas-duvall-big-rock-star-party-2026-12-11",
+    "title": "Seattle Astronomical Society: Free Public Winter Stargazing Party at Big Rock Park (Duvall)",
+    "organization": "Seattle Astronomical Society",
+    "activityType": "Science",
+    "venue": "Big Rock Park Ballfields (28000 NE Big Rock Rd, Duvall, WA 98019)",
+    "area": "Snoqualmie Valley (Duvall)",
+    "start": "2026-12-11T16:30:00",
+    "end": "2026-12-11T20:00:00",
+    "timeString": "4:30 PM – 8:00 PM",
+    "dateString": "2026-12-11",
+    "description": "Bundle up for dark-sky Snoqualmie Valley stargazing with Seattle Astronomical Society volunteer astronomers sharing telescope views of the Pleiades, Andromeda Galaxy, and winter star clusters.",
+    "url": "https://www.seattleastro.org/",
+    "cost": "Free",
+    "recurrence": "Monthly Star Party"
+  },
+  {
     "id": "mox-fnm-draft-2026-12-11",
     "title": "Mox Boarding House: Friday Night Magic (FNM) Booster Draft",
     "organization": "Mox Boarding House",
@@ -17262,6 +18654,22 @@
     "url": "https://www.bandittheater.org/shows",
     "cost": " – ",
     "recurrence": "Monthly Showcase"
+  },
+  {
+    "id": "jci-holiday-haus-friday-2026-12-11",
+    "title": "Holiday Haus: An Improvised Small-Town Holiday Romance at West of Lenin",
+    "organization": "Jet City Improv",
+    "activityType": "Comedy/Improv",
+    "venue": "West of Lenin Theater (203 N 36th St, Seattle, WA 98103)",
+    "area": "Seattle (Fremont)",
+    "start": "2026-12-11T19:30:00",
+    "end": "2026-12-11T21:15:00",
+    "timeString": "7:30 PM – 9:15 PM",
+    "dateString": "2026-12-11",
+    "description": "Jet City Improv improvises a cozy, trope-filled Hallmark-style holiday movie live on stage in Fremont based on audience suggestions.",
+    "url": "https://www.jetcityimprov.org/shows.html",
+    "cost": "$20",
+    "recurrence": "December Holiday Run"
   },
   {
     "id": "unexpected-improv-christmas-carol-2026-12-11",
@@ -17552,6 +18960,22 @@
     "recurrence": "Annual"
   },
   {
+    "id": "sas-snoqualmie-point-stargazing-2026-12-12",
+    "title": "Seattle Astronomical Society: Public Winter Stargazing at Snoqualmie Point Park",
+    "organization": "Seattle Astronomical Society",
+    "activityType": "Science",
+    "venue": "Snoqualmie Point Park Overlook (37580 SE Winery Rd, Snoqualmie, WA 98065)",
+    "area": "Snoqualmie Valley (Snoqualmie)",
+    "start": "2026-12-12T17:00:00",
+    "end": "2026-12-12T20:30:00",
+    "timeString": "5:00 PM – 8:30 PM",
+    "dateString": "2026-12-12",
+    "description": "Co-hosted by SAS and the City of Snoqualmie, offering panoramic Cascade foothill horizon views and high-powered telescopes aimed at winter constellations and Geminid meteors.",
+    "url": "https://www.seattleastro.org/",
+    "cost": "Free",
+    "recurrence": "Seasonal Star Party"
+  },
+  {
     "id": "seattle-comedy-theater-jam-2026-12-12",
     "title": "Seattle Comedy Theater: Saturday Community Drop-In Improv Jam & ComedySportz",
     "organization": "Seattle Comedy Theater (Home of ComedySportz)",
@@ -17582,6 +19006,22 @@
     "url": "https://seattlemakers.org/events/",
     "cost": "Free",
     "recurrence": "Bi-weekly Saturday series"
+  },
+  {
+    "id": "pacsci-science-after-dark-gift-lab-2026-12-12",
+    "title": "Pacific Science Center Science After Dark: The Gift Lab (21+ Holiday Makers & Science Night)",
+    "organization": "Pacific Science Center Science Communication Guild",
+    "activityType": "Science",
+    "venue": "Pacific Science Center (200 2nd Ave N, Seattle, WA 98109)",
+    "area": "Seattle (Seattle Center)",
+    "start": "2026-12-12T19:00:00",
+    "end": "2026-12-12T23:00:00",
+    "timeString": "7:00 PM – 11:00 PM",
+    "dateString": "2026-12-12",
+    "description": "After-hours 21+ community science and maker market featuring local nature and STEM artisans, live science demonstrations, Tropical Butterfly House access, and Laser Dome shows.",
+    "url": "https://pacificsciencecenter.org/",
+    "cost": "Ticketed (21+)",
+    "recurrence": "Special Event"
   },
   {
     "id": "eccc-natasha-leggero-20261212",
@@ -17680,6 +19120,22 @@
     "recurrence": "Seasonal Whale Watch"
   },
   {
+    "id": "emerald-city-stained-glass-ornament-2026-12-13",
+    "title": "Emerald City Stained Glass Crafters: Leaded Glass Holiday Ornament & Bevel Workshop",
+    "organization": "Emerald City Stained Glass Crafters",
+    "activityType": "Art",
+    "venue": "Greenwood Community Glass Studio (Greenwood Ave N, Seattle, WA 98103)",
+    "area": "Seattle (Greenwood)",
+    "start": "2026-12-13T13:00:00",
+    "end": "2026-12-13T16:00:00",
+    "timeString": "1:00 PM – 4:00 PM",
+    "dateString": "2026-12-13",
+    "description": "Craft multi-faceted beveled glass stars and cathedral-glass winter ornaments while practicing precision solder joints and patina finishing.",
+    "url": "https://scottishstainedglass.com/cities/seattle-stained-glass/",
+    "cost": "$25 materials fee",
+    "recurrence": "Monthly Studio Meetup"
+  },
+  {
     "id": "nw-leathercrafters-dec-2026-12-13",
     "title": "Northwest Leathercrafters Guild December Meeting & Handcrafted Leather Showcase",
     "organization": "Northwest Leathercrafters Guild",
@@ -17696,6 +19152,22 @@
     "recurrence": "Monthly (2nd Sundays)"
   },
   {
+    "id": "psbmg-winter-roots-polypores-2026-12-13",
+    "title": "Puget Sound Botanical Medicine Guild: Winter Roots, Medicinal Polypores & Decoction Apothecary Circle",
+    "organization": "Puget Sound Botanical Medicine Guild",
+    "activityType": "Nature/Conservation",
+    "venue": "Phinney Center Brick Building (6532 Phinney Ave N, Seattle, WA 98103)",
+    "area": "Seattle (Phinney Ridge)",
+    "start": "2026-12-13T13:00:00",
+    "end": "2026-12-13T15:30:00",
+    "timeString": "1:00 PM – 3:30 PM",
+    "dateString": "2026-12-13",
+    "description": "December herbal study circle focusing on dual-extraction tinctures and simmering decoctions of turkey tail (Trametes versicolor), red belted conk, Oregon grape root, and devil's club.",
+    "url": "https://www.pugetsoundnaturopathic.com/services",
+    "cost": "$15 suggested materials donation",
+    "recurrence": "Monthly Guild Workshop"
+  },
+  {
     "id": "improv-place-flow-jam-20261213",
     "title": "The Improv Place: Improv & Flow Sunday Community Jam at Seattle Center",
     "organization": "The Improv Place (Seattle Black Improv)",
@@ -17710,6 +19182,22 @@
     "url": "https://theimprovplace.org/",
     "cost": "Free",
     "recurrence": "Monthly on 2nd Sundays"
+  },
+  {
+    "id": "chtl-intro-woodshop-2026-12-13",
+    "title": "Capitol Hill Tool Library: Intro to Woodshop Safety & Power Tool Basics",
+    "organization": "Capitol Hill Tool Library",
+    "activityType": "Tools",
+    "venue": "Capitol Hill Tool Library (420 E Pike St / Crawford Pl, Seattle, WA 98122)",
+    "area": "Seattle (Capitol Hill)",
+    "start": "2026-12-13T14:30:00",
+    "end": "2026-12-13T16:30:00",
+    "timeString": "2:30 PM – 4:30 PM",
+    "dateString": "2026-12-13",
+    "description": "Sunday afternoon safety and operation orientation for the Capitol Hill Tool Library woodshop, required before attending open woodshop studio hours.",
+    "url": "https://www.meetup.com/capitol-hill-tool-library/",
+    "cost": "Pay-what-you-can / Free for members",
+    "recurrence": "Bi-weekly on Sundays"
   },
   {
     "id": "mof-docent-tour-2026-12-13",
@@ -17744,6 +19232,22 @@
     "recurrence": "Special Improv Tour"
   },
   {
+    "id": "up-cinema-unexpected-2026-12-13",
+    "title": "Cinema Unexpected: An Improvised Movie Live at Market Theater",
+    "organization": "Unexpected Productions Improv",
+    "activityType": "Comedy/Improv",
+    "venue": "Market Theater, Pike Place Market (1428 Post Alley, Seattle, WA 98101)",
+    "area": "Seattle (Pike Place Market)",
+    "start": "2026-12-13T19:30:00",
+    "end": "2026-12-13T20:45:00",
+    "timeString": "7:30 PM – 8:45 PM",
+    "dateString": "2026-12-13",
+    "description": "Unscripted Sunday night movie magic at Pike Place Market as Unexpected Productions improvises an entire film from opening credits to finale.",
+    "url": "https://www.unexpectedproductions.org/shows/",
+    "cost": "$15",
+    "recurrence": "Weekly on Sundays"
+  },
+  {
     "id": "sct-outside-the-lines-bipoc-20261213",
     "title": "Outside the Lines: BIPOC Stand-Up + Improv Comedy Showcase",
     "organization": "Seattle Comedy Theater (Home of ComedySportz)",
@@ -17758,6 +19262,22 @@
     "url": "https://www.seattlecomedytheater.com/shows",
     "cost": "Pay What You Want ($5–$20)",
     "recurrence": "Monthly on 2nd Sundays"
+  },
+  {
+    "id": "seattle-makers-queer-crafters-2026-12-14",
+    "title": "Seattle Makers: Queer Crafters December Holiday Gift Making Meetup",
+    "organization": "Seattle Makers",
+    "activityType": "Maker & Crafts",
+    "venue": "Seattle Makers (3012 16th Ave W, Seattle, WA 98119)",
+    "area": "Seattle (Interbay)",
+    "start": "2026-12-14T18:00:00",
+    "end": "2026-12-14T20:30:00",
+    "timeString": "6:00 PM – 8:30 PM",
+    "dateString": "2026-12-14",
+    "description": "Final December Queer Crafters gathering of 2026—finish handmade holiday gifts, cards, knitwear, and laser-engraved crafts in a cozy community studio.",
+    "url": "https://seattlemakers.org/events/",
+    "cost": "Free / Pay-what-you-can",
+    "recurrence": "Bi-weekly on Mondays"
   },
   {
     "id": "gcc-monday-league-2026-12-14",
@@ -17856,6 +19376,22 @@
     "recurrence": "Weekly on Tuesdays"
   },
   {
+    "id": "eccc-tuesday-open-mic-2026-12-15",
+    "title": "Emerald City Comedy Club Free Tuesday Open Mic Night & Lucky Bucket",
+    "organization": "Emerald City Comedy Club",
+    "activityType": "Comedy/Improv",
+    "venue": "Emerald City Comedy Club (210 Broadway E, Seattle, WA 98102)",
+    "area": "Seattle (Capitol Hill)",
+    "start": "2026-12-15T19:00:00",
+    "end": "2026-12-15T21:00:00",
+    "timeString": "7:00 PM – 9:00 PM",
+    "dateString": "2026-12-15",
+    "description": "Mid-December Tuesday open mic night at Emerald City Comedy Club featuring local comics and live bucket draws.",
+    "url": "https://www.emeraldcitycomedy.com/",
+    "cost": "Free admission",
+    "recurrence": "Weekly on Tuesdays"
+  },
+  {
     "id": "science-on-tap-dec-2026-12-15",
     "title": "Science on Tap Seattle: Ice & Fire — Glaciers and Geothermal Systems of the Cascades",
     "organization": "Science on Tap Seattle",
@@ -17936,6 +19472,38 @@
     "recurrence": "Third Wednesday of the month"
   },
   {
+    "id": "wstl-wednesday-fixit-2026-12-16",
+    "title": "West Seattle Tool Library: Wednesday Community Fix-It & Small Appliance Repair Workshop",
+    "organization": "West Seattle Tool Library",
+    "activityType": "Tools",
+    "venue": "Youngstown Cultural Arts Center (4408 Delridge Way SW, Seattle, WA 98106)",
+    "area": "Seattle (West Seattle / Delridge)",
+    "start": "2026-12-16T17:30:00",
+    "end": "2026-12-16T19:30:00",
+    "timeString": "5:30 PM – 7:30 PM",
+    "dateString": "2026-12-16",
+    "description": "Bring broken household appliances, holiday string lights, tools, or furniture to troubleshoot and repair alongside West Seattle Tool Library volunteer fixers.",
+    "url": "https://wstools.org/",
+    "cost": "Free",
+    "recurrence": "Weekly on Wednesdays"
+  },
+  {
+    "id": "nestl-book-club-dec-2026-12-16",
+    "title": "NE Seattle Tool Library December Book Club & Winter Cozy Tea Night",
+    "organization": "Northeast Seattle Tool Library",
+    "activityType": "Tools",
+    "venue": "NE Seattle Tool Library (10228 Fischer Pl NE, Seattle, WA 98125)",
+    "area": "Seattle (Wedgwood)",
+    "start": "2026-12-16T19:00:00",
+    "end": "2026-12-16T20:30:00",
+    "timeString": "7:00 PM – 8:30 PM",
+    "dateString": "2026-12-16",
+    "description": "December gathering of the Tool Library Book Club featuring herbal tea, cookies, and lively discussion on sustainability, mutual aid, and neighborhood resilience.",
+    "url": "https://seattlereconomy.org/events/",
+    "cost": "Free",
+    "recurrence": "Monthly on 3rd Wednesdays/Mondays"
+  },
+  {
     "id": "scc-wednesday-casual-2026-12-16",
     "title": "Seattle Chess Club: Wednesday Casual Chess Night",
     "organization": "Seattle Chess Club",
@@ -17998,6 +19566,22 @@
     "url": "https://www.tahomabirdalliance.org/bird-walks",
     "cost": "Free",
     "recurrence": "Third Thursday of the month"
+  },
+  {
+    "id": "sktl-auburn-help-listening-2026-12-17",
+    "title": "South King Tool Library Auburn: Housing Equity Listening Project (HELP) & Weatherization Night",
+    "organization": "South King Tool Library",
+    "activityType": "Tools",
+    "venue": "South King Tool Library – Auburn Branch (410 H St NE, Auburn, WA 98002)",
+    "area": "South King County (Auburn)",
+    "start": "2026-12-17T17:30:00",
+    "end": "2026-12-17T19:00:00",
+    "timeString": "5:30 PM – 7:00 PM",
+    "dateString": "2026-12-17",
+    "description": "Monthly Auburn Housing Equity Listening Project session offering free window insulation kits, moisture control tips, and tool borrowing for South King County residents.",
+    "url": "https://southkingtools.org/",
+    "cost": "Free",
+    "recurrence": "Monthly (3rd Thursdays)"
   },
   {
     "id": "pnms-winter-photomicrography-2026-12-17",
@@ -18544,6 +20128,22 @@
     "recurrence": "Weekly on Saturdays"
   },
   {
+    "id": "kubota-december-public-tour-2026-12-26",
+    "title": "Kubota Garden Free Monthly Guided Public Winter Tour (December)",
+    "organization": "Kubota Garden Foundation",
+    "activityType": "Nature/Conservation",
+    "venue": "Kubota Garden Main Gate Plaza (9817 55th Ave S, Seattle, WA 98118)",
+    "area": "Seattle (Rainier Beach)",
+    "start": "2026-12-26T10:00:00",
+    "end": "2026-12-26T12:00:00",
+    "timeString": "10:00 AM – 12:00 PM",
+    "dateString": "2026-12-26",
+    "description": "Guided fourth-Saturday winter walking tour exploring Fujitaro Kubota's 20-acre Japanese-American heritage garden, showcasing pruned pines, cascades, and winter structural beauty.",
+    "url": "https://kubotagarden.org/",
+    "cost": "Free (registration recommended)",
+    "recurrence": "Monthly (4th Saturdays)"
+  },
+  {
     "id": "sgc-open-play-2026-12-26",
     "title": "Seattle Go Center: Boxing Day Saturday Open Play",
     "organization": "Seattle Go Center",
@@ -18654,6 +20254,22 @@
     "url": "https://seattlechess.club/mec-category/free-event/",
     "cost": "Free",
     "recurrence": "Weekly on Wednesdays"
+  },
+  {
+    "id": "burke-museum-noon-years-eve-2026-12-31",
+    "title": "The Burke Museum: Noon Year's Eve Fossil Celebration & Natural History Countdown",
+    "organization": "The Burke Museum",
+    "activityType": "Science",
+    "venue": "Burke Museum of Natural History and Culture (4300 15th Ave NE, Seattle, WA 98105)",
+    "area": "Seattle (UW Campus)",
+    "start": "2026-12-31T10:00:00",
+    "end": "2026-12-31T14:00:00",
+    "timeString": "10:00 AM – 2:00 PM",
+    "dateString": "2026-12-31",
+    "description": "Ring in 2027 at noon alongside the Burke's T. rex skull and paleontology prep lab with hands-on fossil identification stations, winter natural history crafts, and a midday countdown.",
+    "url": "https://www.burkemuseum.org/",
+    "cost": "Included with museum admission / Free for members & UW",
+    "recurrence": "Annual New Year's Eve Event"
   },
   {
     "id": "seattle-center-winterfest-nye-2026-12-31",
