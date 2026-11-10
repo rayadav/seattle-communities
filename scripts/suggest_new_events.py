@@ -10,6 +10,7 @@ import csv
 import sys
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
+from zoneinfo import ZoneInfo
 from collections import defaultdict
 
 REPO_DIR = Path(__file__).resolve().parent.parent
@@ -26,8 +27,10 @@ PRIORITY_PILLARS = {
 }
 
 def get_today_str():
-    utc_now = datetime.now(timezone.utc)
-    pacific_now = utc_now - timedelta(hours=7)
+    try:
+        pacific_now = datetime.now(ZoneInfo("America/Los_Angeles"))
+    except Exception:
+        pacific_now = datetime.now(timezone.utc) - timedelta(hours=8)
     return pacific_now.strftime("%Y-%m-%d")
 
 def main():

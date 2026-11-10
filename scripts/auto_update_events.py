@@ -23,6 +23,7 @@ import csv
 import re
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
+from zoneinfo import ZoneInfo
 import urllib.request
 import urllib.error
 
@@ -65,9 +66,11 @@ def load_env_file():
             print(f"Warning: could not read .env file: {e}", file=sys.stderr)
 
 def get_today_str():
-    # Use Pacific Time (UTC-7 for PDT, UTC-8 for PST)
-    utc_now = datetime.now(timezone.utc)
-    pacific_now = utc_now - timedelta(hours=7)
+    # Use Pacific Time (America/Los_Angeles)
+    try:
+        pacific_now = datetime.now(ZoneInfo("America/Los_Angeles"))
+    except Exception:
+        pacific_now = datetime.now(timezone.utc) - timedelta(hours=8)
     return pacific_now.strftime("%Y-%m-%d")
 
 def get_seasonal_context(month):
@@ -331,12 +334,32 @@ def main():
         groups = list(csv.DictReader(f))
 
     with open(EVENTS_PATH, "r", encoding="utf-8") as f:
-        events = json.load(f)
+        raw_events = json.load(f)
 
-    print(f"Loaded {len(groups)} community groups and {len(events)} current events.")
+    # Prune past events so events.json and events.min.json stay fast and only hold upcoming events
+    events = [
+        e for e in raw_events
+        if (e.get("dateString") or e.get("start", "")[:10]) >= today_str
+    ]
+    pruned_count = len(raw_events) - len(events)
+    if pruned_count > 0:
+        print(f"Pruned {pruned_count} past event(s) (< {today_str}).")
+
+    print(f"Loaded {len(groups)} community groups and {len(events)} upcoming events.")
+
+    def save_events_and_bump():
+        events.sort(key=lambda e: (e.get("start", ""), e.get("title", "")))
+        with open(EVENTS_PATH, "w", encoding="utf-8") as f:
+            json.dump(events, f, indent=2, ensure_ascii=False)
+        with open(MIN_EVENTS_PATH, "w", encoding="utf-8") as f:
+            json.dump(events, f, separators=(',', ':'), ensure_ascii=False)
+        bump_sw_cache_version()
+        print(f"\nSuccessfully updated events.json and events.min.json. Total upcoming events: {len(events)}")
 
     api_key = os.environ.get("GEMINI_API_KEY", "").strip()
     if not api_key:
+        if pruned_count > 0:
+            save_events_and_bump()
         print("\nNotice: GEMINI_API_KEY is not set.")
         print("Set the GEMINI_API_KEY environment variable or create a .env file in the repository root:")
         print("  GEMINI_API_KEY=your_gemini_api_key_here")
@@ -349,6 +372,8 @@ def main():
 
     proposed_events, is_error = query_gemini_for_events(api_key, candidate_groups, today_str)
     if is_error:
+        if pruned_count > 0:
+            save_events_and_bump()
         print("Failed to retrieve valid event proposals from Gemini API.", file=sys.stderr)
         sys.exit(1)
 
@@ -367,6 +392,8 @@ def main():
             existing_urls_dates.add((ev["url"].strip().lower(), ev["dateString"].strip()))
 
     if not valid_additions:
+        if pruned_count > 0:
+            save_events_and_bump()
         print("No new valid, non-duplicate events found today.")
         sys.exit(0)
 
@@ -375,18 +402,7 @@ def main():
         print(f"  + [{ev['dateString']}] {ev['title']} ({ev['organization']})")
         events.append(ev)
 
-    # Sort all events chronologically by start date, then title
-    events.sort(key=lambda e: (e.get("start", ""), e.get("title", "")))
-
-    with open(EVENTS_PATH, "w", encoding="utf-8") as f:
-        json.dump(events, f, indent=2, ensure_ascii=False)
-
-    with open(MIN_EVENTS_PATH, "w", encoding="utf-8") as f:
-        json.dump(events, f, separators=(',', ':'), ensure_ascii=False)
-
-    bump_sw_cache_version()
-
-    print(f"\nSuccessfully updated events.json and events.min.json. Total events now: {len(events)}")
+    save_events_and_bump()
 
 if __name__ == "__main__":
     main()

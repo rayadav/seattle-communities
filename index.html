@@ -1666,8 +1666,12 @@
     align-items: center;
     justify-content: center;
   }
-  .cal-nav-btn:hover {
+  .cal-nav-btn:hover:not(:disabled) {
     background: var(--surface-2);
+  }
+  .cal-nav-btn:disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
   }
 
   .cal-grid-wrap {
@@ -1713,6 +1717,11 @@
   }
   .cal-day-cell.is-outside {
     opacity: 0.38;
+  }
+  .cal-day-cell.is-past {
+    opacity: 0.32;
+    cursor: not-allowed;
+    pointer-events: none;
   }
   .cal-day-cell.is-today {
     border-color: var(--amber);
@@ -1811,7 +1820,7 @@
   /* Modern Web Guidance: Defer rendering ONLY on below-the-fold day groups */
   .agenda-day-group.day-group-deferred {
     content-visibility: auto;
-    contain-intrinsic-size: auto none auto 280px;
+    contain-intrinsic-size: auto 28rem;
   }
 
   /* Almanac Chapter Day Header */
@@ -2947,7 +2956,6 @@
           <button type="button" class="time-pill" data-timeframe="next-week">Next Week</button>
           <button type="button" class="time-pill" data-timeframe="november">Nov 2026</button>
           <button type="button" class="time-pill" data-timeframe="december">Dec 2026</button>
-          <button type="button" class="time-pill" data-timeframe="past">Past Archive</button>
         </div>
 
         <div class="filter-meta-controls">
@@ -3446,7 +3454,8 @@
   }
 
   function applyCustomDate(dateVal) {
-    if (!dateVal) {
+    const todayStr = getLocalDateStr();
+    if (!dateVal || dateVal < todayStr) {
       clearCustomDate();
       return;
     }
@@ -3591,6 +3600,12 @@
     const counts = getEventCountsByDate();
     const { todayStr } = getCalendarDateBounds();
     const presets = getPresetDates();
+    const now = new Date();
+    const isCurrentOrPastMonth = (calViewYear < now.getFullYear()) ||
+      (calViewYear === now.getFullYear() && calViewMonth <= now.getMonth());
+    if (calPrevMonthBtn) {
+      calPrevMonthBtn.disabled = isCurrentOrPastMonth;
+    }
 
     const monthNames = [
       'January', 'February', 'March', 'April', 'May', 'June',
@@ -3653,12 +3668,14 @@
       }
 
       const dateStr = `${cellYear}-${String(cellMonth + 1).padStart(2, '0')}-${String(dayNum).padStart(2, '0')}`;
-      const evCount = counts[dateStr] || 0;
+      const isPast = dateStr < todayStr;
+      const evCount = isPast ? 0 : (counts[dateStr] || 0);
       const isToday = dateStr === todayStr;
       const isSelected = dateStr === selectedCustomDate;
 
       const classes = ['cal-day-cell'];
       if (isOutside) classes.push('is-outside');
+      if (isPast) classes.push('is-past');
       if (isToday) classes.push('is-today');
       if (isSelected) classes.push('is-selected');
       if (evCount === 0) {
@@ -3669,7 +3686,7 @@
 
       const ariaLabel = `${formatDisplayDateFull(dateStr)}, ${evCount} event${evCount === 1 ? '' : 's'}`;
       cellsHtml += `
-        <button type="button" class="${classes.join(' ')}" data-date="${dateStr}" aria-label="${escapeHtml(ariaLabel)}" aria-pressed="${isSelected ? 'true' : 'false'}" title="${escapeHtml(ariaLabel)}">
+        <button type="button" class="${classes.join(' ')}" data-date="${dateStr}" ${isPast ? 'disabled aria-disabled="true"' : ''} aria-label="${escapeHtml(ariaLabel)}" aria-pressed="${isSelected ? 'true' : 'false'}" title="${escapeHtml(ariaLabel)}">
           <span class="cal-day-num">${dayNum}</span>
           <span class="cal-day-count">${evCount > 0 ? evCount : '·'}</span>
         </button>
@@ -3733,14 +3750,17 @@
 
   loadEventsData()
     .then(data => {
-      allEvents = data;
-      for (let i = 0; i < allEvents.length; i++) {
-        const ev = allEvents[i];
+      const todayStr = getLocalDateStr();
+      allEvents = [];
+      for (let i = 0; i < data.length; i++) {
+        const ev = data[i];
+        if (!ev || ev.dateString < todayStr) continue;
         const raw = `${ev.title} ${ev.organization} ${ev.venue} ${ev.area} ${ev.activityType} ${ev.description}`.toLowerCase();
         ev._searchStr = raw;
         ev._cleanStr = raw.replace(/[\s\-_,.]/g, '');
         ev._pillar = classifyEventPillar(ev);
         ev._daypart = classifyEventDaypart(ev);
+        allEvents.push(ev);
       }
       initCalendar();
     })
@@ -3766,12 +3786,10 @@
       tomorrowPill.textContent = `Tomorrow (${mName} ${dNum})`;
     }
 
-    const { todayStr } = getCalendarDateBounds();
-    const upcomingEvents = allEvents.filter(e => e.dateString >= todayStr);
-    const total = upcomingEvents.length;
-    const uniqueGroups = new Set(upcomingEvents.map(e => e.organization)).size;
-    const categories = new Set(upcomingEvents.map(e => e.activityType));
-    const areas = new Set(upcomingEvents.map(e => e.area));
+    const total = allEvents.length;
+    const uniqueGroups = new Set(allEvents.map(e => e.organization)).size;
+    const categories = new Set(allEvents.map(e => e.activityType));
+    const areas = new Set(allEvents.map(e => e.area));
 
     heroEventCount.textContent = total;
     statTotalEvents.textContent = total;
@@ -3781,7 +3799,7 @@
 
     // Populate Pillar Counts
     const pCounts = { all: total, fungi: 0, watershed: 0, maker: 0, science: 0, comedy: 0, outdoors: 0, arts: 0 };
-    upcomingEvents.forEach(e => {
+    allEvents.forEach(e => {
       if (pCounts[e._pillar] !== undefined) pCounts[e._pillar]++;
     });
     Object.keys(pCounts).forEach(k => {
@@ -3946,6 +3964,10 @@
 
     if (calPrevMonthBtn) {
       calPrevMonthBtn.addEventListener('click', () => {
+        const now = new Date();
+        if (calViewYear < now.getFullYear() || (calViewYear === now.getFullYear() && calViewMonth <= now.getMonth())) {
+          return;
+        }
         calViewMonth--;
         if (calViewMonth < 0) {
           calViewMonth = 11;
@@ -3987,7 +4009,7 @@
     if (calDaysGrid) {
       calDaysGrid.addEventListener('click', (e) => {
         const cell = e.target.closest('.cal-day-cell');
-        if (!cell) return;
+        if (!cell || cell.disabled || cell.classList.contains('is-past')) return;
         const pickedDate = cell.getAttribute('data-date');
         if (pickedDate) {
           applyCustomDate(pickedDate);
@@ -4298,7 +4320,9 @@
     };
   }
 
-  function getRelativeDayLabel(dateStr) {
+  const dateHeaderCache = {};
+
+  function getRelativeDayLabel(dateStr, bounds) {
     const {
       todayStr,
       tomorrowStr,
@@ -4307,9 +4331,8 @@
       thisWeekendSunStr,
       nextWeekStartStr,
       nextWeekEndStr
-    } = getCalendarDateBounds();
+    } = bounds || getCalendarDateBounds();
 
-    if (dateStr < todayStr) return 'Past Archive';
     if (dateStr === todayStr) return 'Today';
     if (dateStr === tomorrowStr) return 'Tomorrow';
     if (dateStr === thisWeekendSatStr || dateStr === thisWeekendSunStr) return 'This Weekend';
@@ -4340,6 +4363,18 @@
     };
   }
 
+  function getCachedDayMeta(dateStr) {
+    let meta = dateHeaderCache[dateStr];
+    if (!meta) {
+      meta = {
+        headerDate: escapeHtml(formatDayHeader(dateStr)),
+        tile: getDayTileParts(dateStr)
+      };
+      dateHeaderCache[dateStr] = meta;
+    }
+    return meta;
+  }
+
   function calculateDuration(startIso, endIso) {
     if (!startIso || !endIso) return null;
     const diffMs = new Date(endIso) - new Date(startIso);
@@ -4368,218 +4403,15 @@
     return `${base}&text=${text}&dates=${dates}&details=${details}&location=${location}`;
   }
 
-  window.downloadIcs = function(eventId) {
-    const ev = allEvents.find(e => e.id === eventId);
-    if (!ev) return;
+  function buildEventCardHtml(ev) {
+    const duration = calculateDuration(ev.start, ev.end);
+    const gcalUrl = makeGoogleCalendarUrl(ev);
+    const pillar = ev._pillar || classifyEventPillar(ev);
+    const emblem = PILLAR_EMBLEMS[pillar] || '🌲';
+    const daypart = ev._daypart || classifyEventDaypart(ev);
+    const dpInfo = DAYPART_META[daypart] || DAYPART_META.afternoon;
 
-    const formatIcsDate = (isoStr) => {
-      const d = new Date(isoStr);
-      return d.toISOString().replace(/-|:|\.\d+/g, '');
-    };
-
-    const icsContent = [
-      'BEGIN:VCALENDAR',
-      'VERSION:2.0',
-      'PRODID:-//Seattle Communities//Events Calendar//EN',
-      'CALSCALE:GREGORIAN',
-      'METHOD:PUBLISH',
-      'BEGIN:VEVENT',
-      `UID:${ev.id}@seattle-communities`,
-      `DTSTAMP:${formatIcsDate(new Date().toISOString())}`,
-      `DTSTART:${formatIcsDate(ev.start)}`,
-      `DTEND:${formatIcsDate(ev.end || ev.start)}`,
-      `SUMMARY:${ev.title}`,
-      `DESCRIPTION:${ev.description.replace(/\n/g, ' ')} | Host: ${ev.organization} | Link: ${ev.url}`,
-      `LOCATION:${ev.venue}, ${ev.area}`,
-      `URL:${ev.url}`,
-      'END:VEVENT',
-      'END:VCALENDAR'
-    ].join('\r\n');
-
-    const blob = new Blob([icsContent], { type: 'text/calendar;charset=utf-8;' });
-    const link = document.createElement('a');
-    link.href = URL.createObjectURL(blob);
-    link.setAttribute('download', `${ev.id}.ics`);
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
-
-  function renderAgenda() {
-    const rawQuery = searchInput.value.trim().toLowerCase();
-    const selCat = categoryFilter.value;
-    const selOrg = orgFilter ? orgFilter.value : '';
-    const selArea = areaFilter.value;
-
-    let normQuery = '';
-    let cleanQuery = '';
-    let tokens = [];
-    if (rawQuery) {
-      normQuery = rawQuery.replace(/audobon/g, 'audubon');
-      cleanQuery = normQuery.replace(/[\s\-_,.]/g, '');
-      tokens = normQuery.split(/\s+/).filter(Boolean).map(t => ({
-        tok: t,
-        clean: t.replace(/[\s\-_,.]/g, '')
-      }));
-    }
-
-    const {
-      todayStr,
-      tomorrowStr,
-      endThisWeekStr,
-      thisWeekendSatStr,
-      thisWeekendSunStr,
-      nextWeekStartStr,
-      nextWeekEndStr
-    } = getCalendarDateBounds();
-
-    // Step 1: Filter by all criteria except Daypart so we can compute live Morning / Afternoon / Evening counts
-    const baseMatches = allEvents.filter(ev => {
-      if (activePillar !== 'all' && ev._pillar !== activePillar) return false;
-      if (selCat && ev.activityType !== selCat) return false;
-      if (selOrg && ev.organization !== selOrg) return false;
-      if (selArea && ev.area !== selArea) return false;
-
-      if (normQuery) {
-        const directMatch = ev._searchStr.includes(normQuery);
-        const compressedMatch = cleanQuery && ev._cleanStr.includes(cleanQuery);
-        const tokenMatch = tokens.length > 0 && tokens.every(t => {
-          return ev._searchStr.includes(t.tok) || (t.clean && ev._cleanStr.includes(t.clean));
-        });
-        if (!directMatch && !compressedMatch && !tokenMatch) return false;
-      }
-
-      const dateStr = ev.dateString;
-
-      if (activeTimeframe === 'custom-date') {
-        if (dateStr !== selectedCustomDate) return false;
-      } else if (activeTimeframe === 'all') {
-        if (dateStr < todayStr) return false;
-      } else if (activeTimeframe === 'today') {
-        if (dateStr !== todayStr) return false;
-      } else if (activeTimeframe === 'tomorrow') {
-        if (dateStr !== tomorrowStr) return false;
-      } else if (activeTimeframe === 'this-week') {
-        if (!(dateStr >= todayStr && dateStr <= endThisWeekStr)) return false;
-      } else if (activeTimeframe === 'this-weekend') {
-        if (!(dateStr === thisWeekendSatStr || dateStr === thisWeekendSunStr)) return false;
-      } else if (activeTimeframe === 'next-week') {
-        if (!(dateStr >= nextWeekStartStr && dateStr <= nextWeekEndStr)) return false;
-      } else if (activeTimeframe === 'october') {
-        if (!dateStr.startsWith('2026-10')) return false;
-        if (dateStr < todayStr) return false;
-      } else if (activeTimeframe === 'november') {
-        if (!dateStr.startsWith('2026-11')) return false;
-        if (dateStr < todayStr) return false;
-      } else if (activeTimeframe === 'december') {
-        if (!dateStr.startsWith('2026-12')) return false;
-        if (dateStr < todayStr) return false;
-      } else if (activeTimeframe === 'past') {
-        if (dateStr >= todayStr) return false;
-      }
-
-      return true;
-    });
-
-    // Update live Daypart count badges for the current Horizon/Date/Filter context
-    const dpCounts = { all: baseMatches.length, morning: 0, afternoon: 0, evening: 0 };
-    for (let i = 0; i < baseMatches.length; i++) {
-      const dp = baseMatches[i]._daypart || classifyEventDaypart(baseMatches[i]);
-      if (dpCounts[dp] !== undefined) dpCounts[dp]++;
-    }
-    if (dpCountAll) dpCountAll.textContent = dpCounts.all;
-    if (dpCountMorning) dpCountMorning.textContent = dpCounts.morning;
-    if (dpCountAfternoon) dpCountAfternoon.textContent = dpCounts.afternoon;
-    if (dpCountEvening) dpCountEvening.textContent = dpCounts.evening;
-
-    // Step 2: Apply active Time-of-Day (Daypart) filter
-    const filtered = activeDaypart === 'all'
-      ? baseMatches
-      : baseMatches.filter(ev => (ev._daypart || classifyEventDaypart(ev)) === activeDaypart);
-
-    if (statusCountEl) {
-      if (selectedCustomDate) {
-        const fullDateText = formatDisplayDateFull(selectedCustomDate);
-        statusCountEl.innerHTML = `Showing <strong id="visible-count">${filtered.length}</strong> event${filtered.length === 1 ? '' : 's'} on <strong>${escapeHtml(fullDateText)}</strong>`;
-      } else if (activeTimeframe === 'past') {
-        statusCountEl.innerHTML = `Showing <strong id="visible-count">${filtered.length}</strong> past event${filtered.length === 1 ? '' : 's'}`;
-      } else {
-        const { todayStr } = getCalendarDateBounds();
-        const totalUpcoming = allEvents.filter(e => e.dateString >= todayStr).length;
-        statusCountEl.innerHTML = `Showing <strong id="visible-count">${filtered.length}</strong> of <strong id="total-count">${totalUpcoming}</strong> upcoming events`;
-      }
-    }
-    updateMobileFilterStatus(selCat, selOrg, selArea, filtered.length);
-
-    if (filtered.length === 0) {
-      agendaList.innerHTML = '';
-      if (selectedCustomDate) {
-        const fullDateText = formatDisplayDateFull(selectedCustomDate);
-        const iconEl = emptyState.querySelector('.icon');
-        if (iconEl) iconEl.textContent = '📅';
-        const h3El = emptyState.querySelector('h3');
-        if (h3El) h3El.textContent = 'No gatherings scheduled on this date';
-        const pEl = emptyState.querySelector('p');
-        if (pEl) pEl.innerHTML = `There are no community events listed for <strong>${escapeHtml(fullDateText)}</strong> matching your current filters. Try picking another date on the calendar or resetting your filters.`;
-      } else {
-        const iconEl = emptyState.querySelector('.icon');
-        if (iconEl) iconEl.textContent = '🧭';
-        const h3El = emptyState.querySelector('h3');
-        if (h3El) h3El.textContent = 'No gatherings match this field query';
-        const pEl = emptyState.querySelector('p');
-        if (pEl) pEl.textContent = 'No community events match your current search and filter selections. Try clearing your filters or broadening your search.';
-      }
-      emptyState.style.display = 'block';
-      return;
-    }
-
-    emptyState.style.display = 'none';
-
-    const groupedByDate = {};
-    filtered.forEach(ev => {
-      if (!groupedByDate[ev.dateString]) {
-        groupedByDate[ev.dateString] = [];
-      }
-      groupedByDate[ev.dateString].push(ev);
-    });
-
-    let html = '';
-    const sortedDates = Object.keys(groupedByDate).sort();
-
-    sortedDates.forEach((dateStr, dayIndex) => {
-      const dayEvents = groupedByDate[dateStr];
-      const headerDate = formatDayHeader(dateStr);
-      const relativeLabel = getRelativeDayLabel(dateStr);
-      const tile = getDayTileParts(dateStr);
-      const isToday = relativeLabel === 'Today';
-      // Modern Web Guidance: Apply content-visibility: auto ONLY to below-the-fold day groups
-      const deferredClass = dayIndex >= 2 ? 'day-group-deferred' : '';
-
-      html += `
-        <section class="agenda-day-group ${deferredClass}" aria-label="${escapeHtml(headerDate)}">
-          <div class="agenda-day-header">
-            <div class="day-cal-tile ${isToday ? 'is-today-tile' : ''}" aria-hidden="true">
-              <span class="day-cal-tile-month">${tile.month}</span>
-              <span class="day-cal-tile-num">${tile.day}</span>
-            </div>
-            <div class="agenda-day-title-wrap">
-              <h2 class="agenda-day-title">${escapeHtml(headerDate)}</h2>
-              <span class="agenda-day-relative ${isToday ? 'is-today' : (relativeLabel === 'Tomorrow' ? 'is-tomorrow' : '')}">${escapeHtml(relativeLabel)}</span>
-            </div>
-            <span class="agenda-day-count">${dayEvents.length} gathering${dayEvents.length > 1 ? 's' : ''}</span>
-          </div>
-          <div class="agenda-events-list">
-      `;
-
-      dayEvents.forEach(ev => {
-        const duration = calculateDuration(ev.start, ev.end);
-        const gcalUrl = makeGoogleCalendarUrl(ev);
-        const pillar = ev._pillar || classifyEventPillar(ev);
-        const emblem = PILLAR_EMBLEMS[pillar] || '🌲';
-        const daypart = ev._daypart || classifyEventDaypart(ev);
-        const dpInfo = DAYPART_META[daypart] || DAYPART_META.afternoon;
-
-        html += `
+    return `
           <article class="event-card" data-pillar="${pillar}">
             <div class="event-card-inner">
               <!-- Time & Cost Stamp Column -->
@@ -4638,7 +4470,206 @@
             </div>
           </article>
         `;
-      });
+  }
+
+  window.downloadIcs = function(eventId) {
+    const ev = allEvents.find(e => e.id === eventId);
+    if (!ev) return;
+
+    const formatIcsDate = (isoStr) => {
+      const d = new Date(isoStr);
+      return d.toISOString().replace(/-|:|\.\d+/g, '');
+    };
+
+    const icsContent = [
+      'BEGIN:VCALENDAR',
+      'VERSION:2.0',
+      'PRODID:-//Seattle Communities//Events Calendar//EN',
+      'CALSCALE:GREGORIAN',
+      'METHOD:PUBLISH',
+      'BEGIN:VEVENT',
+      `UID:${ev.id}@seattle-communities`,
+      `DTSTAMP:${formatIcsDate(new Date().toISOString())}`,
+      `DTSTART:${formatIcsDate(ev.start)}`,
+      `DTEND:${formatIcsDate(ev.end || ev.start)}`,
+      `SUMMARY:${ev.title}`,
+      `DESCRIPTION:${ev.description.replace(/\n/g, ' ')} | Host: ${ev.organization} | Link: ${ev.url}`,
+      `LOCATION:${ev.venue}, ${ev.area}`,
+      `URL:${ev.url}`,
+      'END:VEVENT',
+      'END:VCALENDAR'
+    ].join('\r\n');
+
+    const blob = new Blob([icsContent], { type: 'text/calendar;charset=utf-8;' });
+    const link = document.createElement('a');
+    link.href = URL.createObjectURL(blob);
+    link.setAttribute('download', `${ev.id}.ics`);
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
+  function renderAgenda() {
+    const rawQuery = searchInput.value.trim().toLowerCase();
+    const selCat = categoryFilter.value;
+    const selOrg = orgFilter ? orgFilter.value : '';
+    const selArea = areaFilter.value;
+
+    let normQuery = '';
+    let cleanQuery = '';
+    let tokens = [];
+    if (rawQuery) {
+      normQuery = rawQuery.replace(/audobon/g, 'audubon');
+      cleanQuery = normQuery.replace(/[\s\-_,.]/g, '');
+      tokens = normQuery.split(/\s+/).filter(Boolean).map(t => ({
+        tok: t,
+        clean: t.replace(/[\s\-_,.]/g, '')
+      }));
+    }
+
+    const bounds = getCalendarDateBounds();
+    const {
+      todayStr,
+      tomorrowStr,
+      endThisWeekStr,
+      thisWeekendSatStr,
+      thisWeekendSunStr,
+      nextWeekStartStr,
+      nextWeekEndStr
+    } = bounds;
+
+    // Step 1: Filter by all criteria except Daypart so we can compute live Morning / Afternoon / Evening counts
+    const baseMatches = allEvents.filter(ev => {
+      if (activePillar !== 'all' && ev._pillar !== activePillar) return false;
+      if (selCat && ev.activityType !== selCat) return false;
+      if (selOrg && ev.organization !== selOrg) return false;
+      if (selArea && ev.area !== selArea) return false;
+
+      if (normQuery) {
+        const directMatch = ev._searchStr.includes(normQuery);
+        const compressedMatch = cleanQuery && ev._cleanStr.includes(cleanQuery);
+        const tokenMatch = tokens.length > 0 && tokens.every(t => {
+          return ev._searchStr.includes(t.tok) || (t.clean && ev._cleanStr.includes(t.clean));
+        });
+        if (!directMatch && !compressedMatch && !tokenMatch) return false;
+      }
+
+      const dateStr = ev.dateString;
+      if (dateStr < todayStr) return false;
+
+      if (activeTimeframe === 'custom-date') {
+        if (dateStr !== selectedCustomDate) return false;
+      } else if (activeTimeframe === 'today') {
+        if (dateStr !== todayStr) return false;
+      } else if (activeTimeframe === 'tomorrow') {
+        if (dateStr !== tomorrowStr) return false;
+      } else if (activeTimeframe === 'this-week') {
+        if (!(dateStr >= todayStr && dateStr <= endThisWeekStr)) return false;
+      } else if (activeTimeframe === 'this-weekend') {
+        if (!(dateStr === thisWeekendSatStr || dateStr === thisWeekendSunStr)) return false;
+      } else if (activeTimeframe === 'next-week') {
+        if (!(dateStr >= nextWeekStartStr && dateStr <= nextWeekEndStr)) return false;
+      } else if (activeTimeframe === 'november') {
+        if (!dateStr.startsWith('2026-11')) return false;
+      } else if (activeTimeframe === 'december') {
+        if (!dateStr.startsWith('2026-12')) return false;
+      }
+
+      return true;
+    });
+
+    // Update live Daypart count badges for the current Horizon/Date/Filter context
+    const dpCounts = { all: baseMatches.length, morning: 0, afternoon: 0, evening: 0 };
+    for (let i = 0; i < baseMatches.length; i++) {
+      const dp = baseMatches[i]._daypart || classifyEventDaypart(baseMatches[i]);
+      if (dpCounts[dp] !== undefined) dpCounts[dp]++;
+    }
+    if (dpCountAll) dpCountAll.textContent = dpCounts.all;
+    if (dpCountMorning) dpCountMorning.textContent = dpCounts.morning;
+    if (dpCountAfternoon) dpCountAfternoon.textContent = dpCounts.afternoon;
+    if (dpCountEvening) dpCountEvening.textContent = dpCounts.evening;
+
+    // Step 2: Apply active Time-of-Day (Daypart) filter
+    const filtered = activeDaypart === 'all'
+      ? baseMatches
+      : baseMatches.filter(ev => (ev._daypart || classifyEventDaypart(ev)) === activeDaypart);
+
+    if (statusCountEl) {
+      if (selectedCustomDate) {
+        const fullDateText = formatDisplayDateFull(selectedCustomDate);
+        statusCountEl.innerHTML = `Showing <strong id="visible-count">${filtered.length}</strong> event${filtered.length === 1 ? '' : 's'} on <strong>${escapeHtml(fullDateText)}</strong>`;
+      } else {
+        statusCountEl.innerHTML = `Showing <strong id="visible-count">${filtered.length}</strong> of <strong id="total-count">${allEvents.length}</strong> upcoming events`;
+      }
+    }
+    updateMobileFilterStatus(selCat, selOrg, selArea, filtered.length);
+
+    if (filtered.length === 0) {
+      agendaList.innerHTML = '';
+      if (selectedCustomDate) {
+        const fullDateText = formatDisplayDateFull(selectedCustomDate);
+        const iconEl = emptyState.querySelector('.icon');
+        if (iconEl) iconEl.textContent = '📅';
+        const h3El = emptyState.querySelector('h3');
+        if (h3El) h3El.textContent = 'No gatherings scheduled on this date';
+        const pEl = emptyState.querySelector('p');
+        if (pEl) pEl.innerHTML = `There are no community events listed for <strong>${escapeHtml(fullDateText)}</strong> matching your current filters. Try picking another date on the calendar or resetting your filters.`;
+      } else {
+        const iconEl = emptyState.querySelector('.icon');
+        if (iconEl) iconEl.textContent = '🧭';
+        const h3El = emptyState.querySelector('h3');
+        if (h3El) h3El.textContent = 'No gatherings match this field query';
+        const pEl = emptyState.querySelector('p');
+        if (pEl) pEl.textContent = 'No community events match your current search and filter selections. Try clearing your filters or broadening your search.';
+      }
+      emptyState.style.display = 'block';
+      return;
+    }
+
+    emptyState.style.display = 'none';
+
+    const groupedByDate = {};
+    filtered.forEach(ev => {
+      if (!groupedByDate[ev.dateString]) {
+        groupedByDate[ev.dateString] = [];
+      }
+      groupedByDate[ev.dateString].push(ev);
+    });
+
+    let html = '';
+    const sortedDates = Object.keys(groupedByDate).sort();
+
+    sortedDates.forEach((dateStr, dayIndex) => {
+      const dayEvents = groupedByDate[dateStr];
+      const { headerDate, tile } = getCachedDayMeta(dateStr);
+      const relativeLabel = getRelativeDayLabel(dateStr, bounds);
+      const isToday = relativeLabel === 'Today';
+      // Modern Web Guidance: Apply content-visibility: auto ONLY to below-the-fold day groups
+      const deferredClass = dayIndex >= 2 ? 'day-group-deferred' : '';
+
+      html += `
+        <section class="agenda-day-group ${deferredClass}" aria-label="${headerDate}">
+          <div class="agenda-day-header">
+            <div class="day-cal-tile ${isToday ? 'is-today-tile' : ''}" aria-hidden="true">
+              <span class="day-cal-tile-month">${tile.month}</span>
+              <span class="day-cal-tile-num">${tile.day}</span>
+            </div>
+            <div class="agenda-day-title-wrap">
+              <h2 class="agenda-day-title">${headerDate}</h2>
+              <span class="agenda-day-relative ${isToday ? 'is-today' : (relativeLabel === 'Tomorrow' ? 'is-tomorrow' : '')}">${escapeHtml(relativeLabel)}</span>
+            </div>
+            <span class="agenda-day-count">${dayEvents.length} gathering${dayEvents.length > 1 ? 's' : ''}</span>
+          </div>
+          <div class="agenda-events-list">
+      `;
+
+      for (let j = 0; j < dayEvents.length; j++) {
+        const ev = dayEvents[j];
+        if (!ev._cardHtml) {
+          ev._cardHtml = buildEventCardHtml(ev);
+        }
+        html += ev._cardHtml;
+      }
 
       html += `
           </div>
