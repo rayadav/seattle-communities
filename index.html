@@ -3,3112 +3,491 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="color-scheme" content="light dark">
-<title>Puget Sound Field Almanac — Seattle Community Events Calendar</title>
-<meta name="description" content="An editorial field almanac and chronological gazette of grassroots community gatherings across Greater Seattle: mushroom forays, salmon &amp; watershed walks, tool library repair cafés, citizen science, standup comedy, improv theater, and outdoor clubs.">
-
-<!-- OpenGraph / Social Media Meta Tags -->
+<title>Seattle Communities — Local Events Around Puget Sound</title>
+<meta name="description" content="Upcoming local events across Greater Seattle and Puget Sound: mushroom walks, salmon runs, tool libraries, science talks, comedy, and outdoor clubs.">
+<meta property="og:title" content="Seattle Communities — Local Events Around Puget Sound">
+<meta property="og:description" content="Upcoming community gatherings, nature walks, repair workshops, science talks, comedy shows, and outdoor clubs across Puget Sound.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://rayadav.github.io/seattle-communities/index.html">
-<meta property="og:title" content="Puget Sound Field Almanac — Seattle Community Events Calendar">
-<meta property="og:description" content="A curated chronological gazette of grassroots community gatherings, mycology forays, watershed walks, maker workshops, citizen science, and indie comedy across Greater Seattle.">
-<meta property="og:image" content="./hero.jpeg">
-
-<!-- Twitter Card -->
+<meta property="og:image" content="https://rayadav.github.io/seattle-communities/hero.jpeg">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Puget Sound Field Almanac — Seattle Community Events Calendar">
-<meta name="twitter:description" content="Discover upcoming grassroots community events, mushroom forays, birding walks, maker repair cafés, and comedy showcases across Greater Seattle.">
-<meta name="twitter:image" content="./hero.webp">
-
-<!-- SVG Favicon -->
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌲</text></svg>">
-
-<!-- Resource Prioritization: Preload LCP hero image & JSON data -->
-<link rel="preload" href="./hero.webp" as="image" type="image/webp" fetchpriority="high" media="(min-width: 769px)">
-<link rel="preload" href="./hero-mobile.webp" as="image" type="image/webp" fetchpriority="high" media="(max-width: 768px)">
-<link rel="preload" href="./events.min.json" as="fetch" crossorigin="anonymous">
-
-<!-- Google Fonts: Fraunces (Editorial Display Serif), Geist (Humanist Sans), Geist Mono (Tabular Telemetry) -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..800;1,9..144,400..700&family=Geist:wght@400..700&family=Geist+Mono:wght@400..600&display=swap" rel="stylesheet">
-
+<meta name="twitter:title" content="Seattle Communities — Local Events">
+<meta name="twitter:description" content="Upcoming community gatherings across Greater Seattle and Puget Sound.">
+<meta name="twitter:image" content="https://rayadav.github.io/seattle-communities/hero.jpeg">
+<meta name="color-scheme" content="light dark">
 <script>
-  // Apply saved or system theme immediately to prevent flash
   (function() {
     try {
-      var saved = localStorage.getItem('sc-theme');
-      if (saved === 'dark' || saved === 'light') {
-        document.documentElement.setAttribute('data-theme', saved);
+      var t = localStorage.getItem('sc-theme');
+      if (t === 'light' || t === 'dark') {
+        var meta = document.querySelector('meta[name="color-scheme"]');
+        if (meta) meta.content = t;
+        document.documentElement.setAttribute('data-theme', t);
       }
     } catch (_) {}
   })();
 </script>
-
-<style>
-  *, *::before, *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-
-  /* ==========================================================================
-     1. ADAPTIVE DESIGN TOKENS — "PARCHMENT & OLD-GROWTH CEDAR" (LIGHT)
-        & "PUGET SOUND NOCTURNE" (DARK)
-     ========================================================================== */
-  :root {
-    color-scheme: light dark;
-
-    /* Surfaces & Archival Paper Palette */
-    --bg:              #f4efe4;
-    --bg-subtle:       #eae2d2;
-    --surface:         #fcfaf5;
-    --surface-2:       #f2ece0;
-    --surface-3:       #e7dfd0;
-    --surface-glass:   rgba(252, 250, 245, 0.90);
-    --surface-raised:  #ffffff;
-
-    /* Forest Ink & Typography Colors */
-    --ink:             #121e17;
-    --ink-secondary:   #3e4e44;
-    --ink-muted:       #637368;
-    --ink-faint:       #849389;
-
-    /* Hairline Rules & Borders */
-    --rule:            #d3cab8;
-    --rule-strong:     #b5a992;
-    --rule-soft:       #e4ddd0;
-
-    /* Primary Botanical & Regional Accents */
-    --forest:          #164e35;
-    --forest-deep:     #0e3624;
-    --forest-tint:     #e3efe9;
-    --amber:           #b84a14;
-    --amber-deep:      #93380b;
-    --amber-tint:      #fbece3;
-    --pelagic:         #0e5a8a;
-    --pelagic-tint:    #e3eff8;
-    --terracotta:      #ab2c24;
-    --terracotta-tint: #fae8e6;
-
-    /* 7 Priority Pillar Tokens (Light Mode) */
-    --pillar-fungi-fg:      #9e3c0e;
-    --pillar-fungi-bg:      #fceddf;
-    --pillar-fungi-border:  #e8be9b;
-
-    --pillar-watershed-fg:  #145337;
-    --pillar-watershed-bg:  #e2f2ea;
-    --pillar-watershed-border: #9fd0b6;
-
-    --pillar-maker-fg:      #854d0e;
-    --pillar-maker-bg:      #fef3c7;
-    --pillar-maker-border:  #e5c578;
-
-    --pillar-science-fg:    #1e40af;
-    --pillar-science-bg:    #e6effe;
-    --pillar-science-border:#a8c5f8;
-
-    --pillar-comedy-fg:     #9f1239;
-    --pillar-comedy-bg:     #fce7f3;
-    --pillar-comedy-border: #f2aecb;
-
-    --pillar-outdoors-fg:   #0f5e59;
-    --pillar-outdoors-bg:   #dff5f2;
-    --pillar-outdoors-border:#96d8d0;
-
-    --pillar-arts-fg:       #5b21b6;
-    --pillar-arts-bg:       #ede9fe;
-    --pillar-arts-border:   #c4b5fd;
-
-    /* Shadows & Radii */
-    --shadow-xs:       0 1px 2px rgba(18, 30, 23, 0.05);
-    --shadow-sm:       0 3px 10px -2px rgba(18, 30, 23, 0.07), 0 1px 3px rgba(18, 30, 23, 0.05);
-    --shadow-md:       0 12px 28px -6px rgba(18, 30, 23, 0.10), 0 4px 10px -2px rgba(18, 30, 23, 0.05);
-    --shadow-lg:       0 24px 54px -12px rgba(18, 30, 23, 0.16), 0 8px 20px -6px rgba(18, 30, 23, 0.08);
-
-    --radius-xs:       6px;
-    --radius-sm:       10px;
-    --radius:          14px;
-    --radius-lg:       20px;
-    --radius-xl:       26px;
-
-    /* Typography Stacks */
-    --font-sans:       'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    --font-display:    'Fraunces', Georgia, 'Times New Roman', serif;
-    --font-mono:       'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-
-    /* Motion */
-    --ease-out-expo:   cubic-bezier(0.16, 1, 0.3, 1);
-    --ease-standard:   cubic-bezier(0.2, 0, 0, 1);
-  }
-
-  /* Dark Mode Tokens — Automatic via OS preference unless overridden */
-  @media (prefers-color-scheme: dark) {
-    :root:not([data-theme="light"]) {
-      --bg:              #0b130f;
-      --bg-subtle:       #080e0b;
-      --surface:         #121e18;
-      --surface-2:       #182720;
-      --surface-3:       #203329;
-      --surface-glass:   rgba(18, 30, 24, 0.90);
-      --surface-raised:  #1b2c23;
-
-      --ink:             #eee8dc;
-      --ink-secondary:   #a9b8ae;
-      --ink-muted:       #7c8e82;
-      --ink-faint:       #58695e;
-
-      --rule:            #24352c;
-      --rule-strong:     #364d40;
-      --rule-soft:       #1b2922;
-
-      --forest:          #34d399;
-      --forest-deep:     #10b981;
-      --forest-tint:     rgba(52, 211, 153, 0.14);
-      --amber:           #fb923c;
-      --amber-deep:      #f97316;
-      --amber-tint:      rgba(251, 146, 60, 0.15);
-      --pelagic:         #38bdf8;
-      --pelagic-tint:    rgba(56, 189, 248, 0.14);
-      --terracotta:      #fb7185;
-      --terracotta-tint: rgba(251, 113, 133, 0.15);
-
-      --pillar-fungi-fg:      #fdba74;
-      --pillar-fungi-bg:      rgba(194, 65, 12, 0.22);
-      --pillar-fungi-border:  rgba(251, 146, 60, 0.38);
-
-      --pillar-watershed-fg:  #6ee7b7;
-      --pillar-watershed-bg:  rgba(5, 150, 105, 0.22);
-      --pillar-watershed-border: rgba(52, 211, 153, 0.38);
-
-      --pillar-maker-fg:      #fde047;
-      --pillar-maker-bg:      rgba(161, 98, 7, 0.24);
-      --pillar-maker-border:  rgba(250, 204, 21, 0.36);
-
-      --pillar-science-fg:    #93c5fd;
-      --pillar-science-bg:    rgba(37, 99, 235, 0.22);
-      --pillar-science-border:rgba(96, 165, 250, 0.38);
-
-      --pillar-comedy-fg:     #fda4af;
-      --pillar-comedy-bg:     rgba(190, 18, 60, 0.24);
-      --pillar-comedy-border: rgba(251, 113, 133, 0.38);
-
-      --pillar-outdoors-fg:   #5eead4;
-      --pillar-outdoors-bg:   rgba(13, 148, 136, 0.22);
-      --pillar-outdoors-border:rgba(45, 212, 191, 0.38);
-
-      --pillar-arts-fg:       #d8b4fe;
-      --pillar-arts-bg:       rgba(109, 40, 217, 0.24);
-      --pillar-arts-border:   rgba(192, 132, 252, 0.38);
-
-      --shadow-xs:       0 1px 2px rgba(0, 0, 0, 0.35);
-      --shadow-sm:       0 4px 12px rgba(0, 0, 0, 0.40);
-      --shadow-md:       0 14px 34px rgba(0, 0, 0, 0.50);
-      --shadow-lg:       0 26px 60px rgba(0, 0, 0, 0.65);
-    }
-  }
-
-  /* Explicit Dark Mode Override via Theme Toggle */
-  :root[data-theme="dark"] {
-    --bg:              #0b130f;
-    --bg-subtle:       #080e0b;
-    --surface:         #121e18;
-    --surface-2:       #182720;
-    --surface-3:       #203329;
-    --surface-glass:   rgba(18, 30, 24, 0.90);
-    --surface-raised:  #1b2c23;
-
-    --ink:             #eee8dc;
-    --ink-secondary:   #a9b8ae;
-    --ink-muted:       #7c8e82;
-    --ink-faint:       #58695e;
-
-    --rule:            #24352c;
-    --rule-strong:     #364d40;
-    --rule-soft:       #1b2922;
-
-    --forest:          #34d399;
-    --forest-deep:     #10b981;
-    --forest-tint:     rgba(52, 211, 153, 0.14);
-    --amber:           #fb923c;
-    --amber-deep:      #f97316;
-    --amber-tint:      rgba(251, 146, 60, 0.15);
-    --pelagic:         #38bdf8;
-    --pelagic-tint:    rgba(56, 189, 248, 0.14);
-    --terracotta:      #fb7185;
-    --terracotta-tint: rgba(251, 113, 133, 0.15);
-
-    --pillar-fungi-fg:      #fdba74;
-    --pillar-fungi-bg:      rgba(194, 65, 12, 0.22);
-    --pillar-fungi-border:  rgba(251, 146, 60, 0.38);
-
-    --pillar-watershed-fg:  #6ee7b7;
-    --pillar-watershed-bg:  rgba(5, 150, 105, 0.22);
-    --pillar-watershed-border: rgba(52, 211, 153, 0.38);
-
-    --pillar-maker-fg:      #fde047;
-    --pillar-maker-bg:      rgba(161, 98, 7, 0.24);
-    --pillar-maker-border:  rgba(250, 204, 21, 0.36);
-
-    --pillar-science-fg:    #93c5fd;
-    --pillar-science-bg:    rgba(37, 99, 235, 0.22);
-    --pillar-science-border:rgba(96, 165, 250, 0.38);
-
-    --pillar-comedy-fg:     #fda4af;
-    --pillar-comedy-bg:     rgba(190, 18, 60, 0.24);
-    --pillar-comedy-border: rgba(251, 113, 133, 0.38);
-
-    --pillar-outdoors-fg:   #5eead4;
-    --pillar-outdoors-bg:   rgba(13, 148, 136, 0.22);
-    --pillar-outdoors-border:rgba(45, 212, 191, 0.38);
-
-    --pillar-arts-fg:       #d8b4fe;
-    --pillar-arts-bg:       rgba(109, 40, 217, 0.24);
-    --pillar-arts-border:   rgba(192, 132, 252, 0.38);
-
-    --shadow-xs:       0 1px 2px rgba(0, 0, 0, 0.35);
-    --shadow-sm:       0 4px 12px rgba(0, 0, 0, 0.40);
-    --shadow-md:       0 14px 34px rgba(0, 0, 0, 0.50);
-    --shadow-lg:       0 26px 60px rgba(0, 0, 0, 0.65);
-  }
-
-  html {
-    scroll-behavior: smooth;
-  }
-
-  body {
-    font-family: var(--font-sans);
-    font-size-adjust: from-font;
-    background-color: var(--bg);
-    background-image:
-      radial-gradient(ellipse 80% 50% at 15% 0%, rgba(22, 78, 53, 0.06), transparent 60%),
-      radial-gradient(ellipse 70% 45% at 88% 5%, rgba(184, 74, 20, 0.05), transparent 55%);
-    color: var(--ink);
-    line-height: 1.55;
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-  }
-
-  /* Modern Web Guidance: Scoped text-wrap rules & visually stable font fallbacks */
-  h1, h2, h3, h4 {
-    font-family: var(--font-display);
-    font-size-adjust: from-font;
-    text-wrap: balance;
-  }
-
-  p, .event-desc, .hero-lead {
-    text-wrap: pretty;
-  }
-
-  /* Skip link for keyboard accessibility */
-  .skip-link {
-    position: absolute;
-    left: 16px;
-    top: -64px;
-    z-index: 200;
-    padding: 10px 18px;
-    border-radius: var(--radius-sm);
-    background: var(--forest);
-    color: #fff;
-    font-weight: 600;
-    font-size: 0.875rem;
-    text-decoration: none;
-    transition: top 0.2s var(--ease-standard);
-    box-shadow: var(--shadow-md);
-  }
-  .skip-link:focus {
-    top: 12px;
-    outline: 3px solid var(--amber);
-  }
-
-  /* ==========================================================================
-     2. ALMANAC MASTHEAD & GAZETTE NAVIGATION
-     ========================================================================== */
-  .masthead {
-    position: relative;
-    z-index: 45;
-    background: var(--surface);
-    border-bottom: 2px solid var(--ink);
-  }
-
-  /* Top Telemetry & Edition Ribbon */
-  .masthead-meta-bar {
-    border-bottom: 1px solid var(--rule);
-    background: var(--surface-2);
-    font-family: var(--font-mono);
-    font-size: 0.72rem;
-    color: var(--ink-secondary);
-    letter-spacing: 0.04em;
-  }
-
-  .masthead-meta-inner {
-    max-width: 1360px;
-    margin: 0 auto;
-    padding: 7px 28px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 16px;
-    flex-wrap: wrap;
-  }
-
-  .meta-coords {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    text-transform: uppercase;
-  }
-
-  .meta-pulse-dot {
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
-    background: var(--forest);
-    box-shadow: 0 0 0 3px var(--forest-tint);
-    display: inline-block;
-  }
-
-  .meta-divider {
-    color: var(--rule-strong);
-  }
-
-  .meta-right {
-    display: inline-flex;
-    align-items: center;
-    gap: 14px;
-  }
-
-  .theme-switch-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    padding: 3px 10px;
-    border-radius: 999px;
-    border: 1px solid var(--rule-strong);
-    background: var(--surface);
-    color: var(--ink);
-    font-family: var(--font-mono);
-    font-size: 0.70rem;
-    font-weight: 500;
-    cursor: pointer;
-    transition: background-color 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
-  }
-  .theme-switch-btn:hover {
-    background: var(--surface-3);
-    border-color: var(--ink-secondary);
-  }
-
-  /* Main Navigation Bar */
-  .site-nav-inner {
-    max-width: 1360px;
-    margin: 0 auto;
-    padding: 16px 28px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-    flex-wrap: wrap;
-  }
-
-  .brand-lockup {
-    display: inline-flex;
-    align-items: center;
-    gap: 14px;
-    text-decoration: none;
-    color: var(--ink);
-  }
-
-  .brand-seal {
-    width: 44px;
-    height: 44px;
-    border-radius: 12px;
-    background: var(--ink);
-    color: var(--bg);
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.35rem;
-    border: 1.5px solid var(--rule-strong);
-    box-shadow: var(--shadow-xs);
-    flex-shrink: 0;
-  }
-
-  .brand-text-col {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .brand-kicker {
-    font-family: var(--font-mono);
-    font-size: 0.68rem;
-    text-transform: uppercase;
-    letter-spacing: 0.12em;
-    color: var(--amber);
-    font-weight: 600;
-  }
-
-  .brand-title {
-    font-family: var(--font-display);
-    font-size: clamp(1.25rem, 1.05rem + 0.6vw, 1.55rem);
-    font-weight: 700;
-    letter-spacing: -0.025em;
-    line-height: 1.1;
-    color: var(--ink);
-  }
-
-  .nav-actions-group {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    flex-wrap: wrap;
-  }
-
-  .nav-tabs {
-    display: inline-flex;
-    align-items: center;
-    background: var(--surface-2);
-    border: 1px solid var(--rule);
-    padding: 4px;
-    border-radius: 999px;
-    gap: 4px;
-  }
-
-  .nav-tab {
-    display: inline-flex;
-    align-items: center;
-    gap: 7px;
-    padding: 8px 16px;
-    border-radius: 999px;
-    font-size: 0.84375rem;
-    font-weight: 600;
-    color: var(--ink-secondary);
-    text-decoration: none;
-    transition: background-color 0.18s ease, color 0.18s ease, box-shadow 0.18s ease;
-  }
-  .nav-tab:hover {
-    color: var(--ink);
-    background: var(--surface-3);
-  }
-  .nav-tab.active {
-    background: var(--ink);
-    color: var(--bg);
-    box-shadow: var(--shadow-xs);
-  }
-
-  .nav-quick-date-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 7px;
-    padding: 8px 15px;
-    border-radius: 999px;
-    border: 1.5px solid var(--amber);
-    background: var(--amber-tint);
-    color: var(--amber);
-    font-family: var(--font-sans);
-    font-size: 0.8125rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background-color 0.18s ease, color 0.18s ease, transform 0.15s ease;
-  }
-  .nav-quick-date-btn:hover {
-    background: var(--amber);
-    color: #fff;
-    transform: translateY(-1px);
-  }
-
-  /* ==========================================================================
-     3. ASYMMETRIC EDITORIAL HERO & TOPOGRAPHIC FIELD PLATE
-     ========================================================================== */
-  .hero-almanac {
-    position: relative;
-    border-bottom: 1px solid var(--rule);
-    background:
-      radial-gradient(circle at 8% 15%, var(--forest-tint), transparent 45%),
-      radial-gradient(circle at 90% 80%, var(--amber-tint), transparent 45%),
-      var(--bg);
-    overflow: hidden;
-  }
-
-  /* Subtle Topographic Grid Overlay */
-  .hero-almanac::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    pointer-events: none;
-    background-image:
-      linear-gradient(to right, var(--rule-soft) 1px, transparent 1px),
-      linear-gradient(to bottom, var(--rule-soft) 1px, transparent 1px);
-    background-size: 64px 64px;
-    opacity: 0.45;
-  }
-
-  .hero-almanac-inner {
-    position: relative;
-    z-index: 2;
-    max-width: 1360px;
-    margin: 0 auto;
-    padding: 40px 28px 34px;
-  }
-
-  .hero-editorial-grid {
-    display: grid;
-    grid-template-columns: 1.25fr 0.95fr;
-    gap: 36px;
-    align-items: stretch;
-  }
-
-  /* Left Column: Gazette Copy & Telemetry */
-  .hero-copy-col {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 22px;
-  }
-
-  .edition-badge-row {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    flex-wrap: wrap;
-  }
-
-  .edition-pill {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    padding: 5px 13px;
-    border-radius: 999px;
-    background: var(--surface);
-    border: 1px solid var(--rule-strong);
-    font-family: var(--font-mono);
-    font-size: 0.74rem;
-    font-weight: 600;
-    color: var(--ink);
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    box-shadow: var(--shadow-xs);
-  }
-  .edition-pill .live-count {
-    color: var(--amber);
-    font-weight: 700;
-  }
-
-  .season-tag {
-    font-family: var(--font-mono);
-    font-size: 0.74rem;
-    color: var(--forest);
-    background: var(--forest-tint);
-    border: 1px solid var(--pillar-watershed-border);
-    padding: 5px 12px;
-    border-radius: 999px;
-    font-weight: 600;
-  }
-
-  .hero-headline {
-    font-family: var(--font-display);
-    font-size: clamp(2.25rem, 1.5rem + 2.9vw, 3.85rem);
-    font-weight: 600;
-    line-height: 1.04;
-    letter-spacing: -0.03em;
-    color: var(--ink);
-  }
-
-  .hero-headline em {
-    font-style: italic;
-    font-weight: 400;
-    color: var(--forest);
-    text-decoration: underline;
-    text-decoration-color: var(--pillar-watershed-border);
-    text-decoration-thickness: 2px;
-    text-underline-offset: 6px;
-  }
-
-  .hero-lead {
-    font-size: clamp(1rem, 0.94rem + 0.28vw, 1.14rem);
-    color: var(--ink-secondary);
-    line-height: 1.62;
-    max-width: 62ch;
-  }
-
-  /* Archival Telemetry Ledger Strip */
-  .telemetry-ledger {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    background: var(--surface);
-    border: 1px solid var(--rule-strong);
-    border-radius: var(--radius);
-    overflow: hidden;
-    box-shadow: var(--shadow-sm);
-  }
-
-  .telemetry-cell {
-    padding: 14px 16px;
-    border-right: 1px solid var(--rule);
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-  }
-  .telemetry-cell:last-child {
-    border-right: none;
-  }
-
-  .telemetry-code {
-    font-family: var(--font-mono);
-    font-size: 0.65rem;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    color: var(--ink-muted);
-  }
-
-  .telemetry-val {
-    font-family: var(--font-display);
-    font-size: clamp(1.35rem, 1.1rem + 0.8vw, 1.85rem);
-    font-weight: 700;
-    color: var(--ink);
-    line-height: 1.15;
-    font-variant-numeric: tabular-nums;
-  }
-
-  .telemetry-lbl {
-    font-size: 0.76rem;
-    font-weight: 600;
-    color: var(--ink-secondary);
-  }
-
-  /* Right Column: Framed Archival Plate & 7-Day Pulse */
-  .hero-plate-col {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .field-plate-card {
-    position: relative;
-    flex: 1;
-    background: var(--surface);
-    border: 1.5px solid var(--ink);
-    border-radius: var(--radius-lg);
-    padding: 12px;
-    box-shadow: var(--shadow-md);
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-  }
-
-  .field-plate-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-family: var(--font-mono);
-    font-size: 0.68rem;
-    color: var(--ink-secondary);
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    padding: 0 4px;
-  }
-
-  .field-plate-media {
-    position: relative;
-    flex: 1;
-    min-height: 210px;
-    border-radius: var(--radius-sm);
-    overflow: hidden;
-    border: 1px solid var(--rule);
-    background:
-      linear-gradient(180deg, rgba(11, 19, 15, 0.15) 0%, rgba(11, 19, 15, 0.78) 100%),
-      url('./hero.webp') center/cover no-repeat;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    padding: 18px;
-    color: #fdfbf7;
-  }
-  @media (max-width: 768px) {
-    .field-plate-media {
-      background-image:
-        linear-gradient(180deg, rgba(11, 19, 15, 0.18) 0%, rgba(11, 19, 15, 0.82) 100%),
-        url('./hero-mobile.webp');
-    }
-  }
-
-  .plate-topo-svg {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    opacity: 0.28;
-  }
-
-  .plate-caption-box {
-    position: relative;
-    z-index: 2;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    gap: 12px;
-  }
-
-  .plate-caption-title {
-    font-family: var(--font-display);
-    font-size: 1.15rem;
-    font-weight: 600;
-    color: #ffffff;
-    line-height: 1.2;
-    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
-  }
-
-  .plate-caption-sub {
-    font-family: var(--font-mono);
-    font-size: 0.70rem;
-    color: rgba(255, 255, 255, 0.85);
-    margin-top: 3px;
-  }
-
-  /* Interactive Next-7-Days Horizon Strip inside Field Plate */
-  .week-horizon-box {
-    background: var(--surface-2);
-    border: 1px solid var(--rule);
-    border-radius: var(--radius-sm);
-    padding: 10px 12px;
-  }
-
-  .week-horizon-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 8px;
-    font-family: var(--font-mono);
-    font-size: 0.68rem;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    color: var(--ink-secondary);
-  }
-
-  .week-horizon-grid {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    gap: 6px;
-  }
-
-  .horizon-day-btn {
-    appearance: none;
-    border: 1px solid var(--rule);
-    background: var(--surface);
-    border-radius: 8px;
-    padding: 6px 4px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2px;
-    cursor: pointer;
-    color: var(--ink);
-    transition: transform 0.15s ease, border-color 0.15s ease, background-color 0.15s ease;
-  }
-  .horizon-day-btn:hover {
-    border-color: var(--forest);
-    transform: translateY(-1px);
-  }
-  .horizon-day-btn.is-active {
-    background: var(--forest);
-    border-color: var(--forest);
-    color: #ffffff;
-  }
-  .horizon-day-dow {
-    font-family: var(--font-mono);
-    font-size: 0.62rem;
-    text-transform: uppercase;
-    color: var(--ink-muted);
-  }
-  .horizon-day-btn.is-active .horizon-day-dow {
-    color: rgba(255, 255, 255, 0.85);
-  }
-  .horizon-day-num {
-    font-family: var(--font-display);
-    font-size: 0.95rem;
-    font-weight: 700;
-    line-height: 1.1;
-  }
-  .horizon-day-cnt {
-    font-family: var(--font-mono);
-    font-size: 0.62rem;
-    font-weight: 600;
-    padding: 1px 5px;
-    border-radius: 999px;
-    background: var(--surface-2);
-    color: var(--forest);
-  }
-  .horizon-day-btn.is-active .horizon-day-cnt {
-    background: rgba(255, 255, 255, 0.2);
-    color: #ffffff;
-  }
-
-  /* ==========================================================================
-     4. INTERACTIVE PRIORITY PILLARS FIELD SHOWCASE
-     ========================================================================== */
-  .pillars-showcase {
-    margin-top: 28px;
-    padding-top: 22px;
-    border-top: 1px solid var(--rule);
-  }
-
-  .pillars-header-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    margin-bottom: 12px;
-    gap: 12px;
-    flex-wrap: wrap;
-  }
-
-  .pillars-kicker {
-    font-family: var(--font-mono);
-    font-size: 0.72rem;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    color: var(--ink-secondary);
-    font-weight: 600;
-  }
-
-  .pillars-hint {
-    font-size: 0.78rem;
-    color: var(--ink-muted);
-  }
-
-  .pillars-strip {
-    display: grid;
-    grid-template-columns: repeat(8, minmax(135px, 1fr));
-    gap: 10px;
-    overflow-x: auto;
-    padding-bottom: 4px;
-    scrollbar-width: thin;
-  }
-
-  .pillar-card-btn {
-    appearance: none;
-    text-align: left;
-    background: var(--surface);
-    border: 1px solid var(--rule);
-    border-radius: var(--radius-sm);
-    padding: 11px 12px;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 8px;
-    color: var(--ink);
-    transition: transform 0.16s var(--ease-standard), border-color 0.16s ease, box-shadow 0.16s ease, background-color 0.16s ease;
-    position: relative;
-    overflow: hidden;
-  }
-  .pillar-card-btn::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    width: 4px;
-    background: var(--p-color, var(--forest));
-    opacity: 0.75;
-  }
-  .pillar-card-btn:hover {
-    transform: translateY(-2px);
-    border-color: var(--rule-strong);
-    box-shadow: var(--shadow-sm);
-  }
-  .pillar-card-btn.active {
-    background: var(--ink);
-    color: var(--bg);
-    border-color: var(--ink);
-    box-shadow: var(--shadow-md);
-  }
-  .pillar-card-btn.active::before {
-    opacity: 1;
-    background: var(--amber);
-  }
-
-  .pillar-card-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 6px;
-  }
-
-  .pillar-icon {
-    font-size: 1.15rem;
-    line-height: 1;
-  }
-
-  .pillar-count-badge {
-    font-family: var(--font-mono);
-    font-size: 0.68rem;
-    font-weight: 600;
-    padding: 2px 7px;
-    border-radius: 999px;
-    background: var(--surface-2);
-    color: var(--ink-secondary);
-    font-variant-numeric: tabular-nums;
-  }
-  .pillar-card-btn.active .pillar-count-badge {
-    background: rgba(255, 255, 255, 0.16);
-    color: var(--bg);
-  }
-
-  .pillar-name {
-    font-family: var(--font-display);
-    font-size: 0.86rem;
-    font-weight: 600;
-    line-height: 1.2;
-    letter-spacing: -0.01em;
-  }
-
-  .pillar-sub {
-    font-size: 0.68rem;
-    color: var(--ink-muted);
-    line-height: 1.25;
-  }
-  .pillar-card-btn.active .pillar-sub {
-    color: rgba(255, 255, 255, 0.75);
-  }
-
-  /* ==========================================================================
-     5. STICKY COMMAND & FILTER BAR
-     ========================================================================== */
-  .filter-wrap {
-    position: sticky;
-    top: 0;
-    z-index: 40;
-    padding: 12px 28px 10px;
-    background: linear-gradient(180deg, var(--bg) 75%, transparent 100%);
-    pointer-events: none;
-  }
-  .filter-wrap > * {
-    pointer-events: auto;
-  }
-
-  .filter-inner {
-    max-width: 1360px;
-    margin: 0 auto;
-    background: var(--surface-glass);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-    border: 1.5px solid var(--rule-strong);
-    border-radius: var(--radius-lg);
-    padding: 14px 18px;
-    box-shadow: var(--shadow-md);
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-  }
-
-  .filter-controls-row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    align-items: center;
-  }
-
-  /* Search Input */
-  .search-box {
-    position: relative;
-    flex: 1 1 260px;
-    min-width: 220px;
-  }
-
-  .search-box .icon {
-    position: absolute;
-    left: 13px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: var(--ink-muted);
-    pointer-events: none;
-    display: flex;
-    align-items: center;
-  }
-
-  .search-box input {
-    width: 100%;
-    height: 42px;
-    padding: 0 36px 0 38px;
-    border-radius: var(--radius-sm);
-    border: 1px solid var(--rule-strong);
-    background: var(--surface);
-    color: var(--ink);
-    font-family: var(--font-sans);
-    font-size: 0.875rem;
-    font-weight: 500;
-    outline: none;
-    transition: border-color 0.16s ease, box-shadow 0.16s ease;
-  }
-  .search-box input::placeholder {
-    color: var(--ink-muted);
-    font-weight: 400;
-  }
-  .search-box input:focus {
-    border-color: var(--forest);
-    box-shadow: 0 0 0 3px var(--forest-tint);
-  }
-
-  .clear-btn {
-    position: absolute;
-    right: 9px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 22px;
-    height: 22px;
-    border-radius: 50%;
-    border: none;
-    background: var(--surface-3);
-    color: var(--ink-secondary);
-    font-size: 0.72rem;
-    cursor: pointer;
-    display: none;
-    align-items: center;
-    justify-content: center;
-  }
-  .clear-btn:hover {
-    background: var(--ink);
-    color: var(--bg);
-  }
-
-  /* Filter Dropdowns Group */
-  .filter-dropdowns-group {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    align-items: center;
-  }
-
-  .drawer-header-mobile,
-  .drawer-actions-mobile,
-  .mobile-filter-label,
-  .filter-drawer-backdrop,
-  .filter-toggle-btn {
-    display: none;
-  }
-
-  .select-box {
-    position: relative;
-  }
-
-  .select-box select {
-    height: 42px;
-    padding: 0 32px 0 12px;
-    border-radius: var(--radius-sm);
-    border: 1px solid var(--rule-strong);
-    background-color: var(--surface);
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11' height='11' viewBox='0 0 12 12'%3E%3Cpath fill='%23637368' d='M6 8.2L1.2 3.4h9.6z'/%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-position: right 11px center;
-    color: var(--ink);
-    font-family: var(--font-sans);
-    font-size: 0.8125rem;
-    font-weight: 500;
-    appearance: none;
-    cursor: pointer;
-    min-width: 152px;
-    max-width: 215px;
-    text-overflow: ellipsis;
-    outline: none;
-    transition: border-color 0.16s ease, box-shadow 0.16s ease;
-  }
-  .select-box select:hover {
-    border-color: var(--ink-secondary);
-  }
-  .select-box select:focus {
-    border-color: var(--forest);
-    box-shadow: 0 0 0 3px var(--forest-tint);
-  }
-
-  /* Custom Date Trigger inside Filter Bar */
-  .date-trigger-wrap {
-    display: inline-flex;
-    align-items: stretch;
-    height: 42px;
-    border-radius: var(--radius-sm);
-    border: 1px solid var(--rule-strong);
-    background: var(--surface);
-    overflow: hidden;
-    transition: border-color 0.16s ease, box-shadow 0.16s ease;
-  }
-  .date-trigger-wrap:hover {
-    border-color: var(--ink-secondary);
-  }
-
-  .date-trigger-btn {
-    appearance: none;
-    border: none;
-    background: transparent;
-    color: var(--ink);
-    padding: 0 12px;
-    display: inline-flex;
-    align-items: center;
-    gap: 7px;
-    font-family: var(--font-sans);
-    font-size: 0.8125rem;
-    font-weight: 600;
-    cursor: pointer;
-    white-space: nowrap;
-  }
-  .date-trigger-btn svg {
-    color: var(--amber);
-    flex-shrink: 0;
-  }
-  .date-trigger-btn.has-value {
-    background: var(--amber-tint);
-    color: var(--amber);
-  }
-  .date-trigger-chevron {
-    font-size: 0.7rem;
-    color: var(--ink-muted);
-  }
-
-  .date-trigger-clear-btn {
-    display: none;
-    align-items: center;
-    justify-content: center;
-    padding: 0 9px;
-    border: none;
-    border-left: 1px solid var(--rule);
-    background: var(--surface-2);
-    color: var(--ink-secondary);
-    font-size: 0.75rem;
-    cursor: pointer;
-  }
-  .date-trigger-clear-btn:hover {
-    background: var(--terracotta);
-    color: #fff;
-  }
-
-  .btn-reset {
-    height: 42px;
-    padding: 0 14px;
-    border-radius: var(--radius-sm);
-    border: 1px solid var(--rule-strong);
-    background: var(--surface-2);
-    color: var(--ink-secondary);
-    font-family: var(--font-sans);
-    font-size: 0.8125rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background-color 0.15s ease, color 0.15s ease;
-  }
-  .btn-reset:hover {
-    background: var(--terracotta-tint);
-    color: var(--terracotta);
-    border-color: var(--terracotta);
-  }
-
-  /* Timeframe Pills & View Mode Row */
-  .filter-bottom-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 12px;
-    padding-top: 10px;
-    border-top: 1px solid var(--rule-soft);
-    flex-wrap: wrap;
-  }
-
-  .time-pills-row {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    flex-wrap: wrap;
-    flex: 1;
-  }
-
-  .time-pills-label {
-    font-family: var(--font-mono);
-    font-size: 0.68rem;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    color: var(--ink-muted);
-    margin-right: 4px;
-    font-weight: 600;
-  }
-
-  .time-pill {
-    appearance: none;
-    border: 1px solid var(--rule);
-    background: var(--surface);
-    color: var(--ink-secondary);
-    font-family: var(--font-sans);
-    font-size: 0.78rem;
-    font-weight: 600;
-    padding: 5px 12px;
-    border-radius: 999px;
-    cursor: pointer;
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    white-space: nowrap;
-    transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
-  }
-  .time-pill:hover {
-    border-color: var(--ink-secondary);
-    color: var(--ink);
-  }
-  .time-pill.active {
-    background: var(--forest);
-    color: #ffffff;
-    border-color: var(--forest);
-  }
-
-  .date-picker-pill {
-    border-color: var(--amber);
-    color: var(--amber);
-    background: var(--amber-tint);
-  }
-  .date-picker-pill.active {
-    background: var(--amber);
-    color: #ffffff;
-    border-color: var(--amber);
-  }
-
-  .date-pill-clear-btn {
-    display: none;
-    align-items: center;
-    justify-content: center;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.25);
-    font-size: 0.68rem;
-    line-height: 1;
-  }
-
-  /* Telemetry Count + View Layout Toggle */
-  .filter-meta-controls {
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    margin-left: auto;
-  }
-
-  .status-count {
-    font-family: var(--font-mono);
-    font-size: 0.75rem;
-    color: var(--ink-secondary);
-    white-space: nowrap;
-  }
-  .status-count strong {
-    color: var(--ink);
-    font-weight: 700;
-  }
-
-  .view-mode-switch {
-    display: inline-flex;
-    background: var(--surface-2);
-    border: 1px solid var(--rule);
-    border-radius: 8px;
-    padding: 2px;
-    gap: 2px;
-  }
-
-  .view-mode-btn {
-    appearance: none;
-    border: none;
-    background: transparent;
-    color: var(--ink-muted);
-    padding: 4px 9px;
-    border-radius: 6px;
-    font-family: var(--font-mono);
-    font-size: 0.68rem;
-    font-weight: 600;
-    cursor: pointer;
-    display: inline-flex;
-    align-items: center;
-    gap: 5px;
-  }
-  .view-mode-btn.active {
-    background: var(--surface);
-    color: var(--ink);
-    box-shadow: var(--shadow-xs);
-  }
-
-  /* High-Level Time-of-Day (Daypart) Filter Bar */
-  .daypart-filter-bar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 10px;
-    padding-top: 9px;
-    margin-top: 2px;
-    border-top: 1px dashed var(--rule);
-    flex-wrap: wrap;
-  }
-
-  .daypart-pills-row {
-    display: flex;
-    align-items: center;
-    gap: 7px;
-    flex-wrap: wrap;
-    flex: 1;
-  }
-
-  .daypart-pill {
-    appearance: none;
-    border: 1px solid var(--rule);
-    background: var(--surface);
-    color: var(--ink-secondary);
-    font-family: var(--font-sans);
-    font-size: 0.78rem;
-    font-weight: 600;
-    padding: 5px 11px;
-    border-radius: 999px;
-    cursor: pointer;
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    white-space: nowrap;
-    transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
-  }
-  .daypart-pill:hover {
-    border-color: var(--ink-secondary);
-    color: var(--ink);
-    background: var(--surface-2);
-  }
-  .daypart-pill.active {
-    background: var(--forest);
-    color: #ffffff;
-    border-color: var(--forest);
-    box-shadow: var(--shadow-xs);
-  }
-  .daypart-pill[data-daypart="morning"].active {
-    background: #b85d19;
-    border-color: #b85d19;
-    color: #ffffff;
-  }
-  .daypart-pill[data-daypart="afternoon"].active {
-    background: #1b6b58;
-    border-color: #1b6b58;
-    color: #ffffff;
-  }
-  .daypart-pill[data-daypart="evening"].active {
-    background: #3d348b;
-    border-color: #3d348b;
-    color: #ffffff;
-  }
-
-  .daypart-icon {
-    font-size: 0.88rem;
-    line-height: 1;
-  }
-
-  .daypart-range {
-    font-family: var(--font-mono);
-    font-size: 0.66rem;
-    font-weight: 500;
-    opacity: 0.78;
-  }
-
-  .daypart-count {
-    font-family: var(--font-mono);
-    font-size: 0.66rem;
-    font-weight: 700;
-    padding: 1px 6px;
-    border-radius: 999px;
-    background: var(--surface-2);
-    color: var(--ink-secondary);
-    border: 1px solid var(--rule-soft);
-    font-variant-numeric: tabular-nums;
-  }
-  .daypart-pill.active .daypart-count {
-    background: rgba(255, 255, 255, 0.22);
-    color: #ffffff;
-    border-color: rgba(255, 255, 255, 0.3);
-  }
-
-  .mobile-only-daypart-box {
-    display: none;
-  }
-
-  /* Active Filter Chips */
-  .active-filter-chips {
-    display: none;
-    align-items: center;
-    gap: 6px;
-    flex-wrap: wrap;
-    padding-top: 4px;
-  }
-  .active-filter-chips.has-chips {
-    display: flex;
-  }
-  .active-chip {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    padding: 3px 10px;
-    border-radius: 999px;
-    background: var(--forest-tint);
-    border: 1px solid var(--pillar-watershed-border);
-    color: var(--forest);
-    font-size: 0.74rem;
-    font-weight: 600;
-  }
-  .active-chip button {
-    border: none;
-    background: none;
-    color: inherit;
-    font-weight: 700;
-    cursor: pointer;
-    font-size: 0.78rem;
-  }
-
-  /* ==========================================================================
-     6. TOP-LAYER EPHEMERIS CALENDAR <DIALOG>
-        (Modern Web Guidance: dialog, light-dismiss, animate-to-from-top-layer)
-     ========================================================================== */
-  dialog#calendar-picker-dialog {
-    margin: auto;
-    padding: 0;
-    border: 1.5px solid var(--ink);
-    border-radius: var(--radius-xl);
-    background: var(--surface);
-    color: var(--ink);
-    max-width: 500px;
-    width: calc(100% - 28px);
-    box-shadow: var(--shadow-lg);
-    overflow: hidden;
-
-    /* Exit state (closed or data-closing) */
-    opacity: 0;
-    transform: translateY(12px) scale(0.97);
-    transition-property: opacity, transform, display, overlay;
-    transition-duration: 0.22s;
-    transition-timing-function: var(--ease-out-expo);
-    transition-behavior: allow-discrete;
-  }
-
-  dialog#calendar-picker-dialog:modal {
-    overscroll-behavior: contain;
-  }
-
-  dialog#calendar-picker-dialog[open]:where(:not([data-closing])) {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
-
-  @starting-style {
-    dialog#calendar-picker-dialog[open]:where(:not([data-closing])) {
-      opacity: 0;
-      transform: translateY(12px) scale(0.97);
-    }
-  }
-
-  dialog#calendar-picker-dialog::backdrop {
-    background: rgba(11, 19, 15, 0.58);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    overflow: hidden;
-    overscroll-behavior: contain;
-    opacity: 0;
-    transition-property: opacity, display, overlay;
-    transition-duration: 0.22s;
-    transition-behavior: allow-discrete;
-  }
-
-  dialog#calendar-picker-dialog[open]:where(:not([data-closing]))::backdrop {
-    opacity: 1;
-  }
-
-  @starting-style {
-    dialog#calendar-picker-dialog[open]:where(:not([data-closing]))::backdrop {
-      opacity: 0;
-    }
-  }
-
-  .cal-dialog-card {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .cal-dialog-header {
-    padding: 18px 22px 14px;
-    border-bottom: 1px solid var(--rule);
-    background: var(--surface-2);
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 12px;
-  }
-
-  .cal-dialog-title-wrap h3 {
-    font-family: var(--font-display);
-    font-size: 1.25rem;
-    font-weight: 700;
-    color: var(--ink);
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
-
-  .cal-dialog-title-wrap p {
-    font-size: 0.78rem;
-    color: var(--ink-secondary);
-    margin-top: 2px;
-  }
-
-  .cal-close-btn {
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    border: 1px solid var(--rule-strong);
-    background: var(--surface);
-    color: var(--ink-secondary);
-    font-size: 0.85rem;
-    cursor: pointer;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .cal-close-btn:hover {
-    background: var(--ink);
-    color: var(--bg);
-  }
-
-  .cal-presets-bar {
-    padding: 10px 22px;
-    border-bottom: 1px solid var(--rule-soft);
-    display: flex;
-    gap: 6px;
-    overflow-x: auto;
-    scrollbar-width: none;
-  }
-  .cal-presets-bar::-webkit-scrollbar { display: none; }
-
-  .cal-preset-btn {
-    padding: 5px 11px;
-    border-radius: 999px;
-    border: 1px solid var(--rule-strong);
-    background: var(--surface);
-    color: var(--ink-secondary);
-    font-family: var(--font-sans);
-    font-size: 0.75rem;
-    font-weight: 600;
-    cursor: pointer;
-    white-space: nowrap;
-  }
-  .cal-preset-btn:hover {
-    border-color: var(--forest);
-    color: var(--forest);
-  }
-  .cal-preset-btn.is-active {
-    background: var(--forest);
-    color: #fff;
-    border-color: var(--forest);
-  }
-
-  .cal-month-bar {
-    padding: 14px 22px 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .cal-month-title-group {
-    display: flex;
-    align-items: baseline;
-    gap: 10px;
-  }
-
-  .cal-month-title {
-    font-family: var(--font-display);
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: var(--ink);
-  }
-
-  .cal-month-badge {
-    font-family: var(--font-mono);
-    font-size: 0.70rem;
-    padding: 2px 8px;
-    border-radius: 999px;
-    background: var(--forest-tint);
-    color: var(--forest);
-    font-weight: 600;
-  }
-
-  .cal-nav-controls {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-  }
-
-  .cal-today-jump-btn {
-    padding: 5px 10px;
-    border-radius: 8px;
-    border: 1px solid var(--rule-strong);
-    background: var(--surface-2);
-    color: var(--ink);
-    font-family: var(--font-mono);
-    font-size: 0.72rem;
-    font-weight: 600;
-    cursor: pointer;
-  }
-  .cal-today-jump-btn:hover {
-    background: var(--surface-3);
-  }
-
-  .cal-nav-btn {
-    width: 30px;
-    height: 30px;
-    border-radius: 8px;
-    border: 1px solid var(--rule-strong);
-    background: var(--surface);
-    color: var(--ink);
-    font-size: 1.1rem;
-    cursor: pointer;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .cal-nav-btn:hover:not(:disabled) {
-    background: var(--surface-2);
-  }
-  .cal-nav-btn:disabled {
-    opacity: 0.35;
-    cursor: not-allowed;
-  }
-
-  .cal-grid-wrap {
-    padding: 4px 22px 16px;
-  }
-
-  .cal-weekdays {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    text-align: center;
-    font-family: var(--font-mono);
-    font-size: 0.68rem;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    color: var(--ink-muted);
-    padding-bottom: 8px;
-  }
-
-  .cal-days-grid {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    gap: 5px;
-  }
-
-  .cal-day-cell {
-    appearance: none;
-    border: 1px solid var(--rule-soft);
-    background: var(--surface);
-    border-radius: 10px;
-    min-height: 50px;
-    padding: 5px 4px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    cursor: pointer;
-    color: var(--ink);
-    transition: border-color 0.14s ease, transform 0.14s ease, background-color 0.14s ease;
-  }
-  .cal-day-cell:hover {
-    border-color: var(--forest);
-    transform: translateY(-1px);
-  }
-  .cal-day-cell.is-outside {
-    opacity: 0.38;
-  }
-  .cal-day-cell.is-past {
-    opacity: 0.32;
-    cursor: not-allowed;
-    pointer-events: none;
-  }
-  .cal-day-cell.is-today {
-    border-color: var(--amber);
-    box-shadow: inset 0 0 0 1px var(--amber);
-  }
-  .cal-day-cell.is-selected {
-    background: var(--forest);
-    border-color: var(--forest);
-    color: #ffffff;
-  }
-
-  .cal-day-num {
-    font-family: var(--font-display);
-    font-size: 0.92rem;
-    font-weight: 600;
-    line-height: 1.1;
-  }
-
-  .cal-day-count {
-    font-family: var(--font-mono);
-    font-size: 0.64rem;
-    font-weight: 600;
-    padding: 1px 6px;
-    border-radius: 999px;
-    background: var(--forest-tint);
-    color: var(--forest);
-  }
-  .cal-day-cell.no-events .cal-day-count {
-    background: transparent;
-    color: var(--ink-faint);
-  }
-  .cal-day-cell.is-selected .cal-day-count {
-    background: rgba(255, 255, 255, 0.22);
-    color: #ffffff;
-  }
-
-  .cal-dialog-footer {
-    padding: 12px 22px;
-    border-top: 1px solid var(--rule);
-    background: var(--surface-2);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 12px;
-  }
-
-  .cal-footer-status {
-    font-size: 0.78rem;
-    color: var(--ink-secondary);
-  }
-
-  .cal-footer-actions {
-    display: flex;
-    gap: 8px;
-  }
-
-  .cal-clear-btn {
-    padding: 7px 12px;
-    border-radius: 8px;
-    border: 1px solid var(--rule-strong);
-    background: var(--surface);
-    color: var(--ink-secondary);
-    font-size: 0.78rem;
-    font-weight: 600;
-    cursor: pointer;
-  }
-
-  .cal-done-btn {
-    padding: 7px 16px;
-    border-radius: 8px;
-    border: none;
-    background: var(--ink);
-    color: var(--bg);
-    font-size: 0.78rem;
-    font-weight: 600;
-    cursor: pointer;
-  }
-
-  /* ==========================================================================
-     7. EDITORIAL AGENDA CHAPTERS & LETTERPRESS FIELD-DISPATCH CARDS
-     ========================================================================== */
-  .main-content {
-    max-width: 1360px;
-    margin: 0 auto;
-    padding: 18px 28px 80px;
-    width: 100%;
-    flex: 1;
-  }
-
-  .agenda-container {
-    display: flex;
-    flex-direction: column;
-    gap: 36px;
-  }
-
-  /* Modern Web Guidance: Defer rendering ONLY on below-the-fold day groups */
-  .agenda-day-group.day-group-deferred {
-    content-visibility: auto;
-    contain-intrinsic-size: auto 28rem;
-  }
-
-  /* Almanac Chapter Day Header */
-  .agenda-day-header {
-    display: flex;
-    align-items: center;
-    gap: 18px;
-    padding: 14px 20px;
-    background: var(--surface);
-    border-top: 2px solid var(--ink);
-    border-bottom: 1px solid var(--rule-strong);
-    border-left: 1px solid var(--rule);
-    border-right: 1px solid var(--rule);
-    border-radius: var(--radius-sm);
-    margin-bottom: 14px;
-    box-shadow: var(--shadow-xs);
-  }
-
-  .day-cal-tile {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-width: 58px;
-    height: 58px;
-    padding: 4px 8px;
-    border-radius: 12px;
-    background: var(--surface-2);
-    border: 1px solid var(--rule-strong);
-    color: var(--ink);
-    flex-shrink: 0;
-  }
-  .day-cal-tile.is-today-tile {
-    background: var(--amber);
-    border-color: var(--amber);
-    color: #ffffff;
-  }
-
-  .day-cal-tile-month {
-    font-family: var(--font-mono);
-    font-size: 0.64rem;
-    font-weight: 600;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    line-height: 1;
-  }
-
-  .day-cal-tile-num {
-    font-family: var(--font-display);
-    font-size: 1.45rem;
-    font-weight: 700;
-    line-height: 1.05;
-    margin-top: 2px;
-  }
-
-  .agenda-day-title-wrap {
-    display: flex;
-    align-items: baseline;
-    gap: 12px;
-    flex-wrap: wrap;
-    flex: 1;
-  }
-
-  .agenda-day-title {
-    font-family: var(--font-display);
-    font-size: clamp(1.2rem, 1.05rem + 0.55vw, 1.55rem);
-    font-weight: 600;
-    letter-spacing: -0.02em;
-    color: var(--ink);
-  }
-
-  .agenda-day-relative {
-    font-family: var(--font-mono);
-    font-size: 0.72rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    padding: 3px 10px;
-    border-radius: 999px;
-    background: var(--surface-2);
-    border: 1px solid var(--rule);
-    color: var(--ink-secondary);
-  }
-  .agenda-day-relative.is-today {
-    background: var(--amber-tint);
-    border-color: var(--amber);
-    color: var(--amber);
-  }
-  .agenda-day-relative.is-tomorrow {
-    background: var(--forest-tint);
-    border-color: var(--pillar-watershed-border);
-    color: var(--forest);
-  }
-
-  .agenda-day-count {
-    font-family: var(--font-mono);
-    font-size: 0.75rem;
-    font-weight: 600;
-    color: var(--ink-secondary);
-    padding: 4px 11px;
-    border-radius: 999px;
-    background: var(--surface-2);
-    border: 1px solid var(--rule);
-    white-space: nowrap;
-  }
-
-  /* Events List Container — Supports Both Editorial Ledger & Grid View */
-  .agenda-events-list {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-  }
-
-  .agenda-container.view-grid .agenda-events-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
-    gap: 16px;
-  }
-
-  /* Modern Web Guidance: Card with container-type: inline-size */
-  article.event-card {
-    container-type: inline-size;
-    position: relative;
-    background: var(--surface);
-    border: 1px solid var(--rule-strong);
-    border-radius: var(--radius);
-    box-shadow: var(--shadow-xs);
-    transition: transform 0.18s var(--ease-standard), box-shadow 0.18s ease, border-color 0.18s ease;
-    overflow: hidden;
-  }
-
-  article.event-card:hover {
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-md);
-    border-color: var(--ink-secondary);
-  }
-
-  /* Pillar Accent Bar on Left Edge */
-  article.event-card::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    width: 5px;
-    background: var(--card-accent, var(--forest));
-  }
-
-  article.event-card[data-pillar="fungi"] {
-    --card-accent: var(--pillar-fungi-fg);
-    --badge-fg: var(--pillar-fungi-fg);
-    --badge-bg: var(--pillar-fungi-bg);
-    --badge-border: var(--pillar-fungi-border);
-  }
-  article.event-card[data-pillar="watershed"],
-  article.event-card[data-pillar="nature"] {
-    --card-accent: var(--pillar-watershed-fg);
-    --badge-fg: var(--pillar-watershed-fg);
-    --badge-bg: var(--pillar-watershed-bg);
-    --badge-border: var(--pillar-watershed-border);
-  }
-  article.event-card[data-pillar="maker"] {
-    --card-accent: var(--pillar-maker-fg);
-    --badge-fg: var(--pillar-maker-fg);
-    --badge-bg: var(--pillar-maker-bg);
-    --badge-border: var(--pillar-maker-border);
-  }
-  article.event-card[data-pillar="science"] {
-    --card-accent: var(--pillar-science-fg);
-    --badge-fg: var(--pillar-science-fg);
-    --badge-bg: var(--pillar-science-bg);
-    --badge-border: var(--pillar-science-border);
-  }
-  article.event-card[data-pillar="comedy"] {
-    --card-accent: var(--pillar-comedy-fg);
-    --badge-fg: var(--pillar-comedy-fg);
-    --badge-bg: var(--pillar-comedy-bg);
-    --badge-border: var(--pillar-comedy-border);
-  }
-  article.event-card[data-pillar="outdoors"],
-  article.event-card[data-pillar="sport"] {
-    --card-accent: var(--pillar-outdoors-fg);
-    --badge-fg: var(--pillar-outdoors-fg);
-    --badge-bg: var(--pillar-outdoors-bg);
-    --badge-border: var(--pillar-outdoors-border);
-  }
-  article.event-card[data-pillar="arts"],
-  article.event-card[data-pillar="community"] {
-    --card-accent: var(--pillar-arts-fg);
-    --badge-fg: var(--pillar-arts-fg);
-    --badge-bg: var(--pillar-arts-bg);
-    --badge-border: var(--pillar-arts-border);
-  }
-
-  .event-card-inner {
-    padding: 20px 22px 20px 24px;
-    display: grid;
-    grid-template-columns: 175px 1fr 178px;
-    gap: 22px;
-    align-items: start;
-  }
-
-  /* Container Query: Adapt card automatically when in Grid View or Narrow Containers */
-  @container (max-width: 720px) {
-    .event-card-inner {
-      grid-template-columns: 1fr;
-      gap: 14px;
-      padding: 18px 18px 18px 20px;
-    }
-    .event-time-col {
-      flex-direction: row !important;
-      justify-content: space-between;
-      align-items: center;
-      border-right: none !important;
-      border-bottom: 1px dashed var(--rule);
-      padding-right: 0 !important;
-      padding-bottom: 10px;
-    }
-    .event-actions-col {
-      flex-direction: row !important;
-      width: 100%;
-      padding-top: 8px;
-      border-top: 1px solid var(--rule-soft);
-    }
-    .event-actions-col .btn-source {
-      flex: 1;
-    }
-  }
-
-  /* Left Column: Timestamp & Cost Stamp */
-  .event-time-col {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    padding-right: 16px;
-    border-right: 1px dashed var(--rule-strong);
-    height: 100%;
-  }
-
-  .event-time {
-    font-family: var(--font-mono);
-    font-size: 0.90rem;
-    font-weight: 600;
-    color: var(--ink);
-    line-height: 1.3;
-    font-variant-numeric: tabular-nums;
-  }
-
-  .event-meta-pills {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px;
-  }
-
-  .event-duration {
-    font-family: var(--font-mono);
-    font-size: 0.70rem;
-    color: var(--ink-secondary);
-    background: var(--surface-2);
-    border: 1px solid var(--rule);
-    padding: 2px 8px;
-    border-radius: 6px;
-  }
-
-  .event-cost-pill {
-    font-family: var(--font-mono);
-    font-size: 0.70rem;
-    font-weight: 600;
-    padding: 2px 8px;
-    border-radius: 6px;
-    background: var(--pillar-watershed-bg);
-    color: var(--pillar-watershed-fg);
-    border: 1px solid var(--pillar-watershed-border);
-  }
-
-  .event-daypart-pill {
-    font-family: var(--font-mono);
-    font-size: 0.68rem;
-    font-weight: 600;
-    padding: 2px 8px;
-    border-radius: 6px;
-    display: inline-flex;
-    align-items: center;
-    gap: 4px;
-    background: var(--surface-2);
-    color: var(--ink-secondary);
-    border: 1px solid var(--rule);
-  }
-  .event-daypart-pill[data-daypart="morning"] {
-    background: var(--pillar-fungi-bg);
-    color: var(--pillar-fungi-fg);
-    border-color: var(--pillar-fungi-border);
-  }
-  .event-daypart-pill[data-daypart="afternoon"] {
-    background: var(--pillar-watershed-bg);
-    color: var(--pillar-watershed-fg);
-    border-color: var(--pillar-watershed-border);
-  }
-  .event-daypart-pill[data-daypart="evening"] {
-    background: var(--pillar-comedy-bg);
-    color: var(--pillar-comedy-fg);
-    border-color: var(--pillar-comedy-border);
-  }
-
-  /* Center Column: Badges, Fraunces Title, Host & Description */
-  .event-details-col {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    min-width: 0;
-  }
-
-  .event-tags-row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px;
-    align-items: center;
-  }
-
-  .event-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 5px;
-    font-size: 0.73rem;
-    font-weight: 600;
-    padding: 3px 10px;
-    border-radius: 999px;
-    line-height: 1.2;
-  }
-
-  .badge-category {
-    background: var(--badge-bg, var(--forest-tint));
-    color: var(--badge-fg, var(--forest));
-    border: 1px solid var(--badge-border, var(--pillar-watershed-border));
-  }
-
-  .badge-area {
-    background: var(--surface-2);
-    color: var(--ink-secondary);
-    border: 1px solid var(--rule);
-  }
-
-  .badge-recurrence {
-    font-family: var(--font-mono);
-    font-size: 0.69rem;
-    background: var(--surface-2);
-    color: var(--ink-muted);
-    border: 1px solid var(--rule);
-  }
-
-  .event-title {
-    font-family: var(--font-display);
-    font-size: clamp(1.12rem, 1.02rem + 0.3vw, 1.32rem);
-    font-weight: 600;
-    color: var(--ink);
-    line-height: 1.26;
-    letter-spacing: -0.015em;
-  }
-
-  .event-org-venue-row {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 6px 16px;
-    font-size: 0.83rem;
-  }
-
-  .event-org-line {
-    display: inline-flex;
-    align-items: center;
-    gap: 5px;
-    font-weight: 600;
-    color: var(--forest);
-  }
-
-  .event-org-link {
-    color: inherit;
-    text-decoration: none;
-    border-bottom: 1px dashed currentColor;
-  }
-  .event-org-link:hover {
-    border-bottom-style: solid;
-  }
-
-  .event-venue {
-    display: inline-flex;
-    align-items: center;
-    gap: 5px;
-    color: var(--ink-secondary);
-  }
-  .event-venue svg {
-    color: var(--amber);
-    flex-shrink: 0;
-  }
-
-  .event-desc {
-    font-size: 0.885rem;
-    color: var(--ink-secondary);
-    line-height: 1.58;
-    max-width: 72ch;
-  }
-
-  /* Right Column: Tactile Dispatch Actions */
-  .event-actions-col {
-    display: flex;
-    flex-direction: column;
-    gap: 7px;
-  }
-
-  .event-actions-subrow {
-    display: flex;
-    gap: 6px;
-  }
-
-  .action-btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 6px;
-    padding: 9px 13px;
-    border-radius: var(--radius-xs);
-    font-family: var(--font-sans);
-    font-size: 0.80rem;
-    font-weight: 600;
-    text-decoration: none;
-    cursor: pointer;
-    white-space: nowrap;
-    transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
-  }
-
-  .btn-source {
-    background: var(--ink);
-    color: var(--bg);
-    border: 1px solid var(--ink);
-  }
-  .btn-source:hover {
-    background: var(--forest);
-    border-color: var(--forest);
-    color: #ffffff;
-    transform: translateY(-1px);
-  }
-
-  .btn-gcal,
-  .btn-ics {
-    flex: 1;
-    background: var(--surface-2);
-    color: var(--ink-secondary);
-    border: 1px solid var(--rule-strong);
-    font-family: var(--font-mono);
-    font-size: 0.72rem;
-    padding: 6px 9px;
-  }
-  .btn-gcal:hover,
-  .btn-ics:hover {
-    background: var(--surface-3);
-    color: var(--ink);
-    border-color: var(--ink);
-  }
-
-  /* Empty State */
-  .empty-state {
-    display: none;
-    text-align: center;
-    padding: 64px 24px;
-    background: var(--surface);
-    border: 1.5px dashed var(--rule-strong);
-    border-radius: var(--radius-lg);
-    margin-top: 20px;
-  }
-
-  .empty-state .icon {
-    font-size: 2.5rem;
-    margin-bottom: 12px;
-  }
-
-  .empty-state h3 {
-    font-family: var(--font-display);
-    font-size: 1.35rem;
-    font-weight: 600;
-    color: var(--ink);
-    margin-bottom: 8px;
-  }
-
-  .empty-state p {
-    color: var(--ink-secondary);
-    font-size: 0.92rem;
-    max-width: 48ch;
-    margin: 0 auto 20px;
-  }
-
-  /* ==========================================================================
-     8. EDITORIAL COLOPHON & SITE FOOTER
-     ========================================================================== */
-  .site-footer {
-    background: var(--surface);
-    border-top: 2px solid var(--ink);
-    padding: 40px 28px;
-    margin-top: auto;
-  }
-
-  .footer-inner {
-    max-width: 1360px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 24px;
-  }
-
-  .footer-colophon {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-    max-width: 52ch;
-  }
-
-  .footer-brand {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    font-family: var(--font-display);
-    font-size: 1.15rem;
-    font-weight: 700;
-    color: var(--ink);
-  }
-
-  .footer-note {
-    font-size: 0.80rem;
-    color: var(--ink-muted);
-  }
-
-  .footer-links {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    font-family: var(--font-mono);
-    font-size: 0.78rem;
-  }
-
-  .footer-links a {
-    color: var(--ink-secondary);
-    text-decoration: none;
-    border-bottom: 1px solid transparent;
-    transition: color 0.15s ease, border-color 0.15s ease;
-  }
-  .footer-links a:hover {
-    color: var(--forest);
-    border-bottom-color: var(--forest);
-  }
-
-  /* ==========================================================================
-     9. RESPONSIVE BREAKPOINTS & REDUCED MOTION
-     ========================================================================== */
-  @media (max-width: 1080px) {
-    .hero-editorial-grid {
-      grid-template-columns: 1fr;
-      gap: 24px;
-    }
-    .pillars-strip {
-      grid-template-columns: repeat(4, minmax(150px, 1fr));
-    }
-  }
-
-  @media (max-width: 768px) {
-    .masthead-meta-inner {
-      padding: 6px 16px;
-      font-size: 0.66rem;
-    }
-    .meta-hide-mobile {
-      display: none;
-    }
-    .site-nav-inner {
-      padding: 12px 16px;
-    }
-    .hero-almanac-inner {
-      padding: 24px 16px 22px;
-    }
-    .telemetry-ledger {
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .telemetry-cell:nth-child(2) {
-      border-right: none;
-    }
-    .telemetry-cell:nth-child(1),
-    .telemetry-cell:nth-child(2) {
-      border-bottom: 1px solid var(--rule);
-    }
-    .pillars-strip {
-      display: flex;
-      overflow-x: auto;
-      gap: 8px;
-      -webkit-overflow-scrolling: touch;
-      scrollbar-width: none;
-    }
-    .pillars-strip::-webkit-scrollbar { display: none; }
-    .pillar-card-btn {
-      flex: 0 0 154px;
-    }
-
-    .filter-wrap {
-      padding: 8px 12px;
-    }
-    .filter-inner {
-      padding: 12px;
-      border-radius: var(--radius);
-    }
-    .search-box input {
-      font-size: 16px; /* Prevents iOS zoom */
-    }
-
-    .filter-toggle-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      height: 42px;
-      padding: 0 12px;
-      border-radius: var(--radius-sm);
-      border: 1px solid var(--rule-strong);
-      background: var(--surface);
-      color: var(--ink);
-      font-family: var(--font-sans);
-      font-size: 0.8125rem;
-      font-weight: 600;
-      cursor: pointer;
-    }
-    .filter-toggle-btn.has-filters {
-      border-color: var(--forest);
-      background: var(--forest-tint);
-      color: var(--forest);
-    }
-    .filter-badge {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      min-width: 18px;
-      height: 18px;
-      padding: 0 5px;
-      border-radius: 999px;
-      background: var(--forest);
-      color: #fff;
-      font-family: var(--font-mono);
-      font-size: 0.68rem;
-      font-weight: 700;
-    }
-
-    /* Mobile Bottom Sheet Drawer */
-    .filter-dropdowns-group {
-      display: none;
-      position: fixed;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      z-index: 1001;
-      background: var(--surface);
-      border-top: 2px solid var(--ink);
-      border-radius: 22px 22px 0 0;
-      padding: 16px 20px calc(24px + env(safe-area-inset-bottom));
-      box-shadow: var(--shadow-lg);
-      max-height: 85dvh;
-      overflow-y: auto;
-      overscroll-behavior: contain;
-      flex-direction: column;
-      align-items: stretch;
-      gap: 14px;
-    }
-    .filter-dropdowns-group.is-open {
-      display: flex;
-    }
-
-    .filter-drawer-backdrop {
-      display: none;
-      position: fixed;
-      inset: 0;
-      z-index: 1000;
-      background: rgba(11, 19, 15, 0.55);
-      backdrop-filter: blur(4px);
-    }
-    .filter-drawer-backdrop.is-open {
-      display: block;
-    }
-
-    .drawer-header-mobile {
-      display: block;
-    }
-    .drawer-grab-bar {
-      width: 40px;
-      height: 4px;
-      border-radius: 999px;
-      background: var(--rule-strong);
-      margin: 0 auto 12px;
-    }
-    .drawer-title-row {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding-bottom: 10px;
-      border-bottom: 1px solid var(--rule);
-    }
-    .drawer-close-btn {
-      width: 30px;
-      height: 30px;
-      border-radius: 50%;
-      border: 1px solid var(--rule-strong);
-      background: var(--surface-2);
-      color: var(--ink);
-      cursor: pointer;
-    }
-
-    .mobile-filter-label {
-      display: block;
-      font-family: var(--font-mono);
-      font-size: 0.70rem;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-      color: var(--ink-muted);
-      margin-bottom: 5px;
-    }
-
-    .filter-dropdowns-group .select-box select,
-    .filter-dropdowns-group .date-trigger-wrap {
-      width: 100%;
-      max-width: none;
-      height: 44px;
-    }
-
-    #reset-filters-btn {
-      display: none;
-    }
-
-    .drawer-actions-mobile {
-      display: flex;
-      gap: 10px;
-      padding-top: 10px;
-      border-top: 1px solid var(--rule);
-    }
-    .drawer-btn-reset {
-      height: 44px;
-      padding: 0 16px;
-      border-radius: var(--radius-sm);
-      border: 1px solid var(--rule-strong);
-      background: var(--surface-2);
-      color: var(--ink);
-      font-weight: 600;
-      cursor: pointer;
-    }
-    .drawer-btn-apply {
-      flex: 1;
-      height: 44px;
-      border-radius: var(--radius-sm);
-      border: none;
-      background: var(--forest);
-      color: #fff;
-      font-weight: 700;
-      cursor: pointer;
-    }
-
-    .time-pills-row,
-    .daypart-pills-row {
-      overflow-x: auto;
-      flex-wrap: nowrap;
-      scrollbar-width: none;
-      -webkit-overflow-scrolling: touch;
-      padding-bottom: 2px;
-    }
-    .time-pills-row::-webkit-scrollbar,
-    .daypart-pills-row::-webkit-scrollbar { display: none; }
-    .time-pills-label { display: none; }
-    .daypart-range { display: none; }
-    .mobile-only-daypart-box { display: flex; }
-
-    .main-content {
-      padding: 12px 14px 64px;
-    }
-    .agenda-day-header {
-      padding: 12px 14px;
-      gap: 12px;
-    }
-  }
-
-  /* Modern Web Guidance: Respect prefers-reduced-motion */
-  @media (prefers-reduced-motion: reduce) {
-    *, *::before, *::after {
-      animation-duration: 0.01ms !important;
-      animation-iteration-count: 1 !important;
-      transition-duration: 0.01ms !important;
-      scroll-behavior: auto !important;
-    }
-  }
-</style>
+<link rel="preload" href="./events.min.json" as="fetch" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./styles.css">
+<script src="./theme.js" defer></script>
 </head>
 <body>
-  <a class="skip-link" href="#agenda-main">Skip to events almanac</a>
 
-  <!-- ========================================================================
-       ALMANAC MASTHEAD & GAZETTE NAVIGATION
-       ======================================================================== -->
-  <header class="masthead">
-    <div class="masthead-meta-bar">
-      <div class="masthead-meta-inner">
-        <div class="meta-coords">
-          <span class="meta-pulse-dot" aria-hidden="true"></span>
-          <span>47°36′N · 122°19′W</span>
-          <span class="meta-divider" aria-hidden="true">·</span>
-          <span>PUGET SOUND BIOREGION</span>
-          <span class="meta-divider meta-hide-mobile" aria-hidden="true">·</span>
-          <span class="meta-hide-mobile" id="masthead-live-date">AUTUMN EDITION · 2026</span>
+<a class="skip-link" href="#agenda-main">Skip to events</a>
+
+<header class="site-header" id="site-header">
+  <div class="container header-inner">
+    <a href="./index.html" class="brand-link">
+      <span class="brand-mark" aria-hidden="true">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 2L6 10h4l-3 6h10l-3-6h4L12 2z"></path>
+          <path d="M12 16v6"></path>
+        </svg>
+      </span>
+      <span class="brand-name">Seattle Communities</span>
+    </a>
+
+    <div class="header-nav-group">
+      <nav class="nav-pills" aria-label="Primary">
+        <a href="./index.html" class="nav-pill" aria-current="page">Events</a>
+        <a href="./directory.html" class="nav-pill">Directory</a>
+      </nav>
+
+      <button type="button" class="header-action-btn" id="nav-jump-date-btn" title="Browse events by date">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <rect x="3" y="4" width="18" height="18" rx="2"></rect>
+          <path d="M16 2v4M8 2v4M3 10h18"></path>
+        </svg>
+        <span>Calendar</span>
+      </button>
+
+      <button type="button" class="theme-switch-btn" id="theme-switch-btn" aria-label="Toggle color theme">
+        <svg class="icon-sun" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="4"></circle>
+          <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path>
+        </svg>
+        <svg class="icon-moon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+        <span id="theme-switch-label">Dark</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<section class="hero" id="site-hero">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <h1 class="hero-title">Local events around <span class="accent">Puget Sound</span></h1>
+      <p class="hero-lead">Mushroom walks, salmon runs, repair cafés, science talks, comedy, and outdoor clubs across Greater Seattle.</p>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <span class="hero-stat-num" id="stat-total-events">—</span>
+          <span class="hero-stat-lbl">Events</span>
         </div>
-        <div class="meta-right">
-          <span class="meta-hide-mobile">GRASSROOTS &amp; NON-COMMERCIAL</span>
-          <button type="button" class="theme-switch-btn" id="theme-switch-btn" aria-label="Toggle color theme" title="Switch between Light and Dark mode">
-            <span id="theme-switch-icon" aria-hidden="true">◐</span>
-            <span id="theme-switch-label">Theme</span>
-          </button>
+        <div class="hero-stat">
+          <span class="hero-stat-num" id="stat-unique-groups">—</span>
+          <span class="hero-stat-lbl">Organizations</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-num" id="stat-categories">—</span>
+          <span class="hero-stat-lbl">Categories</span>
         </div>
       </div>
     </div>
 
-    <nav class="site-nav-inner" aria-label="Main Navigation">
-      <a href="./index.html" class="brand-lockup">
-        <span class="brand-seal" aria-hidden="true">🌲</span>
-        <span class="brand-text-col">
-          <span class="brand-kicker">Puget Sound Field Almanac</span>
-          <span class="brand-title">Seattle Communities</span>
-        </span>
-      </a>
-
-      <div class="nav-actions-group">
-        <div class="nav-tabs">
-          <a href="./index.html" class="nav-tab active" aria-current="page">📅 Events Almanac</a>
-          <a href="./directory.html" class="nav-tab">🧭 Communities Index</a>
-        </div>
-        <button type="button" class="nav-quick-date-btn" id="nav-jump-date-btn" aria-haspopup="dialog" aria-controls="calendar-picker-dialog">
-          <span aria-hidden="true">🗓</span>
-          <span>Jump to Date</span>
-        </button>
+    <div class="hero-media-col">
+      <div class="hero-artwork">
+        <picture>
+          <source media="(max-width: 48rem)" srcset="./hero-mobile.webp" width="960" height="523">
+          <img src="./hero.webp" alt="Oil-painting illustration of Mount Rainier, evergreens, ferries on Puget Sound, and the Seattle skyline" width="1920" height="1047" fetchpriority="high" decoding="async">
+        </picture>
       </div>
-    </nav>
-  </header>
-
-  <!-- ========================================================================
-       EDITORIAL HERO & INTERACTIVE PRIORITY PILLARS
-       ======================================================================== -->
-  <section class="hero-almanac" aria-label="Almanac Overview">
-    <div class="hero-almanac-inner">
-      <div class="hero-editorial-grid">
-        <!-- Left Column: Editorial Headline & Telemetry Ledger -->
-        <div class="hero-copy-col">
-          <div class="edition-badge-row">
-            <span class="edition-pill">
-              <span>FIELD DISPATCH</span>
-              <span>·</span>
-              <span><span class="live-count" id="hero-event-count">0</span> UPCOMING GATHERINGS</span>
-            </span>
-            <span class="season-tag" id="hero-season-badge">🍄 Peak Fall Foraging &amp; Salmon Run Season</span>
-          </div>
-
-          <h1 class="hero-headline">
-            Gatherings of the <em>Puget Sound Commons</em>.
-          </h1>
-
-          <p class="hero-lead">
-            A curated chronological gazette of real, grassroots community life across Greater Seattle — wild mushroom forays, Cedar River &amp; Carkeek salmon watches, neighborhood tool library repair cafés, DIY biology &amp; star parties, indie standup &amp; improv jams, and outdoor clubs.
-          </p>
-
-          <div class="telemetry-ledger" role="region" aria-label="Almanac Statistics">
-            <div class="telemetry-cell">
-              <span class="telemetry-code">FIG. 01 // SCHEDULE</span>
-              <span class="telemetry-val" id="stat-total-events">0</span>
-              <span class="telemetry-lbl">Upcoming Events</span>
-            </div>
-            <div class="telemetry-cell">
-              <span class="telemetry-code">FIG. 02 // STEWARDS</span>
-              <span class="telemetry-val" id="stat-unique-groups">0</span>
-              <span class="telemetry-lbl">Host Organizations</span>
-            </div>
-            <div class="telemetry-cell">
-              <span class="telemetry-code">FIG. 03 // TAXONOMY</span>
-              <span class="telemetry-val" id="stat-categories">0</span>
-              <span class="telemetry-lbl">Field Disciplines</span>
-            </div>
-            <div class="telemetry-cell">
-              <span class="telemetry-code">FIG. 04 // HORIZON</span>
-              <span class="telemetry-val">2026–27</span>
-              <span class="telemetry-lbl">Almanac Span</span>
-            </div>
-          </div>
+      <div class="week-strip-card">
+        <div class="week-strip-header">
+          <span>Next 7 days</span>
+          <span id="week-horizon-range">Select a day</span>
         </div>
-
-        <!-- Right Column: Framed Archival Plate + Next-7-Days Horizon Pulse -->
-        <div class="hero-plate-col">
-          <div class="field-plate-card">
-            <div class="field-plate-header">
-              <span>PLATE I · SALISH SEA WATERSHED &amp; COMMONS</span>
-              <span>ELEV. 0–4,392 M</span>
-            </div>
-
-            <div class="field-plate-media" role="img" aria-label="Puget Sound evergreen forest, mountains, and community gathering">
-              <!-- Topographic Contour SVG Overlay -->
-              <svg class="plate-topo-svg" viewBox="0 0 600 300" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <path d="M-40 60 C120 20, 260 110, 420 50 C520 15, 580 80, 660 40" stroke="#ffffff" stroke-width="1"/>
-                <path d="M-40 120 C100 80, 250 170, 410 110 C510 75, 570 140, 660 100" stroke="#ffffff" stroke-width="1"/>
-                <path d="M-40 180 C140 140, 280 220, 440 165 C530 135, 590 190, 660 160" stroke="#ffffff" stroke-width="1"/>
-                <path d="M-40 240 C160 200, 300 265, 460 220 C540 195, 600 240, 660 220" stroke="#ffffff" stroke-width="1"/>
-              </svg>
-              <div class="plate-caption-box">
-                <div>
-                  <div class="plate-caption-title">Cascade Foothills to Puget Sound</div>
-                  <div class="plate-caption-sub">Verified community-led calendar · Updated daily</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="week-horizon-box">
-              <div class="week-horizon-header">
-                <span>7-Day Field Pulse (Click a day to inspect)</span>
-                <span id="week-horizon-range">Next 7 Days</span>
-              </div>
-              <div class="week-horizon-grid" id="week-horizon-grid" role="group" aria-label="Next 7 days quick filter">
-                <!-- Populated dynamically by JS -->
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Interactive Priority Pillars Explorer -->
-      <div class="pillars-showcase" role="region" aria-label="Priority Community Pillars">
-        <div class="pillars-header-row">
-          <span class="pillars-kicker">Explore by Curated Field Pillar</span>
-          <span class="pillars-hint">Select any pillar to filter the chronological ledger</span>
-        </div>
-        <div class="pillars-strip" id="pillars-strip">
-          <button type="button" class="pillar-card-btn active" data-pillar-filter="all" style="--p-color: var(--forest)">
-            <div class="pillar-card-top">
-              <span class="pillar-icon" aria-hidden="true">🧭</span>
-              <span class="pillar-count-badge" id="pcount-all">0</span>
-            </div>
-            <div class="pillar-name">All Gatherings</div>
-            <div class="pillar-sub">Complete regional schedule</div>
-          </button>
-
-          <button type="button" class="pillar-card-btn" data-pillar-filter="fungi" style="--p-color: var(--pillar-fungi-fg)">
-            <div class="pillar-card-top">
-              <span class="pillar-icon" aria-hidden="true">🍄</span>
-              <span class="pillar-count-badge" id="pcount-fungi">0</span>
-            </div>
-            <div class="pillar-name">Fungi &amp; Foraging</div>
-            <div class="pillar-sub">PSMS, mycology &amp; wild edibles</div>
-          </button>
-
-          <button type="button" class="pillar-card-btn" data-pillar-filter="watershed" style="--p-color: var(--pillar-watershed-fg)">
-            <div class="pillar-card-top">
-              <span class="pillar-icon" aria-hidden="true">🌿</span>
-              <span class="pillar-count-badge" id="pcount-watershed">0</span>
-            </div>
-            <div class="pillar-name">Watersheds &amp; Flora</div>
-            <div class="pillar-sub">Salmon runs, birding &amp; botany</div>
-          </button>
-
-          <button type="button" class="pillar-card-btn" data-pillar-filter="maker" style="--p-color: var(--pillar-maker-fg)">
-            <div class="pillar-card-top">
-              <span class="pillar-icon" aria-hidden="true">🛠️</span>
-              <span class="pillar-count-badge" id="pcount-maker">0</span>
-            </div>
-            <div class="pillar-name">Maker &amp; Tool Libraries</div>
-            <div class="pillar-sub">Repair cafés, woodshops &amp; reuse</div>
-          </button>
-
-          <button type="button" class="pillar-card-btn" data-pillar-filter="science" style="--p-color: var(--pillar-science-fg)">
-            <div class="pillar-card-top">
-              <span class="pillar-icon" aria-hidden="true">🔭</span>
-              <span class="pillar-count-badge" id="pcount-science">0</span>
-            </div>
-            <div class="pillar-name">Science &amp; Astronomy</div>
-            <div class="pillar-sub">SoundBio, star parties &amp; talks</div>
-          </button>
-
-          <button type="button" class="pillar-card-btn" data-pillar-filter="comedy" style="--p-color: var(--pillar-comedy-fg)">
-            <div class="pillar-card-top">
-              <span class="pillar-icon" aria-hidden="true">🎭</span>
-              <span class="pillar-count-badge" id="pcount-comedy">0</span>
-            </div>
-            <div class="pillar-name">Comedy &amp; Improv</div>
-            <div class="pillar-sub">Theatersports, standup &amp; mics</div>
-          </button>
-
-          <button type="button" class="pillar-card-btn" data-pillar-filter="outdoors" style="--p-color: var(--pillar-outdoors-fg)">
-            <div class="pillar-card-top">
-              <span class="pillar-icon" aria-hidden="true">🚣</span>
-              <span class="pillar-count-badge" id="pcount-outdoors">0</span>
-            </div>
-            <div class="pillar-name">Outdoors &amp; Athletics</div>
-            <div class="pillar-sub">Group runs, paddling &amp; trails</div>
-          </button>
-
-          <button type="button" class="pillar-card-btn" data-pillar-filter="arts" style="--p-color: var(--pillar-arts-fg)">
-            <div class="pillar-card-top">
-              <span class="pillar-icon" aria-hidden="true">🎨</span>
-              <span class="pillar-count-badge" id="pcount-arts">0</span>
-            </div>
-            <div class="pillar-name">Arts, Games &amp; Civic</div>
-            <div class="pillar-sub">Board games, crafts &amp; mutual aid</div>
-          </button>
-        </div>
+        <div class="week-horizon-grid" id="week-horizon-grid"></div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ========================================================================
-       STICKY COMMAND & FILTER BAR
-       ======================================================================== -->
-  <section class="filter-wrap" aria-label="Calendar Event Filters">
-    <div class="filter-drawer-backdrop" id="filter-drawer-backdrop" aria-hidden="true"></div>
+<section class="topics-bar" id="topics-bar" aria-label="Filter by topic">
+  <div class="container">
+    <div class="pillars-strip" id="pillars-strip">
+      <button type="button" class="pillar-card-btn active" data-pillar-filter="all">
+        <svg class="pillar-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="10"></circle>
+          <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+        </svg>
+        <span>All</span>
+        <span class="pillar-count-badge" id="pcount-all">—</span>
+      </button>
 
-    <div class="filter-inner">
+      <button type="button" class="pillar-card-btn" data-pillar-filter="fungi">
+        <svg class="pillar-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M4 13a8 8 0 0 1 16 0H4z"></path>
+          <path d="M10 13v7a2 2 0 0 0 4 0v-7"></path>
+        </svg>
+        <span>Fungi &amp; Foraging</span>
+        <span class="pillar-count-badge" id="pcount-fungi">0</span>
+      </button>
+
+      <button type="button" class="pillar-card-btn" data-pillar-filter="watershed">
+        <svg class="pillar-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"></path>
+          <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"></path>
+        </svg>
+        <span>Nature &amp; Wildlife</span>
+        <span class="pillar-count-badge" id="pcount-watershed">0</span>
+      </button>
+
+      <button type="button" class="pillar-card-btn" data-pillar-filter="maker">
+        <svg class="pillar-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+        </svg>
+        <span>Makers &amp; Repair</span>
+        <span class="pillar-count-badge" id="pcount-maker">0</span>
+      </button>
+
+      <button type="button" class="pillar-card-btn" data-pillar-filter="science">
+        <svg class="pillar-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M10 2v7.31"></path>
+          <path d="M14 9.31V2"></path>
+          <path d="M8.5 2h7"></path>
+          <path d="M7 16h10"></path>
+          <path d="M5.5 22h13l-2.5-12.69V2"></path>
+        </svg>
+        <span>Science &amp; Talks</span>
+        <span class="pillar-count-badge" id="pcount-science">0</span>
+      </button>
+
+      <button type="button" class="pillar-card-btn" data-pillar-filter="comedy">
+        <svg class="pillar-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z"></path>
+          <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+          <path d="M12 19v3"></path>
+        </svg>
+        <span>Comedy &amp; Improv</span>
+        <span class="pillar-count-badge" id="pcount-comedy">0</span>
+      </button>
+
+      <button type="button" class="pillar-card-btn" data-pillar-filter="outdoors">
+        <svg class="pillar-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M8 3l4 8 5-5 5 15H2L8 3z"></path>
+        </svg>
+        <span>Outdoors &amp; Sports</span>
+        <span class="pillar-count-badge" id="pcount-outdoors">0</span>
+      </button>
+
+      <button type="button" class="pillar-card-btn" data-pillar-filter="arts">
+        <svg class="pillar-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="13.5" cy="6.5" r=".5" fill="currentColor"></circle>
+          <circle cx="17.5" cy="10.5" r=".5" fill="currentColor"></circle>
+          <circle cx="8.5" cy="7.5" r=".5" fill="currentColor"></circle>
+          <circle cx="6.5" cy="12.5" r=".5" fill="currentColor"></circle>
+          <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"></path>
+        </svg>
+        <span>Arts &amp; Community</span>
+        <span class="pillar-count-badge" id="pcount-arts">0</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<section class="filter-sticky-wrap" id="filter-sticky-wrap" aria-label="Search and filter events">
+  <div class="container">
+    <div class="filter-drawer-backdrop" id="filter-drawer-backdrop"></div>
+    <search class="filter-command-card">
       <div class="filter-controls-row">
-        <!-- Search Input -->
         <div class="search-box">
-          <span class="icon" aria-hidden="true">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="11" cy="11" r="8"></circle>
-              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          <svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="11" cy="11" r="8"></circle>
+            <path d="M21 21l-4.35-4.35"></path>
+          </svg>
+          <input type="search" id="calendar-search" placeholder="Search events, clubs, neighborhoods…" aria-label="Search events, clubs, and neighborhoods" autocomplete="off">
+          <button type="button" class="clear-btn is-hidden" id="clear-search-btn" title="Clear search" aria-label="Clear search">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M18 6L6 18M6 6l12 12"></path>
             </svg>
-          </span>
-          <input type="text" id="calendar-search" placeholder="Search events, organizations, venues, or keywords (e.g. PSMS, Carkeek, improv)..." aria-label="Search events">
-          <button type="button" class="clear-btn" id="clear-search-btn" aria-label="Clear search">✕</button>
+          </button>
         </div>
 
-        <!-- Mobile Filter Toggle Button -->
-        <button type="button" class="filter-toggle-btn" id="filter-toggle-btn" aria-label="Open filter options" aria-expanded="false" aria-controls="filter-dropdowns-group">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <line x1="4" y1="21" x2="4" y2="14"></line>
-            <line x1="4" y1="10" x2="4" y2="3"></line>
-            <line x1="12" y1="21" x2="12" y2="12"></line>
-            <line x1="12" y1="8" x2="12" y2="3"></line>
-            <line x1="20" y1="21" x2="20" y2="16"></line>
-            <line x1="20" y1="12" x2="20" y2="3"></line>
+        <button type="button" class="filter-toggle-btn" id="filter-toggle-btn" aria-expanded="false" aria-controls="filter-dropdowns-group">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="4" y1="6" x2="20" y2="6"></line>
+            <line x1="8" y1="12" x2="16" y2="12"></line>
+            <line x1="11" y1="18" x2="13" y2="18"></line>
           </svg>
           <span>Filters</span>
-          <span class="filter-badge" id="filter-badge" style="display:none">0</span>
+          <span class="filter-badge is-hidden" id="filter-badge">0</span>
         </button>
 
-        <!-- Dropdowns Group -->
-        <div class="filter-dropdowns-group" id="filter-dropdowns-group" role="region" aria-label="Filter options">
+        <div class="filter-dropdowns-group" id="filter-dropdowns-group">
           <div class="drawer-header-mobile">
-            <div class="drawer-grab-bar"></div>
+            <div class="drawer-grab-bar" aria-hidden="true"></div>
             <div class="drawer-title-row">
-              <h3>Filter Field Almanac</h3>
-              <button type="button" class="drawer-close-btn" id="drawer-close-btn" aria-label="Close filters">✕</button>
+              <h3>Filters</h3>
+              <button type="button" class="drawer-close-btn" id="drawer-close-btn" aria-label="Close filters">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M18 6L6 18M6 6l12 12"></path>
+                </svg>
+              </button>
             </div>
           </div>
 
           <div class="select-box">
-            <label class="mobile-filter-label" for="category-filter">Discipline / Category</label>
-            <select id="category-filter" aria-label="Filter by activity category">
-              <option value="">All Categories</option>
+            <label for="category-filter" class="mobile-filter-label">Category</label>
+            <select id="category-filter" aria-label="Filter by category">
+              <option value="">All categories</option>
             </select>
           </div>
 
           <div class="select-box">
-            <label class="mobile-filter-label" for="org-filter">Host Organization</label>
-            <select id="org-filter" aria-label="Filter by host organization">
-              <option value="">All Organizations</option>
+            <label for="org-filter" class="mobile-filter-label">Organization</label>
+            <select id="org-filter" aria-label="Filter by organization">
+              <option value="">All organizations</option>
             </select>
           </div>
 
           <div class="select-box">
-            <label class="mobile-filter-label" for="area-filter">Neighborhood / Area</label>
+            <label for="area-filter" class="mobile-filter-label">Area</label>
             <select id="area-filter" aria-label="Filter by neighborhood or area">
-              <option value="">All Areas</option>
+              <option value="">All areas</option>
             </select>
+          </div>
+
+          <div>
+            <span class="mobile-filter-label">Specific date</span>
+            <div class="date-trigger-wrap" id="filter-date-wrap">
+              <button type="button" class="date-trigger-btn" id="filter-date-trigger-btn" aria-label="Choose a specific date">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="3" y="4" width="18" height="18" rx="2"></rect>
+                  <path d="M16 2v4M8 2v4M3 10h18"></path>
+                </svg>
+                <span id="filter-date-label">Pick date…</span>
+              </button>
+              <button type="button" class="date-trigger-clear-btn is-hidden" id="filter-date-clear-btn" aria-label="Clear selected date" title="Clear date filter">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M18 6L6 18M6 6l12 12"></path>
+                </svg>
+              </button>
+            </div>
           </div>
 
           <div class="select-box mobile-only-daypart-box">
-            <label class="mobile-filter-label" for="daypart-filter-select">Time of Day</label>
+            <label for="daypart-filter-select" class="mobile-filter-label">Time of day</label>
             <select id="daypart-filter-select" aria-label="Filter by time of day">
-              <option value="all">All Times of Day</option>
-              <option value="morning">🌅 Morning (Before 12 PM)</option>
-              <option value="afternoon">☀️ Afternoon (12 PM – 5 PM)</option>
-              <option value="evening">🌙 Evening &amp; Night (5 PM+)</option>
+              <option value="all">All times</option>
+              <option value="morning">Morning (Before 12 PM)</option>
+              <option value="afternoon">Afternoon (12–5 PM)</option>
+              <option value="evening">Evening (5 PM+)</option>
             </select>
           </div>
 
-          <div class="select-box date-box">
-            <label class="mobile-filter-label" for="filter-date-trigger-btn">Specific Date</label>
-            <div class="date-trigger-wrap">
-              <button type="button" class="date-trigger-btn" id="filter-date-trigger-btn" aria-haspopup="dialog" aria-controls="calendar-picker-dialog" title="Open interactive ephemeris calendar">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-                  <line x1="16" y1="2" x2="16" y2="6"></line>
-                  <line x1="8" y1="2" x2="8" y2="6"></line>
-                  <line x1="3" y1="10" x2="21" y2="10"></line>
-                </svg>
-                <span id="filter-date-label">Pick a Date…</span>
-                <span class="date-trigger-chevron" aria-hidden="true">▾</span>
-              </button>
-              <button type="button" class="date-trigger-clear-btn" id="filter-date-clear-btn" aria-label="Clear date filter" title="Clear date">✕</button>
-            </div>
-          </div>
-
-          <button type="button" class="btn-reset" id="reset-filters-btn">Reset</button>
+          <button type="button" class="btn-reset" id="reset-filters-btn" title="Reset all filters">Reset</button>
 
           <div class="drawer-actions-mobile">
-            <button type="button" class="drawer-btn-reset" id="drawer-reset-btn">Reset All</button>
-            <button type="button" class="drawer-btn-apply" id="drawer-apply-btn">Show <span id="drawer-apply-count">0</span> Events</button>
+            <button type="button" class="drawer-btn-reset" id="drawer-reset-btn">Reset</button>
+            <button type="button" class="drawer-btn-apply" id="drawer-apply-btn">Show <span id="drawer-apply-count">0</span> events</button>
           </div>
         </div>
       </div>
+    </search>
+  </div>
+</section>
 
-      <!-- Timeframe Strip + View Switcher -->
+<section class="secondary-filters-wrap" id="secondary-filters-wrap" aria-label="Timeframe and view options">
+  <div class="container">
+    <div class="secondary-filters-card">
       <div class="filter-bottom-bar">
-        <div class="time-pills-row">
-          <span class="time-pills-label">Horizon:</span>
-          <button type="button" class="time-pill active" data-timeframe="all">All Upcoming</button>
-          <button type="button" class="time-pill" data-timeframe="today" id="pill-today">Today</button>
-          <button type="button" class="time-pill" data-timeframe="tomorrow" id="pill-tomorrow">Tomorrow</button>
-
-          <button type="button" class="time-pill date-picker-pill" id="date-picker-pill" aria-haspopup="dialog" aria-controls="calendar-picker-dialog" title="Choose a specific date on the calendar">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-              <line x1="16" y1="2" x2="16" y2="6"></line>
-              <line x1="8" y1="2" x2="8" y2="6"></line>
-              <line x1="3" y1="10" x2="21" y2="10"></line>
-            </svg>
-            <span class="date-pill-label" id="date-picker-pill-label">Pick a Date</span>
-            <span class="date-pill-chevron" aria-hidden="true">▾</span>
-            <span class="date-pill-clear-btn" id="date-pill-clear-btn" role="button" tabindex="0" aria-label="Clear selected date" title="Clear date">✕</span>
-          </button>
-
-          <button type="button" class="time-pill" data-timeframe="this-week">This Week</button>
-          <button type="button" class="time-pill" data-timeframe="this-weekend">This Weekend</button>
-          <button type="button" class="time-pill" data-timeframe="next-week">Next Week</button>
-          <button type="button" class="time-pill" data-timeframe="november">Nov 2026</button>
-          <button type="button" class="time-pill" data-timeframe="december">Dec 2026</button>
+        <div class="time-pills-row" id="time-pills-row">
+          <span class="time-pills-label">When:</span>
+          <button type="button" class="time-pill active" data-timeframe="all">All upcoming</button>
+          <button type="button" class="time-pill" data-timeframe="today">Today</button>
+          <button type="button" class="time-pill" data-timeframe="tomorrow">Tomorrow</button>
+          <button type="button" class="time-pill" data-timeframe="this-week">This week</button>
+          <button type="button" class="time-pill" data-timeframe="this-weekend">This weekend</button>
+          <button type="button" class="time-pill" data-timeframe="next-week">Next week</button>
+          <div class="date-pill-group" id="date-pill-group">
+            <button type="button" class="date-picker-pill" id="date-picker-pill" title="Choose a specific date on the calendar">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="3" y="4" width="18" height="18" rx="2"></rect>
+                <path d="M16 2v4M8 2v4M3 10h18"></path>
+              </svg>
+              <span id="date-picker-pill-label">Choose date</span>
+            </button>
+            <button type="button" class="date-pill-clear-btn is-hidden" id="date-pill-clear-btn" aria-label="Clear selected date" title="Clear selected date">
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M18 6L6 18M6 6l12 12"></path>
+              </svg>
+            </button>
+          </div>
         </div>
 
         <div class="filter-meta-controls">
-          <div class="status-count">
-            Showing <strong id="visible-count">0</strong> of <strong id="total-count">0</strong> upcoming events
-          </div>
-          <div class="view-mode-switch" role="group" aria-label="Layout view mode">
-            <button type="button" class="view-mode-btn active" id="view-ledger-btn" data-view="ledger" title="Editorial Ledger View">
-              <span>☰ Ledger</span>
+          <div class="status-count">Showing <strong id="visible-count">0</strong> of <strong id="total-count">0</strong> events</div>
+          <div class="view-mode-switch" role="group" aria-label="Layout mode">
+            <button type="button" class="view-mode-btn active" id="view-ledger-btn" title="List view" aria-label="List view">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="8" y1="6" x2="21" y2="6"></line>
+                <line x1="8" y1="12" x2="21" y2="12"></line>
+                <line x1="8" y1="18" x2="21" y2="18"></line>
+                <line x1="3" y1="6" x2="3.01" y2="6"></line>
+                <line x1="3" y1="12" x2="3.01" y2="12"></line>
+                <line x1="3" y1="18" x2="3.01" y2="18"></line>
+              </svg>
+              <span>List</span>
             </button>
-            <button type="button" class="view-mode-btn" id="view-grid-btn" data-view="grid" title="Field Card Grid View">
-              <span>⊞ Grid</span>
+            <button type="button" class="view-mode-btn" id="view-grid-btn" title="Grid view" aria-label="Grid view">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="3" y="3" width="7" height="7"></rect>
+                <rect x="14" y="3" width="7" height="7"></rect>
+                <rect x="14" y="14" width="7" height="7"></rect>
+                <rect x="3" y="14" width="7" height="7"></rect>
+              </svg>
+              <span>Grid</span>
             </button>
           </div>
         </div>
       </div>
 
-      <!-- High-Level Time-of-Day Filter Bar -->
-      <div class="daypart-filter-bar" role="group" aria-label="Filter by time of day">
-        <div class="daypart-pills-row" id="daypart-pills-row">
-          <span class="time-pills-label">Time of Day:</span>
+      <div class="daypart-filter-bar" aria-label="Time of day filters">
+        <span class="time-pills-label">Time:</span>
+        <div class="daypart-pills-row">
           <button type="button" class="daypart-pill active" data-daypart="all" aria-pressed="true">
-            <span>All Times</span>
-            <span class="daypart-count" id="dp-count-all">0</span>
+            <span>All times</span>
+            <span class="daypart-count" id="dp-count-all">—</span>
           </button>
-          <button type="button" class="daypart-pill" data-daypart="morning" aria-pressed="false" title="Morning gatherings starting before 12:00 PM">
-            <span class="daypart-icon" aria-hidden="true">🌅</span>
+          <button type="button" class="daypart-pill" data-daypart="morning" aria-pressed="false">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 2v4M4.93 10.93l1.41 1.41M2 18h2M20 18h2M19.07 10.93l-1.41 1.41M22 22H2M8 6l4-4 4 4M16 18a4 4 0 0 0-8 0"></path>
+            </svg>
             <span>Morning</span>
-            <span class="daypart-range">Before 12p</span>
+            <span class="daypart-range">Before 12 PM</span>
             <span class="daypart-count" id="dp-count-morning">0</span>
           </button>
-          <button type="button" class="daypart-pill" data-daypart="afternoon" aria-pressed="false" title="Afternoon gatherings starting between 12:00 PM and 5:00 PM">
-            <span class="daypart-icon" aria-hidden="true">☀️</span>
+          <button type="button" class="daypart-pill" data-daypart="afternoon" aria-pressed="false">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="4"></circle>
+              <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path>
+            </svg>
             <span>Afternoon</span>
-            <span class="daypart-range">12p–5p</span>
+            <span class="daypart-range">12–5 PM</span>
             <span class="daypart-count" id="dp-count-afternoon">0</span>
           </button>
-          <button type="button" class="daypart-pill" data-daypart="evening" aria-pressed="false" title="Evening and night gatherings starting at 5:00 PM or later">
-            <span class="daypart-icon" aria-hidden="true">🌙</span>
-            <span>Evening &amp; Night</span>
-            <span class="daypart-range">5p+</span>
+          <button type="button" class="daypart-pill" data-daypart="evening" aria-pressed="false">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+            <span>Evening</span>
+            <span class="daypart-range">5 PM+</span>
             <span class="daypart-count" id="dp-count-evening">0</span>
           </button>
         </div>
       </div>
 
-      <!-- Active Filter Chips -->
-      <div class="active-filter-chips" id="active-filter-chips" aria-label="Active filters"></div>
+      <div class="active-filter-chips" id="active-filter-chips"></div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ========================================================================
-       EPHEMERIS CALENDAR PICKER <DIALOG>
-       ======================================================================== -->
-  <dialog id="calendar-picker-dialog" closedby="any" aria-labelledby="cal-dialog-title">
-    <div class="cal-dialog-card">
-      <div class="cal-dialog-header">
-        <div class="cal-dialog-title-wrap">
-          <h3 id="cal-dialog-title">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--amber)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-              <line x1="16" y1="2" x2="16" y2="6"></line>
-              <line x1="8" y1="2" x2="8" y2="6"></line>
-              <line x1="3" y1="10" x2="21" y2="10"></line>
-            </svg>
-            <span>Monthly Ephemeris &amp; Date Picker</span>
-          </h3>
-          <p>Select any date to inspect scheduled gatherings across Puget Sound</p>
-        </div>
-        <button type="button" class="cal-close-btn" id="cal-close-btn" aria-label="Close calendar">✕</button>
+<dialog id="calendar-picker-dialog" closedby="any" aria-labelledby="cal-dialog-title">
+  <div class="cal-dialog-card">
+    <div class="cal-dialog-header">
+      <div class="cal-dialog-title-wrap">
+        <h2 id="cal-dialog-title">Browse by date</h2>
       </div>
-
-      <div class="cal-presets-bar" id="cal-presets-bar" aria-label="Quick date presets">
-        <button type="button" class="cal-preset-btn" data-preset="today">Today</button>
-        <button type="button" class="cal-preset-btn" data-preset="tomorrow">Tomorrow</button>
-        <button type="button" class="cal-preset-btn" data-preset="this-sat">This Saturday</button>
-        <button type="button" class="cal-preset-btn" data-preset="this-sun">This Sunday</button>
-        <button type="button" class="cal-preset-btn" data-preset="next-sat">Next Saturday</button>
-      </div>
-
-      <div class="cal-month-bar">
-        <div class="cal-month-title-group">
-          <h4 class="cal-month-title" id="cal-month-year-label">November 2026</h4>
-          <span class="cal-month-badge" id="cal-month-event-pill">0 events</span>
-        </div>
-        <div class="cal-nav-controls">
-          <button type="button" class="cal-today-jump-btn" id="cal-jump-today-btn" title="Jump to current month">Today</button>
-          <button type="button" class="cal-nav-btn" id="cal-prev-month-btn" aria-label="Previous month" title="Previous month">‹</button>
-          <button type="button" class="cal-nav-btn" id="cal-next-month-btn" aria-label="Next month" title="Next month">›</button>
-        </div>
-      </div>
-
-      <div class="cal-grid-wrap">
-        <div class="cal-weekdays" aria-hidden="true">
-          <span>Sun</span>
-          <span>Mon</span>
-          <span>Tue</span>
-          <span>Wed</span>
-          <span>Thu</span>
-          <span>Fri</span>
-          <span>Sat</span>
-        </div>
-        <div class="cal-days-grid" id="cal-days-grid" role="grid" aria-label="Calendar dates"></div>
-      </div>
-
-      <div class="cal-dialog-footer">
-        <div class="cal-footer-status" id="cal-footer-status">Click any date to view its schedule</div>
-        <div class="cal-footer-actions">
-          <button type="button" class="cal-clear-btn" id="cal-modal-clear-btn">Clear Date</button>
-          <button type="button" class="cal-done-btn" id="cal-modal-done-btn">Done</button>
-        </div>
-      </div>
-    </div>
-  </dialog>
-
-  <!-- ========================================================================
-       CHRONOLOGICAL ALMANAC LEDGER
-       ======================================================================== -->
-  <main class="main-content" id="agenda-main">
-    <div class="agenda-container" id="agenda-list" aria-live="polite">
-      <!-- Populated dynamically by JS -->
+      <button type="button" class="cal-close-btn" id="cal-close-btn" aria-label="Close calendar" title="Close">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M18 6L6 18M6 6l12 12"></path>
+        </svg>
+      </button>
     </div>
 
-    <div class="empty-state" id="empty-state">
-      <div class="icon" aria-hidden="true">🧭</div>
-      <h3>No gatherings match this field query</h3>
-      <p>No community events match your current search and filter selections. Try clearing your filters or picking another date on the ephemeris calendar.</p>
-      <button type="button" class="btn-reset" id="empty-reset-btn" style="height:42px; padding:0 22px;">Reset All Filters</button>
+    <div class="cal-presets-bar" id="cal-presets-bar">
+      <button type="button" class="cal-preset-btn" data-preset="today">Today</button>
+      <button type="button" class="cal-preset-btn" data-preset="tomorrow">Tomorrow</button>
+      <button type="button" class="cal-preset-btn" data-preset="this-sat">This Sat</button>
+      <button type="button" class="cal-preset-btn" data-preset="this-sun">This Sun</button>
+      <button type="button" class="cal-preset-btn" data-preset="next-sat">Next Sat</button>
     </div>
-  </main>
 
-  <!-- ========================================================================
-       COLOPHON & SITE FOOTER
-       ======================================================================== -->
-  <footer class="site-footer">
-    <div class="footer-inner">
-      <div class="footer-colophon">
-        <div class="footer-brand">
-          <span aria-hidden="true">🌲</span>
-          <span>Puget Sound Field Almanac · Seattle Communities</span>
-        </div>
-        <p class="footer-note">
-          An open-source public directory &amp; chronological gazette dedicated to authentic, grassroots, non-commercial community gatherings across Greater Seattle and the Salish Sea bioregion.
-        </p>
+    <div class="cal-month-bar">
+      <div class="cal-month-title-group">
+        <span class="cal-month-title" id="cal-month-year-label">Month Year</span>
+        <span class="cal-month-badge" id="cal-month-event-pill">0 events</span>
       </div>
-      <div class="footer-links">
-        <a href="./index.html">Events Almanac</a>
-        <a href="./directory.html">Communities Index (182)</a>
-        <a href="https://github.com/rayadav/seattle-communities" target="_blank" rel="noopener noreferrer">Source Archive ↗</a>
-        <a href="#agenda-main">Top of Ledger ↑</a>
+      <div class="cal-nav-controls">
+        <button type="button" class="cal-today-jump-btn" id="cal-jump-today-btn">Today</button>
+        <button type="button" class="cal-nav-btn" id="cal-prev-month-btn" aria-label="Previous month" title="Previous month">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+        </button>
+        <button type="button" class="cal-nav-btn" id="cal-next-month-btn" aria-label="Next month" title="Next month">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </button>
       </div>
     </div>
-  </footer>
+
+    <div class="cal-grid-wrap">
+      <div class="cal-weekdays" aria-hidden="true">
+        <div>Sun</div><div>Mon</div><div>Tue</div><div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div>
+      </div>
+      <div class="cal-days-grid" id="cal-days-grid"></div>
+    </div>
+
+    <div class="cal-dialog-footer">
+      <div class="cal-footer-status" id="cal-footer-status">Select a date to filter events</div>
+      <div class="cal-footer-actions">
+        <button type="button" class="cal-clear-btn is-hidden" id="cal-modal-clear-btn">Clear date</button>
+        <button type="button" class="cal-done-btn" id="cal-modal-done-btn">Done</button>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<main class="container main-content" id="agenda-main">
+  <div class="agenda-container" id="agenda-list" aria-live="polite">
+    <div class="status-bar">
+      <div class="spinner"></div>
+      <p class="status-text">Loading upcoming events…</p>
+    </div>
+  </div>
+
+  <div class="empty-state" id="empty-state" hidden>
+    <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin: 0 auto 0.75rem; color: var(--forest);">
+      <circle cx="11" cy="11" r="8"></circle>
+      <path d="M21 21l-4.35-4.35"></path>
+    </svg>
+    <h3 id="empty-state-heading">No matching events found</h3>
+    <p id="empty-state-copy">Try adjusting your search terms or clearing the active filters.</p>
+    <button type="button" class="empty-reset-btn" id="empty-reset-btn">Reset filters</button>
+  </div>
+</main>
+
+<footer class="site-footer" id="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand-row">
+      <span class="footer-brand">Seattle Communities</span>
+      <span class="footer-note">Local clubs and events across Greater Seattle &amp; Puget Sound.</span>
+    </div>
+    <div class="footer-links">
+      <a href="./index.html">Events</a>
+      <a href="./directory.html">Directory</a>
+      <a href="https://github.com/rayadav/seattle-communities" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+      <a href="https://github.com/rayadav/seattle-communities/issues/new" target="_blank" rel="noopener noreferrer">Suggest an event ↗</a>
+      <a href="#">Back to top ↑</a>
+    </div>
+  </div>
+</footer>
 
 <script>
 (function() {
@@ -3133,7 +512,7 @@
   const areaFilter = document.getElementById('area-filter');
   const resetBtn = document.getElementById('reset-filters-btn');
   const emptyResetBtn = document.getElementById('empty-reset-btn');
-  const timePills = document.querySelectorAll('.time-pill');
+  const timePillsRow = document.getElementById('time-pills-row');
   const daypartPills = document.querySelectorAll('.daypart-pill');
   const daypartFilterSelect = document.getElementById('daypart-filter-select');
   const dpCountAll = document.getElementById('dp-count-all');
@@ -3144,15 +523,12 @@
   const weekHorizonGrid = document.getElementById('week-horizon-grid');
   const weekHorizonRange = document.getElementById('week-horizon-range');
 
-  // Theme & View Switchers
-  const themeSwitchBtn = document.getElementById('theme-switch-btn');
-  const themeSwitchLabel = document.getElementById('theme-switch-label');
-  const themeSwitchIcon = document.getElementById('theme-switch-icon');
   const viewLedgerBtn = document.getElementById('view-ledger-btn');
   const viewGridBtn = document.getElementById('view-grid-btn');
 
   // Calendar Picker Trigger & Dialog Elements
   const navJumpDateBtn = document.getElementById('nav-jump-date-btn');
+  const datePillGroup = document.getElementById('date-pill-group');
   const datePickerPill = document.getElementById('date-picker-pill');
   const datePickerPillLabel = document.getElementById('date-picker-pill-label');
   const datePillClearBtn = document.getElementById('date-pill-clear-btn');
@@ -3187,87 +563,80 @@
 
   const agendaList = document.getElementById('agenda-list');
   const emptyState = document.getElementById('empty-state');
-  const visibleCountEl = document.getElementById('visible-count');
-  const totalCountEl = document.getElementById('total-count');
-  const heroEventCount = document.getElementById('hero-event-count');
+  const emptyStateHeading = document.getElementById('empty-state-heading');
+  const emptyStateCopy = document.getElementById('empty-state-copy');
   const statTotalEvents = document.getElementById('stat-total-events');
   const statUniqueGroups = document.getElementById('stat-unique-groups');
   const statCategories = document.getElementById('stat-categories');
 
-  // Register Service Worker
+  const backgroundLandmarks = [
+    document.getElementById('site-header'),
+    document.getElementById('site-hero'),
+    document.getElementById('topics-bar'),
+    document.getElementById('secondary-filters-wrap'),
+    document.getElementById('agenda-main'),
+    document.getElementById('site-footer')
+  ].filter(Boolean);
+
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
       navigator.serviceWorker.register('./sw.js').catch(() => {});
     });
   }
 
-  // ==========================================================================
-  // THEME MANAGEMENT (Light / Dark / System)
-  // ==========================================================================
-  function getEffectiveTheme() {
-    const attr = document.documentElement.getAttribute('data-theme');
-    if (attr === 'dark' || attr === 'light') return attr;
-    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-  }
+  // Inline crisp SVG icons for cards & badges (replaces noisy emoji chrome)
+  const SVG_ICONS = {
+    pin: '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>',
+    repeat: '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="17 1 21 5 17 9"></polyline><path d="M3 11V9a4 4 0 0 1 4-4h14"></path><polyline points="7 23 3 19 7 15"></polyline><path d="M21 13v2a4 4 0 0 1-4 4H3"></path></svg>',
+    clock: '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>',
+    morning: '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v4M4.93 10.93l1.41 1.41M22 22H2M8 6l4-4 4 4M16 18a4 4 0 0 0-8 0"></path></svg>',
+    afternoon: '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M2 12h2M20 12h2"></path></svg>',
+    evening: '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>'
+  };
 
-  function syncThemeButton() {
-    const mode = getEffectiveTheme();
-    if (themeSwitchIcon) themeSwitchIcon.textContent = mode === 'dark' ? '☀' : '☾';
-    if (themeSwitchLabel) themeSwitchLabel.textContent = mode === 'dark' ? 'Parchment' : 'Nocturne';
-  }
-  syncThemeButton();
+  const PILLAR_LABELS = {
+    fungi: 'Fungi & Foraging',
+    watershed: 'Nature & Wildlife',
+    maker: 'Makers & Repair',
+    science: 'Science & Talks',
+    comedy: 'Comedy & Improv',
+    outdoors: 'Outdoors & Sports',
+    arts: 'Arts & Community'
+  };
 
-  if (themeSwitchBtn) {
-    themeSwitchBtn.addEventListener('click', () => {
-      const next = getEffectiveTheme() === 'dark' ? 'light' : 'dark';
-      document.documentElement.setAttribute('data-theme', next);
-      try { localStorage.setItem('sc-theme', next); } catch (_) {}
-      syncThemeButton();
-    });
-  }
-
-  // Update Masthead Live Date
-  const mastheadDateEl = document.getElementById('masthead-live-date');
-  if (mastheadDateEl) {
-    const dStr = initialNow.toLocaleDateString('en-US', {
-      weekday: 'short',
-      month: 'short',
-      day: 'numeric',
-      year: 'numeric'
-    }).toUpperCase();
-    mastheadDateEl.textContent = dStr;
-  }
-
-  // ==========================================================================
-  // MODERN WEB GUIDANCE: TOP-LAYER EXIT ANIMATION HELPER
-  // ==========================================================================
-  let _canTransitionDisplay;
+  // Top-Layer <dialog> Exit Animation Support (Modern Web Guidance: reliable display transition probe)
+  let _supportsExitAnim;
   function canTransitionDisplay() {
-    if (_canTransitionDisplay === undefined) {
-      const p = document.createElement('div');
-      p.style.cssText = 'transition: display 1s allow-discrete; display: none';
-      document.body.appendChild(p);
-      _canTransitionDisplay = getComputedStyle(p).transitionProperty === 'display';
-      p.remove();
-    }
-    return _canTransitionDisplay;
+    const probe = document.createElement('div');
+    probe.style.cssText = 'transition: display 1s allow-discrete !important; display: block;';
+    document.body.appendChild(probe);
+    probe.offsetWidth;
+    probe.style.display = 'none';
+    const supported = getComputedStyle(probe).display === 'block';
+    probe.remove();
+    return supported;
   }
 
-  function closeTopLayer(el) {
+  function supportsTopLayerExit() {
+    if (_supportsExitAnim === undefined) {
+      _supportsExitAnim = CSS.supports('overlay', 'auto') && canTransitionDisplay();
+    }
+    return _supportsExitAnim;
+  }
+
+  async function closeTopLayer(el) {
     if (!el || !el.open) return;
-    if (canTransitionDisplay()) {
+    if (supportsTopLayerExit()) {
       el.close();
       return;
     }
-    el.dataset.closing = '';
-    const done = () => {
-      delete el.dataset.closing;
-      if (el.open) el.close();
-    };
-    el.addEventListener('transitionend', (e) => {
-      if (e.target === el) done();
-    }, { once: true });
-    setTimeout(done, 260);
+    el.setAttribute('data-closing', '');
+    await Promise.race([
+      Promise.allSettled(el.getAnimations({ subtree: true }).map((a) => a.finished)),
+      new Promise((resolve) => setTimeout(resolve, 260))
+    ]);
+    el.removeAttribute('data-closing');
+    if (el.open) el.close();
   }
 
   function debounce(fn, ms) {
@@ -3278,48 +647,21 @@
     };
   }
 
-  // Classify each event into one of the 7 Priority Field Pillars
   function classifyEventPillar(ev) {
     const act = ((ev && ev.activityType) || '').toLowerCase();
     const org = ((ev && ev.organization) || '').toLowerCase();
     const title = ((ev && ev.title) || '').toLowerCase();
     const combined = `${act} ${org} ${title}`;
 
-    if (/(mycolog|mushroom|fungi|forag|lichen|psms|morel|chanterelle)/.test(combined)) {
-      return 'fungi';
-    }
-    if (/(comedy|improv|standup|stand-up|open[ _-]mic|sketch|humor|theatresports|comedysportz)/.test(combined)) {
-      return 'comedy';
-    }
-    if (/(tool[ _-]library|maker|woodwork|woodshop|blacksmith|repair[ _-]caf|fix-it|textile|craft|bike[ _-]works)/.test(combined)) {
-      return 'maker';
-    }
-    if (/(salmon|watershed|bird|audubon|botan|native[ _-]plant|arboretum|kubota|plantamnesty|stewardship|forest|park|garden|conservation|wildlife[ _-]tracking|ecology)/.test(combined)) {
-      return 'watershed';
-    }
-    if (/(astronom|science|microscop|soundbio|biology|robotic|coasst|lecture|tech|coding|python|ai|electronics|ham[ _-]radio)/.test(combined)) {
-      return 'science';
-    }
-    if (/(running|cycling|kayak|paddl|row|mountaineer|hiking|climbing|orienteer|soccer|pickleball|skating|fitness|yoga|outdoors|sailing|swimming)/.test(combined)) {
-      return 'outdoors';
-    }
+    if (/(mycolog|mushroom|fungi|forag|lichen|psms|morel|chanterelle)/.test(combined)) return 'fungi';
+    if (/(comedy|improv|standup|stand-up|open[ _-]mic|sketch|humor|theatresports|comedysportz)/.test(combined)) return 'comedy';
+    if (/(tool[ _-]library|maker|woodwork|woodshop|blacksmith|repair[ _-]caf|fix-it|textile|craft|bike[ _-]works)/.test(combined)) return 'maker';
+    if (/(salmon|watershed|bird|audubon|botan|native[ _-]plant|arboretum|kubota|plantamnesty|stewardship|forest|park|garden|conservation|wildlife[ _-]tracking|ecology)/.test(combined)) return 'watershed';
+    if (/(astronom|science|microscop|soundbio|biology|robotic|coasst|lecture|tech|coding|python|ai|electronics|ham[ _-]radio)/.test(combined)) return 'science';
+    if (/(running|cycling|kayak|paddl|row|mountaineer|hiking|climbing|orienteer|soccer|pickleball|skating|fitness|yoga|outdoors|sailing|swimming)/.test(combined)) return 'outdoors';
     return 'arts';
   }
 
-  const PILLAR_EMBLEMS = {
-    fungi: '🍄',
-    watershed: '🌿',
-    maker: '🛠️',
-    science: '🔭',
-    comedy: '🎭',
-    outdoors: '🚣',
-    arts: '🎨'
-  };
-
-  // Classify each event into a high-level Time of Day (Daypart):
-  // - 'morning': Before 12:00 PM (00:00 – 11:59)
-  // - 'afternoon': 12:00 PM – 4:59 PM (12:00 – 16:59)
-  // - 'evening': 5:00 PM & Night (17:00 – 23:59)
   function classifyEventDaypart(ev) {
     const startStr = (ev && ev.start) || '';
     const m = startStr.match(/T(\d{2}):(\d{2})/);
@@ -3344,9 +686,9 @@
   }
 
   const DAYPART_META = {
-    morning: { icon: '🌅', label: 'Morning', range: 'Before 12 PM', badge: 'Morning' },
-    afternoon: { icon: '☀️', label: 'Afternoon', range: '12–5 PM', badge: 'Afternoon' },
-    evening: { icon: '🌙', label: 'Evening & Night', range: '5 PM+', badge: 'Evening' }
+    morning: { label: 'Morning', range: 'Before 12 PM', badge: 'Morning' },
+    afternoon: { label: 'Afternoon', range: '12–5 PM', badge: 'Afternoon' },
+    evening: { label: 'Evening', range: '5 PM+', badge: 'Evening' }
   };
 
   function syncDaypartControls() {
@@ -3365,40 +707,26 @@
     if (typeof Temporal !== 'undefined' && Temporal.PlainDate) {
       try {
         return Temporal.PlainDate.from(dateStr).toLocaleString('en-US', {
-          weekday: 'long',
-          month: 'long',
-          day: 'numeric',
-          year: 'numeric'
+          weekday: 'long', month: 'long', day: 'numeric', year: 'numeric'
         });
       } catch (_) {}
     }
     const parts = dateStr.split('-');
     const d = new Date(parseInt(parts[0], 10), parseInt(parts[1], 10) - 1, parseInt(parts[2], 10));
-    return d.toLocaleDateString('en-US', {
-      weekday: 'long',
-      month: 'long',
-      day: 'numeric',
-      year: 'numeric'
-    });
+    return d.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' });
   }
 
   function formatDisplayDateShort(dateStr) {
     if (typeof Temporal !== 'undefined' && Temporal.PlainDate) {
       try {
         return Temporal.PlainDate.from(dateStr).toLocaleString('en-US', {
-          weekday: 'short',
-          month: 'short',
-          day: 'numeric'
+          weekday: 'short', month: 'short', day: 'numeric'
         });
       } catch (_) {}
     }
     const parts = dateStr.split('-');
     const d = new Date(parseInt(parts[0], 10), parseInt(parts[1], 10) - 1, parseInt(parts[2], 10));
-    return d.toLocaleDateString('en-US', {
-      weekday: 'short',
-      month: 'short',
-      day: 'numeric'
-    });
+    return d.toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' });
   }
 
   function updateUrlParam(key, value) {
@@ -3418,34 +746,25 @@
       const shortLabel = formatDisplayDateShort(selectedCustomDate);
       const fullLabel = formatDisplayDateFull(selectedCustomDate);
 
-      if (datePickerPill) {
-        datePickerPill.classList.add('active');
-        if (datePickerPillLabel) datePickerPillLabel.textContent = shortLabel;
-        datePickerPill.setAttribute('title', `Selected: ${fullLabel}. Click to change date.`);
-      }
-      if (datePillClearBtn) datePillClearBtn.style.display = 'inline-flex';
+      if (datePillGroup) datePillGroup.classList.add('active');
+      if (datePickerPill) datePickerPill.setAttribute('title', `Selected: ${fullLabel}. Click to change date.`);
+      if (datePickerPillLabel) datePickerPillLabel.textContent = shortLabel;
+      if (datePillClearBtn) datePillClearBtn.classList.remove('is-hidden');
 
-      if (filterDateTriggerBtn) {
-        filterDateTriggerBtn.classList.add('has-value');
-        if (filterDateLabel) filterDateLabel.textContent = shortLabel;
-      }
-      if (filterDateClearBtn) filterDateClearBtn.style.display = 'flex';
+      if (filterDateTriggerBtn) filterDateTriggerBtn.classList.add('has-value');
+      if (filterDateLabel) filterDateLabel.textContent = shortLabel;
+      if (filterDateClearBtn) filterDateClearBtn.classList.remove('is-hidden');
     } else {
-      if (datePickerPill) {
-        datePickerPill.classList.remove('active');
-        if (datePickerPillLabel) datePickerPillLabel.textContent = 'Pick a Date';
-        datePickerPill.setAttribute('title', 'Choose a specific date on the calendar');
-      }
-      if (datePillClearBtn) datePillClearBtn.style.display = 'none';
+      if (datePillGroup) datePillGroup.classList.remove('active');
+      if (datePickerPill) datePickerPill.setAttribute('title', 'Choose a specific date on the calendar');
+      if (datePickerPillLabel) datePickerPillLabel.textContent = 'Choose date';
+      if (datePillClearBtn) datePillClearBtn.classList.add('is-hidden');
 
-      if (filterDateTriggerBtn) {
-        filterDateTriggerBtn.classList.remove('has-value');
-        if (filterDateLabel) filterDateLabel.textContent = 'Pick a Date…';
-      }
-      if (filterDateClearBtn) filterDateClearBtn.style.display = 'none';
+      if (filterDateTriggerBtn) filterDateTriggerBtn.classList.remove('has-value');
+      if (filterDateLabel) filterDateLabel.textContent = 'Pick date…';
+      if (filterDateClearBtn) filterDateClearBtn.classList.add('is-hidden');
     }
 
-    // Sync 7-day horizon strip active state
     if (weekHorizonGrid) {
       weekHorizonGrid.querySelectorAll('.horizon-day-btn').forEach(btn => {
         btn.classList.toggle('is-active', !!selectedCustomDate && btn.getAttribute('data-date') === selectedCustomDate);
@@ -3469,32 +788,29 @@
     }
 
     syncDateTriggerLabels();
-
-    timePills.forEach(p => {
-      if (p.id !== 'date-picker-pill') p.classList.remove('active');
-    });
+    if (timePillsRow) {
+      timePillsRow.querySelectorAll('.time-pill').forEach(p => p.classList.remove('active'));
+    }
 
     updateUrlParam('date', dateVal);
     renderAgenda();
-    if (calendarDialog && calendarDialog.open) {
-      renderCalendarMonth();
-    }
+    if (calendarDialog && calendarDialog.open) renderCalendarMonth();
   }
 
   function clearCustomDate() {
     selectedCustomDate = '';
     syncDateTriggerLabels();
-
     activeTimeframe = 'all';
-    timePills.forEach(p => p.classList.remove('active'));
-    const allPill = document.querySelector('.time-pill[data-timeframe="all"]');
-    if (allPill) allPill.classList.add('active');
+
+    if (timePillsRow) {
+      timePillsRow.querySelectorAll('.time-pill').forEach(p => {
+        p.classList.toggle('active', p.getAttribute('data-timeframe') === 'all');
+      });
+    }
 
     updateUrlParam('date', null);
     renderAgenda();
-    if (calendarDialog && calendarDialog.open) {
-      renderCalendarMonth();
-    }
+    if (calendarDialog && calendarDialog.open) renderCalendarMonth();
   }
 
   function getEventCountsByDate() {
@@ -3574,6 +890,14 @@
     if (!weekHorizonGrid) return;
     const counts = getEventCountsByDate();
     const now = new Date();
+    const endDate = new Date(now);
+    endDate.setDate(now.getDate() + 6);
+    if (weekHorizonRange) {
+      const startLbl = now.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+      const endLbl = endDate.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+      weekHorizonRange.textContent = `${startLbl} – ${endLbl}`;
+    }
+
     const dows = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
     let html = '';
 
@@ -3585,7 +909,7 @@
       const isSelected = selectedCustomDate === dStr;
       const dow = i === 0 ? 'Today' : dows[d.getDay()];
       html += `
-        <button type="button" class="horizon-day-btn ${isSelected ? 'is-active' : ''}" data-date="${dStr}" title="${formatDisplayDateFull(dStr)} (${cnt} events)">
+        <button type="button" class="horizon-day-btn ${isSelected ? 'is-active' : ''}" data-date="${dStr}" aria-pressed="${isSelected ? 'true' : 'false'}" title="${escapeHtml(formatDisplayDateFull(dStr))} (${cnt} event${cnt === 1 ? '' : 's'})">
           <span class="horizon-day-dow">${dow}</span>
           <span class="horizon-day-num">${d.getDate()}</span>
           <span class="horizon-day-cnt">${cnt}</span>
@@ -3603,9 +927,7 @@
     const now = new Date();
     const isCurrentOrPastMonth = (calViewYear < now.getFullYear()) ||
       (calViewYear === now.getFullYear() && calViewMonth <= now.getMonth());
-    if (calPrevMonthBtn) {
-      calPrevMonthBtn.disabled = isCurrentOrPastMonth;
-    }
+    if (calPrevMonthBtn) calPrevMonthBtn.disabled = isCurrentOrPastMonth;
 
     const monthNames = [
       'January', 'February', 'March', 'April', 'May', 'June',
@@ -3618,9 +940,7 @@
     const monthPrefix = `${calViewYear}-${String(calViewMonth + 1).padStart(2, '0')}`;
     let monthTotalEvents = 0;
     Object.keys(counts).forEach(dStr => {
-      if (dStr.startsWith(monthPrefix)) {
-        monthTotalEvents += counts[dStr];
-      }
+      if (dStr.startsWith(monthPrefix)) monthTotalEvents += counts[dStr];
     });
     if (calMonthEventPill) {
       calMonthEventPill.textContent = `${monthTotalEvents} event${monthTotalEvents === 1 ? '' : 's'}`;
@@ -3637,7 +957,6 @@
     const startWeekday = firstDayOfMonth.getDay();
     const daysInMonth = new Date(calViewYear, calViewMonth + 1, 0).getDate();
     const daysInPrevMonth = new Date(calViewYear, calViewMonth, 0).getDate();
-
     const totalCells = Math.ceil((startWeekday + daysInMonth) / 7) * 7;
     let cellsHtml = '';
 
@@ -3651,18 +970,12 @@
         isOutside = true;
         dayNum = daysInPrevMonth - startWeekday + 1 + i;
         cellMonth = calViewMonth - 1;
-        if (cellMonth < 0) {
-          cellMonth = 11;
-          cellYear = calViewYear - 1;
-        }
+        if (cellMonth < 0) { cellMonth = 11; cellYear = calViewYear - 1; }
       } else if (i >= startWeekday + daysInMonth) {
         isOutside = true;
         dayNum = i - (startWeekday + daysInMonth) + 1;
         cellMonth = calViewMonth + 1;
-        if (cellMonth > 11) {
-          cellMonth = 0;
-          cellYear = calViewYear + 1;
-        }
+        if (cellMonth > 11) { cellMonth = 0; cellYear = calViewYear + 1; }
       } else {
         dayNum = i - startWeekday + 1;
       }
@@ -3678,11 +991,8 @@
       if (isPast) classes.push('is-past');
       if (isToday) classes.push('is-today');
       if (isSelected) classes.push('is-selected');
-      if (evCount === 0) {
-        classes.push('no-events');
-      } else if (evCount >= 10) {
-        classes.push('has-many-events');
-      }
+      if (evCount === 0) classes.push('no-events');
+      else if (evCount >= 10) classes.push('has-many-events');
 
       const ariaLabel = `${formatDisplayDateFull(dateStr)}, ${evCount} event${evCount === 1 ? '' : 's'}`;
       cellsHtml += `
@@ -3700,11 +1010,11 @@
         const c = counts[selectedCustomDate] || 0;
         calFooterStatus.innerHTML = `Selected: <strong>${escapeHtml(formatDisplayDateShort(selectedCustomDate))}</strong> (${c} event${c === 1 ? '' : 's'})`;
       } else {
-        calFooterStatus.textContent = 'Click any date to filter events';
+        calFooterStatus.textContent = 'Select a date to filter events';
       }
     }
     if (calModalClearBtn) {
-      calModalClearBtn.style.display = selectedCustomDate ? 'inline-flex' : 'none';
+      calModalClearBtn.classList.toggle('is-hidden', !selectedCustomDate);
     }
   }
 
@@ -3722,18 +1032,13 @@
       calViewMonth = now.getMonth();
     }
     renderCalendarMonth();
-    if (!calendarDialog.open) {
-      calendarDialog.showModal();
-    }
+    if (!calendarDialog.open) calendarDialog.showModal();
   }
 
   function closeCalendarDialog() {
-    if (calendarDialog && calendarDialog.open) {
-      closeTopLayer(calendarDialog);
-    }
+    closeTopLayer(calendarDialog);
   }
 
-  // Load events data
   const loadEventsData = () => {
     return fetch('./events.min.json')
       .then(res => {
@@ -3742,7 +1047,7 @@
       })
       .catch(() => {
         return fetch('./events.json').then(res => {
-          if (!res.ok) throw new Error('Network response was not ok');
+          if (!res.ok) throw new Error('Unable to load events');
           return res.json();
         });
       });
@@ -3766,38 +1071,56 @@
     })
     .catch(err => {
       console.error('Failed to load events data:', err);
-      agendaList.innerHTML = '<div style="padding:40px; text-align:center; color:var(--terracotta); font-weight:600;">Unable to load calendar events. Please ensure events.json exists.</div>';
+      agendaList.innerHTML = '<div class="status-bar"><span class="error-msg">Unable to load events right now. Please try again later.</span></div>';
     });
 
+  function renderDynamicMonthPills() {
+    if (!timePillsRow || !datePillGroup) return;
+    const now = new Date();
+    const currentYear = now.getFullYear();
+    const currentMonthPrefix = `${currentYear}-${String(now.getMonth() + 1).padStart(2, '0')}`;
+    const months = Array.from(new Set(
+      allEvents.map(e => (e.dateString || '').slice(0, 7)).filter(ym => ym && ym >= currentMonthPrefix)
+    )).sort().slice(0, 3);
+
+    months.forEach(ym => {
+      const [yStr, mStr] = ym.split('-');
+      const d = new Date(parseInt(yStr, 10), parseInt(mStr, 10) - 1, 1);
+      const shortMonth = d.toLocaleDateString('en-US', { month: 'short' });
+      const label = parseInt(yStr, 10) !== currentYear ? `${shortMonth} '${yStr.slice(2)}` : shortMonth;
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'time-pill';
+      btn.setAttribute('data-timeframe', `month:${ym}`);
+      btn.textContent = label;
+      timePillsRow.insertBefore(btn, datePillGroup);
+    });
+  }
+
   function initCalendar() {
+    const now = new Date();
     const todayPill = document.querySelector('.time-pill[data-timeframe="today"]');
     if (todayPill) {
-      const now = new Date();
-      const mName = now.toLocaleDateString('en-US', { month: 'short' });
-      const dNum = now.getDate();
-      todayPill.textContent = `Today (${mName} ${dNum})`;
+      todayPill.textContent = `Today (${now.toLocaleDateString('en-US', { month: 'short' })} ${now.getDate()})`;
     }
     const tomorrowPill = document.querySelector('.time-pill[data-timeframe="tomorrow"]');
     if (tomorrowPill) {
-      const tom = new Date();
+      const tom = new Date(now);
       tom.setDate(tom.getDate() + 1);
-      const mName = tom.toLocaleDateString('en-US', { month: 'short' });
-      const dNum = tom.getDate();
-      tomorrowPill.textContent = `Tomorrow (${mName} ${dNum})`;
+      tomorrowPill.textContent = `Tomorrow (${tom.toLocaleDateString('en-US', { month: 'short' })} ${tom.getDate()})`;
     }
+
+    renderDynamicMonthPills();
 
     const total = allEvents.length;
     const uniqueGroups = new Set(allEvents.map(e => e.organization)).size;
     const categories = new Set(allEvents.map(e => e.activityType));
     const areas = new Set(allEvents.map(e => e.area));
 
-    heroEventCount.textContent = total;
-    statTotalEvents.textContent = total;
-    statUniqueGroups.textContent = uniqueGroups;
-    statCategories.textContent = categories.size;
-    totalCountEl.textContent = total;
+    statTotalEvents.textContent = total.toLocaleString('en-US');
+    statUniqueGroups.textContent = uniqueGroups.toLocaleString('en-US');
+    statCategories.textContent = categories.size.toLocaleString('en-US');
 
-    // Populate Pillar Counts
     const pCounts = { all: total, fungi: 0, watershed: 0, maker: 0, science: 0, comedy: 0, outdoors: 0, arts: 0 };
     allEvents.forEach(e => {
       if (pCounts[e._pillar] !== undefined) pCounts[e._pillar]++;
@@ -3807,7 +1130,6 @@
       if (badge) badge.textContent = pCounts[k];
     });
 
-    // Populate Selects
     Array.from(categories).sort().forEach(cat => {
       const opt = document.createElement('option');
       opt.value = cat;
@@ -3832,42 +1154,31 @@
 
     renderWeekHorizonStrip();
 
-    // Listeners
     const debouncedRender = debounce(() => {
       renderWeekHorizonStrip();
       renderAgenda();
     }, 100);
 
     searchInput.addEventListener('input', () => {
-      clearSearchBtn.style.display = searchInput.value ? 'inline-flex' : 'none';
+      clearSearchBtn.classList.toggle('is-hidden', !searchInput.value);
       debouncedRender();
     });
 
     clearSearchBtn.addEventListener('click', () => {
       searchInput.value = '';
-      clearSearchBtn.style.display = 'none';
+      clearSearchBtn.classList.add('is-hidden');
       searchInput.focus();
       renderWeekHorizonStrip();
       renderAgenda();
     });
 
-    categoryFilter.addEventListener('change', () => {
-      renderWeekHorizonStrip();
-      renderAgenda();
-    });
-    if (orgFilter) orgFilter.addEventListener('change', () => {
-      renderWeekHorizonStrip();
-      renderAgenda();
-    });
-    areaFilter.addEventListener('change', () => {
-      renderWeekHorizonStrip();
-      renderAgenda();
-    });
+    categoryFilter.addEventListener('change', () => { renderWeekHorizonStrip(); renderAgenda(); });
+    if (orgFilter) orgFilter.addEventListener('change', () => { renderWeekHorizonStrip(); renderAgenda(); });
+    areaFilter.addEventListener('change', () => { renderWeekHorizonStrip(); renderAgenda(); });
 
     resetBtn.addEventListener('click', resetFilters);
     emptyResetBtn.addEventListener('click', resetFilters);
 
-    // Priority Pillar Cards Click Handler
     if (pillarsStrip) {
       pillarsStrip.addEventListener('click', (e) => {
         const card = e.target.closest('.pillar-card-btn');
@@ -3882,21 +1193,16 @@
       });
     }
 
-    // 7-Day Horizon Strip Click Handler
     if (weekHorizonGrid) {
       weekHorizonGrid.addEventListener('click', (e) => {
         const btn = e.target.closest('.horizon-day-btn');
         if (!btn) return;
         const dStr = btn.getAttribute('data-date');
-        if (selectedCustomDate === dStr) {
-          clearCustomDate();
-        } else {
-          applyCustomDate(dStr);
-        }
+        if (selectedCustomDate === dStr) clearCustomDate();
+        else applyCustomDate(dStr);
       });
     }
 
-    // View Mode Switcher (Ledger vs Grid)
     if (viewLedgerBtn && viewGridBtn) {
       viewLedgerBtn.addEventListener('click', () => {
         currentViewMode = 'ledger';
@@ -3912,47 +1218,31 @@
       });
     }
 
+    // Delegated listener for ICS downloads (no inline onclick)
+    agendaList.addEventListener('click', (e) => {
+      const btn = e.target.closest('[data-download-ics]');
+      if (!btn) return;
+      downloadIcs(btn.getAttribute('data-download-ics'));
+    });
+
     // Calendar Picker Triggers
-    if (navJumpDateBtn) {
-      navJumpDateBtn.addEventListener('click', openCalendarDialog);
-    }
-    if (datePickerPill) {
-      datePickerPill.addEventListener('click', (e) => {
-        if (e.target.closest('#date-pill-clear-btn')) {
-          e.preventDefault();
-          e.stopPropagation();
-          clearCustomDate();
-          return;
-        }
-        openCalendarDialog();
-      });
-    }
+    if (navJumpDateBtn) navJumpDateBtn.addEventListener('click', openCalendarDialog);
+    if (datePickerPill) datePickerPill.addEventListener('click', openCalendarDialog);
     if (datePillClearBtn) {
       datePillClearBtn.addEventListener('click', (e) => {
         e.preventDefault();
-        e.stopPropagation();
         clearCustomDate();
       });
-      datePillClearBtn.addEventListener('keydown', (e) => {
-        if (e.key === 'Enter' || e.key === ' ') {
-          e.preventDefault();
-          e.stopPropagation();
-          clearCustomDate();
-        }
-      });
     }
-    if (filterDateTriggerBtn) {
-      filterDateTriggerBtn.addEventListener('click', openCalendarDialog);
-    }
+    if (filterDateTriggerBtn) filterDateTriggerBtn.addEventListener('click', openCalendarDialog);
     if (filterDateClearBtn) {
       filterDateClearBtn.addEventListener('click', (e) => {
         e.preventDefault();
-        e.stopPropagation();
         clearCustomDate();
       });
     }
 
-    // Calendar Dialog Controls
+    // Calendar Dialog Controls & Top-Layer Cancel
     if (calCloseBtn) calCloseBtn.addEventListener('click', closeCalendarDialog);
     if (calModalDoneBtn) calModalDoneBtn.addEventListener('click', closeCalendarDialog);
     if (calModalClearBtn) {
@@ -3961,36 +1251,46 @@
         closeCalendarDialog();
       });
     }
+    if (calendarDialog) {
+      calendarDialog.addEventListener('cancel', (e) => {
+        e.preventDefault();
+        closeTopLayer(calendarDialog);
+      });
+      if (!('closedBy' in HTMLDialogElement.prototype)) {
+        let pointerDownOutside = false;
+        const isOutside = (e) => {
+          const r = calendarDialog.getBoundingClientRect();
+          return e.clientX < r.left || e.clientX > r.right || e.clientY < r.top || e.clientY > r.bottom;
+        };
+        calendarDialog.addEventListener('pointerdown', (e) => { pointerDownOutside = isOutside(e); });
+        calendarDialog.addEventListener('pointerup', (e) => {
+          if (pointerDownOutside && isOutside(e)) closeTopLayer(calendarDialog);
+          pointerDownOutside = false;
+        });
+      }
+    }
 
     if (calPrevMonthBtn) {
       calPrevMonthBtn.addEventListener('click', () => {
-        const now = new Date();
-        if (calViewYear < now.getFullYear() || (calViewYear === now.getFullYear() && calViewMonth <= now.getMonth())) {
-          return;
-        }
+        const nowCheck = new Date();
+        if (calViewYear < nowCheck.getFullYear() || (calViewYear === nowCheck.getFullYear() && calViewMonth <= nowCheck.getMonth())) return;
         calViewMonth--;
-        if (calViewMonth < 0) {
-          calViewMonth = 11;
-          calViewYear--;
-        }
+        if (calViewMonth < 0) { calViewMonth = 11; calViewYear--; }
         renderCalendarMonth();
       });
     }
     if (calNextMonthBtn) {
       calNextMonthBtn.addEventListener('click', () => {
         calViewMonth++;
-        if (calViewMonth > 11) {
-          calViewMonth = 0;
-          calViewYear++;
-        }
+        if (calViewMonth > 11) { calViewMonth = 0; calViewYear++; }
         renderCalendarMonth();
       });
     }
     if (calJumpTodayBtn) {
       calJumpTodayBtn.addEventListener('click', () => {
-        const now = new Date();
-        calViewYear = now.getFullYear();
-        calViewMonth = now.getMonth();
+        const nowJump = new Date();
+        calViewYear = nowJump.getFullYear();
+        calViewMonth = nowJump.getMonth();
         renderCalendarMonth();
       });
     }
@@ -4018,24 +1318,6 @@
       });
     }
 
-    // Modern Web Guidance: Pointer-position light-dismiss fallback for browsers without native closedBy
-    if (calendarDialog && !('closedBy' in HTMLDialogElement.prototype)) {
-      let pointerDownOutside = false;
-      const isOutside = (e) => {
-        const r = calendarDialog.getBoundingClientRect();
-        return e.clientX < r.left || e.clientX > r.right || e.clientY < r.top || e.clientY > r.bottom;
-      };
-      calendarDialog.addEventListener('pointerdown', (e) => {
-        pointerDownOutside = isOutside(e);
-      });
-      calendarDialog.addEventListener('pointerup', (e) => {
-        if (pointerDownOutside && isOutside(e)) {
-          closeTopLayer(calendarDialog);
-        }
-        pointerDownOutside = false;
-      });
-    }
-
     // Mobile Drawer Triggers
     if (filterToggleBtn) filterToggleBtn.addEventListener('click', openFilterDrawer);
     if (drawerCloseBtn) drawerCloseBtn.addEventListener('click', closeFilterDrawer);
@@ -4051,7 +1333,7 @@
         closeFilterDrawer();
         const agendaEl = document.getElementById('agenda-main');
         if (agendaEl) {
-          const top = agendaEl.getBoundingClientRect().top + window.pageYOffset - 110;
+          const top = agendaEl.getBoundingClientRect().top + window.scrollY - 96;
           window.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
         }
       });
@@ -4059,30 +1341,26 @@
 
     window.addEventListener('keydown', (e) => {
       if (e.key === 'Escape' && filterDropdownsGroup && filterDropdownsGroup.classList.contains('is-open')) {
-        if (!calendarDialog || !calendarDialog.open) {
-          closeFilterDrawer();
-        }
+        if (!calendarDialog || !calendarDialog.open) closeFilterDrawer();
       }
     });
 
-    timePills.forEach(pill => {
-      pill.addEventListener('click', () => {
-        if (pill.id === 'date-picker-pill') return;
-
+    if (timePillsRow) {
+      timePillsRow.addEventListener('click', (e) => {
+        const pill = e.target.closest('.time-pill');
+        if (!pill) return;
         if (selectedCustomDate) {
           selectedCustomDate = '';
           syncDateTriggerLabels();
           updateUrlParam('date', null);
         }
-
-        timePills.forEach(p => p.classList.remove('active'));
+        timePillsRow.querySelectorAll('.time-pill').forEach(p => p.classList.remove('active'));
         pill.classList.add('active');
         activeTimeframe = pill.getAttribute('data-timeframe');
         renderAgenda();
       });
-    });
+    }
 
-    // High-Level Time-of-Day (Daypart) Filter Listeners
     daypartPills.forEach(btn => {
       btn.addEventListener('click', () => {
         const dp = btn.getAttribute('data-daypart') || 'all';
@@ -4091,9 +1369,7 @@
         updateUrlParam('time', activeDaypart === 'all' ? null : activeDaypart);
         renderWeekHorizonStrip();
         renderAgenda();
-        if (calendarDialog && calendarDialog.open) {
-          renderCalendarMonth();
-        }
+        if (calendarDialog && calendarDialog.open) renderCalendarMonth();
       });
     });
 
@@ -4104,9 +1380,35 @@
         updateUrlParam('time', activeDaypart === 'all' ? null : activeDaypart);
         renderWeekHorizonStrip();
         renderAgenda();
-        if (calendarDialog && calendarDialog.open) {
-          renderCalendarMonth();
+        if (calendarDialog && calendarDialog.open) renderCalendarMonth();
+      });
+    }
+
+    // Delegated listener for active-filter chip dismissal
+    if (activeFilterChips) {
+      activeFilterChips.addEventListener('click', (e) => {
+        const btn = e.target.closest('button[data-clear]');
+        if (!btn) return;
+        const target = btn.getAttribute('data-clear');
+        if (target === 'pillar') {
+          activePillar = 'all';
+          if (pillarsStrip) {
+            pillarsStrip.querySelectorAll('.pillar-card-btn').forEach(b => {
+              b.classList.toggle('active', b.getAttribute('data-pillar-filter') === 'all');
+            });
+          }
         }
+        if (target === 'daypart') {
+          activeDaypart = 'all';
+          syncDaypartControls();
+          updateUrlParam('time', null);
+        }
+        if (target === 'date') { clearCustomDate(); return; }
+        if (target === 'cat') categoryFilter.value = '';
+        if (target === 'org' && orgFilter) orgFilter.value = '';
+        if (target === 'area') areaFilter.value = '';
+        renderWeekHorizonStrip();
+        renderAgenda();
       });
     }
 
@@ -4114,7 +1416,7 @@
     const initialQuery = urlParams.get('q');
     if (initialQuery && searchInput) {
       searchInput.value = initialQuery;
-      clearSearchBtn.style.display = 'inline-flex';
+      clearSearchBtn.classList.remove('is-hidden');
     }
     const rawTimeParam = (urlParams.get('time') || urlParams.get('daypart') || '').toLowerCase();
     if (rawTimeParam === 'morning' || rawTimeParam === 'afternoon' || rawTimeParam === 'evening' || rawTimeParam === 'night') {
@@ -4135,20 +1437,25 @@
     filterDropdownsGroup.classList.add('is-open');
     if (filterDrawerBackdrop) filterDrawerBackdrop.classList.add('is-open');
     if (filterToggleBtn) filterToggleBtn.setAttribute('aria-expanded', 'true');
-    document.body.style.overflow = 'hidden';
+    backgroundLandmarks.forEach(el => { el.inert = true; });
+    if (drawerCloseBtn) drawerCloseBtn.focus();
   }
 
   function closeFilterDrawer() {
     if (!filterDropdownsGroup) return;
+    const wasOpen = filterDropdownsGroup.classList.contains('is-open');
     filterDropdownsGroup.classList.remove('is-open');
     if (filterDrawerBackdrop) filterDrawerBackdrop.classList.remove('is-open');
     if (filterToggleBtn) filterToggleBtn.setAttribute('aria-expanded', 'false');
-    document.body.style.overflow = '';
+    backgroundLandmarks.forEach(el => { el.inert = false; });
+    if (wasOpen && filterToggleBtn && getComputedStyle(filterToggleBtn).display !== 'none') {
+      filterToggleBtn.focus();
+    }
   }
 
   function escapeHtml(str) {
     if (!str) return '';
-    return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+    return String(str).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
   }
 
   function updateMobileFilterStatus(selCat, selOrg, selArea, countVisible) {
@@ -4163,19 +1470,13 @@
     if (filterBadge) {
       if (count > 0) {
         filterBadge.textContent = count;
-        filterBadge.style.display = 'inline-flex';
+        filterBadge.classList.remove('is-hidden');
       } else {
-        filterBadge.style.display = 'none';
+        filterBadge.classList.add('is-hidden');
       }
     }
-
-    if (filterToggleBtn) {
-      filterToggleBtn.classList.toggle('has-filters', count > 0);
-    }
-
-    if (drawerApplyCount) {
-      drawerApplyCount.textContent = countVisible;
-    }
+    if (filterToggleBtn) filterToggleBtn.classList.toggle('has-filters', count > 0);
+    if (drawerApplyCount) drawerApplyCount.textContent = countVisible;
 
     if (activeFilterChips) {
       if (count === 0) {
@@ -4184,59 +1485,33 @@
       } else {
         let chipsHtml = '';
         if (activePillar !== 'all') {
-          chipsHtml += `<span class="active-chip">${PILLAR_EMBLEMS[activePillar] || '🧭'} Pillar: ${escapeHtml(activePillar.toUpperCase())} <button type="button" data-clear="pillar" aria-label="Clear pillar filter">✕</button></span>`;
+          chipsHtml += `<span class="active-chip">Topic: ${escapeHtml(PILLAR_LABELS[activePillar] || activePillar)} <button type="button" data-clear="pillar" aria-label="Clear topic filter">✕</button></span>`;
         }
         if (activeDaypart !== 'all' && DAYPART_META[activeDaypart]) {
           const dpMeta = DAYPART_META[activeDaypart];
-          chipsHtml += `<span class="active-chip">${dpMeta.icon} Time: ${escapeHtml(dpMeta.label)} (${escapeHtml(dpMeta.range)}) <button type="button" data-clear="daypart" aria-label="Clear time of day filter">✕</button></span>`;
+          chipsHtml += `<span class="active-chip">Time: ${escapeHtml(dpMeta.label)} (${escapeHtml(dpMeta.range)}) <button type="button" data-clear="daypart" aria-label="Clear time of day filter">✕</button></span>`;
         }
         if (selectedCustomDate) {
-          const shortDate = formatDisplayDateShort(selectedCustomDate);
-          chipsHtml += `<span class="active-chip">📅 ${escapeHtml(shortDate)} <button type="button" data-clear="date" aria-label="Clear date filter">✕</button></span>`;
+          chipsHtml += `<span class="active-chip">Date: ${escapeHtml(formatDisplayDateShort(selectedCustomDate))} <button type="button" data-clear="date" aria-label="Clear date filter">✕</button></span>`;
         }
         if (selCat) {
           chipsHtml += `<span class="active-chip">Category: ${escapeHtml(selCat)} <button type="button" data-clear="cat" aria-label="Clear category filter">✕</button></span>`;
         }
         if (selOrg) {
-          chipsHtml += `<span class="active-chip">Host: ${escapeHtml(selOrg)} <button type="button" data-clear="org" aria-label="Clear organization filter">✕</button></span>`;
+          chipsHtml += `<span class="active-chip">Org: ${escapeHtml(selOrg)} <button type="button" data-clear="org" aria-label="Clear organization filter">✕</button></span>`;
         }
         if (selArea) {
           chipsHtml += `<span class="active-chip">Area: ${escapeHtml(selArea)} <button type="button" data-clear="area" aria-label="Clear area filter">✕</button></span>`;
         }
         activeFilterChips.innerHTML = chipsHtml;
         activeFilterChips.classList.add('has-chips');
-
-        activeFilterChips.querySelectorAll('button[data-clear]').forEach(btn => {
-          btn.addEventListener('click', (e) => {
-            const target = e.currentTarget.getAttribute('data-clear');
-            if (target === 'pillar') {
-              activePillar = 'all';
-              if (pillarsStrip) {
-                pillarsStrip.querySelectorAll('.pillar-card-btn').forEach(b => {
-                  b.classList.toggle('active', b.getAttribute('data-pillar-filter') === 'all');
-                });
-              }
-            }
-            if (target === 'daypart') {
-              activeDaypart = 'all';
-              syncDaypartControls();
-              updateUrlParam('time', null);
-            }
-            if (target === 'date') clearCustomDate();
-            if (target === 'cat') categoryFilter.value = '';
-            if (target === 'org' && orgFilter) orgFilter.value = '';
-            if (target === 'area') areaFilter.value = '';
-            renderWeekHorizonStrip();
-            renderAgenda();
-          });
-        });
       }
     }
   }
 
   function resetFilters() {
     searchInput.value = '';
-    clearSearchBtn.style.display = 'none';
+    clearSearchBtn.classList.add('is-hidden');
     categoryFilter.value = '';
     if (orgFilter) orgFilter.value = '';
     areaFilter.value = '';
@@ -4255,9 +1530,12 @@
     syncDateTriggerLabels();
 
     activeTimeframe = 'all';
-    timePills.forEach(p => p.classList.remove('active'));
-    const allPill = document.querySelector('.time-pill[data-timeframe="all"]');
-    if (allPill) allPill.classList.add('active');
+    if (timePillsRow) {
+      timePillsRow.querySelectorAll('.time-pill').forEach(p => {
+        p.classList.toggle('active', p.getAttribute('data-timeframe') === 'all');
+      });
+    }
+
     updateUrlParam('date', null);
     updateUrlParam('time', null);
     updateUrlParam('q', null);
@@ -4299,15 +1577,9 @@
     const thisWeekendSunStr = getLocalDateStr(sun);
 
     const nextMon = new Date(now);
-    if (dayOfWeek === 0) {
-      nextMon.setDate(now.getDate() + 1);
-    } else {
-      nextMon.setDate(now.getDate() + (8 - dayOfWeek));
-    }
+    nextMon.setDate(now.getDate() + (dayOfWeek === 0 ? 1 : 8 - dayOfWeek));
     const nextSun = new Date(nextMon);
     nextSun.setDate(nextMon.getDate() + 6);
-    const nextWeekStartStr = getLocalDateStr(nextMon);
-    const nextWeekEndStr = getLocalDateStr(nextSun);
 
     return {
       todayStr,
@@ -4315,8 +1587,8 @@
       endThisWeekStr,
       thisWeekendSatStr,
       thisWeekendSunStr,
-      nextWeekStartStr,
-      nextWeekEndStr
+      nextWeekStartStr: getLocalDateStr(nextMon),
+      nextWeekEndStr: getLocalDateStr(nextSun)
     };
   }
 
@@ -4324,13 +1596,8 @@
 
   function getRelativeDayLabel(dateStr, bounds) {
     const {
-      todayStr,
-      tomorrowStr,
-      endThisWeekStr,
-      thisWeekendSatStr,
-      thisWeekendSunStr,
-      nextWeekStartStr,
-      nextWeekEndStr
+      todayStr, tomorrowStr, endThisWeekStr,
+      thisWeekendSatStr, thisWeekendSunStr, nextWeekStartStr, nextWeekEndStr
     } = bounds || getCalendarDateBounds();
 
     if (dateStr === todayStr) return 'Today';
@@ -4342,9 +1609,7 @@
     const parts = dateStr.split('-');
     const monthIndex = parseInt(parts[1], 10) - 1;
     const monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-    if (monthNames[monthIndex]) return monthNames[monthIndex];
-
-    return 'Upcoming';
+    return monthNames[monthIndex] || 'Upcoming';
   }
 
   function formatDayHeader(dateStr) {
@@ -4357,19 +1622,13 @@
     const parts = dateStr.split('-');
     const mIdx = parseInt(parts[1], 10) - 1;
     const shortMonths = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];
-    return {
-      month: shortMonths[mIdx] || 'CAL',
-      day: parts[2] || '01'
-    };
+    return { month: shortMonths[mIdx] || 'CAL', day: parts[2] || '01' };
   }
 
   function getCachedDayMeta(dateStr) {
     let meta = dateHeaderCache[dateStr];
     if (!meta) {
-      meta = {
-        headerDate: escapeHtml(formatDayHeader(dateStr)),
-        tile: getDayTileParts(dateStr)
-      };
+      meta = { headerDate: escapeHtml(formatDayHeader(dateStr)), tile: getDayTileParts(dateStr) };
       dateHeaderCache[dateStr] = meta;
     }
     return meta;
@@ -4380,26 +1639,21 @@
     const diffMs = new Date(endIso) - new Date(startIso);
     const diffHours = diffMs / (1000 * 60 * 60);
     if (diffHours >= 1) {
-      return diffHours % 1 === 0 ? `${diffHours} hrs` : `${diffHours.toFixed(1)} hrs`;
+      return diffHours % 1 === 0 ? `${diffHours} hr${diffHours > 1 ? 's' : ''}` : `${diffHours.toFixed(1)} hrs`;
     }
     const diffMins = Math.round(diffMs / (1000 * 60));
-    return `${diffMins} mins`;
+    return `${diffMins} min`;
   }
 
   function makeGoogleCalendarUrl(event) {
-    const formatGCalTime = (isoStr) => {
-      const d = new Date(isoStr);
-      return d.toISOString().replace(/-|:|\.\d+/g, '');
-    };
+    const formatGCalTime = (isoStr) => new Date(isoStr).toISOString().replace(/-|:|\.\d+/g, '');
     const startStr = formatGCalTime(event.start);
     const endStr = formatGCalTime(event.end || event.start);
-
     const base = 'https://calendar.google.com/calendar/render?action=TEMPLATE';
     const text = encodeURIComponent(event.title);
     const dates = `${startStr}/${endStr}`;
-    const details = encodeURIComponent(`${event.description}\n\nHost: ${event.organization}\nEvent Link: ${event.url}`);
+    const details = encodeURIComponent(`${event.description}\n\nHost: ${event.organization}\nLink: ${event.url}`);
     const location = encodeURIComponent(`${event.venue}, ${event.area}`);
-
     return `${base}&text=${text}&dates=${dates}&details=${details}&location=${location}`;
   }
 
@@ -4407,80 +1661,76 @@
     const duration = calculateDuration(ev.start, ev.end);
     const gcalUrl = makeGoogleCalendarUrl(ev);
     const pillar = ev._pillar || classifyEventPillar(ev);
-    const emblem = PILLAR_EMBLEMS[pillar] || '🌲';
     const daypart = ev._daypart || classifyEventDaypart(ev);
     const dpInfo = DAYPART_META[daypart] || DAYPART_META.afternoon;
 
     return `
-          <article class="event-card" data-pillar="${pillar}">
-            <div class="event-card-inner">
-              <!-- Time & Cost Stamp Column -->
-              <div class="event-time-col">
-                <div class="event-time">${escapeHtml(ev.timeString)}</div>
-                <div class="event-meta-pills">
-                  <span class="event-daypart-pill" data-daypart="${daypart}" title="${escapeHtml(dpInfo.label)} (${escapeHtml(dpInfo.range)})"><span aria-hidden="true">${dpInfo.icon}</span> ${escapeHtml(dpInfo.badge)}</span>
-                  ${duration ? `<span class="event-duration">⏱ ${escapeHtml(duration)}</span>` : ''}
-                  ${ev.cost ? `<span class="event-cost-pill">${escapeHtml(ev.cost)}</span>` : ''}
-                </div>
-              </div>
+      <article class="event-card" data-pillar="${pillar}">
+        <div class="event-card-inner">
+          <div class="event-time-col">
+            <div class="event-time">${escapeHtml(ev.timeString)}</div>
+            <div class="event-meta-pills">
+              <span class="event-daypart-pill" data-daypart="${daypart}" title="${escapeHtml(dpInfo.label)} (${escapeHtml(dpInfo.range)})">${SVG_ICONS[daypart] || ''} ${escapeHtml(dpInfo.badge)}</span>
+              ${duration ? `<span class="event-duration">${SVG_ICONS.clock} ${escapeHtml(duration)}</span>` : ''}
+              ${ev.cost ? `<span class="event-cost-pill">${escapeHtml(ev.cost)}</span>` : ''}
+            </div>
+          </div>
 
-              <!-- Editorial Details Column -->
-              <div class="event-details-col">
-                <div class="event-tags-row">
-                  <span class="event-badge badge-category"><span aria-hidden="true">${emblem}</span> ${escapeHtml(ev.activityType)}</span>
-                  <span class="event-badge badge-area">📍 ${escapeHtml(ev.area)}</span>
-                  ${ev.recurrence ? `<span class="event-badge badge-recurrence">🔁 ${escapeHtml(ev.recurrence)}</span>` : ''}
-                </div>
+          <div class="event-details-col">
+            <div class="event-tags-row">
+              <span class="event-badge badge-category">${escapeHtml(ev.activityType)}</span>
+              <span class="event-badge badge-area">${SVG_ICONS.pin} ${escapeHtml(ev.area)}</span>
+              ${ev.recurrence ? `<span class="event-badge badge-recurrence">${SVG_ICONS.repeat} ${escapeHtml(ev.recurrence)}</span>` : ''}
+            </div>
 
-                <h3 class="event-title">${escapeHtml(ev.title)}</h3>
+            <h3 class="event-title">${escapeHtml(ev.title)}</h3>
 
-                <div class="event-org-venue-row">
-                  <div class="event-org-line">
-                    <span>Steward:</span>
-                    <a href="${escapeHtml(ev.url)}" target="_blank" rel="noopener noreferrer" class="event-org-link">
-                      ${escapeHtml(ev.organization)} ↗
-                    </a>
-                  </div>
-                  <div class="event-venue">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                      <circle cx="12" cy="10" r="3"></circle>
-                    </svg>
-                    <span>${escapeHtml(ev.venue)}</span>
-                  </div>
-                </div>
-
-                <p class="event-desc">${escapeHtml(ev.description)}</p>
-              </div>
-
-              <!-- Actions Column -->
-              <div class="event-actions-col">
-                <a href="${escapeHtml(ev.url)}" target="_blank" rel="noopener noreferrer" class="action-btn btn-source">
-                  <span>Field Dispatch ↗</span>
+            <div class="event-org-venue-row">
+              <div class="event-org-line">
+                <a href="${escapeHtml(ev.url)}" target="_blank" rel="noopener noreferrer" class="event-org-link">
+                  ${escapeHtml(ev.organization)} ↗
                 </a>
-                <div class="event-actions-subrow">
-                  <a href="${gcalUrl}" target="_blank" rel="noopener noreferrer" class="action-btn btn-gcal" title="Add to Google Calendar">
-                    <span>+ Google Cal</span>
-                  </a>
-                  <button type="button" class="action-btn btn-ics" onclick="downloadIcs('${escapeHtml(ev.id)}')" title="Download .ics calendar file">
-                    <span>.ICS</span>
-                  </button>
-                </div>
+              </div>
+              <div class="event-venue">
+                ${SVG_ICONS.pin}
+                <span>${escapeHtml(ev.venue)}</span>
               </div>
             </div>
-          </article>
-        `;
+
+            <p class="event-desc">${escapeHtml(ev.description)}</p>
+          </div>
+
+          <div class="event-actions-col">
+            <a href="${escapeHtml(ev.url)}" target="_blank" rel="noopener noreferrer" class="action-btn btn-source">
+              <span>Details ↗</span>
+            </a>
+            <div class="event-actions-subrow">
+              <a href="${gcalUrl}" target="_blank" rel="noopener noreferrer" class="action-btn btn-gcal" title="Add to Google Calendar">
+                <span>+ Google</span>
+              </a>
+              <button type="button" class="action-btn btn-ics" data-download-ics="${escapeHtml(ev.id)}" title="Download .ics calendar file">
+                <span>.ics</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </article>
+    `;
   }
 
-  window.downloadIcs = function(eventId) {
+  function escapeIcsText(str) {
+    return String(str || '')
+      .replace(/\\/g, '\\\\')
+      .replace(/\r?\n/g, '\\n')
+      .replace(/;/g, '\\;')
+      .replace(/,/g, '\\,');
+  }
+
+  function downloadIcs(eventId) {
     const ev = allEvents.find(e => e.id === eventId);
     if (!ev) return;
 
-    const formatIcsDate = (isoStr) => {
-      const d = new Date(isoStr);
-      return d.toISOString().replace(/-|:|\.\d+/g, '');
-    };
-
+    const formatIcsDate = (isoStr) => new Date(isoStr).toISOString().replace(/-|:|\.\d+/g, '');
     const icsContent = [
       'BEGIN:VCALENDAR',
       'VERSION:2.0',
@@ -4492,22 +1742,24 @@
       `DTSTAMP:${formatIcsDate(new Date().toISOString())}`,
       `DTSTART:${formatIcsDate(ev.start)}`,
       `DTEND:${formatIcsDate(ev.end || ev.start)}`,
-      `SUMMARY:${ev.title}`,
-      `DESCRIPTION:${ev.description.replace(/\n/g, ' ')} | Host: ${ev.organization} | Link: ${ev.url}`,
-      `LOCATION:${ev.venue}, ${ev.area}`,
+      `SUMMARY:${escapeIcsText(ev.title)}`,
+      `DESCRIPTION:${escapeIcsText(ev.description)} | Host: ${escapeIcsText(ev.organization)} | Link: ${escapeIcsText(ev.url)}`,
+      `LOCATION:${escapeIcsText(`${ev.venue}, ${ev.area}`)}`,
       `URL:${ev.url}`,
       'END:VEVENT',
       'END:VCALENDAR'
     ].join('\r\n');
 
     const blob = new Blob([icsContent], { type: 'text/calendar;charset=utf-8;' });
+    const url = URL.createObjectURL(blob);
     const link = document.createElement('a');
-    link.href = URL.createObjectURL(blob);
+    link.href = url;
     link.setAttribute('download', `${ev.id}.ics`);
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
-  };
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+  }
 
   function renderAgenda() {
     const rawQuery = searchInput.value.trim().toLowerCase();
@@ -4529,16 +1781,10 @@
 
     const bounds = getCalendarDateBounds();
     const {
-      todayStr,
-      tomorrowStr,
-      endThisWeekStr,
-      thisWeekendSatStr,
-      thisWeekendSunStr,
-      nextWeekStartStr,
-      nextWeekEndStr
+      todayStr, tomorrowStr, endThisWeekStr,
+      thisWeekendSatStr, thisWeekendSunStr, nextWeekStartStr, nextWeekEndStr
     } = bounds;
 
-    // Step 1: Filter by all criteria except Daypart so we can compute live Morning / Afternoon / Evening counts
     const baseMatches = allEvents.filter(ev => {
       if (activePillar !== 'all' && ev._pillar !== activePillar) return false;
       if (selCat && ev.activityType !== selCat) return false;
@@ -4569,16 +1815,13 @@
         if (!(dateStr === thisWeekendSatStr || dateStr === thisWeekendSunStr)) return false;
       } else if (activeTimeframe === 'next-week') {
         if (!(dateStr >= nextWeekStartStr && dateStr <= nextWeekEndStr)) return false;
-      } else if (activeTimeframe === 'november') {
-        if (!dateStr.startsWith('2026-11')) return false;
-      } else if (activeTimeframe === 'december') {
-        if (!dateStr.startsWith('2026-12')) return false;
+      } else if (activeTimeframe.startsWith('month:')) {
+        if (!dateStr.startsWith(activeTimeframe.slice(6))) return false;
       }
 
       return true;
     });
 
-    // Update live Daypart count badges for the current Horizon/Date/Filter context
     const dpCounts = { all: baseMatches.length, morning: 0, afternoon: 0, evening: 0 };
     for (let i = 0; i < baseMatches.length; i++) {
       const dp = baseMatches[i]._daypart || classifyEventDaypart(baseMatches[i]);
@@ -4589,7 +1832,6 @@
     if (dpCountAfternoon) dpCountAfternoon.textContent = dpCounts.afternoon;
     if (dpCountEvening) dpCountEvening.textContent = dpCounts.evening;
 
-    // Step 2: Apply active Time-of-Day (Daypart) filter
     const filtered = activeDaypart === 'all'
       ? baseMatches
       : baseMatches.filter(ev => (ev._daypart || classifyEventDaypart(ev)) === activeDaypart);
@@ -4599,7 +1841,7 @@
         const fullDateText = formatDisplayDateFull(selectedCustomDate);
         statusCountEl.innerHTML = `Showing <strong id="visible-count">${filtered.length}</strong> event${filtered.length === 1 ? '' : 's'} on <strong>${escapeHtml(fullDateText)}</strong>`;
       } else {
-        statusCountEl.innerHTML = `Showing <strong id="visible-count">${filtered.length}</strong> of <strong id="total-count">${allEvents.length}</strong> upcoming events`;
+        statusCountEl.innerHTML = `Showing <strong id="visible-count">${filtered.length}</strong> of <strong id="total-count">${allEvents.length}</strong> events`;
       }
     }
     updateMobileFilterStatus(selCat, selOrg, selArea, filtered.length);
@@ -4608,31 +1850,21 @@
       agendaList.innerHTML = '';
       if (selectedCustomDate) {
         const fullDateText = formatDisplayDateFull(selectedCustomDate);
-        const iconEl = emptyState.querySelector('.icon');
-        if (iconEl) iconEl.textContent = '📅';
-        const h3El = emptyState.querySelector('h3');
-        if (h3El) h3El.textContent = 'No gatherings scheduled on this date';
-        const pEl = emptyState.querySelector('p');
-        if (pEl) pEl.innerHTML = `There are no community events listed for <strong>${escapeHtml(fullDateText)}</strong> matching your current filters. Try picking another date on the calendar or resetting your filters.`;
+        if (emptyStateHeading) emptyStateHeading.textContent = 'No events scheduled on this date';
+        if (emptyStateCopy) emptyStateCopy.innerHTML = `No events match your filters on <strong>${escapeHtml(fullDateText)}</strong>. Try choosing another date or clearing your filters.`;
       } else {
-        const iconEl = emptyState.querySelector('.icon');
-        if (iconEl) iconEl.textContent = '🧭';
-        const h3El = emptyState.querySelector('h3');
-        if (h3El) h3El.textContent = 'No gatherings match this field query';
-        const pEl = emptyState.querySelector('p');
-        if (pEl) pEl.textContent = 'No community events match your current search and filter selections. Try clearing your filters or broadening your search.';
+        if (emptyStateHeading) emptyStateHeading.textContent = 'No matching events found';
+        if (emptyStateCopy) emptyStateCopy.textContent = 'Try adjusting your search terms or clearing the active filters.';
       }
-      emptyState.style.display = 'block';
+      emptyState.hidden = false;
       return;
     }
 
-    emptyState.style.display = 'none';
+    emptyState.hidden = true;
 
     const groupedByDate = {};
     filtered.forEach(ev => {
-      if (!groupedByDate[ev.dateString]) {
-        groupedByDate[ev.dateString] = [];
-      }
+      if (!groupedByDate[ev.dateString]) groupedByDate[ev.dateString] = [];
       groupedByDate[ev.dateString].push(ev);
     });
 
@@ -4644,7 +1876,6 @@
       const { headerDate, tile } = getCachedDayMeta(dateStr);
       const relativeLabel = getRelativeDayLabel(dateStr, bounds);
       const isToday = relativeLabel === 'Today';
-      // Modern Web Guidance: Apply content-visibility: auto ONLY to below-the-fold day groups
       const deferredClass = dayIndex >= 2 ? 'day-group-deferred' : '';
 
       html += `
@@ -4658,16 +1889,14 @@
               <h2 class="agenda-day-title">${headerDate}</h2>
               <span class="agenda-day-relative ${isToday ? 'is-today' : (relativeLabel === 'Tomorrow' ? 'is-tomorrow' : '')}">${escapeHtml(relativeLabel)}</span>
             </div>
-            <span class="agenda-day-count">${dayEvents.length} gathering${dayEvents.length > 1 ? 's' : ''}</span>
+            <span class="agenda-day-count">${dayEvents.length} event${dayEvents.length > 1 ? 's' : ''}</span>
           </div>
           <div class="agenda-events-list">
       `;
 
       for (let j = 0; j < dayEvents.length; j++) {
         const ev = dayEvents[j];
-        if (!ev._cardHtml) {
-          ev._cardHtml = buildEventCardHtml(ev);
-        }
+        if (!ev._cardHtml) ev._cardHtml = buildEventCardHtml(ev);
         html += ev._cardHtml;
       }
 
